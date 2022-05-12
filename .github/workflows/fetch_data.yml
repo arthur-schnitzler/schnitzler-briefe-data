@@ -1,0 +1,20 @@
+name: Fetch the data
+
+on:
+  workflow_dispatch
+
+jobs:
+  build_pages:
+    name: Copy data to repo
+    runs-on: ubuntu-latest
+    env:
+      ANT_OPTS: -Xmx6g
+    steps:
+    - name: Perform Checkout
+      uses: actions/checkout@v2
+    - name: Fetch and preprocess Data
+      run: |
+        ./fetch_data.sh
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Downloaded/Updated Data

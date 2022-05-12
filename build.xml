@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="tei2html">
+    <property name="tmpDir" value="./data/tmp"/>
+    <property name="editions" value="./data/editions"/>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+    <xslt style="./import-xslts/langesS-1.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>
+    <move todir="${editions}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <mkdir dir="${tmpDir}"/>
+    
+    <xslt style="./import-xslts/langesS-2.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>
+    <move todir="${editions}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <mkdir dir="${tmpDir}"/>
+    
+    <xslt style="./import-xslts/langesS-3.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>
+    <move todir="${editions}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <mkdir dir="${tmpDir}"/>
+</project>

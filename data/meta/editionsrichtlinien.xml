@@ -1,0 +1,571 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
+        <title level="a">Zur Edition</title>
+        <author>
+          <persName>
+            <forename>Martin Anton</forename>
+            <surname>Müller</surname>
+          </persName>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
+        <pubPlace>Vienna</pubPlace>
+        <date when="2021">2021</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">
+            <p>The (CC BY 4.0)-License applies to this document.</p>
+          </licence>
+        </availability>
+        <idno type="handle">https://hdl.handle.net/21.11115/0000-000E-7535-3</idno>
+        <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI"
+          >https://id.acdh.oeaw.ac.at/Schnitzler–Briefe/v1/meta/about.xml</tei:idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born digital.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="nav">
+        <head>Inhaltsverzeichnis</head>
+        <ref target="#h.nf5xedayjra7">Zum Selbstverständnis dieser Edition</ref>
+        <list>
+          <item>
+            <ref target="#h.4wu62bubzulg">Blinde Flecken</ref>
+          </item>
+          <item>
+            <ref target="#h.1mqj9b78d97g">Zeller, Woesler und XML</ref>
+          </item>
+          <item>
+            <ref target="#h.mc3x2fv8m2ae">Schlussfolgerung: Ansichten und Source-Code</ref>
+          </item>
+          <item>
+            <ref target="#h.4u55e04hmm8m">Zitieren (warum es keine Versionierung gibt)</ref>
+          </item>
+        </list>
+        <ref target="#h.bohg4pdz30rg">Editionspraxis</ref>
+        <list>
+          <item>
+            <ref target="#h.pr3m82t7iea0">Allgemein</ref>
+          </item>
+          <item>
+            <ref target="#h.z43fjb1814bs">Handschriften</ref>
+          </item>
+          <item>
+            <ref target="#h.yd0brfr8vmii">Typoskripte</ref>
+          </item>
+          <item>
+            <ref target="#h.92ntwcezktn8">Maschinabschriften</ref>
+          </item>
+          <item>
+            <ref target="#h.u955busan76a">Telegramme</ref>
+          </item>
+          <item>
+            <ref target="#h.nh0nnf5on4t4">Postsendungen</ref>
+          </item>
+          <item>
+            <ref target="#h.wq73aorghzf5">Spätere Ergänzungen auf Korrespondenzstücken</ref>
+          </item>
+          <item>
+            <ref target="#h.thqri2h0vbs2">Datierungen</ref>
+          </item>
+          <item>
+            <ref target="#h.2cxlh44uji8w">Briefköpfe und -füße</ref>
+          </item>
+          <item>
+            <ref target="#h.urbploozti5z">Fußnoten</ref>
+          </item>
+          <item>
+            <ref target="#h.e04c2h3uv9ls">Umschläge und Adressierungen auf Postkarten</ref>
+          </item>
+        </list>
+      </div>
+      <div type="level1">
+        <head xml:id="h.nf5xedayjra7">Zum Selbstverständnis dieser Edition</head>
+        <p>Edieren ist Interpretation. Das trifft im Allgemeinen zu, da jede Übersetzung in ein
+          anderes Medium mit Bedeutungsverlust und -verschiebung einhergeht, und es trifft bei einer
+          »schwierigen« Handschrift wie jener Arthur Schnitzlers auch im Besonderem zu. Eine
+          Transkription dient dazu, jenen, die sich nicht eingelesen haben, Zugang zum Geschriebenen
+          zu geben, indem eine Umschrift erstellt wird, die die Schriftzeichen, Bogen und Krakel in
+          genormte Buchstaben übersetzt. Das ist eine Interpretation, weil die Gefahr falscher
+          Lesungen durch die Editoren ständig vorhanden ist. Bedeutsamer als gelegentliche
+          Sinnverschiebungen durch falsche Entzifferung ist jedoch das Wegfallen einer zentralen
+          Leseerfahrung der Adressaten: Wer einen Brief Schnitzlers erhielt, konnte diesen für
+          gewöhnlich nicht lesen, sondern musste ihn entziffern. Zwar gibt es gute Gründe
+          anzunehmen, dass Schnitzler versuchte, in seinen Briefen deutlich zu schreiben, doch heißt
+          das nicht, dass diese ohne Störung des Leseflusses gelesen werden konnten. Stellvertretend
+          sei die Klage Beer-Hofmanns <ref target="L00973" type="toLetter"/> angeführt, er habe
+          Schnitzlers Brief »mehr erraten als gelesen«, ergänzt um die Nachzeichnung einer für ihn
+          unleserlichen Stelle. Wer den Brief Schnitzlers liest, der Beer-Hofmann Kopfzerbrechen
+          bereitete, sollte sich auch die Empfindung vergegenwärtigen, mit der die Antwort verfasst
+          ist: Beer-Hofmann konnte sich nicht sicher sein, was in dem Brief stand und worauf er
+          antwortete. Es wird einzelne Worte und Passagen in den Briefen geben, die vom Adressaten
+          nicht gelesen, sondern als unlesbar übersprungen wurden. Manche Textstellen in den Briefen
+          wurden wohl durch unsere Edition zum ersten Mal, seit sie geschrieben wurden, wirklich
+          »gelesen«. </p>
+        <div type="level2">
+          <head xml:id="h.4wu62bubzulg">Blinde Flecken </head>
+          <p>Das Selbstverständnis, eine Interpretationshandlung als Kern des Edierens zu sehen,
+            begründet die Notwendigkeit, die Eingriffe einer Edition offenzulegen und zu begründen,
+            auch wenn es sich bloß um Entscheidungen von Relevanz und Negligenz handelt. Folgende
+            Punkte benennen Bereiche, die in dieser Edition weitgehend unberücksichtigt bleiben:</p>
+          <list>
+            <item>Schreibpapier, samt Größe, Farbe, Haptik, Körnung und Gewicht </item>
+            <item>Schriftgrößen und Schriftarten </item>
+            <item>Schriftbild </item>
+            <item>Platzierungen auf dem Blatt </item>
+            <item>Zeilenfall mit Worttrennungen </item>
+            <item>Marginale gedruckte Hinweise, etwa auf Druckereien von Postkarten oder
+              Drucksorten</item>
+          </list>
+          <p>Zu erklären, warum die genannten Punkte nicht erfasst wurden, fällt leicht. Letztlich
+            verbirgt sich dahinter immer eine inhaltliche Abwägung von angenommenem Erkenntnisgewinn
+            und Aufwand. Als Frage formuliert: Ist es klüger, ein Korrespondenzstück detailreicher
+            zu erfassen, oder ein weiteres aufzunehmen? Die Abwägung von Zeitaufwand und Bedeutung
+            ist in der Editionsarbeit immer wieder zu spüren. Zur Illustration ein Beispiel, das aus
+            dem Verzicht auf die Wiedergabe des originalen Zeilenfalls herrührt: Würde dieser
+            übernommen, könnten Uneindeutigkeiten, die in der Vorlage bestehen, auch in die
+            Umschrift überführt werden, etwa, wenn ein Satz bis zum Zeilenende geht und wir
+            entscheiden, ob in der nächsten Zeile ein neuer Absatz beginnt oder nicht. Das heißt
+            nicht, dass wir die Beibehaltung des Zeilenfalls nicht vorgezogen hätten, sondern nur,
+            dass uns der zu erwartende Erkenntnisgewinn nicht mit dem einhergehenden Aufwand in
+            Einklang zu stehen scheint. </p>
+          <p>Ein Vergleich mit der gedruckten Edition des Briefwechsels zwischen Arthur Schnitzler
+            und Hugo von Hofmannsthal<footNote xml:id="edition_fnt1">
+              <p><bibl>Hugo von Hofmannsthal und Arthur Schnitzler: <title level="m"
+                    >Briefwechsel</title>. Hg. v. Therese Nickl und Heinrich Schnitzler. Frankfurt
+                  am Main: <publisher>S. Fischer</publisher> 1964</bibl>.</p>
+            </footNote> kann dazu beitragen, sich der Zeitgebundenheit der editorischen Praxis
+            bewusst zu werden. In der früheren Edition waren folgende Praktiken selbstverständlich: </p>
+          <list>
+            <item>konstruierte Datumszeilen am Anfang, egal, wo diese im Brief standen oder ob diese
+              später auf den Brief geschrieben wurden </item>
+            <item>ergänzte Ortsangaben, die von den Briefumschlägen oder Stempeln übernommen wurden </item>
+            <item>stillschweigende Rechtschreib- und Fehlerkorrektur </item>
+          </list>
+          <p>Warum die gegenwärtige Editionspraxis es ablehnt, Text zu konstruieren, der sich in der
+            Vorlage nicht findet, erschließt sich ohne weitere Erläuterung. Die Frage der
+            Rechtschreibung würde vielleicht wenig Aufmerksamkeit verdienen, hätte Schnitzler nicht
+            auf eine unerwartete Weise historisch recht bekommen. In Wien galten ab 1879 eigene
+            Rechtschreibregeln, die unter anderem auch die Heyse’sche ss/ß-Schreibung vorsahen,
+            während in Preußen und Deutschland nach den Regeln Adelungs geschrieben wurde.
+            Schnitzler und die meisten seiner österreichischen Freunde unterschieden demnach nur
+            anhand des vorangehenden Vokals, ob »ss« oder »ß« gesetzt wurde. 1904 wurde auch für
+            Österreich das Adelung’sche Regelwerk verbindlich, ohne dass Schnitzler dies übernommen
+            hätte. Da aber seit 1996 in Deutschland erstmals und in Österreich neuerlich auf Heyse
+            geändert wurde, ist die Buchedition von 1964 weiter von der heute geltenden Norm
+            entfernt als der ursprüngliche Text Schnitzlers. </p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.1mqj9b78d97g">Zeller, Woesler und XML </head>
+          <p>Diese Fragestellungen gehören in größere Zusammenhänge der Editionsforschung und
+            -praxis gestellt, die selbstverständlich weniger linear verlaufen, als es hier den
+            Anschein haben mag, und die nicht einfach nach »vorne« projiziert werden können. Sie
+            helfen dem Bewusstsein, mit der Edition nicht am Ende eines Textes zu stehen – nicht die
+            definitive, finale Fassung vorlegen zu wollen – sondern auf dem Weg dorthin zu sein.
+            Lange war die Editionslandschaft geprägt durch die rivalisierenden Ansätze von Winfried
+            Woesler und Hans Zeller. Während Woesler die »Materialität« in den Vordergrund seiner
+              Überlegungen<footNote xml:id="edition_fnt2">
+              <p><bibl>Winfried Woesler: <title>Der Brief als Dokument.</title> In: Wolfgang
+                  Frühwald (Hg.): <title>Probleme der Brief-Edition.</title> Kolloquium der
+                  Deutschen Forschungsgemeinschaft, Schloss Tutzing am Starnberger See, 8.–11.
+                  September 1975. Referate und Diskussionsbeiträge. Bonn/Bad Godesberg 1977; ders.:
+                    <title>Vorschläge für eine Normierung von Briefeditionen</title>. In:
+                    <title>editio. Internationales Jahrbuch für Editionswissenschaft</title> 2/1988;
+                  ders.: Richtlinienvorschläge für Briefkommentare. In: Hans-Gert Roloff (Hg.):
+                    <title>Wissenschaftliche Briefeditionen und ihre Probleme</title>.
+                  Editionswissenschaftliches Symposion. Berlin 1998</bibl>.</p>
+            </footNote> gestellt hat, damit die nichttextuellen Merkmale des Zeugen in einem
+            beigefügten Apparat präsentiert und sich damit von den zu jener Zeit üblichen Studien-
+            und Leseausgaben unterscheidet, ging Zeller einen anderen Weg.<footNote
+              xml:id="edition_fnt3">
+              <p><bibl>Hans Zeller: <title>Authentizität in der Briefedition. Integrale Darstellung
+                    nichtsprachlicher Informationen des Originals</title>. In: <title>editio.
+                    Internationales Jahrbuch für Editionswissenschaft</title> 16/2002</bibl>.</p>
+            </footNote> Bei ihm steht die »Authentizität« im Vordergrund: der optisch erkennbare
+            Schreibprozess. Die strenge Formalisierung Woeslers, die die Aufgabe des Editors, eben
+            diesen Prozess erfahrbar zu machen, in die Mitteilungen unter den eigentlichen Text
+            verlegt, führt nach Zeller dazu, dass der Autor-Text atomisiert werde und die
+            Beschreibungen der Herausgeber an entfernter Stelle als irrelevant und zusammenhanglos
+            erscheinen. Eine solche Gestaltung steht nicht nur der umfassenden Lektüre entgegen,
+            sondern vor allem einer sinnlichen Aneignung des Textes, wie sie der ursprüngliche
+            Empfänger des Briefes, der Postkarte etc. zu leisten imstande war. Zellers »integrale
+            Darstellung« soll es erlauben, den ursprünglichen Leseeindruck des Adressaten möglichst
+            adäquat nachzuvollziehen. So werden beispielsweise Autorkorrekturen – anders als bei
+            Woesler – grundsätzlich im Brieftext selbst dargestellt (mittels einer überschaubaren
+            Anzahl graphischer Zeichen). Diese modifizierte Form der Wiedergabe soll dem Leser den
+            Schreib- und den Leseprozess vollumfänglich erfahrbar machen. Alle Änderungen und
+            Verschreibungen, auch belanglose, sind im Text verzeichnet, weil auch sie das Gesamtbild
+            des Originals bestimmen. </p>
+          <p>In Buchform sind diese Ansätze nicht miteinander vereinbar – in einer digitalen Edition
+            hingegen schon. Beide Präsentationsformen finden sich auch in der hier vorgestellten
+            Edition: Um »von Woesler zu Zeller« und zurück zu wechseln, bedarf es lediglich eines
+            Klicks: Unter jedem Korrespondenzstück kann die Ansicht von » Lesen « auf »Kritisch«
+            umgestellt werden. Aus einer technischen Sicht wird damit zwar die Darstellung
+            verändert, die zugrunde liegenden Inhalte sind jedoch identisch. Das weist einmal mehr
+            auf den seit ein paar Jahrzehnten geläufigen Stehsatz vom medium als message und
+            bedeutet hier, dass der eigentliche, fixe Inhalt der Edition, die Umschrift, nicht in
+            den beiden Ansichten zu finden ist, sondern in der für die Rezeption und Lektüre
+            ungeeigneten TEI-Ansicht. </p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.mc3x2fv8m2ae"> Schlussfolgerung: Ansichten und Source-Code </head>
+          <p>In einer Zusammenführung der bisherigen Überlegungen kann das Verständnis der hier
+            vorliegenden Edition so summiert werden: Im Zentrum steht (wie bei der édition génetique
+            ) das Faksimile des Originals. Die Aufgabe der Edition besteht darin, Zugang zu
+            schaffen, indem bestimmte Teile des Faksimiles herausgenommen, gedeutet und lesbarer
+            gemacht werden. Die Entfernung zwischen Faksimile und Ansicht nimmt dabei zu, je weniger
+            Textphänomene berücksichtigt werden, zugleich sinkt die Hürde der Rezeption. Mit den
+            drei Ansichten »Simpel«, »Links« und »Kritisch« befriedigt diese Edition angenommene
+            Lesehaltungen. Die Präsentation der Website dreht dabei die Perspektive um, von der
+            einfachsten zur komplexesten Darstellung. Die simple Leseansicht verzichtet auf
+            textgenetische Auszeichnungen, auf editorische Zeichen und liefert einen »unverstellten«
+            Text. Die als Links hinterlegten Registereinträge funktionieren zwar und öffnen ein
+            Fenster mit weiteren Informationen, sind aber nicht separat gekennzeichnet. Dafür ist
+            eine eigene Ansicht vorhanden (»Ansicht »Links««), in der die betreffenden Textstellen
+            in roter Farbe dargestellt werden. Zudem erlaubt eine Liste im Kommentarbereich
+            darunter, die erwähnten Personen, Werke, Institutionen und Orte in ihrer lemmatisierten
+            Form zu überblicken. Das soll einen schnelleren Überblick über die im betreffenden Stück
+            erwähnten Entitäten ermöglichen. Die wissenschaftlich ausführlichste Ansicht (»Ansicht
+            »kritisch««) bringt (mit wenigen Ausnahmen) das jeweilige Faksimile neben einer
+            diplomatischen Umschrift. Sie zeigt Schriftwechsel, Seitenwechsel, Autorkorrekturen und
+            farblich hervorgehobene Anschriften und Absenderadressen; auch hier sind die Links zu
+            den Personen, Texten und Orten (ebenfalls ohne Hervorhebungen) vorhanden. </p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.4u55e04hmm8m">Zitieren (warum es keine Versionierung gibt) </head>
+          <p>Die Frage der wissenschaftlichen Zitierung wird durch die Ansichten vor ein besonderes
+            Problem gestellt. Genau genommen müsste die TEI-Datei zitiert werden, da es sich bei den
+            anderen nur um Realisierungen einer gemeinsamen Quelle handelt. Zusätzlich wäre eine
+            Versionierung notwendig, sodass die jeweils gültige Fassung der Datei zitiert werden
+            kann. Wir verzichten aus zwei Gründen darauf: Einerseits zweifeln wir aus pragmatischen
+            Gründen daran, dass in Editionsprinzipien festgehaltene Zitiervorschläge ausreichend
+            wahrgenommen werden, andererseits gilt für uns der Vorrang des Faksimiles über die
+            Umschrift. Die Zitierung des Faksimiles erscheint uns sinnvoller und wir erwarten von
+            guter wissenschaftlicher Praxis ohnedies, dass die Zitate nicht unkritisch, sondern nur
+            in Abgleich mit dem Faksimile verwendet werden. Unterhalb der Korrespondenzstücke ist in
+            den Ansichten ein Zitiervorschlag. Möglich ist natürlich auch, mit Hilfe der
+            Archivsignatur und des Faksimiles nach dem Archivzeugen zu zitieren und uns – als
+            Mittelsleute – außen vor zu lassen. Denn – hier schließt sich der Kreis allgemeiner
+            Überlegungen, die dieser Edition vorangestellt sind – wir verstehen unsere Edition mit
+            ihrer Umschrift zwar als die vollständigste, die es bislang gab, und dabei doch nur als
+            Zwischenstand. Er ist mit einer Creative Commons-Lizenz versehen, die zur Weiterarbeit,
+            Verfeinerung und Überarbeitung verleiten soll. Deswegen ist auch die detaillierte
+            Aufstellung der benutzten TEI-Elemente und ihrer Verwendung integraler Bestandteil
+            dieser Edition, auch wenn sie nur für wenige von praktischem Nutzen sein wird. Diese
+            Edition nimmt für sich in Anspruch, das komplette Wissen des Jahres 2021 zu den
+            erhaltenen Korrespondenzstücken abzubilden und damit alle früheren Editionen zu
+            übertreffen. Zugleich handelt es sich um eine Etappe, nicht um das Ziel. </p>
+        </div>
+      </div>
+      <div type="level1">
+        <head xml:id="h.bohg4pdz30rg">Editionspraxis</head>
+        <p>Die hier vorliegende Edition der Korrespondenz Arthur Schnitzlers mit Schriftstellerinnen
+          und Schriftstellern vereint 2.565 Briefe, Karten, Telegramme, Widmungen etc. Ziel ist es,
+          seine Schreibwerkstatt innerhalb eines Netzwerks zeitgenössischer Berufskolleginnen und
+          -kollegen betrachten zu lassen. Dabei geht es nicht nur darum, die Korrespondenzen als
+          Material für Biografisches und Werkgenetisches zu betrachten, sondern ihnen einen
+          Stellenwert als eigene Kommunikationsform und als eigenen Forschungsgegenstand
+          einzuräumen. Das gilt sowohl in Bezug auf Schnitzler, als auch auf die Einbettung in das,
+          was zwei Jahrhunderte früher als république des lettres gefeiert wurde, in eine Welt, in
+          der der schriftliche Austausch dazu diente, sich innerhalb einer Gemeinschaft
+          Gleichgesinnter zu bewegen, zu positionieren und in Beziehung zu setzen. Das gelingt einer
+          solchen Edition schon dadurch, dass Korrespondenzen mit anderen prominenten Figuren stets
+          zumindest die beiden jeweiligen Forschungsbereiche verknüpfen. Darüber hinaus sind die
+          Korrespondenzstücke eingebettet in das Korrespondenznetzwerk www.correspSearch.net der
+          Berlin-Brandenburgischen Akademie der Wissenschaften, in dem gegenwärtig (15. Mai 2021)
+          über 136.000 Briefe aus allen Zeiten erfasst sind. Abgesehen von der Auffindbarkeit der
+          Briefe über die verschiedenen Suchmöglichkeiten der erwähnten Plattform führt jeder Aufruf
+          eines Korrespondenzstücks auf unserer Webpräsentation zu einer Abfrage in der Datenbank
+          von correspSearch, so dass nach einigen Sekunden unterhalb eines Korrespondenzstücks auch
+          ein Menüpunkt »Briefnetz« erscheint, der weitere veröffentlichte Briefe aus dem jeweiligen
+          Zeitraum in anderen Editionen anführt. An dieser Stelle ist ersichtlich, dass dies auch
+          eine für die Zukunft gedachte Einbettung ist, die mitwachsen wird. </p>
+        <p/>
+        <div type="level2">
+          <head xml:id="h.pr3m82t7iea0">Allgemein </head>
+          <p>Grundlegend gilt: Die Wiedergabe sämtlicher in diesem Projekt präsentierter Texte folgt
+            dem beigefügten Farbfaksimile des Originals. </p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.z43fjb1814bs">Handschriften </head>
+          <p>Für die Transkription wurde die diplomatische Umschrift gewählt: Eigentümlichkeiten der
+            Schreibweise, variierende Schreibungen und Interpunktion wurden unverändert übernommen.
+            Die bei Schnitzler häufig vorkommende Verschleifung von Endsilben (etwa »Verwendg« statt
+            »Verwendung«) bleibt erhalten. Ignoriert wurden lediglich Worttrennungen am Zeilenende,
+            da der Zeilenfall der Vorlage nicht abgebildet wird. Verzichtet wurde auf die Wiedergabe
+            von doppelten Bindestrichen, da diese vor allem am Zeilenende zum Einsatz kommen und
+            folglich in den meisten Fällen nicht zu berücksichtigen sind. Die wenigen verbleibenden
+            doppelten Trennstriche werden als einfache gesetzt. Gedankenstriche sind generell auf
+            die Länge von Halbgeviertstrichen (»–«) normalisiert.<footNote xml:id="edition_fnt4">
+              <p>Zwar ließe sich argumentieren – und die gedruckte Edition des Tagebuchs hat dies
+                durch ihre Normalisierung auf Geviertstriche&#160;–&#160;, dass Schnitzler lange
+                Striche (»—«) verwendet, doch greift das zu kurz. Eine verlässliche Unterscheidung
+                zwischen Halbgeviert- und Geviertstrichen lässt sich in Schnitzlers Handschrift
+                nicht treffen. Bei Schnitzlers häufig verwendetem Satzschlusszeichen ».–« dürfte es
+                sich um eine Übernahme aus der Telegrammsprache handeln. In ihrer maschinellen
+                Wiedergabe wird diese als ein Halbgeviertstrich oder gar nur als ein einfacher
+                Trennstrich (».-«) gesetzt. Neben der Strichlänge ist auch die Frage des Abstandes
+                signifikant, da dies, vereinfacht ausgedrückt, eine Unterscheidung trifft zwischen
+                einem Satzschlusszeichen (».–«) und einem Satzschluss samt folgender Pause (». –«).
+                Wir haben uns deshalb auf die Normalisierung festgelegt, durchwegs Halbgeviertstrich
+                und fixes Leerzeichen zu setzen, wenn die Vorlage nicht zweifelsfrei eine
+                Zweiteilung zwischen Punkt und Strich vorsieht, etwa durch einen Zeilenwechsel. </p>
+            </footNote> Stillschweigend ergänzt wurden bestimmte, minimale Fehlstellen bei
+            Buchstaben wie fehlende Punkte über »i«, Striche bei den Umlauten, gelegentlich
+            Geminationsstriche von »m« und »n«, doch stets nur, wenn damit keine semantische
+            Verschiebung (»möchte«/»mochte«) einhergeht. U-Striche, die eigentlich verlässliche
+            Indikatoren für die Unterscheidung zwischen »u« und »ü« darstellen, sind in der
+            Wiedergabe übergangen: Im Zweifel empfiehlt sich hier, wie auch sonst, ein Blick auf das
+            Faksimile. Eingegriffen haben die Herausgeber möglichst sparsam und alle Eingriffe sind
+            dokumentiert. Nicht Rechtschreibkorrektur, sondern die Beseitigung von unbeabsichtigten
+            Störungen der Lesbarkeit bildet das Kriterium: Beispielsweise wurde emendiert, wenn die
+            Anrede (Sie) und das Pronomen (sie) verwechselt wurde, da dies sonst bei der Lektüre
+            wohl erst durch mehrmaliges Studium des ganzen Satzes vorgenommen werden kann. Einen
+            ähnlich gelagerten Fall stellen Ergänzungen eines Kommas zur Vermeidung von
+            Missverständnissen dar. Alle diese Eingriffe sind verzeichnet. In jedem Fall bleiben
+            Eigentümlichkeiten der Schreibweise, variierende Schreibungen und Interpunktion
+            unverändert. Auch Abkürzungen – insbesondere »u.« und »u« für »und« – werden stets
+            beibehalten und nicht ausgeschrieben. </p>
+          <p>Zwangsläufig haben wir es mit vielen unterschiedlichen Handschriften zu tun. Es wird
+            innerhalb der Handschrift einer Person versucht, bei den besonderen Merkmalen konsistent
+            zu bleiben. Schwer fällt das besonders dann, wenn es nur wenige Belegstücke gibt und die
+            Entscheidung, ob eine Kurrentschrift oder eine idiosynkratische Mischform aus
+            lateinischen und Kurrentelementen vorliegt, nicht sicher zu treffen ist. Die Schreibung
+            von Namen variiert um 1900 noch stark. So schreibt Schnitzler den Namens eines seiner
+            wichtigsten Briefpartner in den Anschriften zumindest in drei verschiedenen Versionen –
+            unter Berücksichtigung der Gemination wären es noch mehr: »Beer-Hofmann«, »Beer
+            Hofmann«, »Beerhofmann«. Auch Umlaute und »ß« bzw. »ss« werden nicht konsequent
+            eingesetzt (etwa »Großmann« und »Grossmann«). In allen diesen Fällen wurde nicht
+            eingegriffen. Allerdings findet sich im Register stets die heute übliche Form. </p>
+          <p>Alle Briefeditionen, auch diejenigen, die sich des Internets als Präsentationsmedium
+            bedienen, stehen vor einem Problem, sofern sie sich im Zeitraum ab etwa 1880 bewegen. In
+            jener Epoche wurde im gesamten deutschen Sprachraum die »Deutsche Schreibschrift«
+            (»deutsche Kurrentschrift«) geschrieben, die sich seit Beginn der Neuzeit in Österreich,
+            Deutschland und der Schweiz gegen die heute wieder gebräuchliche »Lateinische
+            Schreibschrift« durchgesetzt hatte.<footNote xml:id="edition_fnt5">
+              <p>Die »Sütterlinschrift« ist eine seit 1911 zunächst in preußischen Schulen
+                verwendete grafische Variante der »Deutschen Schreibschrift« zum vereinfachten
+                Erlernen des Schreibens. In diesem Sinne hat keiner der in dieser Edition
+                berücksichtigten Autoren die Sütterlinschrift verwendet. </p>
+            </footNote> Dessen ungeachtet gab es Autoren, die sich der
+            lateinischen Schrift bedienten oder zumindest zwischen beiden Schrifttypen während des
+            Schreibens regelmäßig wechselten. So war es für manche, die deutsche Schrift benutzende
+            Autorinnen und Autoren in ihren Briefen durchaus selbstverständlich, Namen, Adressen und
+            (Buch-)Titel sowie Fremdwörter zur Verdeutlichung in lateinischer Schrift hervorzuheben;
+            einige gingen noch darüber hinaus, indem sie alle ihnen relevant erscheinenden Wörter
+            durch einen Schriftwechsel betonten. Jene, die die lateinische Schrift verwendeten,
+            verzichteten für gewöhnlich auf die Möglichkeit, Wörter durch einen Wechsel des
+            Schriftsystems zu betonen. Die in einem Korrespondenzstück verwendete Grundschrift
+            findet sich in der jeweiligen Beschreibung. Auf eine visuelle Differenzierung durch
+            Wiedergabe in unterschiedlichen Schriften verzichten wir. Betonende Schriftwechsel
+            innerhalb des Textes sind aber in der »Kritischen Ansicht« als Kapitälchen gesetzt. Für
+            den Schriftwechsel gibt es verschiedene Marker, wobei die Realisierung von »e« und »h«
+            am deutlichsten zur Differenzierung zwischen deutscher und lateinischer Schreibschrift
+            geeignet sind. Ob in jenen wenigen Fällen, bei denen keine solche klare Unterscheidung
+            möglich ist, ein Schriftwechsel angenommen wird oder nicht, wurde immer in
+            Einzelfallbetrachtung und mit Blick auf den Briefzusammenhang getroffen. </p>
+          <p>Die diplomatische Umschrift berücksichtigt einige Eigenheiten der deutschen
+            Kurrentschrift. Das Lang-s (»ſ«) wird ebenso dargestellt wie etwa Geminationsstriche (»
+            &lt;c rendition = "#gemination-m" /&gt; «, » &lt;c rendition = "#gemination-n" /&gt; «),
+            da es sich dabei um distinkte Zeichen handelt. Die Schwierigkeit, zwischen »ß« und »ſs«
+            (und daraus im Weiteren »ss« in der »Simplen Ansicht«) zu unterscheiden, wurde durch
+            Studium des zweiten Buchstabens gelöst. Wenn dieser mit abfallenden Linien zur
+            Grundlinie oder darunter ausläuft, handelt es sich um ein »ß«. Umgekehrt, wenn der
+            letzte Punkt des Zeichens oberhalb des Schluss-S liegt, wurde von einem runden S
+            ausgegangen. In der Praxis ergibt dies weitgehend den gültigen Regeln entsprechende
+            Ergebnisse. </p>
+          <p>Sowohl für deutsche als auch für die lateinische Kurrentschrift gilt, dass
+            gelegentliche, aus der Drucktypografie übernommene Realisierungen von Umlauten (»ä«) als
+            Digraphe (»ae«) in ihrer Umsetzung als Groß- oder Kleinbuchstaben erhalten bleiben. </p>
+          <p>Bei Korrekturen werden unterschiedliche Textschichten berücksichtigt. Im häufigsten
+            Fall haben wir eine Überarbeitungsschicht, in der etwa nachträglich ein Wort oder
+            Gliedsatz eingeschoben oder ersetzt wurde. In diesem Fall wird die letzte Schicht
+            ediert, wobei die frühere Schicht innerhalb des Textes durch kritische Zeichen
+            verzeichnet ist (so wird in der »Kritischen Ansicht« durch Hochstellung vor einem Wort
+            auf einen überschriebenen Text verwiesen). In den Fällen, in denen eine Schreibkraft
+            eingesetzt wurde, werden die Schreibvorgänge dieser Person als eine Textschicht gewertet
+            (in der Annahme, dass Korrekturen nur einer Überprüfung der Textvorlage oder einer
+            Behebung von Hörfehlern beim Diktat geschuldet sind). Eine Überarbeitung des Textes
+            durch die Verfasserin oder den Verfasser wiederum wird als zweite Textschicht ediert.
+            Sollten sich zusätzlich noch weitere Schichten finden, ist das im Einzelfall im
+            Stellenkommentar dokumentiert. </p>
+          <p>Neben dem bisher Gesagten gelten folgende Regeln: </p>
+          <p>Nicht entzifferter Text – etwa weil er durch Überschreibung oder Streichung unleserlich
+            geworden ist –, wird mit dem Malzeichen (»×«) ausgedrückt. Dabei entspricht ihre Anzahl
+            der (vermuteten) Anzahl der ungelesenen Buchstaben. </p>
+          <p>Bei Textverlust, wie er häufig durch Abriss oder durch Tintenflecke vorkommt, stehen
+            die ergänzten Textteile in der »Kritischen Ansicht« in eckigen Klammern. </p>
+          <p/>
+        </div>
+        <div type="level2">
+          <head xml:id="h.yd0brfr8vmii">Typoskripte </head>
+          <p>Die Behandlung von Typoskripten folgt weitgehend dem bereits Gesagten. Der Text der
+            Schreibmaschine wird mit der ersten Korrektur durch die Typistin kollationiert und als
+            eine Schicht betrachtet. Diese Korrekturen werden zwar in der Beschreibung erwähnt, aber
+            nicht in der Umschrift nachvollziehbar gemacht. Typische Fehler der Schreibmaschine wie
+            Buchstabenverdreher oder unterbliebene Spationierung werden emendiert. </p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.92ntwcezktn8">Maschinabschriften </head>
+          <p>Die jeweilige Genese der Abschriften ist oft nicht genauer zu bestimmen. Nachweislich
+            ließ Schnitzler solche selbst erstellen. Die Motivation dahinter dürfte nicht nur ein
+            stark ausgeprägtes Nachlassbewusstsein gewesen sein, sondern zudem pragmatischeren
+            Gründen geschuldet sein. Wenn er mit dem Schreiben nicht nachkam und er die Sekretärin
+            Frieda Pollak beschäftigen wollte, gab er ihr Abschreibaufgaben aus dem Nachlass. Manche
+            Abschriften sind erst nach seinem Tod erstellt worden, dafür wurden frühere
+            weggeschmissen. Auch Abschriften von Abschriften wurden gemacht, zum Teil in
+            Vorbereitung von Buchausgaben. Wir verzichten auf die detaillierte Erfassung, da die
+            Reichweite der Abschriften beschränkt war und überprüfen nur, ob in den Abschriften
+            Korrespondenzstücke enthalten sind, deren Originale verloren sind. In diesen Fällen
+            erscheinen sie in der Gestalt der Abschrift in unserer Edition. Dabei wird die
+            Genauigkeit der Wiedergabe dem Status des Zeugens angepasst und öfter emendierend
+            eingegriffen, wobei auch diese Eingriffe verzeichnet sind. Davon betroffen sind etwa
+            Namen, wenn offensichtlich ein Missverständnis vorliegt. Es wird aber nicht versucht,
+            angenommene Eigenheiten des Originals zu rekonstruieren.</p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.u955busan76a">Telegramme </head>
+          <p>Telegramme haben als Besonderheit, dass die Übermittlung und der Inhalt nicht
+            säuberlich voneinander getrennt werden können – ihr Text liegt nur in der übermittelten
+            Form vor. Die Zeile über der Nachricht enthält neben – für den Laien für gewöhnlich
+            undeutbaren – Ziffernfolgen (Informationen über Aufgabenummer und Wortzahl, teilweise in
+            Bruchform) – mit Absender- und Empfängerort, Monatstag und Uhrzeit durchaus Angaben, die
+            vom Empfänger des Telegramms rezipiert und gedeutet wurden. Deswegen werden sie
+            wiedergegeben. Unterschieden wird jedoch anhand der Bereiche des Vordrucks, alles im
+            Textfeld wird zeichengetreu, einschließlich zu erkennender Start- und Schlusszeichen
+            (»+«, »=«) wiedergegeben. Die Adressierung wird als Adresse aufgenommen. Die für den
+            dienstlichen Gebrauch vorgesehenen Bereiche, bei denen Angaben zu Empfang und Versand
+            und die jeweils beteiligten Beamten gemacht werden, landen wörtlich in der Beschreibung
+            des Korrespondenzstücks. Sofern der Lückentext des Formulars beim Ausfüllen
+            berücksichtigt wurde, einschließlich der gedruckten Vorlage. Ausgelassen werden nur
+            fortlaufende Nummern der Telegramme. </p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.nh0nnf5on4t4">Postsendungen </head>
+          <p>Die verschiedenen verwendeten Postsendungen werden in der Beschreibung des jeweiligen
+            Korrespondenzstücks berücksichtigt. Während die Einteilung in Brief, Bildpostkarte,
+            Visitenkarte oder Telegramm als verständlich vorausgesetzt werden kann, führen
+            »Briefkarte« und »Kartenbrief« zu Verwechslungen. Bei einer »Briefkarte« handelt es sich
+            um eine leere Karte, die wie Briefpapier eingesetzt wurde. Eine Karte mit Vordruck, um
+            eine Adresse zu vermerken, ist eine »Postkarte«, früher auch oft mit dem Aufdruck
+            »Correspondenz-Karte« bedruckt. Wenn umseitig eine Abbildung vorhanden ist, sprechen wir
+            von einer »Bildpostkarte«. Eine Besonderheit bei den Bildpostkarten sind die Motive. Für
+            gewöhnlich wird der gedruckte Bildtext übernommen, auch wenn dieser nicht auf der
+            Ansichtsseite, sondern auf der Adressseite vermerkt ist. In wenigen Fällen, in denen ein
+            solcher Text nicht vorliegt, findet sich in der »Kritischen Ansicht« in eckigen Klammern
+            ein konstruierter Titel. </p>
+          <p>Bei einem »Kartenbrief« wiederum handelt es sich um eine Mischform zwischen Karte und
+            Brief, die man sich so vorstellen kann, dass auf eine Seite eines Blattes Papier der
+            Nachrichtentext geschrieben, dieses dann in der Mitte der Längsseite zusammengefaltet
+            und verklebt wurde; auf der nun zu sehenden Seite wurden Adresse und Briefmarke
+            angebracht und der Kartenbrief konnte so – unter Wahrung des Postgeheimnisses –
+            verschickt werden. </p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.wq73aorghzf5">Spätere Ergänzungen auf Korrespondenzstücken</head>
+          <p>Orientierungspunkt für unsere Edition ist das Dokument zum Zeitpunkt seines Versands.
+            Spätere Zufügungen werden in der Beschreibung anhand folgender Typen kategorisiert:
+            »Beilage«, »Versand«, »Zusatz von Empfängerin oder Empfänger«, »Zusätze aus der
+            archivalischen Verwahrung«.</p>
+          <p>»Versand« enthält Angaben zum Versandweg (»Rohrpost«, »Einschreiben«, »Ohne
+            postalischen Übermittlungsvermerk«). Briefmarken und nicht deutbare
+            Übermittlungsvermerke, etwa mit blauem Buntstift angebrachte Ziffern auf Postkarten,
+            bleiben unbeschrieben. Poststempel werden wiedergegeben, wobei mehrere Abdrucke des
+            gleichen Stempels zu einem zusammengefasst werden und Daten nach Möglichkeit
+            vervollständigt werden, wobei darauf geachtet wird, dass die ergänzten Teile erkennbar
+            sind.</p>
+          <p>Unter »Zusatz von Empfänger- oder Empfängerin« finden sich Angaben, die nach Erhalt
+            angebracht wurden, etwa ein Vermerk, wann das Korrespondenzstück beantwortet wurde oder
+            auch eine Antwortskizze. In Schnitzlers, aber beispielsweise auch in Hermann Bahrs
+            Nachlass sind Stichwörter in den Korrespondenzstücken mit rotem Buntstift unterstrichen.
+            Das diente einer Verschlagwortung, die es beschleunigen sollte, Aussagen über ein
+            bestimmtes Werk oder eine Person aufzufinden. Selbst wenn Schnitzler mit Rotstift
+            unterstrichen haben dürfte, weil er auf demselben Blatt auch andere Dinge mit demselben
+            Rotstift vermerkte, können wir natürlich bei keiner Unterstreichung die Entscheidung
+            treffen, ob diese von Schnitzler oder von der Sekretärin durchgeführt wurde. Da aber
+            solche Eingriffe auf den Korrespondenzstücken nur von Schnitzler oder in dessen
+            Einverständnis und unter dessen Anordnung geschehen konnten, ist es nebensächlich, wer
+            nun tatsächlich die Unterstreichung tätigte. Umso mehr trifft dies zu, weil wir auf die
+            genaue Wiedergabe der Unterstreichungen verzichten, da uns kein Fall untergekommen ist,
+            in dem eine von der Absicht der einfachen Verschlagwortung abweichende Praxis vorliegt. </p>
+          <p>In unserer Vorstellung geschah dies zeitnah zum Erhalt des Briefes, doch ist dies eine
+            Hypothese. Für eine spätere Zuordnung spräche, dass Schnitzler teilweise die Briefe
+            nummeriert hat und man hier also von einer gemeinsamen Durchsicht der gesamten
+            Korrespondenz ausgehen könnte, so dass für die Unterstreichung ein späterer Zeitpunkt
+            als der Erhalt anzunehmen wäre. Auch das ist nicht verlässlich zu belegen, geschweige
+            denn die Möglichkeit, verschiedene Schichten solcher Hinzufügungen auszumachen. Es muss
+            daher offenbleiben und verzahnt sich auf diese Weise mit dem letzten wichtigen Bereich
+            der späteren Ergänzung, nämlich mit der Anbringung von Ordnungssystemen und in manchen
+            Fällen Entzifferungen. Diese wurden, von namentlich nicht bekannten
+            Archivmitarbeiterinnen und -mitarbeitern üblicherweise mit Bleistift angebracht, ebenso
+            wie Archivsignaturen. Da diese Signaturen bereits an anderer Stelle im Beschreibungsteil
+            der edierten Briefe Erwähnung finden, werden sie nicht wiederholt. Das gleiche gilt für
+            Besitzstempel der bestandhaltenden Institution. Sehr wohl angeführt werden Datierungen,
+            Umdatierungen und Nummerierungen und Zählungen, die nicht als Platzhalter einer Signatur
+            genommen werden können. Teilweise dürften sie die Funktion gehabt haben, als Konkordanz
+            einer maschinenschriftlichen Transkription zu dienen, teilweise dürften sie einzig der
+            Zählung und Ordnung gedient haben. </p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.thqri2h0vbs2">Datierungen </head>
+          <p>Besonderes Augenmerk wurde auf die Datierung von Korrespondenzstücken gelegt. Das
+            beinhaltet den Versuch, durch andere intrinsische und extrinsische Faktoren das Datum
+            abzuleiten, etwa wenn bestimmte Ereignisse Erwähnung finden. Gerade Poststempel sind
+            dabei wichtige Hinweisgeber, wobei diese nicht zu erkennen geben, ob ein
+            Korrespondenzstück vom selben Tag oder noch vom Vortag stammt und ihnen auch nicht
+            uneingeschränkt zu vertrauen ist, wie an den Briefen <ref target="L00126"
+              subtype="toLetter"/> und <ref target="L00169" subtype="toLetter"/> ersichtlich.
+            Schnitzler datierte viele Korrespondenzstücke, die er erhalten hatte, mit Bleistift: In
+            den meisten Fällen dürfte er das Absenderdatum festgehalten haben, teilweise jedoch auch
+            das Empfangsdatum oder seine Datierung aus (nicht immer mit letzter Gewissheit
+            entzifferbaren) Stempeln bezogen haben. Solche Datierungen erweisen sich, sofern sie
+            sich mit anderen Mitteln verifizieren lassen, als zumeist verlässlich. Das drücken wir
+            dadurch aus, dass die Datumsangabe des Briefes zwar in eckigen Klammern steht und damit
+            auf die Quelle des Datums aus zweiter Hand verweist, nicht aber zusätzliche Unsicherheit
+            vermittelt wird, wie es bei gänzlich ermittelten Datierungen der Fall ist. Wenn das
+            Datum durch Schlussfolgerung ermittelt wurde, so kennzeichnet ein Fragezeichen in der
+            Angabe, wie weit die Unsicherheit reicht. Ein Fragezeichen bei der Jahresangabe
+            bedeutet, dass das ganze Datum, eines beim Monat, dass Tag und Monat, eines beim Tag,
+            dass dieser unsicher ist. Steht das Fragezeichen links vor einem Punkt in der
+            Datumsangabe, so ist nur die linke Ziffer unsicher. </p>
+          <p>Jegliche Datierung, die die Herausgeber getätigt haben und die sich nicht durch das
+            unmittelbar vorangehende und unmittelbar folgende Korrespondenzstück der Korrespondenz
+            oder der Gesamtedition ergibt, hat eine Begründung im Kommentarbereich, der an einem für
+            die Datierung maßgeblichen Punkt ansetzt. </p>
+          <p>Einen Sonderfall stellen die Bleistift-Datierungen Schnitzlers bei seinen eigenen
+            Briefen an Hofmannsthal dar. Diese wurden bei der Durchsicht der Gesamtkorrespondenz
+            nach dem Tod des Briefpartners im Jahr 1929 angebracht. </p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.2cxlh44uji8w">Briefköpfe und -füße</head>
+          <p>Briefköpfe werden vollständig transkribiert, da sie einen Textinhalt haben, der für die
+            Rezeption der Empfängerin, des Empfängers relevant war. Brieffüße werden an das Ende des
+            Korrespondenzstücks gesetzt. Beide werden nur einmal wiedergegeben, auch wenn sie auf
+            mehreren Seiten zum Einsatz kommen. </p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.urbploozti5z">Fußnoten </head>
+          <p>Unterschiedliche Fußnotenzeichen – »⋅)«, »*« – im Brieftext werden nicht nachgebildet,
+            sondern durch Zähler ersetzt. Gleichermaßen folgt der Inhalt der Fußnote nicht auf dem
+            jeweiligen Blatt, sondern wird an dem Ende des Korrespondenzstücks geschlossen
+            wiedergegeben. </p>
+        </div>
+        <div type="level2">
+          <head xml:id="h.e04c2h3uv9ls">Umschläge und Adressierungen auf Postkarten </head>
+          <p>Schnitzler (wie die meisten anderen Briefpartnerinnen und -partner) hat die Umschläge
+            der an ihn gerichteten Briefe vernichtet, weswegen dieser Punkt nur in wenigen Fällen
+            eine Rolle spielt. Als Ausnahme ist an erster Stelle Richard Beer-Hofmann zu nennen, der
+            die Briefumschläge aufbewahrt hat. Die Adressen darauf werden analog mit jenen auf
+            Postkarten behandelt: Sie werden verzeichnet, wobei die Absenderadresse vor der
+            Empfängeradresse steht. </p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

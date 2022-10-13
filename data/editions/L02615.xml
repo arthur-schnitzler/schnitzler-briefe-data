@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02615</idno>
+            <idno type="asbw" n="02615"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -65,7 +65,7 @@
                      beschränken.</p>
                </licence>
             </availability>
-            <idno type="handle">https://hdl.handle.net/21.11115/0000-000E-6B22-4</idno>
+            <idno type="handle">XXXX</idno>
          </publicationStmt>
          <seriesStmt>
             <p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
@@ -91,8 +91,7 @@
                         </handDesc>
                         <additions>
                            <incident type="receiver">
-                              <desc>mit Bleistift auf dem ersten Blatt die Jahreszahl
-                                 »<quote>
+                              <desc>mit Bleistift auf dem ersten Blatt die Jahreszahl »<quote>
                                     <date>94</date>
                                  </quote>« vermerkt</desc>
                            </incident>
@@ -113,28 +112,31 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1894-04-03" n="1">3. 4. [1894]</date>
+               <date when="1894-04-03" n="01">3. 4. [1894]</date>
                <placeName ref="#pmb182">Paris</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
+               <date evidence="conjecture" notBefore="1894-04-04" notAfter="1894-04-08">[4. 4. 1894 – 8. 4. 1894?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
       <encodingDesc>
          <refsDecl>
             <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only,
-               e.g. @type="schnitzlerDiary" @target="1891-05-15". The complete URI is:
+               e.g. @type="schnitzler-tagebuch" @target="1891-05-15". The complete URI is:
                'https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__1891-05-15.html' </ab>
          </refsDecl>
       </encodingDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2022-03-31">Angelegt</change>
          <change who="LU" when="2022-04-19">Durchsicht</change>
+         <change who="MAM" when="2022-05-17">Durchsicht</change>
+         <change who="MAM" when="2022-05-17">Index check</change>
       </revisionDesc>
    </teiHeader>
-   <text type="letter">
+   <text>
       <body>
          <div type="writingSession" n="1">
             <opener>
@@ -142,56 +144,60 @@
                   <pb facs="HS.NZ85.1.3164_0013-1"/>
                   <hi rend="latintype">
                      <rs type="place" ref="#pmb182">Paris</rs>
-                  </hi>,
-                  <date>3. April</date>.</dateline>
+                  </hi>, <date>3. April</date>.</dateline>
                <salute rend="center">Mein lieber Freund,</salute>
             </opener>
             <p>Ich habe Dir für zwei liebe Briefe zu danken, und ich muß Dir immer und immer
                wiederholen, wie wohl mir Deine treue Freund<c rendition="#langesS">s</c>chaft thut und Deine Antheilnahme an
                Allem, was ich lei<c rendition="#langesS">s</c>te. Es gibt mir beim Arbeiten eine gewi<c rendition="#langesS">s</c>
                <c rendition="#langesS">s</c>e Anregung, wenn ich
-               daran denke, daß ich Dein Lob verdienen weiß.</p>
-            <p>Ha<c rendition="#langesS">s</c>t Du mein <rs type="work" subtype="implied" ref="#pmb87849">Feuilleton</rs>
+               daran denke, daß ich Dein Lob verdienen muß. Ha<c rendition="#langesS">s</c>t Du mein <rs type="work" subtype="implied" ref="#pmb87849">Feuilleton</rs>
+               <space unit="chars" quantity="1"/>
                <pb facs="HS.NZ85.1.3164_0014-0"/>über den armen <hi rend="latintype">
                   <rs type="person" ref="#pmb87848">Charles Meunier</rs>
-               </hi> gele<c rendition="#langesS">s</c>en? Da habe ich auch
-                  <anchor type="commentary" xml:id="K_L02615-3"/>viel für Dich ge<c rendition="#langesS">s</c>chrieben<note type="commentary" xml:id="K_L02615-3h">XXXX<!-- LU: Nach FZ-Recherche zu klären. --></note>. Wenn es Dir entgangen i<c rendition="#langesS">s</c>t,
+               </hi> gele<c rendition="#langesS">s</c>en? Da habe ich auch <anchor type="commentary" xml:id="K_L02615-3"/>viel
+               für Dich ge<c rendition="#langesS">s</c>chrieben<note type="commentary" xml:id="K_L02615-3h">XXXX<!-- LU: Nach FZ-Recherche zu klären. --></note>. Wenn es Dir entgangen i<c rendition="#langesS">s</c>t,
               <tei:space xmlns:tei="http://www.tei-c.org/ns/1.0" unit="chars" quantity="1"> </tei:space>
                <c rendition="#langesS">s</c>o will ichs Dir<tei:space xmlns:tei="http://www.tei-c.org/ns/1.0" unit="chars" quantity="1"> </tei:space>
                <c rendition="#langesS">s</c>chicken.</p>
             <p>Du bi<c rendition="#langesS">s</c>t aber auch der Einzige, der Antheil an meinem Schaffen nimmt. Son<c rendition="#langesS">s</c>t verhallts
                in der Wü<c rendition="#langesS">s</c>te. Ich<tei:space xmlns:tei="http://www.tei-c.org/ns/1.0" unit="chars" quantity="1"> </tei:space>
                <c rendition="#langesS">s</c>ehe immer mehr, daß nichts aus mir wird.</p>
-            <p>Gern hätte ich mich mit Dir getroffen. Seit un<c rendition="#langesS">s</c>erm <anchor type="commentary" xml:id="K_L02615-4"/>letzten Bei<c rendition="#langesS">s</c>ammen<c rendition="#langesS">s</c>ein<note type="commentary" xml:id="K_L02615-4h">vermutlich am <ref target="1894-11-14" type="schnitzlerDiary" subtype="date-only"/>
-               </note> denke ich fortwährend daran und mache allerhand
-               Pläne. <pb facs="HS.NZ85.1.3164_0014-1"/>Aber es i<c rendition="#langesS">s</c>t ein furchtbarer Strich durch die
+            <p>Gern hätte ich mich mit Dir getroffen. Seit un<c rendition="#langesS">s</c>erm <anchor type="commentary" xml:id="K_L02615-4"/>letzten Bei<c rendition="#langesS">s</c>ammen<c rendition="#langesS">s</c>ein<note type="commentary" xml:id="K_L02615-4h">am <ref target="1894-11-14" type="schnitzler-tagebuch" subtype="date-only"/>
+               </note> denke ich fortwährend daran und mache allerhand Pläne. <pb facs="HS.NZ85.1.3164_0014-1"/>Aber es i<c rendition="#langesS">s</c>t ein furchtbarer Strich durch die
                Rechnung gekommen. Ich werde immer kränker. Der aufreibende Beruf vergrößert das
                Übel, das<tei:space xmlns:tei="http://www.tei-c.org/ns/1.0" unit="chars" quantity="1"> </tei:space>
                <c rendition="#langesS">s</c>tetig um<tei:space xmlns:tei="http://www.tei-c.org/ns/1.0" unit="chars" quantity="1"> </tei:space>
                <c rendition="#langesS">s</c>ich greift. Ich fürchte, ich werde nicht mehr lange die Feder
                führen können. Jedenfalls verlangt mein <rs type="person" subtype="implied" ref="#pmb23593">Schwager</rs>, daß ich meinen Urlaub in <rs type="place" ref="#pmb146">Frankfurt</rs> verbringe, damit er mich <anchor type="commentary" xml:id="K_L02615-2"/>behandeln<note type="commentary" xml:id="K_L02615-2h">
                   <rs type="person" ref="#pmb23593">Josef Rosengart</rs>, Ehemann von Goldmanns
-                  Schwester <rs type="person" ref="#pmb34971">Vally</rs>, war Arzt.</note> könne.</p>
+                  Schwester <rs type="person" ref="#pmb34971">Vally</rs>, war Arzt.</note>
+               könne.</p>
             <p>
                <hi rend="latintype">
-                  <rs type="person" ref="#pmb87787">Albert</rs>
-               </hi> will natürlich
-               keinen <anchor type="commentary" xml:id="K_L02615-1"/>Preis be<c rendition="#langesS">s</c>timmen<note type="commentary" xml:id="K_L02615-1h">
-                  <ref target="L02613" type="toLetter" subtype="see"/>
-               </note>. Das mittlere Über<c rendition="#langesS">s</c>etzungs-<pb facs="HS.NZ85.1.3164_0013-0"/>Honorar für <rs type="work" subtype="implied" ref="#pmb30163" cert="strong">einen Deiner kleinen Dialoge</rs> wären
-               25 bis 30 <hi rend="latintype">Francs</hi>. Wäre Dir das zu viel? Schreib’
-               ganz offen, ich richte die Sache<tei:space xmlns:tei="http://www.tei-c.org/ns/1.0" unit="chars" quantity="1"> </tei:space>
-               <c rendition="#langesS">s</c>chon ein, wie es für Dich am Be<c rendition="#langesS">s</c>ten i<c rendition="#langesS">s</c>t.</p>
+                  <rs type="person" ref="#pmb2801">Albert</rs>
+               </hi> will natürlich keinen <anchor type="commentary" xml:id="K_L02615-1"/>Preis
+                  be<c rendition="#langesS">s</c>timmen<note type="commentary" xml:id="K_L02615-1h">
+                  <ref target="L02613" type="schnitzler-briefe" subtype="see"/>
+               </note>. Das mittlere Über<c rendition="#langesS">s</c>etzungs-<pb facs="HS.NZ85.1.3164_0013-0"/>Honorar für
+               einen Deiner kleinen <rs type="work" subtype="implied" ref="#pmb30163" cert="strong">Dialoge</rs> wären 25 bis 30 <hi rend="latintype">Francs</hi>. Wäre Dir das zu
+               viel? Schreib’ ganz offen, ich richte die Sache<tei:space xmlns:tei="http://www.tei-c.org/ns/1.0" unit="chars" quantity="1"> </tei:space>
+               <c rendition="#langesS">s</c>chon ein, wie es für Dich am Be<c rendition="#langesS">s</c>ten
+               i<c rendition="#langesS">s</c>t.</p>
             <p>
                <hi rend="latintype">
                   <rs type="person" ref="#pmb11673">Herzl</rs>
                </hi> hat<tei:space xmlns:tei="http://www.tei-c.org/ns/1.0" unit="chars" quantity="1"> </tei:space>
                <c rendition="#langesS">s</c>ich<tei:space xmlns:tei="http://www.tei-c.org/ns/1.0" unit="chars" quantity="1"> </tei:space>
-               <c rendition="#langesS">s</c>ehr mit
-               deiner <anchor type="commentary" xml:id="K_L02615-5"/>Anerkennung<note type="commentary" xml:id="K_L02615-5h">nicht ermittelt</note> gefreut. Ich glaube,
-               Du wir<c rendition="#langesS">s</c>t näch<c rendition="#langesS">s</c>tens etwas wahrhaft <anchor type="commentary" xml:id="K_L02615-6"/>Schönes<note type="commentary" xml:id="K_L02615-6h">XXXX</note> von ihm zu
-               genießen bekommen, darf aber nicht reden.</p>
-            <closer>Herzlich<c rendition="#langesS">s</c>t und in <lb/>Treue Dein <lb/>
+               <c rendition="#langesS">s</c>ehr mit deiner <anchor type="commentary" xml:id="K_L02615-5"/>Anerkennung<note type="commentary" xml:id="K_L02615-5h">nicht ermittelt;
+                  eventuell bezieht sich das auf die <rs type="work" ref="#pmb34296" subtype="implied">Rezension</rs> des <rs type="work" ref="#pmb32252">Modernen
+                     Musen-Almanachs für das Jahr 1894</rs> durch <rs type="person" ref="#pmb2801">Henri Albert</rs>, doch die erschien bereits im <date>März</date>. In den
+                  Korrespondenzstücken zwischen <rs type="person" ref="#pmb2121">Schnitzler</rs> und
+                     <rs type="person" ref="#pmb11673">Herzl</rs> findet sich in dieser Zeit nichts,
+                  was näheren Aufschluss gibt.</note> gefreut. Ich glaube, Du wir<c rendition="#langesS">s</c>t näch<c rendition="#langesS">s</c>tens etwas
+               wahrhaft <anchor type="commentary" xml:id="K_L02615-6"/>Schönes<note type="commentary" xml:id="K_L02615-6h">eventuell der Einakter <rs type="work" ref="#pmb30393">Die Glosse</rs>, <ref target="1894-08-31" type="schnitzler-tagebuch" subtype="cf"/>
+               </note> von ihm zu genießen bekommen, darf aber nicht reden.</p>
+            <closer>Herzlich<c rendition="#langesS">s</c>t und in Treue<lb/>Dein <lb/>
                <signed>Paul Goldmann</signed>
             </closer>
             <postscript>
@@ -199,401 +205,361 @@
             </postscript>
          </div>
       </body>
+      <back>
+         <listPerson>
+            <person xml:id="pmb11485">
+               <persName>
+                  <forename>Paul</forename>
+                  <surname>Goldmann</surname>
+               </persName>
+               <birth>
+                  <date when="1865-01-31">31.01.1865</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
+                     <location>
+                        <geo>51,10773 17,03533</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1935-09-25">25.09.1935</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <forename>Arthur</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15.05.1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21.10.1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+            </person>
+            <person xml:id="pmb87848">
+               <persName>
+                  <forename>Charles</forename>
+                  <surname>Meunier</surname>
+               </persName>
+               <sex value="male"/>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87848/</idno>
+            </person>
+            <person xml:id="pmb23593">
+               <persName>
+                  <forename>Josef</forename>
+                  <surname>Rosengart</surname>
+               </persName>
+               <persName type="uri_gnd">https://d-nb.info/gnd/116623667</persName>
+               <birth>
+                  <date when="1860-02-08">1860-02-08</date>
+                  <settlement ref="pmb64559">
+                     <placeName type="pref">Laupheim</placeName>
+                     <location>
+                        <geo>48,22786 9,87874</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1927-08-04">1927-08-04</date>
+                  <settlement ref="pmb146">
+                     <placeName type="pref">Frankfurt am Main</placeName>
+                     <location>
+                        <geo>50,11552 8,68417</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb1692">Arzt/Ärztin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19384</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/23593</idno>
+            </person>
+            <person xml:id="pmb34971">
+               <persName>
+                  <forename>Vally</forename>
+                  <surname>Rosengart</surname>
+               </persName>
+               <persName type="geburtsname_nachname">Goldmann</persName>
+               <persName type="uri_gnd">https://d-nb.info/gnd/116623772</persName>
+               <persName type="namensvariante">Wally</persName>
+               <birth>
+                  <date when="1866-12-29">1866-12-29</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
+                     <location>
+                        <geo>51,10773 17,03533</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <sex value="female"/>
+               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34971/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34971</idno>
+            </person>
+            <person xml:id="pmb2801">
+               <persName>
+                  <forename>Henri</forename>
+                  <surname>Albert</surname>
+               </persName>
+               <persName type="geburtsname_vorname">Henri-Albert</persName>
+               <persName type="geburtsname_nachname">Haug</persName>
+               <persName type="legacy-name-merge">Albert, Henri</persName>
+               <birth>
+                  <date when="1869-11-16">1869-11-16</date>
+                  <settlement ref="pmb48612">
+                     <placeName type="pref">Niederbronn-les-Bains</placeName>
+                     <location>
+                        <geo>48,95165 7,64271</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1921-08-03">1921-08-03</date>
+                  <settlement ref="pmb319">
+                     <placeName type="pref">Straßburg</placeName>
+                     <location>
+                        <geo>48,58392 7,74553</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <occupation ref="pmb100">Kritiker/Kritikerin</occupation>
+               <occupation ref="pmb116">Übersetzer/Übersetzerin</occupation>
+               <occupation ref="pmb173">Redakteur/Redakteurin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118817477</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13130</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2801</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2801</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/13279</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2801</idno>
+            </person>
+            <person xml:id="pmb11673">
+               <persName>
+                  <forename>Theodor</forename>
+                  <surname>Herzl</surname>
+               </persName>
+               <birth>
+                  <date when="1860-05-02">1860-05-02</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1904-07-03">1904-07-03</date>
+                  <settlement ref="pmb470">
+                     <placeName type="pref">Edlach</placeName>
+                     <location>
+                        <geo>47,69255 15,80915</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16165</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118550241</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11673</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11673</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11673</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11673.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb11673</idno>
+            </person>
+         </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb87849">
+               <title>[?? Feuilleton über Charles Meunier]</title>
+               <author ref="pmbperson__11485" role="hat-geschaffen">Goldmann, Paul</author>
+               <date when="1894-04-03">vor dem 3.4.1894</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87849/</idno>
+               <note type="work_kind">Feuilleton</note>
+            </bibl>
+            <bibl xml:id="pmb30163">
+               <title>Weihnachts-Einkäufe</title>
+               <note type="bibliografische_angabe">Arthur Schnitzler: Weihnachts-Einkäufe. In: Frankfurter Zeitung, Jg. 36, Nr. 358, 24. 12. 1891, S. 1–2</note>
+               <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <date when="1891-12-24">24.12.1891</date>
+               <idno type="URL" subtype="theadok">https://theadok.at/work/30732</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30163</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30163</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30163</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30163.html</idno>
+               <note type="work_kind">Drama &gt;&gt; Einakter</note>
+            </bibl>
+            <bibl xml:id="pmb34296">
+               <title>Le nouvel almanach de M. Bierbaum</title>
+               <note type="uri_worklink">https://gallica.bnf.fr/ark:/12148/bpt6k105104c/f251.item</note>
+               <note type="bibliografische_angabe">Henri Albert: Le nouvel almanach de M. Bierbaum. In: Mercure de France, Jg. 10, Nr. 51, März 1894, S. 243–246</note>
+               <author ref="pmbperson__2801" role="hat-geschaffen">Albert, Henri</author>
+               <date when="1894-03-01">1.3.1894</date>
+               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34296/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34296</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34296</idno>
+               <note type="work_kind">Rezension</note>
+               <note type="references">https://www.retronews.fr/journal/mercure-de-france/1-mars-1894/118/2019853/51
+
+In: Mercure de France, 1. 3. 1894, S. 243–246</note>
+            </bibl>
+            <bibl xml:id="pmb32252">
+               <title>Moderner Musen-Almanach auf das Jahr 1894</title>
+               <note type="bibliografische_angabe">Moderner Musen-Almanach auf das Jahr 1894. München: Dr. E. Albert 1894 (Ein Jahrbuch deutscher Kunst, 2. Jg.)</note>
+               <author ref="pmbperson__10928" role="hat-herausgegeben">Bierbaum, Otto Julius</author>
+               <date when="1893-01-01">1893</date>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32252</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32252</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb32252</idno>
+               <note type="work_kind">Publikationsorgan &gt;&gt; Jahrbuch</note>
+            </bibl>
+            <bibl xml:id="pmb30393">
+               <title>Die Glosse. Lustspiel in einem Act</title>
+               <title type="legacy-name-merge">Die Glosse. Lustspiel in einem Act</title>
+               <author ref="pmbperson__11673" role="hat-geschaffen">Herzl, Theodor</author>
+               <date notBefore="1894-01-01" when="1894-07-02">1894</date>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30393</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30393</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30393.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87817/</idno>
+               <note type="work_kind">Drama &gt;&gt; Einakter</note>
+            </bibl>
+         </listBibl>
+         <listPlace>
+            <place xml:id="pmb182">
+               <placeName>Paris</placeName>
+               <placeName type="alternative-name">P'ariz</placeName>
+               <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4044660-8</placeName>
+               <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
+               <placeName type="alternative-name">Pariž</placeName>
+               <placeName type="alternative-name">Parisius</placeName>
+               <placeName type="alternative-name">Île-de-France</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>48,85341 2,3488</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb166">Frankreich</placeName>
+                  <geo>46,0 2,0</geo>
+               </location>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="alternative-name">Vindobona (Wien)</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Wien?</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>48,2066 16,37341</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
+               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
+               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+            </place>
+            <place xml:id="pmb146">
+               <placeName>Frankfurt am Main</placeName>
+               <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000532</placeName>
+               <placeName type="legacy-name-merge">Frankfurt/M.?</placeName>
+               <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/16352/</placeName>
+               <placeName type="legacy-name-merge">Frankfurt</placeName>
+               <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/6412/</placeName>
+               <placeName type="legacy-uri-merge">http://sws.geonames.org/2925533/</placeName>
+               <placeName type="legacy-name-merge">Frankfurt a. Main</placeName>
+               <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/3358/</placeName>
+               <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/29358/</placeName>
+               <placeName type="alternative-name">Frankfurt, Main</placeName>
+               <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4018118-2</placeName>
+               <placeName type="alternative-name">Frankfurt/Main</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>50,11552 8,68417</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2925533/</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1794</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb146</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/146</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46955/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4018118-2</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb146</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64181/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb146</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
+            </place>
+         </listPlace>
+      </back>
    </text>
-   <back>
-      <listPerson>
-         <person xml:id="pmb11485">
-            <persName>
-               <forename>Paul</forename>
-               <surname>Goldmann</surname>
-            </persName>
-            <birth>
-               <date when="1865-01-31">31.01.1865</date>
-               <settlement ref="pmb677">
-                  <placeName type="pref">Breslau</placeName>
-                  <location>
-                     <geo>51,10773 17,03533</geo>
-                  </location>
-               </settlement>
-            </birth>
-            <death>
-               <date when="1935-09-25">25.09.1935</date>
-               <settlement ref="pmb50">
-                  <placeName type="pref">Wien</placeName>
-                  <location>
-                     <geo>48,2066 16,37341</geo>
-                  </location>
-               </settlement>
-            </death>
-            <sex value="male"/>
-            <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-            <occupation ref="pmb99">Journalist/Journalistin</occupation>
-            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-            <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
-            <affiliation>
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb29698">An der schönen blauen Donau</orgName>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29698</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29698</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29698</idno>
-            </affiliation>
-            <affiliation notBefore="1892-01-01" when="1892-07-01" notAfter="1892-12-31">
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb29442">Frankfurter Zeitung</orgName>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29442</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29442</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29442</idno>
-            </affiliation>
-            <affiliation notBefore="1890-01-01" when="1890-07-02" notAfter="1890-12-31">
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb29351">Neue Freie Presse</orgName>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29351</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29351</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29351</idno>
-            </affiliation>
-            <affiliation notBefore="1902-01-01" when="1902-07-02" notAfter="1902-12-31">
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb29351">Neue Freie Presse</orgName>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29351</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29351</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29351</idno>
-            </affiliation>
-         </person>
-         <person xml:id="pmb2121">
-            <persName>
-               <forename>Arthur</forename>
-               <surname>Schnitzler</surname>
-            </persName>
-            <birth>
-               <date when="1862-05-15">15.05.1862</date>
-               <settlement ref="pmb50">
-                  <placeName type="pref">Wien</placeName>
-                  <location>
-                     <geo>48,2066 16,37341</geo>
-                  </location>
-               </settlement>
-            </birth>
-            <death>
-               <date when="1931-10-21">21.10.1931</date>
-               <settlement ref="pmb50">
-                  <placeName type="pref">Wien</placeName>
-                  <location>
-                     <geo>48,2066 16,37341</geo>
-                  </location>
-               </settlement>
-            </death>
-            <sex value="male"/>
-            <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-            <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
-            <affiliation>
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb29698">An der schönen blauen Donau</orgName>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29698</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29698</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29698</idno>
-            </affiliation>
-            <affiliation>
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb29440">Die Gesellschaft</orgName>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29440</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29440</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29440</idno>
-            </affiliation>
-            <affiliation when="1888-08-20">
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb41367">Allgemeine Poliklinik</orgName>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41367/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41367</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41367</idno>
-            </affiliation>
-            <affiliation>
-               <term ref="pmb1153">in Relation zu</term>
-               <orgName ref="pmb46027">Akademisches Gymnasium Wien</orgName>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46027/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4409610-0</idno>
-            </affiliation>
-            <affiliation notBefore="1908-01-01" when="1908-07-01" notAfter="1908-12-31">
-               <term ref="pmb1153">in Relation zu</term>
-               <orgName ref="pmb29677">Franz-Grillparzer-Preis</orgName>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29677</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29677</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29677</idno>
-            </affiliation>
-            <affiliation when="1910-04-26">
-               <term ref="pmb1534">unterstützt</term>
-               <orgName ref="pmb46791">Ebner-Eschenbach-Stiftung</orgName>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46791/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb46791</idno>
-            </affiliation>
-            <affiliation when="1887-12-18">
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb39399">Internationale klinische Rundschau</orgName>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/39399/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39399</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb39399</idno>
-            </affiliation>
-            <affiliation notBefore="1919-01-01" when="1919-07-02" notAfter="1919-12-31">
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb29594">Deutschösterreichischer Autorenverband</orgName>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29594</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29594</idno>
-            </affiliation>
-            <affiliation notBefore="1918-01-01" when="1918-07-02" notAfter="1918-12-31">
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb60307">Freiwillige Schutzwache des 18. und 19. Bezirks</orgName>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60307/</idno>
-            </affiliation>
-            <affiliation notBefore="1880-01-01" when="1880-07-01" notAfter="1880-12-31">
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb29401">Wiener Medizinische Presse</orgName>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29401</idno>
-            </affiliation>
-            <affiliation when="1899-03-27">
-               <term ref="pmb1153">in Relation zu</term>
-               <orgName ref="pmb29675">Bauernfeld-Preis</orgName>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29675</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29675</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29675</idno>
-            </affiliation>
-            <affiliation when="1903-03-17">
-               <term ref="pmb1153">in Relation zu</term>
-               <orgName ref="pmb29675">Bauernfeld-Preis</orgName>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29675</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29675</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29675</idno>
-            </affiliation>
-         </person>
-         <person xml:id="pmb87848">
-            <persName>
-               <forename>Charles</forename>
-               <surname>Meunier</surname>
-            </persName>
-            <sex value="male"/>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87848/</idno>
-         </person>
-         <person xml:id="pmb23593">
-            <persName>
-               <forename>Josef</forename>
-               <surname>Rosengart</surname>
-            </persName>
-            <persName type="uri_gnd">https://d-nb.info/gnd/116623667</persName>
-            <birth>
-               <date when="1860-02-08">1860-02-08</date>
-               <settlement ref="pmb64559">
-                  <placeName type="pref">Laupheim</placeName>
-                  <location>
-                     <geo>48,22786 9,87874</geo>
-                  </location>
-               </settlement>
-            </birth>
-            <death>
-               <date when="1927-08-04">1927-08-04</date>
-               <settlement ref="pmb146">
-                  <placeName type="pref">Frankfurt am Main</placeName>
-                  <location>
-                     <geo>50,11552 8,68417</geo>
-                  </location>
-               </settlement>
-            </death>
-            <sex value="male"/>
-            <occupation ref="pmb1692">Arzt/Ärztin</occupation>
-            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19384</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/23593</idno>
-         </person>
-         <person xml:id="pmb34971">
-            <persName>
-               <forename>Vally</forename>
-               <surname>Rosengart</surname>
-            </persName>
-            <persName type="geburtsname_nachname">Goldmann</persName>
-            <persName type="uri_gnd">https://d-nb.info/gnd/116623772</persName>
-            <persName type="namensvariante">Wally</persName>
-            <birth>
-               <date when="1866-12-29">1866-12-29</date>
-               <settlement ref="pmb677">
-                  <placeName type="pref">Breslau</placeName>
-                  <location>
-                     <geo>51,10773 17,03533</geo>
-                  </location>
-               </settlement>
-            </birth>
-            <sex value="female"/>
-            <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34971/</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34971</idno>
-         </person>
-         <person xml:id="pmb87787">
-            <persName>
-               <forename>Henri</forename>
-               <surname>Alberti</surname>
-            </persName>
-            <birth>
-               <date notBefore="1868-01-01" when="1868-07-01" notAfter="1868-12-31">1868</date>
-               <settlement ref="pmb182">
-                  <placeName type="pref">Paris</placeName>
-                  <location>
-                     <geo>48,85341 2,3488</geo>
-                  </location>
-               </settlement>
-            </birth>
-            <death>
-               <date>c. 1935</date>
-            </death>
-            <sex value="male"/>
-            <occupation ref="pmb1404">Bildender Künstler/Bildende Künstlerin</occupation>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87787/</idno>
-         </person>
-         <person xml:id="pmb11673">
-            <persName>
-               <forename>Theodor</forename>
-               <surname>Herzl</surname>
-            </persName>
-            <birth>
-               <date when="1860-05-02">02.05.1860</date>
-               <settlement ref="pmb43471">
-                  <placeName type="pref">Budapest</placeName>
-                  <location>
-                     <geo>47,49835 19,04045</geo>
-                  </location>
-               </settlement>
-            </birth>
-            <death>
-               <date when="1904-07-03">03.07.1904</date>
-               <settlement ref="pmb470">
-                  <placeName type="pref">Edlach</placeName>
-                  <location>
-                     <geo>47,69255 15,80915</geo>
-                  </location>
-               </settlement>
-            </death>
-            <sex value="male"/>
-            <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-            <occupation ref="pmb99">Journalist/Journalistin</occupation>
-            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16165</idno>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118550241</idno>
-            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11673</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11673</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11673</idno>
-            <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11673.html</idno>
-            <affiliation notBefore="1891-10-01" when="1891-10-16" notAfter="1891-10-31">
-               <term ref="pmb1182">arbeitet für</term>
-               <orgName ref="pmb29351">Neue Freie Presse</orgName>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29351</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29351</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29351</idno>
-            </affiliation>
-         </person>
-      </listPerson>
-      <listBibl>
-         <bibl xml:id="pmb87849">
-            <title>[Feuilleton über Charles Meunier]</title>
-            <author ref="pmbperson__11485">Goldmann, Paul</author>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87849/</idno>
-            <note type="work_kind">Feuilleton</note>
-         </bibl>
-         <bibl xml:id="pmb30163">
-            <title>Weihnachts-Einkäufe</title>
-            <note type="bibliografische_angabe">Frankfurter Zeitung, 24. 12. 1891</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1891-12-24">24.12.1891</date>
-            <idno type="URL" subtype="theadok">https://theadok.at/work/30732</idno>
-            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30163</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30163</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30163</idno>
-            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30163.html</idno>
-            <note type="work_kind">Drama &gt;&gt; Einakter</note>
-         </bibl>
-      </listBibl>
-      <listPlace>
-         <place xml:id="pmb182">
-            <placeName>Paris</placeName>
-            <placeName type="alternative-name">P'ariz</placeName>
-            <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4044660-8</placeName>
-            <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
-            <placeName type="alternative-name">Pariž</placeName>
-            <placeName type="alternative-name">Parisius</placeName>
-            <location type="coords">
-               <geo>48,85341 2,3488</geo>
-            </location>
-            <idno type="URL" subtype="geonames">http://sws.geonames.org/2988507/</idno>
-            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
-         </place>
-         <place xml:id="pmb50">
-            <placeName>Wien</placeName>
-            <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-            <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
-            <placeName type="alternative-name">Bécs</placeName>
-            <placeName type="alternative-name">Land Wien</placeName>
-            <placeName type="alternative-name">Vídeň</placeName>
-            <placeName type="alternative-name">Wenia</placeName>
-            <placeName type="alternative-name">Beč</placeName>
-            <placeName type="alternative-name">Vindobona (Wien)</placeName>
-            <placeName type="legacy-name-merge">Vindobona</placeName>
-            <placeName type="alternative-name">Vienna</placeName>
-            <placeName type="legacy-name-merge">Wien?</placeName>
-            <location type="coords">
-               <geo>48,2066 16,37341</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb41240">Österreich</placeName>
-               <geo>47,33333 13,33333</geo>
-            </location>
-            <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-            <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
-            <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-         </place>
-         <place xml:id="pmb146">
-            <placeName>Frankfurt am Main</placeName>
-            <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000532</placeName>
-            <placeName type="legacy-name-merge">Frankfurt/M.?</placeName>
-            <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/16352/</placeName>
-            <placeName type="legacy-name-merge">Frankfurt</placeName>
-            <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/6412/</placeName>
-            <placeName type="legacy-uri-merge">http://sws.geonames.org/2925533/</placeName>
-            <placeName type="legacy-name-merge">Frankfurt a. Main</placeName>
-            <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/3358/</placeName>
-            <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/29358/</placeName>
-            <placeName type="alternative-name">Frankfurt, Main</placeName>
-            <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4018118-2</placeName>
-            <placeName type="alternative-name">Frankfurt/Main</placeName>
-            <location type="coords">
-               <geo>50,11552 8,68417</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb151">Deutschland</placeName>
-               <geo>51,5 10,5</geo>
-            </location>
-            <idno type="URL" subtype="geonames">https://sws.geonames.org/2925533/</idno>
-            <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1794</idno>
-            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb146</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/146</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46955/</idno>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4018118-2</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb146</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64181/</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
-         </place>
-      </listPlace>
-   </back>
 </TEI>

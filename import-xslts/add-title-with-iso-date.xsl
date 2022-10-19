@@ -38,7 +38,7 @@
             <xsl:attribute name="when">
                 <xsl:value-of select="$when"/>
             </xsl:attribute>
-            <xsl:value-of select="$correspDate/text()"/>
+            <xsl:value-of select="$when"/>
         </xsl:element>
     </xsl:template>
   

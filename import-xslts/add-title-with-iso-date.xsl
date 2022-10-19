@@ -30,6 +30,9 @@
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
+        <xsl:variable name="n">
+            <xsl:value-of select="$correspDate/@n"/>
+        </xsl:variable>
         <xsl:copy-of select="."/>
         <xsl:element name="title" namespace="http://www.tei-c.org/ns/1.0">
             <xsl:attribute name="type">

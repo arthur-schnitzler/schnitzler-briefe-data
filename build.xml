@@ -4,6 +4,14 @@
     <property name="editions" value="./data/editions"/>
     <delete dir="${tmpDir}"/>
     <mkdir dir="${tmpDir}"/>
+    <xslt style="./import-xslts/add-title-with-iso-date.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>
+    <move todir="${editions}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <mkdir dir="${tmpDir}"/>
     <xslt style="./import-xslts/langesS-1.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
@@ -21,8 +29,23 @@
         <fileset dir="${tmpDir}"/>
     </move>
     <mkdir dir="${tmpDir}"/>
-    
     <xslt style="./import-xslts/langesS-3.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>
+    <move todir="${editions}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <mkdir dir="${tmpDir}"/>
+    <xslt style="./import-xslts/remove-whitespace-1.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>
+    <move todir="${editions}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <mkdir dir="${tmpDir}"/>
+    <xslt style="./import-xslts/remove-whitespace-2.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>

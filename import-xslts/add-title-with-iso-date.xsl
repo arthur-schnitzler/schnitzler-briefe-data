@@ -9,7 +9,7 @@
        Die Werte werden aus der correspAction[@type='sent'] bezogen, @from, @notBefore werden zu @when
     -->
     
-    <xsl:template match="tei:title[@level='s']">
+    <xsl:template match="tei:titleStmt/tei:title[@level='s']">
         <xsl:variable name="correspDate" as="node()" select="ancestor::tei:TEI/descendant::tei:correspDesc/tei:correspAction[@type='sent']/tei:date"/>
         <xsl:variable name="when">
             <xsl:choose>

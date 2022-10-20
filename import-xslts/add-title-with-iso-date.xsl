@@ -45,7 +45,7 @@
             <xsl:attribute name="n">
             <xsl:value-of select="$correspDate/@n"/>
         </xsl:attribute>
-            <xsl:value-of select="$correspDate/text()"/>
+            <xsl:value-of select="$when"/>
         </xsl:element>
     </xsl:template>
   

@@ -9,6 +9,9 @@
        Die Werte werden aus der correspAction[@type='sent'] bezogen, @from, @notBefore werden zu @when
     -->
     
+    <xsl:template match="tei:titleStmt/tei:title[@type='iso-date']"/>
+
+
     <xsl:template match="tei:titleStmt/tei:title[@level='s']">
         <xsl:variable name="correspDate" as="node()" select="ancestor::tei:TEI/descendant::tei:correspDesc/tei:correspAction[@type='sent']/tei:date"/>
         <xsl:variable name="when">
@@ -30,18 +33,19 @@
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="n">
-            <xsl:value-of select="$correspDate/@n"/>
-        </xsl:variable>
+        
         <xsl:copy-of select="."/>
         <xsl:element name="title" namespace="http://www.tei-c.org/ns/1.0">
             <xsl:attribute name="type">
                 <xsl:text>iso-date</xsl:text>
             </xsl:attribute>
-            <xsl:attribute name="when">
+            <xsl:attribute name="when-iso">
                 <xsl:value-of select="$when"/>
             </xsl:attribute>
-            <xsl:value-of select="$when"/>
+            <xsl:attribute name="n">
+            <xsl:value-of select="$correspDate/@n"/>
+        </xsl:attribute>
+            <xsl:value-of select="$correspDate/text()"/>
         </xsl:element>
     </xsl:template>
   

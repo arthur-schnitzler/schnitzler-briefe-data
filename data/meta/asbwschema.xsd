@@ -82,6 +82,7 @@
                   <xs:enumeration value="schnitzler-tagebuch"/>
                   <xs:enumeration value="schnitzler-briefe"/>
                   <xs:enumeration value="schnitzler-lektueren"/>
+                  <xs:enumeration value="schnitzler-bahr"/>
                   <xs:enumeration value="withinCorrespondence"/>
                   <xs:enumeration value="withinCollection"/>
                   <xs:enumeration value="belongsToCorrespondence"/>
@@ -409,6 +410,7 @@
             <xs:element ref="tei:damage" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:rs" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:pb" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
          </xs:all>
          <xs:assert test="(child::*[1]) or (string-length(normalize-space(.)) &gt; 0)"/>
       </xs:complexType>
@@ -635,8 +637,6 @@
          <xs:element ref="tei:ref" maxOccurs="unbounded" minOccurs="0"/>
       </xs:all>
    </xs:complexType>
-      
-   
    <xs:element name="desc">
       <xs:alternative type="back_desc_type" test="@type = 'entity_type' or @type = 'entity_type_id'"/>
       <xs:alternative type="incident_desc_type" test="not(@type)"/>
@@ -1023,6 +1023,7 @@
          <xs:element ref="tei:ref" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
+         <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
       </xs:choice>
       <xs:attribute name="type" use="required">
          <xs:simpleType>
@@ -1034,7 +1035,8 @@
       </xs:attribute>
       <xs:attribute ref="xml:id" use="required"/>
       <xs:assert
-         test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren')] or not(tei:ref)"/>
+         test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and 
+         (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren' or @type = 'schnitzler-bahr')] or not(tei:ref)"/>
       <xs:assert test="not(descendant::tei:note)"/>
    </xs:complexType>
    <xs:complexType name="backNote_type-org">
@@ -1115,6 +1117,7 @@
             <xs:element ref="tei:supplied" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="tei:unclear" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="tei:space" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="tei:gap" minOccurs="0" maxOccurs="unbounded"/>
          </xs:choice>
          <xs:attribute name="agent">
             <xs:simpleType>
@@ -1311,6 +1314,7 @@
             <xs:element ref="tei:subst" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:del" maxOccurs="unbounded" minOccurs="0"/>
          </xs:all>
          <xs:attribute name="rend" use="optional">
             <xs:simpleType>

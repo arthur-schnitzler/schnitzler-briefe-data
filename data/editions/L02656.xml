@@ -133,11 +133,12 @@
         </ab>
          </refsDecl>
       </encodingDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2022-05-06">Angelegt</change>
          <change who="LU" when="2022-05-17">Durchsicht</change>
          <change who="LU" when="2022-05-17">Index check</change>
          <change who="MAM" when="2022-10-15">Kommentar ergänzt</change>
+         <change who="MAM" when="2022-11-10">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -147,7 +148,7 @@
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <dateline>
+               <dateline rend="center">
                   <pb facs="DLA_85.1.3171_00083"/>de <rs type="place" ref="#pmb168">berlin</rs>
                   44846 22 <date>27 9</date> 15m=</dateline>
             </opener>
@@ -165,13 +166,13 @@
                            Theater</rs>s‹ und Fräulein <rs type="person" ref="#pmb14953">
                            <hi rend="spaced_out">Marie Glümer</hi>
                         </rs>. Die Vermählung soll schon in den nächsten Wochen stattfinden. Demnach
-                        hat ›<rs type="work" ref="#pmb117976">Das Ewig-Weibliche</rs>› bei Director
+                        hat ›<rs type="work" ref="#pmb117976">Das Ewig-Weibliche</rs>‹ bei Director
                            <rs type="person" ref="#pmb21119">Martin</rs> in dieser Saison bereits
                         einen zweiten Erfolg aufzuweisen.</rs>
-                  </quote>« (<bibl>
+                  </quote>« <bibl>
                      <rs type="work" ref="#pmb88486"/>
                      <rs type="work" ref="#pmb59803">Berliner Lokal-Anzeiger</rs>, Jg. 19, Nr. 453,
-                        <date>27. 9. 1901</date>, Morgenblatt, 1. Ausgabe, S. 2</bibl>.)</note>
+                        <date>27. 9. 1901</date>, Morgenblatt, 1. Ausgabe, S. 2</bibl>.</note>
                verlobung von fraeulein <rs type="person" ref="#pmb14953">marie gluemer</rs> mit
                direktor <rs type="person" ref="#pmb21119">martin</rs>. <anchor type="commentary" xml:id="K_L02656-2"/>weisst du etwas darueber<note type="commentary" xml:id="K_L02656-2h">
                   <ref target="1901-09-27" type="schnitzler-tagebuch" subtype="see"/>
@@ -259,8 +260,8 @@
                   <forename>Paul Martin</forename>
                   <surname>Marton</surname>
                </persName>
-               <persName type="person-geburtsname_nachname">Blaustein</persName>
-               <persName type="person-geburtsname_vorname">Paul Martin</persName>
+               <persName type="person_geburtsname_nachname">Blaustein</persName>
+               <persName type="person_geburtsname-vorname">Paul Martin</persName>
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb103">Theaterleiter/Theaterleiterin</occupation>
@@ -272,13 +273,13 @@
                   <forename>Marie</forename>
                   <surname>Glümer</surname>
                </persName>
-               <persName type="person-geburtsname_nachname">Chlum</persName>
-               <persName type="person-ehename">Blaustein</persName>
-               <persName type="person-rufname">Mizi</persName>
-               <persName type="person-rufname">Mizi I</persName>
-               <persName type="person-rufname">Inconnue</persName>
-               <persName type="person-ehename">Martin</persName>
-               <persName type="person-ehename">Marton</persName>
+               <persName type="person_geburtsname_nachname">Chlum</persName>
+               <persName type="person_ehename">Blaustein</persName>
+               <persName type="person_rufname">Mizi</persName>
+               <persName type="person_rufname">Mizi I</persName>
+               <persName type="person_rufname">Inconnue</persName>
+               <persName type="person_ehename">Martin</persName>
+               <persName type="person_ehename">Marton</persName>
                <birth>
                   <date when="1867-07-03">03.07.1867</date>
                   <settlement ref="pmb50">
@@ -309,15 +310,15 @@
          <listBibl>
             <bibl xml:id="pmb59803">
                <title>Berliner Lokal-Anzeiger</title>
-               <title type="none">https://de.wikipedia.org/wiki/Berliner_Lokal-Anzeiger</title>
                <date notBefore="1883-01-01" when="1883-07-02">1883</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59803/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/werke/pmb59803</idno>
                <note type="work_kind">Publikationsorgan &gt;&gt; Tageszeitung</note>
             </bibl>
             <bibl xml:id="pmb88486">
-               <title>[?? Meldung der Verlobung von Glümer/Martin]</title>
-               <date when="1901-09-20">20.?9.1901</date>
+               <title>Die neueste Verlobung in Berliner Theaterkreisen</title>
+               <title type="werk_bibliografische-angabe">Berliner Lokal-Anzeiger, Jg. 19, Nr. 453, 27. 9. 1901, Morgenblatt, 1. Ausgabe, S. 2.</title>
+               <date when="1901-09-27">1901-09-27</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88486/</idno>
                <note type="work_kind">Notiz</note>
             </bibl>
@@ -345,18 +346,18 @@
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
                </location>
-               <idno type="URL" subtype="geonames">http://sws.geonames.org/2950159/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/entity/Q64</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -376,8 +377,6 @@
                   <geo>47,33333 13,33333</geo>
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
@@ -388,6 +387,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/entity/Q1741</idno>
             </place>
          </listPlace>
          <listOrg>
@@ -398,13 +398,14 @@
                <location type="located_in_place">
                   <placeName ref="pmb168">Berlin</placeName>
                   <geo>52,52437 13,41053</geo>
-                  <idno type="URL" subtype="geonames">http://sws.geonames.org/2950159/</idno>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
                   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="wikidata">https://www.wikidata.org/entity/Q64</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb720">Neues Theater</placeName>

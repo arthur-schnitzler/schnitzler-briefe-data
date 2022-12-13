@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" version="3.0">
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="false"/>
-    <xsl:strip-space elements="*"/>
+    <!--<xsl:strip-space elements="*"/>-->
     
     <!-- Dieses Template löscht allen whitespace aus physDesc und body. 
         Achtung, relevant ist auch strip-space! -->

@@ -89,6 +89,11 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
+         <xs:attribute name="source" use="optional">
+            <xs:simpleType>
+               <xs:restriction base="xs:string"/>
+            </xs:simpleType>
+         </xs:attribute>
          <xs:attribute name="subtype" use="optional">
             <xs:simpleType>
                <xs:restriction base="xs:NCName">
@@ -411,6 +416,7 @@
             <xs:element ref="tei:rs" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:pb" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
          </xs:all>
          <xs:assert test="(child::*[1]) or (string-length(normalize-space(.)) &gt; 0)"/>
       </xs:complexType>

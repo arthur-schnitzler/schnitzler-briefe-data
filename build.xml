@@ -11,42 +11,13 @@
     <move todir="${editions}">
         <fileset dir="${tmpDir}"/>
     </move>
-    <xslt style="./import-xslts/langesS-1.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
+    <xslt style="./import-xslts/langesS-neu.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>
     <move todir="${editions}">
         <fileset dir="${tmpDir}"/>
     </move>
-    
-    <xslt style="./import-xslts/langesS-2.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
-        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="${basedir}/saxon/saxon9he.jar"/>
-    </xslt>
-    <move todir="${editions}">
-        <fileset dir="${tmpDir}"/>
-    </move>
-    <xslt style="./import-xslts/langesS-3.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
-        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="${basedir}/saxon/saxon9he.jar"/>
-    </xslt>
-    <move todir="${editions}">
-        <fileset dir="${tmpDir}"/>
-    </move>
-    <!--<xslt style="./import-xslts/remove-whitespace-1.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
-        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="${basedir}/saxon/saxon9he.jar"/>
-    </xslt>
-    <move todir="${editions}">
-        <fileset dir="${tmpDir}"/>
-    </move>
-    <xslt style="./import-xslts/remove-whitespace-2.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
-        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="${basedir}/saxon/saxon9he.jar"/>
-    </xslt>
-    <move todir="${editions}">
-        <fileset dir="${tmpDir}"/>
-    </move>-->
     <delete dir="${tmpDir}"/>
 
 </project>

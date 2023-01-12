@@ -6,6 +6,8 @@ rm -rf ./data/indices
 mkdir -p ./data/indices
 rm -rf ./data/meta
 mkdir -p ./data/meta
+rm -rf ./data/tocs
+mkdir -p ./data/tocs
 
 rm main.zip
 
@@ -15,6 +17,8 @@ rm main.zip
 mv ./arthur-schnitzler-arbeit-main/editions ./data
 mv ./arthur-schnitzler-arbeit-main/indices ./data
 mv ./arthur-schnitzler-arbeit-main/meta ./data
+mv ./arthur-schnitzler-arbeit-main/tocs ./data
+
 
 rm -rf ./arthur-schnitzler-arbeit-main
 

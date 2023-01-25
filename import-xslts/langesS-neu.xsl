@@ -27,9 +27,14 @@
             <xsl:matching-substring>
                 <xsl:element name="c">
                     <xsl:attribute name="rendition">
-                        <xsl:text>#langesS2</xsl:text>
+                        <xsl:text>#langesS</xsl:text>
                     </xsl:attribute>
-                    <xsl:text>ss</xsl:text>
+                    <xsl:text>s</xsl:text>
+                </xsl:element><xsl:element name="c">
+                    <xsl:attribute name="rendition">
+                        <xsl:text>#langesS</xsl:text>
+                    </xsl:attribute>
+                    <xsl:text>s</xsl:text>
                 </xsl:element>
             </xsl:matching-substring>
             <xsl:non-matching-substring>

@@ -53,17 +53,9 @@
          <xs:sequence>
             <xs:element ref="tei:fileDesc"/>
             <xs:element ref="tei:profileDesc"/>
-            <xs:element ref="tei:encodingDesc"/>
             <xs:element ref="tei:revisionDesc"/>
          </xs:sequence>
          <xs:attribute name="type" type="xs:NCName"/>
-      </xs:complexType>
-   </xs:element>
-   <xs:element name="encodingDesc">
-      <xs:complexType>
-         <xs:sequence>
-            <xs:element ref="tei:refsDecl"/>
-         </xs:sequence>
       </xs:complexType>
    </xs:element>
    <xs:element name="refsDecl">
@@ -1532,6 +1524,9 @@
    </xs:element>
    <xs:element name="title">
       <xs:complexType mixed="true">
+         <xs:choice>
+            <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
+         </xs:choice>
          <xs:attribute name="ref" type="xs:string"/>
          <xs:attribute name="level" use="optional">
             <xs:simpleType>
@@ -1615,6 +1610,7 @@
             <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:gap" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
       </xs:complexType>
    </xs:element>

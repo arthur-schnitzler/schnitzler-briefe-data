@@ -80,8 +80,11 @@
                         <objectDesc>
                            <desc type="karte" subtype="bildpostkarte"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
+                        <handDesc hands="1">
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
+                           <handNote medium="blaue_tinte" style="lateinische-kurrent" corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -129,15 +132,10 @@
             </correspAction>
          </correspDesc>
       </profileDesc>
-      <encodingDesc>
-         <refsDecl>
-            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only,
-               e.g. @type="schnitzlerDiary" @target="1891-05-15". The complete URI is:
-               'https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__1891-05-15.html' </ab>
-         </refsDecl>
-      </encodingDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2023-01-09">Angelegt</change>
+         <change who="MAM" when="2023-02-24">Index check</change>
+         <change who="MAM" when="2023-02-24">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -146,13 +144,14 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3169_0036"/><foreign xml:lang="fra"><hi rend="latintype"><rs type="place" ref="#pmb41240">Autriche</rs> .</hi></foreign></addrLine><addrLine><foreign xml:lang="fra"><hi rend="pre-print">M</hi><hi rend="latintype">onsieur le Dr.</hi></foreign></addrLine><addrLine><hi rend="latintype">Arthur Schnitzler</hi></addrLine><addrLine><hi rend="latintype"><rs type="place" ref="#pmb414">Rudolfshoehe, Pension Petter</rs></hi></addrLine><addrLine><hi rend="latintype"><rs type="place" ref="#pmb213">Ischl</rs>.</hi></addrLine></address></div>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="HS.NZ85.1.3169_0035"/><hi rend="pre-print"><rs type="place" ref="#pmb55293">Rennes</rs> le</hi><space unit="chars" quantity="1"/><date when="1899-08-30">30. <hi rend="latintype">août</hi></date>.</dateline></opener><p>Vielen Dank, <salute rend="inline">lieb<c rendition="#langesS">s</c>ter Freund</salute>, für Deine Karte und
-               Deinen Brief. Ich beantworte ihn au<c rendition="#langesS">s</c>führlich,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>obald ich Zeit finde. Grüße mir das
+         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3169_0036"/><foreign xml:lang="fra"><rs type="place" ref="#pmb41240">Autriche</rs> . </foreign></addrLine><addrLine><foreign xml:lang="fra"><hi rend="pre-print">M</hi>onsieur le Dr. </foreign></addrLine><addrLine>Arthur Schnitzler </addrLine><addrLine><rs type="place" ref="#pmb414">Rudolfshoehe, Pension Petter</rs></addrLine><addrLine><rs type="place" ref="#pmb213">Ischl</rs>. </addrLine></address></div>
+         <div type="writingSession" n="1"><opener><p rend="center"><pb facs="HS.NZ85.1.3169_0035"/><hi rend="pre-print"><hi rend="capitals">M<unclear>.</unclear><space unit="chars" quantity="1"/><anchor type="commentary" xml:id="K_L02885-99"/><rs type="person" ref="#pmb142361">Demange</rs><note type="commentary" xml:id="K_L02885-99h"><rs type="person" ref="#pmb142361">Edgar Demange</rs> war der Anwalt von <rs type="person" ref="#pmb4216">Alfred Dreyfus</rs>.</note> sortant du <rs type="org" ref="#pmb142365">Conseil du Guerre</rs></hi></hi></p><dateline rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb55293">Rennes</rs> le</hi><space unit="chars" quantity="1"/><date when="1899-08-30">30. <hi rend="latintype">août</hi></date>.</dateline></opener><p><salute>Vielen Dank, lieb<c rendition="#langesS">s</c>ter Freund, </salute>für Deine Karte und
+               Deinen Brief. Ich beantworte ihn ausführlich,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>obald ich Zeit finde. Grüße mir das
                kleine <anchor type="commentary" xml:id="K_L02885-1"/><rs type="person" subtype="implied" ref="#pmb118324">Fräulein</rs> aus <hi rend="latintype"><rs type="place" ref="#pmb652">Prag</rs></hi><note type="commentary" xml:id="K_L02885-1h"><ref type="schnitzler-briefe" target="L02831" subtype="see"/>; die <rs type="person" subtype="implied" ref="#pmb118324 #pmb14384 #pmb14392">Familie
                      Bondy</rs> dürfte sich zeitgleich mit <rs type="person" ref="#pmb2121">Schnitzler</rs> in <rs type="place" ref="#pmb213">Bad Ischl</rs> aufgehalten
                   haben</note> und<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>age ihr, daß ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie nicht verge<c rendition="#langesS">s</c><c rendition="#langesS">s</c>en habe. So<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chöne Mädchen
-               vergißt man nicht! <c rendition="#dots" n="3"/> Viele treue Grüße<unclear>!</unclear></p><closer><signed>P. G.</signed><space unit="chars" quantity="1"/><del rend="strikethrough">P. G.</del></closer><postscript><p><anchor type="commentary" xml:id="K_L02885-2"/>Frei<c rendition="#langesS">s</c>pruch<note type="commentary" xml:id="K_L02885-2h"><rs type="person" ref="#pmb4216">Dreyfus</rs> wurde am <date when="1899-09-09">9. 9. 1899</date> schuldig gesprochen und am <date when="1899-09-19">19. 9. 1899</date> begnadigt.</note> wird immer wahr<c rendition="#langesS">s</c>cheinlicher.</p></postscript></div>
+               vergißt man nicht! <c rendition="#dots" n="3"/> Viele treue Grüße<unclear>!</unclear></p><closer><signed>P. G.</signed><space unit="chars" quantity="1"/><del rend="strikethrough">P. G.</del></closer><postscript><p>Ein 
+                  <anchor type="commentary" xml:id="K_L02885-2"/>Frei<c rendition="#langesS">s</c>pruch<note type="commentary" xml:id="K_L02885-2h"><rs type="person" ref="#pmb4216">Dreyfus</rs> wurde am <date when="1899-09-09">9. 9. 1899</date> schuldig gesprochen und am <date when="1899-09-19">19. 9. 1899</date> begnadigt.</note> wird immer wahr<c rendition="#langesS">s</c>cheinlicher.</p></postscript></div>
       </body>
       <back>
          <listPerson>
@@ -231,6 +230,69 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+            </person>
+            <person xml:id="pmb142361">
+               <persName>
+                  <forename>Edgar</forename>
+                  <surname>Demange</surname>
+               </persName>
+               <birth>
+                  <date when="1841-04-22">1841-04-22</date>
+                  <settlement ref="pmb36549">
+                     <placeName type="pref">Versailles</placeName>
+                     <location>
+                        <geo>48,80359 2,13424</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1925-02-11">1925-02-11</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb2799">Anwalt/Anwältin</occupation>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/142361/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1012608344</idno>
+            </person>
+            <person xml:id="pmb4216">
+               <persName>
+                  <forename>Alfred</forename>
+                  <surname>Dreyfus</surname>
+               </persName>
+               <birth>
+                  <date when="1859-10-09">1859-10-09</date>
+                  <settlement ref="pmb58763">
+                     <placeName type="pref">Mulhouse</placeName>
+                     <location>
+                        <geo>47,75205 7,32866</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1935-07-12">1935-07-12</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb619">Militär/Militärin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118527460</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14514</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb4216.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/4216/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb4216</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38056</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q171826</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Alfred_Dreyfus</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb4216.html</idno>
             </person>
             <person xml:id="pmb118324">
                <persName>
@@ -318,41 +380,6 @@
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13863</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14392/</idno>
             </person>
-            <person xml:id="pmb4216">
-               <persName>
-                  <forename>Alfred</forename>
-                  <surname>Dreyfus</surname>
-               </persName>
-               <birth>
-                  <date when="1859-10-09">1859-10-09</date>
-                  <settlement ref="pmb58763">
-                     <placeName type="pref">Mulhouse</placeName>
-                     <location>
-                        <geo>47,75205 7,32866</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1935-07-12">1935-07-12</date>
-                  <settlement ref="pmb182">
-                     <placeName type="pref">Paris</placeName>
-                     <location>
-                        <geo>48,85341 2,3488</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb619">Militär/Militärin</occupation>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118527460</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14514</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb4216.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/4216/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb4216</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38056</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q171826</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Alfred_Dreyfus</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb4216.html</idno>
-            </person>
          </listPerson>
          <listPlace>
             <place xml:id="pmb55293">
@@ -396,6 +423,8 @@
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
+               <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
+               <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
                <desc type="entity_type_id">1107</desc>
                <location type="coords">
@@ -409,6 +438,10 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41240/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41240</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb41240</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92143/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92203/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92143.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92203.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb41240.html</idno>
             </place>
             <place xml:id="pmb414">
@@ -471,6 +504,20 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Prag</idno>
             </place>
          </listPlace>
+         <listOrg>
+            <org xml:id="pmb142365">
+               <orgName>Conseil de guerre de la Xe région militaire de Rennes</orgName>
+               <orgName type="institution_namensvariante">Militärgericht der 10. Militärregion Rennes</orgName>
+               <location type="located_in_place">
+                  <placeName ref="pmb55293">Rennes</placeName>
+                  <geo>48,11198 -1,67429</geo>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/5865/</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55293/</idno>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2983990/</idno>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/142365/</idno>
+            </org>
+         </listOrg>
       </back>
    </text>
 </TEI>

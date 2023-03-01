@@ -80,18 +80,19 @@
                         <objectDesc>
                            <desc type="karte" subtype="bildpostkarte"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"/>
+                        <handDesc hands="1">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent" corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
                               <desc>
                                  <stamp n="1">
-                                    <placeName ref="#pmb134981">Mont-S<supplied>t-</supplied>Michel</placeName>
-                                    <date when="1899-08-20">20 <hi rend="capitals">aout</hi> 99</date>
-                                    <addSpan>
-                                       <foreign xml:lang="fra">Dimanche</foreign>
-                                    </addSpan>
+                                    <placeName ref="#pmb134981">Le Mont-S<unclear>
+                                          <hi rend="superscript">t</hi>-</unclear>Michel Manche</placeName>
+                                    <date when="1899-08-20">20 <hi rend="capitals">août</hi> 99</date>
                                  </stamp>
                                  <stamp n="2">
                                     <placeName ref="#pmb213">Ischl</placeName>
@@ -125,20 +126,14 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb213">Bad Ischl</placeName>
-               <date evidence="conjecture" notBefore="1899-08-21" notAfter="1899-08-25">[21. 8. 1899
-                  – 25. 8. 1899?]</date>
+               <date when="1899-08-23">23. 8. 1899</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
-      <encodingDesc>
-         <refsDecl>
-            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only,
-               e.g. @type="schnitzlerDiary" @target="1891-05-15". The complete URI is:
-               'https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__1891-05-15.html' </ab>
-         </refsDecl>
-      </encodingDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2023-01-09">Angelegt</change>
+         <change who="MAM" when="2023-02-24">Index check</change>
+         <change who="MAM" when="2023-02-24">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -147,16 +142,18 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3169_0034"/><foreign xml:lang="fra"><hi rend="latintype"><rs type="place" ref="#pmb41240">Autriche</rs></hi></foreign>!</addrLine><addrLine><foreign xml:lang="fra"><hi rend="pre-print">M</hi><hi rend="latintype">onsieur le Dr. Arthur Schnitzler</hi></foreign></addrLine><addrLine><hi rend="latintype"><rs type="place" ref="#pmb414">Pension Petter</rs></hi></addrLine><addrLine><hi rend="latintype"><rs type="place" ref="#pmb213">Ischl</rs></hi></addrLine></address></div>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="HS.NZ85.1.3169_0033"/><hi rend="pre-print"><rs type="place" ref="#pmb134981">Mont Saint Michel</rs>, le</hi><space unit="chars" quantity="1"/><date when="1899-08-20">20. <hi rend="latintype">août</hi></date></dateline></opener><p>Ein Sonntagsausflug von <hi rend="latintype"><rs type="place" ref="#pmb55293">Rennes</rs></hi> nach dem <hi rend="latintype"><rs type="place" ref="#pmb134981">Mont St. Michel</rs></hi>. Einer der <del rend="strikethrough"><unclear>mer</unclear>k</del> merkwürdig<c rendition="#langesS">s</c>ten Orte der Welt: Fel<c rendition="#langesS">s</c>en, Meer und
-               Gottheit. In <hi rend="latintype"><rs type="place" ref="#pmb55293">Rennes</rs></hi> arbeiten wir uns todt, und noch i<c rendition="#langesS">s</c>t <anchor type="commentary" xml:id="K_L02884-1"/>kein Ende<note type="commentary" xml:id="K_L02884-1h">Bezug
+         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3169_0034"/><foreign xml:lang="fra"><rs type="place" ref="#pmb41240">Autriche</rs></foreign>!</addrLine><addrLine><foreign xml:lang="fra"><hi rend="pre-print">M</hi>onsieur le Dr. Arthur Schnitzler
+                  </foreign></addrLine><addrLine><rs type="place" ref="#pmb414">Pension Petter</rs></addrLine><addrLine><rs type="place" ref="#pmb213">Ischl</rs></addrLine></address></div>
+         <div type="writingSession" n="1"><opener><p rend="center"><pb facs="HS.NZ85.1.3169_0033"/><hi rend="pre-print"><rs type="place" ref="#pmb142352">Auberge de la Truie qui File</rs>
+                   XIII<hi rend="superscript">e</hi> Siècle</hi></p><p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb142354">La Tour du Guet</rs></hi></p><p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb142358">L’Hôtel du Soleil Royal</rs>.</hi></p><p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb142356">La Porte du Roi</rs>.</hi></p><dateline rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb134981">Mont Saint Michel</rs>, le</hi><space unit="chars" quantity="1"/><date when="1899-08-20">20. <hi rend="latintype">août</hi></date></dateline></opener><p>Ein Sonntagsausflug von <hi rend="latintype"><rs type="place" ref="#pmb55293">Rennes</rs></hi> nach dem <hi rend="latintype"><rs type="place" ref="#pmb134981">Mont St. Michel</rs></hi>. Einer der <del rend="strikethrough"><unclear>mer</unclear>k</del> merkwürdig<c rendition="#langesS">s</c>ten Orte der Welt: Fel<c rendition="#langesS">s</c>en, Meer und
+               Gothik. In <hi rend="latintype"><rs type="place" ref="#pmb55293">Rennes</rs></hi> arbeiten wir uns todt, und noch i<c rendition="#langesS">s</c>t <anchor type="commentary" xml:id="K_L02884-1"/>kein Ende<note type="commentary" xml:id="K_L02884-1h">Bezug
                   auf den seit <date when="1899-08-08">8. 8. 1899</date> andauerden neuen
-                  Kriegsberichtsprozess in der Affäre <rs type="person" ref="#pmb4216">Dreyfus</rs>,
+                  Kriegsgerichtsprozess in der Affäre <rs type="person" ref="#pmb4216">Dreyfus</rs>,
                   der bis in den <date when="1899-09">September</date> fortdauerte
-                  (Schuldigsprechung am <date when="1899-09-09">9. 9. 1899</date>, Begnadigung am
+                  (Schuldspruch am <date when="1899-09-09">9. 9. 1899</date>, Begnadigung am
                      <date when="1899-09-19">19. 9. 1899</date>)</note>
                   abzu<c rendition="#langesS">s</c>ehen<unclear>.</unclear> Bisher<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>cheint nur Verurtheilung oder
-                  <unclear>wen</unclear>ig<c rendition="#langesS">s</c>tens<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chäbiger Frei<c rendition="#langesS">s</c>pruch zu fürchten. Schreib’ mir
+                  wenig<c rendition="#langesS">s</c>tens<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chäbiger Frei<c rendition="#langesS">s</c>pruch zu fürchten. Schreib’ mir
                bald u. grüße Alle, die nach mir fragen. Viele Grüße! <signed>P. G.</signed></p></div>
       </body>
       <back>
@@ -314,6 +311,8 @@
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
+               <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
+               <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
                <desc type="entity_type_id">1107</desc>
                <location type="coords">
@@ -327,6 +326,10 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41240/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41240</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb41240</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92143/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92203/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92143.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92203.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb41240.html</idno>
             </place>
             <place xml:id="pmb414">
@@ -353,6 +356,58 @@
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb214.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/414/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb414</idno>
+            </place>
+            <place xml:id="pmb142352">
+               <placeName>La Truie qui File</placeName>
+               <desc type="entity_type">Gebäude (K.GBD)</desc>
+               <desc type="entity_type_id">24</desc>
+               <location type="coords">
+                  <geo>48,63623 -1,5105487</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb134981">Le Mont-Saint-Michel</placeName>
+                  <geo>48,635833 -1,510556</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/142352/</idno>
+            </place>
+            <place xml:id="pmb142354">
+               <placeName>La Tour du Guet</placeName>
+               <desc type="entity_type">Gebäude (K.GBD)</desc>
+               <desc type="entity_type_id">24</desc>
+               <location type="coords">
+                  <geo>48,635029 -1,5105235</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb134981">Le Mont-Saint-Michel</placeName>
+                  <geo>48,635833 -1,510556</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/142354/</idno>
+            </place>
+            <place xml:id="pmb142358">
+               <placeName>L’Hôtel du Soleil Royal</placeName>
+               <desc type="entity_type">Hotel (K.HTL)</desc>
+               <desc type="entity_type_id">12</desc>
+               <location type="coords">
+                  <geo>48,6350291 -1,51065367</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb134981">Le Mont-Saint-Michel</placeName>
+                  <geo>48,635833 -1,510556</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/142358/</idno>
+            </place>
+            <place xml:id="pmb142356">
+               <placeName>La Porte du Roy</placeName>
+               <desc type="entity_type">Gebäude (K.GBD)</desc>
+               <desc type="entity_type_id">24</desc>
+               <location type="coords">
+                  <geo>48,63505 -1,510682</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb134981">Le Mont-Saint-Michel</placeName>
+                  <geo>48,635833 -1,510556</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/142356/</idno>
             </place>
             <place xml:id="pmb55293">
                <placeName>Rennes</placeName>

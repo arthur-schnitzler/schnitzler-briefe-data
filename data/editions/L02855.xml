@@ -80,11 +80,14 @@
                         <objectDesc>
                            <desc type="karte" subtype="bildpostkarte"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="blaue_tinte" style="lateinische-kurrent"/>
+                        <handDesc hands="1">
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
+                           <handNote medium="blaue_tinte" style="lateinische-kurrent" corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
-                           <incident type="receiver">
+                           <incident type="postal">
                               <desc>
                                  <stamp n="1">
                                     <placeName ref="#pmb118680">Tsintau China</placeName>
@@ -98,7 +101,7 @@
                                     <placeName ref="#pmb50">Wien 9/3 72</placeName>
                                     <date when="1898-09-19">19. 9. 98</date>
                                     <time>
-                                       <unclear>9</unclear>. V</time>
+                                       <unclear>9</unclear>.V</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
                               </desc>
@@ -127,21 +130,15 @@
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb45258">München</placeName>
-               <date evidence="conjecture" notBefore="1898-08-06" notAfter="1898-08-10">[6. 8. 1898
-                  – 10. 8. 1898?]</date>
+               <placeName ref="#pmb50">Wien</placeName>
+               <date when="1898-09-19">19. 9. 1898</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
-      <encodingDesc>
-         <refsDecl>
-            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only,
-               e.g. @type="schnitzlerDiary" @target="1891-05-15". The complete URI is:
-               'https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__1891-05-15.html' </ab>
-         </refsDecl>
-      </encodingDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2022-12-06">Angelegt</change>
+         <change who="MAM" when="2023-02-20">Durchsicht</change>
+         <change who="MAM" when="2023-02-20">Index check</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -150,8 +147,10 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3168_0046"/><hi rend="pre-print">An</hi></addrLine><addrLine><hi rend="latintype">Herrn</hi></addrLine><addrLine><hi rend="latintype">Dr. Arthur Schnitzler</hi></addrLine><addrLine><hi rend="pre-print">in</hi><space unit="chars" quantity="1"/><hi rend="latintype"><rs type="place" ref="#pmb50">Wien</rs></hi></addrLine><addrLine><rs type="place" ref="#pmb397"><hi rend="latintype">XI. Frankgaße</hi> 1</rs>.</addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="HS.NZ85.1.3168_0047"/>Herzlich<c rendition="#langesS">s</c>ten Gruß aus <hi rend="latintype"><rs type="place" ref="#pmb118812">Kiautschou</rs></hi>! <signed>Paul Goldmann</signed></p><p><hi rend="latintype"><rs type="place" ref="#pmb118680">Tsintau</rs></hi>, <date when="1898-08-05">5. Augu<c rendition="#langesS">s</c>t</date></p></div>
+         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3168_0046"/><hi rend="pre-print">An</hi></addrLine><addrLine>Herrn</addrLine><addrLine>Dr. Arthur Schnitzler</addrLine><addrLine><hi rend="pre-print">in</hi><space unit="chars" quantity="1"/><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb397">IX. Frankgaße 1</rs>.</addrLine></address></div>
+         <div type="writingSession" n="1"><opener><p rend="center"><pb facs="HS.NZ85.1.3168_0047"/><hi rend="pre-print"><rs type="place" ref="#pmb141914">Tsingtau: Hauptthor des
+                     Artillerielagers</rs>.</hi></p></opener><p>Herzlich<c rendition="#langesS">s</c>ten Gruß aus <hi rend="latintype"><rs type="place" ref="#pmb118812">Kiautschou</rs></hi>! <signed>Paul Goldmann</signed></p><postscript><dateline><hi rend="latintype"><rs type="place" ref="#pmb118680">Tsintau</rs></hi>, <date when="1898-08-05">5. Augu<c rendition="#langesS">s</c>t</date></dateline><p rend="center"><hi rend="pre-print">Aufnahme in <rs type="place" ref="#pmb1108">China</rs> u.
+                     Ausführung: <rs type="org" ref="#pmb141916">Graph. Gesellschaft</rs>, <rs type="place" ref="#pmb168">Berlin</rs><space unit="chars" quantity="1"/><date>1898</date>.</hi></p></postscript></div>
       </body>
       <back>
          <listPerson>
@@ -191,6 +190,7 @@
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0028183c</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2059817</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -228,6 +228,7 @@
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -282,34 +283,6 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
             </place>
-            <place xml:id="pmb45258">
-               <placeName>München</placeName>
-               <placeName type="legacy-name-merge">München?</placeName>
-               <placeName type="legacy-name-merge">Munich</placeName>
-               <placeName type="alternative-name">Monacho</placeName>
-               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
-               <desc type="entity_type_id">1415</desc>
-               <location type="coords">
-                  <geo>48,13743 11,57549</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb314">Bayern</placeName>
-                  <geo>49,0 11,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4127793-4</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38129/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/45258/</idno>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2867714/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb45258</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb45258</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb45258.html</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1726</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/M%C3%BCnchen</idno>
-            </place>
             <place xml:id="pmb397">
                <placeName>Frankgasse</placeName>
                <desc type="entity_type">Straße (K.STR)</desc>
@@ -325,6 +298,19 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/397/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb397</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb397.html</idno>
+            </place>
+            <place xml:id="pmb141914">
+               <placeName>Artillerielager Tsingtau</placeName>
+               <desc type="entity_type">Gebäude (K.GBD)</desc>
+               <desc type="entity_type_id">24</desc>
+               <location type="coords">
+                  <geo>36,060423 120,33475</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb118680">Qingdao</placeName>
+                  <geo>36,09193 120,328056</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/141914/</idno>
             </place>
             <place xml:id="pmb118812">
                <placeName>Kiautschou</placeName>
@@ -343,7 +329,75 @@
                   <date from="1897-01-01" to="1914-07-02">1897 – 1914</date>
                </note>
             </place>
+            <place xml:id="pmb1108">
+               <placeName>China</placeName>
+               <placeName type="alternative-name">Volksrepublik China</placeName>
+               <placeName type="alternative-name">People’s Republic of China</placeName>
+               <placeName type="alternative-name">People's Republic of China</placeName>
+               <desc type="entity_type">Land (A.LND)</desc>
+               <desc type="entity_type_id">38</desc>
+               <location type="coords">
+                  <geo>32,8 103,083</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1108/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1108</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59004/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64421/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65678/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/1814991/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb1108.html</idno>
+            </place>
+            <place xml:id="pmb168">
+               <placeName>Berlin</placeName>
+               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Barlīn</placeName>
+               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Berolino</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+               <desc type="entity_type_id">1418</desc>
+               <location type="coords">
+                  <geo>52,52437 13,41053</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
+            </place>
          </listPlace>
+         <listOrg>
+            <org xml:id="pmb141916">
+               <orgName>Graphische Gesellschaft (Berlin)</orgName>
+               <desc type="entity_type">Verlag</desc>
+               <desc type="entity_type_id">975</desc>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
+                  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
+                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/141916/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1072993171</idno>
+               <note type="apis_dates">
+                  <date from="1897-01-01" to="1923-07-02">1897 – 1923</date>
+               </note>
+            </org>
+         </listOrg>
       </back>
    </text>
 </TEI>

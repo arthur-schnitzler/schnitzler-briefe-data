@@ -434,16 +434,27 @@
                     </div>
                     <div type="level3">
                         <head xml:id="h.m49xdzuyi1vy">ref</head>
-                        <p>Dient für Verweise. Die wichtigsten Fälle werden in Folge beschrieben. Soweit sinnvoll, können
-                            mit dem Attribut <code>@subtype</code> genauere Spezifizierungen der Beziehung vorgenommen werden, etwa »vgl.«, »siehe«
+                        <p>Dient für Verweise. Die wichtigsten Fälle werden in Folge beschrieben.
+                            Soweit sinnvoll, können mit dem Attribut <code>@subtype</code> genauere
+                            Spezifizierungen der Beziehung vorgenommen werden, etwa »vgl.«, »siehe«
                             oder – am häufigsten – »date-only«. Im letzteren Fall wird in der
-                            Ausgabe das Datum entsprechend der Konvention (D)D. (M)M. YYYY gesetzt und
-                            ist es online als Link auswählbar.</p>
-                        <p><code>@type="schnitzler-briefe"</code> enthält in <code>@target</code> die Briefnummer/den Dateinamen (ohne ».xml«).</p>
-                        <p><code>@type="schnitzler-tagebuch"</code> ist in <code>@target</code> mit einem ISO-Datum
+                            Ausgabe das Datum entsprechend der Konvention (D)D. (M)M. YYYY gesetzt
+                            und ist es online als Link auswählbar.</p>
+                        <p><code>@type="schnitzler-briefe"</code> (Verweis auf einen Brief innerhalb
+                            der <ref target="https://schnitzler-briefe.acdh.oeaw.ac.at/"
+                                >Briefedition</ref>) enthält in <code>@target</code> die
+                            Briefnummer/den Dateinamen (ohne ».xml«).</p>
+                        <p><code>@type="schnitzler-tagebuch"</code> (Verweis auf die digitale
+                            Edition des <ref target="https://schnitzler-tagebuch.acdh.oeaw.ac.at/"
+                                >Tagebuch</ref>s) ist in <code>@target</code> mit einem ISO-Datum
                             spezifiziert.</p>
-                        <p>Für zwei weitere Arten der Verweise
-                            siehe <code>correspContext</code> weiter unten.</p>
+                        <p><code>@type="schnitzler-lektüren"</code> (Verweis auf die digitale
+                            Edition der <ref target="https://schnitzler-lektueren.acdh.oeaw.ac.at/"
+                                >Leseliste</ref>) enthält in <code>@target</code> eine Referenz auf
+                            eine Region bzw. ein Land (z. B. »Deutschsprachige Literatur«,
+                            »Frankreich«).</p>
+                        <p>Für zwei weitere Arten der Verweise siehe <code>correspContext</code>
+                            weiter unten.</p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.bczvlasvnqe6">supplied</head>
@@ -1134,13 +1145,16 @@
                             <code>correspAction</code> dargestellt, wobei das erste immer
                             <code>correspAction[@type="sent"]</code> und das letzte immer
                             <code>correspAction[@type="received"]</code> ist. Dazwischen können
-                        weitere Vorgänge liegen, vor allem die offiziell empfohlenen: »<code>transmitted</code>« (Übermittlung, beispielsweise Aufgabe am Postamt),
-                            »<code>forwarded</code>« (Weiterleitung), »<code>redirected</code>« (neue Adressierung). Diese sind dann
-                        anzuwenden, wenn sich verschiedene Abweichungen ergeben sollten – etwa, dass
-                        eine Postkarte an einem anderen Tag datiert ist als der Aufgabestempel. Eine zusätzliche
-                    Spezifierung wurde mit »delivered« eingeführt, für Korrespondenzstücke, die zwar ihren Zielort
-                    erreichten, aber der Adressat, die Adressatin nicht angetroffen und von diesem oder dieser
-                    erst später in Empfang genommen wurde.</p>
+                        weitere Vorgänge liegen, vor allem die offiziell empfohlenen:
+                            »<code>transmitted</code>« (Übermittlung, beispielsweise Aufgabe am
+                        Postamt), »<code>forwarded</code>« (Weiterleitung),
+                        »<code>redirected</code>« (neue Adressierung). Diese sind dann anzuwenden,
+                        wenn sich verschiedene Abweichungen ergeben sollten – etwa, dass eine
+                        Postkarte an einem anderen Tag datiert ist als der Aufgabestempel. Eine
+                        zusätzliche Spezifierung wurde mit »delivered« eingeführt, für
+                        Korrespondenzstücke, die zwar ihren Zielort erreichten, aber der Adressat,
+                        die Adressatin nicht angetroffen und von diesem oder dieser erst später in
+                        Empfang genommen wurde.</p>
                     <div type="level3">
                         <head xml:id="h.3s282ddvha26">correspAction</head>
                         <p>Neben dem verpflichtenden Attribut <code>@type</code> gibt es drei

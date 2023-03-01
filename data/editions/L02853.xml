@@ -83,7 +83,7 @@
                            <desc type="_seiten" n="3"/>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="blaue_tinte" style="lateinische-kurrent"/>
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
                         </handDesc>
                         <additions>
                            <incident type="receiver">
@@ -114,15 +114,10 @@
             </correspAction>
          </correspDesc>
       </profileDesc>
-      <encodingDesc>
-         <refsDecl>
-            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only,
-               e.g. @type="schnitzlerDiary" @target="1891-05-15". The complete URI is:
-               'https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__1891-05-15.html' </ab>
-         </refsDecl>
-      </encodingDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2022-12-06">Angelegt</change>
+         <change who="MAM" when="2023-02-20">Durchsicht</change>
+         <change who="MAM" when="2023-02-20">Index check</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -132,9 +127,15 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="HS.NZ85.1.3168_0042-1"/><hi rend="latintype"><rs type="place" ref="#pmb37885">Shanghai</rs></hi>, <date when="1898-07-21">21. Juli</date>.</dateline><salute rend="center">Mein lieber Freund,</salute></opener><p>Die<c rendition="#langesS">s</c>er Tage empfing ich Deine lieben Karten aus <anchor type="commentary" xml:id="K_L02853-1"/><hi rend="latintype"><rs type="place" ref="#pmb17">Steiermark</rs></hi><note type="commentary" xml:id="K_L02853-1h"><ref type="schnitzler-briefe" target="L02845" subtype="see"/></note>. Ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>age Dir, <hi rend="latintype"><rs type="person" ref="#pmb10863">Richard</rs></hi> u.<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>einer <rs type="person" subtype="implied" ref="#pmb10860">Frau</rs> vielen
-               Dank, daß Ihr an mich gedacht habt. Auch dem Herrn <hi rend="latintype"><rs type="person" ref="#pmb11981">Kramer</rs></hi> bitte ich, zu <anchor type="commentary" xml:id="K_L02853-2"/>danken<note type="commentary" xml:id="K_L02853-2h">Bezug unklar</note>; wenn ich wieder einmal
-               ein Familienblatt herausgebe,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o werde ich alle Gedichte von ihm nehmen.</p><p>Ich leide hier ganz namenlos unter der fürchterlichen Hitze des tropi<c rendition="#langesS">s</c>chen <rs type="place" subtype="implied" ref="#pmb1108">chin</rs>e<c rendition="#langesS">s</c>i<c rendition="#langesS">s</c>chen Sommers. Seit
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="HS.NZ85.1.3168_0042-1"/><hi rend="latintype"><rs type="place" ref="#pmb37885">Shanghai</rs></hi>, <date when="1898-07-21">21. Juli</date>.</dateline><salute rend="center">Mein lieber Freund,</salute></opener><p>Die<c rendition="#langesS">s</c>er Tage empfing ich Deine lieben <anchor type="commentary" xml:id="K_L02853-1"/>Karten aus 
+               <hi rend="latintype"><rs type="place" ref="#pmb17">Steiermark</rs></hi><note type="commentary" xml:id="K_L02853-1h">Von <ref type="schnitzler-tagebuch" target="1898-06-05" subtype="date-only"/> bis
+                  <ref type="schnitzler-tagebuch" target="1898-06-10" subtype="date-only"/> machten <rs type="person" ref="#pmb2121">Schnitzler</rs>
+                  und <rs type="person" ref="#pmb11981">Leopold Kramer</rs> eine gemeinsame Radpartie durch die <rs type="place" ref="#pmb17">Steiermark</rs>
+                  bis <rs type="place" ref="#pmb651">Kärnten</rs>. Am <ref type="schnitzler-tagebuch" target="1898-06-07" subtype="date-only"/> stiegen
+                  sie für eine Nacht in <rs type="place" ref="#pmb34860">Steindorf am Ossiachersee</rs> ab, wo <rs type="person" ref="#pmb10863">Richard</rs>
+                  und <rs type="person" ref="#pmb10860">Paula Beer-Hofmann</rs> für den Sommer wohnten.</note>. Ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>age Dir, <hi rend="latintype"><rs type="person" ref="#pmb10863">Richard</rs></hi> u.<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>einer <rs type="person" subtype="implied" ref="#pmb10860">Frau</rs> vielen
+               Dank, daß Ihr an mich gedacht habt. Auch dem Herrn <hi rend="latintype"><rs type="person" ref="#pmb11981">Kramer</rs></hi> bitte ich, zu danken; wenn ich wieder einmal
+               ein <rs type="work" subtype="implied" ref="#pmb35860">Familienblatt</rs> herausgebe,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o werde ich alle Gedichte von ihm nehmen.</p><p>Ich leide hier ganz namenlos unter der fürchterlichen Hitze des tropi<c rendition="#langesS">s</c>chen <rs type="place" subtype="implied" ref="#pmb1108">chin</rs>e<c rendition="#langesS">s</c>i<c rendition="#langesS">s</c>chen Sommers. Seit
                Wochen<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chlafe <pb facs="HS.NZ85.1.3168_0043-0"/>ich keine Nacht mehr als zwei bis
                drei Stunden. Es i<c rendition="#langesS">s</c>t einfach zum Verrücktwerden; und da es im Norden die<c rendition="#langesS">s</c>es
                verfluchten <rs type="place" subtype="implied" ref="#pmb1108">Land</rs>es genau<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o
@@ -145,7 +146,8 @@
                die Pocken kriegen kann, wie nichts. Näch<c rendition="#langesS">s</c>ten <date when="1898-07-25">Montag</date>
                fahre ich nach <hi rend="latintype"><rs type="place" ref="#pmb118812">Kiautschou</rs></hi> (Meine Adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e bleibt <hi rend="latintype"><rs type="place" ref="#pmb37885">Shanghai</rs></hi>). Ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>age Dir: vierzehn Tage in <rs type="place" ref="#pmb263">Florenz</rs><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind be<c rendition="#langesS">s</c><c rendition="#langesS">s</c>er, als<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>echs Monate in <rs type="place" ref="#pmb1108">China</rs>. Das
                Heimweh plagt mich unablä<c rendition="#langesS">s</c><c rendition="#langesS">s</c>ig, und ich wün<c rendition="#langesS">s</c>chte, ich wäre<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chon wieder in <rs type="place" ref="#pmb468">Europa</rs>.</p><p>Hoffentlich höre ich bald wieder von Dir. Grüß’ mir Deine <rs type="person" subtype="implied" ref="#pmb2378">Freundin</rs> u.<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ei Du<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t von Herzen
-               gegrüßt! Dein treuer <signed>Paul Goldmann.</signed></p></div>
+               gegrüßt!
+            </p><closer>Dein treuer <signed>Paul Goldmann.</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -185,6 +187,7 @@
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0028183c</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2059817</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -222,75 +225,7 @@
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-            </person>
-            <person xml:id="pmb10863">
-               <persName>
-                  <forename>Richard</forename>
-                  <surname>Beer-Hofmann</surname>
-               </persName>
-               <birth>
-                  <date when="1866-07-11">1866-07-11</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,2066 16,37341</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1945-09-26">1945-09-26</date>
-                  <settlement ref="pmb44053">
-                     <placeName type="pref">New York City</placeName>
-                     <location>
-                        <geo>40,71427 -74,00597</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13551</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118654756</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10863.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10863/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10863</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10863.html</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp52172</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=B#DWpers1010</idno>
-               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00280f95</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q213750</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Richard_Beer-Hofmann</idno>
-            </person>
-            <person xml:id="pmb10860">
-               <persName>
-                  <forename>Paula</forename>
-                  <surname>Beer-Hofmann</surname>
-               </persName>
-               <persName type="person_geburtsname_nachname">Lissy</persName>
-               <birth>
-                  <date when="1879-02-25">25.02.1879</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,2066 16,37341</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1939-10-30">30.10.1939</date>
-                  <settlement ref="pmb484">
-                     <placeName type="pref">Zürich</placeName>
-                     <location>
-                        <geo>47,37174 8,54226</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="female"/>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13550</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/119044994</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10860.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10860/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10860</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q95004282</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
             <person xml:id="pmb11981">
                <persName>
@@ -330,6 +265,78 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q106287778</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q115028</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Leopold_Kramer</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb11981.html</idno>
+            </person>
+            <person xml:id="pmb10863">
+               <persName>
+                  <forename>Richard</forename>
+                  <surname>Beer-Hofmann</surname>
+               </persName>
+               <birth>
+                  <date when="1866-07-11">1866-07-11</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-09-26">1945-09-26</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13551</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118654756</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10863/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10863</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp52172</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=B#DWpers1010</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00280f95</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q213750</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Richard_Beer-Hofmann</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb10863.html</idno>
+            </person>
+            <person xml:id="pmb10860">
+               <persName>
+                  <forename>Paula</forename>
+                  <surname>Beer-Hofmann</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Lissy</persName>
+               <birth>
+                  <date when="1879-02-25">25.02.1879</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1939-10-30">30.10.1939</date>
+                  <settlement ref="pmb484">
+                     <placeName type="pref">Zürich</placeName>
+                     <location>
+                        <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13550</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/119044994</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10860.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10860/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10860</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q95004282</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb10860.html</idno>
             </person>
             <person xml:id="pmb2378">
                <persName>
@@ -426,11 +433,47 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q41358</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Steiermark</idno>
             </place>
+            <place xml:id="pmb651">
+               <placeName>Kärnten</placeName>
+               <desc type="entity_type">Teil eines Landes (A.LNDX)</desc>
+               <desc type="entity_type_id">13</desc>
+               <location type="coords">
+                  <geo>46,75 13,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q37985</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2774686/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb651.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/651/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb651</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb651.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/K%C3%A4rnten</idno>
+            </place>
+            <place xml:id="pmb34860">
+               <placeName>Steindorf am Ossiacher See</placeName>
+               <desc type="entity_type">http://www.geonames.org/ontology#A.ADM3</desc>
+               <desc type="entity_type_id">1124</desc>
+               <location type="coords">
+                  <geo>46,6992 13,98892</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/7871687/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34860/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34860</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91836/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91836.html</idno>
+            </place>
             <place xml:id="pmb1108">
                <placeName>China</placeName>
                <placeName type="alternative-name">Volksrepublik China</placeName>
-               <placeName type="alternative-name">People's Republic of China</placeName>
                <placeName type="alternative-name">People’s Republic of China</placeName>
+               <placeName type="alternative-name">People's Republic of China</placeName>
                <desc type="entity_type">Land (A.LND)</desc>
                <desc type="entity_type_id">38</desc>
                <location type="coords">
@@ -438,6 +481,8 @@
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1108/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1108</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59004/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64421/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65678/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/1814991/</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb1108.html</idno>
@@ -456,7 +501,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/118812/</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Kiautschou</idno>
                <note type="apis_dates">
-                  <date from="1897-01-01" to="1914-07-02">1897 – 1914</date>
+                  <date from="1897-01-01" to="1914-07-02">1897  – 1914</date>
                </note>
             </place>
             <place xml:id="pmb468">

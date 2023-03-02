@@ -33,14 +33,6 @@
          <xs:attribute ref="xml:id" use="optional"/>
       </xs:complexType>
    </xs:element>
-   <xs:element name="footNote">
-      <xs:complexType mixed="false">
-         <xs:choice minOccurs="1" maxOccurs="unbounded">
-            <xs:element ref="tei:p" maxOccurs="unbounded" minOccurs="1"/>
-         </xs:choice>
-         <xs:attribute ref="xml:id" use="required"/>
-      </xs:complexType>
-   </xs:element>
    <xs:element name="facsimile">
       <xs:complexType>
          <xs:sequence>
@@ -800,7 +792,6 @@
             <xs:element ref="tei:subst" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:gap" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:signed" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
@@ -1022,12 +1013,14 @@
          <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
+         <xs:element ref="tei:p" maxOccurs="unbounded" minOccurs="0"></xs:element>
       </xs:choice>
       <xs:attribute name="type" use="required">
          <xs:simpleType>
             <xs:restriction base="xs:NCName">
                <xs:enumeration value="commentary"/>
                <xs:enumeration value="textConst"/>
+               <xs:enumeration value="footnote"/>
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
@@ -1036,6 +1029,7 @@
          test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and 
          (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren' or @type = 'schnitzler-bahr')] or not(tei:ref)"/>
       <xs:assert test="not(descendant::tei:note)"/>
+      <xs:assert test="(@type='footnote' and @xml:id and starts-with(@xml:id, 'F') and child::tei:p and not(child::*[name()!='p'])) or not(child::tei:p)"/>
    </xs:complexType>
    <xs:complexType name="backNote_type-org">
       <xs:sequence minOccurs="0">
@@ -1079,7 +1073,6 @@
             <xs:element ref="tei:add" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
@@ -1238,7 +1231,6 @@
             <xs:element ref="tei:workName" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:bibl" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:seg" maxOccurs="2" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
       </xs:complexType>
    </xs:element>
@@ -1274,7 +1266,6 @@
             <xs:element ref="tei:workName" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:bibl" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:seg" maxOccurs="2" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:ref" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:desc" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
@@ -1305,7 +1296,6 @@
             <xs:element ref="tei:anchor" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="tei:note" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:rs" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:handShift" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:add" maxOccurs="unbounded" minOccurs="0"/>
@@ -1830,7 +1820,6 @@
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:add" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:del" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
          <xs:attribute name="rend" use="required">
             <xs:simpleType>

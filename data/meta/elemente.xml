@@ -436,7 +436,7 @@
                         <head xml:id="h.m49xdzuyi1vy">ref</head>
                         <p>Dient für Verweise. Die wichtigsten Fälle werden in Folge beschrieben.
                             Soweit sinnvoll, können mit dem Attribut <code>@subtype</code> genauere
-                            Spezifizierungen der Beziehung vorgenommen werden, etwa »vgl.«, »siehe«
+                            Spezifizierungen der Beziehung vorgenommen werden, etwa »vgl./Vgl.« (<code>cf</code>, <code>Cf</code>), »siehe/Siehe« (<code>see</code>, <code>See</code>)
                             oder – am häufigsten – »date-only«. Im letzteren Fall wird in der
                             Ausgabe das Datum entsprechend der Konvention (D)D. (M)M. YYYY gesetzt
                             und ist es online als Link auswählbar.</p>
@@ -448,11 +448,15 @@
                             Edition des <ref target="https://schnitzler-tagebuch.acdh.oeaw.ac.at/"
                                 >Tagebuch</ref>s) ist in <code>@target</code> mit einem ISO-Datum
                             spezifiziert.</p>
-                        <p><code>@type="schnitzler-lektüren"</code> (Verweis auf die digitale
+                        <p><code>@type="schnitzler-lektueren"</code> (Verweis auf die digitale
                             Edition der <ref target="https://schnitzler-lektueren.acdh.oeaw.ac.at/"
                                 >Leseliste</ref>) enthält in <code>@target</code> eine Referenz auf
                             eine Region bzw. ein Land (z. B. »Deutschsprachige Literatur«,
                             »Frankreich«).</p>
+                        <p><code>@type="schnitzler-bahr"</code> (Verweis auf einen Brief/Text innerhalb
+                            der <ref target="https://schnitzler-bahr.acdh.oeaw.ac.at/"
+                                >Edition</ref>) enthält in <code>@target</code> die
+                            Briefnummer/den Dateinamen (ohne ».xml«).</p>
                         <p>Für zwei weitere Arten der Verweise siehe <code>correspContext</code>
                             weiter unten.</p>
                     </div>

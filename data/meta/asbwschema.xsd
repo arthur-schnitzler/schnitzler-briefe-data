@@ -1028,7 +1028,7 @@
       <xs:assert
          test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and 
          (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren' or @type = 'schnitzler-bahr')] or not(tei:ref)"/>
-      <xs:assert test="not(descendant::tei:note)"/>
+      <xs:assert test="(@type='textConst' or @type='commentary' and not(descendant::tei:note[@type='textConst' or @type='commentary'])) or not(@type='textConst' or @type='commentary')"/>
       <xs:assert test="(@type='footnote' and @xml:id and starts-with(@xml:id, 'F') and child::tei:p and not(child::*[name()!='p'])) or not(child::tei:p)"/>
    </xs:complexType>
    <xs:complexType name="backNote_type-org">

@@ -107,9 +107,10 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="3">
-                                    <placeName ref="#pmb50">Wi<supplied>en 9/3</supplied> 72</placeName>
+                                    <placeName ref="#pmb50">Wi<supplied>en 9/3</supplied>
+                                       72</placeName>
                                     <date when="1898-06-07">7. 6. 98</date>
-                                    <time>11.V</time>
+                                    <time>11. V</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
                               </desc>
@@ -138,10 +139,11 @@
             </correspAction>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2022-12-06">Angelegt</change>
          <change who="MAM" when="2023-02-20">Index check</change>
          <change who="MAM" when="2023-02-20">Durchsicht</change>
+         <change who="LU" when="2023-04-04">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -150,8 +152,8 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3168_0041"/><foreign xml:lang="en"><rs type="place" ref="#pmb41240">Austria</rs></foreign>.</addrLine><addrLine><foreign xml:lang="en"><hi rend="pre-print"><hi rend="capitals">To</hi></hi></foreign></addrLine><addrLine>Herrn Dr. Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs>.</addrLine><addrLine><rs type="place" ref="#pmb397">IX. Frankgaße 1</rs>.</addrLine></address></div>
-         <div type="writingSession" n="1"><opener><p rend="center"><hi rend="pre-print">Greetings from <rs type="place" ref="#pmb44086">Hongkong</rs></hi></p><dateline rend="right"><pb facs="HS.NZ85.1.3168_0040"/><date when="1898-05-06">6. Mai</date>.</dateline></opener><p>Viele treue Grüße Dir, lieb<c rendition="#langesS">s</c>ter Freund, und dem <hi rend="latintype"><rs type="person" ref="#pmb10863">Richard</rs></hi>! Es i<c rendition="#langesS">s</c>t heiß, und wir haben die Pe<c rendition="#langesS">s</c>t. Ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>age Dir, es gibt nur ein <rs type="place" ref="#pmb468">Europa</rs>! Dein <signed>P. G.</signed></p></div>
+         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3168_0041"/><foreign xml:lang="en"><rs type="place" ref="#pmb41240">Austria</rs></foreign>.</addrLine><addrLine><foreign xml:lang="en"><hi rend="pre-print"><hi rend="capitals">To</hi></hi></foreign></addrLine><addrLine>Herrn Dr. Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs>.</addrLine><addrLine><rs type="place" ref="#pmb397">IX. Frankga<c rendition="#langesS">s</c>se 1</rs>.</addrLine></address></div>
+         <div type="writingSession" n="1"><p><seg rend="left"><pb facs="HS.NZ85.1.3168_0040"/><hi rend="pre-print">Greetings from <rs type="place" ref="#pmb44086">Hongkong</rs>.</hi></seg><seg rend="right"><date when="1898-05-06">6. Mai</date>.</seg></p><p>Viele treue Grüße Dir, lieb<c rendition="#langesS">s</c>ter Freund, und dem <hi rend="latintype"><rs type="person" ref="#pmb10863">Richard</rs></hi>! Es i<c rendition="#langesS">s</c>t heiß, und wir haben die Pe<c rendition="#langesS">s</c>t. Ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>age Dir, es gibt nur ein <rs type="place" ref="#pmb468">Europa</rs>! Dein <signed>P. G.</signed></p></div>
       </body>
       <back>
          <listPerson>
@@ -273,7 +275,8 @@
          <listPlace>
             <place xml:id="pmb44086">
                <placeName>Hong Kong</placeName>
-               <placeName type="alternative-name">Hong Kong Special Administrative Region</placeName>
+               <placeName type="alternative-name">Hong Kong Special Administrative
+                  Region</placeName>
                <placeName type="legacy-name">Hongkong</placeName>
                <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
                <desc type="entity_type_id">1418</desc>
@@ -293,16 +296,16 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
-               <placeName type="alternative-name">Vindobona (Wien)</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="ort_fruherer_name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Wien?</placeName>
+               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>
                <location type="coords">
@@ -330,6 +333,8 @@
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
+               <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
+               <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
                <desc type="entity_type_id">1107</desc>
                <location type="coords">
@@ -343,6 +348,10 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41240/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41240</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb41240</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92143/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92203/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92143.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92203.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb41240.html</idno>
             </place>
             <place xml:id="pmb397">

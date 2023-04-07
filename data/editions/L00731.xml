@@ -80,8 +80,11 @@
                         <objectDesc>
                            <desc type="karte" subtype="postkarte"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"/>
+                        <handDesc hands="1">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb11740"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent" corresp="#pmb11740">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -158,10 +161,14 @@
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="#pmb11740">Hofmannsthal, Hugo von</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00730">Schnitzler an Hofmannsthal, 4. 10. 1897</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00732">Beer-Hofmann an Schnitzler, [20. 10. 1897]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" target="L00730">Schnitzler an Hofmannsthal, 4. 10. 1897</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L00741">Hofmannsthal an Schnitzler, [15. 11. 1897]</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00730">Schnitzler an
+                  Hofmannsthal, 4. 10. 1897</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00732">Beer-Hofmann an
+                  Schnitzler, [20. 10. 1897]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" target="L00730">Schnitzler
+                  an Hofmannsthal, 4. 10. 1897</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" target="L00741">Hofmannsthal
+                  an Schnitzler, [15. 11. 1897]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -178,7 +185,7 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00210"/><hi rend="latintype">Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</hi></addrLine><addrLine><rs ref="#pmb50" type="place"><hi rend="latintype">Wien</hi></rs></addrLine><addrLine><rs ref="#pmb397" type="place"><hi rend="latintype">XI. Franckgasse 1.</hi></rs></addrLine></address></div>
+         <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00210"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine><addrLine><rs ref="#pmb50" type="place">Wien</rs></addrLine><addrLine><rs ref="#pmb397" type="place">XI. Franckgasse 1.</rs></addrLine></address></div>
          <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00209"/><date>12<hi rend="superscript">ten</hi></date></dateline><salute>Mein lieber Arthur</salute></opener><p>ich bin von morgen <date>Mittwoch</date><space unit="chars" quantity="1"/><time>abend</time> an in <rs ref="#pmb50" type="place">Wien</rs>. Falls Sie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich zu
                einer <anchor xml:id="K_L00731_1" type="commentary"/><rs type="work" ref="#pmb34284" subtype="implied"><rs ref="#pmb11851" type="person">Kainz</rs>vor<c rendition="#langesS">s</c>tellung</rs><note xml:id="K_L00731_1h" type="commentary"><rs ref="#pmb34284" type="work">Die Jüdin von Toledo</rs> von <rs ref="#pmb11518" type="person">Franz Grillparzer</rs> wurde im <rs ref="#pmb14" type="place">Burgtheater</rs> gegeben.</note>, <date>Donnerstag</date> oder
                   <date>Freitag</date> einen Sitz nehmen und noch Zeit haben, einen gleichen für
@@ -369,7 +376,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>

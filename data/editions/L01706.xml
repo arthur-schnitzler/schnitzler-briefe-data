@@ -80,8 +80,11 @@
                         <objectDesc>
                            <desc type="karte" subtype="bildpostkarte"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
+                        <handDesc hands="1">
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent" corresp="#pmb2121"/>
+                           <handNote medium="blaue_tinte" style="lateinische-kurrent" corresp="#pmb2121">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -144,10 +147,13 @@
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="#pmb10863">Beer-Hofmann, Richard</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L01705">Hofmannsthal, Schnitzler an Schnitzler, 5. 9. 1907</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L01707">Schnitzler an Hofmannsthal, 16. 9. 1907</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01705">Hofmannsthal,
+                  Schnitzler an Schnitzler, 5. 9. 1907</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01707">Schnitzler an
+                  Hofmannsthal, 16. 9. 1907</ref>
                <ref subtype="previous_letter" type="withinCorrespondence" target="L01703">Beer-Hofmann an Schnitzler, 29. 8. 1907</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L01710">Beer-Hofmann an Schnitzler, [27. 9. 1907]</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" target="L01710">Beer-Hofmann
+                  an Schnitzler, [27. 9. 1907]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -164,10 +170,9 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="1907_AS_RBH_1_00041"/><hi rend="latintype">Dr. Richard Beer-Hofmann</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb259" type="place">Venedig Lido</rs></hi></addrLine></address></div>
+         <div type="address"><address><addrLine><pb facs="1907_AS_RBH_1_00041"/>Dr. Richard Beer-Hofmann</addrLine><addrLine><rs ref="#pmb259" type="place">Venedig Lido</rs></addrLine></address></div>
          <div type="writingSession" n="1"><opener><p rend="center"><pb facs="1907_AS_RBH_1_00040"/><hi rend="pre-print"><rs ref="#pmb41086" type="place"><hi rend="capitals">Palast-Hotel</hi></rs></hi></p><p rend="center"><hi rend="pre-print"><rs ref="#pmb43520" type="place"><hi rend="capitals">Meran</hi></rs></hi></p><p rend="right"><hi rend="pre-print"><rs ref="#pmb41086" type="place">Palast-Hotel, Meran </rs></hi><lb/><hi rend="pre-print"><rs type="person" ref="#pmb51866">Franz Leibl</rs>, Hotelier</hi></p></opener><p><pb facs="1907_AS_RBH_1_00041"/><salute>lieber Richard, </salute>ich habe keine Nachricht von Ihnen. In <rs ref="#pmb40260" type="place">Bozen</rs> war nichts (3 Briefe u ein Telegra<c rendition="#gemination-m"/><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>cheint ein Unberufener abgeholt zu haben) la<c rendition="#langesS">s</c><c rendition="#langesS">s</c>en Sie
-               mich ein Wort hören. Nach <rs type="place" ref="#pmb50">Wien</rs>, wo wir (über <rs ref="#pmb40260" type="place">Bozen</rs>, <rs type="place" ref="#pmb41083">Mendel</rs>,
-                  Sa<unclear>lzg</unclear>, <rs ref="#pmb867" type="place">I<c rendition="#gemination-n"/>sbruck</rs>, ev. <rs ref="#pmb30" type="place">Salzburg</rs>) Freitag zu<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein hoffen. </p><closer>Herzlich<c rendition="#langesS">s</c>t Ihr<lb/><signed>A.</signed></closer></div>
+               mich ein Wort hören. Nach <rs type="place" ref="#pmb50">Wien</rs>, wo wir (über <rs ref="#pmb40260" type="place">Bozen</rs>, <rs type="place" ref="#pmb41083">Mendel</rs>, Sa<unclear>lzg</unclear>, <rs ref="#pmb867" type="place">I<c rendition="#gemination-n"/>sbruck</rs>, ev. <rs ref="#pmb30" type="place">Salzburg</rs>) Freitag zu<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein hoffen. </p><closer>Herzlich<c rendition="#langesS">s</c>t Ihr<lb/><signed>A.</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -375,7 +380,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>

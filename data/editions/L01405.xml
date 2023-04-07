@@ -80,8 +80,11 @@
                         <objectDesc>
                            <desc type="telegramm"/>
                         </objectDesc>
-                        <handDesc>
+                        <handDesc hands="1">
                            <handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb51015"/>
+                           <handNote medium="bleistift" style="lateinische-kurrent" corresp="#pmb51015">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -149,10 +152,14 @@
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="#pmb10863">Beer-Hofmann, Richard</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L01404">Schnitzler an Beer-Hofmann, 2. 6. 1904</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L01406">Hofmannsthal an Schnitzler, 1[9?]. 6. [1904]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" target="L01404">Schnitzler an Beer-Hofmann, 2. 6. 1904</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L01413">Beer-Hofmann an Schnitzler, 1. 7. 1904</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01404">Schnitzler an
+                  Beer-Hofmann, 2. 6. 1904</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01406">Hofmannsthal an
+                  Schnitzler, 1[9?]. 6. [1904]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" target="L01404">Schnitzler
+                  an Beer-Hofmann, 2. 6. 1904</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" target="L01413">Beer-Hofmann
+                  an Schnitzler, 1. 7. 1904</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -168,10 +175,9 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="1904_AS_RBH_1_00020"/><hi rend="latintype">Richard Beerhofma<c rendition="#gemination-n"/></hi></addrLine><addrLine><hi rend="latintype"><rs type="place" ref="#pmb173">Rodaun</rs></hi></addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="1904_AS_RBH_1_00020"/>Wären gern gekommen haben aber <anchor type="commentary" xml:id="K_L01405-1"/>Sitze <rs type="place" ref="#pmb14">Burgtheater</rs><note type="commentary" xml:id="K_L01405-1h">für <rs type="work" ref="#pmb53251">Vater
-                     und Sohn</rs> von <rs type="person" ref="#pmb15512">Alexandre Dumas
-                  fils</rs>.</note>. Grüßen Sie die ver<c rendition="#langesS">s</c>a<c rendition="#gemination-m"/>elten auf
+         <div type="address"><address><addrLine><pb facs="1904_AS_RBH_1_00020"/>Richard Beerhofma<c rendition="#gemination-n"/></addrLine><addrLine><rs type="place" ref="#pmb173">Rodaun</rs></addrLine></address></div>
+         <div type="writingSession" n="1"><p><pb facs="1904_AS_RBH_1_00020"/>Wären gern gekommen haben aber <anchor type="commentary" xml:id="K_L01405-1"/>Sitze <rs type="place" ref="#pmb14">Burgtheater</rs><note type="commentary" xml:id="K_L01405-1h">für <rs type="work" ref="#pmb53251">Vater und Sohn</rs> von <rs type="person" ref="#pmb15512">Alexandre Dumas
+                     fils</rs>.</note>. Grüßen Sie die ver<c rendition="#langesS">s</c>a<c rendition="#gemination-m"/>elten auf
               <space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr baldiges Wieder<c rendition="#langesS">s</c>ehen herzlich<c rendition="#langesS">s</c>t</p><closer><signed>Arthur</signed></closer></div>
       </body>
       <back>
@@ -299,7 +305,8 @@
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>

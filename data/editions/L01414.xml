@@ -80,8 +80,11 @@
                         <objectDesc>
                            <desc type="karte" subtype="postkarte"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"/>
+                        <handDesc hands="1">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb11740"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent" corresp="#pmb11740">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -159,10 +162,14 @@
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="#pmb11740">Hofmannsthal, Hugo von</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L01413">Beer-Hofmann an Schnitzler, 1. 7. 1904</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L01415">Beer-Hofmann an Schnitzler, 4. 7. 1904</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" target="L01412">Schnitzler an Hofmannsthal, 30. 6. 1904</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L01416">Hofmannsthal an Schnitzler, 10. 7. 1904</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01413">Beer-Hofmann
+                  an Schnitzler, 1. 7. 1904</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01415">Beer-Hofmann an
+                  Schnitzler, 4. 7. 1904</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" target="L01412">Schnitzler
+                  an Hofmannsthal, 30. 6. 1904</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" target="L01416">Hofmannsthal
+                  an Schnitzler, 10. 7. 1904</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -179,13 +186,13 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-00043-B-00002-000-00147"/><hi rend="latintype">Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</hi></addrLine><addrLine><rs type="place" ref="#pmb50"><hi rend="latintype">Wien</hi></rs></addrLine><addrLine><rs ref="#pmb133" type="place"><hi rend="latintype">XVIII Spöttelgasse 7</hi></rs></addrLine></address></div>
+         <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-00043-B-00002-000-00147"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs ref="#pmb133" type="place">XVIII Spöttelgasse 7</rs></addrLine></address></div>
          <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="MS-SCHNITZLER-B-00043-B-00002-000-00148"/><date><anchor xml:id="K_L01414_1" type="commentary"/>Samstag<note xml:id="K_L01414_1h" type="commentary">Schreibirrtum, nachdem die Karte an
                         einem Samstag um <time>8 Uhr früh</time> zugestellt wurde.</note></date>.</dateline></opener><p>Also <date>Mittwoch</date>, <anchor xml:id="K_L01414_2" type="commentary"/><hi rend="latintype">cher jaune</hi><note xml:id="K_L01414_2h" type="commentary">französisch: lieber Gelber</note>, wenn
                es nicht ab<c rendition="#langesS">s</c>urdes Wetter macht.</p><p><rs ref="#pmb2173" type="person">O.</rs><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>oll<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chön üben. <rs ref="#pmb30057" type="work"><hi rend="latintype"><anchor xml:id="K_L01414_3" type="commentary"/>Leisenbogh<note xml:id="K_L01414_3h" type="commentary">Er bezieht sich bereits auf den
                         Erstdruck, <bibl><rs type="work" ref="#pmb36156">Die neue Rundschau</rs>, Jg. 15, H. 7,
-                              <date>Juli 1904</date>, S. 829–842</bibl>. Am <ref target="1904-04-11" type="schnitzler-tagebuch" subtype="date-only"/> hatte er es bereits mündlich
-                        vorgetragen bekommen.</note></hi></rs> i<c rendition="#langesS">s</c>t gut, durchaus angenehm, durchaus fein,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ollte nur um ein Etwas mehr
+                              <date>Juli 1904</date>, S. 829–842</bibl>. Am <ref target="1904-04-11" type="schnitzler-tagebuch" subtype="date-only"/> hatte er es bereits
+                        mündlich vorgetragen bekommen.</note></hi></rs> i<c rendition="#langesS">s</c>t gut, durchaus angenehm, durchaus fein,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ollte nur um ein Etwas mehr
                Inten<c rendition="#langesS">s</c>ität in der Groteskerie haben.</p><closer>Ihr <signed>Hugo</signed></closer></div>
       </body>
       <back>
@@ -363,7 +370,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>

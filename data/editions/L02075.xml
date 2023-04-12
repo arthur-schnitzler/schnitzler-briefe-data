@@ -124,11 +124,11 @@
                <date evidence="conjecture" notBefore="1912-06-13" notAfter="1912-06-15">[13. 6. 1912 – 17. 6. 1912?]</date>
             </correspAction>
             <correspContext>
-               <ref type="belongsToCorrespondence" target="#pmb11740">Hofmannsthal, Hugo von</ref>
+               <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal Hugo von</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L02074">Hofmannsthal an Schnitzler, 12. 6. 1912</ref>
                <ref subtype="next_letter" type="withinCollection" target="L02076">Hofmannsthal an Schnitzler, 5. 7. [1912]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" target="L02074">Hofmannsthal an Schnitzler, 12. 6. 1912</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L02076">Hofmannsthal an Schnitzler, 5. 7. [1912]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11740" target="L02074">Hofmannsthal an Schnitzler, 12. 6. 1912</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11740" target="L02076">Hofmannsthal an Schnitzler, 5. 7. [1912]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -140,6 +140,11 @@
          <change who="MAM" when="2020-08-13">Index check</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="Hs-30885,145_001"/>
+      <graphic url="Hs-30885,145_002"/>
+      <graphic url="Hs-30885,145_001"/>
+   </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1"><opener><dateline><seg rend="left"><pb facs="Hs-30885,145_001"/><hi rend="pre-print">A. S.</hi></seg><seg rend="right"><rs ref="#pmb50" type="place">Wien</rs>, <date>12. 6. 912</date></seg></dateline></opener><p><salute>Mein lieber Hugo, </salute>für Ihren<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chönen Brief, der mir ans Herz
@@ -184,21 +189,27 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
                   <surname>Hofmannsthal</surname>
                </persName>
-               <persName type="pseudonym">Loris</persName>
-               <persName type="pseudonym">Theophil Morren</persName>
+               <persName type="person_pseudonym">Loris</persName>
+               <persName type="person_pseudonym">Theophil Morren</persName>
                <persName type="namensvariante">Hofmannsthal, Hugo</persName>
                <birth>
-                  <date when="1874-02-01">01.02.1874</date>
+                  <date when="1874-02-01">1874-02-01</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -207,7 +218,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1929-07-15">15.07.1929</date>
+                  <date when="1929-07-15">1929-07-15</date>
                   <settlement ref="pmb173">
                      <placeName type="pref">Rodaun</placeName>
                      <location>
@@ -219,60 +230,70 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16293</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118552759</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11740</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11740</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11740.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11740/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11740</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb11740</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp46353</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00281a55</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q51513</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Hugo_von_Hofmannsthal</idno>
+               <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001d1cc</idno>
+               <idno type="URL" subtype="amp">https://amp.acdh.oeaw.ac.at/amp_person_42.html</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb11740.html</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33243">
                <title>Tagebuch</title>
-               <note type="uri_worklink">https://schnitzler-tagebuch.acdh.oeaw.ac.at</note>
+               <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
                <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date>1981  – 2000</date>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243</idno>
+               <author ref="pmb119261" role="hat-herausgegeben">Braunwarth, Peter Michael</author>
+               <author ref="pmb65504" role="hat-herausgegeben">Urbach, Reinhard</author>
+               <date to="2000-01-01">1981  – 2000</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q108122826</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Tagebuch_(Schnitzler)</idno>
                <note type="work_kind">Tagebuch</note>
             </bibl>
             <bibl xml:id="pmb29985">
                <title>Der einsame Weg. Schauspiel in fünf Akten</title>
-               <note type="uri_worklink">https://archive.org/details/dereinsamewegsc00schngoog/</note>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Der_einsame_Weg</idno>
-               <title type="arbeitstitel">Junggeselle</title>
-               <title type="arbeitstitel">Junggesellenstück</title>
-               <title type="arbeitstitel">Die Egoisten</title>
-               <title type="arbeitstitel">Einsame Wege</title>
-               <title type="arbeitstitel">Wege ins Dunkle</title>
+               <title type="werk_link">https://archive.org/details/dereinsamewegsc00schngoog/</title>
+               <title type="werk_arbeitstitel">Junggeselle</title>
+               <title type="werk_arbeitstitel">Junggesellenstück</title>
+               <title type="werk_arbeitstitel">Die Egoisten</title>
+               <title type="werk_arbeitstitel">Einsame Wege</title>
+               <title type="werk_arbeitstitel">Wege ins Dunkle</title>
+               <title type="werk_arbeitstitel">Weg zum Licht</title>
                <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
                <date notBefore="1904-01-01" when="1904-07-01">1904</date>
                <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.08</idno>
-               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1198519</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1198519</idno>
                <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-der-einsame-weg</idno>
                <idno type="URL" subtype="theadok">https://theadok.at/work/31412</idno>
                <idno type="URL" subtype="archive">https://archive.org/details/dereinsamewegsc00schngoog</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29985</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29985</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29985.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29985/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29985</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29985.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Der_einsame_Weg</idno>
                <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
             </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
-               <placeName type="alternative-name">Vindobona (Wien)</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="ort_fruherer_name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Wien?</placeName>
+               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>
                <location type="coords">
@@ -283,48 +304,55 @@
                   <geo>47,33333 13,33333</geo>
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
             </place>
             <place xml:id="pmb652">
                <placeName>Prag</placeName>
                <placeName type="alternative-name">Hauptstadt Prag</placeName>
-               <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4076310-9</placeName>
                <placeName type="legacy-name-merge">Prag-Smichow</placeName>
                <placeName type="legacy-name-merge">Bohnitz bei Prag</placeName>
                <placeName type="legacy-name-merge">Prag-Dejwitz</placeName>
+               <placeName type="legacy-name-merge">Hlavní město Praha</placeName>
+               <placeName type="legacy-name-merge">Prague</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>
                <location type="coords">
                   <geo>50,08333 14,46667</geo>
                </location>
-               <idno type="URL" subtype="geonames">http://sws.geonames.org/3067695/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/7313/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/22214/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/26227/</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb652</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43722/</idno>
+               <location type="located_in_place">
+                  <placeName ref="pmb43430">Tschechische Republik</placeName>
+                  <geo>49,75 15,0</geo>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb652.html</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4076310-9</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/652</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/7313</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/22214</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/26227</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43722</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/652/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/7313/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/22214/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/26227/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43722/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb652</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64237/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3067695/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb652</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91524/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3067696/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91524.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1085</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Prag</idno>
             </place>
             <place xml:id="pmb91">
                <placeName>Neues Deutsches Theater</placeName>
-               <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Staatsoper_Prag</placeName>
                <desc type="entity_type">Theater (K.THE)</desc>
                <desc type="entity_type_id">4</desc>
                <location type="coords">
@@ -334,11 +362,13 @@
                   <placeName ref="pmb652">Prag</placeName>
                   <geo>50,08333 14,46667</geo>
                </location>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb91</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1886083</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb91.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb91</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Staatsoper_Prag</idno>
                <note type="apis_dates">
-                  <date from="1888-01-01" to="1888-12-31">1888  – 1938</date>
+                  <date from="1888-01-01" to="1938-07-02">1888  – 1938</date>
                </note>
             </place>
          </listPlace>

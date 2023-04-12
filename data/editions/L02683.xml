@@ -110,15 +110,11 @@
                <date when="1899-10-13">13. 10. [1899?]</date>
             </correspAction>
             <correspContext>
-               <ref type="belongsToCorrespondence" target="#pmb11485">Goldmann, Paul</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00990">Schnitzler an
-                  Hofmannsthal, 8. 10. 1899</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00991">Beer-Hofmann an
-                  Schnitzler, 15. 10. 1899</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" target="L02682">Goldmann
-                  an Schnitzler, 18. 9. 1899</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L02655">Goldmann an
-                  Schnitzler, [20. 6. 1901]</ref>
+               <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann, Paul</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00990">Schnitzler an Hofmannsthal, 8. 10. 1899</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00991">Beer-Hofmann an Schnitzler, 15. 10. 1899</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11485" target="L02682">Goldmann an Schnitzler, 18. 9. 1899</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11485" target="L02655">Goldmann an Schnitzler, [20. 6. 1901]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -129,6 +125,9 @@
          <change who="MAM" when="2022-11-11">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="HS.NZ85.1.3169_0049"/>
+   </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1"><opener><p rend="center"><pb facs="HS.NZ85.1.3169_0049"/><rs type="place" ref="#pmb50">wien</rs> fr <rs type="place" ref="#pmb88960">pontafel</rs> 55 12 <date>13/10</date><space unit="chars" quantity="1"/><time>10/15</time> = </p></opener><p><anchor type="commentary" xml:id="K_L02683-1"/>ankomme<note type="commentary" xml:id="K_L02683-1h"><rs type="person" ref="#pmb11485">Goldmann</rs> wurde von <rs type="person" ref="#pmb2121">Schnitzler</rs> und <rs type="person" ref="#pmb12740">Gustav
@@ -137,78 +136,8 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb11485">
-               <persName>
-                  <forename>Paul</forename>
-                  <surname>Goldmann</surname>
-               </persName>
-               <birth>
-                  <date when="1865-01-31">31.01.1865</date>
-                  <settlement ref="pmb677">
-                     <placeName type="pref">Breslau</placeName>
-                     <location>
-                        <geo>51,10773 17,03533</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1935-09-25">25.09.1935</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,2066 16,37341</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp51209</idno>
-               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0028183c</idno>
-               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q2059817</idno>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <forename>Arthur</forename>
-                  <surname>Schnitzler</surname>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15.05.1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,2066 16,37341</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21.10.1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,2066 16,37341</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
-               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
-               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q44331</idno>
-            </person>
+            <error type="person">11485</error>
+            <error type="person">2121</error>
             <person xml:id="pmb12740">
                <persName>
                   <forename>Gustav</forename>
@@ -240,7 +169,8 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/12740/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb12740</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284855</idno>
-               <idno type="URL" subtype="wikidata">https://www.wikidata.org/entity/Q55679456</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q55679456</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb12740.html</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -260,17 +190,15 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
-               <placeName type="alternative-name">Vindobona (Wien)</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="ort_fruherer_name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Wien?</placeName>
+               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>
                <location type="coords">
@@ -291,7 +219,8 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="wikidata">https://www.wikidata.org/entity/Q1741</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
             </place>
          </listPlace>
       </back>

@@ -131,11 +131,11 @@
                <date when="1900-04-03">[3. 4. 1900?]</date>
             </correspAction>
             <correspContext>
-               <ref type="belongsToCorrespondence" target="#pmb10992">Brandes, Georg</ref>
+               <ref type="belongsToCorrespondence" target="correspondence_10992">Brandes Georg</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L01027">Schnitzler an Hofmannsthal, 3. 4. 1900</ref>
                <ref subtype="next_letter" type="withinCollection" target="L01029">Brandes an Schnitzler, 3. 4. [1900]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" target="L01022">Brandes an Schnitzler, [18. 3. 1900]</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L01029">Brandes an Schnitzler, 3. 4. [1900]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10992" target="L01022">Brandes an Schnitzler, [18. 3. 1900]</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10992" target="L01029">Brandes an Schnitzler, 3. 4. [1900]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -188,10 +188,13 @@
                <sex value="male"/>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13920</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118514326</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb10992</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10992</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10992.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10992/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10992</idno>
                <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10992.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp44279</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q316045</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Georg_Brandes</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -220,19 +223,27 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
          </listPerson>
          <listPlace>
             <place xml:id="pmb43471">
                <placeName>Budapest</placeName>
                <placeName type="legacy-name-merge">Buda</placeName>
-               <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/17152/</placeName>
-               <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/6940/</placeName>
-               <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4008684-7</placeName>
+               <placeName type="alternative-name">Königl. Freie Hauptstadt Ofen</placeName>
+               <placeName type="legacy-name-merge">Ofen</placeName>
+               <placeName type="alternative-name">Altofen</placeName>
+               <placeName type="legacy-name-merge">Pest (Stadt)</placeName>
+               <placeName type="legacy-name-merge">Óbuda</placeName>
                <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
                <desc type="entity_type_id">1418</desc>
                <location type="coords">
@@ -242,24 +253,30 @@
                   <placeName ref="pmb35512">Ungarn</placeName>
                   <geo>47,0 20,0</geo>
                </location>
-               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1781</idno>
-               <idno type="URL" subtype="geonames">http://sws.geonames.org/3054638/</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb464</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43471/</idno>
+               <location type="located_in_place">
+                  <placeName ref="pmb43471">Budapest</placeName>
+                  <geo>47,49835 19,04045</geo>
+               </location>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1781</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb464.html</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/3054643/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43797/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4008684-7</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43471</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43797</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/9867/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42014/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43471/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43797/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43471</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62463/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64169/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88759/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb43471</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb43471.html</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1781</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Budapest</idno>
             </place>
             <place xml:id="pmb38096">
                <placeName>Opatija</placeName>
                <placeName type="legacy-name">Abbazia</placeName>
-               <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000958</placeName>
-               <placeName type="legacy-uri-merge">https://www.geonames.org/3194097</placeName>
-               <placeName type="legacy-uri-merge">http://sws.geonames.org/3194099/</placeName>
                <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
                <desc type="entity_type_id">1134</desc>
                <location type="coords">
@@ -273,10 +290,11 @@
                   <placeName ref="pmb35647">Grad Opatija</placeName>
                   <geo>45,33333 14,26667</geo>
                </location>
-               <idno type="URL" subtype="geonames">http://sws.geonames.org/3194099/</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb38096</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38096</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3194099/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb38096.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38096/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb38096</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb38096.html</idno>
             </place>
          </listPlace>
       </back>

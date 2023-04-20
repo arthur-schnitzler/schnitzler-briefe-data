@@ -10,6 +10,10 @@
                         <forename>Martin Anton</forename>
                         <surname>Müller</surname>
                     </persName>
+                    <persName>
+                        <forename>Untner</forename>
+                        <surname>Laura</surname>
+                    </persName>
                 </author>
             </titleStmt>
             <publicationStmt>
@@ -30,22 +34,18 @@
     <text>
         <body>
             <div>
-                <p>Vier verschiedene Ansichten erlauben, die Briefe in unterschiedlichen Gestalten
-                    zu lesen.</p>
+                <p>Beim Aufrufen eines Dokuments erscheint dieses zuerst in der Leseansicht. Dabei werden textkritische Auszeichnungen nicht wiedergegeben und erwähnte Entitäten nicht markiert. Das Faksimile wird, bis auf wenige Ausnahmen, automatisch auf der rechten Bildschirmseite angezeigt. In den »Einstellungen« unterhalb des edierten Texts kann die Ansicht angepasst werden. Dort können</p>
                 <list>
-                    <item>Simpel</item>
-                    <item>Links</item>
-                    <item>Kritisch</item>
-                    <item>TEI</item>
+                    <item>Faksimiles augeblendet,</item>
+                    <item>textkritische Auszeichnungen wiedergegeben</item>
+                    <item>und Entitäten farblich hervorgehoben werden.</item>
                 </list>
-                <p>Diese und die dabei verwendeten editorischen Zeichen werden hier vorgestellt. Die
-                    Wahl zwischen ihnen erfolgt im Menü unterhalb eines Briefes.</p>
             </div>
             <div>
-                <head>Die Ansicht »Simpel«</head>
-                <p>Die Leseansicht wird als »simpel« bezeichnet. Sie soll eine einfache Art
-                    darstellen, ein Korrespondenzstück lesen zu können, das zwar textgenau ist, aber
-                    möglichst wenige irritierende Zeichen enthält.</p>
+                <head>Leseansicht</head>
+                <p>Die default-Leseansicht soll eine einfache Art
+                    darstellen, ein Korrespondenzstück lesen zu können. Die Wiedergabe ist zwar textgenau, enthält aber
+                    möglichst wenige irritierende Zeichen.</p>
                 <table>
                     <row>
                         <cell>
@@ -88,8 +88,11 @@
                         <cell>werden nicht angezeigt</cell>
                     </row>
                     <row>
-                        <cell>Schriftwechsel</cell>
-                        <cell>werden nicht hervorgehoben</cell>
+                        <cell>Schriftwechsel zu Lateinschrift</cell>
+                        <cell>werden als Kapitälchen umgesetzt</cell>
+                        <cell>
+                            <hi rend="latintype">Lateinschrift</hi>
+                        </cell>
                     </row>
                     <row>
                         <cell>Geminationen</cell>
@@ -100,22 +103,15 @@
                         <cell>erscheint als »s«</cell>
                     </row>
                     <row>
-                        <cell>Links</cell>
-                        <cell>sind vorhanden, aber nicht vom Text abgehoben</cell>
+                        <cell>Erwähnte Entitäten</cell>
+                        <cell>sind verlinkt, aber nicht farblich hervorgehoben</cell>
                     </row>
                 </table>
             </div>
             <div>
-                <head>Die Ansicht »Links«</head>
-                <p>Bis auf folgende zwei Änderungen ist diese Ansicht ident mit »Simpel«: Links werden in roter
-                    Schriftfarbe angezeigt, so dass indizierte Stellen besser ausfindig gemacht
-                    werden können. Zusätzlich findet sich im unteren Bereich eine Auflistung aller vorkommenden
-                Registereinträge.</p>
-            </div>
-            <div>
-                <head>Die Ansicht »Kritisch«</head>
-                <p>Diese Edition versteht sich als textkritisch. Entsprechend ist für die wissenschaftliche Zitierung
-                    diese Ansicht und das bis auf Ausnahmen bereitgestellte Faksimile zu verwenden.</p>
+                <head>Anpassungen der Textansicht</head>
+                <p>Die vorliegende Edition versteht sich als textkritisch. Entsprechend werden für die wissenschaftliche Beschäftigung
+                    Möglichkeiten zur Anpassung der Textansicht bereitgestellt. Im Detail können folgende Punkte manipuliert werden:</p>
                 <table>
                     <row>
                         <cell>
@@ -143,7 +139,7 @@
                     </row>
                     <row>
                         <cell>Streichungen</cell>
-                        <cell>werden angezeigt.</cell>
+                        <cell>werden angezeigt</cell>
                         <cell>
                             <del>Streichung</del>
                         </cell>
@@ -216,16 +212,15 @@
                         <cell>ſ</cell>
                     </row>
                     <row>
-                        <cell>Links</cell>
-                        <cell>sind vorhanden, aber nicht vom Text abgehoben</cell>
+                        <cell>Entitäten</cell>
+                        <cell>sind verlinkt und farblich hervorgehoben</cell>
                         <cell/>
                     </row>
                 </table>
             </div>
             <div>
-                <head>Ansicht »TEI«</head>
-                <p>Diese Ansicht zeigt die XML-Datei, in der die Transkription des Briefes hinterlegt ist. Wer mehr als eine
-                    Datei benötigt, kann sie sich im <ref target="https://github.com/acdh-oeaw/schnitzler-briefe">gitHub-Repository</ref> laden.</p>
+                <head>Zitieren</head>
+                <p>Unterhalb des Faksimiles kann jeder Brief als PDF oder XML/TEI-Datei heruntergeladen werden. Streng genommen ist nur die XML-Datei zitierfähig, nicht die Wiedergabe des Dokuments in der Leseansicht oder im PDF. Auf <ref type="URL" target="https://github.com/arthur-schnitzler/schnitzler-briefe-data">GitHub</ref> können alle XML-Dateien heruntergeladen werden.</p>
             </div>
         </body>
     </text>

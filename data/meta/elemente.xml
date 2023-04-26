@@ -9,12 +9,20 @@
                         <forename>Martin Anton</forename>
                         <surname>Müller</surname>
                     </persName>
+                    <persName>
+                        <forename>Gerd-Hermann</forename>
+                        <surname>Susen</surname>
+                    </persName>
+                    <persName>
+                        <forename>Laura</forename>
+                        <surname>Untner</surname>
+                    </persName>
                 </author>
             </titleStmt>
             <publicationStmt>
                 <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
                 <pubPlace>Vienna</pubPlace>
-                <date when="2021">2021</date>
+                <date when="2023">2023</date>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                         <p>The (CC BY 4.0)-License applies to this document.</p>
@@ -98,7 +106,7 @@
                                 <ref target="#h.jbikk1a7u7b3">del</ref>
                             </item>
                             <item>
-                                <ref target="#h.3k6bl86dt2pj">footNote</ref>
+                                <ref target="#h.3k6bl86dt2pj">note[@type='footnote']</ref>
                             </item>
                             <item>
                                 <ref target="#h.byyox6cauja6">gap</ref>
@@ -318,8 +326,8 @@
                 <p>Der Quellcode unserer Website samt aller Korrespondenzstücke als XML-Dateien
                     findet sich hier:</p>
                 <p>
-                    <ref target="https://github.com/acdh-oeaw/schnitzler-briefe"
-                        >https://github.com/acdh-oeaw/schnitzler-briefe</ref>
+                    <ref target="https://github.com/arthur-schnitzler/schnitzler-briefe-data"
+                        >https://github.com/arthur-schnitzler/schnitzler-briefe-data</ref>
                 </p>
                 <p>Im Ordner <code>data/meta</code> findet sich eine Schema-Datei
                         <code>asbwschema.xsd</code>, die (mit geringfügigen Abweichungen) die hier
@@ -387,8 +395,8 @@
                             zusammengehörigen Bereiche <code>anchor</code> und <code>note</code>
                             durch weitgehend idente <code>@xml:id</code> verklammert, nur die bei
                                 <code>note</code> hat ein »h« als letztes Zeichen.</p>
-                        <p>Das Element <code>note</code> enthält einen Kommentar (Achtung: Fußnoten
-                            des Originaltexts sind als <code>footNote</code> ausgezeichnet.) Die
+                        <p>Das Element <code>note</code> enthält einen Kommentar, eine Erläuterung 
+                            zur Textkonstitution oder eine Fußnote des Originaltexts (<code>note[@type='footnote']</code>, siehe unten). Die
                             Unterscheidung von Textkonstitution (<code>@type="textConst"</code>) und
                             von Kommentar (<code>@type="commentary"</code>) geschieht entlang der
                             Frage, ob hier ein Phänomen des Blattes beschrieben wird oder ob es sich
@@ -553,7 +561,7 @@
                         <p>Vgl. auch <code>subst</code>.</p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.3k6bl86dt2pj">footNote</head>
+                        <head xml:id="h.3k6bl86dt2pj">note[@type='footnote']</head>
                         <p>Für Fußnoten, die schon in der edierten Vorlage vorhanden sind. Der Text
                             der Fußnote kommt in ein oder mehrere <code>p</code>-Elemente. </p>
                     </div>

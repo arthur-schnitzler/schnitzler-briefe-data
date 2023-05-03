@@ -29,7 +29,8 @@
                         <p>The (CC BY 4.0)-License applies to this document.</p>
                     </licence>
                 </availability>
-                <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">https://id.acdh.oeaw.ac.at/Schnitzler–Briefe/v1/meta/editorische-zeichen.xml</tei:idno>
+                <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI"
+                    >https://id.acdh.oeaw.ac.at/Schnitzler–Briefe/v1/meta/editorische-zeichen.xml</tei:idno>
                 <!--<tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI">http://hdl.handle.net/21.11115/0000-000B-D96C-8</tei:idno>-->
             </publicationStmt>
             <sourceDesc>
@@ -40,7 +41,11 @@
     <text>
         <body>
             <div>
-                <p>Beim Aufrufen eines Dokuments erscheint dieses zuerst in der Leseansicht. Dabei werden textkritische Auszeichnungen nicht wiedergegeben und erwähnte Entitäten nicht markiert. Das Faksimile wird, bis auf wenige Ausnahmen, automatisch auf der rechten Bildschirmseite angezeigt. In den »Einstellungen« unterhalb des edierten Texts kann die Ansicht angepasst werden. Dort können</p>
+                <p>Beim Aufrufen eines Dokuments erscheint dieses zuerst in der Leseansicht. Dabei
+                    werden textkritische Auszeichnungen nicht wiedergegeben und erwähnte Entitäten
+                    nicht markiert. Das Faksimile wird, bis auf wenige Ausnahmen, automatisch auf
+                    der rechten Bildschirmseite angezeigt. In den »Einstellungen« unterhalb des
+                    edierten Texts kann die Ansicht angepasst werden. Dort können</p>
                 <list>
                     <item>Faksimiles augeblendet,</item>
                     <item>textkritische Auszeichnungen wiedergegeben</item>
@@ -49,9 +54,9 @@
             </div>
             <div>
                 <head>Leseansicht</head>
-                <p>Die default-Leseansicht soll eine einfache Art
-                    darstellen, ein Korrespondenzstück lesen zu können. Die Wiedergabe ist zwar textgenau, enthält aber
-                    möglichst wenige irritierende Zeichen.</p>
+                <p>Die default-Leseansicht soll eine einfache Art darstellen, ein Korrespondenzstück
+                    lesen zu können. Die Wiedergabe ist zwar textgenau, enthält aber möglichst
+                    wenige irritierende Zeichen.</p>
                 <table>
                     <row>
                         <cell>
@@ -78,27 +83,28 @@
                         <cell>erscheinen in normaler Textfarbe</cell>
                     </row>
                     <row>
-                        <cell>Textergänzungen der Herausgeber*innen</cell>
-                        <cell>sind nicht markiert</cell>
+                        <cell>Textergänzungen der Herausgeberinnen und Herausgeber</cell>
+                        <cell>werden eingefügt, aber ohne Markierung</cell>
                     </row>
                     <row>
                         <cell>Textverlust durch Beschädigungen an der Vorlage</cell>
                         <cell>sind nicht markiert</cell>
                     </row>
                     <row>
-                        <cell>Gedruckter und gestempelter Text</cell>
-                        <cell>erscheint in normaler Textfarbe</cell>
+                        <cell>Gedruckter Text</cell>
+                        <cell>wird in blauer Textfarbe wiedergegeben</cell>
+                    </row>
+                    <row>
+                        <cell>Gestempelter Text</cell>
+                        <cell>wird in lila Textfarbe wiedergegeben</cell>
                     </row>
                     <row>
                         <cell>Seitenwechsel</cell>
-                        <cell>werden nicht angezeigt</cell>
+                        <cell>werden mit einem senkrechten roten Strich markiert</cell>
                     </row>
                     <row>
                         <cell>Schriftwechsel zu Lateinschrift</cell>
                         <cell>werden als Kapitälchen umgesetzt</cell>
-                        <cell>
-                            <hi rend="latintype">Lateinschrift</hi>
-                        </cell>
                     </row>
                     <row>
                         <cell>Geminationen</cell>
@@ -106,7 +112,8 @@
                     </row>
                     <row>
                         <cell>Schaft-s »ſ«</cell>
-                        <cell>erscheint als »s«</cell>
+                        <cell>erscheint als »s« (bzw. »ß«, wenn nach einem Schaft-s in deutscher
+                            Kurrentschrift ein rundes s kommt)</cell>
                     </row>
                     <row>
                         <cell>Erwähnte Entitäten</cell>
@@ -116,8 +123,9 @@
             </div>
             <div>
                 <head>Anpassungen der Textansicht</head>
-                <p>Die vorliegende Edition versteht sich als textkritisch. Entsprechend werden für die wissenschaftliche Beschäftigung
-                    Möglichkeiten zur Anpassung der Textansicht bereitgestellt. Im Detail können folgende Punkte manipuliert werden:</p>
+                <p>Die vorliegende Edition versteht sich als textkritisch. Entsprechend werden für
+                    die wissenschaftliche Beschäftigung Möglichkeiten zur Anpassung der Textansicht
+                    bereitgestellt. Im Detail können folgende Punkte manipuliert werden:</p>
                 <table>
                     <row>
                         <cell>
@@ -132,15 +140,14 @@
                     </row>
                     <row>
                         <cell>Textschichten</cell>
-                        <cell>Überschriebenes wird durch Hochstellung vor die obere
-                        Textschicht gestellt. Dabei zeigt ein nach oben gehender Pfeil 
-                        den Beginn des entfernten, ein nach unten weisender Pfeil das
-                        Ende der Überschreibung an.</cell>
+                        <cell>Überschriebenes wird durch Streichung und Hochstellung vor die obere Textschicht
+                            gestellt. Zwei nach unten weisende Pfeile markieren den Beginn
+                            und das Ende des neuen Textes, der den getilgten ersetzt.</cell>
                         <cell>
                             <subst>
-                            <del>überschrieben</del>
-                            <add>Neu</add>
-                        </subst>
+                                <del>überschrieben</del>
+                                <add>neu</add>
+                            </subst>
                         </cell>
                     </row>
                     <row>
@@ -152,22 +159,23 @@
                     </row>
                     <row>
                         <cell>Einfügungen</cell>
-                        <cell>werden eingefügt, aber ohne Markierung</cell>
+                        <cell>werden eingefügt und mit nach unten weisenden Pfeilen am Beginn und am
+                            Ende der Einfügung markiert</cell>
                         <cell>
                             <add>Einfügung</add>
                         </cell>
                     </row>
                     <row>
                         <cell>Unsichere Lesarten</cell>
-                        <cell>In grauer Textfarbe</cell>
+                        <cell>werden mit Punkten unterstrichen</cell>
                         <cell>
                             <unclear>Unsicher</unclear>
                         </cell>
                     </row>
                     <row>
-                        <cell>Textergänzungen der Herausgeber*innen</cell>
+                        <cell>Textergänzungen der Herausgeberinnen und Herausgeber</cell>
                         <cell>sind mit eckigen Klammern eingerahmt</cell>
-                        <cell>[Herausgebertext]</cell>
+                        <cell>[Herausgeberinnen- und Herausgebertext]</cell>
                     </row>
                     <row>
                         <cell>Textverlust durch Beschädigungen an der Vorlage</cell>
@@ -178,26 +186,26 @@
                     </row>
                     <row>
                         <cell>Gedruckter Text</cell>
-                        <cell>In blauer Textfarbe</cell>
+                        <cell>wird in blauer Textfarbe wiedergegeben</cell>
                         <cell>
                             <hi rend="pre-print">Vordruck</hi>
                         </cell>
                     </row>
                     <row>
                         <cell>Gestempelter Text</cell>
-                        <cell>In der Textfarbe lila</cell>
+                        <cell>wird in lila Textfarbe wiedergegeben</cell>
                         <cell>
                             <hi rend="stamp">Stempel</hi>
                         </cell>
                     </row>
                     <row>
                         <cell>Seitenwechsel</cell>
-                        <cell>werden angezeigt. In Normalfall als »*«, in Fällen, 
-                            in denen das Faksimile bei einer externen Seite zugänglich 
-                            ist, als Link.
-                       </cell>
+                        <cell>werden mit roten senkrechten Strichen markiert, oder in Fällen, in
+                            denen das Faksimile bei einer externen Seite zugänglich ist, als Link
+                            gesetzt </cell>
                         <cell>
-                            <span class="pagebreak">*</span> oder <c rendition="#externer-link"/>
+                            <pb/>
+                             oder <pb facs="https://schnitzler-briefe.acdh.oeaw.ac.at"/>
                         </cell>
                     </row>
                     <row>
@@ -210,7 +218,7 @@
                     <row>
                         <cell>Geminationen</cell>
                         <cell>werden als solche angezeigt</cell>
-                        <cell>m̅,  n̅</cell>
+                        <cell>m̅, n̅</cell>
                     </row>
                     <row>
                         <cell>Schaft-s »ſ«</cell>
@@ -226,7 +234,12 @@
             </div>
             <div>
                 <head>Zitieren</head>
-                <p>Unterhalb des Faksimiles kann jeder Brief als PDF oder XML/TEI-Datei heruntergeladen werden. Streng genommen ist nur die XML-Datei zitierfähig, nicht die Wiedergabe des Dokuments in der Leseansicht oder im PDF. Auf <ref type="URL" target="https://github.com/arthur-schnitzler/schnitzler-briefe-data">GitHub</ref> können alle XML-Dateien heruntergeladen werden.</p>
+                <p>Unterhalb des Faksimiles kann jeder Brief als PDF oder XML/TEI-Datei
+                    heruntergeladen werden. Ein EPUB gibt es mit sämtlichen Briefen. Streng genommen
+                    ist nur die XML-Datei zitierfähig, nicht die Wiedergabe des Dokuments in der
+                    Leseansicht oder im PDF. Auf <ref type="URL"
+                        target="https://github.com/arthur-schnitzler/schnitzler-briefe-data"
+                        >GitHub</ref> können alle XML-Dateien heruntergeladen werden.</p>
             </div>
         </body>
     </text>

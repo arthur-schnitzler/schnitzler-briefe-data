@@ -3,7 +3,7 @@
         <fileDesc>
             <titleStmt>
                 <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-                <title level="a">Verwendete TEI-Elemente</title>
+                <title level="a">Kodierungsrichtlinien</title>
                 <author>
                     <persName>
                         <forename>Martin Anton</forename>
@@ -40,11 +40,11 @@
     <text>
         <body>
             <div>
-                <p>Hier sind die wichtigsten in den TEI-Dateien verwendeten Elemente ausgewiesen,
-                    einschließlich etwaiger Normalisierungen und idiosynkratischer Verwendungen und
-                    Adaptierungen. Adressiert ist die Aufstellung dabei nicht nur an Forscherinnen
-                    und Forscher, die mit den Daten weiterarbeiten möchten, sondern zugleich an uns
-                    selbst in der Funktion eines Style-Sheets.</p>
+                <p>Hier sind die wichtigsten in den TEI-Dateien verwendeten Elemente und Attribute
+                    ausgewiesen, einschließlich etwaiger Normalisierungen und idiosynkratischer
+                    Verwendungen sowie Adaptierungen. Adressiert ist die Aufstellung dabei nicht nur
+                    an Forscherinnen und Forscher, die mit den Daten weiterarbeiten möchten, sondern
+                    zugleich an uns selbst in der Funktion eines Stylesheets.</p>
                 <p/>
             </div>
             <div type="nav">
@@ -62,7 +62,7 @@
                         <ref target="#h.ytug3qkxr7n">Umgang mit Whitespace</ref>
                     </item>
                     <item>
-                        <ref target="#h.b0wkpa7acp2g">Herausgebertext</ref>
+                        <ref target="#h.b0wkpa7acp2g">Herausgeberinnen- und Herausgebertext</ref>
                         <list>
                             <item>
                                 <ref target="#h.820h9u3p9byz">anchor und note</ref>
@@ -323,8 +323,7 @@
                     <ref target="https://tei-c.org/guidelines/P5/"
                         >https://tei-c.org/guidelines/P5/</ref>
                 </p>
-                <p>Der Quellcode unserer Website samt aller Korrespondenzstücke als XML-Dateien
-                    findet sich hier:</p>
+                <p>Alle Korrespondenzstücke unserer Edition sind als XML-Dateien hier zu finden:</p>
                 <p>
                     <ref target="https://github.com/arthur-schnitzler/schnitzler-briefe-data"
                         >https://github.com/arthur-schnitzler/schnitzler-briefe-data</ref>
@@ -334,9 +333,9 @@
                     beschriebenen Dateien validiert.</p>
                 <p>Die Bildrechte sind nicht in unserem Besitz, weswegen die Faksimiles nicht
                     heruntergeladen werden können.</p>
-                <p>Die folgenden wenigen Anweisungen und Hinweise auf Elemente gelten jeweils für
-                    das gesamte XML-Dokument. Im Anschluss daran folgt eine Darstellung des Aufbaus
-                    eines solchen Dokuments mit den fixen Bestandteilen.</p>
+                <p>Die folgenden Beschreibungen der Verwendungsweisen von Elementen und Attributen
+                    gelten jeweils für das gesamte XML-Dokument. Im Anschluss daran folgt eine
+                    Darstellung des Aufbaus eines solchen Dokuments mit den fixen Bestandteilen.</p>
                 <div type="level2">
                     <head xml:id="h.ijg5nb7pq2lo">Stilistisches</head>
                     <list>
@@ -344,27 +343,30 @@
                             bibliografischen Angaben: <list>
                                 <item>Hg./Hgg. für Herausgeber und Herausgeberinnen</item>
                                 <item>Nr. für Nummer</item>
+                                <item>Bd. für Band</item>
+                                <item>Aufl. für Auflage</item>
                                 <item>Jg. für Jahrgang</item>
                                 <item>H. für Heft</item>
                                 <item>S. für Seite</item>
                             </list>
                         </item>
-                        <item>Daten sind immer vollständig auszuschreiben, einschließlich der
-                            Jahresangabe und mit fixem Leerzeichen (<code>&amp;#160;</code>) zu
-                            trennen: »3. 1. 1926« </item>
+                        <item>Daten sind immer vollständig, aber ohne Nullen auszuschreiben,
+                            einschließlich der Jahresangabe und mit fixem Leerzeichen
+                                (<code>&amp;#160;</code>) zu trennen: »3. 1. 1926« </item>
                         <item>Österreichisches und bundesdeutsches Deutsch stehen gleichwertig
                             nebeneinander. </item>
-                        <item>Nach Möglichkeit das generische Maskulinum umschiffen und Formen
-                            ausschreiben. Ansonsten das Gendersternchen »*« verwenden.</item>
+                        <item>Nach Möglichkeit ist das generische Maskulinum zu umschiffen, beide
+                            Formen sind auszuschreiben. Ansonsten ist das Gendersternchen »*« zu
+                            verwenden.</item>
                     </list>
                 </div>
                 <div type="level2">
                     <head xml:id="h.ytug3qkxr7n">Umgang mit Whitespace</head>
                     <p>XML ist, wenn es zu Abständen und Leerzeichen kommt, problematisch. Doppelte
-                        Leerzeichen benötigen eine Sonderbehandlung und ebenso der Fall, dass
-                        zwischen zwei Elementen ein Leerzeichen stehen soll. Wir codieren so, dass
-                        wir das Leerzeichen zwischen zwei Elementen ebenfalls als Element setzen.
-                        Dadurch wissen wir, dass Zwischenräume zwischen Elementen, die &gt;&lt; oder
+                        Leerzeichen benötigen eine Sonderbehandlung wie der Fall, wenn zwischen zwei
+                        Elementen ein Leerzeichen stehen soll. Wir kodieren so, dass wir das
+                        Leerzeichen zwischen zwei Elementen ebenfalls als Element setzen. Dadurch
+                        wissen wir, dass Zwischenräume zwischen Elementen, die wie &gt;&lt; oder
                         &gt;&#160;&lt; oder &gt;&#160;&#160;&#160;&#160;&lt; aussehen, ignoriert
                         werden können.</p>
                     <div type="example">
@@ -382,52 +384,53 @@
                     </div>
                 </div>
                 <div type="level2">
-                    <head xml:id="h.b0wkpa7acp2g">Herausgebertext</head>
+                    <head xml:id="h.b0wkpa7acp2g">Herausgeberinnen- und Herausgebertext</head>
                     <div type="level3">
                         <head xml:id="h.820h9u3p9byz">anchor und note</head>
-                        <p><code>&lt;anchor&gt;</code> ist ein leeres Element mit einer innerhalb
-                            des Projektes eindeutigen <code>@xml:id</code> und einem
+                        <p><code>anchor</code> ist ein leeres Element mit einer innerhalb des
+                            Projektes eindeutigen <code>@xml:id</code> und einem
                             Klassifizierungsattribut <code>@type</code> wobei einer der drei Werte
                             erlaubt ist: »label«, »textConst«, »commentary«.</p>
-                        <p>»label« erlaubt, eine bestimmte Textstelle zu referenzieren. Die beiden
-                            letzteren Arten markieren den Beginn des Lemmabereichs, der mit dem
-                            Element <code>note</code> endet. In diesem Fall sind die
-                            zusammengehörigen Bereiche <code>anchor</code> und <code>note</code>
-                            durch weitgehend idente <code>@xml:id</code> verklammert, nur die bei
+                        <p>»label« erlaubt es, eine bestimmte Textstelle zu referenzieren. Die
+                            beiden letzteren Arten markieren den Beginn des Lemmabereichs, der mit
+                            dem Element <code>note</code> endet. In diesem Fall sind die
+                            zusammengehörigen Tags <code>anchor</code> und <code>note</code> durch
+                            weitgehend idente <code>@xml:id</code> verklammert, nur die bei
                                 <code>note</code> hat ein »h« als letztes Zeichen.</p>
-                        <p>Das Element <code>note</code> enthält einen Kommentar, eine Erläuterung 
-                            zur Textkonstitution oder eine Fußnote des Originaltexts (<code>note[@type='footnote']</code>, siehe unten). Die
+                        <p>Das Element <code>note</code> enthält einen Kommentar, eine Erläuterung
+                            zur Textkonstitution oder eine Fußnote des Originaltexts
+                                (<code>note[@type='footnote']</code>, siehe unten). Die
                             Unterscheidung von Textkonstitution (<code>@type="textConst"</code>) und
-                            von Kommentar (<code>@type="commentary"</code>) geschieht entlang der
-                            Frage, ob hier ein Phänomen des Blattes beschrieben wird oder ob es sich
-                            um eine editorische Zugabe handelt. Während die Textkonstitution als zum
+                            Kommentar (<code>@type="commentary"</code>) geschieht entlang der Frage,
+                            ob hier ein Phänomen des Blattes beschrieben wird oder ob es sich um
+                            eine editorische Zugabe handelt. Während die Textkonstitution als zum
                             Text gehörend betrachtet wird, wird ein Kommentar als externer Text
                             verstanden. In der Praxis erklärt das, warum Briefpartner und
                             -partnerinnen in einer »textConst«-<code>note</code> nicht, in einer
-                                »commentary«-<code>note</code> schon referenziert werden. </p>
+                                »commentary«-<code>note</code> aber schon referenziert werden. </p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.ug3sz0p5kyp">bibl</head>
-                        <p>Bibliografische Angaben werden in ein <code>bibl</code>-Element verpackt.
-                            In Kommentaren erfolgt die Angabe von Monografien nach dem Titelblatt,
-                            an anderen Orten nach der üblichen Zitation. Ortsangaben von Verlagen
-                            werden nicht ausgezeichnet. Verlage werden mit <code>&lt;rs
-                                type="org"&gt;</code> bestimmt und erhalten dann ein Attribut
-                                <code>@ref</code>, wenn der betreffende Verlag auch sonst in den
-                            Briefen vorkommt und es sich um ein Buch der Zeit handelt. Verlage, aus
-                            späterer Zeit werden als Element <code>publisher</code> gekennzeichnet.
-                            Beispielsweise steht der S. Fischer-Verlag bei Büchern bis 1931 in einem
-                            Element <code>rs</code>, aber bei späteren Erscheinungen aber in
-                                <code>publisher</code>. Ähnlich verhält es sich mit dem Ausweisen
-                            von Verfasserinnen und Verfassern und Titeln. Sofern ein Indexbezug
-                            (Erscheinen vor 1932) hergestellt werden soll, stehen sie in einem
-                                <code>rs</code>-Element. Bei Titeln gibt es ein alternatives Element
-                            für die nicht indizierten Fälle: <code>title</code>. Das Jahr der
-                            bibliografischen Angabe wird mit <code>date</code>…<code>/date</code>
-                            kenntlich gemacht. (In der Praxis führt das dazu, dass meistens ein
-                            Leerzeichen händisch dazwischen platziert werden muss: »<code>Wien und
-                                Leipzig: &lt;rs type="org" ref="#pmb12345"&gt;Hugo
-                                Heller&lt;/orgName&gt;&lt;space unit="chars"
+                        <p>Bibliografische Angaben werden in <code>bibl</code>-Elemente verpackt. In
+                            Kommentaren erfolgt die Angabe von Monografien nach dem Titelblatt, an
+                            anderen Orten nach der üblichen Zitation. Ortsangaben von Verlagen
+                            werden nicht oder nur mittels <code>pubPlace</code> ausgezeichnet.
+                            Verlage werden mit <code>&lt;rs type="org"&gt;</code> bestimmt und
+                            erhalten dann ein Attribut <code>@ref</code>, wenn der betreffende
+                            Verlag auch sonst in den Briefen vorkommt und es sich um ein Buch der
+                            Zeit handelt. Verlage aus späterer Zeit werden als Element
+                                <code>publisher</code> gekennzeichnet. Beispielsweise steht der S.
+                            Fischer-Verlag bei Büchern bis 1931 in einem Element <code>rs</code>,
+                            aber bei späteren Erscheinungen in <code>publisher</code>. Ähnlich
+                            verhält es sich mit dem Ausweisen von Verfasserinnen und Verfassern und
+                            Titeln. Sofern ein Indexbezug (Erscheinen vor 1932) hergestellt werden
+                            soll, stehen sie in einem <code>rs</code>-Element. Bei Titeln gibt es
+                            ein alternatives Element für die nicht indizierten Fälle:
+                                <code>title</code>. Das Jahr der bibliografischen Angabe wird mit
+                                <code>date</code> kenntlich gemacht. (In der Praxis führt das dazu,
+                            dass meistens ein fixes Leerzeichen dazwischen platziert werden muss:
+                                »<code>Wien und Leipzig: &lt;rs type="org" ref="#pmb12345"&gt;Hugo
+                                Heller&lt;/org&gt;&lt;space unit="chars"
                                 quantity="1"/&gt;&lt;date&gt;1909&lt;/date&gt;</code>«). Der letzte,
                             schließende Punkt wird nach dem <code>&lt;/bibl&gt;</code> gesetzt. </p>
                     </div>
@@ -442,44 +445,45 @@
                     </div>
                     <div type="level3">
                         <head xml:id="h.m49xdzuyi1vy">ref</head>
-                        <p>Dient für Verweise. Die wichtigsten Fälle werden in Folge beschrieben.
-                            Soweit sinnvoll, können mit dem Attribut <code>@subtype</code> genauere
-                            Spezifizierungen der Beziehung vorgenommen werden, etwa »vgl./Vgl.« (<code>cf</code>, <code>Cf</code>), »siehe/Siehe« (<code>see</code>, <code>See</code>)
-                            oder – am häufigsten – »date-only«. Im letzteren Fall wird in der
-                            Ausgabe das Datum entsprechend der Konvention (D)D. (M)M. YYYY gesetzt
-                            und ist es online als Link auswählbar.</p>
+                        <p>Wird für Verweise herangezogen. Die wichtigsten Fälle:</p>
                         <p><code>@type="schnitzler-briefe"</code> (Verweis auf einen Brief innerhalb
                             der <ref target="https://schnitzler-briefe.acdh.oeaw.ac.at/"
-                                >Briefedition</ref>) enthält in <code>@target</code> die
-                            Briefnummer/den Dateinamen (ohne ».xml«).</p>
+                                >Briefedition</ref>), enthält in <code>@target</code> die
+                            Briefnummer/den Dateinamen (ohne ».xml«)</p>
                         <p><code>@type="schnitzler-tagebuch"</code> (Verweis auf die digitale
                             Edition des <ref target="https://schnitzler-tagebuch.acdh.oeaw.ac.at/"
-                                >Tagebuch</ref>s) ist in <code>@target</code> mit einem ISO-Datum
-                            spezifiziert.</p>
+                                >Tagebuch</ref>s), ist in <code>@target</code> mit einem ISO-Datum
+                            spezifiziert</p>
                         <p><code>@type="schnitzler-lektueren"</code> (Verweis auf die digitale
                             Edition der <ref target="https://schnitzler-lektueren.acdh.oeaw.ac.at/"
-                                >Leseliste</ref>) enthält in <code>@target</code> eine Referenz auf
+                                >Leseliste</ref>), enthält in <code>@target</code> eine Referenz auf
                             eine Region bzw. ein Land (z. B. »Deutschsprachige Literatur«,
-                            »Frankreich«).</p>
-                        <p><code>@type="schnitzler-bahr"</code> (Verweis auf einen Brief/Text innerhalb
-                            der <ref target="https://schnitzler-bahr.acdh.oeaw.ac.at/"
-                                >Edition</ref>) enthält in <code>@target</code> die
-                            Briefnummer/den Dateinamen (ohne ».xml«).</p>
+                            »Frankreich«)</p>
+                        <p><code>@type="schnitzler-bahr"</code> (Verweis auf einen Brief/Text
+                            innerhalb der <ref target="https://schnitzler-bahr.acdh.oeaw.ac.at/"
+                                >Edition</ref>), enthält in <code>@target</code> die Briefnummer/den
+                            Dateinamen (ohne ».xml«)</p>
+                        <p>Soweit sinnvoll, können mit dem Attribut <code>@subtype</code> genauere
+                            Spezifizierungen der Beziehung vorgenommen werden, etwa »vgl./Vgl.«
+                                (<code>cf</code>, <code>Cf</code>), »siehe/Siehe« (<code>see</code>,
+                                <code>See</code>) oder – am häufigsten – »date-only«. Im letzteren
+                            Fall wird in der Ausgabe das Datum entsprechend der Konvention (D)D.
+                            (M)M. YYYY gesetzt und online wird daraus ein Link.</p>
                         <p>Für zwei weitere Arten der Verweise siehe <code>correspContext</code>
                             weiter unten.</p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.bczvlasvnqe6">supplied</head>
-                        <p>Ergänzung durch die Herausgeber. Das Element wird möglichst sparsam
-                            eingesetzt. Wichtig ist nicht die Korrektur des Originaltextes als die
-                            Gewährleistung der Lesbarkeit. </p>
+                        <p>Ergänzung durch die Herausgeberinnen und Herausgeber. Das Element wird
+                            möglichst sparsam eingesetzt. Wichtig ist nicht die Korrektur des
+                            Originaltextes, sondern die Gewährleistung der Lesbarkeit. </p>
                     </div>
                 </div>
                 <div type="level2">
                     <head xml:id="h.lktos9nivu54">Edierter Text</head>
                     <div type="level3">
                         <head xml:id="h.pytigmnu01ft">@ref, @corresp, @key, @scribe</head>
-                        <p>Diese Attribute verweisen auf Bezugnahmen zu Entitäten, die im Webservice
+                        <p>Diese Attribute stellen Bezugnahmen auf Entitäten dar, die im Webservice
                             PMB <ref target="https://pmb.acdh.oeaw.ac.at/"
                                 >https://pmb.acdh.oeaw.ac.at/</ref> verzeichnet sind. Vorangestellt
                             ist jeder Nummer: »#pmb«, wobei auch mehrere, durch Leerzeichen
@@ -504,55 +508,55 @@
                         <head xml:id="h.iok0unm7yjq5">@rend</head>
                         <p>Bei allen Absatzelementen wie <code>p</code>, <code>dateline</code>,
                                 <code>salute</code> kann durch die Verwendung des Attributs
-                                <code>@rend</code> mit den Werten: »right«, »center«, »inline«
+                                <code>@rend</code> mit den Werten »right«, »center« und »inline«
                             (»left« ist zugleich der stillschweigend angenommene Fall und muss nicht
                             angegeben werden) eine Stilisierung vorgenommen werden. </p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.68fvu9p1fui5">add</head>
-                        <p>Hinzufügungen in den Text werden von &lt;add&gt;…&lt;/add&gt;
+                        <p>Hinzufügungen in den Text werden von <code>all</code>-Elementen
                             eingeschlossen. Das Attribut <code>@place</code> gibt eine genauere
-                            geografische Verortung: »above«, »below«, »inline«, »margin«, »mixed«. </p>
-                        <p>Vgl. auch: <code>subst</code></p>
+                            geografische Verortung an: »above«, »below«, »inline«, »margin«,
+                            »mixed«. </p>
+                        <p>Vgl. auch <code>subst</code></p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.wqzvi0glpp9i">damage</head>
                         <p>Ummantelt eine durch Beschädigung entstandene Textstelle. Die häufigsten
                             Fehler sind verschmierte Tinte, Blattverlust, Lochung, Wasser
                                 (<code>agent="…"</code>). Innerhalb eines <code>damage</code> ist
-                            der verlorene Text immer mit <code>unclear</code> oder
-                                <code>supplied</code> näher spezifiziert, ob dieser nur unsicher
-                            lesbar ist oder überhaupt hergestellt werden muss. </p>
+                            immer mit <code>unclear</code> oder <code>supplied</code> näher
+                            spezifiziert, ob der verlorene Text nur unsicher lesbar ist oder
+                            überhaupt hergestellt werden muss. </p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.696xnuu088od">date</head>
-                        <p>Alle Datumsangaben werden mit <code>&lt;date&gt;…&lt;/date&gt;</code>
-                            umgeben. Das zusätzliche Attribut <code>@when</code> ist optional.
-                            Derzeit handelt es sich bei dieser Attribut-Auszeichnung noch um ein
-                            nicht genutztes Feature. </p>
+                        <p>Alle zeitlich fixierbaren Daten werden mit <code>date</code>
+                            ausgezeichnet, auch zukünftige wie: »wir sehen uns dann am
+                                <code>&lt;date&gt;</code>Freitag<code>&lt;/date&gt;</code>« aber
+                            natürlich nicht: »am Montag gehe ich immer ins Café«. Das zusätzliche
+                            Attribut <code>@when</code> ist optional. Derzeit handelt es sich bei
+                            dieser Attribut-Auszeichnung noch um ein nicht genutztes Feature. </p>
                         <p>Abstände bei Datumsangaben werden im Normalfall normalisiert, wobei
                             zwischen ».« und Ziffer/römischer Monatsangabe ein fixer Abstand
                                 (<code>&amp;#160;</code>) kommt. Zwischen ausgeschriebenem Monat und
-                            Jahr kommt dann ein ein fixer Abstand, wenn ein Zeilenumbruch einen Teil
-                            schwer zuordenbar macht, also »<code>Juli&amp;#160;904</code>« aber
-                                »<code>Juli 1904</code>«. Alle zeitlich fixierbaren Daten werden mit
-                                <code>date</code> eingeklammert, auch zukünftige wie: »wir sehen uns
-                            dann am <code>&lt;date&gt;</code>Freitag<code>&lt;/date&gt;</code>« aber
-                            natürlich nicht: »am Montag gehe ich immer ins Café«. </p>
-                        <p><code>@when</code>, <code>@notBefore</code>, <code>&amp;#160;</code>,
-                                <code>@from</code>, <code>&amp;#160;</code> wird nach ISO-Standard
-                            ausgefüllt, wobei einfach gekürzt wird, wenn etwas nicht bekannt ist,
-                            wie »1904-07«. Es geht nur vom Größeren zum Kleineren. Der Fall: »Am 31.
+                            Jahr kommt dann ein fixer Abstand, wenn ein Zeilenumbruch einen Teil
+                            schwer zuordenbar macht, also »<code>Juli&amp;#160;904</code>«, aber
+                                »<code>Juli 1904</code>«.</p>
+                        <p><code>@when</code>, <code>@notBefore</code>, <code>@notAfter</code>,
+                                <code>@from</code> und <code>@to</code> werden nach ISO-Standard
+                            ausgefüllt, wobei einfach gekürzt wird, wenn etwas nicht bekannt ist, z.
+                            B. »1904-07«. Es geht nur vom Größeren zum Kleineren. Der Fall: »Am 31.
                             irgendeines Monats im Jahr 1904« (»<code>1904-00-31</code>«) ist nicht
                             vorgesehen. </p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.xf6ljs6zwi34">dateline</head>
                         <p>Datumszeile. Diese ist nicht rekonstruiert, sondern dient einzig und
-                            allein der Funktion, jene Zeile innerhalb eines Korrespondenzstücks zu
-                            benennen, die eine Datierung enthält. Sie steht für gewöhnlich innerhalb
-                            von <code>opener</code> oder <code>postscript</code> und hat immer ein
-                            Kindelement <code>date</code>. </p>
+                            allein der Funktion, jene Zeile innerhalb eines Korrespondenzstücks
+                            auszuzeichnen, die eine Datierung enthält. Sie steht für gewöhnlich
+                            innerhalb von <code>opener</code> oder <code>postscript</code> und hat
+                            immer ein Kindelement <code>date</code>. </p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.jbikk1a7u7b3">del</head>
@@ -569,16 +573,17 @@
                         <head xml:id="h.byyox6cauja6">gap</head>
                         <p>Für Lücken im Text. </p>
                         <p><code>&lt;gap quantity="2" reason="illegible" unit="chars"/&gt;</code>
-                            bedeutet: zwei nicht entzifferte Zeichen. Möglich auch
+                            bedeutet: zwei nicht entzifferte Zeichen. Möglich ist auch
                                 <code>@unit="lines"</code> für nicht entzifferte Zeilen. (In der
                             Wiedergabe gesetzt wird ein Mal-Zeichen (»×«), nicht der Kleinbuchstabe
-                            »x«) </p>
+                            »x«.) </p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.vhqpb8u3xrdb">handShift</head>
-                        <p>Markiert Schreiberwechsel. <code>&lt;handShift/&gt;</code> ohne ein
-                            Attribut hat als Wiedergabe »[handschriftlich:]«, etwa bei eigenhändiger
-                            Unterschrift nach einem mit Schreibmasche getippten Text.</p>
+                        <p>Markiert Schreiberinnen- und Schreiberwechsel. <code>handShift</code>
+                            ohne ein Attribut hat als Wiedergabe »[handschriftlich:]«, etwa bei
+                            eigenhändiger Unterschrift nach einem mit Schreibmasche getippten
+                            Text.</p>
                         <p><code>&lt;handShift scribe="#pmb2121"/&gt;</code> setzt »[Handschrift
                             Arthur Schnitzler:]«, <code>&lt;handShift
                                 medium="typewriter"/&gt;</code> setzt »[maschinschriftlich:]«.</p>
@@ -590,16 +595,16 @@
                             »subscript«, »bold«, »pre-print«, »stamp«, »small_caps«, »antiqua«,
                             »spaced_out«, »capitals«. Einzig die Unterstreichung (»underline«)
                             erfordert ein zusätzliches Attribut <code>@n</code> mit der Anzahl der
-                            Linien, mit denen unterstrichen wird. </p>
+                            Linien, mit denen unterstrichen wurde. </p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.np3i0ro5zzpe">lg</head>
                         <p>Das Element <code>lg</code> dient dazu, Gedichte mit dem originalen
                             Zeilenfall auszuzeichnen. <code>&lt;lg type="poem"/&gt;</code> kann
-                            entweder gleich aus den einzelnen Versen (»lines«)
-                                <code>&lt;l/&gt;</code> bestehen, oder, wenn es aus Strophen
-                            besteht, so kommt es innerhalb dessen noch zu einer neuerlichen
-                            Differenzierung mit <code>lg</code>.</p>
+                            entweder gleich aus den einzelnen Versen (»lines«) <code>l</code>
+                            bestehen, oder, wenn es aus Strophen besteht, so kommt es innerhalb von
+                                <code>lg</code> noch zu einer weiteren Differenzierung mit
+                                <code>lg</code>.</p>
                         <div type="example">
                             <p><code>&lt;lg type="poem"&gt;</code>
                             </p>
@@ -620,10 +625,10 @@
                     </div>
                     <div type="level3">
                         <head xml:id="h.5sxotegcjhqg">pb</head>
-                        <p>Markiert den Seitenbeginn. Das Attribut <code>@facs</code> verweist dabei
-                            auf den Dateinamen des Faksimiles. Der XPath-Befehl
+                        <p>Markiert den Seitenbeginn. Das Attribut <code>@facs</code> verweist auf
+                            den Dateinamen des Faksimiles. Der XPath-Befehl
                                 <code>distinct-values(//pb/@facs)</code> ergibt alle innerhalb des
-                            Dokumentes erwähnten Faksimiles. Gelegentlich befindet sich
+                            Dokuments erwähnten Faksimiles. Gelegentlich befindet sich
                                 <code>pb</code> auch innherhalb der physischen Beschreibung
                                 (<code>physDesc</code>), wenn sich etwa ein Poststempel auf einer
                             ansonsten unbeschriebenen Umschlagseite befindet. Sofern die Seite im
@@ -634,9 +639,9 @@
                         <head xml:id="h.arw6fzb352al">rs</head>
                         <p>Verweist auf Entitäten von den Typen »person«, »work«, »place« und »org«
                             (Organisation/Institution). Diese können geschachtelt sein und im
-                            Attribut <code>@ref</code> mehrere Werte enthalten. (Siehe oben.) </p>
+                            Attribut <code>@ref</code> mehrere Werte enthalten (siehe oben). </p>
                         <p>Als einzige Unterklassifizierung (<code>@subtype</code>) ist »implied«
-                            vorgesehen. Das findet immer dann Anwendung, wenn nur der inhaltliche
+                            vorgesehen. Diese ist immer dann vorzufinden, wenn nur der inhaltliche
                             Zusammenhang klärt, wer oder was gemeint ist, beispielweise »Mama« oder
                             »der neue Schnitzler« (– das alludierte Werk ist nur durch den Kontext
                             bestimmbar). </p>
@@ -656,8 +661,8 @@
                             <p>Bei längeren Angaben wird nur der genaueste geografische Punkt
                                 ausgezeichnet, wobei die Auszeichnungstiefe bei der Straße, nicht
                                 der Hausnummer endet. Ein Zeilenwechsel in der Vorlage stellt eine
-                                Grenze dar, über die eine gemeinsame Beschlagwortung nicht hinüber
-                                reicht.</p>
+                                Grenze dar, über die eine gemeinsame Beschlagwortung nicht
+                                hinüberreicht.</p>
                             <div type="example">
                                 <p>Beispiel:</p>
                                 <p><code>&lt;rs type="place"&gt;Wien XII Meidlinger Hauptstr.
@@ -670,30 +675,30 @@
                     <div type="level3">
                         <head xml:id="h.smhvwi50u065">salute</head>
                         <p>Umrahmt die Begrüßungsformel. Wenn sie im Brief abgesetzt ist, dann steht
-                            sie im <code>&lt;opener&gt;</code>-Element. Wenn sie, wie bei Postkarten
-                            häufig, im Fließtext steht, dann nimmt sie noch das Komma und das
-                            folgende Leerzeichen mit. </p>
+                            sie im <code>opener</code>-Element. Wenn sie, wie bei Postkarten häufig,
+                            im Fließtext steht, dann nimmt sie noch das Komma und das folgende
+                            Leerzeichen mit. </p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.ts1sh447goke">seg</head>
                         <p>Die genaue Lokalisierung von Text auf der Fläche wird in dieser Edition
                             nur eingeschränkt berücksichtigt und beschränkt sich zumeist auf die
                             Attributwerte von <code>@rend</code> in Absätzen (»left«, »right«,
-                            »center«, »inline«). Eine Ausnahme stellt <code>seg</code> dar, mit dem
-                            es möglich ist, Text links- und rechtsbündig in die selbe Zeile zu
-                            stellen. Der Aufbau schaut verpflichtend so aus: <code>&lt;p&gt;&lt;seg
-                                rend="left"&gt;Linksbündiger Text&lt;/seg&gt; &lt;seg
-                                rend="right"&gt;Rechtsbündiger Text&lt;/seg&gt;&lt;/p&gt;
+                            »center«, »inline«, siehe oben). Eine Ausnahme stellt der Tag
+                                <code>seg</code> dar, mit dem es möglich ist, Text links- und
+                            rechtsbündig in die selbe Zeile zu stellen. Der Aufbau sieht so aus:
+                                <code>&lt;p&gt;&lt;seg rend="left"&gt;Linksbündiger Text&lt;/seg&gt;
+                                &lt;seg rend="right"&gt;Rechtsbündiger Text&lt;/seg&gt;&lt;/p&gt;
                             </code></p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.vvs4s2e4zrp5">subst</head>
-                        <p>Ein Überschreibungsvorgang wird durch <code>&lt;subst&gt;</code>
-                            markiert. Theoretisch werden nur die letzten beiden Textschichten
-                            behandelt, praktisch kommt bislang auch keine weitere Schicht vor. (Der
-                            Fall, in dem es vorkäme, wäre, wenn die handschriftlichen Korrekturen
-                            der Typistin ausgewiesen würden. Werden sie aber nicht.) Das Element
-                            besteht immer aus zwei Kinder-Elementen: </p>
+                        <p>Ein Überschreibungsvorgang wird durch <code>subst</code> markiert.
+                            Theoretisch werden nur die letzten beiden Textschichten behandelt,
+                            praktisch kommt bislang auch keine weitere Schicht vor. (Der Fall, in
+                            dem es vorkäme, wäre, wenn die handschriftlichen Korrekturen der
+                            Typistin ausgewiesen würden. Werden sie aber nicht.) Das Element besteht
+                            immer aus zwei Kind-Elementen: </p>
                         <list>
                             <item><code>subst</code>
                             </item>
@@ -741,11 +746,12 @@
                     </div>
                     <div type="level3">
                         <head xml:id="h.uct95ir015tn">author</head>
-                        <p>Enthält die Namen der am Korrespondenzstück beteiligten Verfasser. Nur
-                            der erste Name ist eine relevante Position, nennt er doch den
-                            Hauptschreiber. Danach folgen die weiteren Namen ohne eine besondere
-                            Reihung. Dieselbe Information ist auch aus <code>correspDesc</code>
-                            (siehe unten) zu beziehen. </p>
+                        <p>Enthält die Namen der am Korrespondenzstück beteiligten Verfasserinnen
+                            und Verfasser. Nur der erste Name ist eine relevante Position, da hier
+                            der Hauptschreiber bzw. die Hauptschreiberin zu finden ist. Danach
+                            folgen die weiteren Namen ohne eine besondere Reihung. Dieselbe
+                            Information ist auch aus <code>correspDesc</code> (siehe unten) zu
+                            beziehen. </p>
                     </div>
                 </div>
                 <div type="level2">
@@ -753,8 +759,8 @@
                     <p>Enthält zwei mögliche Kinder, nämlich Archivzeugen (<code>listWit</code>) und
                         gedruckte Zeugen (<code>listBibl</code>). Hier wird eine implizite
                         Hierarchie angewandt: Der erste Eintrag von <code>listWit</code> ist der
-                        edierte Zeuge. Sollte kein <code>listWit</code> vorhanden sein, so ist es
-                        der erste Eintrag von <code>listBibl</code> der für die Edition relevante. </p>
+                        edierte Zeuge. Sollte kein <code>listWit</code> vorhanden sein, so bildet
+                        die Vorlage der erste Eintrag in <code>listBibl</code>. </p>
                     <div type="level3">
                         <head xml:id="h.ddeok5sllgz9">listWit/witness[@n="1"]</head>
                         <p>Der erste Archivzeuge. Weitere Archivzeugen (etwa Durchschläge) sind mit
@@ -762,7 +768,7 @@
                             enthält Hinweise auf das Archiv und die Signatur des Objekts innerhalb
                             des Archivs. Während <code>msIdentifier</code> den Archivstandort und
                             die dortige Signatur angibt, enthält <code>physDesc</code> die physische
-                            Beschreibung des Objekts. (Siehe unten.) </p>
+                            Beschreibung des Objekts (siehe unten). </p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.4kqrmkxn6mbo">listBibl/biblStruct</head>
@@ -775,10 +781,10 @@
                 </div>
                 <div type="level2">
                     <head xml:id="h.e5iaxzaz0b4">physDesc</head>
-                    <p>Es handelt sich um ein Kind von <code>listWit/witness[@n="1"]/msDesc</code>
-                        und enthält die Beschreibung der physischen Beschaffenheit des
-                        Archivzeugens. Drei bis vier Elemente machen im Normalfall
-                            <code>physDesc</code> aus: </p>
+                    <p>Dabei handelt es sich um ein Kind von
+                            <code>listWit/witness[@n="1"]/msDesc</code>. <code>physDesc</code>
+                        enthält die Beschreibung der physischen Beschaffenheit des Archivzeugens.
+                        Drei bis vier Elemente machen im Normalfall <code>physDesc</code> aus: </p>
                     <list>
                         <item><code>objectDesc</code> – für das Material</item>
                         <item><code>handDesc</code> – für die Handschriften</item>
@@ -793,13 +799,13 @@
                         <div type="level4">
                             <head xml:id="h.ddolrupl7wro">@n, @type="_blaetter" und
                                 @type="_seiten"</head>
-                            <p>Für Postkarten und ähnliches ist keine Angabe nötig. Im Ausnahmefall
-                                kann das Element auch Inhalt haben. Da dies als alternative
-                                Beschreibung verwendet wird, ist dann die komplette Angabe
-                                notwendig.</p>
+                            <p>Für Postkarten und Ähnliches ist keine solche Angabe nötig. Im
+                                Ausnahmefall kann das Element aber auch Inhalt haben. Da dies als
+                                alternative Beschreibung verwendet wird, ist dann die komplette
+                                Angabe notwendig.</p>
                             <div type="example">
                                 <p>Beispiel 1: </p>
-                                <p>3 Blatt, 6 Seiten schauen so aus:</p>
+                                <p>3 Blatt, 6 Seiten sehen so aus:</p>
                                 <p>
                                     <code>&lt;desc n="3" type="_blaetter"/&gt;</code>
                                 </p>
@@ -878,7 +884,7 @@
                                 aber erst durch die Übermittlung ihre Gestalt. Der jeweilige
                                 Aufgabeschein ist für gewöhnlich nicht überliefert. Hier vollziehen
                                 wir einen inhaltlichen Spagat, der uns selbst nicht ganz koscher
-                                ist, der aber, einfach zu korrigieren sein wird, wenn eine
+                                ist, der aber einfach zu korrigieren sein wird, wenn eine
                                 sinnvollere Lösung vorliegt. Zwar wird das Telegramm in
                                     <code>objectDesc</code> beschrieben, aber die auf die
                                 Übermittlung zu beziehenden Teile des Telegramms werden unter
@@ -900,16 +906,17 @@
                     </div>
                     <div type="level3">
                         <head xml:id="h.qw2h1um6d6u8">handDesc</head>
-                        <p>Hier findet sich die Beschreibung der verschiedenen Handschriften
-                            innerhalb des Korrespondenzstücks. </p>
+                        <p>Hier findet sich die Beschreibung der verschiedenen Handschriften auf
+                            einem Korrespondenzstück. </p>
                         <div type="level4">
                             <head xml:id="h.hsf8g05v21ru">@hands</head>
                             <p>Sollten mehrere Personen am Brief beteiligt sein, wobei das auch eine
                                 Schreibkraft umfassen kann, ist dieses Attribut verpflichtend und
                                 enthält die Anzahl der Schreibenden. </p>
-                            <p>Im Normalfall ist die Zahl der Hände ident mit der Zahl der als
-                                Autoren des Briefes. Wenn der Brief von einer Schreibkraft
-                                (»unbekannte Hand«) verfasst ist, ist er um eins höher. </p>
+                            <p>Im Normalfall ist die Zahl der Hände ident mit der Zahl der
+                                Autorinnen und Autoren des Briefes. Wenn der Brief von einer
+                                Schreibkraft (»unbekannte Hand«) verfasst ist, ist die Anzahl der
+                                Hände um eins höher. </p>
                             <div type="example">
                                 <p><code>&lt;handDesc hands="4"/&gt;</code>
                                 </p>
@@ -918,8 +925,8 @@
                         <div type="level4">
                             <head xml:id="h.l1a7jkunwg7w">handNote</head>
                             <p>Beschreibt die unterschiedlichen Handschriften, die vorkommen. Das
-                                Element kann ein Kind <code>&lt;p/&gt;</code> haben. Der Inhalt
-                                dieses Elements ist eine Ergänzung zu den Attributen von
+                                Element kann ein Kind <code>p</code> haben. Der Inhalt dieses
+                                Elements ist eine Ergänzung zu den Attributen von
                                     <code>handNote</code> und wird in der Ausgabe <hi
                                     rend="underline" n="1">zusätzlich</hi> – in runder Klammer –
                                 ausgegeben. </p>
@@ -927,13 +934,13 @@
                                 <head xml:id="h.xm4f5iuheon9">@corresp</head>
                                 <p>Gibt an, welche Handschriften innerhalb des Dokuments vorkommen. </p>
                                 <p>Wenn nur ein Autor, eine Autorin des Korrespondenzstücks
-                                    vorhanden ist und diese den Brief verfasst hat, muss das
-                                    Attribut nicht gesetzt werden. Ebenfalls implizit ist wird bei
-                                    Telegrammen, dass akzeptiert, dass diese, sofern
-                                    handschriftlich, von einer unbekannten Schreibkraft geschrieben
-                                    werden. In anderen Fällen, wenn die Schreibkraft unbekannt ist,
-                                    kann hier statt der Angabe einer PMB-Nummer (»#2121«) auch
-                                        <code>corresp ="schreibkraft"</code> stehen. </p>
+                                    vorhanden ist und dieser/diese den Brief verfasst hat, muss das
+                                    Attribut nicht gesetzt werden. Ebenfalls implizit wird bei
+                                    Telegrammen akzeptiert, dass diese, sofern handschriftlich, von
+                                    einer unbekannten Schreibkraft geschrieben wurden. In anderen
+                                    Fällen, wenn die Schreibkraft unbekannt ist, kann hier statt der
+                                    Angabe einer PMB-Nummer (»#pmb2121«) auch
+                                        <code>corresp="schreibkraft"</code> stehen. </p>
                                 <div type="example">
                                     <p>Ein Brief von Salten und Hofmannsthal: </p>
                                     <p><code>&lt;handDesc hands="2"&gt; </code></p>
@@ -954,8 +961,8 @@
                             </div>
                             <div type="level5">
                                 <head xml:id="h.4beskpjs0oeu">@medium</head>
-                                <p>Gibt die Schreibmedien an, die im Einsatz sind. Die Angabe ist
-                                    verpflichtend. Als Werte sind erlaubt: </p>
+                                <p>Gibt die Schreibmedien an, die zum Einsatz kamen. Die Angabe ist
+                                    verpflichtend. Folgende Werte sind erlaubt: </p>
                                 <list>
                                     <item>bleistift </item>
                                     <item>roter_buntstift </item>
@@ -965,7 +972,7 @@
                                     <item>blaue_tinte </item>
                                     <item>anderes </item>
                                 </list>
-                                <p>… wobei im letzteren Fall eine Angabe im Element zu machen ist: </p>
+                                <p>Im letzteren Fall ist eine Angabe im Element zu machen: </p>
                                 <p><code>&lt;handNote medium="anderes"&gt; mit Blut geschrieben
                                         &lt;/handNote&gt;</code></p>
                                 <p>Wenn jemand mit zwei unterschiedlichen Medien beteiligt ist, dann
@@ -982,12 +989,12 @@
                             </div>
                             <div type="level5">
                                 <head xml:id="h.p8tu5t38mj34">@style</head>
-                                <p>Vermerkt das verwendete Schreibsystem. Im Normalfall: Ob deutsche
-                                    oder lateinische Schreibschrift zum Einsatz kommt. Für
-                                    Ausnahmefälle, etwa wenn nur ein einzelnes Korrekturzeichen oder
-                                    eine Unterschrift vorhanden ist (diese werden nie den Schriften
-                                    zugeordnet), ist der letzte Fall – »nicht_anzuwenden« –
-                                    vorgesehen.</p>
+                                <p>Vermerkt das verwendete Schreibsystem. Im Normalfall wird hier
+                                    unterschieden, ob deutsche oder lateinische Schreibschrift zum
+                                    Einsatz kommt. Für Ausnahmefälle, etwa wenn nur ein einzelnes
+                                    Korrekturzeichen oder eine Unterschrift vorhanden ist (diese
+                                    werden nie den Schriften zugeordnet), ist der letzte Fall –
+                                    »nicht_anzuwenden« – vorgesehen.</p>
                                 <p>Werte: </p>
                                 <list>
                                     <item>kurrent</item>
@@ -1026,13 +1033,13 @@
                         <head xml:id="h.y764n270eq6g">additions</head>
                         <p>Alles, was dem Korrespondenzstück nach der Fertigstellung durch den
                             Verfasser, die Verfasserin hinzugefügt wurde, wird in diesem Element
-                            versammelt. Dafür werden, in chronologischer Reihe vom ältesten zum
-                            neuesten Ereignisse (<code>incident</code>) angelegt. Ausgenommen sind
-                            Archivsignaturen und Archivstempel, da diese Information bereits in
-                                <code>msIdentifier</code> behandelt wurde. Soweit sich Ereignisse
-                            trennen lassen, sind diese auch getrennt. Etwa sind die Poststempel
-                            nicht zum selben Augenblick gemacht, also sind zwei Stempel zwei
-                                <code>&lt;incident type="postal"/&gt;</code>. </p>
+                            versammelt. Dafür werden, in chronologischer Reihenfolge vom ältesten
+                            zum neuesten Ereignis, <code>incident</code>-Elemente angelegt.
+                            Ausgenommen sind Archivsignaturen und Archivstempel, da diese
+                            Information bereits in <code>msIdentifier</code> behandelt wurde. Soweit
+                            sich Ereignisse trennen lassen, sind diese auch getrennt. Etwa wurden
+                            die Poststempel nicht zum selben Augenblick gemacht, also sind zwei
+                            Stempel zwei <code>&lt;incident type="postal"/&gt;</code>. </p>
                         <div type="level4">
                             <head xml:id="h.uu3hmx5y0gxs">incident</head>
                             <p>Jedes Ereignis hat ein Attribut <code>@type</code>, das es
@@ -1043,25 +1050,25 @@
                                     <cell>Für Briefbeilagen. Diese werden ohne Verwendung von
                                         Abkürzungen ausgeschrieben: eigenhändiger Brief, 1 Blatt, 2
                                         Seiten, schwarze Tinte. Ist die Beilage ein
-                                        Korrespondenzstück von Dritten an Dritte, so wird der Autor
-                                        bzw. die Autorin nicht als solche im Header angeführt. Ist
-                                        das Korrespondenzstück an Schnitzler gerichtet, ist dies
-                                        sehr wohl der Fall.</cell>
+                                        Korrespondenzstück von Dritten an Dritte, so wird der Autor,
+                                        die Autorin nicht als solche/r im Header angeführt. Ist das
+                                        Korrespondenzstück an Schnitzler gerichtet, ist dies sehr
+                                        wohl der Fall.</cell>
                                 </row>
                                 <row>
                                     <cell>postal</cell>
-                                    <cell>Das die Übermittlung betreffende, etwa die Angabe
+                                    <cell>Das die Übermittlung Betreffende, etwa die Angabe
                                         »Rohrpost« oder die Stempel. </cell>
                                 </row>
                                 <row>
                                     <cell>receiver</cell>
                                     <cell>Vom Gegenüber angebrachte Anmerkungen auf dem
-                                        Korrespondenzstück, etwa eine Antwortskizze </cell>
+                                        Korrespondenzstück, etwa eine Antwortskizze.</cell>
                                 </row>
                                 <row>
                                     <cell>archival</cell>
                                     <cell>Die (meist von unbekannter Hand) hinzugefügten
-                                        Nummerierungen oder Ergänzungen</cell>
+                                        Nummerierungen oder Ergänzungen.</cell>
                                 </row>
                                 <row>
                                     <cell>editorial</cell>
@@ -1071,7 +1078,7 @@
                                 <row>
                                     <cell style="white-space: nowrap;">additional-information</cell>
                                     <cell>Zusätzliche, allgemeine Informationen. Beispielsweise die
-                                        Provenienz des Korrespondenzstücks oder der Künstler/die
+                                        Provenienz des Korrespondenzstücks oder der Künstler, die
                                         Künstlerin des Postkartenmotivs, sofern die Person sonst
                                         nicht genannt ist. </cell>
                                 </row>
@@ -1086,22 +1093,21 @@
                             <list>
                                 <item>Im Normalfall wird mit dem Schreibmedium begonnen, dann folgt
                                     ein Hinweis auf die Handschrift, beispielsweise: »Mit Bleistift
-                                    von unbekannter Hand…«. </item>
-                                <item>Verb ist einem Nomen vorzuziehen: »Mit Bleistift von
+                                    von unbekannter Hand …«. </item>
+                                <item>Ein Verb ist einem Nomen vorzuziehen: »Mit Bleistift von
                                     unbekannter Hand nummeriert: …« (an Stelle von »Nummerierung
                                     angebracht«). Weitere häufige Verben: »datieren«, »notieren«,
                                     »vermerken«. </item>
-                                <item>Vor Zitaten sofern möglich ein Doppelpunkt </item>
+                                <item>Vor Zitaten kommt, sofern möglich, ein Doppelpunkt. </item>
                                 <item>Umschläge, die keine Briefmarke aufweisen, werden als »Ohne
-                                    postalischen Übermittlungsvermerk« gekennzeichnet </item>
-                                <item>»Unbekannte Hand« (nicht »fremde Hand«) </item>
-                                <item>Eine Ungenauigkeit (wer bis hierher liest…) ist bewusst
-                                    zugelassen: Bei mehreren Nummerierungen am Blatt wird die
-                                    ersetzte Nummerierung als gestrichen wiedergegeben, auch wenn
-                                    die Streichung genau genommen die Arbeit des zweiten
-                                    Bearbeiters, der zweiten Bearbeiterin war. Das soll schnell
-                                    vermitteln, welches als die letzte Nummerierung zu gelten
-                                    hat.</item>
+                                    postalischen Übermittlungsvermerk« gekennzeichnet. </item>
+                                <item>»Unbekannte Hand« (nicht »fremde Hand«). </item>
+                                <item>Eine Ungenauigkeit ist bewusst zugelassen: Bei mehreren
+                                    Nummerierungen am Blatt wird die ersetzte Nummerierung als
+                                    gestrichen wiedergegeben, auch wenn die Streichung genau
+                                    genommen die Arbeit des zweiten Bearbeiters, der zweiten
+                                    Bearbeiterin war. Das soll schnell vermitteln, welches als die
+                                    letzte Nummerierung zu gelten hat.</item>
                             </list>
                             <div type="level5">
                                 <head xml:id="h.vqzgn6gk9vdc"
@@ -1127,11 +1133,10 @@
                                     <item><code>addSpan</code>
                                     </item>
                                 </list>
-                                <p>Das <code>addSpan</code> enthält etwaige Textteile,
+                                <p>Das Element <code>addSpan</code> enthält etwaige Textteile,
                                     beispielsweise am häufigsten: »Bestellt«. </p>
-                                <p>Fehlende und unsicher Angaben beim Datum werden mit
-                                        <code>&lt;supplied&gt;&lt;/supplied&gt;</code> und
-                                        <code>&lt;unclear&gt;&lt;/unclear&gt;</code> ergänzt. Zum
+                                <p>Fehlende und unsichere Angaben beim Datum werden mit
+                                        <code>supplied</code> und <code>unclear</code> ergänzt. Zum
                                     Beispiel: </p>
                                 <p><code>&lt;date
                                         when="1891-08-13"&gt;13.&lt;supplied&gt;8.&lt;/supplied&gt;9&lt;unclear&gt;1&lt;/unclear&gt;&lt;/date&gt;</code></p>
@@ -1139,7 +1144,7 @@
                                     erahnbar. </p>
                                 <p>Im Ausnahmefall ist auch <quote>gap</quote> möglich. (Zu den
                                     Abstandsregeln beim Datum siehe <code>date</code>, im Normalfall
-                                    nach Punkt ein bedingtes, fixes Leerzeichen:
+                                    kommt nach dem Punkt ein bedingtes, fixes Leerzeichen:
                                         <code>&amp;#160;</code>) </p>
                             </div>
                         </div>
@@ -1150,11 +1155,11 @@
                     <p>Zu <code>correspDesc</code> sei, neben den allgemeinen Regeln der TEI, auch
                         auf den Webservice <ref target="https://correspsearch.net"
                             >https://correspsearch.net</ref> verwiesen. Dort ist ebenfalls die im
-                        cmif-Ordner des Projekts zu findende CMIF-Datei hinterlegt.
-                            <code>correspDesc</code> enthält in standardisierter Form den
+                        CMIF-Ordner des Projekts zu findende CMIF-Datei hinterlegt.</p>
+                    <p><code>correspDesc</code> enthält in standardisierter Form den
                         Übermittlungsvorgang des Korrespondenzstücks. Also: Von wem, an wen. Der
                         Übermittlungsvorgang wird in zumindest zwei verschiedenen
-                            <code>correspAction</code> dargestellt, wobei das erste immer
+                            <code>correspAction</code>-Elementen dargestellt, wobei das erste immer
                             <code>correspAction[@type="sent"]</code> und das letzte immer
                             <code>correspAction[@type="received"]</code> ist. Dazwischen können
                         weitere Vorgänge liegen, vor allem die offiziell empfohlenen:
@@ -1170,11 +1175,10 @@
                     <div type="level3">
                         <head xml:id="h.3s282ddvha26">correspAction</head>
                         <p>Neben dem verpflichtenden Attribut <code>@type</code> gibt es drei
-                            mögliche Kinderelemente: <code>persName</code>, <code>placeName</code>,
-                                <code>date</code>, wobei die Angabe von <code>persName</code> und
-                                <code>date</code> bei <code>@type="sent"</code>, bei
-                                <code>@type="received"</code> die von <code>persName</code>
-                            verpflichtend ist. </p>
+                            mögliche Kind-Elemente: <code>persName</code>, <code>placeName</code>
+                            und <code>date</code>, wobei die Angabe von <code>persName</code> und
+                                <code>date</code> bei <code>@type="sent"</code> und bei
+                                <code>@type="received"</code> verpflichtend ist. </p>
                         <div type="level4">
                             <head xml:id="h.porfpv4717dy">correspAction/date</head>
                             <p>Dieses Element muss ein verpflichtendes Attribut aus der Reihe der
@@ -1191,23 +1195,24 @@
                                 <item><code>to</code>
                                 </item>
                             </list>
-                            <p>wobei die Angabe im ISO-Format (»1862-05-15«) erfolgt. Auf diesen
-                                Wert wird von verschiedenster Stelle zugegriffen. </p>
+                            <p>Die Angabe erfolgt im ISO-Format (»1862-05-15«). Auf diesen Wert wird
+                                von verschiedensten Stellen zugegriffen. </p>
                             <div type="level5">
                                 <head xml:id="h.msvsq3d29vtd">correspAction/date/@n</head>
                                 <p>Weiters hat <code>date/@type="sent"</code> ein zusätzliches
                                     Attribut <code>@n</code>, das einem Zähler an einem bestimmten
-                                    Tag entspricht. Hintergrund ist, eine genauere Granulierung der
-                                    Briefe zu erreichen. Wichtig ist das in einem Fall, an dem an
-                                    einem Tag gleich die Antwort geschickt wird. Damit kann der
-                                    erste Brief mit <code>@n="1"</code>, die Antwort mit
+                                    Tag entspricht. Grund dafür ist, dass eine genauere Granulierung
+                                    der Briefe erreicht werden soll. Wichtig ist das in einem Fall,
+                                    an dem an einem Tag gleich die Antwort geschickt wird. Damit
+                                    kann der erste Brief mit <code>@n="1"</code>, die Antwort mit
                                         <code>@n="2"</code> gereiht werden. Innerhalb des Projekts
                                     ist die Kombination des ISO-Datums und <code>@n</code>
                                     eindeutig. Als weitere Sub-Regel wird angewandt, dass (wenn sich
                                     nicht durch Antworten eine andere Reihung ergibt) zuerst die
                                     Briefe von Schnitzler eines Tages kommen, dann die Briefe an
                                     ihn, wobei hier dann die alphabetische Reihenfolge des
-                                    Nachnamens des Empfängers/Senders berücksichtigt wird. </p>
+                                    Nachnamens des Empfängers/Senders, der Empfängerin/Senderin
+                                    berücksichtigt wird. </p>
                                 <div type="example">
                                     <p>Beispiel: </p>
                                     <p><code>@n=1</code> Brief Bahrs an Schnitzler </p>
@@ -1222,20 +1227,19 @@
                     <div type="level3">
                         <head xml:id="h.9ta6zke4oj9c">correspContext/ref</head>
                         <p>Innerhalb von <code>correspContext</code> finden sich drei Arten von
-                                <code>ref</code>-Elementen mit dem Attribut <code>@type</code>
-                            markiert. </p>
+                                <code>ref</code>-Elementen mit dem Attribut <code>@type</code>. </p>
                         <list>
                             <item>belongsToCorrespondence </item>
                             <item>withinCollection </item>
                             <item>withinCorrespondence </item>
                         </list>
-                        <p>Die Angabe »belongsToCorrespondence« ermöglicht auch Briefe Dritter über
-                            das Attribut <code>@target</code> bestimmten Korrespondenzen zuzuordnen,
-                            etwa wenn Gertrud Rung für Georg Brandes einen Brief geschrieben hat, so
-                            dass dieser auch Brandes zugeordnet werden kann. Die Angaben
-                            »withinCollection« und »withinCorrespondence« sind mit dem
-                                <code>@subtype="next_letter"</code> und
-                                <code>@subtype="previous_letter"</code> dazu da, das Blättern
+                        <p>Die Angabe »belongsToCorrespondence« ermöglicht es, auch Briefe Dritter
+                            über das Attribut <code>@target</code> bestimmten Korrespondenzen
+                            zuzuordnen, etwa wenn Gertrud Rung für Georg Brandes einen Brief
+                            geschrieben hat, so dass dieser auch der Korrespondenz mit Brandes
+                            zugeordnet werden kann. Die Angaben »withinCollection« und
+                            »withinCorrespondence« sind mit dem <code>@subtype="next_letter"</code>
+                            und <code>@subtype="previous_letter"</code> dazu da, das Blättern
                             innerhalb aller edierten Briefe (»withinCollection«) oder innerhalb
                             einer Korrespondenz (»withinCorrespondence«) zu erlauben. </p>
                         <div type="example">
@@ -1262,11 +1266,11 @@
                     <p>Enthält Informationen über den Bearbeitungszustand. Ab dem Moment, wo das
                         Attribut <code>@status="approved"</code> gesetzt ist, ist die Bearbeitung
                         abgeschlossen. Darunter finden sich verschiedene
-                            <code>&lt;changes&gt;</code>. Die vorkommenden Kürzel sind
-                        folgendermaßen aufzulösen: <code>MAM</code>: Martin Anton Müller,
-                            <code>GHS</code>: Gerd-Hermann Susen. Die Korrespondenz Bahr/Schnitzler
-                        wurde aus einem Vorprojekt entnommen, das <code>MAM</code> und
-                            <code>KI</code> (Kurt Ifkovits) gemeinsam erstellt haben. </p>
+                        <code>change</code>-Elemente. Die vorkommenden Kürzel sind folgendermaßen
+                        aufzulösen: <code>MAM</code>: Martin Anton Müller, <code>GHS</code>:
+                        Gerd-Hermann Susen, <code>LU</code>: Laura Untner. Die Korrespondenz
+                        Bahr/Schnitzler wurde aus einem Vorprojekt entnommen, das <code>MAM</code>
+                        und <code>KI</code> (Kurt Ifkovits) gemeinsam erstellt haben. </p>
                 </div>
             </div>
             <div type="level1">
@@ -1290,33 +1294,34 @@
                 <p>Im Folgenden werden häufig verwendete Elemente aufgezählt. Zuerst werden jene
                     Elemente behandelt, die eine bestimmte Reihenfolge haben, danach folgt,
                     alphabetisch geordnet, eine allgemeine Liste. Ein paar wenige Elemente davon,
-                    etwa Verweise auf Personen oder Seitenwechsel können auch im Bereich von
-                        <code>physDesc</code> zum Einsatz kommen, auch wenn sie hier behandelt
+                    etwa Verweise auf Personen oder Seitenwechsel, können auch im Bereich von
+                        <code>physDesc</code> zum Einsatz kommen, obgleich sie hier behandelt
                     werden. </p>
                 <div type="level2">
                     <head xml:id="h.c5y4i07mq46s">Aufbau</head>
-                    <p>Innerhalb von <code>body</code> sind nur <code>div</code>s von diesen Typen
-                        erlaubt: </p>
+                    <p>Innerhalb von <code>body</code> sind <code>div</code>-Elemente von diesen
+                        Typen erlaubt: </p>
                     <list>
                         <item><code>div[@type="address"] </code></item>
                         <item><code>div[@type="writingSession" n="1"] </code></item>
                         <item><code>div[@type="image"] </code></item>
                     </list>
                     <p><code>address</code> darf nur einmal vorkommen und muss an erster Stelle
-                        stehen. <code>writingSession</code> kann es mehrere geben, diese sind dann
-                        durch den Zähler <code>@n</code> zu unterscheiden. <code>image</code> ist
-                        ein Erbe aus dem Vorprojekt Bahr/Schnitzler und eigentlich durch die
-                        Aufnahme der Faksimile-Namen in <code>pb/@facs</code> obsolet. </p>
+                        stehen. <code>writingSession</code>-Elemente kann es mehrere geben, diese
+                        sind dann durch den Zähler <code>@n</code> zu unterscheiden.
+                            <code>image</code> ist ein Erbe aus dem Vorprojekt Bahr/Schnitzler und
+                        eigentlich durch die Aufnahme der Faksimile-Namen in <code>pb/@facs</code>
+                        obsolet. </p>
                     <div type="level3">
                         <head xml:id="h.fmk2n66f8l92">div[@type="address"]</head>
-                        <p>Enthält Absender- und Empfangsadresse, jeweils in einem Element
+                        <p>Enthält Absende- und Empfangsadresse, jeweils in einem Element
                                 <code>address</code> mit mehreren <code>addrLine</code>-Elementen.
                             Eine weitere Unterscheidung, wie sie die TEI erlauben würde, wird
                             derzeit nicht vorgenommen. Bislang können folgende (impliziten) Annahmen
-                            getroffen werden: Wenn nur eine ein <code>address</code> vorhanden ist,
-                            ist dies die Empfängeradresse. Wenn es zwei sind, ist die erste die
-                            Absender-, die zweite die Empfangsadresse. </p>
-                        <p>Entsprechend zu den Editionsprinzipien werden Unterstreichungen in den
+                            getroffen werden: Wenn nur ein <code>address</code>-Element vorhanden
+                            ist, ist dies die Empfangsadresse. Wenn es zwei sind, ist die erste die
+                            Absende-, die zweite die Empfangsadresse. </p>
+                        <p>Entsprechend den Editionsprinzipien werden Unterstreichungen in den
                             Adressen nicht aufgenommen, da ansonsten auch jene der Vordrucke
                             berücksichtigt werden müssten. Ausgezeichnet wird aber mit
                                 <code>hi[@rend="latintype"]</code>, wenn Teile der Adressierung in
@@ -1329,10 +1334,10 @@
                             Üblicherweise ist nur eine »Schreibsitzung« ausgewiesen. Das trifft
                             nicht zu, wenn aus dem Inhalt klar hervorgeht, dass der Verfasser oder
                             die Verfasserin zu einem späteren Zeitpunkt einen Neuansatz vorgenommen
-                            hat. Ebenso werden, wenn mehrere Personen an einem Objekt beteiligt sind
-                            und zwei getrennte Teile auszumachen sind, diese aufgeteilt. Die Grenze
-                            ist fließend, aber wenn zwei Schlussformeln (<code>closer</code>)
-                            vorhanden sind, dürften auch zwei <code>div</code>-Bereiche vorliegen. </p>
+                            hat. Ebenso werden, wenn mehrere Personen an einem Objekt beteiligt und
+                            zwei getrennte Teile auszumachen sind, diese aufgeteilt. Die Grenze ist
+                            fließend, aber wenn zwei Schlussformeln (<code>closer</code>) vorhanden
+                            sind, dürften auch zwei <code>div</code>-Bereiche vorliegen. </p>
                         <p>Innerhalb eines solchen <code>div</code>s können sich folgende Teile
                             finden, wobei sie nicht verpflichtend sind, nur die Reihenfolge ist
                             weitgehend fixiert: </p>
@@ -1351,11 +1356,11 @@
                             <p>Enthält dem eigentlichen Text vorausgehende Information. Das kann
                                 sein: Briefkopf, Datumszeile, abgesetzte Begrüßungsformel. Bei
                                 Bildpostkartenmotiven findet sich hier auch – als gedruckt
-                                gekennzeichnet (<code>&lt;hi rend="pre-print"/&gt;</code>) der Titel
-                                des Motivs. (In ganz seltenen Fällen, wenn kein solcher gedruckter
-                                Titel vorhanden ist, über <code>&lt;supplied
-                                    type="image-description"/&gt;</code>) </p>
-                            <p>Folgende Kinder-Elemente sind zulässig: </p>
+                                gekennzeichnet (<code>&lt;hi rend="pre-print"/&gt;</code>) – der
+                                Titel des Motivs. (In ganz seltenen Fällen, wenn kein solcher
+                                gedruckter Titel vorhanden ist, über <code>&lt;supplied
+                                    type="image-description"/&gt;</code>.) </p>
+                            <p>Folgende Kind-Elemente sind zulässig: </p>
                             <list>
                                 <item><code>p</code>
                                 </item>
@@ -1368,29 +1373,28 @@
                         <div type="level4">
                             <head xml:id="h.9edyo4b8se30">closer</head>
                             <p>Sofern eine abgegrenzte Schlussformel vorhanden ist, wird diese in
-                                das Element <code>&lt;closer/&gt;</code> verpackt. Es hat vor allem
-                                    <code>&lt;lb/&gt;</code> und <code>&lt;signed/&gt;</code> als
-                                Elemente. </p>
+                                das Element <code>closer</code> verpackt. Es hat vor allem
+                                    <code>lb</code> und <code>signed</code> als Elemente. </p>
                             <div type="level5">
                                 <head xml:id="h.kxu38bpltayv">lb</head>
-                                <p>Obwohl nicht nur auf <code>&lt;closer/&gt;</code> beschränkt,
-                                    kommt es hier am häufigsten zum Einsatz. Das Element ist leer
-                                    und markiert einen Zeilensprung. </p>
+                                <p>Obwohl nicht nur auf <code>closer</code> beschränkt, kommt es
+                                    hier am häufigsten zum Einsatz. Das Element ist leer und
+                                    markiert einen Zeilenumbruch. </p>
                             </div>
                             <div type="level5">
                                 <head xml:id="h.3p7prmija8vy">signed</head>
                                 <p>Dieses Element umfasst die Unterschrift einschließlich des
                                     folgenden Satzzeichens. Die Unterschriften sind soweit
-                                    normalisiert, dass keine Schriftwechsel, keine Unter- oder
-                                    Überstreichungen sowie Schnörkel berücksichtigt werden.
+                                    normalisiert als keine Schriftwechsel, Unter- oder
+                                    Überstreichungen oder Schnörkel berücksichtigt werden.
                                     Stattdessen werden nur die erkennbaren Buchstaben wiedergegeben.
-                                    Ein Schriftwechsel mit <code>&lt;handShift/&gt;</code> kann
-                                    innerhalb dieses Elements angezeigt sein. </p>
+                                    Ein Schriftwechsel mit <code>handShift</code> kann innerhalb
+                                    dieses Elements angezeigt sein. </p>
                             </div>
                         </div>
                         <div type="level4">
                             <head xml:id="h.19yf2fj7rt65">postscript</head>
-                            <p>Der nach dem <code>&lt;closer/&gt;</code> stehende Textteil wird in
+                            <p>Der nach dem <code>closer</code> stehende Textteil wird in
                                 verschiedene Absätze (<code>p</code>) oder Datumszeilen
                                     (<code>dateline</code>) aufgeteilt. Direkt innerhalb von
                                     <code>postscript</code> ist kein Inhalt erlaubt. </p>

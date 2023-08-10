@@ -29,12 +29,11 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="02823"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
             <pubPlace>Vienna</pubPlace>
-            <date when="2022">2022</date>
+            <date when="2023">2023</date>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
                   <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
@@ -69,6 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -78,9 +78,12 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="brief"/>
-                           <desc type="_blaetter" n="1"/>
-                           <desc type="_seiten" n="4"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="4"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
@@ -130,7 +133,7 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="candidate">
+      <revisionDesc status="approved">
          <change who="LU" when="2022-11-17">Angelegt</change>
          <change who="MAM" when="2023-02-14">Durchsicht</change>
          <change who="MAM" when="2023-02-14">Index check</change>
@@ -138,6 +141,8 @@
             fehlen</change>
          <change who="LU" when="2023-03-30">Durchsicht, fehlen nur noch Faksimiles von Brief an
             B-H</change>
+         <change who="LU" when="2023-07-11">Faksimiles von B-H nachgetragen und Beilage noch einmal
+            durchgesehen</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -145,19 +150,21 @@
       <graphic url="HS.NZ85.1.3167_0049-1"/>
       <graphic url="HS.NZ85.1.3167_0050-0"/>
       <graphic url="HS.NZ85.1.3167_0050-1"/>
-      <!-- Faksimiles von Brief an B-H fehlen noch -->
+      <graphic url="HS.NZ85.1.3167_0050-1"/>
+      <graphic url="Houghton_PG_RBH_894519_01-0"/>
+      <graphic url="Houghton_PG_RBH_894519_01-1"/>
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><p><seg rend="left"><pb facs="HS.NZ85.1.3167_0049-0"/><rs ref="#pmb29442" type="org"><hi rend="pre-print">Frankfurter Zeitung</hi></rs></seg><seg rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb146">Frankfurt a. M.</rs>,</hi><space unit="chars" quantity="1"/><date when="1897-09-13">13. September <hi rend="pre-print">189</hi>7</date>.</seg></p><p rend="left"><hi rend="pre-print">und</hi></p><p rend="left"><hi rend="pre-print">Handelsblatt.</hi></p><p rend="left"><hi rend="pre-print"><hi rend="antiqua"><rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs>.<note xml:id="FT2823-1" type="footnote"><p><hi rend="pre-print">Für die <rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs> be<c rendition="#langesS">s</c>timmte Briefe und Sendungen
-                                    wolle man <hi rend="spaced_out">nicht</hi> an die Per<c rendition="#langesS">s</c>on eines
-                                    Redakteurs,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ondern<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>tets <hi rend="bold">an die Redaktion der
-                                          <rs ref="#pmb29442" type="org">Frankfurter Zeitung</rs></hi> adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>iren.</hi></p></note></hi></hi></p><p><hi rend="pre-print">Telegramm-Adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e:</hi></p><p><hi rend="pre-print"><hi rend="antiqua"><rs ref="#pmb29442" subtype="implied" type="org">Zeitung</rs><space unit="chars" quantity="1"/><rs type="place" ref="#pmb146">Frankfurt Main</rs>.</hi></hi></p><salute rend="center">Mein lieber Freund,</salute></opener><p>Er<c rendition="#langesS">s</c>t<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>eit wenigen Stunden bin ich in <rs type="place" ref="#pmb146">Frankfurt</rs>.
+         <div type="writingSession" n="1"><opener><p><seg rend="left"><pb facs="HS.NZ85.1.3167_0049-0"/><rs ref="#pmb29442" type="org"><hi rend="pre-print">Frankfurter Zeitung</hi></rs></seg><seg rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb146">Frankfurt a. M.</rs>,</hi><space unit="chars" quantity="1"/><date when="1897-09-13">13. September <hi rend="pre-print">189</hi>7</date>.</seg></p><p rend="left"><hi rend="pre-print">und</hi></p><p rend="left"><hi rend="pre-print">Handelsblatt.</hi></p><p rend="left"><hi rend="pre-print"><hi rend="antiqua"><rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs>.<note xml:id="FT2823-1" type="footnote"><p><hi rend="pre-print">Für die <rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs> be<c rendition="#langesS">s</c>timmte Briefe und Sendungen wolle
+                                 man <hi rend="spaced_out">nicht</hi> an die Per<c rendition="#langesS">s</c>on eines
+                                 Redakteurs,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ondern<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>tets <hi rend="bold">an die Redaktion der <rs ref="#pmb29442" type="org">Frankfurter Zeitung</rs></hi> adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>iren.</hi></p></note></hi></hi></p><p><hi rend="pre-print">Telegramm-Adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e:</hi></p><p><hi rend="pre-print"><hi rend="antiqua"><rs ref="#pmb29442" subtype="implied" type="org">Zeitung</rs><space unit="chars" quantity="1"/><rs type="place" ref="#pmb146">Frankfurt Main</rs>.</hi></hi></p><salute rend="center">Mein lieber Freund,</salute></opener><p>Er<c rendition="#langesS">s</c>t<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>eit wenigen Stunden bin ich in <rs type="place" ref="#pmb146">Frankfurt</rs>.
                Ich habe den <anchor type="commentary" xml:id="K_L02823-1"/>Brief<note type="commentary" xml:id="K_L02823-1h">Bezug unklar</note> gleich nach <hi rend="latintype"><rs type="place" ref="#pmb182">Paris</rs></hi> ge<c rendition="#langesS">s</c>andt<del rend="strikethrough">.</del> und hoffe, daß die Verzögerung, die
                durch meine ver<c rendition="#langesS">s</c>pätete Ankunft in <rs type="place" ref="#pmb146">Frankfurt</rs>
-               ent<c rendition="#langesS">s</c>tanden i<c rendition="#langesS">s</c>t, keine<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>törenden Folgen hat.</p><p>Ich danke Dir für die lieben Mittheilungen Deines Briefes. Der <del rend="strikethrough"><gap quantity="3" reason="illegible" unit="chars"/>h<gap quantity="2" reason="illegible" unit="chars"/></del><space unit="chars" quantity="1"/><rs type="person" subtype="implied" ref="#pmb16560">Gattin</rs> des <rs type="person" subtype="implied" ref="#pmb16557">Rechtsgelehrten</rs> geht es hoffentlich <anchor type="commentary" xml:id="K_L02823-2"/>be<c rendition="#langesS">s</c><c rendition="#langesS">s</c>er<note type="commentary" xml:id="K_L02823-2h"><ref type="schnitzler-tagebuch" target="1897-09-03" subtype="see"/></note>. Grüß’<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chön von mir.</p><p>Du<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t wir<c rendition="#langesS">s</c>t <del rend="strikethrough">hof</del> wohl bald die <del rend="strikethrough"><unclear>R</unclear></del> Ruhe zur Arbeit <pb facs="HS.NZ85.1.3167_0049-1"/>finden. Solche Übergangszeiten vom Sommer zum Winter
-              <space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind immer etwas unbehaglich und bei Dir drängt<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich gerade jetzt außergewöhnlich
-               Vieles zu<c rendition="#langesS">s</c>ammen. Wird<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chon Alles lichten und klären.</p><p>Mein <rs type="person" subtype="implied" ref="#pmb23593">Schwager</rs> läßt Dich
+               ent<c rendition="#langesS">s</c>tanden i<c rendition="#langesS">s</c>t, keine<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>törenden Folgen hat.</p><p>Ich danke Dir für die lieben Mittheilungen Deines Briefes. Der <del rend="strikethrough"><gap quantity="3" reason="illegible" unit="chars"/>h<gap quantity="2" reason="illegible" unit="chars"/></del><space unit="chars" quantity="1"/><rs type="person" subtype="implied" ref="#pmb16560">Gattin</rs> des <rs type="person" subtype="implied" ref="#pmb16557">Rechtsgelehrten</rs> geht es hoffentlich <anchor type="commentary" xml:id="K_L02823-2"/>be<c rendition="#langesS">s</c><c rendition="#langesS">s</c>er<note type="commentary" xml:id="K_L02823-2h"><ref type="schnitzler-tagebuch" target="1897-09-03" subtype="see"/></note>. Grüß’<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chön von mir.</p><p>Du<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t wir<c rendition="#langesS">s</c>t <del rend="strikethrough">hof</del> wohl bald die <del rend="strikethrough"><unclear>R</unclear></del> Ruhe zur Arbeit <pb facs="HS.NZ85.1.3167_0049-1"/>finden. Solche
+               Übergangszeiten vom Sommer zum Winter<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind immer etwas unbehaglich und bei Dir drängt
+              <space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich gerade jetzt außergewöhnlich Vieles zu<c rendition="#langesS">s</c>ammen. Wird<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chon Alles lichten und
+               klären.</p><p>Mein <rs type="person" subtype="implied" ref="#pmb23593">Schwager</rs> läßt Dich
                grüßen u. Dir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>agen, daß es lächerlich i<c rendition="#langesS">s</c>t,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich über <anchor type="commentary" xml:id="K_L02823-3"/>Ohrenklingen<note type="commentary" xml:id="K_L02823-3h"><rs type="person" ref="#pmb2121">Schnitzler</rs> litt seit
                      <date>Herbst 1896</date> an Otosklerose – einer Verknöcherung des Innenohrs mit
                   zunehmender Schwerhörigkeit.</note> Sorgen zu machen. Nach<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>einer Erfahrung gibt
@@ -170,15 +177,15 @@
                   totgeboren.</note>.</p><p>Deine <rs type="person" subtype="implied" ref="#pmb2378">Freundin</rs> grüße recht
                herzlich von mir. Ich habe mich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr gefreut zu hören, daß es ihr gut geht.</p><p>Ich habe <hi rend="latintype"><rs type="person" ref="#pmb10863">Richard</rs>s</hi><space unit="chars" quantity="1"/><pb facs="HS.NZ85.1.3167_0050-1"/>Hausnummer verge<c rendition="#langesS">s</c><c rendition="#langesS">s</c>en. Du bi<c rendition="#langesS">s</c>t wohl<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o gut, ihm den
                beifolgenden Brief zu übergeben.</p><closer>Ich grüße Dich von Herzen <lb/>Dein treuer <lb/><signed>Paul Goldm</signed></closer></div>
-         <div type="writingSession" n="2"><!-- Faksimile-Verweise fehlen noch --><opener><p><space dim="vertical" unit="line" quantity="1"/></p><p><seg rend="left"><pb facs=""/><rs ref="#pmb29442" type="org"><hi rend="pre-print"><hi rend="antiqua">Frankfurter Zeitung</hi></hi></rs></seg><seg rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb146">Frankfurt a. M.</rs>,</hi><space unit="chars" quantity="1"/><date when="1897-09-13">13. September <hi rend="pre-print">189</hi>7</date>.</seg></p><p rend="left"><hi rend="antiqua"><hi rend="pre-print">und</hi></hi></p><p rend="left"><hi rend="pre-print"><hi rend="antiqua">Handelsblatt.</hi></hi></p><p rend="left"><hi rend="pre-print"><hi rend="antiqua"><rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs>.<note xml:id="FT2823-2" type="footnote"><p><hi rend="pre-print"><hi rend="antiqua">Für die <rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs> be<c rendition="#langesS">s</c>timmte Briefe und Sendungen
+         <div type="writingSession" n="2"><opener><p><space dim="vertical" unit="line" quantity="1"/></p><p><seg rend="left"><pb facs="Houghton_PG_RBH_894519_01-0"/><rs ref="#pmb29442" type="org"><hi rend="pre-print"><hi rend="antiqua"><hi rend="bold">Frankfurter Zeitung</hi></hi></hi></rs></seg><seg rend="right"><hi rend="pre-print"><hi rend="bold"><rs type="place" ref="#pmb146">Frankfurt a. M.</rs>,</hi></hi><space unit="chars" quantity="1"/><date when="1897-09-13">13. September <hi rend="pre-print">189</hi>7</date>.</seg></p><p rend="left"><hi rend="antiqua"><hi rend="pre-print">und</hi></hi></p><p rend="left"><hi rend="pre-print"><hi rend="antiqua">Handelsblatt.</hi></hi></p><p rend="left"><hi rend="pre-print"><hi rend="antiqua"><hi rend="bold"><rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs></hi>.<note xml:id="FT2823-2" type="footnote"><p><hi rend="pre-print"><hi rend="antiqua">Für die <rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs> be<c rendition="#langesS">s</c>timmte Briefe und Sendungen
                                     wolle man <hi rend="spaced_out">nicht</hi> an die Per<c rendition="#langesS">s</c>on eines
                                     Redakteurs,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ondern<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>tets <hi rend="bold">an die Redaktion der
-                                          <rs ref="#pmb29442" type="org">Frankfurter Zeitung</rs></hi> adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>iren</hi>.</hi></p></note></hi></hi></p><p><hi rend="pre-print"><hi rend="antiqua">Telegramm-Adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e:</hi></hi></p><p><hi rend="pre-print"><hi rend="antiqua"><rs ref="#pmb29442" subtype="implied" type="org">Zeitung</rs><space unit="chars" quantity="1"/><rs type="place" ref="#pmb146">Frankfurt Main</rs>.</hi></hi></p><salute rend="center">Mein lieber <rs type="person" ref="#pmb10863"><hi rend="latintype">Richard</hi></rs>,</salute></opener><p>Er<c rendition="#langesS">s</c>t die<c rendition="#langesS">s</c>er Tage haben meine Irrfahrten in <rs type="place" ref="#pmb146">Frankfurt</rs> geendet. Ich fand hier Deinen lieben Brief vor und <del rend="strikethrough"><c rendition="#langesS">s</c>a</del> er<c rendition="#langesS">s</c>ah daraus mit inniger Freude, daß das große
-                  <anchor type="commentary" xml:id="K_L02823-88"/>Ereigniß<note type="commentary" xml:id="K_L02823-88h">Am <date>4. 9. 1897</date> war <rs type="person" ref="#pmb2668">Mirjam Beer-Hofmann</rs>, das erste Kind von <rs type="person" ref="#pmb10863">Richard</rs> und <rs type="person" ref="#pmb10860">Paula
-                     Beer-Hofmann</rs>, auf die Welt gekommen.</note><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich vollzogen hat. Daß es <hi rend="latintype"><rs type="person" ref="#pmb2668">Mirjam</rs></hi> war und nicht
-                  <hi rend="latintype">Jehoschuah</hi>, überra<c rendition="#langesS">s</c>cht mich nicht. Es mußte ja <hi rend="latintype"><rs type="person" ref="#pmb2668">Mirjam</rs></hi><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein.</p><p>Der alte jüdi<c rendition="#langesS">s</c>che Gott, auf den Du<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o große Stücke hält<c rendition="#langesS">s</c>t, <del rend="strikethrough"><c rendition="#langesS">s</c>oll</del> wird hoffentlich einmal an Deinem Kinde zeigen, was er kann. Er<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>oll
-               ein <pb facs=""/>liebes und frohes Men<c rendition="#langesS">s</c>chenkind daraus machen. Dir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t aber möge
-               die kleine <hi rend="latintype"><rs type="person" ref="#pmb2668">Mirjam</rs></hi><space unit="chars" quantity="1"/><del rend="strikethrough"><unclear>e</unclear>i<unclear>ne</unclear></del> nur Freuden bringen und Seelenfrieden in den dü<c rendition="#langesS">s</c>teren Stunden des Grübel<subst><del rend="overwritten">s</del><add place="inline">n</add></subst>s und der Selb<c rendition="#langesS">s</c>tquälerei.</p><p>Ich <del rend="strikethrough"><gap reason="illegible" unit="chars" quantity="4"/></del> aber will<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>tets<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr lieb haben.</p><p>Überbringe der <rs type="person" ref="#pmb10860" subtype="implied">Mutter</rs> Deines
+                                          <rs ref="#pmb29442" type="org">Frankfurter Zeitung</rs></hi> adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>iren</hi>.</hi></p></note></hi></hi></p><p><hi rend="pre-print"><hi rend="antiqua">Telegramm-Adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e:</hi></hi></p><p><hi rend="pre-print"><hi rend="antiqua"><hi rend="bold"><rs ref="#pmb29442" subtype="implied" type="org">Zeitung</rs><space unit="chars" quantity="1"/><rs type="place" ref="#pmb146">Frankfurt Main</rs>.</hi></hi></hi></p><salute rend="center">Mein lieber <rs type="person" ref="#pmb10863"><hi rend="latintype">Richard</hi></rs>,</salute></opener><p>Er<c rendition="#langesS">s</c>t die<c rendition="#langesS">s</c>er Tage haben meine Irrfahrten in <rs type="place" ref="#pmb146">Frankfurt</rs> geendet. Ich fand hier Deinen lieben Brief vor und <del rend="strikethrough"><c rendition="#langesS">s</c>a</del> er<c rendition="#langesS">s</c>ah daraus mit inniger Freude, daß das große
+                  <anchor type="commentary" xml:id="K_L02823-88"/>Ereigniß<note type="commentary" xml:id="K_L02823-88h">Am <date when="1897-09-04">4. 9. 1897</date> war <rs type="person" ref="#pmb2668">Mirjam Beer-Hofmann</rs>, das erste Kind von <rs type="person" ref="#pmb10863">Richard</rs> und <rs type="person" ref="#pmb10860">Paula Beer-Hofmann</rs>, auf die Welt gekommen.</note><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich
+               vollzogen hat. Daß es <hi rend="latintype"><rs type="person" ref="#pmb2668">Mirjam</rs></hi> war und nicht <hi rend="latintype">Jehoschuah</hi>, überra<c rendition="#langesS">s</c>cht mich nicht. Es
+               mußte ja <hi rend="latintype"><rs type="person" ref="#pmb2668">Mirjam</rs></hi><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein.</p><p>Der alte jüdi<c rendition="#langesS">s</c>che Gott, auf den Du<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o große Stücke hält<c rendition="#langesS">s</c>t, <del rend="strikethrough"><c rendition="#langesS">s</c>oll</del> wird hoffentlich einmal an Deinem Kinde zeigen, was er kann. Er<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>oll
+               ein <pb facs="Houghton_PG_RBH_894519_01-1"/>liebes und frohes Men<c rendition="#langesS">s</c>chenkind daraus
+               machen. Dir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t aber möge die kleine <hi rend="latintype"><rs type="person" ref="#pmb2668">Mirjam</rs></hi><space unit="chars" quantity="1"/><del rend="strikethrough"><unclear>e</unclear>i<unclear>ne</unclear></del> nur Freuden bringen und Seelenfrieden in den dü<c rendition="#langesS">s</c>teren Stunden des Grübel<subst><del rend="overwritten">s</del><add place="inline">n</add></subst>s und der Selb<c rendition="#langesS">s</c>tquälerei.</p><p>Ich <del rend="strikethrough"><gap reason="illegible" unit="chars" quantity="4"/></del> aber will<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>tets<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr lieb haben.</p><p>Überbringe der <rs type="person" ref="#pmb10860" subtype="implied">Mutter</rs> Deines
                   <rs type="person" subtype="implied" ref="#pmb2668">Kind</rs>es meine herzlich<c rendition="#langesS">s</c>ten
                Glückwün<c rendition="#langesS">s</c>che und Grüße und<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ei<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t von Herzen umarmt.</p><closer>Dein treuer<lb/><signed>Paul Goldmann</signed></closer></div>
       </body>
@@ -214,13 +221,14 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp51209</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0028183c</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2059817</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -251,7 +259,7 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
                <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
@@ -259,6 +267,7 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
             <person xml:id="pmb16560">
                <persName>
@@ -283,7 +292,7 @@
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15178</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb16560.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/16560/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb16560</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb16560.html</idno>
             </person>
             <person xml:id="pmb16557">
                <persName>
@@ -361,7 +370,7 @@
                </death>
                <sex value="male"/>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42794/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42794</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42794.html</idno>
             </person>
             <person xml:id="pmb2378">
                <persName>
@@ -392,7 +401,7 @@
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19150</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2378.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2378/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2378</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2378.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q19006796</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Maria_Reinhard</idno>
             </person>
@@ -425,7 +434,7 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118654756</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10863/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10863</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp52172</idno>
                <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=B#DWpers1010</idno>
@@ -433,6 +442,7 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q213750</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Richard_Beer-Hofmann</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10863.html</idno>
             </person>
             <person xml:id="pmb2668">
                <persName>
@@ -465,7 +475,7 @@
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2668.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2668/</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13548</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2668</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2668.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q94752516</idno>
             </person>
             <person xml:id="pmb10860">
@@ -497,9 +507,10 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/119044994</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10860.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10860/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10860</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10860.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q95004282</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb10860.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10860.html</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -525,7 +536,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/146/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46955/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4018118-2</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb146</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb146.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64181/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
@@ -533,10 +544,12 @@
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb146</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurt_am_Main</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb146.html</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -560,13 +573,14 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
             <place xml:id="pmb182">
                <placeName>Paris</placeName>
@@ -586,13 +600,14 @@
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb182.html</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb182.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q90</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paris</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb182.html</idno>
             </place>
             <place xml:id="pmb88595">
                <placeName>Rossertstraße</placeName>
@@ -619,7 +634,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29617/</idno>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29616/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29616</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29616.html</idno>
             </org>
             <org xml:id="pmb29442">
                <orgName>Frankfurter Zeitung</orgName>
@@ -634,7 +649,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/146/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46955/</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4018118-2</idno>
-                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb146</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb146.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64181/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
@@ -642,13 +657,15 @@
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb146</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurt_am_Main</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb146.html</idno>
                </location>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29442.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29442/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29442</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29442.html</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/institutionen/pmb29442</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb29442.html</idno>
                <note type="apis_dates">
-                  <date to="1943-01-01">1856  – 1943</date>
+                  <date to="1943-01-01">1856 – 1943</date>
                </note>
             </org>
          </listOrg>

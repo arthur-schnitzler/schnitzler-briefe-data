@@ -29,7 +29,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03068"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -69,6 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -78,11 +78,21 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="2"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit rotem Buntstift eine Unterstreichung</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -96,14 +106,14 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1901-06-06" n="02">6. 6. [1901]<duplicate-date-nn of="LO3068"/>
-               </date>
+               <date when="1901-06-06" n="02">6. 6. [1901]</date>
                <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien?</placeName>
-               <date evidence="conjecture" notBefore="1901-06-07" notAfter="1901-06-11">[7. 6. 1901 – 11. 6. 1901?]</date>
+               <date evidence="conjecture" notBefore="1901-06-07" notAfter="1901-06-11">[7. 6. 1901
+                  – 11. 6. 1901?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -119,10 +129,11 @@
       <body>
          <div type="writingSession" n="1"><opener><p rend="right"><pb facs="DLA_1901_00046 DLA_85.1.3171_00035"/><rs type="place" ref="#pmb40583"><hi rend="pre-print"><hi rend="capitals">Dessauerstrasse</hi> 19</hi></rs></p><dateline rend="left"><rs type="place" ref="#pmb168">Berlin</rs>, <date when="1901-06-06">6. Juni</date>.</dateline><salute rend="left">Mein lieber Freund,</salute></opener><p>Täglich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehe ich der Po<c rendition="#langesS">s</c>t mit der Hoffnung entgegen, Nachricht von Dir zu erhalten;
                täglich wird meine Hoffnung getäu<c rendition="#langesS">s</c>cht. Nicht einmal die bekannte An<c rendition="#langesS">s</c>ichtspo<c rendition="#langesS">s</c>tkarte
-               trifft ein. Wo bi<c rendition="#langesS">s</c>t Du? Was mach<c rendition="#langesS">s</c>t Du? Was erleb<c rendition="#langesS">s</c>t Du? Inbezug auf Brief<c rendition="#langesS">s</c>chreiben
-               entwickel<c rendition="#langesS">s</c>t <pb facs="DLA_1901_00047 DLA_85.1.3171_00036-1"/> Du Dich lang<c rendition="#langesS">s</c>am zu
-               einem zweiten <hi rend="latintype"><rs type="person" ref="">Beer-Hofmann</rs></hi>. Das<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind erfreuliche Aus<c rendition="#langesS">s</c>ichten für die Zukunft. </p><closer>Viele treue Grüße an Dich und, falls Du eine Gefährtin ha<c rendition="#langesS">s</c>t, auch an die<c rendition="#langesS">s</c>e!
-               <lb/>Dein</closer><closer><lb/><signed>Paul Goldmann. </signed></closer></div>
+               trifft ein. <anchor type="commentary" xml:id="K_L03068-1"/>Wo bi<c rendition="#langesS">s</c>t Du?<note type="commentary" xml:id="K_L03068-1h"><rs type="person" ref="#pmb2121">Schnitzler</rs> war – mit drei kurzen
+                  Unterbrechungen am <ref type="schnitzler-tagebuch" target="1901-06-02" subtype="date-only"/>, von <ref type="schnitzler-tagebuch" target="1901-06-06" subtype="date-only"/> bis <ref type="schnitzler-tagebuch" target="1901-06-07" subtype="date-only"/> und am <ref type="schnitzler-tagebuch" target="1901-06-09" subtype="date-only"/> – von <ref type="schnitzler-tagebuch" target="1901-05-30" subtype="date-only"/> bis <ref type="schnitzler-tagebuch" target="1901-06-11" subtype="date-only"/> in der <rs type="place" ref="#pmb75">Hinterbrühl</rs>.</note> Was mach<c rendition="#langesS">s</c>t Du? Was erleb<c rendition="#langesS">s</c>t Du? Inbezug auf
+               Brief<c rendition="#langesS">s</c>chreiben entwickel<c rendition="#langesS">s</c>t <pb facs="DLA_1901_00047 DLA_85.1.3171_00036-1"/>Du Dich
+               lang<c rendition="#langesS">s</c>am zu einem <anchor type="commentary" xml:id="K_L03068-2"/>zweiten <hi rend="latintype"><rs type="person" ref="#pmb10863">Beer-Hofmann</rs></hi><note type="commentary" xml:id="K_L03068-2h">Anspielung auf <rs type="person" ref="#pmb10863">Richard Beer-Hofmann</rs>s ausbleibende Briefe an <rs type="person" ref="#pmb11485">Goldmann</rs></note>. Das<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind erfreuliche Aus<c rendition="#langesS">s</c>ichten für die Zukunft.</p><closer>Viele treue Grüße an Dich und, falls Du eine <anchor type="commentary" xml:id="K_L03068-3"/>Gefährtin<note type="commentary" xml:id="K_L03068-3h"><rs type="person" ref="#pmb2173">Olga Gussmann</rs> war auch in der <rs type="place" ref="#pmb75">Hinterbrühl</rs>.</note> ha<c rendition="#langesS">s</c>t, auch an die<c rendition="#langesS">s</c>e!
+               <lb/>Dein <lb/><signed>Paul Goldmann.</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -156,7 +167,7 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp51209</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0028183c</idno>
@@ -194,7 +205,7 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
                <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
@@ -203,6 +214,84 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+            </person>
+            <person xml:id="pmb10863">
+               <persName>
+                  <forename>Richard</forename>
+                  <surname>Beer-Hofmann</surname>
+               </persName>
+               <birth>
+                  <date when="1866-07-11">1866-07-11</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-09-26">1945-09-26</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13551</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118654756</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10863/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp52172</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=B#DWpers1010</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00280f95</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q213750</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Richard_Beer-Hofmann</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10863.html</idno>
+            </person>
+            <person xml:id="pmb2173">
+               <persName>
+                  <forename>Olga</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Gussmann</persName>
+               <persName type="person_pseudonym">Dina Marius</persName>
+               <persName type="legacy-name-merge">Schnitzler, Olga</persName>
+               <birth>
+                  <date when="1882-01-17">17.01.1882</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1970-01-13">13.01.1970</date>
+                  <settlement ref="pmb885">
+                     <placeName type="pref">Lugano</placeName>
+                     <location>
+                        <geo>46,01008 8,96004</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
+               <occupation ref="pmb107">Sänger/Sängerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116848723</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2173/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19832</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp50811</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q55884531</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2173.html</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -226,7 +315,7 @@
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
@@ -237,7 +326,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -261,7 +351,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
@@ -282,7 +372,38 @@
                   <geo>52,52437 13,41053</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40583/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40583</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40583.html</idno>
+            </place>
+            <place xml:id="pmb75">
+               <placeName>Hinterbrühl</placeName>
+               <placeName type="legacy-name-merge">Helmstreitmühle</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>48,08611 16,24809</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb75">Hinterbrühl</placeName>
+                  <geo>48,08611 16,24809</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb44413">Brühl</placeName>
+                  <geo>48,08509 16,24801</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2776358/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb75.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/75/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10426/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb75.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62087/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64419/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb75.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q664735</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Hinterbr%C3%BChl</idno>
             </place>
          </listPlace>
       </back>

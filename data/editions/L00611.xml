@@ -29,12 +29,11 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw" n="00611"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
             <pubPlace>Vienna</pubPlace>
-            <date when="2021">2021</date>
+            <date when="2023">2023</date>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
                   <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
@@ -69,6 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>A</country>
@@ -77,12 +77,17 @@
                         <idno>H.I.N.-137077</idno>
                      </msIdentifier>
                      <physDesc>
-                        <objectDesc>
-                           <desc n="1" type="_blaetter"/>
-                           <desc type="brief"/>
-                           <desc type="reproduktion" subtype="fotokopie"/>
-                           <desc n="2" type="_seiten"/>
+                        <objectDesc form="fotokopie">
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="2"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
+                        <handDesc>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"/>
+                        </handDesc>
                         <additions>
                            <incident type="receiver">
                               <desc>Ergänzung, nur zwei der vier Zeilen der Notiz sind ansatzweise zu
@@ -100,9 +105,10 @@
                                     beträchtlich erhöht durch eine Randnotiz Peter Altenbergs, der
                                     die ihm widerfahrene literarische Weihe mit den Adressen eines
                                     Nachtcafés und offenbar einer von dessen Besucherinnen quittiert
-                                    hat</quote>«. <rs ref="#pmb41244" type="work">Die Fackel</rs>,
+                                    hat</quote>«. <bibl>
+                                    <rs ref="#pmb41244" type="work">Die Fackel</rs>,
                                  Jg. 24, Nr. 608–612, <date>Ende Dezember
-                                 1922</date>, S. 52.</desc>
+                                 1922</date>, S. 52</bibl>.</desc>
                            </incident>
                            <incident type="archival">
                               <desc>Im Nachlass von <rs ref="#pmb11988" type="person">Karl Kraus</rs>

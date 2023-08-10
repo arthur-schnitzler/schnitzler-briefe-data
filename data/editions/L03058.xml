@@ -29,7 +29,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03058"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -69,6 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -78,11 +78,29 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="1"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                        <handDesc hands="2">
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb144029"/>
                         </handDesc>
+                        <additions>
+                           <incident type="supplement">
+                              <desc>handschriftlicher Brief, 1 Blatt, 2 Seiten, schwarze Tinte,
+                                 lateinische Kurrent</desc>
+                           </incident>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Jahr »<quote>
+                                    <date when="1901">
+                                       <supplied>1</supplied>901</date>
+                                 </quote>« vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -96,14 +114,14 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1901-02-14" n="01">14. 2. [1901]<duplicate-date-nn of="LO3058"/>
-               </date>
+               <date when="1901-02-14" n="01">14. 2. [1901]</date>
                <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
-               <date evidence="conjecture" notBefore="1901-02-15" notAfter="1901-02-19">[15. 2. 1901 – 19. 2. 1901?]</date>
+               <date evidence="conjecture" notBefore="1901-02-15" notAfter="1901-02-19">[15. 2. 1901
+                  – 19. 2. 1901?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -118,14 +136,16 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><p rend="right"><pb facs="DLA_1901_00016 DLA_85.1.3171_00012"/><rs type="place" ref="#pmb40583"><hi rend="pre-print"><hi rend="capitals">Dessauerstrasse</hi> 19</hi></rs></p><dateline rend="left"><rs type="place" ref="#pmb168">Berlin</rs>, <date when="1901-02-14">14. Februar.</date></dateline><salute rend="center">Mein lieber Freund,</salute></opener><closer>Ein <hi rend="latintype"><rs type="person" ref="">Dr. Meyer</rs></hi>, der mit den <rs type="person" ref="">Glümers</rs> bekannt i<c rendition="#langesS">s</c>t, hat <hi rend="latintype"><rs type="person" ref="">Mizzi</rs></hi> zu <hi rend="latintype"><rs type="person" ref="">Prof. Re<unclear>mers</unclear></rs></hi> begleitet. Ich bat <hi rend="latintype"><rs type="person" ref="">Gusti</rs></hi>, mich mit die<c rendition="#langesS">s</c>em <hi rend="latintype"><rs type="person" ref="">Dr. Meyer</rs></hi> in Verbindung zu<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>etzen. Die Folge<del rend="strikethrough">n</del> war
+         <div type="writingSession" n="1"><opener><p rend="right"><pb facs="DLA_1901_00016 DLA_85.1.3171_00012"/><rs type="place" ref="#pmb40583"><hi rend="pre-print"><hi rend="capitals">Dessauerstrasse</hi> 19</hi></rs></p><dateline rend="left"><rs type="place" ref="#pmb168">Berlin</rs>, <date when="1901-02-14">14. Februar.</date></dateline><salute rend="center">Mein lieber Freund,</salute></opener><p>Ein <anchor type="commentary" xml:id="K_L03058-1"/><hi rend="latintype">Dr. <rs type="person" ref="#pmb144029">Meyer</rs></hi><note type="commentary" xml:id="K_L03058-1h">nicht ermittelt</note>, der mit den <rs type="person" subtype="implied" ref="#pmb14953 #pmb14948">Glümers</rs> bekannt
+               i<c rendition="#langesS">s</c>t, hat <hi rend="latintype"><rs type="person" ref="#pmb14953">Mizzi</rs></hi> zu <anchor type="commentary" xml:id="K_L03058-11"/><hi rend="latintype">Prof. <rs type="person" ref="#pmb144032">Renvers</rs></hi><note type="commentary" xml:id="K_L03058-11h">nicht ermittelt</note> begleitet. Ich
+               bat <hi rend="latintype"><rs type="person" ref="#pmb14948">Gusti</rs></hi>, mich mit die<c rendition="#langesS">s</c>em <hi rend="latintype">Dr. <rs type="person" ref="#pmb144029">Meyer</rs></hi> in Verbindung zu<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>etzen. Die Folge<del rend="strikethrough">n</del> war
                beiliegender Brief, aus dem ich auch nicht<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr klug werde. Vielleicht<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>agt er Dir
-               mehr als mir. <lb/>Viele Grüße!</closer><closer><lb/>Dein</closer><closer><lb/><signed>Paul Goldmn</signed></closer><p><pb facs="DLA_1901_00017 DLA_85.1.3171_00013"/><dateline><rs type="place" ref="">B.</rs><date>Montag</date>.</dateline><salute>Sehr geehrter Herr</salute><salute>Doctor!</salute></p><p>Auf Wunt<c rendition="#langesS">s</c>ch von <rs type="person" ref="">Fräulein Glümer</rs> erlaube ich mir die
-               ergebene Mitteilung, daß ihre Erkrankung auf einer<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chlechten Zu<c rendition="#langesS">s</c>ammen<c rendition="#langesS">s</c>etzung des
-               Blutes + eitrigen Körper<c rendition="#langesS">s</c>äfte beruht, deren Schwere durch die lange Vernachlä<c rendition="#langesS">s</c><c rendition="#langesS">s</c>igung
-               beruhigt i<c rendition="#langesS">s</c>t. – </p><closer>Das We<c rendition="#langesS">s</c>entliche für <pb facs="DLA_1901_00018 DLA_85.1.3171_00014"/> ihre
-               FreiXXXX i<c rendition="#langesS">s</c>t je die That<c rendition="#langesS">s</c>ache, daß<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie in 4 Wochen ca mit Sicherheit völlig ge<c rendition="#langesS">s</c>und
-              <space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein wird. <lb/>Mit vorzüglich</closer><closer><lb/><c rendition="#langesS">s</c>ter Hoch<c rendition="#langesS">s</c>chätzung</closer><closer><lb/>empfiehlt<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich</closer><closer><lb/>Ihnen</closer><closer><lb/>ganz ergeb<unclear>en</unclear></closer><closer><lb/><signed><unclear>Müller </unclear></signed></closer></div>
+               mehr als mir.</p><closer>Viele Grüße! <lb/>Dein <lb/><signed>Paul Goldmn</signed></closer></div>
+         <div type="writingSession" n="2"><opener><dateline rend="right"><pb facs="DLA_1901_00017 DLA_85.1.3171_00013"/><handShift scribe="#pmb144029"/><rs type="place" ref="#pmb168">B.</rs><space unit="chars" quantity="1"/><date when="1901-02">Montag</date>.</dateline><salute rend="center">Sehr geehrter Herr Doctor!</salute></opener><p>Auf Wun<c rendition="#langesS">s</c>ch von <anchor type="commentary" xml:id="K_L03058-3"/><rs type="person" ref="#pmb14953">Fräulein Glümer</rs><note type="commentary" xml:id="K_L03058-3h"><ref type="schnitzler-briefe" target="L0355" subtype="see"/></note> erlaube ich mir die ergebene Mitteilung, daß ihre Erkrankung auf einer
+              <space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chlechten Zu<c rendition="#langesS">s</c>ammen<c rendition="#langesS">s</c>etzung des Blutes + eitrigen Körper<c rendition="#langesS">s</c>äfte beruht, deren Schwere
+               durch die lange Vernachlä<c rendition="#langesS">s</c><c rendition="#langesS">s</c>igung beruhigt i<c rendition="#langesS">s</c>t. –</p><p>Das We<c rendition="#langesS">s</c>entliche für <pb facs="DLA_1901_00018 DLA_85.1.3171_00014"/>ihre Freunde i<c rendition="#langesS">s</c>t
+               ja die That<c rendition="#langesS">s</c>ache, daß<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie in 4 Wochen ca mit Sicherheit völlig ge<c rendition="#langesS">s</c>und<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein wird.</p><closer>Mit vorzüglich<c rendition="#langesS">s</c>ter Hoch<c rendition="#langesS">s</c>chätzung empfiehlt<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich Ihnen <lb/>ganz
+                  ergeb<unclear>en</unclear><space unit="chars" quantity="1"/><lb/><signed><unclear>Meyer</unclear></signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -207,6 +227,91 @@
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
+            <person xml:id="pmb144029">
+               <persName>
+                  <surname>Meyer</surname>
+               </persName>
+               <sex value="male"/>
+               <occupation ref="pmb1692">Arzt/Ärztin</occupation>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144029/</idno>
+            </person>
+            <person xml:id="pmb14953">
+               <persName>
+                  <forename>Marie</forename>
+                  <surname>Glümer</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Chlum</persName>
+               <persName type="person_ehename_nachname">Blaustein</persName>
+               <persName type="person_rufname">Mizi</persName>
+               <persName type="person_rufname">Mizi I</persName>
+               <persName type="person_rufname">Inconnue</persName>
+               <persName type="person_ehename_nachname">Martin</persName>
+               <persName type="person_ehename_nachname">Marton</persName>
+               <birth>
+                  <date when="1867-07-03">03.07.1867</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1925-11-16">16.11.1925</date>
+                  <settlement ref="pmb45258">
+                     <placeName type="pref">München</placeName>
+                     <location>
+                        <geo>48,13743 11,57549</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15485</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb14953.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14953/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb14953</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/128385022</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q19295807</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Marie_Gl%C3%BCmer</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb14953.html</idno>
+            </person>
+            <person xml:id="pmb14948">
+               <persName>
+                  <forename>Auguste</forename>
+                  <surname>Chlum</surname>
+               </persName>
+               <persName type="person_geburtsname-vorname">Augustine</persName>
+               <persName type="legacy-name-merge">Chlum, Auguste</persName>
+               <persName type="person_rufname">Gusti</persName>
+               <birth>
+                  <date when="1862-03-16">16.03.1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1956-01-01">1956</date>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14199</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb14948.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14948/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb14948</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1144277299</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q95191227</idno>
+            </person>
+            <person xml:id="pmb144032">
+               <persName>
+                  <surname>Renvers</surname>
+               </persName>
+               <sex value="male"/>
+               <occupation ref="pmb1692">Arzt/Ärztin</occupation>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144032/</idno>
+            </person>
          </listPerson>
          <listPlace>
             <place xml:id="pmb168">
@@ -240,7 +345,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>

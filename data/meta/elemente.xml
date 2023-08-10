@@ -495,144 +495,144 @@
                     <div type="level3">
                         <head xml:id="h.ddeok5sllgz9">listWit/witness[@n="1"]</head>
                         <p>Der erste Archivzeuge. Weitere Archivzeugen (etwa Durchschläge) sind mit
-                            dem Zähler <code>@n</code> unterschieden. Das Kind <code>msDesc</code>
-                            enthält Hinweise auf das Archiv und die Signatur des Objekts innerhalb
-                            des Archivs. Während <code>msIdentifier</code> den Archivstandort und
-                            die dortige Signatur angibt, enthält <code>physDesc</code> die physische
-                            Beschreibung des Objekts (siehe unten). </p>
+                            dem Zähler <code>@n</code> unterschieden. Das Kind
+                                <code>objectType</code> dient der Einordung in die
+                            Korrespondenzsorten (Brief, Karte, Telegramm…). Das Kind
+                                <code>msDesc</code> enthält Hinweise auf das Archiv und die Signatur
+                            des Objekts innerhalb des Archivs. Während <code>msIdentifier</code> den
+                            Archivstandort und die dortige Signatur angibt, enthält
+                                <code>physDesc</code> die physische Beschreibung des Objekts (siehe
+                            unten). </p>
                     </div>
-                    <div type="level3">
-                        <head xml:id="h.4kqrmkxn6mbo">listBibl/biblStruct</head>
-                        <p>Über verschiedene <code>biblStruct</code>-Elemente werden Drucke
-                            verzeichnet, die das jeweilige Korrespondenzstück bislang erhalten hat.
-                            Mit einem Attribut <code>@corresp</code> sind ein paar Buchausgaben
-                            gekennzeichnet, die nicht zur Gänze, sondern nur als Sigle zitiert
-                            werden, beispielsweise die beiden Auswahlbriefbände. </p>
+                    <div type="level4">
+                        <head xml:id="h.aeo34ktad7o9">objectType</head>
+                        <p>Die Klassifizierung der Korrespondenztypen erfolgt mit einem Vokabular an
+                            Werten, die in einem Haupt- und einem Unterattribut festgehalten sind.
+                            In Ausnahmefällen (»anderes«) enthält das Element auch einen
+                            beschreibenden Textinhalt. Für <code>witness[@n='1']</code> ist die
+                            Angabe verpflichtend, die weiteren Textzeugen bezeugen im Normalfall den
+                            selben Typ, hier kann die Angabe also entfallen.</p>
+                        <table>
+                            <row>
+                                <cell>@corresp</cell>
+                                <cell>@sana</cell>
+                            </row>
+                            <row>
+                                <cell>anderes </cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>bild </cell>
+                                <cell>fotografie </cell>
+                            </row>
+                            <row>
+                                <cell>brief </cell>
+                                <cell>entwurf</cell>
+                            </row>
+                            <row>
+                                <cell>karte </cell>
+                                <cell>bildpostkarte<lb/>postkarte<lb/>briefkarte<lb/>visitenkarte</cell>
+                            </row>
+                            <row>
+                                <cell>kartenbrief </cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>telegramm </cell>
+                                <cell>entwurf</cell>
+                            </row>
+                            <row>
+                                <cell>umschlag </cell>
+                                <cell/>
+                            </row>
+                            <row>
+                                <cell>widmung</cell>
+                                <cell>widmung_vorsatzblatt<lb/>widmung_titelblatt<lb/>widmung_vortitel<lb/>widmung_schmutztitel<lb/>widmung_umschlag
+                                </cell>
+                            </row>
+                        </table>
+                        <p>Einen theoretischen Sonderfall bilden Telegramme, da im Normalfall
+                                <code>objectType</code> den Augenblick, nachdem die Abfassung des
+                            Korrespondenzstücks abgeschlossen ist und es unmittelbar vor der
+                            Übermittlung steht, als Grundschicht für die Wiedergabe gewählt wird.
+                            Jegliche Hinzufügung, die danach folgt, wird in <code>physDesc</code>
+                            unter <code>additions</code> abgehandelt. Telegramme bekommen aber erst
+                            durch die Übermittlung ihre Gestalt. Der jeweilige Aufgabeschein ist für
+                            gewöhnlich nicht überliefert. Hier vollziehen wir einen inhaltlichen
+                            Spagat. So wird das Telegramm zum Zeitpunkt der Erstellung am
+                            Empfangsort wiedergegeben. Zwar wird das Telegramm in
+                                <code>physDesc</code> beschrieben, aber die auf die Übermittlung zu
+                            beziehenden Teile des Telegramms werden unter
+                                <code>additions/incident[@type="postal"]</code> behandelt. </p>
                     </div>
                 </div>
-                <div type="level2">
-                    <head xml:id="h.e5iaxzaz0b4">physDesc</head>
-                    <p>Dabei handelt es sich um ein Kind von
-                            <code>listWit/witness[@n="1"]/msDesc</code>. <code>physDesc</code>
-                        enthält die Beschreibung der physischen Beschaffenheit des Archivzeugens.
-                        Drei bis vier Elemente machen im Normalfall <code>physDesc</code> aus: </p>
-                    <list>
-                        <item><code>objectDesc</code> – für das Material</item>
-                        <item><code>handDesc</code> – für die Handschriften</item>
-                        <item><code>typeDesc</code> – für den gedruckten/getippten Anteil</item>
-                        <item><code>additions</code> – für Hinzufügungen, nachdem das
-                            Korrespondenzstück übermittelt wurde</item>
-                    </list>
-                    <div type="level3">
-                        <head xml:id="h.4kcxg5ehed61">objectDesc/desc</head>
-                        <p>Enthält die Angaben zur Materialität und zum Typ des Korrespondenzstücks.
-                            Mehrere dieser Elemente sind erlaubt. </p>
-                        <div type="level4">
-                            <head xml:id="h.ddolrupl7wro">@n, @type="_blaetter" und
-                                @type="_seiten"</head>
-                            <p>Für Postkarten und Ähnliches ist keine solche Angabe nötig. Im
-                                Ausnahmefall kann das Element aber auch Inhalt haben. Da dies als
-                                alternative Beschreibung verwendet wird, ist dann die komplette
-                                Angabe notwendig.</p>
-                            <div type="example">
-                                <p>Beispiel 1: </p>
-                                <p>3 Blatt, 6 Seiten sehen so aus:</p>
-                                <p>
-                                    <code>&lt;desc n="3" type="_blaetter"/&gt;</code>
-                                </p>
-                                <p>
-                                    <code>&lt;desc n="6" type="_seiten"/&gt;</code>
-                                </p>
-                            </div>
-                            <div type="example">
-                                <p>Beispiel 2:</p>
-                                <p>
-                                    <code>&lt;desc n="3" type="_blaetter"&gt; 3 Blätter mit Lochung
-                                        &lt;/desc&gt;</code>
-                                </p>
-                            </div>
+            </div>
+            <div type="level3">
+                <head xml:id="h.4kqrmkxn6mbo">listBibl/biblStruct</head>
+                <p>Über verschiedene <code>biblStruct</code>-Elemente werden Drucke verzeichnet, die
+                    das jeweilige Korrespondenzstück bislang erhalten hat. Mit einem Attribut
+                        <code>@corresp</code> sind ein paar Buchausgaben gekennzeichnet, die nicht
+                    zur Gänze, sondern nur als Sigle zitiert werden, beispielsweise die beiden
+                    Auswahlbriefbände. </p>
+            </div>
+            <div type="level2">
+                <head xml:id="h.e5iaxzaz0b4">physDesc</head>
+                <p>Dabei handelt es sich um ein Kind von
+                    <code>listWit/witness[@n="1"]/msDesc</code>. <code>physDesc</code> enthält die
+                    Beschreibung der physischen Beschaffenheit des Archivzeugens. Drei bis vier
+                    Elemente machen im Normalfall <code>physDesc</code> aus: </p>
+                <list>
+                    <item><code>objectDesc</code> – für das Material</item>
+                    <item><code>handDesc</code> – für die Handschriften</item>
+                    <item><code>typeDesc</code> – für den gedruckten/getippten Anteil</item>
+                    <item><code>additions</code> – für Hinzufügungen, nachdem das Korrespondenzstück
+                        übermittelt wurde</item>
+                </list>
+                <div type="level3">
+                    <head xml:id="objectDescx">objectDesc</head>
+                    <p>Das Attribut <code>@form</code> wird gesetzt, wenn es sich um eine Derivation
+                        des versandten Originals handelt, also ein Durchschlag, eine Abschrift, eine
+                        Fotokopie. Folgende Werte sind vorgesehen: <code>durchschlag,
+                            fotografische_vervielfaeltigung, fotokopie, hs_abschrift,
+                            ms_abschrift</code> Ansonsten ist nur das Element
+                            <code>supportDesc</code> enthalten. </p>
+                    <div type="level4">
+                        <head xml:id="h.4kcxg5ehed61">objectDesc/supportDesc</head>
+                        <p>Enthält Angaben zu Umfang und Materialität des Korrespondenzstücks, für
+                            die drei Kinderelemente vorgesehen sind. <code>extent</code>,
+                                <code>condition</code> und <code>support</code>. Letzteres dient für
+                            besondere Hinweise zur Drucksorte, etwa wenn ein Trauerrand vorhanden
+                            ist oder ein Wappen aufgeprägt. Die Aussage wird entweder als Stichwort
+                            (»Trauerrand«) oder sprachlich ausformuliert getroffen, wenn nur ein
+                            Teil der Materialien betroffen sind (Umschlag mit Trauerrand«).
+                                <code>condition</code> kommt im Normalfall nur mit dem Attribut
+                                <code>@ana</code>, das den Inhalt »fragment« hat und darauf
+                            hinweist, dass das vorliegende Objekt nur unvollständig überliefert
+                            ist.</p>
+                        <p><code>extent</code> quantifiziert in mehreren
+                            <code>measure</code>-Elementen die verschiedenen Materialen, die das
+                            Korrespondenzstück (ohne Beilagen) ausmachen.</p>
+                        <p>Für (Post-)Karten, Kartenbriefe und Widmungen wird auf die Blatt- und Seitenzählung
+                            verzichtet, da diese für gewöhnlich aus einer oder zwei Seiten bestehen
+                            und das sehr einfach ermittelt werden kann. Dafür ist eine Art
+                            Platzhalterelement vorgesehen, das »widmung«, »kartenbrief« oder »karte« als @unit hat.
+                            Im Ausnahmefall kann das Element aber auch Angaben zur Seiten und
+                            Blattzählung haben.</p>
+                        <p>Beispielsweise sehen 3 Blatt, 6 Seiten mit Umschlag so aus:</p>
+                        <div type="example">
+                            <p>
+                                <code>&lt;extent&gt;</code><lb/>
+                                <code>&lt;measure unit="seite" n="6"/&gt;</code>
+                                <lb/>
+                                <code>&lt;measure unit="blatt" n="3"/&gt;</code><lb/>
+                                <code>&lt;measure unit="umschlag" n="1"/&gt;</code><lb/>
+                                <code>&lt;/extent&gt;</code></p>
+                            <p/>
                         </div>
-                        <div type="level4">
-                            <head xml:id="h.aeo34ktad7o9">@type und @subtype</head>
-                            <p>Für die Klassifizierung der Korrespondenztypen sind folgende Werte
-                                zulässig: </p>
-                            <table>
-                                <row>
-                                    <cell>@type</cell>
-                                    <cell>@subtype</cell>
-                                </row>
-                                <row>
-                                    <cell>anderes </cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>bild </cell>
-                                    <cell>fotografie </cell>
-                                </row>
-                                <row>
-                                    <cell>brief </cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>entwurf </cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>fragment </cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>karte </cell>
-                                    <cell>bildpostkarte<lb/>postkarte<lb/>briefkarte<lb/>visitenkarte</cell>
-                                </row>
-                                <row>
-                                    <cell>kartenbrief </cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>reproduktion </cell>
-                                    <cell>fotokopie<lb/>fotografische_vervielfaeltigung<lb/>ms_abschrift<lb/>hs_abschrift<lb/>durchschlag</cell>
-                                </row>
-                                <row>
-                                    <cell>telegramm </cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>umschlag </cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>widmung</cell>
-                                    <cell>widmung_vorsatzblatt<lb/>widmung_titelblatt<lb/>widmung_vortitel<lb/>widmung_schmutztitel<lb/>widmung_umschlag
-                                    </cell>
-                                </row>
-                            </table>
-                            <p>Es sind mehrere Angaben erlaubt. </p>
-                            <p>Einen theoretischen Sonderfall stellen Telegramme dar. Im Normalfall
-                                beschreibt <code>objectDesc</code> das Korrespondenzstück zum
-                                Zeitpunkt der Übermittlung, während spätere Veränderungen unter
-                                    <code>additions</code> abgehandelt werden. Telegramme bekommen
-                                aber erst durch die Übermittlung ihre Gestalt. Der jeweilige
-                                Aufgabeschein ist für gewöhnlich nicht überliefert. Hier vollziehen
-                                wir einen inhaltlichen Spagat, der uns selbst nicht ganz koscher
-                                ist, der aber einfach zu korrigieren sein wird, wenn eine
-                                sinnvollere Lösung vorliegt. Zwar wird das Telegramm in
-                                    <code>objectDesc</code> beschrieben, aber die auf die
-                                Übermittlung zu beziehenden Teile des Telegramms werden unter
-                                    <code>additions/incident[@type="postal"]</code> behandelt. </p>
-                            <div type="example">
-                                <p>Beispiel: </p>
-                                <p>Ein dreiseitiger Brief auf einem Blatt, der in einem Umschlag als
-                                    Durchschlag erhalten ist: </p>
-                                <p><code>&lt;objectDesc&gt; </code></p>
-                                <p><code>&lt;desc type="brief"/&gt; </code></p>
-                                <p><code>&lt;desc type="umschlag"/&gt; </code></p>
-                                <p><code>&lt;desc type="reproduktion" subtype="ms_abschrift"/&gt;
-                                    </code></p>
-                                <p><code>&lt;desc n="1" type="_blaetter"/&gt; </code></p>
-                                <p><code>&lt;desc n="3" type="_seiten"/&gt; </code></p>
-                                <p><code>&lt;/objectDesc&gt; </code></p>
-                            </div>
+                        <div type="example">
+                            <p>
+                                <code>&lt;measure unit="karte" n="1" /&gt;</code><lb/>
+                                <code>&lt;measure unit="widmung" n="1" /&gt;</code></p>
                         </div>
                     </div>
                     <div type="level3">

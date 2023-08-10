@@ -29,7 +29,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="02873"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -69,6 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -78,9 +78,12 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="brief"/>
-                           <desc type="_blaetter" n="1"/>
-                           <desc type="_seiten" n="2"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="2"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="schwarze_tinte" style="deutsche-kurrent"/>
@@ -120,10 +123,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2023-01-09">Angelegt</change>
          <change who="MAM" when="2023-02-23">Index check</change>
          <change who="MAM" when="2023-02-23">Durchsicht</change>
+         <change who="LU" when="2023-07-24">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -132,16 +136,14 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><p><seg rend="left"><pb facs="HS.NZ85.1.3169_0015-0"/><rs ref="#pmb29442" type="org"><hi rend="pre-print">Frankfurter Zeitung</hi></rs></seg><seg rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb146">Frankfurt a. M.</rs>,</hi><space unit="chars" quantity="1"/><date when="1899-04-29">29. April <hi rend="pre-print">189</hi>9</date>.</seg></p><p rend="left"><hi rend="pre-print">und</hi></p><p rend="left"><hi rend="pre-print">Handelsblatt.</hi></p><p rend="left"><hi rend="pre-print"><rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs>.<note xml:id="FT2873-1" type="footnote"><p><hi rend="pre-print">Für die <rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs> be<c rendition="#langesS">s</c>timmte Briefe und Sendungen
-                                    wolle man <hi rend="spaced_out">nicht</hi> an die Per<c rendition="#langesS">s</c>on eines
-                                    Redakteurs,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ondern<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>tets <hi rend="bold">an die Redaktion der
-                                          <rs ref="#pmb29442" type="org">Frankfurter Zeitung</rs></hi> adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>iren.
-                              </hi></p></note></hi></p><p><hi rend="pre-print">Telegramm-Adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e:</hi></p><p><hi rend="pre-print"><rs ref="#pmb29442" subtype="implied" type="org">Zeitung</rs><space unit="chars" quantity="1"/><rs type="place" ref="#pmb146">Frankfurt Main</rs>.
-                  </hi></p><salute rend="left">Mein lieber Freund,</salute></opener><p>Dank für Deine Karte, die mich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr beruhigt hat. Ich bin recht froh, Dich in <anchor type="commentary" xml:id="K_L02873-1"/><rs type="place" ref="#pmb168">Berlin</rs><note type="commentary" xml:id="K_L02873-1h"><rs type="person" ref="#pmb2121">Schnitzler</rs> war von <ref type="schnitzler-tagebuch" target="1899-04-25" subtype="date-only"/> bis <ref type="schnitzler-tagebuch" target="1899-05-02" subtype="date-only"/> für die
+         <div type="writingSession" n="1"><opener><p><seg rend="left"><pb facs="HS.NZ85.1.3169_0015-0"/><rs ref="#pmb29442" type="org"><hi rend="pre-print"><hi rend="bold">Frankfurter Zeitung</hi></hi></rs></seg><seg rend="right"><hi rend="pre-print"><hi rend="bold"><rs type="place" ref="#pmb146">Frankfurt a.
+                        M.</rs>,</hi></hi><space unit="chars" quantity="1"/><date when="1899-04-29">29. April <hi rend="pre-print">189</hi>9</date>.</seg></p><p rend="left"><hi rend="pre-print">und</hi></p><p rend="left"><hi rend="pre-print">Handelsblatt.</hi></p><p rend="left"><hi rend="pre-print"><hi rend="bold"><rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs>.</hi><note xml:id="FT2873-1" type="footnote"><p><hi rend="pre-print">Für die <rs ref="#pmb29442" subtype="implied" type="org">Redaktion</rs> be<c rendition="#langesS">s</c>timmte Briefe und Sendungen wolle man
+                                 <hi rend="spaced_out">nicht</hi> an die Per<c rendition="#langesS">s</c>on eines Redakteurs,
+                             <space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ondern<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>tets <hi rend="bold">an die Redaktion der <rs ref="#pmb29442" type="org">Frankfurter Zeitung</rs></hi> adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>iren. </hi></p></note></hi></p><p><hi rend="pre-print">Telegramm-Adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e:</hi></p><p><hi rend="pre-print"><hi rend="bold"><rs ref="#pmb29442" subtype="implied" type="org">Zeitung</rs><space unit="chars" quantity="1"/><rs type="place" ref="#pmb146">Frankfurt Main</rs>.</hi></hi></p><salute rend="left">Mein lieber Freund,</salute></opener><p>Dank für Deine Karte, die mich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr beruhigt hat. Ich bin recht froh, Dich in <anchor type="commentary" xml:id="K_L02873-1"/><rs type="place" ref="#pmb168">Berlin</rs><note type="commentary" xml:id="K_L02873-1h"><rs type="person" ref="#pmb2121">Schnitzler</rs> war von <ref type="schnitzler-tagebuch" target="1899-04-25" subtype="date-only"/> bis <ref type="schnitzler-tagebuch" target="1899-05-02" subtype="date-only"/> für die
                   Premiere von <rs type="work" ref="#pmb32562" subtype="implied">Der grüne Kakadu –
                      Paracelsus – Die Gefährtin. Drei Einakter</rs> (am <ref type="schnitzler-tagebuch" target="1899-04-29" subtype="date-only"/>) am <rs type="place" ref="#pmb3">Deutschen Theater</rs> nach <rs type="place" ref="#pmb168">Berlin</rs> gereist.</note> zu wi<c rendition="#langesS">s</c><c rendition="#langesS">s</c>en. Mein Brief erreicht Dich
                jedenfalls am <time>Morgen</time> nach einem neuen großen <rs type="work" subtype="implied" ref="#pmb32562">Erfolge</rs> und<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>oll Dir auch gleich meinen
-               Glückwun<c rendition="#langesS">s</c>ch bringen.</p><p>Nochmals, bitte: <anchor type="commentary" xml:id="K_L02873-4"/><hi rend="underline" n="2">komm nach <rs type="place" ref="#pmb146">Frankfurt</rs></hi><note type="commentary" xml:id="K_L02873-4h">nicht geschehen</note>! Die <anchor type="commentary" xml:id="K_L02873-2"/><hi rend="latintype"><rs type="person" ref="#pmb4216">Dreyfus</rs>-<foreign xml:lang="fra">Enquête</foreign></hi><note type="commentary" xml:id="K_L02873-2h"><ref type="schnitzler-briefe" target="L02872" subtype="see"/></note> geht die<c rendition="#langesS">s</c>e Woche zu Ende. Näch<c rendition="#langesS">s</c>te Woche werde ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>icherlich mehr Zeit haben.
+               Glückwun<c rendition="#langesS">s</c>ch bringen.</p><p>Nochmals, bitte: <anchor type="commentary" xml:id="K_L02873-4"/><hi rend="underline" n="2">komm’ nach <rs type="place" ref="#pmb146">Frankfurt</rs></hi><note type="commentary" xml:id="K_L02873-4h">nicht geschehen</note>! Die <anchor type="commentary" xml:id="K_L02873-2"/><hi rend="latintype"><rs type="person" ref="#pmb4216">Dreyfus</rs>-<foreign xml:lang="fra">Enquête</foreign></hi><note type="commentary" xml:id="K_L02873-2h"><ref type="schnitzler-briefe" target="L02872" subtype="see"/></note> geht die<c rendition="#langesS">s</c>e Woche zu Ende. Näch<c rendition="#langesS">s</c>te Woche werde ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>icherlich mehr Zeit haben.
                Wenn Du da bi<c rendition="#langesS">s</c>t, kann ich mich jeden Nachmittag von <time>5 Uhr</time> ab freimachen.
                Du brauch<c rendition="#langesS">s</c>t Dich doch wirklich nicht<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o zu eilen, nach <rs type="place" ref="#pmb50">Wien</rs> zurückzukommen. Je länger Du fortbleib<c rendition="#langesS">s</c>t, um<c rendition="#langesS">s</c>o be<c rendition="#langesS">s</c><c rendition="#langesS">s</c>er i<c rendition="#langesS">s</c>t es. Und vor
                ein <pb facs="HS.NZ85.1.3169_0015-1"/>paar Stunden Ei<c rendition="#langesS">s</c>enbahnfahrt mehr wir<c rendition="#langesS">s</c>t Du Dich
@@ -359,7 +361,7 @@
                <title>Der grüne Kakadu – Paracelsus – Die Gefährtin. Drei Einakter</title>
                <title type="werk_link">https://www.digital.wienbibliothek.at/wbrobv/content/titleinfo/1488075</title>
                <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date from="1898-01-01" to="1899-07-02">1898  – 1899</date>
+               <date from="1898-01-01" to="1899-07-02">1898 – 1899</date>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32562.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32562/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb32562</idno>
@@ -447,7 +449,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -508,7 +511,7 @@
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29442</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/institutionen/pmb29442</idno>
                <note type="apis_dates">
-                  <date to="1943-01-01">1856  – 1943</date>
+                  <date to="1943-01-01">1856 – 1943</date>
                </note>
             </org>
          </listOrg>

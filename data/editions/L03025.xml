@@ -3,8 +3,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1930-12-30" n="01">1930-12-30</title>
-            <title level="a">Arthur Schnitzler an Felix Salten, 30. 12. 1930</title>
+            <title type="iso-date" when-iso="1929-12-30" n="01">1929-12-30</title>
+            <title level="a">Arthur Schnitzler an Felix Salten, 30. 12. 19[29?]</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -29,7 +29,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03025"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -69,6 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp=""/>
                   <msDesc>
                      <msIdentifier>
                         <country>A</country>
@@ -78,7 +78,9 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <supportDesc>
+                              <extent/>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="" style="deutsche-kurrent"/>
@@ -96,12 +98,12 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1930-12-30" n="01">30. 12. 1930</date>
+               <date when="1929-12-30" n="01">30. 12. 19[29?]</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
@@ -121,10 +123,14 @@
    </teiHeader>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="Wienbibliothek_AS_FS_2823284"/><rs type="place" ref="#pmb50">Wien</rs><date>30/12 930</date></dateline></opener><p><salute>lieber, </salute>lassen Sie mich Ihnen sehr herzlich für Ihr erquickendes
-               neues <rs type="work" ref="">Thierbuch</rs> danken, das ich erst vor
-                  wenig<unclear>en</unclear> Tagen zu Ende gelesen habe. Es ist so naturnah und so
-               jung. </p><closer>Auf Wiedersehen – aber wirklich – und alles gute zum neuen Jahr Ihnen und den
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="Wienbibliothek_AS_FS_2823284"/><rs type="place" ref="#pmb50">Wien</rs><space unit="chars" quantity="1"/><anchor type="commentary" xml:id="K_L03025-1"/><date>30/12 930</date><note type="commentary" xml:id="K_L03025-1h">Es dürfte sich bei der Datierung um eine
+                     Verwechslung handeln, womöglich motiviert durch den bevorstehenden
+                     Jahreswechsel. Am <ref type="schnitzler-tagebuch" subtype="date-only" target="1929-12-27"/> las <rs type="person" ref="#pmb2121">Schnitzler</rs>
+                     die Neuerscheinung <rs type="work" ref="#pmb76515">Fünfzehn Hasen. Schicksale
+                        in Wald und Feld</rs>.</note></dateline></opener><p><salute>lieber, </salute>lassen Sie mich Ihnen sehr herzlich für Ihr erquickendes
+               neues <rs type="work" ref="#pmb76515" subtype="implied">Thierbuch</rs> danken, das
+               ich erst vor wenig<unclear>en</unclear> Tagen zu Ende gelesen habe. Es ist so
+               naturnah und so jung.</p><closer>Auf Wiedersehen – aber wirklich – und alles gute zum neuen Jahr Ihnen und den
                Ihren. <lb/>Immer Ihr <lb/><signed>ArthSchnitzler</signed></closer></div>
       </body>
       <back>
@@ -213,7 +219,8 @@
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>

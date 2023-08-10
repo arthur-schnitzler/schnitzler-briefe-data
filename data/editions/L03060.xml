@@ -29,7 +29,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03060"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -69,6 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -78,11 +78,24 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="1"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Jahr »<quote>
+                                    <date when="1901">
+                                       <supplied>1</supplied>901</date>
+                                 </quote>« vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -96,14 +109,14 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1901-03-02" n="01">2. 3. [1901]<duplicate-date-nn of="LO3060"/>
-               </date>
+               <date when="1901-03-02" n="01">2. 3. [1901]</date>
                <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb168">Berlin</placeName>
-               <date evidence="conjecture" notBefore="1901-03-03" notAfter="1901-03-07">[3. 3. 1901 – 7. 3. 1901?]</date>
+               <date evidence="conjecture" notBefore="1901-03-03" notAfter="1901-03-07">[3. 3. 1901
+                  – 7. 3. 1901?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -116,7 +129,9 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><p rend="right"><pb facs="DLA_1901_00022 DLA_85.1.3171_00017"/><rs type="place" ref="#pmb40583"><hi rend="pre-print"><hi rend="capitals">Dessauerstrasse</hi> 19</hi></rs></p><dateline rend="left"><rs type="place" ref="#pmb168">Berlin</rs>, <date when="1901-03-02">2. März</date>.</dateline><salute rend="center">Mein lieber Freund,</salute></opener><p>Sei herzlich<c rendition="#langesS">s</c>t willkommen! Ich komme um <time>12 Uhr</time> ins <rs type="place" ref="">Hotel</rs>. <lb/>Viele Grüße!</p><closer><lb/>Dein</closer><closer><lb/><signed>P. G. </signed></closer></div>
+         <div type="writingSession" n="1"><opener><p rend="right"><pb facs="DLA_1901_00022 DLA_85.1.3171_00017"/><rs type="place" ref="#pmb40583"><hi rend="pre-print"><hi rend="capitals">Dessauerstrasse</hi> 19</hi></rs></p><dateline rend="left"><rs type="place" ref="#pmb168">Berlin</rs>, <date when="1901-03-02">2. März</date>.</dateline><salute rend="center">Mein lieber Freund,</salute></opener><p>Sei herzlich<c rendition="#langesS">s</c>t <anchor type="commentary" xml:id="K_L03060-1"/>willkommen<note type="commentary" xml:id="K_L03060-1h"><rs type="person" ref="#pmb2121">Schnitzler</rs> war zwischen <ref type="schnitzler-tagebuch" target="1901-03-03" subtype="date-only"/> und <ref type="schnitzler-tagebuch" target="1901-03-10" subtype="date-only"/> in <rs type="place" ref="#pmb168">Berlin</rs>.</note>! Ich komme um <anchor type="commentary" xml:id="K_L03060-2"/><time>12 Uhr</time><note type="commentary" xml:id="K_L03060-2h">gemeint war der darauffolgende Tag; es
+                  ist unklar, ob sich <rs type="person" ref="#pmb2121">Schnitzler</rs> und <rs type="person" ref="#pmb11485">Goldmann</rs> am <ref type="schnitzler-tagebuch" target="1901-03-03" subtype="date-only"/> tatsächlich sahen – im <rs type="work" ref="#pmb33243">Tagebuch</rs> gibt es darauf keinerlei
+                  Hinweise</note> ins <anchor type="commentary" xml:id="K_L03060-3"/><rs type="place" subtype="implied" ref="#pmb144052">Hotel</rs><note type="commentary" xml:id="K_L03060-3h">nicht ermittelt</note>.</p><p>Viele Grüße!</p><closer>Dein <lb/><signed>P. G.</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -199,6 +214,28 @@
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
          </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb33243">
+               <title>Tagebuch</title>
+               <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author ref="pmb119261" role="hat-herausgegeben">Braunwarth, Peter Michael</author>
+               <author ref="pmb65504" role="hat-herausgegeben">Urbach, Reinhard</author>
+               <author ref="pmb143327" role="hat-herausgegeben">Welzig, Werner</author>
+               <author ref="pmb143331" role="hat-herausgegeben">Miklin, Richard</author>
+               <author ref="pmb119271" role="hat-herausgegeben">Fliedl, Konstanze</author>
+               <author ref="pmb143334" role="hat-herausgegeben">Ruprechter, Walter</author>
+               <author ref="pmb143337" role="hat-herausgegeben">Pertlik, Susanne</author>
+               <date to="2000-01-01">1981 – 2000</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q108122826</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Tagebuch_(Schnitzler)</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb33243.html</idno>
+               <note type="work_kind">Tagebuch</note>
+            </bibl>
+         </listBibl>
          <listPlace>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
@@ -242,6 +279,16 @@
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40583/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40583</idno>
+            </place>
+            <place xml:id="pmb144052">
+               <placeName>[Hotel]</placeName>
+               <desc type="entity_type">Hotel (K.HTL)</desc>
+               <desc type="entity_type_id">12</desc>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144052/</idno>
             </place>
          </listPlace>
       </back>

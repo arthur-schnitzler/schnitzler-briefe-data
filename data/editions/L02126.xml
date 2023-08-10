@@ -29,12 +29,11 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw" n="02126"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
             <pubPlace>Vienna</pubPlace>
-            <date when="2021">2021</date>
+            <date when="2023">2023</date>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
                   <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
@@ -69,6 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="karte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -77,9 +77,17 @@
                         <idno>A:Schnitzler, HS.NZ85.1.2342, S. 14</idno>
                      </msIdentifier>
                      <physDesc>
-                        <objectDesc>
-                           <desc type="reproduktion" subtype="ms_abschrift"/>
+                        <objectDesc form="ms_abschrift">
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="1"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
+                        <typeDesc>
+                           <p>Schreibmaschine</p>
+                        </typeDesc>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -99,7 +107,8 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
-               <date evidence="conjecture" notBefore="1913-04-20" notAfter="1913-04-22">[20. 4. 1913 – 24. 4. 1913?]</date>
+               <date evidence="conjecture" notBefore="1913-04-20" notAfter="1913-04-22">[20. 4. 1913
+                  – 24. 4. 1913?]</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2147">Altenberg,
@@ -127,8 +136,7 @@
    <text>
       <body>
          <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="HS.NZ85.1.2342_0007"/><date>?/4. 1913</date></dateline></opener><p><hi n="1" rend="underline">Tiefsten Dank</hi> für <anchor xml:id="K_L02126_1" type="commentary"/>Besuch<note xml:id="K_L02126_1h" type="commentary">am <ref target="1913-04-20" subtype="date-only" type="schnitzler-tagebuch"/> in der
-                  Psychiatrie der <rs ref="#pmb153" type="place">Landesheilanstalt Am
-                  Steinhof</rs></note>! Ihr<space unit="chars" quantity="3"/><signed>P. A.</signed></p></div>
+                  Psychiatrie der <rs ref="#pmb153" type="place">Landesheilanstalt Am Steinhof</rs></note>! Ihr<space unit="chars" quantity="3"/><signed>P. A.</signed></p></div>
       </body>
       <back>
          <listPerson>
@@ -217,7 +225,8 @@
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -252,7 +261,8 @@
             <place xml:id="pmb153">
                <placeName>Otto-Wagner-Spital</placeName>
                <placeName type="namensvariante">Steinhof</placeName>
-               <placeName type="ort_fruherer_name">Niederösterreichische Landes-Heil- und Pflegeanstalt für Nerven- und Geisteskranke »Am Steinhof«</placeName>
+               <placeName type="ort_fruherer_name">Niederösterreichische Landes-Heil- und
+                  Pflegeanstalt für Nerven- und Geisteskranke »Am Steinhof«</placeName>
                <desc type="entity_type">Krankenhaus (K.KKH)</desc>
                <desc type="entity_type_id">23</desc>
                <location type="coords">

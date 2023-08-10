@@ -31,12 +31,11 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw" n="00576"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
             <pubPlace>Vienna</pubPlace>
-            <date when="2021">2021</date>
+            <date when="2023">2023</date>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
                   <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
@@ -72,6 +71,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="karte" ana="postkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -81,11 +81,15 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="karte" subtype="postkarte"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="karte" quantity="1"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc hands="2">
                            <handNote medium="bleistift" style="lateinische-kurrent" corresp="#pmb2167"/>
-                           <handNote medium="bleistift" style="lateinische-kurrent" corresp="#pmb11740"/>
+                           <handNote medium="bleistift" style="lateinische-kurrent" corresp="#pmb11740"> </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -102,7 +106,8 @@
                               <desc>
                                  <stamp n="2">
                                     <placeName ref="#pmb36300">Kjøbenhavn</placeName>
-                                    <addSpan>20MB<unclear>3</unclear>–8<unclear>8</unclear>6</addSpan>
+                                    <date when="1896-08-03">3–8 96</date>
+                                    <addSpan>20MB</addSpan>
                                  </stamp>
                               </desc>
                            </incident>
@@ -114,6 +119,11 @@
                            <incident type="archival">
                               <desc>mit Bleistift von unbekannter Hand nummeriert:
                                                 »<quote>75</quote>«</desc>
+                           </incident>
+                           <incident type="editorial">
+                              <desc>Hofmannsthals Ergänzungen
+                                 in den Textklammern sind gut erkennbar, weswegen hier auf
+                              die Auszeichung der vielen Schriftwechsel verzichtet wird</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -137,7 +147,7 @@
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <placeName ref="#pmb36300">Kopenhagen</placeName>
-               <date evidence="conjecture" notBefore="1896-08-02" notAfter="1896-08-06">[2. 8. 1896 – 6. 8. 1896?]</date>
+               <date when="1896-08-03">3. 8. 1896</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo

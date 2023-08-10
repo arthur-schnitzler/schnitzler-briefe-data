@@ -33,7 +33,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="02902"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -73,6 +72,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="karte" ana="postkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -82,7 +82,11 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="karte" subtype="postkarte"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="karte" quantity="1"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc hands="5">
                            <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb11485">
@@ -95,7 +99,7 @@
                               <p>Adresse</p>
                            </handNote>
                            <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb14953"/>
-                           <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb14948"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent" corresp="#pmb14948"/>
                            <handNote medium="schwarze_tinte" style="lateinische-kurrent" corresp="#pmb28645"/>
                         </handDesc>
                         <additions>
@@ -104,15 +108,15 @@
                                  <stamp n="1">
                                     <placeName ref="#pmb168">Berlin, W.</placeName>
                                     <date when="1900-01-13">13. 1. 00</date>
-                                    <time>12<unclear>–</unclear>1V.</time>
+                                    <time>12–1 V.</time>
                                  </stamp>
                                  <stamp n="2">
                                     <placeName ref="#pmb59">Wien 9/3 72</placeName>
                                     <date when="1900-01-14">14. 1<supplied>.</supplied> 00</date>
-                                    <time>9<supplied>.V</supplied>
+                                    <time>9<supplied>. V</supplied>
                                     </time>
                                     <addSpan>
-                                       <unclear>Bestellt</unclear>
+                                       <supplied>Bestellt</supplied>
                                     </addSpan>
                                  </stamp>
                               </desc>
@@ -156,10 +160,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2023-02-02">Angelegt</change>
          <change who="MAM" when="2023-06-01">Index check</change>
          <change who="MAM" when="2023-06-01">Durchsicht</change>
+         <change who="LU" when="2023-07-26">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -168,17 +173,18 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3170_0003"/><hi rend="latintype">Herrn</hi></addrLine><addrLine><hi rend="latintype">Dr. Arthur Schnitzler</hi></addrLine><addrLine><hi rend="latintype"><rs type="place" ref="#pmb50">Wien</rs></hi></addrLine><addrLine><rs type="place" ref="#pmb397">IX. Frankga<c rendition="#langesS">s</c>se 1</rs>.</addrLine></address></div>
+         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3170_0003"/><hi rend="pre-print">An</hi></addrLine><addrLine>Herrn</addrLine><addrLine>Dr. Arthur Schnitzler</addrLine><addrLine><hi rend="pre-print">in</hi><space unit="chars" quantity="1"/><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb397">IX. Frankga<c rendition="#langesS">s</c>se 1</rs>.</addrLine></address></div>
          <div type="writingSession" n="1"><opener><dateline rend="left"><pb facs="HS.NZ85.1.3170_0002"/><rs type="place" ref="#pmb168">Berlin</rs> (leider)</dateline><dateline rend="right">Den <date when="1900-01-11">11. 1. 1900</date>.</dateline></opener><p><salute rend="inline">Lieber Freund</salute>, Ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ende Dir einen herzlichen Gruß aus
                der <anchor type="commentary" xml:id="K_L02902-1"/><rs type="place" ref="#pmb59800">Pa<c rendition="#langesS">s</c><c rendition="#langesS">s</c>auer<c rendition="#langesS">s</c>traße 37</rs><note type="commentary" xml:id="K_L02902-1h">Wohnort von <rs type="person" ref="#pmb14948">Auguste Chlum</rs> und <rs type="person" ref="#pmb14953">Marie
                      Glümer</rs></note>. Wir haben von Dir ge<c rendition="#langesS">s</c>prochen – und auch ein wenig von <hi rend="latintype"><rs type="person" ref="#pmb11740">Hoffmannsthal</rs></hi>. <del rend="strikethrough">D<unclear>ein</unclear> tr</del> Dein treuer
-                  <signed>Paul Goldmann</signed></p><p><handShift scribe="#pmb14953"/>Ja, vom lieben <rs type="person" ref="#pmb11740">Hofmannsthal</rs> haben wir ge<c rendition="#langesS">s</c>prochen. – <anchor type="commentary" xml:id="K_L02902-66"/>G.<note type="commentary" xml:id="K_L02902-66h"><rs type="person" ref="#pmb11485">Goldmann</rs></note> i<c rendition="#langesS">s</c>t<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr lieb, wir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind wieder einmal ganz
-               glücklich – Son<c rendition="#langesS">s</c>t geht es elend. – Was i<c rendition="#langesS">s</c>t das für eine <anchor type="commentary" xml:id="K_L02902-4"/><rs type="work" ref="#pmb33784">Gouvernante</rs> im <hi rend="underline" n="1"><rs type="org" ref="#pmb36430">Volkstheater</rs></hi><note type="commentary" xml:id="K_L02902-4h">Bezug auf eine
-                  Zeitungsmeldung, dass <rs type="person" ref="#pmb2121">Schnitzler</rs> einen
-                  Vierakter mit dem Titel <rs type="work" ref="#pmb33784">Die Gouvernante</rs>
-                  abgeschlossen habe und dieser im <rs type="org" ref="#pmb36430">Volkstheater</rs>
-                  aufgeführt werden solle (<bibl>vgl. [O. V.]: <rs type="work" ref="#pmb142419">Theater, Kunst und Literatur</rs>. In: <rs type="work" ref="#pmb39950">Wiener Allgemeine Zeitung</rs>, Nr. 6554, <date when="1900-01-12">12. 1. 1900</date>, 6 Uhr-Blatt, S. 3</bibl>)</note><note xml:id="FT2902-1" type="footnote"><p><handShift scribe="#pmb11485"/><anchor type="textConst" xml:id="T_L02902-1"/>Das unter<c rendition="#langesS">s</c>trichene Wort<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>oll »<rs type="org" ref="#pmb36430">Volkstheater</rs>« heißen und nicht »Kohlrabi«.<note type="textConst" xml:id="T_L02902-1h">kopfüber am oberen Rand</note></p></note>? 
-               G. weiß auch nichts. <hi rend="underline" n="1"><hi rend="latintype">Telefonirt</hi></hi>?</p><p><handShift scribe="#pmb14948"/>Die <anchor type="commentary" xml:id="K_L02902-2"/>Herzogin<note type="commentary" xml:id="K_L02902-2h">unklare Anspielung</note>
+                  <signed>Paul Goldmann<unclear>.</unclear></signed></p><p><handShift scribe="#pmb14953"/>Ja, vom lieben <rs type="person" ref="#pmb11740">Hofmannsthal</rs> haben wir ge<c rendition="#langesS">s</c>prochen. – <anchor type="commentary" xml:id="K_L02902-66"/>G.<note type="commentary" xml:id="K_L02902-66h"><rs type="person" ref="#pmb11485">Goldmann</rs></note> i<c rendition="#langesS">s</c>t<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr lieb, wir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind wieder einmal ganz glücklich – Son<c rendition="#langesS">s</c>t geht es elend. –
+               Was i<c rendition="#langesS">s</c>t das für eine <anchor type="commentary" xml:id="K_L02902-4"/><rs type="work" ref="#pmb33784">Gouvernante</rs><note type="commentary" xml:id="K_L02902-4h">Bezug auf eine Zeitungsmeldung, dass <rs type="person" ref="#pmb2121">Schnitzler</rs> einen Vierakter mit dem Titel <rs type="work" ref="#pmb33784">Die Gouvernante</rs> abgeschlossen hätte und dieser im <rs type="org" ref="#pmb36430">Volkstheater</rs> aufgeführt werden sollte.
+                     <bibl>Vgl. [O. V.]: <rs type="work" ref="#pmb142419">Theater, Kunst und
+                        Literatur</rs>. In: <rs type="work" ref="#pmb39950">Wiener Allgemeine
+                        Zeitung</rs>, Nr. 6554, <date when="1900-01-12">12. 1. 1900</date>,
+                     6 Uhr-Blatt, S. 3</bibl>.</note> im <hi rend="underline" n="1"><rs type="org" ref="#pmb36430">Volkstheater</rs></hi><note xml:id="FT2902-1" type="footnote"><p><handShift scribe="#pmb11485"/><anchor type="textConst" xml:id="T_L02902-1"/>Das unter<c rendition="#langesS">s</c>trichene Wort<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>oll »<rs type="org" ref="#pmb36430">Volkstheater</rs>« heißen und nicht
+                        »Kohlrabi«.<note type="textConst" xml:id="T_L02902-1h">kopfüber am oberen
+                        Rand</note></p></note>? G. weiß auch nichts. <hi rend="underline" n="1"><hi rend="latintype">Telefonirt</hi></hi>?</p><p><handShift scribe="#pmb14948"/>Die <anchor type="commentary" xml:id="K_L02902-2"/>Herzogin<note type="commentary" xml:id="K_L02902-2h">unklare Anspielung</note>
                kü<c rendition="#langesS">s</c>st Sie auf die <hi rend="latintype">Dichterstirne</hi>!</p><p><handShift scribe="#pmb28645"/><date when="1900-01-11">Heute</date> beim <rs type="person" ref="#pmb11324">Fischer</rs> gewesen und über <rs type="work" ref="#pmb29935">Anatol</rs>
                conferiert. Mache noch einige Ze<unclear>i</unclear>chnungen. Brief folgt.</p><closer>1000 Grüße<lb/><signed>Coschell</signed></closer></div>
       </body>
@@ -320,7 +326,8 @@
                   </settlement>
                </death>
                <sex value="male"/>
-               <occupation ref="pmb110">Bildender Künstler/Bildende Künstlerin &gt;&gt; Maler/Malerin</occupation>
+               <occupation ref="pmb110">Bildender Künstler/Bildende Künstlerin &gt;&gt;
+                  Maler/Malerin</occupation>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb28645.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/28645/</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14283</idno>
@@ -464,7 +471,8 @@
             <bibl xml:id="pmb142419">
                <title>Theater, Kunst und Literatur [Gouvernante]</title>
                <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=waz&amp;datum=19000112&amp;seite=3&amp;zoom=33</title>
-               <title type="werk_bibliografische-angabe">[O. V.]: Theater, Kunst und Literatur. In: Wiener Allgemeine Zeitung, Nr. 6554, 12. 1. 1900, 6 Uhr-Blatt, S. 3</title>
+               <title type="werk_bibliografische-angabe">[O. V.]: Theater, Kunst und Literatur. In:
+                  Wiener Allgemeine Zeitung, Nr. 6554, 12. 1. 1900, 6 Uhr-Blatt, S. 3</title>
                <date>1900-01-12</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/142419/</idno>
                <note type="work_kind">Notiz</note>
@@ -472,7 +480,7 @@
             <bibl xml:id="pmb39950">
                <title>Wiener Allgemeine Zeitung</title>
                <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=waz</title>
-               <date to="1934-02-11">1.3.1880  – 11.2.1934</date>
+               <date to="1934-02-11">1.3.1880 – 11.2.1934</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39950/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb39950</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/werke/pmb39950</idno>
@@ -481,10 +489,12 @@
             </bibl>
             <bibl xml:id="pmb29935">
                <title>Anatol</title>
-               <title type="werk_bibliografische-angabe">Arthur Schnitzler: Anatol. Berlin: Bibliographisches Bureau 1892, vordatiert auf 1893</title>
+               <title type="werk_bibliografische-angabe">Arthur Schnitzler: Anatol. Berlin:
+                  Bibliographisches Bureau 1892, vordatiert auf 1893</title>
                <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
                <author ref="pmb28645" role="hat-illustriert">Coschell, Moritz</author>
-               <author ref="pmb11740" role="hat-ein-vorwortnachwort-verfasst-zu">Hofmannsthal, Hugo von</author>
+               <author ref="pmb11740" role="hat-ein-vorwortnachwort-verfasst-zu">Hofmannsthal, Hugo
+                  von</author>
                <date>1892-10-29</date>
                <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.03</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q487409</idno>
@@ -550,7 +560,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>

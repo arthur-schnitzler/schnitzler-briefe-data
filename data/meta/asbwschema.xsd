@@ -129,7 +129,6 @@
          <xs:sequence>
             <xs:element ref="tei:edition"/>
             <xs:element ref="tei:respStmt"/>
-            <xs:element ref="tei:idno" minOccurs="1" maxOccurs="1"/>
          </xs:sequence>
       </xs:complexType>
    </xs:element>
@@ -274,10 +273,51 @@
    </xs:element>
    <xs:element name="witness">
       <xs:complexType>
-         <xs:sequence>
-            <xs:element ref="tei:msDesc"/>
-         </xs:sequence>
+         <xs:all>
+            <xs:element ref="tei:objectType" maxOccurs="1" minOccurs="0"/>
+            <xs:element ref="tei:msDesc" minOccurs="0" maxOccurs="1"/>
+         </xs:all>
          <xs:attribute name="n" use="required" type="xs:integer"/>
+         <xs:assert test="(child::tei:objectType) or (number(@n) &gt; 1)"/>
+      </xs:complexType>
+   </xs:element>
+   <xs:simpleType name="objectTypeCorresp">
+      <xs:restriction base="xs:NCName">
+         <xs:enumeration value="karte"/>
+         <xs:enumeration value="bild"/>
+         <xs:enumeration value="kartenbrief"/>
+         <xs:enumeration value="brief"/>
+         <xs:enumeration value="telegramm"/>
+         <xs:enumeration value="widmung"/>
+         <xs:enumeration value="anderes"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="objectTypeAna">
+      <xs:restriction base="xs:NCName">
+         <xs:enumeration value="bildpostkarte"/>
+         <xs:enumeration value="postkarte"/>
+         <xs:enumeration value="briefkarte"/>
+         <xs:enumeration value="visitenkarte"/>
+         <xs:enumeration value="fotografie"/>
+         <xs:enumeration value="entwurf"/>
+         <xs:enumeration value="widmung_vorsatzblatt"/>
+         <xs:enumeration value="widmung_titelblatt"/>
+         <xs:enumeration value="widmung_vortitel"/>
+         <xs:enumeration value="widmung_schmutztitel"/>
+         <xs:enumeration value="widmung_umschlag"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <!-- Define the 'objectType' element -->
+   <xs:element name="objectType">
+      <xs:complexType>
+         <xs:simpleContent>
+            <xs:extension base="xs:string">
+               <!-- 'corresp' attribute with possible values -->
+               <xs:attribute name="corresp" type="objectTypeCorresp" use="required"/>
+               <!-- 'ana' attribute is optional -->
+               <xs:attribute name="ana" type="objectTypeAna" use="optional"/>
+            </xs:extension>
+         </xs:simpleContent>
       </xs:complexType>
    </xs:element>
    <xs:element name="msDesc">
@@ -307,9 +347,7 @@
             <xs:element ref="tei:typeDesc" minOccurs="0" maxOccurs="1"/>
             <xs:element ref="tei:additions" minOccurs="0" maxOccurs="1"/>
          </xs:all>
-         <xs:assert
-            test="(tei:objectDesc) and (tei:handDesc or tei:typeDesc or tei:objectDesc/tei:desc/@type = 'reproduktion')"
-         />
+         <xs:assert test="(tei:objectDesc) and (tei:handDesc or tei:typeDesc)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="handDesc">
@@ -330,12 +368,86 @@
          </xs:all>
       </xs:complexType>
    </xs:element>
+   <xs:simpleType name="measureUnits">
+      <xs:restriction base="xs:NCName">
+         <xs:enumeration value="blatt"/>
+         <xs:enumeration value="seite"/>
+         <xs:enumeration value="umschlag"/>
+         <xs:enumeration value="karte"/>
+         <xs:enumeration value="kartenbrief"/>
+         <xs:enumeration value="telegramm"/>
+         <xs:enumeration value="widmung"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <!-- Define the 'measure' element with attributes 'unit' and 'quantity' -->
+   <xs:element name="measure">
+      <xs:complexType>
+         <xs:attribute name="unit" type="measureUnits" use="required"/>
+         <xs:attribute name="quantity" type="xs:positiveInteger" use="required"/>
+      </xs:complexType>
+   </xs:element>
+   <!-- Define the 'extent' element with 'measure' as its child -->
+   <xs:element name="extent">
+      <xs:complexType>
+         <xs:all>
+            <xs:element ref="tei:measure" maxOccurs="unbounded"/>
+         </xs:all>
+         <xs:assert test="count(distinct-values(tei:measure/@unit)) = count(tei:measure)"/>
+      </xs:complexType>
+   </xs:element>
+   <!-- Define the 'supportDesc' element with 'extent' as its child -->
+   <xs:element name="supportDesc">
+      <xs:complexType>
+         <xs:all>
+            <xs:element ref="tei:support" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="tei:extent" maxOccurs="1" minOccurs="1"/>
+            <xs:element ref="tei:condition" maxOccurs="1" minOccurs="0"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="condition">
+      <xs:complexType>
+         <xs:simpleContent>
+            <xs:extension base="xs:string">
+               <xs:attribute name="ana" type="anaValueType"/>
+            </xs:extension>
+         </xs:simpleContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:simpleType name="anaValueType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="fragment"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:element name="support">
+      <xs:complexType mixed="true">
+         <xs:all>
+            <!-- 'rs' element as child -->
+            <xs:element ref="tei:rs" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="tei:quote" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="tei:space" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="tei:date" minOccurs="0" maxOccurs="unbounded"/>
+         </xs:all>
+         <!-- 'support' element can have text content -->
+      </xs:complexType>
+   </xs:element>
    <xs:element name="objectDesc">
       <xs:complexType>
          <xs:all>
-            <xs:element ref="tei:desc" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element minOccurs="1" maxOccurs="1" ref="tei:supportDesc"/>
          </xs:all>
-         <xs:assert test="tei:desc/@type"/>
+         <xs:attribute name="form">
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:enumeration value="fotografie"/>
+                  <xs:enumeration value="fotokopie"/>
+                  <xs:enumeration value="fotografische_vervielfaeltigung"/>
+                  <xs:enumeration value="ms_abschrift"/>
+                  <xs:enumeration value="hs_abschrift"/>
+                  <xs:enumeration value="durchschlag"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:attribute>
       </xs:complexType>
    </xs:element>
    <xs:element name="handNote">
@@ -541,25 +653,6 @@
          <xs:element ref="tei:bibl" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:ref" maxOccurs="unbounded" minOccurs="0"/>
       </xs:all>
-      <xs:attribute name="type">
-         <xs:simpleType>
-            <xs:restriction base="xs:NCName">
-               <xs:enumeration value="_blaetter"/>
-               <xs:enumeration value="_seiten"/>
-               <xs:enumeration value="karte"/>
-               <xs:enumeration value="bild"/>
-               <xs:enumeration value="kartenbrief"/>
-               <xs:enumeration value="brief"/>
-               <xs:enumeration value="umschlag"/>
-               <xs:enumeration value="telegramm"/>
-               <xs:enumeration value="widmung"/>
-               <xs:enumeration value="reproduktion"/>
-               <xs:enumeration value="anderes"/>
-               <xs:enumeration value="entwurf"/>
-               <xs:enumeration value="fragment"/>
-            </xs:restriction>
-         </xs:simpleType>
-      </xs:attribute>
       <xs:attribute name="subtype">
          <xs:simpleType>
             <xs:restriction base="xs:NCName">
@@ -567,12 +660,6 @@
                <xs:enumeration value="postkarte"/>
                <xs:enumeration value="briefkarte"/>
                <xs:enumeration value="visitenkarte"/>
-               <xs:enumeration value="fotokopie"/>
-               <xs:enumeration value="fotografie"/>
-               <xs:enumeration value="fotografische_vervielfaeltigung"/>
-               <xs:enumeration value="ms_abschrift"/>
-               <xs:enumeration value="hs_abschrift"/>
-               <xs:enumeration value="durchschlag"/>
                <xs:enumeration value="widmung_vorsatzblatt"/>
                <xs:enumeration value="widmung_titelblatt"/>
                <xs:enumeration value="widmung_vortitel"/>
@@ -586,19 +673,6 @@
             <xs:restriction base="xs:integer"/>
          </xs:simpleType>
       </xs:attribute>
-      <xs:assert test="
-            (@type = 'karte') or
-            (@type = 'reproduktion' and (@subtype = 'fotokopie' or @subtype = 'fotografische_vervielfaeltigung' or @subtype = 'durchschlag' or @subtype = 'ms_abschrift' or @subtype = 'hs_abschrift')) or
-            (@type = 'widmung' and contains(@subtype, 'widmung'))
-            or (@type = '_blaetter' and @n) or (@type = '_seiten' and @n)
-            or (@type = 'kartenbrief' and not(@subtype))
-            or (@type = 'telegramm' and not(@subtype))
-            or (@type = 'brief' and not(@subtype))
-            or (@type = 'entwurf' and not(@subtype))
-            or (@type = 'fragment' and not(@subtype))
-            or (@type = 'umschlag' and not(@subtype))
-            or (@type = 'bild' and not(@subtype)) or (@type = 'bild' and 'fotografie')
-            or (@type = 'anderes' and text() != '')"/>
    </xs:complexType>
    <xs:complexType name="back_desc_type">
       <xs:simpleContent>
@@ -1013,7 +1087,7 @@
          <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
-         <xs:element ref="tei:p" maxOccurs="unbounded" minOccurs="0"></xs:element>
+         <xs:element ref="tei:p" maxOccurs="unbounded" minOccurs="0"/>
       </xs:choice>
       <xs:attribute name="type" use="required">
          <xs:simpleType>
@@ -1025,11 +1099,14 @@
          </xs:simpleType>
       </xs:attribute>
       <xs:attribute ref="xml:id" use="required"/>
+      <xs:assert test="
+            tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and
+            (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren' or @type = 'schnitzler-bahr')] or not(tei:ref)"/>
       <xs:assert
-         test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and 
-         (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren' or @type = 'schnitzler-bahr')] or not(tei:ref)"/>
-      <xs:assert test="(@type='textConst' or @type='commentary' and not(descendant::tei:note[@type='textConst' or @type='commentary'])) or not(@type='textConst' or @type='commentary')"/>
-      <xs:assert test="(@type='footnote' and @xml:id and starts-with(@xml:id, 'F') and child::tei:p and not(child::*[name()!='p'])) or not(child::tei:p)"/>
+         test="(@type = 'textConst' or @type = 'commentary' and not(descendant::tei:note[@type = 'textConst' or @type = 'commentary'])) or not(@type = 'textConst' or @type = 'commentary')"/>
+      <xs:assert
+         test="(@type = 'footnote' and @xml:id and starts-with(@xml:id, 'F') and child::tei:p and not(child::*[name() != 'p'])) or not(child::tei:p)"
+      />
    </xs:complexType>
    <xs:complexType name="backNote_type-org">
       <xs:sequence minOccurs="0">

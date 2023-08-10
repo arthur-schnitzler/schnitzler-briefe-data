@@ -29,7 +29,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="02884"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -69,6 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="karte" ana="bildpostkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -78,7 +78,11 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="karte" subtype="bildpostkarte"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="karte" quantity="1"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc hands="1">
                            <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
@@ -91,8 +95,13 @@
                               <desc>
                                  <stamp n="1">
                                     <placeName ref="#pmb134981">Le Mont-S<unclear>
-                                          <hi rend="superscript">t</hi>-</unclear>Michel Manche</placeName>
+                                          <hi rend="superscript">t</hi>-</unclear>Michel
+                                       Manche</placeName>
                                     <date when="1899-08-20">20 <hi rend="capitals">août</hi> 99</date>
+                                    <time>
+                                       <unclear>2 <hi rend="superscript">e</hi>
+                                       </unclear>
+                                    </time>
                                  </stamp>
                                  <stamp n="2">
                                     <placeName ref="#pmb213">Ischl</placeName>
@@ -141,10 +150,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2023-01-09">Angelegt</change>
          <change who="MAM" when="2023-02-24">Index check</change>
          <change who="MAM" when="2023-02-24">Durchsicht</change>
+         <change who="LU" when="2023-07-25">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -153,19 +163,16 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3169_0034"/><foreign xml:lang="fra"><rs type="place" ref="#pmb41240">Autriche</rs></foreign>!</addrLine><addrLine><foreign xml:lang="fra"><hi rend="pre-print">M</hi>onsieur le Dr. Arthur Schnitzler
-                  </foreign></addrLine><addrLine><rs type="place" ref="#pmb414">Pension Petter</rs></addrLine><addrLine><rs type="place" ref="#pmb213">Ischl</rs></addrLine></address></div>
-         <div type="writingSession" n="1"><opener><p rend="center"><pb facs="HS.NZ85.1.3169_0033"/><hi rend="pre-print"><rs type="place" ref="#pmb142352">Auberge de la Truie qui File</rs>
-                   XIII<hi rend="superscript">e</hi> Siècle</hi></p><p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb142354">La Tour du Guet</rs></hi></p><p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb142358">L’Hôtel du Soleil Royal</rs>.</hi></p><p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb142356">La Porte du Roi</rs>.</hi></p><dateline rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb134981">Mont Saint Michel</rs>, le</hi><space unit="chars" quantity="1"/><date when="1899-08-20">20. <hi rend="latintype">août</hi></date></dateline></opener><p>Ein Sonntagsausflug von <hi rend="latintype"><rs type="place" ref="#pmb55293">Rennes</rs></hi> nach dem <hi rend="latintype"><rs type="place" ref="#pmb134981">Mont St. Michel</rs></hi>. Einer der <del rend="strikethrough"><unclear>mer</unclear>k</del> merkwürdig<c rendition="#langesS">s</c>ten Orte der Welt: Fel<c rendition="#langesS">s</c>en, Meer und
+         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3169_0034"/><foreign xml:lang="fra"><rs type="place" ref="#pmb41240">Autriche</rs></foreign>!</addrLine><addrLine><foreign xml:lang="fra"><hi rend="pre-print">M</hi>onsieur le Dr. Arthur Schnitzler </foreign></addrLine><addrLine><rs type="place" ref="#pmb414">Pension Petter</rs></addrLine><addrLine><rs type="place" ref="#pmb213">Ischl</rs></addrLine></address></div>
+         <div type="writingSession" n="1"><opener><p rend="center"><pb facs="HS.NZ85.1.3169_0033"/><hi rend="pre-print"><rs type="place" ref="#pmb142352">Auberge de la Truie qui File</rs> XIII<hi rend="superscript">e</hi> Siècle</hi></p><p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb142354">La Tour du Guet</rs></hi></p><p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb142358">L’Hôtel du Soleil Royal</rs>.</hi></p><p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb142356">La Porte du Roi</rs>.</hi></p><dateline rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb134981">Mont Saint Michel</rs>, le</hi><space unit="chars" quantity="1"/><date when="1899-08-20">20. <hi rend="latintype">août</hi></date></dateline></opener><p>Ein Sonntagsausflug von <hi rend="latintype"><rs type="place" ref="#pmb55293">Rennes</rs></hi> nach dem <hi rend="latintype"><rs type="place" ref="#pmb134981">Mont St. Michel</rs></hi>. Einer der <del rend="strikethrough"><unclear>mer</unclear>k</del> merkwürdig<c rendition="#langesS">s</c>ten Orte der Welt: Fel<c rendition="#langesS">s</c>en, Meer und
                Gothik. In <hi rend="latintype"><rs type="place" ref="#pmb55293">Rennes</rs></hi> arbeiten wir uns todt, und noch i<c rendition="#langesS">s</c>t <anchor type="commentary" xml:id="K_L02884-1"/>kein Ende<note type="commentary" xml:id="K_L02884-1h">Bezug
                   auf den seit <date when="1899-08-08">8. 8. 1899</date> andauerden neuen
                   Kriegsgerichtsprozess in der Affäre <rs type="person" ref="#pmb4216">Dreyfus</rs>,
-                  der bis in den <date when="1899-09">September</date> fortdauerte
-                  (Schuldspruch am <date when="1899-09-09">9. 9. 1899</date>, Begnadigung am
-                     <date when="1899-09-19">19. 9. 1899</date>)</note>
-                  abzu<c rendition="#langesS">s</c>ehen<unclear>.</unclear> Bisher<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>cheint nur Verurtheilung oder
-                  wenig<c rendition="#langesS">s</c>tens<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chäbiger Frei<c rendition="#langesS">s</c>pruch zu fürchten. Schreib’ mir
-               bald u. grüße Alle, die nach mir fragen. Viele Grüße! <signed>P. G.</signed></p></div>
+                  der bis in den <date when="1899-09">September</date> fortdauerte (Schuldspruch am
+                     <date when="1899-09-09">9. 9. 1899</date>, Begnadigung am <date when="1899-09-19">19. 9. 1899</date>).</note> abzu<c rendition="#langesS">s</c>ehen<unclear>.</unclear>
+               Bisher<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>cheint nur <rs type="person" subtype="implied" ref="#pmb4216">Verurtheilung</rs> oder wenig<c rendition="#langesS">s</c>tens<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chäbiger Frei<c rendition="#langesS">s</c>pruch zu fürchten.
+               Schreib’ mir bald u. grüße Alle, die nach mir fragen. Viele Grüße! <signed>P.
+                  G.</signed></p></div>
       </body>
       <back>
          <listPerson>

@@ -48,7 +48,7 @@
                 <p/>
             </div>
             <div type="level1">
-                <head xml:id="h.wqznbeg9jono">Allgemein</head>
+                <head xml:id="Allgemein">Allgemein</head>
                 <p>Die offiziellen Richtlinien der TEI P5 finden sich hier:</p>
                 <p>
                     <ref target="https://tei-c.org/guidelines/P5/"
@@ -68,7 +68,7 @@
                     gelten jeweils für das gesamte XML-Dokument. Im Anschluss daran folgt eine
                     Darstellung des Aufbaus eines solchen Dokuments mit den fixen Bestandteilen.</p>
                 <div type="level2">
-                    <head xml:id="h.ijg5nb7pq2lo">Stilistisches</head>
+                    <head xml:id="Stilistisches">Stilistisches</head>
                     <list>
                         <item>Abkürzungen sind weitgehend zu vermeiden. Ausnahmen in
                             bibliografischen Angaben: <list>
@@ -92,7 +92,7 @@
                     </list>
                 </div>
                 <div type="level2">
-                    <head xml:id="h.ytug3qkxr7n">Umgang mit Whitespace</head>
+                    <head xml:id="Whitespace">Umgang mit Whitespace</head>
                     <p>XML ist, wenn es zu Abständen und Leerzeichen kommt, problematisch. Doppelte
                         Leerzeichen benötigen eine Sonderbehandlung wie der Fall, wenn zwischen zwei
                         Elementen ein Leerzeichen stehen soll. Wir kodieren so, dass wir das
@@ -115,9 +115,9 @@
                     </div>
                 </div>
                 <div type="level2">
-                    <head xml:id="h.b0wkpa7acp2g">Herausgeberinnen- und Herausgebertext</head>
+                    <head xml:id="HerausgeberInnentext">Herausgeberinnen- und Herausgebertext</head>
                     <div type="level3">
-                        <head xml:id="h.820h9u3p9byz">anchor und note</head>
+                        <head xml:id="anchor_note">anchor und note</head>
                         <p><code>anchor</code> ist ein leeres Element mit einer innerhalb des
                             Projektes eindeutigen <code>@xml:id</code> und einem
                             Klassifizierungsattribut <code>@type</code> wobei einer der drei Werte
@@ -141,7 +141,7 @@
                                 »commentary«-<code>note</code> aber schon referenziert werden. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.ug3sz0p5kyp">bibl</head>
+                        <head xml:id="bibl">bibl</head>
                         <p>Bibliografische Angaben werden in <code>bibl</code>-Elemente verpackt. In
                             Kommentaren erfolgt die Angabe von Monografien nach dem Titelblatt, an
                             anderen Orten nach der üblichen Zitation. Ortsangaben von Verlagen
@@ -166,7 +166,7 @@
                             schließende Punkt wird nach dem <code>&lt;/bibl&gt;</code> gesetzt. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.r8djbfjlofi0">quote</head>
+                        <head xml:id="quote">quote</head>
                         <p>Entgegen der vorgeschlagenen Verwendung von TEI verwenden wir
                                 <code>quote</code> nur, wenn innerhalb eines Paratexts ein Zitat
                             vorkommt. Unser Eigeninteresse besteht darin, dass es bei der Ausgabe
@@ -175,7 +175,7 @@
                             umrahmt. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.m49xdzuyi1vy">ref</head>
+                        <head xml:id="ref">ref</head>
                         <p>Wird für Verweise herangezogen. Die wichtigsten Fälle:</p>
                         <p><code>@type="schnitzler-briefe"</code> (Verweis auf einen Brief innerhalb
                             der <ref target="https://schnitzler-briefe.acdh.oeaw.ac.at/"
@@ -204,16 +204,16 @@
                             weiter unten.</p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.bczvlasvnqe6">supplied</head>
+                        <head xml:id="supplied">supplied</head>
                         <p>Ergänzung durch die Herausgeberinnen und Herausgeber. Das Element wird
                             möglichst sparsam eingesetzt. Wichtig ist nicht die Korrektur des
                             Originaltextes, sondern die Gewährleistung der Lesbarkeit. </p>
                     </div>
                 </div>
                 <div type="level2">
-                    <head xml:id="h.lktos9nivu54">Edierter Text</head>
+                    <head xml:id="edierter_text">Edierter Text</head>
                     <div type="level3">
-                        <head xml:id="h.pytigmnu01ft">@ref, @corresp, @key, @scribe</head>
+                        <head xml:id="edierter_text_ref_corresp_key_scribe">@ref, @corresp, @key, @scribe</head>
                         <p>Diese Attribute stellen Bezugnahmen auf Entitäten dar, die im Webservice
                             PMB <ref target="https://pmb.acdh.oeaw.ac.at/"
                                 >https://pmb.acdh.oeaw.ac.at/</ref> verzeichnet sind. Vorangestellt
@@ -236,7 +236,7 @@
                         </div>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.iok0unm7yjq5">@rend</head>
+                        <head xml:id="rend">@rend</head>
                         <p>Bei allen Absatzelementen wie <code>p</code>, <code>dateline</code>,
                                 <code>salute</code> kann durch die Verwendung des Attributs
                                 <code>@rend</code> mit den Werten »right«, »center« und »inline«
@@ -244,7 +244,7 @@
                             angegeben werden) eine Stilisierung vorgenommen werden. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.68fvu9p1fui5">add</head>
+                        <head xml:id="add">add</head>
                         <p>Hinzufügungen in den Text werden von <code>all</code>-Elementen
                             eingeschlossen. Das Attribut <code>@place</code> gibt eine genauere
                             geografische Verortung an: »above«, »below«, »inline«, »margin«,
@@ -252,7 +252,7 @@
                         <p>Vgl. auch <code>subst</code></p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.wqzvi0glpp9i">damage</head>
+                        <head xml:id="damage">damage</head>
                         <p>Ummantelt eine durch Beschädigung entstandene Textstelle. Die häufigsten
                             Fehler sind verschmierte Tinte, Blattverlust, Lochung, Wasser
                                 (<code>agent="…"</code>). Innerhalb eines <code>damage</code> ist
@@ -261,7 +261,7 @@
                             überhaupt hergestellt werden muss. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.696xnuu088od">date</head>
+                        <head xml:id="date">date</head>
                         <p>Alle zeitlich fixierbaren Daten werden mit <code>date</code>
                             ausgezeichnet, auch zukünftige wie: »wir sehen uns dann am
                                 <code>&lt;date&gt;</code>Freitag<code>&lt;/date&gt;</code>«, aber
@@ -282,7 +282,7 @@
                             vorgesehen. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.xf6ljs6zwi34">dateline</head>
+                        <head xml:id="dateline">dateline</head>
                         <p>Datumszeile. Diese ist nicht rekonstruiert, sondern dient einzig und
                             allein der Funktion, jene Zeile innerhalb eines Korrespondenzstücks
                             auszuzeichnen, die eine Datierung enthält. Sie steht für gewöhnlich
@@ -290,18 +290,18 @@
                             immer ein Kindelement <code>date</code>. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.jbikk1a7u7b3">del</head>
+                        <head xml:id="del">del</head>
                         <p>Streichungen. Das Attribut <code>@rend</code> gibt eine genauere
                             Klassifizierung: »strikethrough«, »overwritten«, »erased«. </p>
                         <p>Vgl. auch <code>subst</code>.</p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.3k6bl86dt2pj">note[@type='footnote']</head>
+                        <head xml:id="note_footnote">note[@type='footnote']</head>
                         <p>Für Fußnoten, die schon in der edierten Vorlage vorhanden sind. Der Text
                             der Fußnote kommt in ein oder mehrere <code>p</code>-Elemente. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.byyox6cauja6">gap</head>
+                        <head xml:id="gap">gap</head>
                         <p>Für Lücken im Text. </p>
                         <p><code>&lt;gap quantity="2" reason="illegible" unit="chars"/&gt;</code>
                             bedeutet: zwei nicht entzifferte Zeichen. Möglich ist auch
@@ -310,7 +310,7 @@
                             »x«.) </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.vhqpb8u3xrdb">handShift</head>
+                        <head xml:id="handshift">handShift</head>
                         <p>Markiert Schreiberinnen- und Schreiberwechsel. <code>handShift</code>
                             ohne ein Attribut hat als Wiedergabe »[handschriftlich:]«, etwa bei
                             eigenhändiger Unterschrift nach einem mit Schreibmasche getippten
@@ -320,7 +320,7 @@
                                 medium="typewriter"/&gt;</code> setzt »[maschinschriftlich:]«.</p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.qcoc838q1fal">hi[@rend]</head>
+                        <head xml:id="hi_rend">hi[@rend]</head>
                         <p>Dient zur Auszeichnung von Schriftänderungen. Folgende Attributwerte sind
                             erlaubt: »latintype«, »underline«, »italics«, »superscript«,
                             »subscript«, »bold«, »pre-print«, »stamp«, »small_caps«, »antiqua«,
@@ -329,7 +329,7 @@
                             Linien, mit denen unterstrichen wurde. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.np3i0ro5zzpe">lg</head>
+                        <head xml:id="lg">lg</head>
                         <p>Das Element <code>lg</code> dient dazu, Gedichte mit dem originalen
                             Zeilenfall auszuzeichnen. <code>&lt;lg type="poem"/&gt;</code> kann
                             entweder gleich aus den einzelnen Versen (»lines«) <code>l</code>
@@ -355,7 +355,7 @@
                         </div>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.5sxotegcjhqg">pb</head>
+                        <head xml:id="pb">pb</head>
                         <p>Markiert den Seitenbeginn. Das Attribut <code>@facs</code> verweist auf
                             den Dateinamen des Faksimiles. Der XPath-Befehl
                                 <code>distinct-values(//pb/@facs)</code> ergibt alle innerhalb des
@@ -367,7 +367,7 @@
                                 <code>physDesc</code> verzichtet. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.arw6fzb352al">rs</head>
+                        <head xml:id="rs">rs</head>
                         <p>Verweist auf Entitäten von den Typen »person«, »work«, »place« und »org«
                             (Organisation/Institution). Diese können geschachtelt sein und im
                             Attribut <code>@ref</code> mehrere Werte enthalten (siehe oben). </p>
@@ -383,12 +383,12 @@
                                 »<code>&lt;rs&gt;</code>Schnitzler<code>&lt;/rs&gt;</code>s Buch«
                             (weil das Genetiv-s nicht zum Entitätsnamen gehört). </p>
                         <div type="level4">
-                            <head xml:id="h.4b56xvopwh2a">rs[@type="person"]</head>
+                            <head xml:id="rs_type_person">rs[@type="person"]</head>
                             <p>Akademische Titel oder Adelstitel werden nicht als Namensbestandteil
                                 aufgefasst und nicht in das Element aufgenommen. </p>
                         </div>
                         <div type="level4">
-                            <head xml:id="h.z16tvwv3qgkj">rs[@type="place"]</head>
+                            <head xml:id="rs_type_place">rs[@type="place"]</head>
                             <p>Bei längeren Angaben wird nur der genaueste geografische Punkt
                                 ausgezeichnet, wobei die Auszeichnungstiefe bei der Straße, nicht
                                 der Hausnummer endet. Ein Zeilenwechsel in der Vorlage stellt eine
@@ -404,14 +404,14 @@
                         </div>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.smhvwi50u065">salute</head>
+                        <head xml:id="salute">salute</head>
                         <p>Umrahmt die Begrüßungsformel. Wenn sie im Brief abgesetzt ist, dann steht
                             sie im <code>opener</code>-Element. Wenn sie, wie bei Postkarten häufig,
                             im Fließtext steht, dann nimmt sie noch das Komma und das folgende
                             Leerzeichen mit. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.ts1sh447goke">seg</head>
+                        <head xml:id="seg">seg</head>
                         <p>Die genaue Lokalisierung von Text auf der Fläche wird in dieser Edition
                             nur eingeschränkt berücksichtigt und beschränkt sich zumeist auf die
                             Attributwerte von <code>@rend</code> in Absätzen (»left«, »right«,
@@ -423,7 +423,7 @@
                             </code></p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.vvs4s2e4zrp5">subst</head>
+                        <head xml:id="subst">subst</head>
                         <p>Ein Überschreibungsvorgang wird durch <code>subst</code> markiert.
                             Theoretisch werden nur die letzten beiden Textschichten behandelt,
                             praktisch kommt bislang auch keine weitere Schicht vor. (Der Fall, in
@@ -439,11 +439,11 @@
                         <p>Zu diesen siehe dort. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.q1neozekr29j">table, row, cell</head>
+                        <head xml:id="table_row_cell">table, row, cell</head>
                         <p>Für Tabellen. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.4o9mxncjvtca">time</head>
+                        <head xml:id="time">time</head>
                         <p>Analog zu <code>date</code>, nur gibt es kein Attribut. Hat gegenwärtig
                             keine Bedeutung, außer es suchbar zu machen. Häufig vorkommende
                             Sonderzeichen wie »½«, »¼«, »⅔«, werden mit fixem kurzen Abstand
@@ -452,21 +452,21 @@
                 </div>
             </div>
             <div type="level1">
-                <head xml:id="h.z4s2wqbs2nux">TEI/@xml:id</head>
+                <head xml:id="tei_xml-id">TEI/@xml:id</head>
                 <p>Das Attribut <code>@xml:id</code> deckt sich mit dem Dateinamen und erlaubt eine
                     eindeutige Identifizierung des Dokuments innerhalb des Projekts. Zwar ist es
                     eine laufende Zählernummer, doch können Briefe wegfallen. Eine einmal vergebene
                     Nummer wird nicht neuerlich vergeben. </p>
             </div>
             <div type="level1">
-                <head xml:id="h.d1oscwegtomc">teiHeader</head>
+                <head xml:id="teiheader">teiHeader</head>
                 <p>Der <code>teiHeader</code> enthält vier relevante Bereiche mit wechselnden
                     Informationen: <code>titleStmt</code>, <code>sourceDesc</code>,
                         <code>correspDesc</code> und <code>revisionDesc</code>.</p>
                 <div type="level2">
-                    <head xml:id="h.sj01lxkj4irw">fileDesc/titleStmt</head>
+                    <head xml:id="titleStmt">fileDesc/titleStmt</head>
                     <div type="level3">
-                        <head xml:id="h.18zwd4musum3">title[@level="a"]</head>
+                        <head xml:id="title_level-a">title[@level="a"]</head>
                         <p>Enthält den Titel des Korrespondenzstücks. Theoretisch könnte diese
                             Information auch über <code>correspDesc</code> (siehe unten) weitgehend
                             konstruiert werden. In der Praxis kommt es, beispielsweise bei
@@ -476,7 +476,7 @@
                                 <code>&lt;handShift/&gt;</code> ausgewiesen. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.uct95ir015tn">author</head>
+                        <head xml:id="author">author</head>
                         <p>Enthält die Namen der am Korrespondenzstück beteiligten Verfasserinnen
                             und Verfasser. Nur der erste Name ist eine relevante Position, da hier
                             der Hauptschreiber bzw. die Hauptschreiberin zu finden ist. Danach
@@ -486,14 +486,14 @@
                     </div>
                 </div>
                 <div type="level2">
-                    <head xml:id="h.huq3n7sbb6ph">sourceDesc</head>
+                    <head xml:id="sourcedesc">sourceDesc</head>
                     <p>Enthält zwei mögliche Kinder, nämlich Archivzeugen (<code>listWit</code>) und
                         gedruckte Zeugen (<code>listBibl</code>). Hier wird eine implizite
                         Hierarchie angewandt: Der erste Eintrag von <code>listWit</code> ist der
                         edierte Zeuge. Sollte kein <code>listWit</code> vorhanden sein, so bildet
                         die Vorlage der erste Eintrag in <code>listBibl</code>. </p>
                     <div type="level3">
-                        <head xml:id="h.ddeok5sllgz9">listWit/witness[@n="1"]</head>
+                        <head xml:id="witness">listWit/witness[@n="1"]</head>
                         <p>Der erste Archivzeuge. Weitere Archivzeugen (etwa Durchschläge) sind mit
                             dem Zähler <code>@n</code> unterschieden. Das Kind
                                 <code>objectType</code> dient der Einordung in die
@@ -505,7 +505,7 @@
                             unten). </p>
                     </div>
                     <div type="level4">
-                        <head xml:id="h.aeo34ktad7o9">objectType</head>
+                        <head xml:id="objectType">objectType</head>
                         <p>Die Klassifizierung der Korrespondenztypen erfolgt mit einem Vokabular an
                             Werten, die in einem Haupt- und einem Unterattribut festgehalten sind.
                             In Ausnahmefällen (»anderes«) enthält das Element auch einen
@@ -515,7 +515,7 @@
                         <table>
                             <row>
                                 <cell>@corresp</cell>
-                                <cell>@sana</cell>
+                                <cell>@ana</cell>
                             </row>
                             <row>
                                 <cell>anderes </cell>
@@ -568,7 +568,7 @@
                 </div>
             </div>
             <div type="level3">
-                <head xml:id="h.4kqrmkxn6mbo">listBibl/biblStruct</head>
+                <head xml:id="biblstruct">listBibl/biblStruct</head>
                 <p>Über verschiedene <code>biblStruct</code>-Elemente werden Drucke verzeichnet, die
                     das jeweilige Korrespondenzstück bislang erhalten hat. Mit einem Attribut
                         <code>@corresp</code> sind ein paar Buchausgaben gekennzeichnet, die nicht
@@ -576,7 +576,7 @@
                     Auswahlbriefbände. </p>
             </div>
             <div type="level2">
-                <head xml:id="h.e5iaxzaz0b4">physDesc</head>
+                <head xml:id="physDesc">physDesc</head>
                 <p>Dabei handelt es sich um ein Kind von
                     <code>listWit/witness[@n="1"]/msDesc</code>. <code>physDesc</code> enthält die
                     Beschreibung der physischen Beschaffenheit des Archivzeugens. Drei bis vier
@@ -589,7 +589,7 @@
                         übermittelt wurde</item>
                 </list>
                 <div type="level3">
-                    <head xml:id="objectDescx">objectDesc</head>
+                    <head xml:id="objectDesc">objectDesc</head>
                     <p>Das Attribut <code>@form</code> wird gesetzt, wenn es sich um eine Derivation
                         des versandten Originals handelt, also ein Durchschlag, eine Abschrift, eine
                         Fotokopie. Folgende Werte sind vorgesehen: <code>durchschlag,
@@ -597,7 +597,7 @@
                             ms_abschrift</code> Ansonsten ist nur das Element
                             <code>supportDesc</code> enthalten. </p>
                     <div type="level4">
-                        <head xml:id="h.4kcxg5ehed61">objectDesc/supportDesc</head>
+                        <head xml:id="supportDesc">objectDesc/supportDesc</head>
                         <p>Enthält Angaben zu Umfang und Materialität des Korrespondenzstücks, für
                             die drei Kinderelemente vorgesehen sind. <code>extent</code>,
                                 <code>condition</code> und <code>support</code>. Letzteres dient für
@@ -610,7 +610,7 @@
                             hinweist, dass das vorliegende Objekt nur unvollständig überliefert
                             ist.</p>
                         <p><code>extent</code> quantifiziert in mehreren
-                            <code>measure</code>-Elementen die verschiedenen Materialen, die das
+                            <code>measure</code>-Elementen die verschiedenen Materialien, die das
                             Korrespondenzstück (ohne Beilagen) ausmachen.</p>
                         <p>Für (Post-)Karten, Kartenbriefe und Widmungen wird auf die Blatt- und Seitenzählung
                             verzichtet, da diese für gewöhnlich aus einer oder zwei Seiten bestehen
@@ -618,8 +618,9 @@
                             Platzhalterelement vorgesehen, das »widmung«, »kartenbrief« oder »karte« als @unit hat.
                             Im Ausnahmefall kann das Element aber auch Angaben zur Seiten und
                             Blattzählung haben.</p>
-                        <p>Beispielsweise sehen 3 Blatt, 6 Seiten mit Umschlag so aus:</p>
+                        
                         <div type="example">
+                            <p>3 Blatt, 6 Seiten mit Umschlag:</p>
                             <p>
                                 <code>&lt;extent&gt;</code><lb/>
                                 <code>&lt;measure unit="seite" n="6"/&gt;</code>
@@ -630,17 +631,18 @@
                             <p/>
                         </div>
                         <div type="example">
+                            <p>Eine Karte oder eine Widmung:</p>
                             <p>
                                 <code>&lt;measure unit="karte" n="1" /&gt;</code><lb/>
                                 <code>&lt;measure unit="widmung" n="1" /&gt;</code></p>
                         </div>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.qw2h1um6d6u8">handDesc</head>
+                        <head xml:id="handDesc">handDesc</head>
                         <p>Hier findet sich die Beschreibung der verschiedenen Handschriften auf
                             einem Korrespondenzstück. </p>
                         <div type="level4">
-                            <head xml:id="h.hsf8g05v21ru">@hands</head>
+                            <head xml:id="hands">@hands</head>
                             <p>Sollten mehrere Personen am Brief beteiligt sein, wobei das auch eine
                                 Schreibkraft umfassen kann, ist dieses Attribut verpflichtend und
                                 enthält die Anzahl der Schreibenden. </p>
@@ -654,7 +656,7 @@
                             </div>
                         </div>
                         <div type="level4">
-                            <head xml:id="h.l1a7jkunwg7w">handNote</head>
+                            <head xml:id="handnote">handNote</head>
                             <p>Beschreibt die unterschiedlichen Handschriften, die vorkommen. Das
                                 Element kann ein Kind <code>p</code> haben. Der Inhalt dieses
                                 Elements ist eine Ergänzung zu den Attributen von
@@ -662,7 +664,7 @@
                                     rend="underline" n="1">zusätzlich</hi> – in runder Klammer –
                                 ausgegeben. </p>
                             <div type="level5">
-                                <head xml:id="h.xm4f5iuheon9">@corresp</head>
+                                <head xml:id="corresp">@corresp</head>
                                 <p>Gibt an, welche Handschriften innerhalb des Dokuments vorkommen. </p>
                                 <p>Wenn nur ein Autor, eine Autorin des Korrespondenzstücks
                                     vorhanden ist und dieser/diese den Brief verfasst hat, muss das
@@ -691,7 +693,7 @@
                                 </div>
                             </div>
                             <div type="level5">
-                                <head xml:id="h.4beskpjs0oeu">@medium</head>
+                                <head xml:id="medium">@medium</head>
                                 <p>Gibt die Schreibmedien an, die zum Einsatz kamen. Die Angabe ist
                                     verpflichtend. Folgende Werte sind erlaubt: </p>
                                 <list>
@@ -719,7 +721,7 @@
                                     mit Ausnahme der Adresse. </p>
                             </div>
                             <div type="level5">
-                                <head xml:id="h.p8tu5t38mj34">@style</head>
+                                <head xml:id="style">@style</head>
                                 <p>Vermerkt das verwendete Schreibsystem. Im Normalfall wird hier
                                     unterschieden, ob deutsche oder lateinische Schreibschrift zum
                                     Einsatz kommt. Für Ausnahmefälle, etwa wenn nur ein einzelnes
@@ -737,7 +739,7 @@
                         </div>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.f1te3jm73hwx">typeDesc</head>
+                        <head xml:id="typedesc">typeDesc</head>
                         <p>Gibt Auskunft über maschinell erstellte Schriften und Drucke. Diese
                             werden in einem <code>p</code>-Element wiedergegeben. </p>
                         <p>Bei einem gedruckten Text kann die Angabe auch länger werden. </p>
@@ -761,7 +763,7 @@
                         </div>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.y764n270eq6g">additions</head>
+                        <head xml:id="additions">additions</head>
                         <p>Alles, was dem Korrespondenzstück nach der Fertigstellung durch den
                             Verfasser, die Verfasserin hinzugefügt wurde, wird in diesem Element
                             versammelt. Dafür werden, in chronologischer Reihenfolge vom ältesten
@@ -772,7 +774,7 @@
                             die Poststempel nicht zum selben Augenblick gemacht, also sind zwei
                             Stempel zwei <code>&lt;incident type="postal"/&gt;</code>. </p>
                         <div type="level4">
-                            <head xml:id="h.uu3hmx5y0gxs">incident</head>
+                            <head xml:id="incident">incident</head>
                             <p>Jedes Ereignis hat ein Attribut <code>@type</code>, das es
                                 klassifiziert. Erlaubt sind: </p>
                             <table>
@@ -816,7 +818,7 @@
                             </table>
                         </div>
                         <div type="level4">
-                            <head xml:id="h.mcoqfqxirkle">incident/desc</head>
+                            <head xml:id="desc">incident/desc</head>
                             <p>Jeder <code>incident</code> hat ein einziges Kind-Element
                                     <code>desc</code>, das die Hinzufügung beschreibt. Zwar wird
                                 hier auf eine weitere Klassifizierung durch Elemente verzichtet,
@@ -841,7 +843,7 @@
                                     letzte Nummerierung zu gelten hat.</item>
                             </list>
                             <div type="level5">
-                                <head xml:id="h.vqzgn6gk9vdc"
+                                <head xml:id="incident_stamp"
                                     >incident[@type="postal"]/desc/stamp</head>
                                 <p>Poststempel werden jeweils als <code>incident</code> behandelt,
                                     wobei derselbe Stempel, wenn er mehrfach verwendet wurde (etwa
@@ -882,7 +884,7 @@
                     </div>
                 </div>
                 <div type="level2">
-                    <head xml:id="h.xrv071w60ug">correspDesc</head>
+                    <head xml:id="correspdesc">correspDesc</head>
                     <p>Zu <code>correspDesc</code> sei, neben den allgemeinen Regeln der TEI, auch
                         auf den Webservice <ref target="https://correspsearch.net"
                             >https://correspsearch.net</ref> verwiesen. Dort ist ebenfalls die im
@@ -904,14 +906,14 @@
                         die Adressatin nicht angetroffen und von diesem oder dieser erst später in
                         Empfang genommen wurde.</p>
                     <div type="level3">
-                        <head xml:id="h.3s282ddvha26">correspAction</head>
+                        <head xml:id="correspaction">correspAction</head>
                         <p>Neben dem verpflichtenden Attribut <code>@type</code> gibt es drei
                             mögliche Kind-Elemente: <code>persName</code>, <code>placeName</code>
                             und <code>date</code>, wobei die Angabe von <code>persName</code> und
                                 <code>date</code> bei <code>@type="sent"</code> und bei
                                 <code>@type="received"</code> verpflichtend ist. </p>
                         <div type="level4">
-                            <head xml:id="h.porfpv4717dy">correspAction/date</head>
+                            <head xml:id="correspaction_date">correspAction/date</head>
                             <p>Dieses Element muss ein verpflichtendes Attribut aus der Reihe der
                                 folgenden haben: </p>
                             <list>
@@ -929,7 +931,7 @@
                             <p>Die Angabe erfolgt im ISO-Format (»1862-05-15«). Auf diesen Wert wird
                                 von verschiedensten Stellen zugegriffen. </p>
                             <div type="level5">
-                                <head xml:id="h.msvsq3d29vtd">correspAction/date/@n</head>
+                                <head xml:id="correspaction_date_n">correspAction/date/@n</head>
                                 <p>Weiters hat <code>date/@type="sent"</code> ein zusätzliches
                                     Attribut <code>@n</code>, das einem Zähler an einem bestimmten
                                     Tag entspricht. Grund dafür ist, dass eine genauere Granulierung
@@ -956,7 +958,7 @@
                         </div>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.9ta6zke4oj9c">correspContext/ref</head>
+                        <head xml:id="correspcontext">correspContext/ref</head>
                         <p>Innerhalb von <code>correspContext</code> finden sich drei Arten von
                                 <code>ref</code>-Elementen mit dem Attribut <code>@type</code>. </p>
                         <list>
@@ -993,7 +995,7 @@
                     </div>
                 </div>
                 <div type="level2">
-                    <head xml:id="h.tu1rvdbbxih">revisionDesc</head>
+                    <head xml:id="revisiondesc">revisionDesc</head>
                     <p>Enthält Informationen über den Bearbeitungszustand. Ab dem Moment, wo das
                         Attribut <code>@status="approved"</code> gesetzt ist, ist die Bearbeitung
                         abgeschlossen. Darunter finden sich verschiedene
@@ -1005,7 +1007,7 @@
                 </div>
             </div>
             <div type="level1">
-                <head xml:id="h.31hflwxr8647">facsimile</head>
+                <head xml:id="facsimile">facsimile</head>
                 <p>Zwar findet sich in vielen Dokumenten das Element <code>facsimile</code> mit den
                     Kind-Elementen <code>graphic</code>, doch wurde dieses nicht separat überprüft.
                     Bei der Erfassung wurden hier oft alle relevanten Bilddateien vermerkt, um sie
@@ -1015,13 +1017,13 @@
                     diese beim originalen Brief unmittelbar hinzugefügt im Archiv liegen.</p>
             </div>
             <div type="level1">
-                <head xml:id="h.dr8wt22vdlry">text</head>
+                <head xml:id="text">text</head>
                 <p>Das Attribut <code>@type</code> ist zwar vorhanden, aber durch die Angaben von
                         <code>physDesc/objectDesc</code> weitgehend obsolet. Es spielt nur in den
                     wenigen Fällen eine Rolle, bei denen kein Archivzeuge überliefert ist. </p>
             </div>
             <div type="level1">
-                <head xml:id="h.rdyhlj95iewq">body</head>
+                <head xml:id="body">body</head>
                 <p>Im Folgenden werden häufig verwendete Elemente aufgezählt. Zuerst werden jene
                     Elemente behandelt, die eine bestimmte Reihenfolge haben, danach folgt,
                     alphabetisch geordnet, eine allgemeine Liste. Ein paar wenige Elemente davon,
@@ -1029,7 +1031,7 @@
                         <code>physDesc</code> zum Einsatz kommen, obgleich sie hier behandelt
                     werden. </p>
                 <div type="level2">
-                    <head xml:id="h.c5y4i07mq46s">Aufbau</head>
+                    <head xml:id="aufbau">Aufbau</head>
                     <p>Innerhalb von <code>body</code> sind <code>div</code>-Elemente von diesen
                         Typen erlaubt: </p>
                     <list>
@@ -1044,7 +1046,7 @@
                         eigentlich durch die Aufnahme der Faksimile-Namen in <code>pb/@facs</code>
                         obsolet. </p>
                     <div type="level3">
-                        <head xml:id="h.fmk2n66f8l92">div[@type="address"]</head>
+                        <head xml:id="div_address">div[@type="address"]</head>
                         <p>Enthält Absende- und Empfangsadresse, jeweils in einem Element
                                 <code>address</code> mit mehreren <code>addrLine</code>-Elementen.
                             Eine weitere Unterscheidung, wie sie die TEI erlauben würde, wird
@@ -1060,7 +1062,7 @@
                             hingegen in <code>handNote</code> vermerkt. </p>
                     </div>
                     <div type="level3">
-                        <head xml:id="h.zd84p3gvy35n">div[@type="writingSession" @n="1"]</head>
+                        <head xml:id="div_writingsession">div[@type="writingSession" @n="1"]</head>
                         <p>Dies ist der wichtigste Bereich und eigentlich immer vorhanden.
                             Üblicherweise ist nur eine »Schreibsitzung« ausgewiesen. Das trifft
                             nicht zu, wenn aus dem Inhalt klar hervorgeht, dass der Verfasser oder
@@ -1083,7 +1085,7 @@
                             </item>
                         </list>
                         <div type="level4">
-                            <head xml:id="h.1roac7izz2gw">opener</head>
+                            <head xml:id="opener">opener</head>
                             <p>Enthält dem eigentlichen Text vorausgehende Information. Das kann
                                 sein: Briefkopf, Datumszeile, abgesetzte Begrüßungsformel. Bei
                                 Bildpostkartenmotiven findet sich hier auch – als gedruckt
@@ -1102,18 +1104,18 @@
                             </list>
                         </div>
                         <div type="level4">
-                            <head xml:id="h.9edyo4b8se30">closer</head>
+                            <head xml:id="closer">closer</head>
                             <p>Sofern eine abgegrenzte Schlussformel vorhanden ist, wird diese in
                                 das Element <code>closer</code> verpackt. Es hat vor allem
                                     <code>lb</code> und <code>signed</code> als Elemente. </p>
                             <div type="level5">
-                                <head xml:id="h.kxu38bpltayv">lb</head>
+                                <head xml:id="lb">lb</head>
                                 <p>Obwohl nicht nur auf <code>closer</code> beschränkt, kommt es
                                     hier am häufigsten zum Einsatz. Das Element ist leer und
                                     markiert einen Zeilenumbruch. </p>
                             </div>
                             <div type="level5">
-                                <head xml:id="h.3p7prmija8vy">signed</head>
+                                <head xml:id="signed">signed</head>
                                 <p>Dieses Element umfasst die Unterschrift einschließlich des
                                     folgenden Satzzeichens. Die Unterschriften sind soweit
                                     normalisiert als keine Schriftwechsel, Unter- oder
@@ -1124,7 +1126,7 @@
                             </div>
                         </div>
                         <div type="level4">
-                            <head xml:id="h.19yf2fj7rt65">postscript</head>
+                            <head xml:id="postscript">postscript</head>
                             <p>Der nach dem <code>closer</code> stehende Textteil wird in
                                 verschiedene Absätze (<code>p</code>) oder Datumszeilen
                                     (<code>dateline</code>) aufgeteilt. Direkt innerhalb von

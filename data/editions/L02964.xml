@@ -68,7 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp=""/>
+                  <objectType corresp="karte" ana="postkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>A</country>
@@ -79,12 +79,38 @@
                      <physDesc>
                         <objectDesc>
                            <supportDesc>
-                              <extent/>
+                              <extent>
+                                 <measure unit="karte" quantity="1"/>
+                              </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                        <handDesc hands="1">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb2121"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent" corresp="#pmb2121">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb43409">Forest-Hill S.E.</placeName>
+                                    <date when="1897-05-29">MY 29 97</date>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="2">
+                                    <placeName ref="#pmb59">Wien 9/1</placeName>
+                                    <date when="1897-06-01">1/6 9<unclear>7</unclear>
+                                    </date>
+                                    <time>8–9½V</time>
+                                    <addSpan>Bestellt</addSpan>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -104,8 +130,7 @@
             <correspAction type="received">
                <persName ref="#pmb2167">Salten, Felix</persName>
                <placeName ref="#pmb50">Wien</placeName>
-               <date evidence="conjecture" notBefore="1897-05-30" notAfter="1897-06-03">[30. 5. 1897
-                  – 3. 6. 1897?]</date>
+               <date when="1897-06-01">1. 6. 1897</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
@@ -133,10 +158,10 @@
          <div type="writingSession" n="1"><p><pb facs="Wienbibliothek_AS_FS_2822932"/><salute>Lieber Freund, </salute>Ihr lieber Brief, den ich nicht mehr<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o ausführlich
                beantworten kann, als ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ollte u möchte, i<c rendition="#langesS">s</c>t mir hier nachge<c rendition="#langesS">s</c>chickt wirden. Es wird
               <space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich ja<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr bald in <rs type="place" ref="#pmb50">Wien</rs> zu allerlei Aus<c rendition="#langesS">s</c>prache
-               Gelegenheit <add place="above">er</add>geben. Wede hoffentlich Mittwoch Abd. <hi rend="latintype">resp.</hi> Do<c rendition="#gemination-n"/>er<c rendition="#langesS">s</c>tag in <rs type="place" ref="#pmb50">Wien</rs><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein. Finde vielleicht ein Wort von Ihnen. – Jetzt eben hab
-               ich mir ein Rad be<c rendition="#langesS">s</c>tellt – glauben Sie mir, da<c rendition="#langesS">s</c>s es echt engli<c rendition="#langesS">s</c>ch<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein wird?– Ich
-               möchte <rs type="place" ref="#pmb819">Pucher</rs> womöglich ganz aufgeben. – Auf frohes
-               Wieder<c rendition="#langesS">s</c>ehen. Herzlich<c rendition="#langesS">s</c>t Ihr </p><closer><signed>Arthur Sch</signed></closer><postscript><dateline rend="right"><rs type="place" ref="#pmb224">London</rs><space unit="chars" quantity="1"/><date>29. 5. 97</date>.</dateline></postscript></div>
+               Gelegenheit <add place="above">er</add>geben. Wede hoffentlich Mittwoch Abd. <hi rend="latintype">resp.</hi> Do<c rendition="#gemination-n"/>er<c rendition="#langesS">s</c>tag in <rs type="place" ref="#pmb50">Wien</rs><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein. Finde vielleicht ein Wort von Ihnen. –
+               Jetzt eben hab ich mir ein Rad be<c rendition="#langesS">s</c>tellt – glauben Sie mir, da<c rendition="#langesS">s</c>s es echt engli<c rendition="#langesS">s</c>ch<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein
+               wird?– Ich möchte <rs type="place" ref="#pmb819">Pucher</rs> womöglich ganz aufgeben.
+               – Auf frohes Wieder<c rendition="#langesS">s</c>ehen. Herzlich<c rendition="#langesS">s</c>t Ihr </p><closer><signed>Arthur Sch</signed></closer><postscript><dateline rend="right"><rs type="place" ref="#pmb224">London</rs><space unit="chars" quantity="1"/><date>29. 5. 97</date>.</dateline></postscript></div>
       </body>
       <back>
          <listPerson>
@@ -248,7 +273,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>

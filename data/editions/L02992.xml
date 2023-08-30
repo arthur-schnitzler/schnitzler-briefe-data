@@ -68,7 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp=""/>
+                  <objectType corresp="kartenbrief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>A</country>
@@ -79,11 +79,13 @@
                      <physDesc>
                         <objectDesc>
                            <supportDesc>
-                              <extent/>
+                              <extent>
+                                 <measure unit="kartenbrief" quantity="1"/>
+                              </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                           <handNote medium="bleistift" style="deutsche-kurrent"/>
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -100,13 +102,18 @@
                               <desc>
                                  <stamp n="2">
                                     <placeName ref="#pmb58">
-                                       <pb facs="Wienbibliothek_AS_FS_2823120"/>Wien 18/3</placeName>
+                                       <pb facs="Wienbibliothek_AS_FS_2823120"/>Wien
+                                       18/3</placeName>
                                     <date when="1904-07-27">27. 7. 04</date>
                                     <time>
                                        <unclear>5</unclear> N</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
                               </desc>
+                           </incident>
+                           <incident type="archival">
+                              <desc>mit Bleistift von unbekannter Hand nummeriert:
+                                    »<quote>20</quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -151,8 +158,10 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="Wienbibliothek_AS_FS_2823118"/>Herr <hi rend="latintype">Felix Salten</hi></addrLine><addrLine><rs type="place" ref="#pmb169">Wien Pötzleinsdorf</rs></addrLine><addrLine><rs type="place" ref="#pmb92548">Starkfriedga<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e 12</rs>. </addrLine></address></div>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="Wienbibliothek_AS_FS_2823119"/><date>27. 7. 904</date></dateline></opener><p><salute>lieber, </salute>für morgen mü<c rendition="#langesS">s</c><c rendition="#langesS">s</c>en wir leider ab<c rendition="#langesS">s</c>agen. Sind mit meiner <rs type="person" ref="#pmb2461" subtype="implied">Schwe<c rendition="#langesS">s</c>ter</rs> das er<c rendition="#langesS">s</c>te Mal<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>eit vielen Wochen (<hi rend="latintype"><rs type="person" ref="#pmb28004">Margot</rs><del rend="strikethrough">t</del></hi> hatte Scharlach) u das letzte Mal vor ihrer Abrei<c rendition="#langesS">s</c>e zu<c rendition="#langesS">s</c>ammen. </p><p>Auf näch<c rendition="#langesS">s</c>te Woche </p><closer>Herzliche Grüße <lb/>Ihr <lb/><signed>A.</signed></closer><p>Die <rs type="work" ref="" subtype="implied">Bilder</rs><!-- wohl die von den beiden kindern? --><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind da. <rs type="person" ref="#pmb2173">Olga</rs> und andre<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind entzückt. </p></div>
+         <div type="address"><address><addrLine><pb facs="Wienbibliothek_AS_FS_2823118"/>Herr <hi rend="latintype">Felix
+                     Salten</hi></addrLine><addrLine><rs type="place" ref="#pmb169">Wien Pötzleinsdorf</rs></addrLine><addrLine><rs type="place" ref="#pmb92548">Starkfriedga<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e 12</rs>. </addrLine></address></div>
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="Wienbibliothek_AS_FS_2823119"/><date>27. 7. 904</date></dateline></opener><p><salute>lieber, </salute>für morgen mü<c rendition="#langesS">s</c><c rendition="#langesS">s</c>en wir leider ab<c rendition="#langesS">s</c>agen. Sind mit meiner <rs type="person" ref="#pmb2461" subtype="implied">Schwe<c rendition="#langesS">s</c>ter</rs> das er<c rendition="#langesS">s</c>te Mal<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>eit
+               vielen Wochen (<hi rend="latintype"><rs type="person" ref="#pmb28004">Margot</rs><del rend="strikethrough">t</del></hi> hatte Scharlach) u das letzte Mal vor ihrer Abrei<c rendition="#langesS">s</c>e zu<c rendition="#langesS">s</c>ammen. </p><p>Auf näch<c rendition="#langesS">s</c>te Woche </p><closer>Herzliche Grüße <lb/>Ihr <lb/><signed>A.</signed></closer><p>Die <anchor type="commentary" xml:id="K_L02992-1"/>Bilder<note type="commentary" xml:id="K_L02992-1h"><ref type="schnitzler-tagebuch" target="1904-07-25" subtype="see"/></note><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind da. <rs type="person" ref="#pmb2173">Olga</rs> und andre<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind entzückt. </p></div>
       </body>
       <back>
          <listPerson>
@@ -366,7 +375,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>

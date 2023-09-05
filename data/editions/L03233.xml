@@ -4,7 +4,7 @@
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
             <title type="iso-date" when-iso="1905-05-03" n="01">1905-05-03</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, 3. 5. [1905]</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 3. 5. 1905</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -143,6 +143,7 @@
       <revisionDesc status="proposed">
          <change who="KSK" when="2023-08-30">Export aus Transkribus</change>
          <change who="KSK" when="2023-08-31">Einfügen der Metadaten</change>
+         <change who="KSK" when="2023-09-04">Kommentar</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -152,7 +153,8 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3175_0001"/><hi rend="pre-print">An</hi> Herrn</addrLine><addrLine>Dr. Arthur Schnitzler</addrLine><addrLine><hi rend="pre-print">in</hi><space unit="chars" quantity="1"/><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb133">XVIII. Spöttelga<c rendition="#langesS">s</c>se 7</rs>.</addrLine></address></div>
-         <div type="writingSession" n="1"><opener><dateline><pb facs="HS.NZ85.1.3175_0002"/><rs type="place" ref="#pmb50">Wien</rs><date when="1905-05-03">3. Mai</date>. </dateline><salute>Lieber Freund,</salute></opener><p>Darf ich <date when="1905-05-04">morgen, Donner<c rendition="#langesS">s</c>tag,</date><time>Abend</time> zu Dir kommen? </p><closer>Herzliche<del rend="strikethrough">n</del> Grüße Dir und Deiner <rs type="person" subtype="implied" ref="#pmb2173">Frau</rs>! <lb/>Dein <lb/><signed>Paul Goldmann</signed></closer><postscript><p><rs type="place" ref="#pmb255">Grand Hotel</rs>.</p></postscript></div>
+         <div type="writingSession" n="1"><opener><dateline><pb facs="HS.NZ85.1.3175_0002"/><rs type="place" ref="#pmb50">Wien</rs><date when="1905-05-03">3. Mai</date>. </dateline><salute>Lieber Freund,</salute></opener><p>Darf ich <date when="1905-05-04">morgen, Donner<c rendition="#langesS">s</c>tag,</date><time>Abend</time> zu Dir kommen?<anchor type="commentary" xml:id="K_L03233-1"/><note type="commentary" xml:id="K_L03233-1h">Da <rs type="person" ref="#pmb2121">Schnitzler</rs> sich vom <ref type="schnitzler-tagebuch" target="1905-04-30" subtype="date-only"/> bis <ref type="schnitzler-tagebuch" target="1905-05-06" subtype="date-only"/> gemeinsam mit seiner Frau <rs type="person" ref="#pmb2173">Olga</rs> auf dem <rs type="place" ref="#pmb189">Semmering</rs>
+                  aufhielt, kam es zu keinem Treffen mit <rs type="person" ref="#pmb11485">Goldmann</rs>.</note></p><closer>Herzliche<del rend="strikethrough">n</del> Grüße Dir und Deiner <rs type="person" subtype="implied" ref="#pmb2173">Frau</rs>! <lb/>Dein <lb/><signed>Paul Goldmann</signed></closer><postscript><p><rs type="place" ref="#pmb255">Grand Hotel</rs>.</p></postscript></div>
       </body>
       <back>
          <listPerson>
@@ -277,8 +279,7 @@
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -330,6 +331,34 @@
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92539.html</idno>
                <idno type="URL" subtype="geonames">https://www.geonames.org/12495676</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb133.html</idno>
+            </place>
+            <place xml:id="pmb189">
+               <placeName>Semmering</placeName>
+               <placeName type="alternative-name">Gemeinde Semmering</placeName>
+               <placeName type="alternative-name">Semmering-Semmering-Kurort</placeName>
+               <placeName type="alternative-name">Kurort Semmering</placeName>
+               <placeName type="alternative-name">Semmering-Kurort</placeName>
+               <placeName type="alternative-name">Heilklimatischer Höhenluftkurort Semmering</placeName>
+               <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>47,64224 15,8241</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/7873001/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb189.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/189/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb189.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91735/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91735.html</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4054504-0</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q659891</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Semmering_(Nieder%C3%B6sterreich)</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb189.html</idno>
             </place>
             <place xml:id="pmb255">
                <placeName>Grand Hotel Wien</placeName>

@@ -65,6 +65,7 @@
                <xs:restriction base="xs:string">
                   <xs:enumeration value="schnitzler-tagebuch"/>
                   <xs:enumeration value="schnitzler-briefe"/>
+                  <xs:enumeration value="schnitzler-interviews"/>
                   <xs:enumeration value="schnitzler-lektueren"/>
                   <xs:enumeration value="schnitzler-bahr"/>
                   <xs:enumeration value="withinCorrespondence"/>
@@ -843,6 +844,7 @@
          <xs:choice minOccurs="0" maxOccurs="unbounded">
             <xs:element ref="tei:p" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="tei:dateline" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element minOccurs="0" ref="tei:salute" maxOccurs="1"/>
          </xs:choice>
          <xs:assert test="not(preceding-sibling::*[1])"/>

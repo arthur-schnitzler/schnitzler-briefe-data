@@ -95,7 +95,7 @@
                               <desc>
                                  <stamp n="1">
                                     <placeName ref="#pmb144000">Hela</placeName>
-                                    <date when="1901-09-11">11. 9. <supplied>19</supplied>01</date>
+                                    <date when="1901-09-11">11. 9. 01</date>
                                     <time>5–6N.</time>
                                  </stamp>
                               </desc>
@@ -124,7 +124,7 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1901-09-11" n="01">11. 9. [1901]</date>
-               <placeName ref="#pmb144000">Hela</placeName>
+               <placeName ref="#pmb144000">Hel</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -147,6 +147,8 @@
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2023-06-22">Export aus Transkribus</change>
+         <change who="MAM" when="2023-09-11">Index check</change>
+         <change who="MAM" when="2023-09-11">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -155,9 +157,8 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="DLA_85.1.3171_00074"/>Herrn</addrLine><addrLine>Dr. Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb397">IX. <hi rend="latintype">Frankgaße</hi>
-                  1</rs>.</addrLine></address></div>
-         <div type="writingSession" n="1"><opener><p rend="left"><pb facs="DLA_85.1.3171_00075"/><hi rend="pre-print">Gruss aus <rs type="place" ref="#pmb144000">Hela</rs>.</hi></p><p rend="right"><rs type="place" ref="#pmb144261"><hi rend="pre-print">Dorfstrasse »unter den Linden«</hi></rs></p><dateline rend="center"><date when="1901-09-11">11. Sept.</date></dateline></opener><p>Herzlich<c rendition="#langesS">s</c>te Grüße! <signed>P. G.</signed></p></div>
+         <div type="address"><address><addrLine><pb facs="DLA_85.1.3171_00074"/>Herrn</addrLine><addrLine>Dr. Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb397">IX. Frankgaße 1</rs>.</addrLine></address></div>
+         <div type="writingSession" n="1"><opener><p><seg rend="left"><pb facs="DLA_85.1.3171_00075"/><hi rend="pre-print">Gruss aus <rs type="place" ref="#pmb144000">Hela</rs>.</hi></seg><seg rend="right"><rs type="place" ref="#pmb144261"><hi rend="pre-print">Dorfstrasse »unter den Linden«</hi></rs></seg></p><dateline rend="center"><date when="1901-09-11">11. Sept.</date></dateline></opener><p>Herzlich<c rendition="#langesS">s</c>te Grüße! <signed>P. G.</signed></p></div>
       </body>
       <back>
          <listPerson>
@@ -259,8 +260,7 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>

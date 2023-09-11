@@ -94,11 +94,9 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1">
-                                    <placeName ref="#pmb44374">
-                                       <gap reason="illegible" unit="chars" quantity="4"/> Mori<supplied>tz</supplied>
-                                    </placeName>
-                                    <date when="1901-08">
-                                       <gap reason="illegible" unit="chars" quantity="12"/>. 8</date>
+                                    <placeName ref="#pmb91294">Mori</placeName>
+                                    <date when="1901-08-15">
+                                       <supplied>15</supplied>. 8</date>
                                  </stamp>
                               </desc>
                            </incident>
@@ -107,7 +105,7 @@
                                  <stamp n="2">
                                     <placeName ref="#pmb428">
                                        <supplied>Welsbe</supplied>rg</placeName>
-                                    <date when="1901-08-17">17. 8. <supplied>19</supplied>01</date>
+                                    <date when="1901-08-17">17. 8. 01</date>
                                  </stamp>
                               </desc>
                            </incident>
@@ -134,15 +132,10 @@
                <date when="1901-08-15" n="01">15. 8. [1901]</date>
                <placeName ref="#pmb465">Riva del Garda</placeName>
             </correspAction>
-            <correspAction type="delivered">
+            <correspAction type="received">
                <placeName ref="#pmb428">Welsberg-Taisten</placeName>
                <date when="1901-08-17">17. 8. [19]01</date>
-            </correspAction>
-            <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb428">Welsberg-Taisten</placeName>
-               <date evidence="conjecture" notBefore="1901-08-16" notAfter="1901-08-20">[16. 8. 1901
-                  – 20. 8. 1901?]</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann,
@@ -159,6 +152,8 @@
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2023-06-22">Export aus Transkribus</change>
+         <change who="MAM" when="2023-09-11">Index check</change>
+         <change who="MAM" when="2023-09-11">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -168,7 +163,7 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="DLA_85.1.3171_00069"/>Herrn</addrLine><addrLine>Dr. Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb428">Welsberg im Pusterthal</rs></addrLine><addrLine><rs type="place" ref="#pmb723">Wildbad-Hôtel</rs>.</addrLine></address></div>
-         <div type="writingSession" n="1"><opener><p><pb facs="DLA_85.1.3171_00068"/><hi rend="pre-print"><hi rend="capitals"><rs type="place" ref="#pmb40808">Palast Hôtel Lido</rs>, <rs type="place" ref="#pmb465">Riva <hi rend="superscript">a</hi>/Gardasee</rs></hi>.</hi></p><dateline rend="right"><date when="1901-08-15">15. Augu<c rendition="#langesS">s</c>t</date>.</dateline></opener><p>Es i<c rendition="#langesS">s</c>t kühl und <unclear>kö</unclear><c rendition="#langesS">s</c>tlich hier. Aber ein<c rendition="#langesS">s</c>am. Bitte, lieber <hi rend="latintype">Arthur</hi>, hol’ auch einmal <hi rend="latintype">Poste
+         <div type="writingSession" n="1"><opener><p rend="center"><pb facs="DLA_85.1.3171_00068"/><hi rend="pre-print"><hi rend="capitals"><rs type="place" ref="#pmb40808">Palast Hôtel Lido</rs>, <rs type="place" ref="#pmb465">Riva <hi rend="superscript">a</hi>/Gardasee</rs></hi>.</hi></p><dateline rend="right"><date when="1901-08-15">15. Augu<c rendition="#langesS">s</c>t</date>.</dateline></opener><p>Es i<c rendition="#langesS">s</c>t kühl und <unclear>kö</unclear><c rendition="#langesS">s</c>tlich hier. Aber ein<c rendition="#langesS">s</c>am. Bitte, lieber <hi rend="latintype">Arthur</hi>, hol’ auch meine <hi rend="latintype">Poste
                   restante</hi> Briefe von der Po<c rendition="#langesS">s</c>t u. heb’<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie mir auf, damit ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie <anchor type="commentary" xml:id="K_L03079-1"/><date when="1901-08-18">Sonntag</date><note type="commentary" xml:id="K_L03079-1h">Am <date when="1901-08-18">Sonntag</date>, dem <ref type="schnitzler-tagebuch" target="1901-08-18" subtype="date-only"/>, kam <rs type="person" ref="#pmb11485">Goldmann</rs> in
                      <rs type="place" ref="#pmb428">Welsberg</rs> an. <rs type="person" ref="#pmb2121">Schnitzler</rs> war bereits seit <ref type="schnitzler-tagebuch" target="1901-08-15" subtype="date-only"/> dort. Am <ref type="schnitzler-tagebuch" target="1901-08-26" subtype="date-only"/> reiste er
                   weiter nach <rs type="place" ref="#pmb40454">Villach</rs>, <rs type="person" ref="#pmb11485">Goldmann</rs> nach <rs type="place" ref="#pmb44278">Pörtschach</rs>.</note> finde. Herzliche Grüße an alle! <signed>P. G.</signed></p></div>
@@ -255,30 +250,20 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb44374">
-               <placeName>Sankt Moritz</placeName>
-               <placeName type="alternative-name">St. Moritz</placeName>
-               <placeName type="alternative-name">Saint Moritz</placeName>
-               <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
-               <desc type="entity_type_id">1412</desc>
+            <place xml:id="pmb91294">
+               <placeName>Mori</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA3</desc>
+               <desc type="entity_type_id">1410</desc>
                <location type="coords">
-                  <geo>46,49937 9,84327</geo>
+                  <geo>45,85187 10,98052</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb43435">Schweiz</placeName>
-                  <geo>47,00016 8,01427</geo>
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
                </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb1061">Engadin</placeName>
-                  <geo>46,601337 9,965973</geo>
-               </location>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1059/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/24276/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44374/</idno>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2658813/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44374.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb44374.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb44374.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91294/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3172598/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91294.html</idno>
             </place>
             <place xml:id="pmb428">
                <placeName>Welsberg-Taisten</placeName>

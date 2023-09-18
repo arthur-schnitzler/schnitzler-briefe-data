@@ -1180,6 +1180,10 @@
                   @n
                else
                   not(@n)"/>
+         <xs:assert
+            test="not(@rend = 'spaced_out') or (text() or tei:space) and not(tei:* except tei:space)"
+         />
+         <xs:assert test="not(child::tei:anchor[@type='commentary']) or child::tei:anchor[@type='commentary'] and child::tei:note[@type='commentary']"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="damage">
@@ -1364,6 +1368,7 @@
          <xs:assert test="
                (child::tei:seg/@rend = 'left' and child::tei:seg/@rend = 'right' and not(child::*[3])) or not(child::tei:seg)"
          />
+         <xs:assert test="not(child::tei:anchor[@type='commentary']) or child::tei:anchor[@type='commentary'] and child::tei:note[@type='commentary']"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="salute">
@@ -2052,14 +2057,14 @@
    </xs:element>
    <xs:element name="place">
       <xs:complexType>
-         <xs:sequence>
-            <xs:element maxOccurs="unbounded" ref="tei:placeName"/>
-            <xs:element maxOccurs="unbounded" ref="tei:desc"/>
+         <xs:all>
+            <xs:element maxOccurs="unbounded" minOccurs="1" ref="tei:placeName"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:desc"/>
             <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:location"/>
-            <xs:element maxOccurs="unbounded" ref="tei:idno"/>
-            <xs:element minOccurs="0" ref="tei:listBibl"/>
-            <xs:element minOccurs="0" ref="tei:note"/>
-         </xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:idno"/>
+            <xs:element minOccurs="0" maxOccurs="1" ref="tei:listBibl"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:note"/>
+         </xs:all>
          <xs:attribute ref="xml:id" use="required"/>
       </xs:complexType>
    </xs:element>

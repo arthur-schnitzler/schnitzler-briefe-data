@@ -133,10 +133,14 @@
                <date when="1905-05-03" n="01">3. 5. 1905</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
-            <correspAction type="received">
-               <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+            <correspAction type="delivered">
                <date when="1905-05-03">3. 5. 1905</date>
                <placeName ref="#pmb50">Wien</placeName>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+               <placeName ref="#pmb189" evidence="conjecture">Semmering</placeName>
+               <date evidence="conjecture" notBefore="1905-05-03" notAfter="1905-05-06">[3. 5. 1905–6. 5. 1905?]</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann,
@@ -151,12 +155,14 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="candidate">
+      <revisionDesc status="approved">
          <change who="KSK" when="2023-08-30">Export aus Transkribus</change>
          <change who="KSK" when="2023-08-31">Einfügen der Metadaten</change>
          <change who="KSK" when="2023-09-04">Kommentar</change>
          <change who="KSK" when="2023-09-05">Indexkontrolle und Durchsicht</change>
          <change who="LU" when="2023-09-05">Durchsicht</change>
+         <change who="MAM" when="2023-09-19">Durchsicht</change>
+         <change who="MAM" when="2023-09-19">Index check</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -166,8 +172,11 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3175_0001"/>Herrn</addrLine><addrLine>Dr. Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb133">XVIII. Spöttelga<c rendition="#langesS">s</c>se 7</rs>.</addrLine></address></div>
-         <div type="writingSession" n="1"><opener><dateline rend="left"><pb facs="HS.NZ85.1.3175_0002"/><rs type="place" ref="#pmb50">Wien</rs><space unit="chars" quantity="1"/><date when="1905-05-03">3. Mai</date>.</dateline><salute rend="left">Lieber Freund,</salute></opener><p>Darf ich <date when="1905-05-04">morgen, Donner<c rendition="#langesS">s</c>tag</date>, <time>Abend</time><space unit="chars" quantity="1"/><anchor type="commentary" xml:id="K_L03233-1"/>zu Dir
-                  kommen<note type="commentary" xml:id="K_L03233-1h">Da sich <rs type="person" ref="#pmb2121">Schnitzler</rs> von <ref type="schnitzler-tagebuch" target="1905-04-30" subtype="date-only"/> bis <ref type="schnitzler-tagebuch" target="1905-05-06" subtype="date-only"/> gemeinsam mit seiner Frau <rs type="person" ref="#pmb2173">Olga</rs> auf dem <rs type="place" ref="#pmb189">Semmering</rs> aufhielt, kam es zu keinem Treffen mit <rs type="person" ref="#pmb11485">Goldmann</rs>.</note>?</p><closer>Herzliche<del rend="strikethrough">n</del> Grüße Dir und Deiner <rs type="person" subtype="implied" ref="#pmb2173">Frau</rs>! <lb/>Dein <lb/><signed>Paul Goldmann</signed></closer><postscript><p><hi rend="latintype"><rs type="place" ref="#pmb255">Grand Hotel</rs></hi>.</p></postscript></div>
+         <div type="writingSession" n="1"><opener><dateline rend="left"><pb facs="HS.NZ85.1.3175_0002"/><rs type="place" ref="#pmb50">Wien</rs><space unit="chars" quantity="1"/><date when="1905-05-03">3. Mai</date>.</dateline><salute rend="left">Lieber Freund,</salute></opener><p>Darf ich <date when="1905-05-04">morgen, Donner<c rendition="#langesS">s</c>tag</date>, <time>Abend</time><space unit="chars" quantity="1"/><anchor type="commentary" xml:id="K_L03233-1"/>zu Dir kommen<note type="commentary" xml:id="K_L03233-1h">Da sich <rs type="person" ref="#pmb2121">Schnitzler</rs> von
+                     <ref type="schnitzler-tagebuch" target="1905-04-30" subtype="date-only"/> bis
+                     <ref type="schnitzler-tagebuch" target="1905-05-06" subtype="date-only"/>
+                  gemeinsam mit seiner Frau <rs type="person" ref="#pmb2173">Olga</rs> auf dem <rs type="place" ref="#pmb189">Semmering</rs> aufhielt, kam es zu keinem Treffen
+                  mit <rs type="person" ref="#pmb11485">Goldmann</rs>.</note>?</p><closer>Herzliche<del rend="strikethrough">n</del> Grüße Dir und Deiner <rs type="person" subtype="implied" ref="#pmb2173">Frau</rs>! <lb/>Dein <lb/><signed>Paul Goldmann</signed></closer><postscript><p><hi rend="latintype"><rs type="place" ref="#pmb255">Grand Hotel</rs></hi>.</p></postscript></div>
       </body>
       <back>
          <listPerson>
@@ -292,7 +301,8 @@
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -351,7 +361,8 @@
                <placeName type="alternative-name">Semmering-Semmering-Kurort</placeName>
                <placeName type="alternative-name">Kurort Semmering</placeName>
                <placeName type="alternative-name">Semmering-Kurort</placeName>
-               <placeName type="alternative-name">Heilklimatischer Höhenluftkurort Semmering</placeName>
+               <placeName type="alternative-name">Heilklimatischer Höhenluftkurort
+                  Semmering</placeName>
                <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>

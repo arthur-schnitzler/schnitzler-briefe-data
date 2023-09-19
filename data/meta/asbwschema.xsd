@@ -1181,7 +1181,7 @@
                else
                   not(@n)"/>
          <xs:assert
-            test="not(@rend = 'spaced_out') or (text() or tei:space) and not(tei:* except tei:space)"
+            test="not(@rend = 'spaced_out') or (text() or tei:space or tei:hi[@rend='underline'])"
          />
          <xs:assert test="not(child::tei:anchor[@type='commentary']) or child::tei:anchor[@type='commentary'] and child::tei:note[@type='commentary']"/>
       </xs:complexType>

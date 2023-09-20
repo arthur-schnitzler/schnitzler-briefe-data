@@ -5,7 +5,7 @@
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
             <title type="iso-date" when-iso="1907-08-07" n="01">1907-08-07</title>
             <title level="a">Paul Goldmann an Arthur Schnitzler, 7. 8. 1907</title>
-            <author ref="#pmb11485">Goldmann, Arthur</author>
+            <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
@@ -68,8 +68,8 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="karte" ana="bildpostkarte"/>
                   <msDesc>
-                     <objectType corresp=""/>
                      <msIdentifier>
                         <country>D</country>
                         <settlement>Marbach am Neckar</settlement>
@@ -80,14 +80,27 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="blatt" quantity=""/>
-                                 <measure unit="seite" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                        <handDesc hands="2">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent" corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb142880">Swinemünde</placeName>
+                                    <date when="1907-08-07">7. 8. 07 </date>
+                                    <time>10 N</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -100,13 +113,14 @@
          </langUsage>
          <correspDesc>
             <correspAction type="sent">
-               <persName ref="#pmb11485">Goldmann, Arthur</persName>
+               <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1907-08-07" n="01">7. 8. 1907</date>
-               <placeName ref="#pmb168">Berlin</placeName>
+               <placeName ref="#pmb142880">Świnoujście</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb428">Welsberg-Taisten</placeName>
+               <date evidence="conjecture" notBefore="1907-08-08" notAfter="1907-08-12">[8. 8. 1907 – 12. 8. 1907?]</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann,
@@ -125,12 +139,17 @@
          <change who="KSK" when="2023-09-13">Export aus Transkribus</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="HS.NZ85.1.3175_0045"/>
+      <graphic url="HS.NZ85.1.3175_0046"/>
+   </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><p><pb facs=""/><addrLine><rs type="place" ref=""> Österreich</rs>.</addrLine><addrLine>Herrn</addrLine><addrLine>Dr. Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="">Welsberg im Pustertal</rs></addrLine><addrLine><rs type="place" ref="">Tirol</rs>.</addrLine><pb facs=""/><paragraph-start/></p><p><rs type="place" ref="">Swinemünde</rs><rs type="place" ref="">Strand</rs><paragraph-start/></p><p><dateline><date>7. 8. 07</date>.</dateline> Ich war hier, um über die Kri<c rendition="#langesS">s</c>en-<hi rend="latintype">Entrevue</hi> zu berichten. Herzliche Grüße Dir, <salute>lieber
-                  Freund</salute>, u. Deiner <rs type="person" ref="">Frau</rs>. Näch<c rendition="#langesS">s</c>te Woche gehe
-               ich auf Urlaub, aber ich weiß noch immer nicht, wohin. Dein <signed>Paul Goldmann.
-               </signed></p></div>
+         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3175_0045"/><rs type="place" ref="#pmb687">Österreich</rs>.</addrLine><addrLine>Herrn</addrLine><addrLine>Dr. Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb428">Welsberg im Pustertal</rs></addrLine><addrLine><rs type="place" ref="#pmb423">Tirol</rs>.</addrLine></address></div>
+         <div type="writingSession" n="1"><opener><p rend="left"><pb facs="HS.NZ85.1.3175_0046"/><hi rend="pre-print"><rs type="place" ref="#pmb142880">Swinemünde</rs></hi></p><p rend="right"><hi rend="pre-print">Strand</hi></p><dateline><date when="1907-08-07">7. 8. 07</date>.</dateline></opener><p>Ich war hier, um über die Kri<c rendition="#langesS">s</c>en-<hi rend="latintype">Entrevue</hi> zu berichten. Herzliche Grüße Dir, <salute>lieber
+               Freund</salute>, u. Deiner <rs type="person" subtype="implied" ref="#pmb2173">Frau</rs>. Näch<c rendition="#langesS">s</c>te Woche gehe
+               ich auf Urlaub, aber ich weiß noch immer nicht, wohin. Dein <signed>Paul Goldmann</signed>.
+            </p></div>
       </body>
       <back>
          <listPerson>
@@ -212,71 +231,120 @@
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
+            <person xml:id="pmb2173">
+               <persName>
+                  <forename>Olga</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Gussmann</persName>
+               <persName type="person_pseudonym">Dina Marius</persName>
+               <persName type="legacy-name-merge">Schnitzler, Olga</persName>
+               <birth>
+                  <date when="1882-01-17">17.01.1882</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1970-01-13">13.01.1970</date>
+                  <settlement ref="pmb885">
+                     <placeName type="pref">Lugano</placeName>
+                     <location>
+                        <geo>46,01008 8,96004</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
+               <occupation ref="pmb107">Sänger/Sängerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116848723</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2173/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19832</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp50811</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q55884531</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2173.html</idno>
+            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb168">
-               <placeName>Berlin</placeName>
-               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Barlīn</placeName>
-               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Berolino</placeName>
-               <placeName type="legacy-name-merge">B-n</placeName>
-               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
-               <desc type="entity_type_id">1418</desc>
+            <place xml:id="pmb142880">
+               <placeName>Świnoujście</placeName>
+               <placeName type="alternative-name">Swinemünde</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA2</desc>
+               <desc type="entity_type_id">1419</desc>
                <location type="coords">
-                  <geo>52,52437 13,41053</geo>
+                  <geo>53,91053 14,24712</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
+                  <placeName ref="pmb313">Polen</placeName>
+                  <geo>52,0 20,0</geo>
                </location>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92171.html</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/142880/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3083955/</idno>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer_name">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
+            <place xml:id="pmb428">
+               <placeName>Welsberg-Taisten</placeName>
+               <placeName type="legacy-name-merge">Welsberg</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>
                <location type="coords">
-                  <geo>48,2066 16,37341</geo>
+                  <geo>46,75774 12,10556</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3173140/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb428.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/428/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb428.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb428.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/104572/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4528045-9</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q26269623</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Welsberg_(Welsberg-Taisten)</idno>
+            </place>
+            <place xml:id="pmb687">
+               <placeName>Österreich-Ungarn</placeName>
+               <placeName type="legacy-name-merge">Oesterreich Ungarn</placeName>
+               <desc type="entity_type">Land (A.LND)</desc>
+               <desc type="entity_type_id">38</desc>
+               <location type="coords">
+                  <geo>48,4054 16,4887</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q28513</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/687/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb687.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb687</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92428/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92428.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/%C3%96sterreich-Ungarn</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb687.html</idno>
+            </place>
+            <place xml:id="pmb423">
+               <placeName>Tirol</placeName>
+               <desc type="entity_type">Teil eines Landes (A.LNDX)</desc>
+               <desc type="entity_type_id">13</desc>
+               <location type="coords">
+                  <geo>47,25 11,33333</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q42880</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2763586/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb423.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/423/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb423.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb423</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb423.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Tirol_(Bundesland)</idno>
             </place>
          </listPlace>
       </back>

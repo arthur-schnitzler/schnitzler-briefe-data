@@ -4,8 +4,8 @@
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
             <title type="iso-date" when-iso="1907-08-16" n="01">1907-08-16</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, [16. 8. 1907]</title>
-            <author ref="#pmb11485">Goldmann, Arthur</author>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 16. 8. 1907</title>
+            <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
@@ -68,8 +68,8 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="karte" ana="postkarte"/>
                   <msDesc>
-                     <objectType corresp=""/>
                      <msIdentifier>
                         <country>D</country>
                         <settlement>Marbach am Neckar</settlement>
@@ -80,14 +80,43 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="blatt" quantity=""/>
-                                 <measure unit="seite" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                        <handDesc hands="2">
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
+                           <handNote medium="blaue_tinte" style="lateinische-kurrent" corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb168">Berlin W</placeName>
+                                    <date when="1907-08-16">16. 8. 07 </date>
+                                    <time>11-12 V</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="2">
+                                    <placeName ref="#pmb428">Wels<unclear>berg</unclear>
+                                    </placeName>
+                                    <date when="1907-08">1<unclear>X</unclear>. 8. <unclear>XX</unclear>
+                                    </date>
+                                    <time>11-12 V</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Datum »<quote>
+                                    <date when="1907-08-16">16. 8. <supplied>19</supplied>07</date>
+                                 </quote>« vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -100,13 +129,15 @@
          </langUsage>
          <correspDesc>
             <correspAction type="sent">
-               <persName ref="#pmb11485">Goldmann, Arthur</persName>
-               <date when="1907-08-16" n="01">[16. 8. 1907]</date>
+               <persName ref="#pmb11485">Goldmann, Paul</persName>
+               <date when="1907-08-16" n="01">16. 8. 1907</date>
                <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb428">Welsberg-Taisten</placeName>
+               <date evidence="conjecture" notBefore="1907-08-17" notAfter="1907-08-21">[17. 8. 1907
+                  – 21. 8. 1907?]</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann,
@@ -125,14 +156,20 @@
          <change who="KSK" when="2023-09-13">Export aus Transkribus</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="HS.NZ85.1.3175_0047"/>
+      <graphic url="HS.NZ85.1.3175_0048"/>
+   </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><p><pb facs=""/><addrLine><hi rend="pre-print"> An</hi></addrLine><addrLine>Herrn Dr. Arthur Schnitzler</addrLine><addrLine><hi rend="pre-print">in</hi><rs type="place" ref="">Welsberg im Pustertal</rs></addrLine><addrLine><rs type="place" ref="">Wildbad Waldbrunn</rs>.</addrLine><addrLine><rs type="place" ref="">Tirol</rs>.</addrLine><pb facs=""/><paragraph-start/></p><p><salute>Lieber Freund,</salute> Ich komme vielleicht nächste Woche mit meiner<rs type="person" ref="" subtype="implied">Mutter</rs> nach <rs type="place" ref="">Welsberg</rs>, kann
-               Dich aber natürlich nicht bitten, mich abzuwarten, da der Tag meines Eintreffens noch
-               unbestim̄t ist; hingegen bitte ich Dich sehr, für meine <rs type="person" ref="">Mutter</rs> und mich<del rend="strikethrough">,</del> je ein ruhiges und nicht
-                  teu<anchor type="commentary" xml:id="XXXX">e[Kommentar: sic]</anchor><note type="commentary" xml:id="XXXX"/>res Zimmer, etwa von <date>Donnerstag</date>
-               ab, reservieren zu lassen. Ich hoffe sicher, Dir im Laufe meiner Urlaubsreise die
-               Hand drücken zu können und bin mit herzlichen Grüßen an Dich und Deine <rs type="person" ref="" subtype="implied">Frau</rs> Dein <signed>Paul Goldmann. </signed></p></div>
+         <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3175_0047"/>Herrn Dr. Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb428">Welsberg im Pustertal</rs></addrLine><addrLine><rs type="place" ref="#pmb723">Wildbad Waldbrunn</rs>.</addrLine><addrLine><rs type="place" ref="#pmb423">Tirol</rs>.</addrLine></address></div>
+         <div type="writingSession" n="1"><p><pb facs="HS.NZ85.1.3175_0048"/><salute rend="inline">Lieber Freund,</salute> Ich komme vielleicht nächste Woche mit
+               meiner<rs type="person" subtype="implied" ref="#pmb17163">Mutter</rs> nach <rs type="place" ref="#pmb428">Welsberg</rs>, kann Dich aber natürlich nicht bitten,
+               mich abzuwarten, da der Tag meines Eintreffens noch unbestim̄t ist; hingegen bitte
+               ich Dich sehr, für meine <rs type="person" subtype="implied" ref="#pmb17163">Mutter</rs> und mich<del rend="strikethrough">,</del> je ein ruhiges und nicht <anchor type="commentary" xml:id="K-L03256-1"/>teueres<note type="commentary" xml:id="K-L03256-1h">sic</note> Zimmer, etwa von <date when="1907-08-22">Donnerstag</date> ab,
+               reservieren zu lassen. Ich hoffe sicher, Dir im Laufe meiner Urlaubsreise die Hand
+               drücken zu können und bin mit herzlichen Grüßen an Dich und Deine <rs type="person" subtype="implied" ref="#pmb2173">Frau</rs> Dein <signed>Paul Goldmann</signed>.
+            </p></div>
       </body>
       <back>
          <listPerson>
@@ -214,6 +251,74 @@
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
+            <person xml:id="pmb17163">
+               <persName>
+                  <forename>Clementine</forename>
+                  <surname>Goldmann</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Mamroth</persName>
+               <birth>
+                  <date when="1842-05-15">1842-05-15</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
+                     <location>
+                        <geo>51,10773 17,03533</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1924-02-24">1924-02-24</date>
+                  <settlement ref="pmb146">
+                     <placeName type="pref">Frankfurt am Main</placeName>
+                     <location>
+                        <geo>50,11552 8,68417</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15525</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/17163/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb17163.html</idno>
+            </person>
+            <person xml:id="pmb2173">
+               <persName>
+                  <forename>Olga</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Gussmann</persName>
+               <persName type="person_pseudonym">Dina Marius</persName>
+               <persName type="legacy-name-merge">Schnitzler, Olga</persName>
+               <birth>
+                  <date when="1882-01-17">17.01.1882</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1970-01-13">13.01.1970</date>
+                  <settlement ref="pmb885">
+                     <placeName type="pref">Lugano</placeName>
+                     <location>
+                        <geo>46,01008 8,96004</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
+               <occupation ref="pmb107">Sänger/Sängerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116848723</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2173/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19832</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp50811</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q55884531</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2173.html</idno>
+            </person>
          </listPerson>
          <listPlace>
             <place xml:id="pmb168">
@@ -245,40 +350,62 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer_name">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
+            <place xml:id="pmb428">
+               <placeName>Welsberg-Taisten</placeName>
+               <placeName type="legacy-name-merge">Welsberg</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>
                <location type="coords">
-                  <geo>48,2066 16,37341</geo>
+                  <geo>46,75774 12,10556</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3173140/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb428.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/428/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb428.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb428.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/104572/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4528045-9</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q26269623</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Welsberg_(Welsberg-Taisten)</idno>
+            </place>
+            <place xml:id="pmb723">
+               <placeName>Wildbad Waldbrunn</placeName>
+               <placeName type="legacy-name-merge">Waldbrunn</placeName>
+               <desc type="entity_type">Hotel (K.HTL)</desc>
+               <desc type="entity_type_id">12</desc>
+               <location type="coords">
+                  <geo>46,751211 12,101269</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb428">Welsberg-Taisten</placeName>
+                  <geo>46,75774 12,10556</geo>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb723.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/723/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb723.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/12493331/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92592/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92592.html</idno>
+            </place>
+            <place xml:id="pmb423">
+               <placeName>Tirol</placeName>
+               <desc type="entity_type">Teil eines Landes (A.LNDX)</desc>
+               <desc type="entity_type_id">13</desc>
+               <location type="coords">
+                  <geo>47,25 11,33333</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q42880</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2763586/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb423.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/423/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb423.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb423</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb423.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Tirol_(Bundesland)</idno>
             </place>
          </listPlace>
       </back>

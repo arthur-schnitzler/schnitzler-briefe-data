@@ -78,7 +78,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -90,17 +90,17 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="seite" quantity="1"/>
+                                 <measure unit="blatt" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="lateinische-kurrent"/>
+                           <handNote medium="bleistift" style="lateinische-kurrent"/>
                         </handDesc>
                         <additions>
                            <incident type="archival">
-                              <desc>Xmit Bleistift von unbekannter Hand nummeriert: »<quote>x</quote>«</desc>
+                              <desc>mit Bleistift von unbekannter Hand nummeriert: »<quote>178</quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -117,11 +117,12 @@
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
                <date when="1903-11-27" n="01">27. 11. 1903</date>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <date evidence="conjecture" notBefore="1903-11-27" notAfter="1903-11-29">[27. 11. 1903 – 29. 11. 1903?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -132,17 +133,15 @@
    </teiHeader>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00096-R"/><dateline><rs type="place" ref="">
-                        Am Kahlenberg</rs>, <date>27 XI. 03</date><date>27 XI. 03</date></dateline><salute>Lieber, </salute>ich bin doch nicht nach <rs type="place" ref="">Waidhofen</rs>,
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00096-R"/><rs type="place" ref="#pmb574">Am Kahlenberg</rs>, <date>27 XI. 03</date></dateline></opener><p><salute>Lieber, </salute>ich bin doch nicht nach <rs type="place" ref="#pmb49181">Waidhofen</rs>,
       sondern lieber hier herauf, wo es wunderschön
       und ganz still ist. Gedenke mir diesen Berg
-      jetzt als meinen Privat-<rs type="place" ref="">Semmering</rs>
+      jetzt als meinen Privat-<rs type="place" ref="#pmb189">Semmering</rs>
       anzuschaffen. Herzl. Dank für
-      Ihre Wolmeinung über meinen <rs type="work" ref=""><rs type="person" ref="">Klimt</rs></rs><rs type="work" ref="">Aufsatz</rs>. Nächstens ziehe ich mich
-      hierher mit <rs type="person" ref="">Schlenther</rs> zurück, und
+      Ihre Wolmeinung über meinen <rs type="work" ref="#pmb146034" subtype="implied"><rs type="person" ref="#pmb11941">Klimt</rs>-Aufsatz</rs>. Nächstens ziehe ich mich
+               hierher mit <rs type="person" ref="#pmb12671">Schlenther</rs> zurück, und
       hoffe Sie noch besser zu bedienen,
-      </opener><closer><lb/>herzlichst Ihr <signed>S.
-                  </signed></closer></div>
+      </p><closer>herzlichst Ihr <signed>S.</signed></closer></div>
       </body>
    </text>
 </TEI>

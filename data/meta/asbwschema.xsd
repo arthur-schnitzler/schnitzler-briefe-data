@@ -7,6 +7,11 @@
       schemaLocation="http://www.w3.org/2001/xml.xsd"/>
    <!-- Schema der XML-Dateien für https://schnitzler-briefe.acdh.oeaw.ac.at/ 
    -->
+   <xs:simpleType name="customXmlIdType">
+      <xs:restriction base="xs:string">
+         <xs:pattern value="L\d{4}"/>
+      </xs:restriction>
+   </xs:simpleType>
    <xs:element name="TEI">
       <xs:complexType mixed="true">
          <xs:choice minOccurs="2" maxOccurs="unbounded">
@@ -16,11 +21,13 @@
          </xs:choice>
          <xs:attribute ref="xml:id" use="required"/>
          <xs:attribute ref="xml:base" use="required"/>
+         <xs:assert test="@xml:id[matches(., 'L\d\d\d\d\d')]"/>
       </xs:complexType>
       <xs:unique name="unique-xmlid">
          <xs:selector xpath=".//*"/>
          <xs:field xpath="@xml:id"/>
       </xs:unique>
+     
    </xs:element>
    <xs:element name="back">
       <xs:complexType mixed="true">
@@ -1182,7 +1189,8 @@
                else
                   not(@n)"/>
          <xs:assert
-            test="not(@rend = 'spaced_out') or (text() or tei:space or tei:hi[@rend='underline'])"
+            test="if (@rend ='spaced_out') then ((child::text() or child::tei:space or child::tei:hi[@rend='underline']) and not(child::tei:*[not(name()='space' or name()='hi')])) else
+            not(@rend='spaced_out')"
          />
          <xs:assert test="not(child::tei:anchor[@type='commentary']) or child::tei:anchor[@type='commentary'] and child::tei:note[@type='commentary']"/>
       </xs:complexType>

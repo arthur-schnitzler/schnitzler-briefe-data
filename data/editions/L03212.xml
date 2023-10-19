@@ -95,7 +95,7 @@
                               <desc>
                                  <stamp n="1">
                                     <placeName ref="#pmb866">Dresden</placeName>
-                                    <date when="1902-06-24">24. <supplied>0</supplied>6. 02</date>
+                                    <date when="1902-06-24">24. 6. 02</date>
                                     <time>11½–12</time>
                                  </stamp>
                               </desc>
@@ -103,11 +103,10 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="2">
-                                    <placeName ref="#pmb50">9/3 Wien <supplied>72</supplied>
-                                    </placeName>
-                                    <date when="1902-06-25">25<supplied>.</supplied> 6. <supplied>02</supplied>
+                                    <placeName ref="#pmb50">9/3 Wien</placeName>
+                                    <date when="1902-06-25">25<supplied>.</supplied> 6. <unclear>02</unclear>
                                     </date>
-                                    <time>7. N</time>
+                                    <time>7.N</time>
                                     <addSpan>Bestel<supplied>llt</supplied>
                                     </addSpan>
                                  </stamp>
@@ -132,21 +131,26 @@
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50">Wien?</placeName>
-               <date evidence="conjecture" notBefore="1902-06-25" notAfter="1902-06-29">[25. 6. 1902
-                  – 29. 6. 1902?]</date>
+               <placeName ref="#pmb50">Wien</placeName>
+               <date when="1902-06-25">25. 6. 1902</date>
             </correspAction>
             <correspContext>
-               <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann, Paul</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L03211">Goldmann an Schnitzler, 16. 6. [1902]</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L01224">Hofmannsthal an Schnitzler, 25. 6. 1902</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11485" target="L03211">Goldmann an Schnitzler, 16. 6. [1902]</ref>
+               <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann,
+                  Paul</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L03211">Goldmann an
+                  Schnitzler, 16. 6. [1902]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01224">Hofmannsthal an
+                  Schnitzler, 25. 6. 1902</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11485" target="L03211">Goldmann an Schnitzler,
+                  16. 6. [1902]</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11485" target="L03213">Goldmann an Schnitzler, 14. 7. [1902]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2023-08-28">Export aus Transkribus</change>
+         <change who="MAM" when="2023-10-17">Index check</change>
+         <change who="MAM" when="2023-10-17">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -156,7 +160,7 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="HS.NZ85.1.3172_0051"/>Herrn</addrLine><addrLine>Dr. Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb397">IX. Frankga<c rendition="#langesS">s</c>se 1</rs>.</addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="HS.NZ85.1.3172_0052"/><hi rend="pre-print"><rs type="place" ref="#pmb145606">Neustädter Markt</rs> mit Wache</hi><space unit="chars" quantity="1"/><date when="1902-06-24">24. Juni</date>. <hi rend="pre-print"><rs type="place" ref="#pmb866">Dresden</rs></hi></p><p>Herzlich<c rendition="#langesS">s</c>te, Grüße! <lb/><signed>Paul Goldmann.</signed></p></div>
+         <div type="writingSession" n="1"><opener><p><seg rend="left"><pb facs="HS.NZ85.1.3172_0052"/><hi rend="pre-print"><rs type="place" ref="#pmb145606">Neustädter Markt</rs> mit <rs type="place" ref="#pmb146873">Wache</rs></hi></seg><seg rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb866">Dresden</rs></hi></seg></p><dateline rend="center"><date when="1902-06-24">24. Juni</date>.</dateline></opener><p>Herzlich<c rendition="#langesS">s</c>te Grüße!</p><closer><signed>Paul Goldmann.</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -270,8 +274,7 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -333,7 +336,22 @@
                   <geo>51,0833 13,7666</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/145606/</idno>
-               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1981794</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1981794</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Neust%C3%A4dter_Markt_(Dresden)</idno>
+            </place>
+            <place xml:id="pmb146873">
+               <placeName>Blockhaus</placeName>
+               <placeName type="ort_namensvariante">Neustädter Wache</placeName>
+               <desc type="entity_type">Gebäude (K.GBD)</desc>
+               <desc type="entity_type_id">24</desc>
+               <location type="coords">
+                  <geo>51,0575 13,740703</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb866">Dresden</placeName>
+                  <geo>51,0833 13,7666</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/146873/</idno>
             </place>
          </listPlace>
       </back>

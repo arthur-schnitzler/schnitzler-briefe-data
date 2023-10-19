@@ -1112,7 +1112,7 @@
       <xs:attribute ref="xml:id" use="required"/>
       <xs:assert test="
             tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and
-            (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren' or @type = 'schnitzler-bahr')] or not(tei:ref)"/>
+            (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren' or @type = 'schnitzler-bahr' or @type = 'schnitzler-interviews')] or not(tei:ref)"/>
       <xs:assert
          test="(@type = 'textConst' or @type = 'commentary' and not(descendant::tei:note[@type = 'textConst' or @type = 'commentary'])) or not(@type = 'textConst' or @type = 'commentary')"/>
       <xs:assert

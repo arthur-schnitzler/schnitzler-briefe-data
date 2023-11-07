@@ -23,7 +23,7 @@ mv ./arthur-schnitzler-arbeit-main/tocs ./data
 for file in ./data/editions/L*.xml; do
   filename=$(basename "$file")
   number=$(echo "$filename" | sed -n 's/L\([0-9]\+\)\.xml/\1/p')
-  if [ "$number" -gt 3372 ]; then
+  if [ "$number" -gt 3389 ]; then
     rm "$file"
   fi
 done

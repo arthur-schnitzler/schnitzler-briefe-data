@@ -38,6 +38,7 @@
             <xs:element ref="tei:listPlace" maxOccurs="1" minOccurs="0"/>
          </xs:choice>
          <xs:attribute ref="xml:id" use="optional"/>
+         <xs:assert test="not(descendant::*:error)"></xs:assert>
       </xs:complexType>
    </xs:element>
    <xs:element name="facsimile">
@@ -226,8 +227,9 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:assert
-            test="tei:date/@when or tei:date/@notAfter or tei:date/@notBefore or not(tei:date)"/>
+            test="tei:date/@when or (tei:date/@notAfter and tei:date/@notBefore) or (tei:date/@from and tei:date/@to) or not(tei:date)"/>
          <xs:assert test="tei:persName/@ref or not(tei:persName)"/>
+         <xs:assert test="tei:date[not(matches(., '\n\s+\n\s+'))]"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="addressee">
@@ -2026,9 +2028,11 @@
             <xs:element ref="tei:orgName"/>
             <xs:element maxOccurs="unbounded" ref="tei:idno"/>
          </xs:sequence>
+         <xs:attribute name="when" type="xs:date"/>
          <xs:attribute name="notAfter" type="xs:date"/>
          <xs:attribute name="notBefore" type="xs:date"/>
-         <xs:attribute name="when" type="xs:date"/>
+         <xs:attribute name="from" type="xs:date"/>
+         <xs:attribute name="to" type="xs:date"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="term">
@@ -2054,6 +2058,8 @@
          <xs:attribute name="notAfter" type="xs:date"/>
          <xs:attribute name="notBefore" type="xs:date"/>
          <xs:attribute name="when" type="xs:date"/>
+         <xs:attribute name="from" type="xs:date"/>
+         <xs:attribute name="to" type="xs:date"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="label" type="xs:string"/>

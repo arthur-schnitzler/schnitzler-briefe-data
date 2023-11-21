@@ -20,13 +20,13 @@ mv ./arthur-schnitzler-arbeit-main/meta ./data
 mv ./arthur-schnitzler-arbeit-main/tocs ./data
 
 # Loop through files and delete those with a number greater than 3373
-for file in ./data/editions/L*.xml; do
-  filename=$(basename "$file")
-  number=$(echo "$filename" | sed -n 's/L\([0-9]\+\)\.xml/\1/p')
-  if [ "$number" -gt 3389 ]; then
-    rm "$file"
-  fi
-done
+#for file in ./data/editions/L*.xml; do
+#  filename=$(basename "$file")
+#  number=$(echo "$filename" | sed -n 's/L\([0-9]\+\)\.xml/\1/p')
+#  if [ "$number" -gt 3389 ]; then
+#    rm "$file"
+#  fi
+#done
 
 rm -rf ./arthur-schnitzler-arbeit-main
 

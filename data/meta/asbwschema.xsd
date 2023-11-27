@@ -27,7 +27,6 @@
          <xs:selector xpath=".//*"/>
          <xs:field xpath="@xml:id"/>
       </xs:unique>
-     
    </xs:element>
    <xs:element name="back">
       <xs:complexType mixed="true">
@@ -38,7 +37,7 @@
             <xs:element ref="tei:listPlace" maxOccurs="1" minOccurs="0"/>
          </xs:choice>
          <xs:attribute ref="xml:id" use="optional"/>
-         <xs:assert test="not(descendant::*:error)"></xs:assert>
+         <xs:assert test="not(descendant::*:error)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="facsimile">
@@ -966,6 +965,7 @@
             <xs:element ref="tei:c" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="tei:foreign" minOccurs="0" maxOccurs="unbounded"/>
          </xs:choice>
+         <xs:assert test="not(child::*[1][name() = 'lb'] and text()[1][normalize-space(.) = ''])"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="postscript">
@@ -1190,11 +1190,14 @@
                   @n
                else
                   not(@n)"/>
+         <xs:assert test="
+               if (@rend = 'spaced_out') then
+                  ((child::text() or child::tei:space or child::tei:hi[@rend = 'underline']) and not(child::tei:*[not(name() = 'space' or name() = 'hi')]))
+               else
+                  not(@rend = 'spaced_out')"/>
          <xs:assert
-            test="if (@rend ='spaced_out') then ((child::text() or child::tei:space or child::tei:hi[@rend='underline']) and not(child::tei:*[not(name()='space' or name()='hi')])) else
-            not(@rend='spaced_out')"
+            test="not(child::tei:anchor[@type = 'commentary']) or child::tei:anchor[@type = 'commentary'] and child::tei:note[@type = 'commentary']"
          />
-         <xs:assert test="not(child::tei:anchor[@type='commentary']) or child::tei:anchor[@type='commentary'] and child::tei:note[@type='commentary']"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="damage">
@@ -1377,9 +1380,11 @@
          <xs:assert test="
                not(descendant::tei:placeName) and not(descendant::tei:orgName) and not(descendant::tei:workName) and not(descendant::tei:persName) and not(child::seg and child::*[not(name() = 'seg')]) and ((child::tei:seg and not(@rend)) or (not(child::tei:seg)))"/>
          <xs:assert test="
-               (child::tei:seg/@rend = 'left' and child::tei:seg/@rend = 'right' and not(child::*[3])) or not(child::tei:seg)"
-         />
-         <xs:assert test="not(child::tei:anchor[@type='commentary']) or child::tei:anchor[@type='commentary'] and child::tei:note[@type='commentary']"/>
+               (child::tei:seg/@rend = 'left' and child::tei:seg/@rend = 'right' and not(child::*[3])) or not(child::tei:seg)"/>
+         <xs:assert
+            test="not(child::tei:anchor[@type = 'commentary']) or child::tei:anchor[@type = 'commentary'] and child::tei:note[@type = 'commentary']"/>
+         <xs:assert test="child::* or text()[normalize-space(.) != '']"/>
+         <xs:assert test="not(contains(., '&amp;'))"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="salute">
@@ -1589,8 +1594,8 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:assert
-            test="((starts-with(@ref, '#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN') or (tokenize(@ref, ' #pmb')[2]))"
-         />
+            test="((starts-with(@ref, '#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN') or (tokenize(@ref, ' #pmb')[2]))"/>
+         <xs:assert test="not(contains(., '&amp;'))"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="handShift">

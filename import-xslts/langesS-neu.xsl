@@ -5,7 +5,7 @@
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
     <xsl:template match="text()">
-        <xsl:analyze-string select="." regex="\n?\s*ſ">
+        <xsl:analyze-string select="." regex="[ \t\n]+ſ">
             <xsl:matching-substring>
                 <xsl:element name="space">
                     <xsl:attribute name="unit">

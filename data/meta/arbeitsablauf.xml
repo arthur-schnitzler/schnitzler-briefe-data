@@ -42,157 +42,176 @@
                 <p>Die Herstellung kritischer digitaler Editionen unterliegt einem stetem Wandel,
                     der mit häufiger Anpassung der Arbeitsmittel einhergeht. Da wir die meiste Zeit
                     nur zu zweit an der Edition arbeiten, ist auch der informelle Austauch beständig
-                    da und wird häufig eine kleinere Änderung vorgenommen, ohne dass die anders als
-                    durch die Verwendung selbst dokumentiert würde. Eine Darstellung des
-                    Arbeitsablaufs kann somit nur eine Momentaufnahme sein, die wir uns bemühen
-                    regelmäßig aktuell zu halten und Änderung im Zeitablauf auch festzuhalten. Der
-                    hier geschilderte Stand deckt die zweite Projektlaufzeit (2021–2024) ab, die
-                    Adaptionen zur ersten Laufzeit werden weiter unten beschrieben.</p>
+                    da und es wird immer wieder eine kleinere Änderung vorgenommen, ohne dass diese
+                    anders als durch die Verwendung selbst dokumentiert würde. Eine Darstellung des
+                    Arbeitsablaufs kann somit nur eine Momentaufnahme sein, obgleich wir uns
+                    bemühen, sie aktuell zu halten und auch Änderungen im Zeitablauf zu
+                    dokumentieren. Der hier geschilderte Stand deckt die zweite Projektlaufzeit
+                    (2021–2024) ab; Adaptionen zur ersten Laufzeit werden weiter unten
+                    beschrieben.</p>
             </div>
             <div type="level1">
                 <head xml:id="Recherche">Recherche</head>
                 <p>Die Recherche, welche Korrespondenzen aufgenommen werden, steht am Anfang der
                     Arbeit und wird im Projektantrag festgehalten. Danach folgt die Abklärung der
-                    Rechte – die Regelschutzfrist in Österreich beträgt 70&#160;Jahre nach dem Tod,
-                    so dass am 1.&#160;1. des Folgejahres die Rechte an den Texten frei werden. In
-                    wenigen Fällen besitzen Nachkommen noch Rechte, die sie freundlicherweise zur
-                    Verfügung stellen. An Korrespondenzen, deren Rechte offen sind, beginnen wir
-                    nicht zu arbeiten.</p>
-                <p>Wir suchen dann in den Archiven mit dem <ref
+                    Rechte. Die Regelschutzfrist in Österreich beträgt 70&#160;Jahre nach dem Tod,
+                    am 1.&#160;1. des Folgejahres werden die Rechte an den Texten frei. In wenigen
+                    Fällen besitzen Nachkommen noch Rechte, die sie freundlicherweise zur Verfügung
+                    stellen. An Korrespondenzen, deren Rechte offen sind, beginnen wir nicht zu
+                    arbeiten.</p>
+                <p>Im Anschluss suchen wir einerseits im <ref
                         target="https://de.wikipedia.org/wiki/Arthur_Schnitzlers_Nachlass">Nachlass
-                        Schnitzlers</ref> nach Objekten und auch in internationalen Archiven,
-                    Bibliothekskatalogen, Antiquariatsangeboten und Verzeichnissen nach Briefen
-                    Schnitzlers. Besonders hilfreich ist der <ref
+                        Schnitzlers</ref> nach Briefen, andererseits in verschiedenen anderen
+                    internationalen Archiven, Bibliothekskatalogen, Antiquariatsangeboten und
+                    Verzeichnissen. Besonders hilfreich ist der <ref
                         target="https://kalliope-verbund.info/">Kalliope Verbundkatalog</ref>.</p>
                 <p>Im nächsten Schritt beziehen wir die Faksimiles, wobei wir uns mit zwei
-                    Nachlässigkeiten abfinden. Wir lassen uns die Bilder so liefern, wie die
+                    Nachlässigkeiten abfinden: Wir lassen uns die Bilder so liefern, wie die
                     Institutionen das herkömmlich tun und geben keine eigenen Vorgaben bezüglich
                     Farbprofil, Farbkarte, Dateiformat etc. Bislang sind uns keine erkennbaren
                     Nachteile daraus erwachsen. Und wir bitten um eine Gesamtaufnahme des Blattes,
-                    leere Rückseiten aber wegzulassen. Letzteres hat ausschließlich pekuniäre
+                    leere Rückseiten sind aber wegzulassen. Letzteres hat ausschließlich pekuniäre
                     Gründe.</p>
-                <p>Sofern sich auf einem Faksimile zwei Seiten auf einem Blatt finden, so teilen wir
-                    die neuerdings in zwei Teile mit einer Überlappung von 5<c rendition="#prozent"
-                    />. Das garantiert, dass die Schnittkante gut zu erkennen ist. Erfolgen tut dies
-                    mit einem Skript.</p>
+                <p>Sofern sich auf einem Faksimile zwei Seiten auf einem Blatt finden, teilen wir
+                    das Faksimile mit einem <ref target="https://imagemagick.org/index.php"
+                        >ImageMagick</ref>-Skript in zwei Teile mit einer Überlappung von 5<c
+                        rendition="#prozent"/>. Das garantiert, dass die Schnittkante gut zu
+                    erkennen ist.</p>
             </div>
             <div type="level1">
                 <head xml:id="Transkribus">Transkribus</head>
                 <p>Es folgt der Import der Faksimiles in <ref
                         target="https://readcoop.eu/de/transkribus">Transkribus</ref>, was mit jedem
-                    FTP-Programm (beispielsweise Forklift) schnell und einfach geschieht.
-                    Transkribus ist eine in Innsbruck entwickelte Plattform zur automatischen
-                    Texterkennung nicht nur von gedruckten Texten, sondern auch von Handschriften.
-                    Die App ist kostenlos und man hat auch ein bestimmtes Kontingent zur Verfügung,
-                    ab der Menge, mit der wir es zu tun haben, sind aber (keine sehr hohen) Kosten
-                    einzukalkulieren. Wir trennen die Faksimiles nach Verfasserin, Verfasser.
-                    Üblicherweise sind mehrere Briefe eines Schreibers, einer Schreiberin im selben
-                    Ordner, beispielsweise alle Objekte von Schnitzler aus dem Jahr 1899. Noch
-                    verwenden wir den Desktop-Client, sind uns aber bewusst, dass der Umstieg auf
-                    die Web-App schon begonnen hat. Wann wir nachziehen, ist vor allem eine Frage
-                    der Verfügbarkeit von Features bzw. wenn die lokale App nicht mehr unterstützt
-                    wird. Momentan kann beides parallel benützt werden.</p>
-                <p>In Transkribus lassen wir eine automatische Zeilenerkennung laufen, die wir dann
+                    FTP-Programm (beispielsweise <ref target="https://binarynights.com/"
+                        >Forklift</ref>) schnell und einfach geschieht. Transkribus ist eine in
+                    Innsbruck entwickelte Plattform zur automatischen Texterkennung nicht nur von
+                    gedruckten Texten, sondern auch von Handschriften. Die App ist kostenlos und
+                    kommt mit einem bestimmten Freikontingent. Bei der Menge, mit der wir es zu tun
+                    haben, sind aber (keine sehr hohen) Kosten einzukalkulieren. In Transkribus
+                    erstellen wir für jeden Verfasser, jede Verfasserin eine Collection.
+                    Üblicherweise sind dann mehrere Briefe eines Schreibers, einer Schreiberin in
+                    einer Collection in einem Dokument, beispielsweise alle Objekte von Schnitzler
+                    aus dem Jahr 1899. Noch verwenden wir den Desktop-Client von Transkribus, sind
+                    uns aber bewusst, dass der Umstieg auf die Web-App schon begonnen hat. Wann wir
+                    nachziehen, ist vor allem eine Frage der Verfügbarkeit von Features bzw. wenn
+                    die lokale App nicht mehr unterstützt wird. Momentan kann beides parallel
+                    benützt werden.</p>
+                <p>In Transkribus lassen wir eine automatische Zeilenerkennung laufen, die wir
                     händisch nachkorrigieren. Das ist eine etwas mühselige Arbeit, die aber für die
-                    folgenden Schritte relevant ist. Im Normalfall lassen wir nun eine automatische
-                    Texterkennung drüberlaufen, zuerst mit einem der angebotenen Standardmodelle.
-                    Das korrigieren wir händisch, indem wir Zeile für Zeile durchgehen. Haben wir
-                    zumindest 30&#160;Seiten einer Handschrift entziffert, trainieren wir ein
-                    Handschriftenmodell. Damit lassen wir die nächsten Seiten erkennen und
-                    trainieren dann in unregelmäßigen Intervallen das HTR-Modell neu. Wenn es
-                    verlässlich funktioniert, stellen wir das Modell frei zur Verfügung, wie hier:
-                        <ref
+                    folgenden Schritte relevant ist. Im Normalfall wenden wir nämlich eine
+                    automatische Texterkennung an, zuerst mit einem der angebotenen Standardmodelle
+                    von Transkribus. Den erkannten Text korrigieren wir händisch, indem wir Zeile
+                    für Zeile durchgehen. Haben wir zumindest 30&#160;Seiten einer Handschrift
+                    entziffert, trainieren wir ein eigenes Handschriftenmodell. Damit lassen wir die
+                    nächsten Seiten erkennen. In unregelmäßigen Intervallen trainieren wir so
+                    fortlaufend das HTR-Modell neu. Wenn es verlässlich funktioniert, stellen wir
+                    das Modell frei zur Verfügung, wie hier: <ref
                         target="https://readcoop.eu/de/modelle/paul-goldmann_german-kurrent_1889-96_v1/"
                         >HTR Paul Goldmann</ref> und <ref
                         target="https://readcoop.eu/de/modelle/german-letters-felix-salten-1890-1931/"
                         >HTR Felix Salten</ref>. </p>
-                <p>In Transkribus selbst benutzen wir auch bestimmte Tags, teilweise bereits von
-                    Haus aus vorhanden, teilweise von uns unter dem Namen der TEI-Elemente angelegt,
-                    mit dem wir Textphänomene und zu indizierende Stellen markieren. Die
-                    Möglichkeit, bereits Normdaten oder Werte einzugeben, benützen wir nicht.
-                    Außerdem verwenden wir das Symbol der Absatzmarke in der Symbolleiste, um in der
-                    Abschrift mitzuteilen, wo ein neuer Absatz beginnt. Davon abgeleitet haben wir
-                    ein eigenes Element <code>&lt;letter-begin /&gt;</code>, das wir in die erste
-                    Zeile eines neuen Briefes setzen, um einen Marker zu haben, wo bei der folgenden
-                    Transkription jeweils eine neue Datei angelegt werden muss.</p>
-                <p>Üblicherweise mit dem einmaligen Durcharbeiten eines Briefes und einem einmaligen
-                    Drüberlesen steht die Abschrift. </p>
+                <p>In Transkribus benutzen wir außerdem bestimmte Tags, die teilweise bereits von
+                    Haus aus vorhanden sind, teilweise aber auch erst von uns unter dem Namen der
+                    TEI-Elemente angelegt wurden. Die Tags nutzen wir, um bestimmte Textphänomene
+                    (z. B. Streichungen) und zu indizierende Stellen (z. B. Personennamen) zu
+                    markieren. Die Möglichkeit, bereits in Transkribus Normdaten einzugeben,
+                    benützen wir nicht. Neben den Tags verwenden wir das Symbol der Absatzmarke in
+                    der Symbolleiste, um zu markieren, wo ein neuer Absatz beginnt. Davon abgeleitet
+                    haben wir ein Element, <code>&lt;letter-begin/&gt;</code>, das wir in die erste
+                    Zeile eines neuen Briefes setzen, um einen Marker zu haben, wo jeweils eine neue
+                    Datei angelegt werden muss (jeder Brief wird in einer eigenen XML-Datei
+                    gespeichert).</p>
+                <p>Mit dem einmaligen Durcharbeiten eines Briefes und einem einmaligen
+                    Korrekturlesen steht üblicherweise die erste Abschrift.</p>
             </div>
             <div type="level1">
-                <head xml:id="OxygenXML">OxygenXML</head>
+                <head xml:id="OxygenXML">Oxygen</head>
                 <p>Es folgt der Export. Um von Transkribus zu XML/TEI zu gelangen, ist eine <ref
                         type="https://github.com/arthur-schnitzler/arthur-schnitzler-arbeit/tree/main/transkribus-transformationen_action"
-                        >Kaskade</ref> von mehreren XSLT-Transformationen notwendig. Diese kann über
-                    eine <ref
+                        >Kaskade</ref> von XSL-Transformationen notwendig. Diese kann über eine <ref
                         target="https://github.com/arthur-schnitzler/arthur-schnitzler-arbeit/blob/main/.github/workflows/download_work.yml"
-                        >gitHub-Action</ref> funktionieren, nachdem man vorher in
-                        <code>split-files-neu.xsl</code> bestimmte Parameter wie etwa die
-                    Archivsignatur gesetzt hat. Es ist aber meistens einfacher, die Transformation
-                    lokal laufen zu lassen, da sich häufig noch »&amp;« oder ähnliche Sonderzeichen
-                    im Text finden, die bei der Umwandlung Probleme machen. Jedenfalls wird die
-                    METS-Datei zuerst mit <code>page2tei-1.xsl</code>, das Ergebnis dann mit
-                        <code>page2tei-2.xsl</code> umgewandelt. Nun stehen die Einzeldateien und
-                    sind in Folge nach der höchsten Briefnummer im Verzeichnis »editions«
-                    durchgezählt. Diese neuen Dateien werden dann mit <code>page2tei-3.xsl</code>
-                    und <code>back-element-hinzufuegen_facs-normalisieren</code> weiter
+                        >GitHub-Action</ref> ausgeführt werden. In <code>split-files-neu.xsl</code>
+                    können davor bestimmte Parameter, die für alle zu exportierenden Briefe gelten
+                    (z. B. die Archivsignatur), gesetzt werden. Es ist aber meistens einfacher, die
+                    Transformationen lokal laufen zu lassen, da sich häufig noch ›&amp;‹ oder
+                    ähnliche Sonderzeichen im Text finden, die bei der Umwandlung Probleme machen.
+                    Jedenfalls wird die exportierte METS-Datei zuerst mit dem im <ref
+                        target="https://github.com/arthur-schnitzler/arthur-schnitzler-arbeit/blob/main/asbw-projekt.xpr"
+                        >Oxygen-Projekt</ref> angelegten Transformationsszenario
+                        <code>page2tei-1</code>, das Ergebnis dann mit <code>page2tei-2</code>
+                    umgewandelt. Nun stehen die Einzeldateien mit korrekten Dateinamen und IDs im
+                    Verzeichnis »editions«. Diese neuen Dateien werden dann mit
+                        <code>page2tei-3</code> und
+                        <code>back-element-hinzufuegen_facs-normalisieren</code> weiter
                     transformiert.</p>
                 <p>Das Ergebnis sind einzelne Briefdateien im Format XML, bei denen der
-                        <code>teiHeader</code> schon weitgehend ausgefüllt ist. Die Dateien
-                    validieren aber nicht gegen das Schema und es gibt mehrere Probleme, die mit
-                    händischem Nacharbeiten behoben werden müssen. </p>
-                <p>Wichtig ist im ersten Schritt, dass das Datum (auch im Format ISO) vermerkt wird.
-                    Dafür ist vor allem das Element <code>correspDesc</code> relevant. Schnitzlers
-                    Aufenthaltsorte können durch die Liste <code>schnitzler-orte.xml</code> durch
-                    eine Transformation automatisch bezogen werden. Das Empfangsdatum, wenn nicht
-                    vorhanden, wird auf einen bestimmten Zeitraum geschätzt und ebenfalls
-                    automatisch ausgefüllt. Auch die Anpassung der Objektbeschreibung (Brief?
-                    Postkarte?, Schreibmaterial, Stempel?…) kann nun erfolgen. </p>
-                <p>Ab dem Moment, wo die Datei gegen das Schema validiert, werden Entitäten
-                    ausgezeichnet, durchaus auch über mehrere Dateien gleichzeitig, indem
-                    beispielsweise folgender XPath alle Personen im Projekt auflistet, die noch
-                    keine Nummer aus der PMB haben: <code>//rs[@type='person' and @ref='' or
-                        not(@ref)]</code>. Jederzeit kann die Transformation
+                        <code>&lt;teiHeader/&gt;</code> schon weitgehend ausgefüllt ist. Die Dateien
+                    validieren noch nicht gegen das <ref
+                        target="https://github.com/arthur-schnitzler/arthur-schnitzler-arbeit/blob/main/meta/asbwschema.xsd"
+                        >Schema</ref> und es gibt mehrere Probleme, die mit händischer Nacharbeit
+                    behoben werden müssen.</p>
+                <p>Wichtig ist im ersten Schritt, dass das Datum des Briefs (auch im Format ISO) im
+                    Element <code>&lt;correspAction type="sent"/&gt;</code> vermerkt wird.
+                    Schnitzlers Aufenthaltsorte können mit der <ref
+                        target="https://github.com/arthur-schnitzler/schnitzler-orte/blob/main/editions/schnitzler_places.xml"
+                        >Liste</ref> für <ref target="https://schnitzler-orte.acdh.oeaw.ac.at/"
+                        >schnitzler-orte</ref> durch eine Transformation automatisch bezogen werden.
+                    Das Empfangsdatum (<code>&lt;correspAction type="received"/&gt;</code>) wird,
+                    wenn nicht vorhanden, auf einen bestimmten Zeitraum geschätzt und ebenfalls
+                    automatisch ausgefüllt. Auch die Anpassung der Objektbeschreibung (Brief,
+                    Postkarte, Schreibmaterial, Stempel …) kann nun erfolgen. Ausführliche
+                    Kodierungsrichtlinien sind <ref
+                        target="https://schnitzler-briefe.acdh.oeaw.ac.at/elemente.html">hier</ref>
+                    zu finden.</p>
+                <p>In einem weiteren Schritt werden die <ref target="https://pmb.acdh.oeaw.ac.at/"
+                        >PMB</ref>-IDs der markierten Entitäten eingefügt – durchaus auch in
+                    mehreren Dateien gleichzeitig, indem beispielsweise folgender XPath alle
+                    Personen im Projekt auflistet, die noch keine Nummer aus der PMB haben:
+                        <code>//rs[@type='person' and @ref='' or not(@ref)]</code>. Jederzeit kann
+                    das Transformationsszenario
                         <code>back-element-hinzufuegen_facs-normalisieren</code> erneut durchgeführt
-                    werden. Sie zieht aus der PMB die erwähnten Entitäten und schreibt sie in ein
-                        <code>&lt;back /&gt;</code>-Element. Hier finden auch schon Überprüfungen
+                    werden. Es zieht aus der PMB die erwähnten Entitäten und schreibt sie in ein
+                        <code>&lt;back/&gt;</code>-Element. Hier finden auch schon Überprüfungen
                     statt, etwa ob eine Personennummer für ein Werk verwendet wurde: <code>&lt;rs
-                        type="work" ref="#pmb2121" /&gt;</code> würde einen Fehler zeigen.</p>
-                <p>Nun können die Korrespondenzstücke bereits auf die Website geladen werden, ihr
+                        type="work" ref="#pmb2121"/&gt;</code> würde einen Fehler zeigen, weil die
+                    ID für Arthur Schnitzler für ein Werk verwendet wurde.</p>
+                <p>Nun können die Korrespondenzstücke bereits auf die Webseite geladen werden, ihr
                     Entwurfszustand ist aber noch deutlich erkennbar. Zuerst werden die Briefe
-                    automatisch aus dem Arbeitsrepositorium in das Repo <ref
+                    automatisch aus dem <ref
+                        target="https://github.com/arthur-schnitzler/arthur-schnitzler-arbeit"
+                        >Arbeitsrepositorium</ref> in das Repositorium für die Webseite, <ref
                         type="https://github.com/arthur-schnitzler/schnitzler-briefe-data/"
-                        >schnitzler-briefe-data</ref> kopiert. Das geschieht über einen <ref
+                        >schnitzler-briefe-data</ref>, kopiert. Das geschieht über eine <ref
                         target="https://github.com/arthur-schnitzler/schnitzler-briefe-data/actions/workflows/fetch_data.yml"
-                        >Arbeitsablauf</ref>, in Realität ein Button auf der gitHub-Website. Dieser
-                    Import bearbeitet den »whitespace«, indem alles mehr als ein einzelnes
-                    Leerzeichen auf ein Leerzeichen reduziert wird. Und aus den in den ursprünglich
-                    angelegten Dateien expliziten Lang-s-Vorkommen (»Muſe«) werden Elemente
-                        (»<code>Mu&lt;c rendition="#langeS"&gt;s&lt;/c&gt;e</code>«), um
-                    sicherzustellen, dass die Suche auch mit »s« funktioniert. Danach holt eine
-                    weitere <ref
+                        >GitHub-Action</ref>. Dieser Import bearbeitet den ›whitespace‹, indem
+                    alles, was mehr als ein einzelnes Leerzeichen ist, auf ein Leerzeichen reduziert
+                    wird. Und aus den in den ursprünglich angelegten Dateien expliziten
+                    Lang-s-Vorkommen (z. B. »Muſe«) werden Elemente (z. B. »<code>Mu&lt;c
+                        rendition="#langeS"&gt;s&lt;/c&gt;e</code>«), um sicherzustellen, dass die
+                    Suche auch mit ›s‹ funktioniert. Danach holt eine weitere <ref
                         target="https://github.com/arthur-schnitzler/schnitzler-briefe-static/blob/main/.github/workflows/build.yml"
-                        >gitHub-Action</ref> die neuen Dateien auf die Website.</p>
-                <p>Nun folgen mehrere Abläufe der Sichtungen. Dafür rechnen wir mit den beiden
-                    Transformationen <ref
+                        >GitHub-Action</ref> die neuen Dateien auf die Webseite.</p>
+                <p>Es folgen mehrere Sichtungen. Dafür rechnen wir mit den beiden Transformationen
+                        <ref
                         target="https://github.com/arthur-schnitzler/arthur-schnitzler-arbeit/blob/main/xslts/einzel-1-remove-namespaces.xsl"
                         >einzel-1-remove-namespaces.xsl</ref> und <ref
                         target="https://github.com/arthur-schnitzler/arthur-schnitzler-arbeit/blob/main/xslts/einzel-6-korrektur-nach-TeX.xsl"
-                        >einzel-6-korrektur-nach-TeX.xsl</ref> PDFs des Briefs in kritischer
-                    Ansicht. Die TeX-Dateien finden sich in einem eigenen Repositorium: <ref
+                        >einzel-6-korrektur-nach-TeX.xsl</ref> PDFs der Briefe in kritischer
+                    Ansicht. Die TeX-Dateien finden sich in einem eigenen Repositorium, <ref
                         target="https://github.com/arthur-schnitzler/schnitzler-briefe-tex/"
-                        >schnitzler-briefe-tex</ref> und liefern eine Korrekturansicht als PDF,
-                    wobei auch die vorkommenden Entitäten ausgewiesen sind. (Eine mehr oder weniger
-                    analog erstellte Variante davon ist dann die Leseansicht, bei der die PDFs ohne
-                    die Entitäten in Farbe erstellt werden.) </p>
+                        >schnitzler-briefe-tex</ref>, und liefern eine Korrekturansicht als PDF, in
+                    dem auch die vorkommenden Entitäten ausgewiesen sind. (Eine mehr oder weniger
+                    analog erstellte Variante ist die Leseansicht, bei der die PDFs ohne farblich
+                    hervorgehobene Entitäten erstellt werden.)</p>
                 <p>Die Sichtungen erfolgen in Schritten, ein Minimalfall besteht aus vier
                     Schritten:</p>
                 <list>
-                    <item>Transkription des Textes in Transkribus </item>
-                    <item>Händische Nacharbeitung der exportierten XML-Datei, Blick auf das
+                    <item>Transkription des Textes in Transkribus</item>
+                    <item>Händische Nachbearbeitung der exportierten XML-Datei, Blick auf das
                         Faksimile notwendig</item>
-                    <item>Kollationierung (Abgleich) Korrektur-PDF und Faksimile auf der Website.
-                        Die Indizierung muss separat als gesichtet erwähnt werden.</item>
-                    <item>Ein anderes Teammitglied nimmt eine abschließende Lektüre des Texts vor,
+                    <item>Kollationierung (Abgleich) von Korrektur-PDF und Faksimile auf der
+                        Webseite; die Indizierung muss separat als gesichtet erwähnt werden</item>
+                    <item>Ein anderes Teammitglied nimmt eine abschließende Lektüre des Textes vor,
                         nunmehr nur im Ausnahmefall mit Blick auf das Faksimile</item>
                 </list>
                 <p>Oft genug kommt es zu mehreren Sichtungsvorgängen.</p>
@@ -206,16 +225,18 @@
                     noch auf Jahrzehnte hinaus verfügbar sein.</p>
             </div>
             <div type="level1">
-                <head xml:id="Adaption">Adaption von Projekt 1 zu Projekt 2</head>
+                <head xml:id="Adaption">Adaption von Projekt 1 zu Projekt 2</head>
                 <p>In der ersten Laufzeit wurde Transkribus noch nicht verwendet. Stattdessen haben
-                wir die Korrespondenzstücke direkt in OxygenXML mit Vorlagen angelegt. Die Website
-                war auf eXist-DB aufgebaut, was etwas mühsamer zu erstellen war und auch nicht nachhaltig,
-                da nicht sichergestellt werden konnte, dass Server-Updates nicht zu einem Absturz der
-                ganzen Seite führten. Die nunmehr praktizierte Lösung mit einer statischen HTML-Seite ist
-                zwar deutlich ausführlicher (»verbose«), sollte aber dafür, weil nicht mehr auf eine Datenbank
-                zurückgegriffen werden muss, auch nachdem die aktive Entwicklung abgeschlossen ist, deutlich länger halten.</p>
+                    wir die Korrespondenzstücke direkt im Oxygen XML Editor mit Vorlagen angelegt.
+                    Die Webseite war auf <ref
+                        target="https://exist-db.org/exist/apps/homepage/index.html">eXist-db</ref>
+                    aufgebaut, was etwas mühsamer zu erstellen war und auch nicht nachhaltig, da
+                    nicht sichergestellt werden konnte, dass Server-Updates nicht zu einem Absturz
+                    der ganzen Seite führten. Die nunmehr praktizierte Lösung mit einer statischen
+                    HTML-Seite ist zwar deutlich ausführlicher (›verbose‹), sollte aber, vor allem
+                    weil nicht mehr auf eine Datenbank zurückgegriffen werden muss und die aktive
+                    Entwicklung abgeschlossen ist, deutlich länger halten.</p>
             </div>
-            
         </body>
     </text>
 </TEI>

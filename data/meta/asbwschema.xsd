@@ -226,9 +226,9 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:assert
-            test="tei:date/@when or (tei:date/@notAfter and tei:date/@notBefore) or (tei:date/@from and tei:date/@to) or not(tei:date)"/>
+            test="position()=1 and (tei:date/@when or (tei:date/@notAfter and tei:date/@notBefore) or (tei:date/@from and tei:date/@to) or not(tei:date))"/>
          <xs:assert test="tei:persName/@ref or not(tei:persName)"/>
-         <xs:assert test="tei:date[not(matches(., '\n\s+\n\s+'))]"/>
+         <xs:assert test="not(tei:date) or tei:date[not(matches(., '\n\s+\n\s+'))]"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="addressee">
@@ -508,7 +508,7 @@
          </xs:sequence>
          <xs:attribute name="n" use="required" type="xs:integer"/>
          <xs:assert
-            test="tei:placeName[(starts-with(@ref, '#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN') or (tokenize(@ref, ' #pmb')[2])] or not(child::tei:placeName)"
+            test="tei:placeName[(starts-with(@ref, '#pmb') and not(@ref='#pmb') and (string(number(substring-after(@ref, '#pmb'))) != 'NaN')  or (tokenize(@ref, ' #pmb')[2]))] or not(child::tei:placeName)"
          />
       </xs:complexType>
    </xs:element>
@@ -1511,6 +1511,7 @@
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
+         <xs:assert test="child::tei:* or not(matches(., '^\s|\s$'))"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="supplied">

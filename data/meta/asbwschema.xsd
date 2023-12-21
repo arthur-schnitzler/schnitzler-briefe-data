@@ -381,11 +381,13 @@
       <xs:restriction base="xs:NCName">
          <xs:enumeration value="blatt"/>
          <xs:enumeration value="seite"/>
+         <xs:enumeration value="zeichenanzahl"/>
          <xs:enumeration value="umschlag"/>
          <xs:enumeration value="karte"/>
          <xs:enumeration value="kartenbrief"/>
          <xs:enumeration value="telegramm"/>
          <xs:enumeration value="widmung"/>
+         
       </xs:restriction>
    </xs:simpleType>
    <!-- Define the 'measure' element with attributes 'unit' and 'quantity' -->
@@ -399,9 +401,10 @@
    <xs:element name="extent">
       <xs:complexType>
          <xs:all>
-            <xs:element ref="tei:measure" maxOccurs="unbounded"/>
+            <xs:element ref="tei:measure" maxOccurs="unbounded" minOccurs="1"/>
          </xs:all>
          <xs:assert test="count(distinct-values(tei:measure/@unit)) = count(tei:measure)"/>
+         <xs:assert test="tei:measure[@unit='zeichenanzahl']"/>
       </xs:complexType>
    </xs:element>
    <!-- Define the 'supportDesc' element with 'extent' as its child -->

@@ -159,7 +159,7 @@
                     Das Empfangsdatum (<code>&lt;correspAction type="received"/&gt;</code>) wird,
                     wenn nicht vorhanden, auf einen bestimmten Zeitraum geschätzt und ebenfalls
                     automatisch ausgefüllt. Auch die Anpassung der Objektbeschreibung (Brief,
-                    Postkarte, Schreibmaterial, Stempel …) kann nun erfolgen. Ausführliche
+                    Postkarte, Schreibmaterial, Stempel…) kann nun erfolgen. Ausführliche
                     Kodierungsrichtlinien sind <ref
                         target="https://schnitzler-briefe.acdh.oeaw.ac.at/elemente.html">hier</ref>
                     zu finden.</p>
@@ -191,7 +191,10 @@
                     Suche auch mit ›s‹ funktioniert. Danach holt eine weitere <ref
                         target="https://github.com/arthur-schnitzler/schnitzler-briefe-static/blob/main/.github/workflows/build.yml"
                         >GitHub-Action</ref> die neuen Dateien auf die Webseite.</p>
-                <p>Es folgen mehrere Sichtungen. Dafür rechnen wir mit den beiden Transformationen
+                <p>Die Website basiert auf dem <ref target="https://github.com/acdh-oeaw/dse-static-cookiecutter">DSE-Static-Cookiecutter</ref>, die
+                unter der Leitung von Peter Andorfer entwickelte Vorlage für statische Editionen. XSLTs transformieren die TEI-Dateien in HTML-Darstellungen
+                um. Dadurch kann auf eine eigene Datenbank verzichtet werden. Für die Suche kommt <ref target="https://typesense.org/">Typesense</ref> zum Einsatz.</p>
+                <p>Es folgen mehrere Sichtungen den Korrespondenzstücke. Dafür rechnen wir mit den beiden Transformationen
                         <ref
                         target="https://github.com/arthur-schnitzler/arthur-schnitzler-arbeit/blob/main/xslts/einzel-1-remove-namespaces.xsl"
                         >einzel-1-remove-namespaces.xsl</ref> und <ref

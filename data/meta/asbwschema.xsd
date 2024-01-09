@@ -229,6 +229,9 @@
             test="position()=1 and (tei:date/@when or (tei:date/@notAfter and tei:date/@notBefore) or (tei:date/@from and tei:date/@to) or not(tei:date))"/>
          <xs:assert test="tei:persName/@ref or not(tei:persName)"/>
          <xs:assert test="not(tei:date) or tei:date[not(matches(., '\n\s+\n\s+'))]"/>
+         <xs:assert
+            test="tei:placeName[(starts-with(@ref, '#pmb') and not(@ref='#pmb') and (string(number(substring-after(@ref, '#pmb'))) != 'NaN')  and not(contains(@ref, ' ')))] or not(child::tei:placeName)"
+         />
       </xs:complexType>
    </xs:element>
    <xs:element name="addressee">
@@ -547,12 +550,14 @@
    </xs:element>
    <xs:element name="biblStruct">
       <xs:complexType>
-         <xs:all minOccurs="0">
-            <xs:element ref="tei:analytic" minOccurs="0"/>
-            <xs:element ref="tei:monogr" minOccurs="1"/>
-            <xs:element ref="tei:series" minOccurs="0"/>
+         <xs:all>
+            <xs:element ref="tei:analytic" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="tei:monogr" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="tei:series" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="tei:note" minOccurs="0" maxOccurs="1"/>
          </xs:all>
          <xs:attribute name="corresp" type="xs:NCName"/>
+         <xs:assert test="tei:note[tei:measure[@unit='zeichenanzahl' and @quantity]] or not(tei:note)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="analytic">
@@ -1111,6 +1116,7 @@
                <xs:enumeration value="commentary"/>
                <xs:enumeration value="textConst"/>
                <xs:enumeration value="footnote"/>
+               <xs:enumeration value="zeichenanzahl"/>
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
@@ -1130,6 +1136,13 @@
       </xs:sequence>
       <xs:attribute name="type" type="xs:string" use="required"/>
    </xs:complexType>
+   <xs:complexType name="biblStruct_type-measure">
+      <xs:sequence minOccurs="1">
+         <xs:element ref="tei:measure" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="required"/>
+      <xs:assert test="@type='zeichenanzahl'"/>
+   </xs:complexType>
    <xs:complexType name="backNote_type">
       <!-- Element mit Textinhalt und Attributen, aber keinen Kindern -->
       <xs:simpleContent>
@@ -1142,6 +1155,7 @@
       <xs:alternative type="backNote_type"
          test="@type = 'work_kind' or @type = 'uri_worklink' or @type = 'bibliografische_angabe' or @type = 'references'"/>
       <xs:alternative type="backNote_type-org" test="@type = 'apis_dates'"/>
+      <xs:alternative type="biblStruct_type-measure" test="@type ='zeichenanzahl'"/>
       <xs:alternative type="normalNote"/>
    </xs:element>
    <xs:element name="Lemma" type="xs:string"/>

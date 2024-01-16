@@ -164,6 +164,14 @@
                                 Heller&lt;/org&gt;&lt;space unit="chars"
                                 quantity="1"/&gt;&lt;date&gt;1909&lt;/date&gt;</code>«). Der letzte,
                             schließende Punkt wird nach dem <code>&lt;/bibl&gt;</code> gesetzt. </p>
+                        <p>Fehlende Verfasserinnen- und Verfasserangaben werden mit »[O. V.]«
+                            markiert, wobei das Leerzeichen fix ist. Nach der schließenden eckigen
+                            Klammer folgt ein Doppelpunkt, dann kommt der Titel. Bsp.: [O. V.]:
+                            Titel. Wenn der Autor oder die Autorin trotz fehlender Angabe bekannt
+                            ist, wird der Name in eckige Klammern gesetzt, »[O. V.]« entfällt. Bsp.:
+                            [Name]: Titel. Wenn ein Kürzel oder ein Pseudonym aufgelöst wird, wird
+                            hinter das Kürzel oder Pseudonym »[ = Name]:« gesetzt, wieder mit fixen
+                            Leerzeichen. Bsp.: Kürzel [ =&#160;Name ]: Titel.</p>
                     </div>
                     <div type="level3">
                         <head xml:id="quote">quote</head>
@@ -213,7 +221,8 @@
                 <div type="level2">
                     <head xml:id="edierter_text">Edierter Text</head>
                     <div type="level3">
-                        <head xml:id="edierter_text_ref_corresp_key_scribe">@ref, @corresp, @key, @scribe</head>
+                        <head xml:id="edierter_text_ref_corresp_key_scribe">@ref, @corresp, @key,
+                            @scribe</head>
                         <p>Diese Attribute stellen Bezugnahmen auf Entitäten dar, die im Webservice
                             PMB <ref target="https://pmb.acdh.oeaw.ac.at/"
                                 >https://pmb.acdh.oeaw.ac.at/</ref> verzeichnet sind. Vorangestellt
@@ -604,21 +613,27 @@
                             besondere Hinweise zur Drucksorte, etwa wenn ein Trauerrand vorhanden
                             ist oder ein Wappen aufgeprägt. Die Aussage wird entweder als Stichwort
                             (»Trauerrand«) oder sprachlich ausformuliert getroffen, wenn nur ein
-                            Teil der Materialien betroffen sind (Umschlag mit Trauerrand«).
-                                <code>condition</code> kommt im Normalfall nur mit dem Attribut
+                            Teil der Materialien betroffen sind (»Umschlag mit Trauerrand«).</p>
+                        <p>
+                            <code>condition</code> kommt im Normalfall nur mit dem Attribut
                                 <code>@ana</code>, das den Inhalt »fragment« hat und darauf
                             hinweist, dass das vorliegende Objekt nur unvollständig überliefert
                             ist.</p>
                         <p><code>extent</code> quantifiziert in mehreren
                             <code>measure</code>-Elementen die verschiedenen Materialien, die das
                             Korrespondenzstück (ohne Beilagen) ausmachen.</p>
-                        <p>Für (Post-)Karten, Kartenbriefe und Widmungen wird auf die Blatt- und Seitenzählung
-                            verzichtet, da diese für gewöhnlich aus einer oder zwei Seiten bestehen
-                            und das sehr einfach ermittelt werden kann. Dafür ist eine Art
-                            Platzhalterelement vorgesehen, das »widmung«, »kartenbrief« oder »karte« als @unit hat.
-                            Im Ausnahmefall kann das Element aber auch Angaben zur Seiten und
+                        <p>Für (Post-)Karten, Kartenbriefe und Widmungen wird auf die Blatt- und
+                            Seitenzählung verzichtet, da diese für gewöhnlich aus einer oder zwei
+                            Seiten bestehen und das sehr einfach ermittelt werden kann. Dafür ist
+                            eine Art Platzhalterelement vorgesehen, das »widmung«, »kartenbrief«
+                            oder »karte« als @unit hat. Im Ausnahmefall – wenn mehrere Karten eine
+                            Einheit bilden – kann das Element aber auch Angaben zur Seiten und
                             Blattzählung haben.</p>
-                        
+                        <p>Die Angabe zur Zeichenanzahl wird automatisch ermittelt. Sie
+                            berücksichtigt nur den im <code>&lt;body&gt;</code> enthaltenen Text und
+                            übergeht verständlicherweise Kommentare und Textanmerkungen.
+                            Vorgedruckter Text wird ebenfalls übergangen. Der nicht gedruckte
+                            Textinhalt von Beilagen wird mitgezählt.</p>
                         <div type="example">
                             <p>3 Blatt, 6 Seiten mit Umschlag:</p>
                             <p>
@@ -627,6 +642,7 @@
                                 <lb/>
                                 <code>&lt;measure unit="blatt" n="3"/&gt;</code><lb/>
                                 <code>&lt;measure unit="umschlag" n="1"/&gt;</code><lb/>
+                                <code>&lt;measure unit="zeichenanzahl" n="1560"/&gt;</code><lb/>
                                 <code>&lt;/extent&gt;</code></p>
                             <p/>
                         </div>
@@ -635,6 +651,21 @@
                             <p>
                                 <code>&lt;measure unit="karte" n="1" /&gt;</code><lb/>
                                 <code>&lt;measure unit="widmung" n="1" /&gt;</code></p>
+                        </div>
+                        <div type="example">
+                            <p>Beispiele für<code>&lt;support/&gt;</code>:</p>
+                            <p>
+                                <code>&lt;support&gt;aufgeprägtes Wappen&lt;/support&gt;</code><lb/>
+                                <code>&lt;support&gt;Abriss aus einem
+                                    Postbuch&lt;/support&gt;</code>
+                                <lb/>
+                                <code>&lt;support&gt;Seite 3 quer zur üblichen
+                                    Schreibrichtung&lt;/support&gt;</code><lb/>
+                                <code>&lt;support&gt;Paginierung&lt;/support&gt;</code><lb/>
+                                <code>&lt;support&gt;Zählung der Blätter 2 und
+                                    3&lt;/support&gt;</code><lb/>
+                            </p>
+                            <p/>
                         </div>
                     </div>
                     <div type="level3">

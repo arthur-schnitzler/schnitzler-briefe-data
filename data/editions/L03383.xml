@@ -76,7 +76,7 @@
                         <repository>Deutsches Literaturarchiv</repository>
                         <idno>A:Schnitzler, HS.NZ85.1.3173</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="karte" quantity="1"/><measure unit="zeichenanzahl" quantity="379"/></extent></supportDesc></objectDesc><handDesc hands="2"><handNote medium="blaue_tinte" style="deutsche-kurrent" corresp="#pmb11485"/><handNote medium="blaue_tinte" style="lateinische-kurrent" corresp="#pmb11485"><p>Adresse</p></handNote></handDesc><additions><incident type="postal"><desc><stamp n="1"><placeName ref="#pmb50">Wien 1/1 15</placeName><date when="1903-08-11">11 VIII 03</date><time>6 30N</time></stamp><stamp n="2"><placeName ref="#pmb50">Wien 9/2 71</placeName><date when="1903-08-11">11 VIII 03</date><time>7 20N</time></stamp></desc></incident><incident type="receiver"><desc>mit Bleistift datiert: »<quote><date when="1903-08-11">11. 8 <supplied>1</supplied>903</date>.</quote>«</desc></incident></additions></physDesc>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="karte" quantity="1"/><measure unit="zeichenanzahl" quantity="379"/></extent></supportDesc></objectDesc><handDesc hands="2"><handNote medium="blaue_tinte" style="deutsche-kurrent" corresp="#pmb11485"/><handNote medium="blaue_tinte" style="lateinische-kurrent" corresp="#pmb11485"><p>Adresse</p></handNote></handDesc><additions><incident type="postal"><desc><stamp n="1"><placeName ref="#pmb50">Wien 1/1 15 r</placeName><date when="1903-08-11">11 VIII 03</date><time>6 30N</time></stamp><stamp n="2"><placeName ref="#pmb50">Wien 9/2 71 r</placeName><date when="1903-08-11">11 VIII 03</date><time>7 20N</time></stamp></desc></incident><incident type="receiver"><desc>mit Bleistift datiert: »<quote><date when="1903-08-11">11. 8 <supplied>1</supplied>903</date>.</quote>«</desc></incident></additions></physDesc>
                   </msDesc>
                </witness>
             </listWit>
@@ -110,10 +110,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2023-10-16">Export aus Transkribus</change>
          <change who="MAM" when="2023-12-11">Index check</change>
          <change who="MAM" when="2023-12-11">Durchsicht</change>
+         <change who="LU" when="2024-01-15">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -207,6 +208,30 @@
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
+            <person xml:id="pmb23674">
+               <persName>
+                  <forename>Theodore</forename>
+                  <surname>Rottenberg</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Adickes</persName>
+               <persName type="person_geburtsname-vorname">Marie Theodore Emilie
+                  Magdalene</persName>
+               <birth>
+                  <date when="1875-09-07">1875-09-07</date>
+               </birth>
+               <death>
+                  <date when="1945-04-05">1945-04-05</date>
+                  <settlement ref="pmb43292">
+                     <placeName type="pref">Limburg an der Lahn</placeName>
+                     <location>
+                        <geo>50,3836 8,0503</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19434</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/23674/</idno>
+            </person>
          </listPerson>
          <listPlace>
             <place xml:id="pmb50">
@@ -220,8 +245,8 @@
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer_name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
-               <desc type="entity_type_id">14</desc>
+               <desc type="entity_type">A.ADM2</desc>
+               <desc type="entity_type_id">1135</desc>
                <location type="coords">
                   <geo>48,2066 16,37341</geo>
                </location>
@@ -239,10 +264,12 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
             <place xml:id="pmb397">
                <placeName>Frankgasse</placeName>
@@ -258,12 +285,12 @@
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb397.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/397/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb397.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb397.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb397.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb397.html</idno>
             </place>
             <place xml:id="pmb40264">
                <placeName>Franzensfeste</placeName>
-               <desc type="entity_type">http://www.geonames.org/ontology#A.ADM3</desc>
+               <desc type="entity_type">A.ADM3</desc>
                <desc type="entity_type_id">1124</desc>
                <location type="coords">
                   <geo>46,78333 11,6</geo>
@@ -314,7 +341,7 @@
             <place xml:id="pmb40260">
                <placeName>Bozen</placeName>
                <placeName type="alternative-name">Bolzano</placeName>
-               <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
+               <desc type="entity_type">P.PPLA2</desc>
                <desc type="entity_type_id">1134</desc>
                <location type="coords">
                   <geo>46,49067 11,33982</geo>
@@ -332,8 +359,8 @@
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40260.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/60315/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4007901-6</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb40260.html</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Bozen</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb40260.html</idno>
             </place>
          </listPlace>
       </back>

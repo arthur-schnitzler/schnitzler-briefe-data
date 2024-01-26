@@ -71,13 +71,15 @@
                   <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
-                        <country>D</country>
-                        <settlement>Marbach am Neckar</settlement>
-                        <repository>Deutsches Literaturarchiv</repository>
-                        <idno>A:Schnitzler, XXXX</idno>
-                        <!-- eventuell ÖGL -->
+                        <country>A</country>
+                        <settlement>Wien</settlement>
+                        <repository>Wienbibliothek im Rathaus</repository>
+                        <idno>ZPH 1681/19, 4.1.2.14</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="blatt" quantity="3"/><measure unit="seite" quantity="3"/><measure unit="zeichenanzahl" quantity="2202"/></extent></supportDesc></objectDesc><typeDesc><p>maschinell</p></typeDesc><handDesc><handNote medium="bleistift" style="nicht_anzuwenden"><p>zwei marginale Korrekturen</p></handNote></handDesc></physDesc>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="blatt" quantity="3"/><measure unit="seite" quantity="3"/><measure unit="zeichenanzahl" quantity="2362"/></extent></supportDesc></objectDesc><handDesc><handNote medium="schwarze_tinte" style="nicht_anzuwenden" corresp="#pmb2121"><p>Schlussformel und Unterschrift</p></handNote><handNote medium="bleistift" style="lateinische-kurrent" corresp="#pmb2121"><p>Korrekturen mit Bleistift</p></handNote></handDesc><typeDesc><p>Schreibmaschine</p></typeDesc><additions><incident type="archival" rend="bleistift"><desc>von unbekannter Hand in Blockbuchstaben über dem Text Vermerk:
+                                    »<quote>Arthur Schnitzler</quote>«</desc></incident><incident type="archival" rend="bleistift"><desc>von unbekannter Hand in lateinischer Kurrentschrift seitlich
+                                 neben der Unterschrift Vermerk: »<quote><p>NB: bleibt!</p><p>in normaler Schrift, nicht gesperrt</p></quote>«</desc></incident><incident type="archival" rend="bleistift"><desc>von unbekannter Hand in deutscher Kurrentschrift unterhalb der
+                                 Unterschrift Vermerk: »<quote><p>Arthur Schnitzler</p></quote>«</desc></incident></additions></physDesc>
                   </msDesc>
                </witness>
                <witness n="2">
@@ -89,11 +91,29 @@
                         <repository>Deutsches Literaturarchiv</repository>
                         <idno>A:Schnitzler, HS.NZ85.1.1751</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc form="ms_abschrift"><supportDesc><extent><measure unit="blatt" quantity="2"/><measure unit="seite" quantity="2"/><measure unit="zeichenanzahl" quantity="2202"/></extent></supportDesc></objectDesc><typeDesc><p>maschinell</p></typeDesc><additions><incident type="archival" rend="schwarze_tinte"><desc>Vermerk »<quote>Salten</quote>«</desc></incident><incident type="archival" rend="bleistift"><desc>Vermerk »<quote><date>6. 9. 1929</date></quote>«</desc></incident></additions></physDesc>
+                     <physDesc><objectDesc form="ms_abschrift"><supportDesc><extent><measure unit="blatt" quantity="2"/><measure unit="seite" quantity="2"/></extent></supportDesc></objectDesc><typeDesc><p>maschinell</p></typeDesc><additions><incident type="archival" rend="schwarze_tinte"><desc>Vermerk »<quote>Salten</quote>«</desc></incident><incident type="archival" rend="bleistift"><desc>Vermerk »<quote><date>6. 9. 1929</date></quote>«</desc></incident></additions></physDesc>
                   </msDesc>
                </witness>
             </listWit>
             <listBibl>
+               <biblStruct>
+                  <analytic>
+                     <title level="a">Arthur Schnitzler</title>
+                  </analytic>
+                  <monogr>
+                     <title level="m">Felix Salten, dem Freund und verehrten Autor zu seinem
+                        60. Geburtstag mit herzlichen Glückwünschen überreicht vom Paul Zsolnay
+                        Verlag</title>
+                     <imprint>
+                        <date when="1929-09-06">6. September 1929</date>
+                        <pubPlace>Berlin</pubPlace>
+                        <pubPlace>Wien</pubPlace>
+                        <pubPlace>Leipzig</pubPlace>
+                        <publisher>Zsolnay</publisher>
+                     </imprint>
+                     <biblScope unit="pp">12–13</biblScope>
+                  </monogr>
+               </biblStruct>
                <biblStruct>
                   <monogr>
                      <title level="m" ref="#pmb41325">Jahrbuch Paul Zsolnay Verlag – 1930</title>
@@ -138,13 +158,16 @@
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1929-11-08">[8. 11.?] 1929</date>
+               <date when="1929-09-06">[6. 9.?] 1929</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L02514">Adam an Schnitzler, 22. 7. 1929</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L02515">Hofmannsthal an Schnitzler, [29. 7. 1929]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_2167" target="L03043">Salten an Schnitzler, 1. 10. 1928</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L02514">Adam an
+                  Schnitzler, 22. 7. 1929</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L02515">Hofmannsthal an
+                  Schnitzler, [29. 7. 1929]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_2167" target="L03043">Salten an Schnitzler,
+                  1. 10. 1928</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_2167" target="L03587">Salten an Schnitzler, 21. 9. 1929</ref>
             </correspContext>
          </correspDesc>
@@ -161,65 +184,45 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><salute><pb facs="DLA_85.1.1751_00069"/>Mein lieber Felix Salten.</salute></opener><p>Am liebsten hätte ich Ihnen zu Ihrem <anchor type="commentary" xml:id="K_L02950-1"/>60. Geburtstag<note type="commentary" xml:id="K_L02950-1h"><rs type="person" ref="#pmb2167">Salten</rs> feierte am <date>6. 9. 1929</date>
+         <div type="writingSession" n="1"><opener><salute><pb facs="DLA_85.1.1751_00069"/>Mein lieber Felix Salten.</salute></opener><p>Am liebsten hätte ich Ihnen zu Ihrem <anchor type="commentary" xml:id="K_L02950-1"/>sechzigsten Geburtstag<note type="commentary" xml:id="K_L02950-1h"><rs type="person" ref="#pmb2167">Salten</rs> feierte am <date>6. 9. 1929</date>
                   seinen 60. Geburtstag. <rs type="person" ref="#pmb2121">Schnitzler</rs>
-                  finalisierte den Text am <ref type="schnitzler-tagebuch" target="1929-07-29" subtype="date-only"/>. Der »Brief« erschien im <rs type="work" ref="#pmb41325">Jahrbuch Paul Zsolnay Verlag</rs> für das Jahr <date>1930</date>, das ab
-                     <date>8. 11. 1929</date> lieferbar war. Die Druckfassung weicht an mehreren
-                  Stellen von der hier präsentierten Fassung ab, die eindeutig die frühere Form
-                  darstellt. Ob <rs type="person" ref="#pmb2167">Salten</rs> bereits diese oder erst
-                  die gedruckte Fassung zu sehen bekam, muss offen bleiben.</note> ganz privat und
-               sehr herzlich die Hand gedrückt, Sie hätten dann ohneweiteres gewusst und empfunden,
-               was ich hier niederzuschreiben <anchor type="commentary" xml:id="K_L02950-11"/>versuche<note type="commentary" xml:id="K_L02950-11h">In der Druckfassung
-                     steht: »<quote>vergeblich versuchen werde</quote>«</note> – und etwas mehr.
-               Denn bei einem solchen Anlass und gar vor <anchor type="commentary" xml:id="K_L02950-111"/>der Oeffentlichkeit<note type="commentary" xml:id="K_L02950-111h">In der Druckfassung steht: »<quote>mehr oder minder fremden
-                     Leuten</quote>«</note> die rechten Worte zu finden ist nicht ganz leicht, zumal
-               für Einen, der weder zum Essayisten noch zum Festredner geboren ist. </p><p>Ueber das, was man gemeiniglich Leistungen zu nennen pflegt, werden Ihnen <anchor type="commentary" xml:id="K_L02950-1111"/>die Berufenen allerlei<note type="commentary" xml:id="K_L02950-1111h">In der Druckfassung steht: »<quote>in
-                     diesen Tagen Berufene nach Verdienst viel</quote>«</note> Ehrenvolles zu sagen
-               wissen; <anchor type="commentary" xml:id="K_L02950-2"/>mir ist jenseits <note type="commentary" xml:id="K_L02950-2h">In der Druckfassung steht: »<quote>mir
-                     persönlich ist jenseits all</quote>«</note> des Ausserordentlichen, was Sie als
-               Dichter, Journalist und Schriftsteller <anchor type="commentary" xml:id="K_L02950-3"/>geleistet<note type="commentary" xml:id="K_L02950-3h">In der Druckfassung steht:
-                     »<quote>gewirkt</quote>«</note> haben, (dies ist eine alphabetische Reihenfolge
-               und keine Klassifikation) <anchor type="commentary" xml:id="K_L02950-"/>Ihre
-                  Persönlichkeit<note type="commentary" xml:id="K_L02950-h">In der Druckfassung
-                  steht: »<quote>vor allem des Gesamtbild Ihres Wesens</quote>«</note> wert und
-               bedeutungsvoll, <anchor type="commentary" xml:id="K_L02950-88"/>deren<note type="commentary" xml:id="K_L02950-88h">In der Druckfassung steht:
-                     »<quote>dessen</quote>«</note> Entwicklung seit frühesten Anfängen ich mit
-               Spannung, Sympathie und Teilnahme nachbarlich mitangesehen und bis zum heutigen Tage
-               als Freund begleitet habe. Einem <anchor type="commentary" xml:id="K_L02950-7"/>Mann
-               wie Ihnen, angeregt von allen Seiten und anregend nach überallhin, erfüllt von der
-               fruchtbarsten Neugier und zugleich von Interessen bewegt, die ins Umfassende und
-               Tiefe gingen, Einfühler und Eindenker im besten Sinn und dabei eigensinnig und
-               selbständig an Geist und Seele, der sich nach reichem äusseren und inneren Verdienst
-               mit der Zeit so viele Bewunderer erwarb, konnte es natürlich auch an Gegnern nicht
-                  fehlen<note type="commentary" xml:id="K_L02950-7h">In der Druckfassung steht:
-                     »<quote>Manne wie Sie, der, erfüllt von der fruchtbarsten Neugier und von der
-                     dankbarsten Empfänglichkeit, angeregt von überallher, anregend in die Nähe und
-                     in die Ferne, Einfühler und Eindenker im besten Sinn, und dabei eigenwillig und
-                     selbständig wie Wenige, sich so viele Schätzer und Bewunderer erwarb, konnte es
-                     natürlich auch nicht an Widersachern fehlen</quote>«</note>;– welche Genugtuung
-               muss es <anchor type="commentary" xml:id="K_L02950-12"/>Ihnen<note type="commentary" xml:id="K_L02950-12h">In der Druckfassung steht: »<quote>für Sie</quote>«</note>
-               sein, wenn Sie heute an der Schwelle Ihrer dritten Jugend, in diesem Land der
-               Missgunst und der Vorbehalte <anchor type="commentary" xml:id="K_L02950-888"/>Ihre
-               vielseitige und immer lebendige Begabung<note type="commentary" xml:id="K_L02950-888h">In der Druckfassung steht: »<quote>sich sagen dürfen, dass
-                     Ihre reiche, vielfältige und in jedem Augenblick lebendige
-                  Begabung</quote>«</note> gegen manches nicht immer unabsichtliche <anchor type="commentary" xml:id="K_L02950-76"/>Missverstehen<note type="commentary" xml:id="K_L02950-76h">In der Druckfassung steht: »<quote>Missverstehen
-                     sich</quote>«</note> von Jahr zu Jahr in stets höherem Masse durchzusetzen
-               vermochten. Sie stehen am Ziele – würde ich sagen, wenn ich nicht, <anchor type="commentary" xml:id="K_L02950-14"/>verwöhnt durch Ihre eigene Schuld<note type="commentary" xml:id="K_L02950-14h">In der Druckfassung steht: »<quote>durch
-                     Ihre eigene Schuld verwöhnt</quote>«</note>, gerade nach <pb facs="DLA_85.1.1751_00070"/><anchor type="commentary" xml:id="K_L02950-90"/>Ihren Arbeits- und Lebensleistungen
-                  der<note type="commentary" xml:id="K_L02950-90h">In der Druckfassung steht:
-                     »<quote>den Arbeits- und Lebensleistungen Ihrer</quote>«</note>
-               letztvergangenen Jahre <anchor type="commentary" xml:id="K_L02950-66"/>ein<note type="commentary" xml:id="K_L02950-66h">In der Druckfassung steht: »<quote>ein
-                     immer</quote>«</note> Weiter- und Höherschreiten mit froher Gewissheit von
-               Ihnen erwartete. <anchor type="commentary" xml:id="K_L02950-15"/>Aber ich<note type="commentary" xml:id="K_L02950-15h">In der Druckfassung steht:
-                     »<quote>Ich</quote>«</note> will nichts prophezeien, so wenig diese <anchor type="commentary" xml:id="K_L02950-57"/>paar<note type="commentary" xml:id="K_L02950-57h">In der Druckfassung steht:
-                  »<quote>bescheidenen</quote>«</note> Worte als Rückblick gelten dürfen,– <anchor type="commentary" xml:id="K_L02950-64"/>ich will mich nur freuen<note type="commentary" xml:id="K_L02950-64h">In der Druckfassung steht: »<quote>aber
-                     freuen will ich mich</quote>«</note>, dass man Ihnen, mein lieber Freund, an
-                  <anchor type="commentary" xml:id="K_L02950-112"/>einem solchen Festtag<note type="commentary" xml:id="K_L02950-112h">In der Druckfassung steht: »<quote>diesem
-                     festlichen Tage</quote>«</note> in doppelter Hinsicht, den Blick sowohl in die
-               Vergangenheit als <anchor type="commentary" xml:id="K_L02950-123"/>in die Zukunft
-                  gewendet<note type="commentary" xml:id="K_L02950-123h">In der Druckfassung steht:
-                     »<quote>der Zukunft zugewendet</quote>«</note>, so vertrauensvoll und so von
-               ganzem Herzen Glück wünschen kann. </p></div>
+                  finalisierte den Text am <ref type="schnitzler-tagebuch" target="1929-07-29" subtype="date-only"/>. Der »Brief« erschien zuerst in einem Sonderdruck für den
+                  Jubilar in Großformat und auf Büttenpapier, dann wenige Wochen später im <rs type="work" ref="#pmb41325">Jahrbuch Paul Zsolnay Verlag</rs> für das Jahr
+                     <date>1930</date>, das ab <date>8. 11. 1929</date> lieferbar war. Eine 
+               Entwurfsfassung mit teilweise unterschiedlichen Formulierungen, jedoch ohne
+               inhaltlich bedeutsam abzuweichen, ist im <bibl><pubPlace>DLA</pubPlace></bibl>
+               überliefert. Ob <rs type="person" ref="#pmb2167">Salten</rs> den getippten Brief oder erst die gedruckte Fassung zu sehen bekam, muss
+                  offen bleiben.</note> ganz privat und sehr herzlich die Hand gedrückt; Sie hätten
+               dann ohneweiters gewusst und empfunden, was ich hier niederzuschreiben vergeblich
+               versuchen werde – und etwas mehr. Denn bei einem solchen Anlass und gar vor mehr oder
+               minder fremden Leuten die rechten Worte zu finden, ist nicht ganz leicht, zumal für
+               Einen, der weder zum Essayisten noch zum Festredner geboren ist. </p><p>Ueber das, was man gemeiniglich Leistungen zu nennen pflegt, werden Ihnen in diesen
+               Tagen Berufene nach Verdienst viel Ehrenvolles zu sagen wissen; mir persönlich ist
+                  <del rend="strikethrough">noch</del> jenseits <del rend="strikethrough">all</del>
+               des Ausserordentlichen, was Sie als Dichter, Journalist und Schriftsteller gewirkt
+               haben (dies ist eine alphabetische Reihenfolge und keine Klassifikation) <pb facs=""/><add place="above">vor allem</add> das Gesamtbild Ihres Wesens wert und
+               bedeutungsvoll, dessen Entwicklung seit frühesten Anfängen ich mit Spannung,
+               Sympathie und Teilnahme nachbarlich mitangesehen und bis zum heutigen Tage als Freund
+               begleitet habe. Einem Manne, wie Sie, der, erfüllt von der fruchtbarsten Neugier und
+               von der dankbarsten Empfänglichkeit, angeregt von überallher, anregend in die Nähe
+               und in die Ferne, Einfühler und Eindenker im besten Sinn, und dabei eigenwillig und
+               selbstständig wie Wenige, sich so viele Schätzer und Bewunderer erwarb, konnte es
+               natürlich auch nicht an Widersachern fehlen;– welche Genugtuung muss es für Sie sein,
+               wenn Sie heute an der Schwelle Ihrer dritten Jugend, in diesem Land der Missgunst und
+               der Vorbehalte sich sagen dürfen, dass Ihre reiche, vielfältige und in jedem
+               Augenblick lebendige Begabung <pb facs=""/>gegen manches nicht immer unabsichtliche
+               Missverstehen sich von Jahr zu Jahr in stets höherem Maasse durchzusetzen vermocht<subst><del rend="strikethrough">e</del><add place="above"><space unit="chars" quantity="1"/>hat</add></subst>.
+               Sie stehen am Ziele – würde ich sagen, wenn ich nicht, durch Ihre eigene Schuld
+                     verwöhnt, gerade nach den Arbeits- und Lebensleistungen Ihrer
+               letztvergangenen Jahre ein
+                     immer Weiter- und Höherschreiten mit froher Gewissheit von
+               Ihnen erwartete. Ich will nichts prophezeien, so wenig diese bescheidenen
+               Worte als Rückblick gelten dürfen,– aber
+                     freuen will ich mich, dass man Ihnen, mein lieber Freund, an
+                  diesem
+                     festlichen Tage in doppelter Hinsicht, den Blick sowohl in die
+               Vergangenheit als der Zukunft <subst><del rend="strikethrough">zugewendet</del><add place="mixed">zu gewandt</add></subst>, so vertrauensvoll und so von
+               ganzem Herzen Glück wünschen kann. </p><closer><handShift/>Ihr getreuer<lb/><signed>ArthurSchnitzler</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -269,9 +272,9 @@
                </persName>
                <persName type="person_geburtsname-vorname">Siegmund</persName>
                <persName type="person_geburtsname_nachname">Salzmann</persName>
-               <persName type="x_zum-loschen-markiert">X</persName>
                <persName type="person_pseudonym">Sascha</persName>
                <persName type="person_pseudonym">Martin Finder</persName>
+               <persName type="person_pseudonym">Karl Heinrich</persName>
                <birth>
                   <date when="1869-09-06">06.09.1869</date>
                   <settlement ref="pmb43471">
@@ -317,14 +320,13 @@
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41325.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/61303/</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb41325.html</idno>
-               <note type="work_kind">Periodikum &gt;&gt; Jahrbuch</note>
+               <note type="work_kind">Jahrbuch</note>
             </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -332,9 +334,8 @@
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer_name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
-               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
-               <desc type="entity_type_id">14</desc>
+               <desc type="entity_type">A.ADM2</desc>
+               <desc type="entity_type_id">1135</desc>
                <location type="coords">
                   <geo>48,2066 16,37341</geo>
                </location>
@@ -352,10 +353,12 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
          </listPlace>
       </back>

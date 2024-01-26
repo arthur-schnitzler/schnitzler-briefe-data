@@ -291,6 +291,7 @@
          </xs:all>
          <xs:attribute name="n" use="required" type="xs:integer"/>
          <xs:assert test="(child::tei:objectType) or (number(@n) &gt; 1)"/>
+         <xs:assert test="(@n=1 and descendant::tei:measure[@unit='zeichenanzahl']) or @n != 1"/>
       </xs:complexType>
    </xs:element>
    <xs:simpleType name="objectTypeCorresp">
@@ -407,7 +408,7 @@
             <xs:element ref="tei:measure" maxOccurs="unbounded" minOccurs="1"/>
          </xs:all>
          <xs:assert test="count(distinct-values(tei:measure/@unit)) = count(tei:measure)"/>
-         <xs:assert test="tei:measure[@unit='zeichenanzahl']"/>
+         
       </xs:complexType>
    </xs:element>
    <!-- Define the 'supportDesc' element with 'extent' as its child -->
@@ -1098,6 +1099,7 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:attribute ref="xml:id" use="required"/>
+         <xs:assert test="((@type='commentary' or @type='textConst') and matches(@xml:id, '^((T_|K_)(L\d{5}-\d+))$')) or not(@type='commentary' or @type='textConst')"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="lb">
@@ -1144,6 +1146,7 @@
       <xs:assert
          test="(@type = 'footnote' and @xml:id and starts-with(@xml:id, 'F') and child::tei:p and not(child::*[name() != 'p'])) or not(child::tei:p)"
       />
+      <xs:assert test="((@type='commentary' or @type='textConst') and matches(@xml:id, '^((T_|K_)(L\d{5}-\d+h))$')) or @type='footnote'"/>
    </xs:complexType>
    <xs:complexType name="backNote_type-org">
       <xs:sequence minOccurs="0">

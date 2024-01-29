@@ -771,27 +771,19 @@
                     </div>
                     <div type="level3">
                         <head xml:id="typedesc">typeDesc</head>
-                        <p>Gibt Auskunft über maschinell erstellte Schriften und Drucke. Diese
-                            werden in einem <code>p</code>-Element wiedergegeben. </p>
-                        <p>Bei einem gedruckten Text kann die Angabe auch länger werden. </p>
-                        <div type="example">
-                            <p>Beispiel: </p>
-                            <p><code>&lt;typeDesc&gt;</code>
-                            </p>
-                            <p><code>&lt;p&gt;Schreibmaschine &lt;/p&gt;</code>
-                            </p>
-                            <p><code>&lt;/typeDesc&gt;</code>
-                            </p>
-                        </div>
-                        <div type="example">
-                            <p>Oder, für ein Telegramm: </p>
-                            <p><code>&lt;typeDesc&gt;</code>
-                            </p>
-                            <p><code>&lt;p&gt;maschinell &lt;/p&gt;</code>
-                            </p>
-                            <p><code>&lt;/typeDesc&gt;</code>
-                            </p>
-                        </div>
+                        <p>Gibt Auskunft über maschinell erstellte Schriften und Drucke. Jede
+                                <code>typeDesc</code> enthält eine <code>typeNote</code>, die mit
+                            einem <code>@medium</code>-Attribut versehen ist. Darüber wird die Art
+                            näher bestimmt.</p>
+                        <p>Zur Auswahl stehen:</p>
+                        <list>
+                            <item>schreibmaschine</item>
+                            <item>maschinell (z. B. für Telegramme)</item>
+                            <item>druck</item>
+                            <item>anderes</item>
+                        </list>
+                        <p>Wenn der Attributwert »anderes« ist, ist die genauere Definition in einem
+                                <code>p</code>-Element zu finden.</p>
                     </div>
                     <div type="level3">
                         <head xml:id="additions">additions</head>
@@ -807,9 +799,9 @@
                         <div type="level4">
                             <head xml:id="incident">incident</head>
                             <p>Jedes Ereignis hat ein Attribut <code>@type</code>, das es
-                                klassifiziert und ein mögliches Attribut <code>@rend</code>, das
-                                das Schreibmedium kennzeichnet, mit dem die Ergänzung vorgenommen wurde. Erlaubt für 
-                                die Klassifizierung sind: </p>
+                                klassifiziert, und ein mögliches Attribut <code>@rend</code>, das
+                                das Schreibmedium kennzeichnet, mit dem die Ergänzung vorgenommen
+                                wurde. Erlaubt für die Klassifizierung sind: </p>
                             <table>
                                 <row>
                                     <cell style="white-space: nowrap;">supplement</cell>
@@ -849,8 +841,7 @@
                                         nicht genannt ist. </cell>
                                 </row>
                             </table>
-                            <p>Die Schreibmaterialien sind:
-                                </p>
+                            <p>Die Schreibmaterialien sind: </p>
                             <list>
                                 <item>bleistift </item>
                                 <item>roter_buntstift </item>

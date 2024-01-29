@@ -377,8 +377,26 @@
    <xs:element name="typeDesc">
       <xs:complexType>
          <xs:all>
+            <xs:element ref="tei:typeNote" minOccurs="1" maxOccurs="unbounded"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="typeNote">
+      <xs:complexType mixed="false">
+         <xs:all>
             <xs:element ref="tei:p" minOccurs="0" maxOccurs="1"/>
          </xs:all>
+         <xs:attribute name="medium" use="required">
+            <xs:simpleType>
+               <xs:restriction base="xs:NCName">
+                  <xs:enumeration value="schreibmaschine"/>
+                  <xs:enumeration value="maschinell"/>
+                  <xs:enumeration value="druck"/>
+                  <xs:enumeration value="anderes"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:attribute>
+         <xs:assert test="not(tei:p) or (@medium = 'anderes')"/>
       </xs:complexType>
    </xs:element>
    <xs:simpleType name="measureUnits">
@@ -1454,8 +1472,10 @@
    </xs:element>
    <xs:element name="graphic">
       <xs:complexType>
-         <xs:attribute name="facs" use="required"/>
+         <xs:attribute name="facs" use="optional"/>
+         <xs:attribute name="url" use="optional"/>
          <xs:attribute name="width" type="xs:NMTOKEN" use="optional"/>
+         <xs:assert test="(@facs or @url) or (@facs and @url)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="address">
@@ -2120,6 +2140,7 @@
             <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:idno"/>
             <xs:element minOccurs="0" maxOccurs="1" ref="tei:listBibl"/>
             <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:note"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:figure"/>
          </xs:all>
          <xs:attribute ref="xml:id" use="required"/>
       </xs:complexType>

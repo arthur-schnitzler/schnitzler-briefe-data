@@ -377,7 +377,7 @@
    <xs:element name="typeDesc">
       <xs:complexType>
          <xs:all>
-            <xs:element ref="tei:typeNote" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element ref="tei:typeNote" minOccurs="1" maxOccurs="1"/>
          </xs:all>
       </xs:complexType>
    </xs:element>
@@ -396,7 +396,7 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
-         <xs:assert test="not(tei:p) or (@medium = 'anderes')"/>
+         <xs:assert test="(tei:p and @medium = 'anderes') or not(@medium = 'anderes')"/>
       </xs:complexType>
    </xs:element>
    <xs:simpleType name="measureUnits">

@@ -510,7 +510,7 @@
                <xs:restriction base="xs:NCName">
                   <xs:enumeration value="deutsche-kurrent"/>
                   <xs:enumeration value="lateinische-kurrent"/>
-                  <xs:enumeration value="nicht_anzuwenden"/>
+                  <xs:enumeration value="nicht-anzuwenden"/>
                   <xs:enumeration value="gabelsberger"/>
                </xs:restriction>
             </xs:simpleType>
@@ -747,7 +747,7 @@
    <xs:element name="incident">
       <xs:complexType>
          <xs:sequence>
-            <xs:element maxOccurs="unbounded" minOccurs="1" ref="tei:desc"/>
+            <xs:element maxOccurs="1" minOccurs="1" ref="tei:desc"/>
          </xs:sequence>
          <xs:attribute name="type" use="required">
             <xs:simpleType>
@@ -776,7 +776,10 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
-         <xs:assert test="tei:desc[not(@type)]"/>
+         <xs:assert test="child::tei:desc[not(@type)]"/>
+         <xs:assert test="every $pn in descendant::tei:placeName satisfies $pn[starts-with(@ref, '#pmb') and not(@ref='#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN' and not(contains(@ref, ' '))]"/>
+         
+         
       </xs:complexType>
    </xs:element>
    <xs:element name="additions">
@@ -1031,14 +1034,10 @@
    <xs:element name="placeName">
       <xs:complexType mixed="true">
          <xs:all>
-            <xs:element ref="tei:anchor" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:country" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:note" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:pb" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:persName" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:rs" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:settlement" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>

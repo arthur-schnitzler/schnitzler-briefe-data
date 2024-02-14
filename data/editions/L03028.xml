@@ -68,7 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="karte"/>
+                  <objectType corresp="karte" ana="briefkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>A</country>
@@ -76,8 +76,8 @@
                         <repository>Wienbibliothek im Rathaus</repository>
                         <idno>ZPH 1681, 2.1.516</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="karte" quantity="1"/><measure unit="zeichenanzahl" quantity="187"/></extent><support>Karte mit Trauerrand</support></supportDesc></objectDesc><handDesc><handNote medium="bleistift" style="deutsche-kurrent"/></handDesc><additions><incident type="archival" rend="bleistift"><desc>von unbekannter Hand Nummerierung der Blätter des
-                                 Konvoluts: »<quote>6</quote>«</desc></incident></additions></physDesc>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="karte" quantity="1"/><measure unit="zeichenanzahl" quantity="191"/></extent><support>Briefkarte mit Trauerrand</support></supportDesc></objectDesc><handDesc><handNote medium="bleistift" style="deutsche-kurrent"/></handDesc><additions><incident type="archival" rend="bleistift"><desc>von unbekannter Hand Nummerierung der Blätter des Konvoluts:
+                                    »<quote>6</quote>«</desc></incident></additions></physDesc>
                   </msDesc>
                </witness>
             </listWit>
@@ -108,6 +108,8 @@
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2023-03-16">Export aus Transkribus</change>
+         <change who="LU" when="2024-02-13">Durchsicht</change>
+         <change who="LU" when="2024-02-13">Index check</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -116,13 +118,12 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><p><salute><pb facs="Wienbibliothek_AS_FS_2823292"/>Lieber Freund, </salute><anchor type="commentary" xml:id="K_L03028-1"/><hi rend="latintype"><rs type="work" ref="#pmb143016">Francillon</rs></hi> i<c rendition="#langesS">s</c>t <hi rend="underline" n="1">abge<c rendition="#langesS">s</c>agt</hi><note type="commentary" xml:id="K_L03028-1h">Für den <ref type="schnitzler-tagebuch" target="1894-04-15" subtype="date-only"/> war am <rs type="org" ref="#pmb36430">Deutschen Volkstheater</rs><space unit="chars" quantity="1"/><rs type="work" ref="#pmb143016">Francillon</rs> mit <rs type="person" ref="#pmb12618">Adele Sandrock</rs> als »<rs type="work" ref="#pmb143016" subtype="implied">Francine</rs>« angesetzt, musste aber wegen Erkrankung von
+         <div type="writingSession" n="1"><p><salute rend="inline"><pb facs="Wienbibliothek_AS_FS_2823292"/>Lieber Freund,</salute><space unit="chars" quantity="1"/><anchor type="commentary" xml:id="K_L03028-1"/><hi rend="latintype"><rs type="work" ref="#pmb143016">Francillon</rs></hi> i<c rendition="#langesS">s</c>t <hi rend="underline" n="1">abge<c rendition="#langesS">s</c>agt</hi><note type="commentary" xml:id="K_L03028-1h">Für den <ref type="schnitzler-tagebuch" target="1894-04-15" subtype="date-only"/> war am <rs type="org" ref="#pmb36430">Deutschen Volkstheater</rs><space unit="chars" quantity="1"/><rs type="work" ref="#pmb143016">Francillon</rs> mit <rs type="person" ref="#pmb12618">Adele Sandrock</rs> als »<rs type="work" ref="#pmb143016" subtype="implied">Francine</rs>« angesetzt, musste aber wegen Erkrankung von
                      <rs type="person" ref="#pmb17960">Bertha Hausner</rs> (»<rs type="work" ref="#pmb143016" subtype="implied">Anette</rs>«) kurzfristig abgesagt werden.
                      <rs type="person" ref="#pmb2121">Schnitzler</rs> verbrachte den Abend bei <rs type="person" ref="#pmb12618">Sandrock</rs>, jedoch ohne <rs type="person" ref="#pmb2167">Salten</rs>. Das erlaubt die Datierung des Korrespondenzstücks,
                   wenngleich nicht ausgeschlossen werden kann, dass auch ein anderer Abend im
-                  Zeitraum <date>1893</date>/<date>1894</date> in Frage kommt.</note>.– Wir gehen um
-                  <time>9</time> zu Frl. <rs type="person" ref="#pmb12618">S.</rs>– Ich hole Sie um
-                  <time>½ 9</time><space unit="chars" quantity="1"/><hi rend="latintype"><rs type="place" ref="#pmb262">Café Centra<supplied>l</supplied></rs></hi> ab.– Herzlichen Gruß. <signed>Arth</signed></p><postscript><p><pb facs="Wienbibliothek_AS_FS_2823293"/>Vielleicht<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chaun Sie gleich nach Ti<c rendition="#langesS">s</c>ch
+                  Zeitraum <date when="1893">1893</date>/<date when="1894">1894</date> in Frage
+                  kommt.</note>. – Wir gehen um <time>9</time> zu Frl. <rs type="person" ref="#pmb12618">S.</rs> – Ich hole Sie um <time>½ 9</time><space unit="chars" quantity="1"/><hi rend="latintype"><rs type="place" ref="#pmb262">Café Centra<supplied>l</supplied></rs></hi> ab. – Herzlichen Gruß. <signed>Arth</signed></p><postscript><p><pb facs="Wienbibliothek_AS_FS_2823293"/>Vielleicht<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chaun Sie gleich nach Ti<c rendition="#langesS">s</c>ch
                   auf 5 Minuten zu mir herüber?</p></postscript></div>
       </body>
       <back>
@@ -173,9 +174,10 @@
                </persName>
                <persName type="person_geburtsname-vorname">Siegmund</persName>
                <persName type="person_geburtsname_nachname">Salzmann</persName>
-               <persName type="x_zum-loschen-markiert">X</persName>
                <persName type="person_pseudonym">Sascha</persName>
                <persName type="person_pseudonym">Martin Finder</persName>
+               <persName type="person_pseudonym">Karl Heinrich</persName>
+               <persName type="legacy-name-merge">Salten, Felix</persName>
                <birth>
                   <date when="1869-09-06">06.09.1869</date>
                   <settlement ref="pmb43471">
@@ -210,6 +212,8 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Felix_Salten</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162012/</idno>
+               <idno type="URL" subtype="">https://hermanbahrtextverzeichnis/HB-TSN_3793</idno>
             </person>
             <person xml:id="pmb12618">
                <persName>
@@ -217,6 +221,7 @@
                   <surname>Sandrock</surname>
                </persName>
                <persName type="person_rufname">Dilly</persName>
+               <persName type="legacy-name-merge">Sandrock, Adele (Dilly)</persName>
                <birth>
                   <date when="1863-08-19">1863-08-19</date>
                   <settlement ref="pmb44303">
@@ -248,6 +253,8 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Adele_Sandrock</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb12618.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb12618.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162030/</idno>
+               <idno type="URL" subtype="">https://hermanbahrtextverzeichnis/HB-TSN_3814</idno>
             </person>
             <person xml:id="pmb17960">
                <persName>
@@ -288,7 +295,7 @@
                <author ref="pmb12078" role="hat-ubersetzt">Lindau, Paul</author>
                <date notBefore="1888-01-01" when="1888-07-01">1888</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/143016/</idno>
-               <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
+               <note type="work_kind">Mehraktiges Drama</note>
             </bibl>
          </listBibl>
          <listPlace>
@@ -303,9 +310,8 @@
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer_name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
-               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
-               <desc type="entity_type_id">14</desc>
+               <desc type="entity_type">A.ADM2</desc>
+               <desc type="entity_type_id">1135</desc>
                <location type="coords">
                   <geo>48,2066 16,37341</geo>
                </location>
@@ -323,10 +329,15 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <figure>
+                  <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
+               </figure>
             </place>
             <place xml:id="pmb262">
                <placeName>Café Central</placeName>
@@ -366,10 +377,12 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb20">Volkstheater</placeName>
@@ -379,10 +392,10 @@
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb20.html</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb20</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92202/</idno>
-                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92202.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q688555</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Volkstheater_(Wien)</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb20.html</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb20.html</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb57">VII., Neubau</placeName>
@@ -391,8 +404,10 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57/</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb57.html</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb57</idno>
-                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb57.html</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb57.html</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb57.html</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q664835</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Neubau_(Wien)</idno>
                </location>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/146313-5</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36430/</idno>

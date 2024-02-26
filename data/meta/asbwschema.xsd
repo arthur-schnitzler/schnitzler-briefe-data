@@ -313,11 +313,12 @@
          <xs:enumeration value="visitenkarte"/>
          <xs:enumeration value="fotografie"/>
          <xs:enumeration value="entwurf"/>
-         <xs:enumeration value="widmung_vorsatzblatt"/>
-         <xs:enumeration value="widmung_titelblatt"/>
-         <xs:enumeration value="widmung_vortitel"/>
-         <xs:enumeration value="widmung_schmutztitel"/>
          <xs:enumeration value="widmung_umschlag"/>
+         <xs:enumeration value="widmung_vorsatzblatt"/>
+         <xs:enumeration value="widmung_schmutztitel"/>
+         <xs:enumeration value="widmung_reihentitelblatt"/>
+         <xs:enumeration value="widmung_titelblatt"/>
+         <xs:enumeration value="widmung_einlegeblatt"/>
       </xs:restriction>
    </xs:simpleType>
    <!-- Define the 'objectType' element -->
@@ -698,11 +699,12 @@
                <xs:enumeration value="postkarte"/>
                <xs:enumeration value="briefkarte"/>
                <xs:enumeration value="visitenkarte"/>
-               <xs:enumeration value="widmung_vorsatzblatt"/>
-               <xs:enumeration value="widmung_titelblatt"/>
-               <xs:enumeration value="widmung_vortitel"/>
-               <xs:enumeration value="widmung_schmutztitel"/>
                <xs:enumeration value="widmung_umschlag"/>
+               <xs:enumeration value="widmung_vorsatzblatt"/>
+               <xs:enumeration value="widmung_schmutztitel"/>
+               <xs:enumeration value="widmung_reihentitelblatt"/>
+               <xs:enumeration value="widmung_titelblatt"/>
+               <xs:enumeration value="widmung_einlegeblatt"/>
             </xs:restriction>
          </xs:simpleType>
       </xs:attribute>
@@ -1759,6 +1761,7 @@
             <xs:element ref="tei:gap" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:subst" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:pb" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
       </xs:complexType>
    </xs:element>

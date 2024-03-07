@@ -498,10 +498,11 @@
                   <xs:enumeration value="roter-buntstift"/>
                   <xs:enumeration value="blauer-buntstift"/>
                   <xs:enumeration value="gruener-buntstift"/>
-                  <xs:enumeration value="schwarze-tinte"/>
                   <xs:enumeration value="blaue-tinte"/>
                   <xs:enumeration value="gruene-tinte"/>
+                  <xs:enumeration value="lila-tinte"/>
                   <xs:enumeration value="rote-tinte"/>
+                  <xs:enumeration value="schwarze-tinte"/>
                   <xs:enumeration value="anderes"/>
                </xs:restriction>
             </xs:simpleType>
@@ -770,10 +771,11 @@
                   <xs:enumeration value="roter-buntstift"/>
                   <xs:enumeration value="blauer-buntstift"/>
                   <xs:enumeration value="gruener-buntstift"/>
-                  <xs:enumeration value="schwarze-tinte"/>
                   <xs:enumeration value="blaue-tinte"/>
                   <xs:enumeration value="gruene-tinte"/>
+                  <xs:enumeration value="lila-tinte"/>
                   <xs:enumeration value="rote-tinte"/>
+                  <xs:enumeration value="schwarze-tinte"/>
                   <xs:enumeration value="anderes"/>
                </xs:restriction>
             </xs:simpleType>
@@ -1174,6 +1176,12 @@
       </xs:sequence>
       <xs:attribute name="type" type="xs:string" use="required"/>
    </xs:complexType>
+   <xs:complexType name="backNote_type_image">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="tei:figure" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="required"/>
+   </xs:complexType>
    <xs:complexType name="biblStruct_type-measure">
       <xs:sequence minOccurs="1">
          <xs:element ref="tei:measure" minOccurs="1" maxOccurs="1"/>
@@ -1193,6 +1201,7 @@
       <xs:alternative type="backNote_type"
          test="@type = 'work_kind' or @type = 'uri_worklink' or @type = 'bibliografische_angabe' or @type = 'references'"/>
       <xs:alternative type="backNote_type-org" test="@type = 'apis_dates'"/>
+      <xs:alternative type="backNote_type_image" test="@type='image'"/>
       <xs:alternative type="biblStruct_type-measure" test="@type ='zeichenanzahl'"/>
       <xs:alternative type="normalNote"/>
    </xs:element>

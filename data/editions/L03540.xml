@@ -76,8 +76,8 @@
                         <repository>Deutsches Literaturarchiv</repository>
                         <idno>A:Schnitzler, HS.NZ85.1.3160</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="3"/><measure unit="blatt" quantity="1"/><measure unit="zeichenanzahl" quantity="719"/></extent></supportDesc></objectDesc><handDesc><handNote medium="blaue-tinte" style="lateinische-kurrent"/></handDesc><additions><incident type="receiver" rend="bleistift"><desc>»<quote><rs type="person" ref="#pmb17164">Goldmann</rs>.</quote>«
-                                 vermerkt</desc></incident></additions></physDesc>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="3"/><measure unit="blatt" quantity="1"/><measure unit="zeichenanzahl" quantity="725"/></extent></supportDesc></objectDesc><handDesc><handNote medium="lila-tinte" style="lateinische-kurrent"/></handDesc><additions><incident type="receiver" rend="bleistift"><desc>Vermerk »<quote><rs type="person" ref="#pmb17164">Goldmann</rs>.</quote>«
+                              </desc></incident></additions></physDesc>
                   </msDesc>
                </witness>
             </listWit>
@@ -91,25 +91,30 @@
             <correspAction type="sent">
                <persName ref="#pmb17164">Goldmann, Eva Marie</persName>
                <date when="1911-09-21" n="01">21. 9. 1911</date>
-               <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
+               <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
-               <date evidence="conjecture" notBefore="1911-09-22" notAfter="1911-09-26">[22. 9. 1911
-                  – 26. 9. 1911?]</date>
+               <placeName ref="#pmb50">Wien</placeName>
+               <date evidence="external" when="1911-09-23">[23. 9. 1911]</date>
             </correspAction>
             <correspContext>
-               <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann, Paul</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L02029">Bahr an Schnitzler, 17. 9. 1911</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L02030">Schnitzler, Schnitzler an Adam, 2[2?]. 9. 1911</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11485" target="L03476">Goldmann an Schnitzler, 10. 9. 1911</ref>
+               <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann,
+                  Paul</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L02029">Bahr an
+                  Schnitzler, 17. 9. 1911</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L02030">Schnitzler,
+                  Schnitzler an Adam, 2[2?]. 9. 1911</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11485" target="L03476">Goldmann an Schnitzler,
+                  10. 9. 1911</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11485" target="L03541">Goldmann an Schnitzler, 1. 10. 1911</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2023-11-28">Export aus Transkribus</change>
+         <change who="MAM" when="2024-03-11">Index check</change>
+         <change who="MAM" when="2024-03-11">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -119,21 +124,31 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="HS.NZ85.1.3160_0001"/><date when="1911-09-21">21. IX. 1911</date>.</dateline><p><seg rend="left"><hi rend="pre-print">EG</hi></seg><seg rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb57358">W. Schöneberger-Ufer 34</rs>.</hi></seg></p></opener><p><salute rend="left">Verehrter Herr Doctor,</salute> ich danke Ihnen vielmals für Ihre
-               freundlichen Zeilen.</p><p>Und ich möchte Ihnen sagen, dass <rs type="person" ref="#pmb11485">Paul</rs> unter
-               dem <anchor type="commentary" xml:id="K_L03540-1"/>Zerwürfnis<note type="commentary" xml:id="K_L03540-1h">Ende <date when="1910">1910</date>/Anfang <date when="1911">1911</date>, siehe insbesondere <ref type="schnitzler-briefe" target="L03475"/> und <ref type="schnitzler-briefe" target="L03521"/></note> mit Ihnen sehr <anchor type="commentary" xml:id="K_L03540-2"/>gelitten<note type="commentary" xml:id="K_L03540-2h">siehe auch <ref type="schnitzler-tagebuch" target="1911-09-23"/> und <ref type="schnitzler-tagebuch" target="1911-10-05" subtype="date-only"/></note> hat.</p><p>In seinem, und auch <pb facs="HS.NZ85.1.3160_0002"/>in meinem Alter, kommt kein
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="HS.NZ85.1.3160_0001"/><date when="1911-09-21">21. IX. 1911</date>.</dateline><p><seg rend="left"><hi rend="pre-print">EG</hi></seg><seg rend="right"><hi rend="pre-print"><hi rend="capitals"><rs type="place" ref="#pmb57358">W. Schöneberger-Ufer 34</rs>.</hi></hi></seg></p><salute rend="left">Verehrter Herr Doctor, </salute></opener><p>ich danke Ihnen vielmals für Ihre <anchor type="commentary" xml:id="K_L03540-1"/>freundlichen Zeilen<note type="commentary" xml:id="K_L03540-1h">Es ist anzunehmen,
+                  dass auch sie <rs type="person" ref="#pmb2121">Schnitzler</rs> anlässlich des
+                  Todes seiner <rs type="person" subtype="implied" ref="#pmb12701">Mutter</rs>
+                  kondoliert hatte.</note>.</p><p>Und ich möchte Ihnen sagen, dass <rs type="person" ref="#pmb11485">Paul</rs> unter
+               dem <anchor type="commentary" xml:id="K_L03540-2"/>Zerwürfnis<note type="commentary" xml:id="K_L03540-2h">Ende <date when="1910">1910</date>/Anfang <date when="1911">1911</date>, siehe insbesondere <ref type="schnitzler-briefe" target="L03475"/> und <ref type="schnitzler-briefe" target="L03521"/> u </note> mit Ihnen sehr
+                  <anchor type="commentary" xml:id="K_L03540-3"/>gelitten<note type="commentary" xml:id="K_L03540-3h"><ref type="schnitzler-tagebuch" target="1911-09-23" subtype="cf"/></note> hat.</p><p>In seinem, und auch <pb facs="HS.NZ85.1.3160_0002"/>schon in meinem Alter, kommt kein
                Ersatz mehr für das, was einem genommen wird, was einem theuer war und ein Stück
                Jugend bedeutet hat.</p><p>Ich würde Sie, verehrter Herr Doctor, gerne einmal wieder sprechen, und ich bilde mir
-               ein, dass alles anders gekommen wäre, wenn ich im vergangenen Winter mit in <rs type="place" ref="#pmb50">Wien</rs> gewesen wäre.</p><p><rs type="person" ref="#pmb11485">Paul</rs><space unit="chars" quantity="1"/><hi rend="underline" n="1">ahnt</hi><space unit="chars" quantity="1"/><hi rend="underline" n="1">nicht</hi>, dass ich Ihnen <date when="1911-09-21">heute</date> schreibe, u. wird es auch nicht erfahren.</p><p>Er ist augenblicklich nicht <rs type="place" subtype="implied" ref="#pmb168">hier</rs>, sondern wegen eines widerwärtigen <anchor type="commentary" xml:id="K_L03540-3"/>Processes<note type="commentary" xml:id="K_L03540-3h">Graf
-                     <rs type="person" ref="#pmb147995">Gisbert von Wolff-Metternich</rs> hatte hohe
-                  Schulden und war bereits mehrfach des Betrugs beschuldigt worden. Den Prozess
-                  gegen ihn wollte er abwehren, indem er angab, die wohlhabende <rs type="person" ref="#pmb148000">Dolly Landsberger</rs> zu heiraten. Seine Frau <rs type="person" ref="#pmb147996">Gertrud Wertheim</rs> trat im Prozess gegen ihn
-                  als Zeugin auf. <rs type="person" ref="#pmb11485">Goldmann</rs> dürfte geahnt
-                  haben, dass sie ebenso in die Schuldenangelegenheit involviert war: »<rs type="work" subtype="implied" ref="#pmb148009">Frau <rs type="person" ref="#pmb147996"><hi rend="spaced-out">Wertheim</hi></rs> hat der ›<rs type="org" ref="#pmb29331">Voss. Ztg.</rs>‹ einen <rs type="work" subtype="implied" ref="#pmb148003">Brief</rs> zuge<c rendition="#langesS">s</c>chickt, in
+               ein, dass alles anders gekommen wäre, wenn ich im vergangenen Winter mit in <rs type="place" ref="#pmb50">Wien</rs> gewesen wäre.</p><p><anchor type="commentary" xml:id="K_L03540-4"/><rs type="person" ref="#pmb11485">Paul</rs><space unit="chars" quantity="1"/><hi rend="underline" n="1">ahnt nicht</hi><note type="commentary" xml:id="K_L03540-4h"><rs type="person" ref="#pmb2121">Schnitzler</rs>s Antwort auf diesen Brief ist nicht überliefert. 
+                  Seine Einordnung dieser und des folgenden Schreibens von <rs type="person" ref="#pmb17164">Eva Marie Goldmann</rs>
+                  gibt <rs type="person" ref="#pmb2121">Schnitzler</rs> im <rs type="work" ref="#pmb33243">Tagebuch</rs> zum
+                  <ref type="schnitzler-tagebuch" target="1911-10-05" subtype="cf"/>.</note>, dass ich
+               Ihnen <date when="1911-09-21">heute</date> schreibe, u. wird es auch nicht
+               erfahren.</p><p>Er ist augenblicklich nicht <rs type="place" subtype="implied" ref="#pmb168">hier</rs>, sondern wegen eines widerwärtigen <anchor type="commentary" xml:id="K_L03540-5"/>Processes in <rs type="place" ref="#pmb50">Wien</rs><note type="commentary" xml:id="K_L03540-5h">Wieso <rs type="person" ref="#pmb11485">Goldmann</rs> wegen dieses Prozesses in <rs type="place" ref="#pmb50">Wien</rs> weilte, ist unklar. Es dürfte sich aber um eine Seitenaffäre einer
+                  sehr beachteten Ankage gegen Graf <rs type="person" ref="#pmb147995">Gisbert von
+                     Wolff-Metternich</rs> handeln. Dieser war bereits mehrfach des Betrugs
+                  beschuldigt worden und hatte hohe Schulden. Einen Prozess wollte er abwehren,
+                  indem er angab, die wohlhabende <rs type="person" ref="#pmb147998">Dolly
+                     Landsberger</rs> zu heiraten. Deren Mutter <rs type="person" ref="#pmb147996">Gertrud Wertheim</rs> (bekannt als Schriftstellerin <rs type="person" ref="#pmb147996">Truth</rs>) trat als Belastungszeugin gegen ihn auf, wodurch
+                  auch ihr »Vorleben« als Dichterin und das Erbe aus erster Ehe für die Verteidigung
+                  und in Folge die Klatschpresse interessant wurde. <rs type="person" ref="#pmb11485">Goldmann</rs> dürfte sich in <rs type="place" ref="#pmb40260">Bozen</rs> dafür stark gemacht haben, dass weder <rs type="person" ref="#pmb147998">Landsberger</rs> noch ihre <rs type="person" ref="#pmb147996" subtype="implied">Mutter</rs> an dem Prozess teilnahmen: »<rs type="work" subtype="implied" ref="#pmb148009">Frau <rs type="person" ref="#pmb147996"><hi rend="spaced-out">Wertheim</hi></rs> hat der ›<rs type="org" ref="#pmb29331">Voss. Ztg.</rs>‹ einen <rs type="work" subtype="implied" ref="#pmb148003">Brief</rs> zuge<c rendition="#langesS">s</c>chickt, in
                      dem<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie gegen den <rs type="place" ref="#pmb168">Berlin</rs>er Schrift<c rendition="#langesS">s</c>teller
                         <rs type="person" ref="#pmb11485"><hi rend="spaced-out">Goldmann</hi></rs> den Vorwurf erhebt,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich in eine ihm ganz fremde Angelegenheit unbefugt
                      eingemengt zu haben. Er habe in <rs type="place" ref="#pmb40260">Bozen</rs>
-                     ihren <rs type="person" subtype="implied" ref="#pmb147995">Mann</rs>, ihre <rs type="person" subtype="implied" ref="#pmb147998">Tochter</rs> und<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t
+                     ihren <rs type="person" subtype="implied" ref="#pmb167742">Mann</rs>, ihre <rs type="person" subtype="implied" ref="#pmb147998">Tochter</rs> und<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t
                      in der inten<c rendition="#langesS">s</c>iv<c rendition="#langesS">s</c>ten Art und Wei<c rendition="#langesS">s</c>e be<c rendition="#langesS">s</c>chworen, daß Frau <rs type="person" ref="#pmb147996">Wertheim</rs> nicht zum <rs type="person" ref="#pmb147995">Metternich</rs>-Prozeß fahre. ›Er malte jedem einzelnen‹, heißt es in dem
                         <rs type="work" subtype="implied" ref="#pmb148003">Brief</rs>, ›in den
                      dü<c rendition="#langesS">s</c>ter<c rendition="#langesS">s</c>ten Farben mein bevor<c rendition="#langesS">s</c>tehendes Ge<c rendition="#langesS">s</c>chick aus und<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>agte weiter, aus der
@@ -145,9 +160,9 @@
                      erklären, daß Herr <rs type="person" ref="#pmb11485">Goldmann</rs> von
                      irgendeiner Seite beauftragt war. Denn ein derartiges Eingreifen würde
                      höch<c rendition="#langesS">s</c>tens bei Freunden oder<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>on<c rendition="#langesS">s</c>t Näch<c rendition="#langesS">s</c>t<c rendition="#langesS">s</c>tehenden zu erklären oder zu
-                     en<c rendition="#langesS">s</c>chuldigen sein.<supplied>‹</supplied></rs>« (<bibl>[O. V.]: <rs type="work" ref="#pmb148009">Der Prozeß gegen den
-                        Grafen Wolff-Metternich. Eine Erklärung der Frau Wertheim</rs>. In: <rs type="work" ref="#pmb36376">Neues Wiener Journal</rs>, Jg. 19, Nr. 6454,
-                        <date when="1911-10-10">10. 10. 1911</date>, S. 9</bibl>)</note> in <rs type="place" ref="#pmb50">Wien</rs>.</p><closer>Mit den besten Wünschen für <pb facs="HS.NZ85.1.3160_0003"/>Sie u. die Ihren
+                     ent<c rendition="#langesS">s</c>chuldigen sein.<supplied>‹</supplied></rs>« (<bibl>[O. V.]: <rs type="work" ref="#pmb148009">Der Prozeß gegen den
+                        Grafen Wolff-Metternich. Eine Erklärung der Frau Wertheim</rs>. In: <rs type="work" ref="#pmb36376">Neues Wiener Journal</rs>, Jg. 19, Nr. 6.454,
+                        <date when="1911-10-10">10. 10. 1911</date>, S. 9</bibl>)</note>.</p><closer>Mit den besten Wünschen für <pb facs="HS.NZ85.1.3160_0003"/>Sie u. die Ihren
                <lb/>Ihre <lb/><signed>EvaMarieGoldmann.</signed></closer></div>
       </body>
       <back>
@@ -159,6 +174,7 @@
                </persName>
                <persName type="person_geburtsname_nachname">Fränkel</persName>
                <persName type="person_geschieden">Kobler</persName>
+               <persName type="person_geburtsname_vorname">Eva Marie</persName>
                <birth>
                   <date when="1877-10-27">27.10.1877</date>
                   <settlement ref="pmb50">
@@ -178,7 +194,7 @@
                   </settlement>
                </death>
                <sex value="female"/>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15526</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_15526.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/17164/</idno>
             </person>
             <person xml:id="pmb2121">
@@ -186,6 +202,7 @@
                   <forename>Arthur</forename>
                   <surname>Schnitzler</surname>
                </persName>
+               <persName type="legacy-name-merge">Schnitzler, Arthur</persName>
                <birth>
                   <date when="1862-05-15">15.05.1862</date>
                   <settlement ref="pmb50">
@@ -211,7 +228,7 @@
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
                <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
@@ -219,12 +236,49 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2121</idno>
+            </person>
+            <person xml:id="pmb12701">
+               <persName>
+                  <forename>Louise</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Markbreiter</persName>
+               <persName type="person_geburtsname_vorname">Ludovika</persName>
+               <birth>
+                  <date when="1840-07-08">1840-07-08</date>
+                  <settlement ref="pmb35513">
+                     <placeName type="pref">Kőszeg</placeName>
+                     <location>
+                        <geo>47,38922 16,541</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1911-09-09">1911-09-09</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1141930552</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_19831.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb12701.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/12701/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb12701.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q94743225</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb12701.html</idno>
             </person>
             <person xml:id="pmb11485">
                <persName>
                   <forename>Paul</forename>
                   <surname>Goldmann</surname>
                </persName>
+               <persName type="legacy-name-merge">Goldmann, Paul</persName>
                <birth>
                   <date when="1865-01-31">31.01.1865</date>
                   <settlement ref="pmb677">
@@ -246,8 +300,8 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_15529.html</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11485.html</idno>
@@ -258,6 +312,9 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/160242/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb11485</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
             <person xml:id="pmb147995">
                <persName>
@@ -265,18 +322,21 @@
                   <surname>Wolff-Metternich</surname>
                </persName>
                <birth>
-                  <date notBefore="1885-01-01" when="1885-07-02" notAfter="1885-12-31">1885</date>
+                  <date notBefore="1885-01-01" when="1885-01-01" notAfter="1885-12-31">1885</date>
                </birth>
                <sex value="male"/>
                <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/147995/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/121384990X</idno>
             </person>
-            <person xml:id="pmb148000">
+            <person xml:id="pmb147998">
                <persName>
-                  <forename>Dolly Henriette Julia</forename>
+                  <forename>Dolly</forename>
                   <surname>Landsberger</surname>
                </persName>
+               <persName type="person_geburtsname_nachname">Pinkuss</persName>
+               <persName type="legacy-name-merge">Landsberger, Dolly Henriette Julia</persName>
+               <persName type="person_ehename_nachname">Schrott</persName>
                <birth>
                   <date when="1892-11-11">1892-11-11</date>
                   <settlement ref="pmb168">
@@ -291,51 +351,90 @@
                </death>
                <sex value="female"/>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/148000/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/147998/</idno>
             </person>
             <person xml:id="pmb147996">
                <persName>
                   <forename>Gertrud</forename>
                   <surname>Wertheim</surname>
                </persName>
+               <persName type="person_pseudonym">Truth</persName>
+               <persName type="person_geburtsname_nachname">Tietzer</persName>
+               <persName type="person_ehename_nachname">Wertheim</persName>
+               <persName type="legacy-name-merge">Truth</persName>
+               <birth>
+                  <date when="1867-12-05">1867-12-05</date>
+                  <settlement ref="pmb168">
+                     <placeName type="pref">Berlin</placeName>
+                     <location>
+                        <geo>52,52437 13,41053</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1927-11-27">1927-11-27</date>
+                  <settlement ref="pmb40482">
+                     <placeName type="pref">Montreux</placeName>
+                     <location>
+                        <geo>46,45179 6,94084</geo>
+                     </location>
+                  </settlement>
+               </death>
                <sex value="female"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/147996/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1158189427</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/153684/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q88889607</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb153684.html</idno>
             </person>
-            <person xml:id="pmb147998">
+            <person xml:id="pmb167742">
                <persName>
-                  <surname>?? [Tochter von Gertrud Wertheim]</surname>
+                  <forename>Wolf Waldemar</forename>
+                  <surname>Wertheim</surname>
                </persName>
-               <sex value="female"/>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/147998/</idno>
+               <birth>
+                  <date when="1867-03-23">1867-03-23</date>
+               </birth>
+               <death>
+                  <date when="1940-01-01" notAfter="1940-12-31">1940</date>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb3658">Warenhausbesitzer/Warenhausbesitzerin</occupation>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/167742/</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb148009">
-               <title>Der Prozeß gegen den Grafen Wolff-Metternich. Eine Erklärung der Frau Wertheim</title>
-               <title type="werk_bibliografische-angabe">[O. V.:] Der Prozeß gegen den Grafen Wolff-Metternich. Eine Erklärung der Frau Wertheim. In: Neues Wiener Journal, Jg. 19, Nr. 6454, 10. 10. 1911, S. 9</title>
+               <title>Der Prozeß gegen den Grafen Wolff-Metternich. Eine Erklärung der Frau
+                  Wertheim</title>
+               <title type="werk_bibliografische-angabe">[O. V.:] Der Prozeß gegen den Grafen
+                  Wolff-Metternich. Eine Erklärung der Frau Wertheim. In: Neues Wiener Journal, Jg.
+                  19, Nr. 6454, 10. 10. 1911, S. 9</title>
                <title type="anno">https://anno.onb.ac.at/cgi-content/anno?aid=nwj&amp;datum=19111010&amp;seite=9</title>
                <date>1911-10-10</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/148009/</idno>
-               <idno type="URL" subtype="anno">https://anno.onb.ac.at/cgi-content/anno?aid=nwj&amp;datum=19111010&amp;seite=9</idno>
                <note type="work_kind">Zeitungsbericht</note>
             </bibl>
             <bibl xml:id="pmb148003">
-               <title>[Brief von Getrud Wertheim]</title>
+               <title>[Leserbrief von Gertrud Wertheim mit Klage über Paul Goldmann]</title>
                <author ref="pmb147996" role="hat-geschaffen">Wertheim, Gertrud</author>
-               <date>1911</date>
+               <date>Oktober 1911</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/148003/</idno>
-               <note type="work_kind">Brief</note>
+               <note type="work_kind">Leserbrief</note>
             </bibl>
             <bibl xml:id="pmb36376">
                <title>Neues Wiener Journal</title>
                <title type="anno">http://anno.onb.ac.at/cgi-content/anno?aid=nwj</title>
-               <author ref="pmb36371" role="hat-einen-beitrag-geschaffen-zu">Papp, Desiderius</author>
+               <author ref="pmb36371" role="hat-einen-beitrag-geschaffen-zu">Papp,
+                  Desiderius</author>
                <author ref="pmb10815" role="hat-einen-beitrag-geschaffen-zu">Bahr, Hermann</author>
-               <date to="1939-01-01">1893  – 1939</date>
+               <date from="1893-01-01" to="1939-01-01">1893 – 1939</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36376/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36376.html</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/werke/pmb36376</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb36376.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb36376.html</idno>
-               <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=nwj</idno>
                <note type="work_kind">Tageszeitung</note>
             </bibl>
          </listBibl>
@@ -367,16 +466,22 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK113_515/515/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer_name">Vindobona</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <desc type="entity_type">A.ADM2</desc>
                <desc type="entity_type_id">1135</desc>
@@ -403,6 +508,11 @@
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
             </place>
             <place xml:id="pmb57358">
                <placeName>Schöneberger Ufer</placeName>
@@ -441,6 +551,11 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4007901-6</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Bozen</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb40260.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK116_276/276/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
             </place>
          </listPlace>
          <listOrg>
@@ -470,7 +585,7 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q675003</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Vossische_Zeitung</idno>
                <note type="apis_dates">
-                  <date when="1934-07-02" notAfter="1934-12-31">1934</date>
+                  <date when="1934-01-01" notAfter="1934-12-31">1934</date>
                </note>
             </org>
          </listOrg>

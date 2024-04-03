@@ -177,10 +177,10 @@
    </xs:element>
    <xs:element name="sourceDesc">
       <xs:complexType>
-         <xs:choice minOccurs="1" maxOccurs="2">
+         <xs:sequence>
             <xs:element ref="tei:listWit" maxOccurs="1" minOccurs="0"/>
-            <xs:element ref="tei:listBibl" maxOccurs="1" minOccurs="0"/>
-         </xs:choice>
+            <xs:element ref="tei:listBibl" minOccurs="0" maxOccurs="1"/>
+         </xs:sequence>
       </xs:complexType>
    </xs:element>
    <xs:element name="correspDesc">

@@ -1255,11 +1255,8 @@
                   @n
                else
                   not(@n)"/>
-         <xs:assert test="
-               if (@rend = 'spaced_out') then
-                  ((child::text() or child::tei:space or child::tei:hi[@rend = 'underline']) and not(child::tei:*[not(name() = 'space' or name() = 'hi')]))
-               else
-                  not(@rend = 'spaced_out')"/>
+         <xs:assert test="(@rend='spaced-out' and ((text() and not(child::*)) or (text() and not(child::*[name()!='space'])))) or not(@rend='spaced-out')"/>
+         
          <xs:assert
             test="not(child::tei:anchor[@type = 'commentary']) or child::tei:anchor[@type = 'commentary'] and child::tei:note[@type = 'commentary']"
          />
@@ -1303,6 +1300,7 @@
             <xs:element ref="tei:unclear" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:del" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:time" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
          <xs:attribute name="n" type="xs:integer"/>
          <xs:attribute name="when" type="date-or-gyear-or-gyearmonth"/>
@@ -1319,6 +1317,7 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
+         <xs:assert test="child::* or not(matches(., '.*[\s\r\n]+$'))"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="add">
@@ -1595,6 +1594,7 @@
             <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:date"/>
             <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:gap"/>
             <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:rs"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:ref"/>
          </xs:choice>
          <xs:attribute name="type" use="optional">
             <xs:simpleType>

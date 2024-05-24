@@ -76,7 +76,7 @@
                         <repository>University Library</repository>
                         <idno>Schnitzler, B 89, A 2</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="karte" quantity="1"/><measure unit="zeichenanzahl" quantity="737"/></extent></supportDesc></objectDesc><handDesc><handNote medium="bleistift" style="lateinische-kurrent"/></handDesc><additions><incident type="postal"><desc><stamp n="1"><placeName ref="#pmb50792">Salzburg-Bahnhof</placeName><date when="1901-06-23">23/6 <unclear>01</unclear></date><time>3-F.</time></stamp><stamp n="2"><placeName ref="#pmb50">Wien 9/3 72</placeName><date when="1901-06-24">24. 6. 01</date><time>8. <unclear>V</unclear></time><addSpan>Bestellt</addSpan></stamp></desc></incident><incident type="archival" rend="bleistift"><desc>von unbekannter Hand nummeriert: »<quote>138</quote>«</desc></incident></additions></physDesc>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="karte" quantity="1"/><measure unit="zeichenanzahl" quantity="737"/></extent></supportDesc></objectDesc><handDesc><handNote medium="bleistift" style="lateinische-kurrent"/></handDesc><additions><incident type="postal"><desc><stamp n="1"><placeName ref="#pmb50792">Salzburg-Bahnhof</placeName><date when="1901-06-23">23/6 <unclear>01</unclear></date><time>3-F.</time></stamp><stamp n="2"><placeName ref="#pmb59">Wien 9/3 72</placeName><date when="1901-06-24">24. 6. 01</date><time>8. <unclear>V</unclear></time><addSpan>Bestellt</addSpan></stamp></desc></incident><incident type="archival" rend="bleistift"><desc>von unbekannter Hand nummeriert: »<quote>138</quote>«</desc></incident></additions></physDesc>
                   </msDesc>
                </witness>
             </listWit>
@@ -96,14 +96,14 @@
                <date when="1901-06-23">23. 6. 1901</date>
                <placeName ref="#pmb30">Salzburg</placeName>
             </correspAction>
-            <correspAction type="delivered">
+            <correspAction type="redirected">
                <date when="1901-06-24">24. 6. 1901</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1901-06-24">24. 6. 1901</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <date evidence="conjecture" when="1901-06-25">[25. 6. 1901?]</date>
+               <placeName ref="#pmb30" evidence="conjecture">Salzburg</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
@@ -114,10 +114,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2023-09-20">Export aus Transkribus</change>
          <change who="LU" when="2024-04-03">Durchsicht</change>
          <change who="LU" when="2024-04-03">Index check</change>
+         <change who="MAM" when="2024-05-23">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -127,20 +128,22 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00056-V"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb59">Wien IX.</rs></addrLine><addrLine><rs type="place" ref="#pmb168934">Frankgaße 1</rs></addrLine></address></div>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00056-R"/><rs type="place" ref="#pmb50792">Salzburg, Bahnhof</rs>, <anchor type="commentary" xml:id="K_L03314-1"/><date when="1901-06-22">22. Juni 01</date><note type="commentary" xml:id="K_L03314-1h">Die genaue Datierung scheint
-                     widersprüchlich, da die Karte den Poststempel vom <date when="1901-06-23">23. 6. 1901</date> trägt. Es ist davon auszugehen, dass <rs type="person" ref="#pmb2167">Salten</rs> sie in der <time>Nacht</time> vom <date when="1901-06-22">22.</date> auf den <date when="1901-06-23">23.</date>
-                     verfasste, korrekterweise also bereits am <date when="1901-06-23">23.</date>
-                     Diese Annahme unterstützt auch die Angabe der Uhrzeit auf dem
-                     Poststempel.</note>.</dateline><p rend="right"><time>½ 2. Nachts.</time></p></opener><p><salute>Lieber Freund,</salute> ich komme soeben von <rs type="place" ref="#pmb45258">München</rs> herüber, warte <rs type="place" subtype="implied" ref="#pmb50792">hier</rs> auf den Zug nach <rs type="place" ref="#pmb484">Zürich</rs>. Hätte ich Ihre <anchor type="commentary" xml:id="K_L03314-2"/>Adreße<note type="commentary" xml:id="K_L03314-2h"><rs type="person" ref="#pmb2121">Schnitzler</rs> war seit dem <ref type="schnitzler-tagebuch" target="1901-06-12" subtype="date-only"/> in <rs type="place" ref="#pmb30">Salzburg</rs>.</note> hier gewußt, ich hätte Ihnen
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00056-R"/><rs type="place" ref="#pmb50792">Salzburg, Bahnhof</rs>, <anchor type="commentary" xml:id="K_L03314-1"/><date when="1901-06-22">22. Juni 01</date><note type="commentary" xml:id="K_L03314-1h">Zwischen der Datums- und der
+                     Uhrzeitangabe besteht ein Widerspruch, wenn man den Poststempel vom <date when="1901-06-23">23. 6. 1901</date> hinzuzieht. Es ist davon auszugehen,
+                     dass <rs type="person" ref="#pmb2167">Salten</rs> die Karte in der <time>Nacht</time>
+                     vom <date when="1901-06-22">22.</date> auf den <date when="1901-06-23">23.</date> verfasste, korrekterweise also bereits am <date when="1901-06-23">23.</date> schrieb. Alternativ wäre die Karte unbearbeitet
+                     über 24h liegengeblieben.</note>.</dateline><p rend="right"><time>½ 2. Nachts</time>. </p></opener><p><salute>Lieber Freund,</salute> ich komme soeben von <rs type="place" ref="#pmb45258">München</rs> herüber, warte <rs type="place" subtype="implied" ref="#pmb50792">hier</rs> auf den Zug nach <rs type="place" ref="#pmb484">Zürich</rs>. Hätte ich
+               Ihre <anchor type="commentary" xml:id="K_L03314-2"/>Adreße<note type="commentary" xml:id="K_L03314-2h"><rs type="person" ref="#pmb2121">Schnitzler</rs> war seit dem <ref type="schnitzler-tagebuch" target="1901-06-12" subtype="date-only"/> in <rs type="place" ref="#pmb30">Salzburg</rs>.</note> hier gewußt, ich hätte Ihnen
                gerne geschrieben<subst><del rend="overwritten">,</del><add place="inline"> (</add></subst>dass Sie auf die <rs type="place" subtype="implied" ref="#pmb50792">Bahn</rs>
                   kommen<supplied>)</supplied>, denn ich bin seit <time>12 Uhr Nachts</time> hier.
                   <date when="1901-06-22">Heute</date><space unit="chars" quantity="1"/><time>früh</time> erhielt ich in <rs type="place" ref="#pmb45258">München</rs> Ihren
-               Brief, der mir, – wie alles – nachgesendet wurde.</p><p>Meine nächste Adreße ist <rs type="place" ref="#pmb145781">Paris, Hotel
+               Brief, der mir, – wie alles – nachgesendet wurde. Meine nächste Adreße ist <rs type="place" ref="#pmb145781">Paris, Hotel
                   Castiglione</rs>. Ich freue mich, dass Sie arbeiten. Ich arbeite hoffentlich auf
-               der Reise meinen <anchor type="commentary" xml:id="K_L03314-3"/><rs type="work" ref="#pmb30317" subtype="implied" cert="medium">Professor</rs><note type="commentary" xml:id="K_L03314-3h"><rs type="work" ref="#pmb30317">Olga Frohgemuth</rs>?</note>, wozu ich viel Lust
+               der Reise meinen <anchor type="commentary" xml:id="K_L03314-3"/><rs type="work" ref="#pmb30317" subtype="implied" cert="medium">Professor</rs><note type="commentary" xml:id="K_L03314-3h">Die Erzählung 
+                  <rs type="work" ref="#pmb30317">Olga Frohgemuth</rs>?</note>, wozu ich viel Lust
                habe.</p><p>Wissen Sie, wo <anchor type="commentary" xml:id="K_L03314-4"/><rs type="person" ref="#pmb10863">Beer-Hofmann</rs><note type="commentary" xml:id="K_L03314-4h"><rs type="person" ref="#pmb10863">Richard Beer-Hofmann</rs> hielt sich
                   höchstwahrscheinlich bereits in <rs type="place" ref="#pmb44278">Pörtschach am
-                     Wörthersee</rs> auf, <ref type="schnitzler-briefe" target="L01133" subtype="cf"/>.</note> ist? Ich möchte ihm drängen, den <anchor type="commentary" xml:id="K_L03314-5"/><rs type="work" subtype="implied" ref="#pmb168019">Text</rs> zu <rs type="person" ref="#pmb26392">Van-Jung</rs>s Pfeifertrio<note type="commentary" xml:id="K_L03314-5h">nicht ermittelt</note> fertig zu stellen.</p><closer>Leben Sie wol und laßen sich’s gut gehen, und grüßen von mir. <lb/>Herzlichst
+                     Wörthersee</rs> auf, <ref type="schnitzler-briefe" target="L01133" subtype="cf"/>.</note> ist? Ich möchte ihn drängen, den <anchor type="commentary" xml:id="K_L03314-5"/><rs type="work" subtype="implied" ref="#pmb168019">Text</rs> zu <rs type="person" ref="#pmb26392">Van-Jung</rs>s Pfeifertrio<note type="commentary" xml:id="K_L03314-5h">nicht ermittelt</note> fertig zu stellen.</p><closer>Leben Sie wol und laßen sich’s gut gehen, und grüßen von mir. <lb/>Herzlichst
                Ihr <signed>Salten.</signed></closer></div>
       </body>
       <back>
@@ -189,12 +192,12 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Felix_Salten</idno>
                <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=1705</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416711.html?pmb2167</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162012/</idno>
-               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2167</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2167</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -226,7 +229,6 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
                <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
@@ -236,8 +238,9 @@
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2121</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2121</idno>
             </person>
             <person xml:id="pmb10863">
                <persName>
@@ -278,7 +281,6 @@
                <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=6074</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10863.html</idno>
-               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416402.html?pmb10863</idno>
                <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416403.html?pmb10863</idno>
                <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416404.html?pmb10863</idno>
@@ -286,6 +288,7 @@
                <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416755.html?pmb10863</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/159307/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb10863</idno>
             </person>
             <person xml:id="pmb26392">
@@ -294,6 +297,7 @@
                   <surname>Van-Jung</surname>
                </persName>
                <persName type="namensvariante">Fan-Jung</persName>
+               <persName type="legacy-name-merge">Vanjung, Leo</persName>
                <birth>
                   <date when="1866-10-15">15.10.1866</date>
                   <settlement ref="pmb420">
@@ -321,6 +325,8 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q108811839</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb26392.html</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb26392.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162622/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb162622</idno>
             </person>
          </listPerson>
          <listBibl>
@@ -365,9 +371,65 @@
                   <date notBefore="1860-01-01" when="1860-01-01">1860</date>
                </note>
             </place>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <desc type="entity_type">A.ADM3</desc>
+               <desc type="entity_type_id">1124</desc>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,2066 16,37341</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2782729/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb59.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb59</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb59.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/143650/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066013-8</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q257780</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Alsergrund</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb59.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK024_199/199/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
+            </place>
+            <place xml:id="pmb30">
+               <placeName>Salzburg</placeName>
+               <placeName type="alternative-name">Iuvavum</placeName>
+               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
+               <desc type="entity_type">A.ADM2</desc>
+               <desc type="entity_type_id">1135</desc>
+               <location type="coords">
+                  <geo>47,80067 13,04532</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb697">Salzburg (Land)</placeName>
+                  <geo>47,41667 13,25</geo>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb30</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91649/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/93885/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2766818/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/94039/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4076982-3</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q34713</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Salzburg</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb30.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30.html</idno>
+            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -403,61 +465,6 @@
                <note type="image">
                   <figure>
                      <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
-                  </figure>
-               </note>
-            </place>
-            <place xml:id="pmb30">
-               <placeName>Salzburg</placeName>
-               <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <desc type="entity_type">A.ADM2</desc>
-               <desc type="entity_type_id">1135</desc>
-               <location type="coords">
-                  <geo>47,80067 13,04532</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg (Land)</placeName>
-                  <geo>47,41667 13,25</geo>
-               </location>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb30</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91649/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/93885/</idno>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2766818/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/94039/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4076982-3</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q34713</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Salzburg</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb30.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30.html</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30.html</idno>
-            </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
-               <desc type="entity_type">A.ADM3</desc>
-               <desc type="entity_type_id">1124</desc>
-               <location type="coords">
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,2066 16,37341</geo>
-               </location>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2782729/</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb59.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb59</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb59.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/143650/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066013-8</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q257780</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Alsergrund</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb59.html</idno>
-               <note type="image">
-                  <figure>
-                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK024_199/199/full/,600/0/native.jpg"/>
                   </figure>
                </note>
             </place>

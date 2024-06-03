@@ -226,11 +226,11 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:assert
-            test="position()=1 and (tei:date/@when or (tei:date/@notAfter and tei:date/@notBefore) or (tei:date/@from and tei:date/@to) or not(tei:date))"/>
+            test="position() = 1 and (tei:date/@when or (tei:date/@notAfter and tei:date/@notBefore) or (tei:date/@from and tei:date/@to) or not(tei:date))"/>
          <xs:assert test="tei:persName/@ref or not(tei:persName)"/>
          <xs:assert test="not(tei:date) or tei:date[not(matches(., '\n\s+\n\s+'))]"/>
          <xs:assert
-            test="tei:placeName[(starts-with(@ref, '#pmb') and not(@ref='#pmb') and (string(number(substring-after(@ref, '#pmb'))) != 'NaN')  and not(contains(@ref, ' ')))] or not(child::tei:placeName)"
+            test="tei:placeName[(starts-with(@ref, '#pmb') and not(@ref = '#pmb') and (string(number(substring-after(@ref, '#pmb'))) != 'NaN') and not(contains(@ref, ' ')))] or not(child::tei:placeName)"
          />
       </xs:complexType>
    </xs:element>
@@ -291,7 +291,8 @@
          </xs:all>
          <xs:attribute name="n" use="required" type="xs:integer"/>
          <xs:assert test="(child::tei:objectType) or (number(@n) &gt; 1)"/>
-         <xs:assert test="(@n=1 and descendant::tei:measure[@unit='zeichenanzahl']) or @n != 1"/>
+         <xs:assert test="(@n = 1 and descendant::tei:measure[@unit = 'zeichenanzahl']) or @n != 1"
+         />
       </xs:complexType>
    </xs:element>
    <xs:simpleType name="objectTypeCorresp">
@@ -410,7 +411,6 @@
          <xs:enumeration value="kartenbrief"/>
          <xs:enumeration value="telegramm"/>
          <xs:enumeration value="widmung"/>
-         
       </xs:restriction>
    </xs:simpleType>
    <!-- Define the 'measure' element with attributes 'unit' and 'quantity' -->
@@ -427,7 +427,6 @@
             <xs:element ref="tei:measure" maxOccurs="unbounded" minOccurs="1"/>
          </xs:all>
          <xs:assert test="count(distinct-values(tei:measure/@unit)) = count(tei:measure)"/>
-         
       </xs:complexType>
    </xs:element>
    <!-- Define the 'supportDesc' element with 'extent' as its child -->
@@ -535,7 +534,7 @@
          </xs:sequence>
          <xs:attribute name="n" use="required" type="xs:integer"/>
          <xs:assert
-            test="tei:placeName[(starts-with(@ref, '#pmb') and not(@ref='#pmb') and (string(number(substring-after(@ref, '#pmb'))) != 'NaN')  or (tokenize(@ref, ' #pmb')[2]))] or not(child::tei:placeName)"
+            test="tei:placeName[(starts-with(@ref, '#pmb') and not(@ref = '#pmb') and (string(number(substring-after(@ref, '#pmb'))) != 'NaN') or (tokenize(@ref, ' #pmb')[2]))] or not(child::tei:placeName)"
          />
       </xs:complexType>
    </xs:element>
@@ -578,7 +577,8 @@
             <xs:element ref="tei:note" minOccurs="0" maxOccurs="1"/>
          </xs:all>
          <xs:attribute name="corresp" type="xs:NCName"/>
-         <xs:assert test="tei:note[tei:measure[@unit='zeichenanzahl' and @quantity]] or not(tei:note)"/>
+         <xs:assert
+            test="tei:note[tei:measure[@unit = 'zeichenanzahl' and @quantity]] or not(tei:note)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="analytic">
@@ -781,9 +781,10 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:assert test="child::tei:desc[not(@type)]"/>
-         <xs:assert test="every $pn in descendant::tei:placeName satisfies $pn[starts-with(@ref, '#pmb') and not(@ref='#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN' and not(contains(@ref, ' '))]"/>
-         
-         
+         <xs:assert test="
+               every $pn in descendant::tei:placeName
+                  satisfies $pn[starts-with(@ref, '#pmb') and not(@ref = '#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN' and not(contains(@ref, ' '))]"
+         />
       </xs:complexType>
    </xs:element>
    <xs:element name="additions">
@@ -848,8 +849,9 @@
          <xs:assert
             test="not(descendant::tei:placeName) and not(descendant::tei:orgName) and not(descendant::tei:workName) and not(descendant::tei:persName)"/>
          <xs:assert test="not(@type = 'address' and child::*[name() != 'address'])"/>
-         <xs:assert test="not(descendant::tei:pb/following-sibling::text()[1][normalize-space(.) != '' and starts-with(., ' ')])"/>
-         <xs:assert test="not(descendant::tei:ref[normalize-space(.) !=''])"/>
+         <xs:assert
+            test="not(descendant::tei:pb/following-sibling::text()[1][normalize-space(.) != '' and starts-with(., ' ')])"/>
+         <xs:assert test="not(descendant::tei:ref[normalize-space(.) != ''])"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="lg">
@@ -1124,7 +1126,9 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:attribute ref="xml:id" use="required"/>
-         <xs:assert test="((@type='commentary' or @type='textConst') and matches(@xml:id, '^((T_|K_)(L\d{5}-\d+))$')) or not(@type='commentary' or @type='textConst')"/>
+         <xs:assert
+            test="((@type = 'commentary' or @type = 'textConst') and matches(@xml:id, '^((T_|K_)(L\d{5}-\d+))$')) or not(@type = 'commentary' or @type = 'textConst')"
+         />
       </xs:complexType>
    </xs:element>
    <xs:element name="lb">
@@ -1169,9 +1173,10 @@
       <xs:assert
          test="(@type = 'textConst' or @type = 'commentary' and not(descendant::tei:note[@type = 'textConst' or @type = 'commentary'])) or not(@type = 'textConst' or @type = 'commentary')"/>
       <xs:assert
-         test="(@type = 'footnote' and @xml:id and starts-with(@xml:id, 'F') and child::tei:p and not(child::*[name() != 'p'])) or not(child::tei:p)"
-      />
-      <xs:assert test="((@type='commentary' or @type='textConst') and matches(@xml:id, '^((T_|K_)(L\d{5}-\d+h))$')) or @type='footnote'"/>
+         test="(@type = 'footnote' and @xml:id and starts-with(@xml:id, 'F') and child::tei:p and not(child::*[name() != 'p'])) or not(child::tei:p)"/>
+      <xs:assert
+         test="((@type = 'commentary' or @type = 'textConst') and matches(@xml:id, '^((T_|K_)(L\d{5}-\d+h))$')) or @type = 'footnote'"/>
+      <xs:assert test="(@type = 'footnote' and child::tei:p) or not(@type = 'footnote')"/>
    </xs:complexType>
    <xs:complexType name="backNote_type-org">
       <xs:sequence minOccurs="0">
@@ -1190,7 +1195,7 @@
          <xs:element ref="tei:measure" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
       <xs:attribute name="type" type="xs:string" use="required"/>
-      <xs:assert test="@type='zeichenanzahl'"/>
+      <xs:assert test="@type = 'zeichenanzahl'"/>
    </xs:complexType>
    <xs:complexType name="backNote_type">
       <!-- Element mit Textinhalt und Attributen, aber keinen Kindern -->
@@ -1204,8 +1209,8 @@
       <xs:alternative type="backNote_type"
          test="@type = 'work_kind' or @type = 'uri_worklink' or @type = 'bibliografische_angabe' or @type = 'references'"/>
       <xs:alternative type="backNote_type-org" test="@type = 'apis_dates'"/>
-      <xs:alternative type="backNote_type_image" test="@type='image'"/>
-      <xs:alternative type="biblStruct_type-measure" test="@type ='zeichenanzahl'"/>
+      <xs:alternative type="backNote_type_image" test="@type = 'image'"/>
+      <xs:alternative type="biblStruct_type-measure" test="@type = 'zeichenanzahl'"/>
       <xs:alternative type="normalNote"/>
    </xs:element>
    <xs:element name="Lemma" type="xs:string"/>
@@ -1257,11 +1262,10 @@
                   @n
                else
                   not(@n)"/>
-         <xs:assert test="(@rend='spaced-out' and ((text() and not(child::*)) or (text() and not(child::*[name()!='space'])))) or not(@rend='spaced-out')"/>
-         
          <xs:assert
-            test="not(child::tei:anchor[@type = 'commentary']) or child::tei:anchor[@type = 'commentary'] and child::tei:note[@type = 'commentary']"
-         />
+            test="(@rend = 'spaced-out' and ((text() and not(child::*)) or (text() and not(child::*[name() != 'space'])))) or not(@rend = 'spaced-out')"/>
+         <xs:assert
+            test="not(child::tei:anchor[@type = 'commentary']) or child::tei:anchor[@type = 'commentary'] and child::tei:note[@type = 'commentary']"/>
          <xs:assert test="child::* or not(ends-with(., ' '))"/>
       </xs:complexType>
    </xs:element>

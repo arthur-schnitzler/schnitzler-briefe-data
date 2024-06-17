@@ -9,7 +9,7 @@
    -->
    <xs:simpleType name="customXmlIdType">
       <xs:restriction base="xs:string">
-         <xs:pattern value="L\d{4}"/>
+         <xs:pattern value="L\d{5}"/>
       </xs:restriction>
    </xs:simpleType>
    <xs:element name="TEI">
@@ -99,6 +99,9 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:attribute name="target" use="required" xml:base="xs:string"/>
+         <xs:assert test="(@type='schnitzler-tagebuch' and matches(@target, '^(18|19)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$')) or not(@type='schnitzler-tagebuch')"/>
+         <xs:assert test="(@type='schnitzler-briefe' and matches(@target, '^L\d{5}$')) or not(@type='schnitzler-briefe')"/>
+         
       </xs:complexType>
    </xs:element>
    <xs:element name="fileDesc">

@@ -1104,7 +1104,6 @@
             <xs:element ref="tei:anchor" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:bibl" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:date" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:note" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:orgName" maxOccurs="unbounded" minOccurs="0"/>
@@ -1142,7 +1141,6 @@
          <xs:element ref="tei:bibl" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:date" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:time" maxOccurs="unbounded" minOccurs="0"/>
-         <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:orgName" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:persName" maxOccurs="unbounded" minOccurs="0"/>
@@ -1236,7 +1234,6 @@
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:add" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
@@ -1416,7 +1413,6 @@
             <xs:element ref="tei:date" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:del" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:handShift" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:lb" maxOccurs="unbounded" minOccurs="0"/>
@@ -1896,7 +1892,6 @@
             <xs:element ref="tei:del" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:p" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:pb" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
       </xs:complexType>
    </xs:element>
@@ -1924,20 +1919,6 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
-      </xs:complexType>
-   </xs:element>
-   <xs:element name="geogName">
-      <xs:complexType mixed="true">
-         <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:damage" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:rs" maxOccurs="unbounded" minOccurs="0"/>
-         </xs:choice>
-         <xs:attribute name="instant" type="xs:boolean"/>
-         <xs:attribute name="ref" type="xs:string"/>
-         <xs:attribute name="type" type="xs:NCName"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="subst">

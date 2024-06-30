@@ -76,7 +76,7 @@
                         <repository>Wienbibliothek im Rathaus</repository>
                         <idno>ZPH 1681, 2.1.516</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="blatt" quantity="1"/><measure unit="seite" quantity="2"/><measure unit="zeichenanzahl" quantity="921"/></extent></supportDesc></objectDesc><handDesc><handNote medium="schwarze-tinte" style="lateinische-kurrent"/></handDesc><additions><incident type="archival" rend="bleistift"><desc>von unbekannter Hand nummeriert: »<quote>4</quote>«</desc></incident></additions></physDesc>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="blatt" quantity="1"/><measure unit="seite" quantity="2"/><measure unit="zeichenanzahl" quantity="922"/></extent></supportDesc></objectDesc><handDesc><handNote medium="schwarze-tinte" style="lateinische-kurrent"/></handDesc><additions><incident type="archival" rend="bleistift"><desc>von unbekannter Hand nummeriert: »<quote>4</quote>«</desc></incident></additions></physDesc>
                   </msDesc>
                </witness>
             </listWit>
@@ -131,10 +131,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2023-03-16">Export aus Transkribus</change>
          <change who="LU" when="2024-06-05">Durchsicht</change>
          <change who="LU" when="2024-06-05">Index check</change>
+         <change who="MAM" when="2024-06-27">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -143,11 +144,10 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="Wienbibliothek_AS_FS_2823272"/><rs type="place" ref="#pmb50">Wien</rs><space unit="chars" quantity="1"/><date when="1925-05-06">6. 5. 1925</date></dateline></opener><p><salute>lieber,</salute> ich danke Ihnen von Herzen für Ihr wunderbares <anchor type="commentary" xml:id="K_L03021-1"/><rs type="work" ref="#pmb76524" subtype="implied"><rs type="place" ref="#pmb815">Palaestina</rs>-Buch</rs><note type="commentary" xml:id="K_L03021-1h"><ref type="schnitzler-briefe" target="L03045" subtype="See"/>. Nachweislich las es
-                     <rs type="person" ref="#pmb2121">Schnitzler</rs> erst Wochen später, <ref type="schnitzler-tagebuch" target="1925-07-25" subtype="cf"/>.</note>; es
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="Wienbibliothek_AS_FS_2823272"/><rs type="place" ref="#pmb50">Wien</rs><space unit="chars" quantity="1"/><date when="1925-05-06">6. 5. 1925</date></dateline></opener><p><salute>lieber,</salute> ich danke Ihnen von Herzen für Ihr wunderbares <anchor type="commentary" xml:id="K_L03021-1"/><rs type="work" ref="#pmb76524" subtype="implied"><rs type="place" ref="#pmb815">Palaestina</rs>-Buch</rs><note type="commentary" xml:id="K_L03021-1h"><ref type="schnitzler-briefe" target="L03045" subtype="see"/></note>; es
                ergreift mich sehr – nicht nur durch die Eindringlichkeit der mitgetheilten
-               Thatsachen, und die meisterhafte Darstellung;– sondern auch, und ganz besonders als
-               menschliches Bekenntnis eines klaren Verstandes und eine leidenschaftliche Sache (man
+               Thatsachen, und die meisterhafte Darstellung; – sondern auch, und ganz besonders als
+               menschliches Bekenntnis eines klaren Verstandes und einer leidenschaftlichen Seele (man
                könnte vielleicht noch besser sagen: eines leidenschaftlichen Verstandes u einer
                klaren Seele.) Dieses <rs type="work" ref="#pmb76524" subtype="implied">Buch</rs>
                mu<c rendition="#langesS">s</c>s ein starkes Echo, weit über literarische Kreise hinaus finden, und weit über
@@ -306,6 +306,7 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <occupation ref="pmb117">Chefredakteur/Chefredakteurin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118840819</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2167/</idno>
@@ -340,8 +341,7 @@
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>

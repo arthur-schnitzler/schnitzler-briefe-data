@@ -551,6 +551,7 @@
             <xs:element ref="tei:pb" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
          </xs:all>
          <xs:assert test="(child::*[1]) or (string-length(normalize-space(.)) &gt; 0)"/>
       </xs:complexType>

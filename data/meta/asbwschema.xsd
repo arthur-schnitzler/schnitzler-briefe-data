@@ -1673,7 +1673,7 @@
          <xs:assert
             test="((starts-with(@ref, '#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN') or (tokenize(@ref, ' #pmb')[2]))"/>
          <xs:assert test="not(contains(., '&amp;'))"/>
-         <xs:assert test="child::* or not(ends-with(., ' '))"/>
+         <xs:assert test="(child::*) or (not(normalize-space(.) = '') and not(ends-with(., ' ')))"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="handShift">

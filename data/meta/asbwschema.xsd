@@ -654,6 +654,10 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
+         <!-- Hier ist die Assert-Bedingung, die prüft, dass jedes 'when'-Attribut nach dem des vorherigen 'change'-Elements liegt -->
+         <xs:assert test="
+            every $change in tei:change[position() > 1] satisfies 
+            xs:date($change/@when) ge xs:date($change/preceding-sibling::tei:change[1]/@when)"/>
       </xs:complexType>
    </xs:element>
    <xsd:simpleType name="date-or-gyear-or-gyearmonth">

@@ -7,11 +7,6 @@
       schemaLocation="http://www.w3.org/2001/xml.xsd"/>
    <!-- Schema der XML-Dateien für https://schnitzler-briefe.acdh.oeaw.ac.at/ 
    -->
-   <xs:simpleType name="customXmlIdType">
-      <xs:restriction base="xs:string">
-         <xs:pattern value="L\d{5}"/>
-      </xs:restriction>
-   </xs:simpleType>
    <xs:element name="TEI">
       <xs:complexType mixed="true">
          <xs:choice minOccurs="2" maxOccurs="unbounded">

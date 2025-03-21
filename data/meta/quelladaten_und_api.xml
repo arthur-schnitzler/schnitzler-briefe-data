@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
+                <title level="a">Quelldaten und API</title>
+                <author>
+                    <persName>
+                        <forename>Martin Anton</forename>
+                        <surname>Müller</surname>
+                    </persName>
+                    <persName>
+                        <forename>Gerd-Hermann</forename>
+                        <surname>Susen</surname>
+                    </persName>
+                    <persName>
+                        <forename>Laura</forename>
+                        <surname>Untner</surname>
+                    </persName>
+                </author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
+                <pubPlace>Vienna</pubPlace>
+                <date when="2025">2025</date>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>The (CC BY 4.0)-License applies to this document.</p>
+                    </licence>
+                </availability>
+                <tei:idno xmlns:tei="http://www.tei-c.org/ns/1.0" type="URI"
+                    >https://id.acdh.oeaw.ac.at/Schnitzler–Briefe/v1/meta/quelladaten_und_api.xml</tei:idno>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <p>Die einfachste Form, an die Daten dieser Edition zu kommen, ist, sie über gitHub
+                zu laden. Es gibt in erster Linie zwei Repositorien, das eine enthält die Daten, das andere ihre Umsetzung
+                als Website. Weitere Repositorien übernehmen spezifische Funktionen, wie die Umsetzung der
+                Dateien als PDF (mittels XeLaTeX) und das Datenmaterial für Visualisierungen. Alle sind hier
+                zu finden: <ref type="URL" target="https://github.com/arthur-schnitzler/">https://github.com/arthur-schnitzler/</ref>.
+                    
+                </p>
+                <p>Peter Andorfer hat zudem eine OAI Protocol for Metadata Harvesting-Schnittstelle (vgl. <ref type="URL" target="https://de.wikipedia.org/wiki/Open_Archives_Initiative#OAI_Protocol_for_Metadata_Harvesting">Wikipedia</ref>) eingerichtet, die über
+                die folgenden Links zugänglich sind:</p>
+                <list>
+                    <item><ref type="URL" target="https://dse-static-oai-pmh.acdh-dev.oeaw.ac.at/schnitzler-briefe/oai-pmh">https://dse-static-oai-pmh.acdh-dev.oeaw.ac.at/schnitzler-briefe/oai-pmh</ref>
+                    </item>
+                    <item><ref type="URL" target="https://dse-static-oai-pmh.acdh-dev.oeaw.ac.at/schnitzler-briefe/oai-pmh?verb=Identify">?verb=Identify</ref>
+                    </item>
+                    <item><ref type="URL" target="https://dse-static-oai-pmh.acdh-dev.oeaw.ac.at/schnitzler-briefe/oai-pmh?verb=ListIdentifiers">?verb=ListIdentifiers</ref>
+                    </item>
+                    <item><ref type="URL" target="https://dse-static-oai-pmh.acdh-dev.oeaw.ac.at/schnitzler-briefe/oai-pmh?verb=ListRecords">?verb=ListRecords</ref>
+                    </item>
+                    <item><ref type="URL" target="https://dse-static-oai-pmh.acdh-dev.oeaw.ac.at/schnitzler-briefe/oai-pmh?verb=GetRecord&amp;identifier=L00002.xml">?verb=GetRecord&amp;identifier=L00002.xml</ref></item>
+                </list>
+            </div>
+        </body>
+    </text>
+</TEI>

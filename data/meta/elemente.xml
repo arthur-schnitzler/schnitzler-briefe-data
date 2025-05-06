@@ -22,7 +22,7 @@
             <publicationStmt>
                 <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
                 <pubPlace>Vienna</pubPlace>
-                <date when="2023">2023</date>
+                <date when="2024">2024</date>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                         <p>The (CC BY 4.0)-License applies to this document.</p>
@@ -415,9 +415,7 @@
                     <div type="level3">
                         <head xml:id="salute">salute</head>
                         <p>Umrahmt die Begrüßungsformel. Wenn sie im Brief abgesetzt ist, dann steht
-                            sie im <code>opener</code>-Element. Wenn sie, wie bei Postkarten häufig,
-                            im Fließtext steht, dann nimmt sie noch das Komma und das folgende
-                            Leerzeichen mit. </p>
+                            sie im <code>opener</code>-Element. </p>
                     </div>
                     <div type="level3">
                         <head xml:id="seg">seg</head>
@@ -737,9 +735,12 @@
                                     <item>roter-buntstift </item>
                                     <item>blauer-buntstift </item>
                                     <item>gruener-buntstift </item>
+                                    <item>blaue-tinte</item>
+                                    <item>gruene-tinte </item>
+                                    <item>lila-tinte </item>
+                                    <item>rote-tinte </item>
                                     <item>schwarze-tinte </item>
-                                    <item>blaue-tinte </item>
-                                    <item>anderes </item>
+                                    <item>anderes</item>
                                 </list>
                                 <p>Im letzteren Fall ist eine Angabe im Element zu machen: </p>
                                 <p><code>&lt;handNote medium="anderes"&gt; mit Blut geschrieben
@@ -852,8 +853,11 @@
                                 <item>roter-buntstift </item>
                                 <item>blauer-buntstift </item>
                                 <item>gruener-buntstift </item>
+                                <item>blaue-tinte</item>
+                                <item>gruene-tinte </item>
+                                <item>lila-tinte </item>
+                                <item>rote-tinte </item>
                                 <item>schwarze-tinte </item>
-                                <item>blaue-tinte </item>
                                 <item>anderes </item>
                             </list>
                         </div>
@@ -944,7 +948,11 @@
                         zusätzliche Spezifierung wurde mit »delivered« eingeführt, für
                         Korrespondenzstücke, die zwar ihren Zielort erreichten, aber der Adressat,
                         die Adressatin nicht angetroffen und von diesem oder dieser erst später in
-                        Empfang genommen wurde.</p>
+                        Empfang genommen wurde. Die etwaigen Zwischenstationen werden nur dann ausgewiesen,
+                        wenn sich Abweichungen zu den Haupttypisierungen <code>@type='sent'</code> und <code>@type='received'</code>
+                    ergeben. Wenn beispielsweise eine Postkarte unmittelbar am selben Tag versandt wurde oder nur durch den 
+                    Poststempel datierbar ist, wird angenommen, dass 'sent' = 'transmitted' und letzteres wird übergangen.
+                    Ähnlich verhält es sich am anderen Ende des Vorgang, bei dem implizit angenommen wird, dass 'delivered' = 'received'.</p>
                     <div type="level3">
                         <head xml:id="correspaction">correspAction</head>
                         <p>Neben dem verpflichtenden Attribut <code>@type</code> gibt es drei

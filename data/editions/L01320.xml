@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L01320" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
-   <teiHeader type="text">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
@@ -35,17 +35,17 @@
             <date when="2023">2023</date>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
-                  <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
-                     vervielfältigen und weiterverbreiten Bearbeiten — das Material remixen,
+                  <p>Sie dürfen: Teilen – das Material in jedwedem Format oder Medium
+                     vervielfältigen und weiterverbreiten Bearbeiten – das Material remixen,
                      verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar
                      kommerziell.</p>
                   <p>Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die
                      Lizenzbedingungen halten. Unter folgenden Bedingungen:</p>
-                  <p>Namensnennung — Sie müssen angemessene Urheber- und Rechteangaben machen, einen
+                  <p>Namensnennung – Sie müssen angemessene Urheber- und Rechteangaben machen, einen
                      Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese
                      Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings
                      nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie
-                     oder Ihre Nutzung besonders. Keine weiteren Einschränkungen — Sie dürfen keine
+                     oder Ihre Nutzung besonders. Keine weiteren Einschränkungen – Sie dürfen keine
                      zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen
                      rechtlich irgendetwas untersagen, was die Lizenz erlaubt.</p>
                   <p>Hinweise:</p>
@@ -100,7 +100,8 @@
                      <author ref="#pmb10815">Bahr, Hermann</author>
                      <author ref="#pmb2121">Schnitzler, Arthur</author>
                      <title level="m">Briefwechsel, Aufzeichnungen, Dokumente (1891–1931)</title>
-                     <editor>Herausgegeben von Kurt Ifkovits und Martin Anton Müller</editor>
+                     <editor>Ifkovits, Kurt</editor>
+                     <editor>Müller, Martin Anton</editor>
                      <imprint>
                         <pubPlace>Göttingen</pubPlace>
                         <publisher>Wallstein</publisher>
@@ -119,8 +120,8 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50">Wien</placeName>
                <date when="1903-09-29" n="01">29. 9. 1903</date>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
@@ -141,17 +142,17 @@
          <change who="KI MAM" when="2017-06-27">Kollationiert</change>
          <change who="MAM" when="2018-07-15">Überführt aus Bahr–Schnitzler-Daten</change>
          <change who="GHS" when="2020-01-10">finalisiert</change>
-         <change who="MAM" when="2019-01-20">Index check</change>
+         <change when="2020-01-11" who="MAM">Index check</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic facs="Hs-30885,104_001"/>
+      <graphic url="Hs-30885,104_001"/>
    </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="Hs-30885,104_001"/><date>29. 9. 903</date>.</dateline></opener><p><salute>lieber Hugo,</salute> vielleicht<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehn Sie <rs ref="#pmb10815" type="person">Bahr</rs> in die<c rendition="#langesS">s</c>en Tagen, u er käme <anchor type="commentary" xml:id="K_L01320-1"/>Sam<c rendition="#langesS">s</c>tag<note xml:id="K_L01320-1h" type="commentary"><date>3. 10. 1903</date></note> auch nach <rs ref="#pmb63" type="place">Hietzing</rs>? –</p><p>Wir freuen uns d<c rendition="#langesS">s</c>s es Ihnen beiden bei uns behagl i<c rendition="#langesS">s</c>t. Ihre<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr wahren Bemerkungen
                über Spiel und Ge<c rendition="#langesS">s</c>ang hat <rs ref="#pmb2173" type="person">Olga</rs> mit Ein<c rendition="#langesS">s</c>icht
-               gele<c rendition="#langesS">s</c>en.</p><p>Das <rs type="work" ref="#pmb30637" subtype="implied">Bild</rs> werden Sie haben; und
+               gele<c rendition="#langesS">s</c>en.</p><p>Das <rs type="work" ref="#pmb167490" subtype="implied">Bild</rs> werden Sie haben; und
                einen<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chönen Rahmen obendrein.</p><p>Mit dem Arbeiten geht es nun vorwärts.</p><closer>Auf Wieder<c rendition="#langesS">s</c>ehen.<lb/>Ihr <signed>A.</signed></closer></div>
       </body>
       <back>
@@ -161,6 +162,7 @@
                   <forename>Arthur</forename>
                   <surname>Schnitzler</surname>
                </persName>
+               <persName type="legacy-name-merge">Schnitzler, Arthur</persName>
                <birth>
                   <date when="1862-05-15">15.05.1862</date>
                   <settlement ref="pmb50">
@@ -185,15 +187,18 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
                <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=11215</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2121</idno>
             </person>
             <person xml:id="pmb11740">
                <persName>
@@ -203,6 +208,7 @@
                <persName type="person_pseudonym">Loris</persName>
                <persName type="person_pseudonym">Theophil Morren</persName>
                <persName type="namensvariante">Hofmannsthal, Hugo</persName>
+               <persName type="legacy-name-merge">Hofmannsthal, Hugo von</persName>
                <birth>
                   <date when="1874-02-01">1874-02-01</date>
                   <settlement ref="pmb50">
@@ -223,26 +229,40 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16293</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118552759</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_16293.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb11740.html</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11740.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11740/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11740.html</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb11740</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp46353</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00281a55</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q51513</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Hugo_von_Hofmannsthal</idno>
+               <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=25687</idno>
                <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001d1cc</idno>
                <idno type="URL" subtype="amp">https://amp.acdh.oeaw.ac.at/amp_person_42.html</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb11740.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11740.html</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416436.html?pmb11740</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416437.html?pmb11740</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416438.html?pmb11740</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416439.html?pmb11740</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416440.html?pmb11740</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416441.html?pmb11740</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416753.html?pmb11740</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416757.html?pmb11740</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11740.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/160559/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb11740</idno>
             </person>
             <person xml:id="pmb10815">
                <persName>
                   <forename>Hermann</forename>
                   <surname>Bahr</surname>
                </persName>
+               <persName type="legacy-name-merge">Bahr, Hermann</persName>
+               <persName type="legacy-name-merge">Bahr, Hermann</persName>
                <birth>
                   <date when="1863-07-19">19.07.1863</date>
                   <settlement ref="pmb332">
@@ -264,19 +284,27 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb100">Kritiker/Kritikerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13374</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_13374.html</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118505955</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10815.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10815/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10815.html</idno>
                <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10815.html</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb10815</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp45908</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00280efa</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q94034</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Hermann_Bahr</idno>
+               <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=2520</idno>
                <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001f7bb</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10815.html</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416397.html?pmb10815</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416398.html?pmb10815</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416399.html?pmb10815</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10815.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/159204/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/121656/</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb121656.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb10815</idno>
             </person>
             <person xml:id="pmb2173">
                <persName>
@@ -285,6 +313,8 @@
                </persName>
                <persName type="person_geburtsname_nachname">Gussmann</persName>
                <persName type="person_pseudonym">Dina Marius</persName>
+               <persName type="legacy-name-merge">Schnitzler, Olga</persName>
+               <persName type="legacy-name-merge">Schnitzler, Olga</persName>
                <persName type="legacy-name-merge">Schnitzler, Olga</persName>
                <birth>
                   <date when="1882-01-17">17.01.1882</date>
@@ -310,40 +340,41 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116848723</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2173.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2173/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19832</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_19832.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp50811</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q55884531</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162151/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162152/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2173.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2173</idno>
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb30637">
-               <title>Arthur Schnitzler (1903)</title>
-               <author ref="pmb2374" role="hat-geschaffen">Pietzner, Carl</author>
-               <date notBefore="1903-01-01" when="1903-07-02">1903</date>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30637.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30637/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30637.html</idno>
+            <bibl xml:id="pmb167490">
+               <title>Arthur Schnitzler [Halbprofil 1903]</title>
+               <author ref="pmb2370" role="hat-geschaffen">Hertwig, Aura</author>
+               <date when="1903-03-09">1903-03-09</date>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb167490.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/167490/</idno>
                <note type="work_kind">Fotografie</note>
             </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer_name">Vindobona</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
-               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
-               <desc type="entity_type_id">14</desc>
+               <desc type="entity_type">A.ADM2</desc>
+               <desc type="entity_type_id">1135</desc>
                <location type="coords">
                   <geo>48,2066 16,37341</geo>
                </location>
@@ -357,20 +388,27 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
             </place>
             <place xml:id="pmb63">
                <placeName>XIII., Hietzing</placeName>
                <placeName type="legacy-name-merge">Hietzing</placeName>
-               <desc type="entity_type">Bezirk (A.BZK)</desc>
-               <desc type="entity_type_id">25</desc>
+               <desc type="entity_type">A.ADM3</desc>
+               <desc type="entity_type_id">1124</desc>
                <location type="coords">
                   <geo>48,17547 16,29101</geo>
                </location>
@@ -381,14 +419,19 @@
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2776420/</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb63.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb63.html</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb63</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb63.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/102317/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4113911-2</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q636910</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Hietzing</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb63.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb63.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb63.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK043_318/318/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
             </place>
          </listPlace>
       </back>

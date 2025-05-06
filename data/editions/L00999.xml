@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L00999" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
-   <teiHeader type="text">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
@@ -36,17 +36,17 @@
             <date when="2023">2023</date>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
-                  <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
-                     vervielfältigen und weiterverbreiten Bearbeiten — das Material remixen,
+                  <p>Sie dürfen: Teilen – das Material in jedwedem Format oder Medium
+                     vervielfältigen und weiterverbreiten Bearbeiten – das Material remixen,
                      verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar
                      kommerziell.</p>
                   <p>Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die
                      Lizenzbedingungen halten. Unter folgenden Bedingungen:</p>
-                  <p>Namensnennung — Sie müssen angemessene Urheber- und Rechteangaben machen, einen
+                  <p>Namensnennung – Sie müssen angemessene Urheber- und Rechteangaben machen, einen
                      Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese
                      Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings
                      nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie
-                     oder Ihre Nutzung besonders. Keine weiteren Einschränkungen — Sie dürfen keine
+                     oder Ihre Nutzung besonders. Keine weiteren Einschränkungen – Sie dürfen keine
                      zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen
                      rechtlich irgendetwas untersagen, was die Lizenz erlaubt.</p>
                   <p>Hinweise:</p>
@@ -105,13 +105,13 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50">Wien</placeName>
                <date when="1899-11-24" n="01">24. 11. 1899</date>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
-               <placeName ref="#pmb50">Wien</placeName>
                <date evidence="conjecture" notBefore="1899-11-24" notAfter="1899-11-26">[24. 11. 1899 – 28. 11. 1899?]</date>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -130,16 +130,17 @@
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic facs="1899_AS_RBH_3_00035"/>
-      <graphic facs="1899_AS_RBH_3_00036"/>
+      <graphic url="1899_AS_RBH_3_00035"/>
+      <graphic url="1899_AS_RBH_3_00036"/>
    </facsimile>
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="1899_AS_RBH_3_00035"/>Herrn <hi rend="latintype">Dr. Richard
                      Beer-Hofmann</hi></addrLine><addrLine><rs ref="#pmb50" type="place">Wien</rs></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb338" type="place">I. Wollzeile 15</rs></hi>.</addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="1899_AS_RBH_3_00036"/>Al<c rendition="#langesS">s</c>o es bleibt bei <date>Sonntag</date> um
-                  <time>5</time>. Sollten Sie etwa Lu<c rendition="#langesS">s</c>t haben<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich den <rs ref="#pmb2249" type="person">Korff</rs> in der <rs ref="#pmb29917" type="work">Lbl.</rs>
-               anzu<c rendition="#langesS">s</c>ehn?</p><closer>Herzlich<c rendition="#langesS">s</c>t Ihr<lb/><signed>Arthur.</signed></closer></div>
+         <div type="writingSession" n="1"><p><pb facs="1899_AS_RBH_3_00036"/>Al<c rendition="#langesS">s</c>o es bleibt bei <anchor type="commentary" xml:id="K_L00999-1"/><date>Sonntag</date><note type="commentary" xml:id="K_L00999-1h"><ref type="schnitzler-tagebuch" target="1899-11-26" subtype="See"/>.
+               </note> um <time>5</time>. Sollten Sie etwa Lu<c rendition="#langesS">s</c>t haben<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich den
+                  <anchor type="commentary" xml:id="K_L00999-2"/><rs ref="#pmb2249" type="person">Korff</rs> in der <rs ref="#pmb29917" type="work">Lbl.</rs><note type="commentary" xml:id="K_L00999-2h"><ref type="schnitzler-tagebuch" target="1899-11-25" subtype="Cf"/>.
+               </note> anzu<c rendition="#langesS">s</c>ehn?</p><closer>Herzlich<c rendition="#langesS">s</c>t Ihr<lb/><signed>Arthur.</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -148,6 +149,7 @@
                   <forename>Arthur</forename>
                   <surname>Schnitzler</surname>
                </persName>
+               <persName type="legacy-name-merge">Schnitzler, Arthur</persName>
                <birth>
                   <date when="1862-05-15">15.05.1862</date>
                   <settlement ref="pmb50">
@@ -172,21 +174,25 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
                <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=11215</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2121</idno>
             </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
                   <surname>Beer-Hofmann</surname>
                </persName>
+               <persName type="legacy-name-merge">Beer-Hofmann, Richard</persName>
                <birth>
                   <date when="1866-07-11">1866-07-11</date>
                   <settlement ref="pmb50">
@@ -207,19 +213,28 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13551</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118654756</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_13551.html</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10863/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp52172</idno>
                <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=B#DWpers1010</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00280f95</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q213750</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Richard_Beer-Hofmann</idno>
+               <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=6074</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416402.html?pmb10863</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416403.html?pmb10863</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416404.html?pmb10863</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416405.html?pmb10863</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416755.html?pmb10863</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/159307/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb10863</idno>
             </person>
             <person xml:id="pmb2249">
                <persName>
@@ -227,6 +242,7 @@
                   <surname>Korff</surname>
                </persName>
                <persName type="person_geburtsname_nachname">Kirsch</persName>
+               <persName type="legacy-name-merge">Korff, Arnold</persName>
                <birth>
                   <date when="1868-08-02">02.08.1868</date>
                   <settlement ref="pmb50">
@@ -248,36 +264,45 @@
                <sex value="male"/>
                <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/101334071X</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_17046</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_17046.html</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2249.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2249/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2249.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38449</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0028289a</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q89060</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arnold_Korff</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2249.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2249.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2249.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/160858/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2249.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2249</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29917">
                <title>Liebelei. Schauspiel in drei Akten</title>
                <title type="werk_link">https://www.deutschestextarchiv.de/book/show/schnitzler_liebelei_1896</title>
+               <title type="legacy-name-merge">Liebelei</title>
                <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
                <date>1895-10-09</date>
                <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.27</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1823758</idno>
                <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-liebelei</idno>
                <idno type="URL" subtype="theadok">https://theadok.at/work/31062</idno>
-               <idno type="URL" subtype="deutschestextarchiv">http://www.deutschestextarchiv.de/book/show/schnitzler_liebelei_1896</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29917.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29917/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29917.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29917.html</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Liebelei</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb29917.html</idno>
-               <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
+               <idno type="URL" subtype="schnitzler-zeitungen">https://schnitzler-zeitungen.acdh.oeaw.ac.at/223992.html?pmb29917</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1428144.html?pmb29917</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1589039.html?pmb29917</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29917.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/164806/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb164806</idno>
+               <note type="work_kind">Mehraktiges Drama</note>
+               <note type="references"> </note>
             </bibl>
          </listBibl>
          <listPlace>
@@ -287,8 +312,8 @@
                <placeName type="alternative-name">Wien,Innere Stadt</placeName>
                <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
                <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
-               <desc type="entity_type">Bezirk (A.BZK)</desc>
-               <desc type="entity_type_id">25</desc>
+               <desc type="entity_type">A.ADM3</desc>
+               <desc type="entity_type_id">1124</desc>
                <location type="coords">
                   <geo>48,20769 16,37049</geo>
                </location>
@@ -305,24 +330,24 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51010/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2775259/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb51.html</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb51</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb51.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb51.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q267329</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Innere_Stadt_(Wien)</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer_name">Vindobona</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
-               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
-               <desc type="entity_type_id">14</desc>
+               <desc type="entity_type">A.ADM2</desc>
+               <desc type="entity_type_id">1135</desc>
                <location type="coords">
                   <geo>48,2066 16,37341</geo>
                </location>
@@ -336,14 +361,21 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
             </place>
             <place xml:id="pmb338">
                <placeName>Wollzeile</placeName>
@@ -358,9 +390,9 @@
                </location>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb338.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/338/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb338.html</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb338</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb338.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb338.html</idno>
             </place>
          </listPlace>
       </back>

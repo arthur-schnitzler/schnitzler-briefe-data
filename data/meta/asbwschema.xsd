@@ -7,11 +7,6 @@
       schemaLocation="http://www.w3.org/2001/xml.xsd"/>
    <!-- Schema der XML-Dateien für https://schnitzler-briefe.acdh.oeaw.ac.at/ 
    -->
-   <xs:simpleType name="customXmlIdType">
-      <xs:restriction base="xs:string">
-         <xs:pattern value="L\d{4}"/>
-      </xs:restriction>
-   </xs:simpleType>
    <xs:element name="TEI">
       <xs:complexType mixed="true">
          <xs:choice minOccurs="2" maxOccurs="unbounded">
@@ -54,7 +49,6 @@
             <xs:element ref="tei:profileDesc"/>
             <xs:element ref="tei:revisionDesc"/>
          </xs:sequence>
-         <xs:attribute name="type" type="xs:NCName"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="refsDecl">
@@ -100,6 +94,9 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:attribute name="target" use="required" xml:base="xs:string"/>
+         <xs:assert test="(@type='schnitzler-tagebuch' and matches(@target, '^(18|19)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$')) or not(@type='schnitzler-tagebuch')"/>
+         <xs:assert test="(@type='schnitzler-briefe' and matches(@target, '^L\d{5}$')) or not(@type='schnitzler-briefe')"/>
+         
       </xs:complexType>
    </xs:element>
    <xs:element name="fileDesc">
@@ -177,10 +174,10 @@
    </xs:element>
    <xs:element name="sourceDesc">
       <xs:complexType>
-         <xs:choice minOccurs="1" maxOccurs="2">
+         <xs:sequence>
             <xs:element ref="tei:listWit" maxOccurs="1" minOccurs="0"/>
-            <xs:element ref="tei:listBibl" maxOccurs="1" minOccurs="0"/>
-         </xs:choice>
+            <xs:element ref="tei:listBibl" minOccurs="0" maxOccurs="1"/>
+         </xs:sequence>
       </xs:complexType>
    </xs:element>
    <xs:element name="correspDesc">
@@ -208,11 +205,11 @@
    </xs:element>
    <xs:element name="correspAction">
       <xs:complexType>
-         <xs:all>
+         <xs:sequence>
             <xs:element ref="tei:persName" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element ref="tei:placeName" minOccurs="0"/>
-            <xs:element ref="tei:date" minOccurs="0"/>
-         </xs:all>
+            <xs:element ref="tei:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="tei:placeName" minOccurs="0" maxOccurs="1"/>
+         </xs:sequence>
          <xs:attribute name="type" use="required">
             <xs:simpleType>
                <xs:restriction base="xs:string">
@@ -226,11 +223,11 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:assert
-            test="position()=1 and (tei:date/@when or (tei:date/@notAfter and tei:date/@notBefore) or (tei:date/@from and tei:date/@to) or not(tei:date))"/>
+            test="position() = 1 and (tei:date/@when or (tei:date/@notAfter and tei:date/@notBefore) or (tei:date/@from and tei:date/@to) or not(tei:date))"/>
          <xs:assert test="tei:persName/@ref or not(tei:persName)"/>
          <xs:assert test="not(tei:date) or tei:date[not(matches(., '\n\s+\n\s+'))]"/>
          <xs:assert
-            test="tei:placeName[(starts-with(@ref, '#pmb') and not(@ref='#pmb') and (string(number(substring-after(@ref, '#pmb'))) != 'NaN')  and not(contains(@ref, ' ')))] or not(child::tei:placeName)"
+            test="tei:placeName[(starts-with(@ref, '#pmb') and not(@ref = '#pmb') and (string(number(substring-after(@ref, '#pmb'))) != 'NaN') and not(contains(@ref, ' ')))] or not(child::tei:placeName)"
          />
       </xs:complexType>
    </xs:element>
@@ -291,7 +288,8 @@
          </xs:all>
          <xs:attribute name="n" use="required" type="xs:integer"/>
          <xs:assert test="(child::tei:objectType) or (number(@n) &gt; 1)"/>
-         <xs:assert test="(@n=1 and descendant::tei:measure[@unit='zeichenanzahl']) or @n != 1"/>
+         <xs:assert test="(@n = 1 and descendant::tei:measure[@unit = 'zeichenanzahl']) or @n != 1"
+         />
       </xs:complexType>
    </xs:element>
    <xs:simpleType name="objectTypeCorresp">
@@ -410,7 +408,6 @@
          <xs:enumeration value="kartenbrief"/>
          <xs:enumeration value="telegramm"/>
          <xs:enumeration value="widmung"/>
-         
       </xs:restriction>
    </xs:simpleType>
    <!-- Define the 'measure' element with attributes 'unit' and 'quantity' -->
@@ -427,7 +424,6 @@
             <xs:element ref="tei:measure" maxOccurs="unbounded" minOccurs="1"/>
          </xs:all>
          <xs:assert test="count(distinct-values(tei:measure/@unit)) = count(tei:measure)"/>
-         
       </xs:complexType>
    </xs:element>
    <!-- Define the 'supportDesc' element with 'extent' as its child -->
@@ -498,10 +494,11 @@
                   <xs:enumeration value="roter-buntstift"/>
                   <xs:enumeration value="blauer-buntstift"/>
                   <xs:enumeration value="gruener-buntstift"/>
-                  <xs:enumeration value="schwarze-tinte"/>
                   <xs:enumeration value="blaue-tinte"/>
                   <xs:enumeration value="gruene-tinte"/>
+                  <xs:enumeration value="lila-tinte"/>
                   <xs:enumeration value="rote-tinte"/>
+                  <xs:enumeration value="schwarze-tinte"/>
                   <xs:enumeration value="anderes"/>
                </xs:restriction>
             </xs:simpleType>
@@ -534,7 +531,7 @@
          </xs:sequence>
          <xs:attribute name="n" use="required" type="xs:integer"/>
          <xs:assert
-            test="tei:placeName[(starts-with(@ref, '#pmb') and not(@ref='#pmb') and (string(number(substring-after(@ref, '#pmb'))) != 'NaN')  or (tokenize(@ref, ' #pmb')[2]))] or not(child::tei:placeName)"
+            test="tei:placeName[(starts-with(@ref, '#pmb') and not(@ref = '#pmb') and (string(number(substring-after(@ref, '#pmb'))) != 'NaN') or (tokenize(@ref, ' #pmb')[2]))] or not(child::tei:placeName)"
          />
       </xs:complexType>
    </xs:element>
@@ -549,6 +546,7 @@
             <xs:element ref="tei:pb" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
          </xs:all>
          <xs:assert test="(child::*[1]) or (string-length(normalize-space(.)) &gt; 0)"/>
       </xs:complexType>
@@ -577,7 +575,8 @@
             <xs:element ref="tei:note" minOccurs="0" maxOccurs="1"/>
          </xs:all>
          <xs:attribute name="corresp" type="xs:NCName"/>
-         <xs:assert test="tei:note[tei:measure[@unit='zeichenanzahl' and @quantity]] or not(tei:note)"/>
+         <xs:assert
+            test="tei:note[tei:measure[@unit = 'zeichenanzahl' and @quantity]] or not(tei:note)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="analytic">
@@ -650,6 +649,10 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
+         <!-- Hier ist die Assert-Bedingung, die prüft, dass jedes 'when'-Attribut nach dem des vorherigen 'change'-Elements liegt -->
+         <xs:assert test="
+            every $change in tei:change[position() > 1] satisfies 
+            xs:date($change/@when) ge xs:date($change/preceding-sibling::tei:change[1]/@when)"/>
       </xs:complexType>
    </xs:element>
    <xsd:simpleType name="date-or-gyear-or-gyearmonth">
@@ -770,18 +773,20 @@
                   <xs:enumeration value="roter-buntstift"/>
                   <xs:enumeration value="blauer-buntstift"/>
                   <xs:enumeration value="gruener-buntstift"/>
-                  <xs:enumeration value="schwarze-tinte"/>
                   <xs:enumeration value="blaue-tinte"/>
                   <xs:enumeration value="gruene-tinte"/>
+                  <xs:enumeration value="lila-tinte"/>
                   <xs:enumeration value="rote-tinte"/>
+                  <xs:enumeration value="schwarze-tinte"/>
                   <xs:enumeration value="anderes"/>
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
          <xs:assert test="child::tei:desc[not(@type)]"/>
-         <xs:assert test="every $pn in descendant::tei:placeName satisfies $pn[starts-with(@ref, '#pmb') and not(@ref='#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN' and not(contains(@ref, ' '))]"/>
-         
-         
+         <xs:assert test="
+               every $pn in descendant::tei:placeName
+                  satisfies $pn[starts-with(@ref, '#pmb') and not(@ref = '#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN' and not(contains(@ref, ' '))]"
+         />
       </xs:complexType>
    </xs:element>
    <xs:element name="additions">
@@ -846,6 +851,11 @@
          <xs:assert
             test="not(descendant::tei:placeName) and not(descendant::tei:orgName) and not(descendant::tei:workName) and not(descendant::tei:persName)"/>
          <xs:assert test="not(@type = 'address' and child::*[name() != 'address'])"/>
+         <xs:assert
+            test="not(descendant::tei:pb/following-sibling::text()[1][normalize-space(.) != '' and starts-with(., ' ')])"/>
+         <xs:assert test="not(descendant::tei:ref[normalize-space(.) != ''])"/>
+         <xs:assert test="not(descendant::tei:note[preceding-sibling::*[1]=text()[1][not(normalize-space(.)='') and ends-with(., ' ')]])"/> <!-- keine Leerzeichen vor note -->
+         <xs:assert test="not(descendant::tei:anchor[not(@type='label') and following-sibling::text()[1][not(normalize-space(.)='') and starts-with(., ' ')]])"/> <!-- keine Leerzeichen nach kommentar-anchor -->
       </xs:complexType>
    </xs:element>
    <xs:element name="lg">
@@ -929,6 +939,7 @@
             <xs:element ref="tei:signed" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:unclear" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:salute" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
          <xs:attribute name="rend" use="required">
             <xs:simpleType>
@@ -1095,7 +1106,6 @@
             <xs:element ref="tei:anchor" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:bibl" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:date" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:note" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:orgName" maxOccurs="unbounded" minOccurs="0"/>
@@ -1119,7 +1129,9 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:attribute ref="xml:id" use="required"/>
-         <xs:assert test="((@type='commentary' or @type='textConst') and matches(@xml:id, '^((T_|K_)(L\d{5}-\d+))$')) or not(@type='commentary' or @type='textConst')"/>
+         <xs:assert
+            test="((@type = 'commentary' or @type = 'textConst') and matches(@xml:id, '^((T_|K_)(L\d{5}-\d+))$')) or not(@type = 'commentary' or @type = 'textConst')"
+         />
       </xs:complexType>
    </xs:element>
    <xs:element name="lb">
@@ -1131,7 +1143,6 @@
          <xs:element ref="tei:bibl" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:date" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:time" maxOccurs="unbounded" minOccurs="0"/>
-         <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:orgName" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:persName" maxOccurs="unbounded" minOccurs="0"/>
@@ -1164,13 +1175,20 @@
       <xs:assert
          test="(@type = 'textConst' or @type = 'commentary' and not(descendant::tei:note[@type = 'textConst' or @type = 'commentary'])) or not(@type = 'textConst' or @type = 'commentary')"/>
       <xs:assert
-         test="(@type = 'footnote' and @xml:id and starts-with(@xml:id, 'F') and child::tei:p and not(child::*[name() != 'p'])) or not(child::tei:p)"
-      />
-      <xs:assert test="((@type='commentary' or @type='textConst') and matches(@xml:id, '^((T_|K_)(L\d{5}-\d+h))$')) or @type='footnote'"/>
+         test="(@type = 'footnote' and @xml:id and starts-with(@xml:id, 'F') and child::tei:p and not(child::*[name() != 'p'])) or not(child::tei:p)"/>
+      <xs:assert
+         test="((@type = 'commentary' or @type = 'textConst') and matches(@xml:id, '^((T_|K_)(L\d{5}-\d+h))$')) or @type = 'footnote'"/>
+      <xs:assert test="(@type = 'footnote' and child::tei:p) or not(@type = 'footnote')"/>
    </xs:complexType>
    <xs:complexType name="backNote_type-org">
       <xs:sequence minOccurs="0">
          <xs:element ref="tei:date" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="required"/>
+   </xs:complexType>
+   <xs:complexType name="backNote_type_image">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="tei:figure" minOccurs="0" maxOccurs="1"/>
       </xs:sequence>
       <xs:attribute name="type" type="xs:string" use="required"/>
    </xs:complexType>
@@ -1179,7 +1197,7 @@
          <xs:element ref="tei:measure" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
       <xs:attribute name="type" type="xs:string" use="required"/>
-      <xs:assert test="@type='zeichenanzahl'"/>
+      <xs:assert test="@type = 'zeichenanzahl'"/>
    </xs:complexType>
    <xs:complexType name="backNote_type">
       <!-- Element mit Textinhalt und Attributen, aber keinen Kindern -->
@@ -1193,7 +1211,8 @@
       <xs:alternative type="backNote_type"
          test="@type = 'work_kind' or @type = 'uri_worklink' or @type = 'bibliografische_angabe' or @type = 'references'"/>
       <xs:alternative type="backNote_type-org" test="@type = 'apis_dates'"/>
-      <xs:alternative type="biblStruct_type-measure" test="@type ='zeichenanzahl'"/>
+      <xs:alternative type="backNote_type_image" test="@type = 'image'"/>
+      <xs:alternative type="biblStruct_type-measure" test="@type = 'zeichenanzahl'"/>
       <xs:alternative type="normalNote"/>
    </xs:element>
    <xs:element name="Lemma" type="xs:string"/>
@@ -1217,7 +1236,6 @@
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:add" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
@@ -1245,14 +1263,11 @@
                   @n
                else
                   not(@n)"/>
-         <xs:assert test="
-               if (@rend = 'spaced_out') then
-                  ((child::text() or child::tei:space or child::tei:hi[@rend = 'underline']) and not(child::tei:*[not(name() = 'space' or name() = 'hi')]))
-               else
-                  not(@rend = 'spaced_out')"/>
          <xs:assert
-            test="not(child::tei:anchor[@type = 'commentary']) or child::tei:anchor[@type = 'commentary'] and child::tei:note[@type = 'commentary']"
-         />
+            test="(@rend = 'spaced-out' and ((text() and not(child::*)) or (text() and not(child::*[name() != 'space'])))) or not(@rend = 'spaced-out')"/>
+         <xs:assert
+            test="not(child::tei:anchor[@type = 'commentary']) or child::tei:anchor[@type = 'commentary'] and child::tei:note[@type = 'commentary']"/>
+         <xs:assert test="child::* or not(ends-with(., ' '))"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="damage">
@@ -1292,6 +1307,7 @@
             <xs:element ref="tei:unclear" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:del" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:time" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
          <xs:attribute name="n" type="xs:integer"/>
          <xs:attribute name="when" type="date-or-gyear-or-gyearmonth"/>
@@ -1308,6 +1324,7 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
+         <xs:assert test="child::* or not(matches(., '.*[\s\r\n]+$'))"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="add">
@@ -1398,7 +1415,6 @@
             <xs:element ref="tei:date" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:del" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:handShift" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:lb" maxOccurs="unbounded" minOccurs="0"/>
@@ -1440,6 +1456,7 @@
             test="not(child::tei:anchor[@type = 'commentary']) or child::tei:anchor[@type = 'commentary'] and child::tei:note[@type = 'commentary']"/>
          <xs:assert test="child::* or text()[normalize-space(.) != '']"/>
          <xs:assert test="not(contains(., '&amp;'))"/>
+         <xs:assert test="child::tei:salute[not(@*)] or not(child::tei:salute)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="salute">
@@ -1459,6 +1476,7 @@
             <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:del" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
          </xs:all>
          <xs:attribute name="rend" use="optional">
             <xs:simpleType>
@@ -1475,9 +1493,8 @@
    <xs:element name="graphic">
       <xs:complexType>
          <xs:attribute name="facs" use="optional"/>
-         <xs:attribute name="url" use="optional"/>
+         <xs:attribute name="url" use="required"/>
          <xs:attribute name="width" type="xs:NMTOKEN" use="optional"/>
-         <xs:assert test="(@facs or @url) or (@facs and @url)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="address">
@@ -1582,6 +1599,7 @@
             <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:date"/>
             <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:gap"/>
             <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:rs"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:ref"/>
          </xs:choice>
          <xs:attribute name="type" use="optional">
             <xs:simpleType>
@@ -1654,6 +1672,7 @@
          <xs:assert
             test="((starts-with(@ref, '#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN') or (tokenize(@ref, ' #pmb')[2]))"/>
          <xs:assert test="not(contains(., '&amp;'))"/>
+         <xs:assert test="(child::*) or (not(normalize-space(.) = '') and not(ends-with(., ' ')))"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="handShift">
@@ -1762,6 +1781,7 @@
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:subst" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:pb" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
       </xs:complexType>
    </xs:element>
@@ -1874,7 +1894,6 @@
             <xs:element ref="tei:del" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:p" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:pb" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
       </xs:complexType>
    </xs:element>
@@ -1904,26 +1923,13 @@
          </xs:attribute>
       </xs:complexType>
    </xs:element>
-   <xs:element name="geogName">
-      <xs:complexType mixed="true">
-         <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:damage" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:rs" maxOccurs="unbounded" minOccurs="0"/>
-         </xs:choice>
-         <xs:attribute name="instant" type="xs:boolean"/>
-         <xs:attribute name="ref" type="xs:string"/>
-         <xs:attribute name="type" type="xs:NCName"/>
-      </xs:complexType>
-   </xs:element>
    <xs:element name="subst">
       <xs:complexType>
          <xs:sequence>
             <xs:element ref="tei:del"/>
             <xs:element ref="tei:add"/>
          </xs:sequence>
+         <xs:assert test="not(descendant::tei:subst)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="orgName" type="orgAttr"/>
@@ -1988,6 +1994,7 @@
                   <xs:enumeration value="strikethrough"/>
                   <xs:enumeration value="overwritten"/>
                   <xs:enumeration value="erased"/>
+                  <xs:enumeration value="unmarked"/>
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
@@ -2145,6 +2152,7 @@
             <xs:element minOccurs="0" maxOccurs="1" ref="tei:listBibl"/>
             <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:note"/>
             <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:figure"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:gap"/>
          </xs:all>
          <xs:attribute ref="xml:id" use="required"/>
       </xs:complexType>

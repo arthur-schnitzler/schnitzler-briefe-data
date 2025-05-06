@@ -11,13 +11,13 @@ mkdir -p ./data/tocs
 
 rm main.zip
 
-wget https://github.com/arthur-schnitzler/arthur-schnitzler-arbeit/archive/refs/heads/main.zip
+wget https://github.com/arthur-schnitzler/schnitzler-briefe-arbeit/archive/refs/heads/main.zip
 unzip main
 rm main.zip
-mv ./arthur-schnitzler-arbeit-main/editions ./data
-mv ./arthur-schnitzler-arbeit-main/indices ./data
-mv ./arthur-schnitzler-arbeit-main/meta ./data
-mv ./arthur-schnitzler-arbeit-main/tocs ./data
+mv ./schnitzler-briefe-arbeit-main/editions ./data
+mv ./schnitzler-briefe-arbeit-main/indices ./data
+mv ./schnitzler-briefe-arbeit-main/meta ./data
+mv ./schnitzler-briefe-arbeit-main/tocs ./data
 
 # Loop through files and delete those with a number greater than 3373
 #for file in ./data/editions/L*.xml; do
@@ -28,7 +28,7 @@ mv ./arthur-schnitzler-arbeit-main/tocs ./data
 #  fi
 #done
 
-rm -rf ./arthur-schnitzler-arbeit-main
+rm -rf ./schnitzler-briefe-arbeit-main
 
 echo "and now some XSLTs"
 ant

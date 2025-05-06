@@ -11,7 +11,7 @@ jobs:
       ANT_OPTS: -Xmx6g
     steps:
     - name: Perform Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Install Saxon, Ant
       run: |
         apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
@@ -19,6 +19,6 @@ jobs:
     - name: Fetch and preprocess Data
       run: |
         ./fetch_data.sh
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: Downloaded/Updated Data

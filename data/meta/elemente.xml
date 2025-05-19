@@ -17,6 +17,7 @@
                         <forename>Laura</forename>
                         <surname>Untner</surname>
                     </persName>
+                    <persName><forename>Selma</forename><surname>Jahnke</surname></persName>
                 </author>
             </titleStmt>
             <publicationStmt>
@@ -374,6 +375,19 @@
                             ansonsten unbeschriebenen Umschlagseite befindet. Sofern die Seite im
                             Fließtext bereits vorkommt, wird auf die Erwähnung in
                                 <code>physDesc</code> verzichtet. </p>
+                        <p>Der Seitenbeginn wird im ersten Absatzbildenden Element
+                                (<code>&lt;p&gt;</code>, <code>&lt;dateline&gt;</code>,
+                                <code>&lt;closer&gt;</code>, <code>&lt;seg&gt;</code>) markiert –
+                            und ohne Leerraum zum folgenden Text (»Wort
+                            <code>&lt;pb/&gt;</code>Text«). </p>
+                        <p>Innerhalb eines Abschnitts <code>&lt;div&gt;</code> sollten alle
+                                <code>@facs</code> vorkommen, die für diesen Abschnitt relevante
+                            Inhalte haben. An einem Beispiel erklärt: Eine Postkarte besteht aus dem
+                            Faksimile bildseite.jpg und textseite.jpg. Wenn sich auf der Bildseite
+                            auch noch Text befindet, muss <code>&lt;pb
+                                facs="bildseite"&gt;</code><space unit="chars" quantity="1"/> im
+                            Element <code>&lt;div type="writingSession"&gt;</code> stehen, es genügt
+                            nicht, wenn es in <code>&lt;div type="image"&gt;</code> steht. </p>
                     </div>
                     <div type="level3">
                         <head xml:id="rs">rs</head>
@@ -402,9 +416,8 @@
                                 ausgezeichnet. (Bis 2024 wurden nicht Hausnummern, sondern nur
                                 Straßen erfasst. Seither wird für jedes angesprochene Haus eine
                                 separate Identifikationsnummer vergeben.) Wenn eine geografische
-                                Angabe über einen Zeilenwechsel reicht, werden die Zeilen
-                                getrennt ausgezeichnet.
-                                </p>
+                                Angabe über einen Zeilenwechsel reicht, werden die Zeilen getrennt
+                                ausgezeichnet. </p>
                             <div type="example">
                                 <p>Beispiel:</p>
                                 <p><code>&lt;rs type="place"&gt;Wien XII Meidlinger Hauptstr.
@@ -429,7 +442,16 @@
                             rechtsbündig in die selbe Zeile zu stellen. Der Aufbau sieht so aus:
                                 <code>&lt;p&gt;&lt;seg rend="left"&gt;Linksbündiger Text&lt;/seg&gt;
                                 &lt;seg rend="right"&gt;Rechtsbündiger Text&lt;/seg&gt;&lt;/p&gt;
-                            </code></p>
+                            </code>. (Innerhalb von <code>opener</code> wird <code>seg</code> auch
+                            für die Auszeichnung von Briefköpfen und Textinhalten verwendet, siehe
+                            dort.)</p>
+                    </div>
+                    <div type="level3">
+                        <head xml:id="space">space</head>
+                        <p>Nur behutsam sollten Leerzeilen eingefügt werden – etwa zum Absetzen von
+                            unterschiedlichen Textteilen voneinander. Dafür wird das Element
+                                <code>&lt;space dim="vertical" unit="line" quantity="1"/&gt;</code>
+                            eingesetzt. </p>
                     </div>
                     <div type="level3">
                         <head xml:id="subst">subst</head>
@@ -556,13 +578,9 @@
                             </row>
                             <row>
                                 <cell>widmung</cell>
-                                <cell>widmung_umschlag<lb/>
-                                    widmung_vorsatzblatt<lb/>
-                                    widmung_schmutztitel<lb/>
-                                    widmung_reihentitelblatt<lb/>
-                                    widmung_titelblatt<lb/>
-                                    widmung_einlegeblatt
-                                </cell>
+                                <cell>widmung_umschlag<lb/> widmung_vorsatzblatt<lb/>
+                                    widmung_schmutztitel<lb/> widmung_reihentitelblatt<lb/>
+                                    widmung_titelblatt<lb/> widmung_einlegeblatt </cell>
                             </row>
                         </table>
                         <p>Einen theoretischen Sonderfall bilden Telegramme, da im Normalfall
@@ -950,11 +968,14 @@
                         zusätzliche Spezifierung wurde mit »delivered« eingeführt, für
                         Korrespondenzstücke, die zwar ihren Zielort erreichten, aber der Adressat,
                         die Adressatin nicht angetroffen und von diesem oder dieser erst später in
-                        Empfang genommen wurde. Die etwaigen Zwischenstationen werden nur dann ausgewiesen,
-                        wenn sich Abweichungen zu den Haupttypisierungen <code>@type='sent'</code> und <code>@type='received'</code>
-                    ergeben. Wenn beispielsweise eine Postkarte unmittelbar am selben Tag versandt wurde oder nur durch den 
-                    Poststempel datierbar ist, wird angenommen, dass 'sent' = 'transmitted' und letzteres wird übergangen.
-                    Ähnlich verhält es sich am anderen Ende des Vorgang, bei dem implizit angenommen wird, dass 'delivered' = 'received'.</p>
+                        Empfang genommen wurde. Die etwaigen Zwischenstationen werden nur dann
+                        ausgewiesen, wenn sich Abweichungen zu den Haupttypisierungen
+                            <code>@type='sent'</code> und <code>@type='received'</code> ergeben.
+                        Wenn beispielsweise eine Postkarte unmittelbar am selben Tag versandt wurde
+                        oder nur durch den Poststempel datierbar ist, wird angenommen, dass 'sent' =
+                        'transmitted' und letzteres wird übergangen. Ähnlich verhält es sich am
+                        anderen Ende des Vorgang, bei dem implizit angenommen wird, dass 'delivered'
+                        = 'received'.</p>
                     <div type="level3">
                         <head xml:id="correspaction">correspAction</head>
                         <p>Neben dem verpflichtenden Attribut <code>@type</code> gibt es drei
@@ -980,6 +1001,34 @@
                             </list>
                             <p>Die Angabe erfolgt im ISO-Format (»1862-05-15«). Auf diesen Wert wird
                                 von verschiedensten Stellen zugegriffen. </p>
+                            <p>Sowohl die Datums-, wie auch die Ortsangaben werden häufig ermittelt
+                                und sind nicht unmittelbar aus dem vorliegenden Korrespondenzstück
+                                ableitbar. Dafür wird das Attribut <code>@evidence</code> verwendet,
+                                das die erlaubten Werte: »internal«, »external«, »conjecture« hat.
+                                Der Wert »internal« kommt in der Praxis nicht vor, er ist eigentlich
+                                implizit dadurch gesetzt, dass kein Attribut <code>@evidence</code>
+                                verwendet wird. Ein Wert »external« ist zu setzen, wenn er aus
+                                anderen Quellen (dem Antwortschreiben, dem Tagebuch, …) ermittelbar
+                                ist. Schließlich wird »conjecture« eingesetzt, wenn eine
+                                naheliegende ›Logik‹ angewandt werden kann. Beispielsweise würde
+                                jemand, der beschließt, mit Schnitzler Kontakt aufnehmen, seinen
+                                Brief mit weitgehender Sicherheit nach Wien schicken, weil er ja von
+                                dessen Reisen und jeweiligen Aufenthaltsorten keine Ahnung haben
+                                kann. Folglich könnte man <code>evidence="conjecture"</code> setzen.
+                                Begründungen und Quellen, wie es zu einer Schlussfolgerung kam,
+                                werden nicht vermerkt.</p>
+                            <p>Es wird versucht, auch einen Empfangszeitraum für jedes
+                                Korrespondenzstück zu ermitteln. Wenn es innerhalb des gleichen
+                                Ortes versandt wird, ist naheliegend, dass es am gleichen Tag oder
+                                innerhalb der darauffolgenden Woche am Ziel angekommen ist. Wenn es
+                                zwischen zwei Orten in Europa geschickt wurde, ist eine Zustellung
+                                frühestens am Folgetag wahrscheinlich, der Zeitraum wird, je
+                                nachdem, wieder mit einer Woche bis zehn Tage angenommen. Die
+                                Konstruktion dieses Elements wird natürlich auch im Textinhalt
+                                selbst durch Fragezeichen markiert, beispielsweise: »&lt;code&gt;
+                                &lt;date evidence="conjecture" notBefore="1903-08-29"
+                                notAfter="1903-09-04"&gt;[29. 8. 1903 –
+                                4. 9. 1903?]&lt;/date&gt;&lt;/code&gt;« </p>
                             <div type="level5">
                                 <head xml:id="correspaction_date_n">correspAction/date/@n</head>
                                 <p>Weiters hat <code>date/@type="sent"</code> ein zusätzliches
@@ -1089,12 +1138,31 @@
                         <item><code>div[@type="writingSession" n="1"] </code></item>
                         <item><code>div[@type="image"] </code></item>
                     </list>
-                    <p><code>address</code> darf nur einmal vorkommen und muss an erster Stelle
-                        stehen. <code>writingSession</code>-Elemente kann es mehrere geben, diese
-                        sind dann durch den Zähler <code>@n</code> zu unterscheiden.
-                            <code>image</code> ist ein Erbe aus dem Vorprojekt Bahr/Schnitzler und
-                        eigentlich durch die Aufnahme der Faksimile-Namen in <code>pb/@facs</code>
-                        obsolet. </p>
+                    <p><code>div[@type="address"]</code> kommt maximal einmal vor und muss an erster
+                        Stelle stehen. Leider ist hier die TEI-Konformität nicht gegeben. Wir werden
+                        uns bemühen, eine den Richtlinien entsprechende Lösung herzustellen.</p>
+                    <p><code>writingSession</code>-Elemente kann es mehrere geben, diese sind dann
+                        durch den Zähler <code>@n</code> zu unterscheiden.</p>
+                    <p><code>image</code> erlaubt die Einbindung von Bildern in die Edition. Da aber
+                        ohnedies versucht wird, alle edierten Objekte durch Faksimiles abzubilden,
+                        wird hier nur in Ausnahmefällen ein tatsächliches Bild eingebunden. Ein
+                        solcher Ausnahmefall wäre etwa eine Zeichnung auf dem Briefblatt. Ansonsten
+                        finden sich Informationen über die Abbildungen in <code>pb/@facs</code>. Die
+                        häufigste Verwendung von <code>div[@type="image"]</code> stellt die
+                        Bildbeschreibung einer Bildpostkarte dar. Im gewöhnlichen Fall wird dazu auf
+                        einen Text zurückgegriffen, der bereits auf der Postkarte gedruckt vorliegt.
+                        Ein solcher Fall wird mit <code>&lt;hi rend="pre-print"/&gt;</code> in einem
+                        Absatz <code>&lt;p&gt; … &lt;/p&gt;</code> ausgezeichnet. Sollte die
+                        Bildbeschreibung mehr als einmal auf der Karte gedruckt sein, wird sie
+                        trotzdem nur einmal aufgenommen. Sollte keine vorgedruckte Bildbeschreibung
+                        vorhanden sein, wird im Absatzelement ein möglichst knapper deskriptiver
+                        Text mittels <code>&lt;supplied type="image-description"/&gt;</code>
+                        ergänzt. Besondere Aufmerksamkeit gilt der Regel, dass die Bildbeschreibung
+                        als Platzhalter für das Bild verstanden wird. Daraus leitet sich ab, dass es
+                        gleichgültig ist, ob sich die deskriptive Bildbeschreibung (»Schloss
+                        Schönbrunn«) tatsächlich auf der Bildseite befindet oder umseitig auf der
+                        Textseite. Das Element <code>pb</code> bekommt stets im Attribut
+                            <code>@facs</code> den Wert der Bildseite. </p>
                     <div type="level3">
                         <head xml:id="div_address">div[@type="address"]</head>
                         <p>Enthält Absende- und Empfangsadresse, jeweils in einem Element
@@ -1137,21 +1205,33 @@
                         <div type="level4">
                             <head xml:id="opener">opener</head>
                             <p>Enthält dem eigentlichen Text vorausgehende Information. Das kann
-                                sein: Briefkopf, Datumszeile, abgesetzte Begrüßungsformel. Bei
-                                Bildpostkartenmotiven findet sich hier auch – als gedruckt
-                                gekennzeichnet (<code>&lt;hi rend="pre-print"/&gt;</code>) – der
-                                Titel des Motivs. (In ganz seltenen Fällen, wenn kein solcher
-                                gedruckter Titel vorhanden ist, über <code>&lt;supplied
-                                    type="image-description"/&gt;</code>.) </p>
+                                sein: Briefkopf, Datumszeile, abgesetzte Begrüßungsformel.</p>
                             <p>Folgende Kind-Elemente sind zulässig: </p>
                             <list>
-                                <item><code>p</code>
-                                </item>
-                                <item><code>salute</code>
+                                <item><code>seg</code>
                                 </item>
                                 <item><code>dateline</code>
                                 </item>
+                                <item><code>salute</code>
+                                </item>
                             </list>
+                            <div type="level5">
+                                <head xml:id="segT">seg</head>
+                                <p>Das dient zur Auszeichnung von Textblöcken innerhalb von
+                                        <code>opener</code>. Der häufigste Fall ist ein gedruckter
+                                    Briefkopf, der zusätzlich noch mit dem Attribut
+                                        <code>@type='letterhead'</code> gekennzeichnet wird. Beide
+                                    Varianten, nämlich ein über mehrere Zeilen reichendes
+                                        <code>seg</code>-Element, das mit <code>&lt;lb/&gt;</code>
+                                    umbrochen wird, sowie die mehrfache Reihung von
+                                    <code>seg</code>-Elementen hintereinander sind erlaubt. Während
+                                    der Briefkopf für gewöhnlich gedruckt ist, werden auch kleine
+                                    handschriftliche Ergänzungen innerhalb eines formularhaften
+                                    Teils – zumeist Datumsangaben – zum Briefkopf gezählt. Es ist
+                                    also im Detail nicht so, dass unter
+                                        <code>@type='letterhead'</code> nur vorgedruckter Text
+                                    steht.</p>
+                            </div>
                         </div>
                         <div type="level4">
                             <head xml:id="closer">closer</head>

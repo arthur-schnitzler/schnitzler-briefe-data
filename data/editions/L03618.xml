@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03618" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L03618" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -125,10 +125,12 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="candidate">
          <change who="MAM" when="2025-05-08">Export aus Transkribus</change>
          <change who="SJ MAM" when="2025-05-12">Durchsicht</change>
          <change who="SJ" when="2025-05-13">Erzählungen indiziert und kommentiert</change>
+         <change who="MAM" when="2025-05-26">Durchsicht</change>
+         <change who="MAM" when="2025-05-26">Index check</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -137,18 +139,20 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="H.I.N.-60194_Seite_1"/><hi rend="latintype"><rs type="place" ref="#pmb168">Berlin</rs></hi><space unit="chars" quantity="1"/><date>29. 4. 88</date></dateline><salute>Hochgeehrter Herr!</salute></opener><p>Ich nehme mir die Freiheit, Ihnen zwei <rs type="work" subtype="implied" ref="#pmb30069 #pmb33710 #pmb33814"><anchor type="commentary" xml:id="K_L03618-1"/>Erzählungen<note type="commentary" xml:id="K_L03618-1h">Von den erhaltenen Prosaarbeiten, die in diesem Zeitraum
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="H.I.N.-60194_Seite_1"/><hi rend="latintype"><rs type="place" ref="#pmb168">Berlin</rs></hi><space unit="chars" quantity="1"/><date>29. 4. 88</date>.</dateline><salute>Hochgeehrter Herr!</salute></opener><p>Ich nehme mir die Freiheit, Ihnen zwei <rs type="work" subtype="implied" ref="#pmb30069 #pmb33710 #pmb33814"><anchor type="commentary" xml:id="K_L03618-1"/>Erzählungen<note type="commentary" corresp="K_L03618-1">Von den erhaltenen Prosaarbeiten, die in diesem Zeitraum
                      entstanden, kommen <rs type="work" ref="#pmb33814">Erbschaft</rs>, <rs type="work" ref="#pmb33710">Mein Freund Ypsilon. Aus den Papieren eines
                         Arztes</rs> und <rs type="work" ref="#pmb30069">Amerika</rs> in Frage, <ref type="schnitzler-tagebuch" target="1887-10-19" subtype="cf"/> und <rs type="work" ref="#pmb33838">Jugend in Wien</rs> (<bibl><rs type="person" ref="#pmb2121">Arthur Schnitzler</rs>: <rs type="work" ref="#pmb33838">Jugend in Wien. Eine Autobiographie</rs>. Mit einem
                         Nachwort von Friedrich Torberg. <pubPlace>Wien</pubPlace>,
                         <pubPlace>München</pubPlace>, <pubPlace>Zürich</pubPlace>,
                         <pubPlace>New York</pubPlace>: <publisher>S. Fischer</publisher><space unit="chars" quantity="1"/><date>1968</date>, S. 320</bibl>).</note></rs> zu über<c rendition="#langesS">s</c>enden, von denen ich mir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elbst kaum einbilden will, da<c rendition="#langesS">s</c>s<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie für Ihre
                   »<hi rend="latintype"><rs type="work" ref="#pmb41113">Dtsch. Dichtung</rs></hi>« der Vorzüge genug be<c rendition="#langesS">s</c>itzen. Jedenfalls aber wäre mir ein Urtheil von Ihnen
-               höch<c rendition="#langesS">s</c>t erwünscht, um das Sie hiemit zwar unbe<c rendition="#langesS">s</c>cheiden aber herzlich<c rendition="#langesS">s</c>t gebeten<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind.
-               Ich unterlie<c rendition="#langesS">s</c>s <anchor type="commentary" xml:id="K_L03618-2"/>per<c rendition="#langesS">s</c>önlich<note type="commentary" xml:id="K_L03618-2h">Am <ref type="schnitzler-tagebuch" subtype="date-only" target="1888-04-15"/> und am <ref type="schnitzler-tagebuch" subtype="date-only" target="1888-04-28"/> war <rs type="person" ref="#pmb2121">Schnitzler</rs> bei <rs type="person" ref="#pmb7218">Franzos</rs> auf Besuch in der <rs type="place" ref="#pmb292772">Kaiserin-Augusta-Straße 71</rs>. Die Einladung zum Souper am Vortag dieses
-                  Briefes dürfte eine Folge des Empfehlungsschreibens von <rs type="person" ref="#pmb12695">Johann Schnitzler</rs> (<ref type="schnitzler-briefe" target="L03617"/>) gewesen sein.</note> mit Ihnen über
-               diese Sache zu reden, da ich in dem Augenblicke dieser <pb facs="H.I.N.-60194_Seite_2"/>Bitte am lieb<c rendition="#langesS">s</c>ten ein ganz und gar unbeka<c rendition="#gemination-n"/>ter, gewi<c rendition="#langesS">s</c>s aber nicht der gut empfohlene und<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o
-               liebenswürdig aufgeno<c rendition="#gemination-m"/>ene »Sohn meines <rs type="person" ref="#pmb12695" subtype="implied">Vaters</rs>«<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein möchte.</p><closer>Mit be<c rendition="#langesS">s</c>ondrer Hochachtung Ihr<lb/>ergebener<lb/><signed>Dr Arthur Schnitzler</signed></closer></div>
+               höch<c rendition="#langesS">s</c>t erwün<c rendition="#langesS">s</c>cht, um das Sie hiemit zwar unbe<c rendition="#langesS">s</c>cheiden aber herzlich<c rendition="#langesS">s</c>t gebeten<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind.
+               Ich unterlie<c rendition="#langesS">s</c>s es, <anchor type="commentary" xml:id="K_L03618-2"/>per<c rendition="#langesS">s</c>önlich<note type="commentary" corresp="K_L03618-2">Am <ref type="schnitzler-tagebuch" subtype="date-only" target="1888-04-15"/> und am <ref type="schnitzler-tagebuch" subtype="date-only" target="1888-04-28"/> war <rs type="person" ref="#pmb2121">Schnitzler</rs> bei <rs type="person" ref="#pmb7218">Franzos</rs> auf Besuch in der <rs type="place" ref="#pmb292772">Kaiserin-Augusta-Straße 71</rs>. Die Einladung zum Souper am Vortag dieses
+                  Briefes dürfte eine Folge des Empfehlungsschreibens von <rs type="person" ref="#pmb12695">Johann Schnitzler</rs> (<ref type="schnitzler-briefe" target="L03617"/>) gewesen sein.</note> mit Ihnen über die<c rendition="#langesS">s</c>e Sache zu reden, da
+               ich in dem Augenblicke dieser <pb facs="H.I.N.-60194_Seite_2"/>Bitte am lieb<c rendition="#langesS">s</c>ten ein
+               ganz und gar unbeka<c rendition="#gemination-n"/>ter, gewi<c rendition="#langesS">s</c>s aber nicht der gut
+               empfohlene und<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o liebenswürdig aufgeno<c rendition="#gemination-m"/>ene »Sohn meines
+                  <rs type="person" ref="#pmb12695" subtype="implied">Vaters</rs>«<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein möchte.</p><closer>Mit be<c rendition="#langesS">s</c>ondrer Hochachtung Ihr<lb/>ergebener<lb/><signed>Dr Arthur Schnitzler</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -159,7 +163,7 @@
                </persName>
                <birth>
                   <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmbpmb50">
+                  <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>
@@ -168,7 +172,7 @@
                </birth>
                <death>
                   <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmbpmb50">
+                  <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>

@@ -73,7 +73,6 @@
                     <list>
                         <item>Abkürzungen sind weitgehend zu vermeiden. Ausnahmen in
                             bibliografischen Angaben: <list>
-                                <item>Hg./Hgg. für Herausgeber und Herausgeberinnen</item>
                                 <item>Nr. für Nummer</item>
                                 <item>Bd. für Band</item>
                                 <item>Aufl. für Auflage</item>
@@ -127,8 +126,8 @@
                             beiden letzteren Arten markieren den Beginn des Lemmabereichs, der mit
                             dem Element <code>note</code> endet. In diesem Fall sind die
                             zusammengehörigen Tags <code>anchor</code> und <code>note</code> durch
-                            weitgehend idente <code>@xml:id</code> verklammert, nur die bei
-                                <code>note</code> hat ein »h« als letztes Zeichen.</p>
+                           die Entsprechung von <code>tei:anchor/@xml:id</code> mit <code>tei:note/@corresp</code> aufeinander
+                        bezogen.</p>
                         <p>Das Element <code>note</code> enthält einen Kommentar, eine Erläuterung
                             zur Textkonstitution oder eine Fußnote des Originaltexts
                                 (<code>note[@type='footnote']</code>, siehe unten). Die
@@ -194,6 +193,10 @@
                             Edition des <ref target="https://schnitzler-tagebuch.acdh.oeaw.ac.at/"
                                 >Tagebuch</ref>s), ist in <code>@target</code> mit einem ISO-Datum
                             spezifiziert</p>
+                        <p><code>@type="schnitzler-interviews"</code> (Verweis auf einen Brief/Text
+                            innerhalb der <ref target="https://schnitzler-interviews.acdh.oeaw.ac.at/"
+                                >Edition</ref>), enthält in <code>@target</code> die Interviewnummer/den
+                            Dateinamen (ohne ».xml«)</p>
                         <p><code>@type="schnitzler-lektueren"</code> (Verweis auf die digitale
                             Edition der <ref target="https://schnitzler-lektueren.acdh.oeaw.ac.at/"
                                 >Leseliste</ref>), enthält in <code>@target</code> eine Referenz auf
@@ -330,6 +333,12 @@
                                 medium="typewriter"/&gt;</code> setzt »[maschinschriftlich:]«.</p>
                     </div>
                     <div type="level3">
+                        <head xml:id="foreign">foreign</head>
+                        <p>Markiert Sprachwechsel. <code>foreign</code>
+                            enthält als Attribut <code>xml:lang</code> mit den gängigen Sprachkürzeln als möglichen Attributwerten, beispielsweise »fr«, »en«, »la«, »it«.</p>
+                       
+                    </div>
+                    <div type="level3">
                         <head xml:id="hi_rend">hi[@rend]</head>
                         <p>Dient zur Auszeichnung von Schriftänderungen. Folgende Attributwerte sind
                             erlaubt: »latintype«, »underline«, »italics«, »superscript«,
@@ -462,7 +471,7 @@
                             Typistin ausgewiesen würden. Werden sie aber nicht.) Das Element besteht
                             immer aus zwei Kind-Elementen: </p>
                         <list>
-                            <item><code>subst</code>
+                            <item><code>del</code>
                             </item>
                             <item><code>add</code>
                             </item>

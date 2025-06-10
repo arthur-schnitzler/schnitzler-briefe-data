@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03615" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L03615" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -94,6 +94,7 @@
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb7218">Franzos, Karl Emil</persName>
+               <date evidence="conjecture" notBefore="1892-06-26" notAfter="1892-06-30">[26. 6. 1892 – 30. 6. 1892?]</date>
                <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
             </correspAction>
             <correspContext>
@@ -105,9 +106,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="candidate">
          <change who="MAM" when="2025-05-08">Export aus Transkribus</change>
          <change who="SJ MAM" when="2025-05-08">Valide gemacht</change>
+         <change who="MAM" when="2025-05-26">Durchsicht</change>
+         <change who="MAM" when="2025-05-26">Index check</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -115,10 +118,11 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="H.I.N.-60192_Seite_1"/><date>25/6 92</date></dateline><salute>Hochgeschätzter Herr,</salute></opener><p>es wäre mir eine be<c rendition="#langesS">s</c>ondere Ehre,  wenn Sie das beifolgende
-               <anchor type="commentary" xml:id="K_L03615-1"/><rs type="work" ref="#pmb30181" subtype="implied">Gedicht</rs><note type="commentary" xml:id="K_L03615-1h"><bibl><rs type="person" ref="#pmb2121">Arthur Schnitzler</rs>: <rs type="work" ref="#pmb30181">Anfang vom Ende</rs>. In:
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="H.I.N.-60192_Seite_1"/><date>25/6 92</date></dateline><salute>Hochge<c rendition="#langesS">s</c>chätzter Herr,</salute></opener><p>es wäre mir eine be<c rendition="#langesS">s</c>ondre Ehre,  wenn Sie das beifolgende
+               <anchor type="commentary" xml:id="K_L03615-1"/><rs type="work" ref="#pmb30181" subtype="implied">Gedicht</rs><note type="commentary" corresp="K_L03615-1"><bibl><rs type="person" ref="#pmb2121">Arthur Schnitzler</rs>: <rs type="work" ref="#pmb30181">Anfang vom Ende</rs>. In:
                      <rs type="work" ref="#pmb41113">Deutsche Dichtung</rs>, Bd. 12, Nr. 8,
-                     <date>15. 7. 1892</date>, S. 192</bibl></note> der Aufnahme in der »<hi rend="latintype"><rs type="work" ref="#pmb41113">Deutschen Dichtung</rs></hi>« werth hielten. </p><closer>Hochachtungsvoll<lb/><signed>Dr. Arthur Schnitzler</signed></closer><postscript><p><rs type="place" ref="#pmb265330">Wien, I. <hi rend="latintype">Giselastraße 11</hi></rs>.</p></postscript></div>
+                     <date>15. 7. 1892</date>, S. 192</bibl>.
+               </note> der Aufnahme in der »<hi rend="latintype"><rs type="work" ref="#pmb41113">Deutschen Dichtung</rs></hi>« werth hielten. </p><closer>Hochachtungsvoll<lb/><signed>Dr. Arthur Schnitzler</signed></closer><postscript><p><rs type="place" ref="#pmb265330">Wien, I. <hi rend="latintype">Giselastraße 11</hi></rs>.</p></postscript></div>
       </body>
       <back>
          <listPerson>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03616" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L03616" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -94,22 +94,27 @@
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb7218">Franzos, Karl Emil</persName>
-               <date evidence="conjecture" notBefore="1888-05-11" notAfter="1888-05-14">[11. 5. 1888
-                  – 14. 5. 1888?]</date>
+               <date evidence="external" when="1888-05-11">[11. 5. 1888?]</date>
                <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
             </correspAction>
             <correspContext>
-               <ref type="belongsToCorrespondence" target="correspondence_7218">Franzos, Karl Emil</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L03618">Schnitzler an Franzos, 29. 4. 1888</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L03619">Franzos an Schnitzler, [3. 5. 1888 – 11. 5. 1888?]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_7218" target="L03618">Schnitzler an Franzos, 29. 4. 1888</ref>
+               <ref type="belongsToCorrespondence" target="correspondence_7218">Franzos, Karl
+                  Emil</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L03618">Schnitzler an
+                  Franzos, 29. 4. 1888</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L03619">Franzos an
+                  Schnitzler, [3. 5. 1888 – 11. 5. 1888?]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_7218" target="L03618">Schnitzler an Franzos,
+                  29. 4. 1888</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_7218" target="L03619">Franzos an Schnitzler, [3. 5. 1888 – 11. 5. 1888?]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="candidate">
          <change who="MAM" when="2025-05-08">Export aus Transkribus</change>
          <change who="SJ MAM" when="2025-05-12">Durchsicht</change>
+         <change who="MAM" when="2025-05-26">Index check</change>
+         <change who="MAM" when="2025-05-26">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -118,20 +123,19 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><salute><pb facs="H.I.N.-60193_Seite_1"/>Verehrte<c rendition="#langesS">s</c>ter Herr Franzos!</salute></opener><p>Es fügt <c rendition="#langesS">s</c>ich, da<c rendition="#langesS">s</c>s ich bereits morgen wider mein Erwarten von hier fortrei<c rendition="#langesS">s</c>en mu<c rendition="#langesS">s</c>s,
-               wodurch ich nicht mehr dazuko<c rendition="#gemination-m"/>e, Ihnen und Ihrer
+         <div type="writingSession" n="1"><opener><salute rend="center"><pb facs="H.I.N.-60193_Seite_1"/>Verehrte<c rendition="#langesS">s</c>ter Herr Franzos!</salute></opener><p>Es fügt <c rendition="#langesS">s</c>ich, da<c rendition="#langesS">s</c>s ich bereits morgen – wider mein Erwarten – von hier fortrei<c rendition="#langesS">s</c>en
+               mu<c rendition="#langesS">s</c>s, wodurch ich nicht mehr dazuko<c rendition="#gemination-m"/>e, Ihnen und Ihrer
                hochverehrten Frau <rs type="person" ref="#pmb7222" subtype="implied">Gemahlin</rs>
-               meinen per<c rendition="#langesS">s</c>önlichen Dank für Ihre liebenswürdige Ga<c rendition="#langesS">s</c>tfreundschaft auszudrücken. Ich
-               mu<c rendition="#langesS">s</c>s mich begnügen, dies auf die<c rendition="#langesS">s</c>em Wege zu thun, und Sie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chriftlich bitten, meines
-               Danks’ und meiner Hochachtung ver<c rendition="#langesS">s</c>ichert zu<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein.</p><p>Was die an Sie ge<c rendition="#langesS">s</c>andten <rs type="work" subtype="implied" ref="#pmb30069 #pmb33710 #pmb33814"><anchor type="commentary" xml:id="K_L03616-1"/>Manuskripte<note type="commentary" xml:id="K_L03616-1h">Von den erhaltenen
-                  Texten, die in diesem Zeitraum entstanden, kommen <rs type="work" ref="#pmb33814">Erbschaft</rs>, <rs type="work" ref="#pmb33710">Mein Freund Ypsilon. Aus den
-                     Papieren eines Arztes</rs> und <rs type="work" ref="#pmb30069">Amerika</rs> in
-                  Frage, <ref type="schnitzler-tagebuch" target="1887-10-19" subtype="cf"/> und <rs type="work" ref="#pmb33838">Jugend in Wien</rs> (<bibl><rs type="person" ref="#pmb2121">Arthur Schnitzler</rs>: <rs type="work" ref="#pmb33838">Jugend in Wien. Eine Autobiographie</rs>. Mit einem Nachwort
-                     von Friedrich Torberg. <pubPlace>Wien</pubPlace>, <pubPlace>München</pubPlace>,
-                     <pubPlace>Zürich</pubPlace>, <pubPlace>New York</pubPlace>:
-                        <publisher>S. Fischer</publisher><space unit="chars" quantity="1"/><date>1968</date>, S. 320</bibl>). <rs type="person" ref="#pmb2121">Schnitzler</rs> hatte <rs type="person" ref="#pmb7218">Franzos</rs> um seine
-                  Einschätzung gebeten (<ref type="schnitzler-briefe" target="L03618" subtype="cf"/>).</note></rs> betrifft,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o würde ich um eine Antwort, <pb facs="H.I.N.-60193_Seite_2"/>eventuell Rück<c rendition="#langesS">s</c>endung er<c rendition="#langesS">s</c>t nach <rs type="place" ref="#pmb224"><hi rend="latintype">London</hi></rs> bitten, von wo aus ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o frei sein werden, Ihnen meine Adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e
-               mitzutheilen.</p><closer>Indem ich mich Ihnen und Ihrer w. Frau <rs type="person" ref="#pmb7222" subtype="implied">Gemahlin</rs> ergeben<c rendition="#langesS">s</c>t empfehle, bin ich mit be<c rendition="#langesS">s</c>ondrer
+               meinen per<c rendition="#langesS">s</c>önlichen Dank für Ihre liebenswürdige <anchor type="commentary" xml:id="K_L03616-33"/>Ga<c rendition="#langesS">s</c>tfreundschaft<note type="commentary" corresp="K_L03616-33"><ref type="schnitzler-tagebuch" target="1888-04-28" subtype="cf"/></note> auszudrücken. Ich mu<c rendition="#langesS">s</c>s mich begnügen, dies auf die<c rendition="#langesS">s</c>em
+               Wege zu thun, und Sie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chriftlich bitten, meines Danks’ und meiner Hochachtung
+               ver<c rendition="#langesS">s</c>ichert zu<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein.</p><p>Was die an Sie ge<c rendition="#langesS">s</c>andten <rs type="work" subtype="implied" ref="#pmb30069 #pmb33710 #pmb33814"><anchor type="commentary" xml:id="K_L03616-1"/><hi rend="latintype">Manuscripte</hi><!-- die Verwendung von rundem s, es müsste eigentlich Manuſcripte
+                  heißen--><note type="commentary" corresp="K_L03616-1"><ref type="schnitzler-briefe" target="L03618" subtype="see"/></note></rs> betrifft,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o würde ich um eine Antwort, <pb facs="H.I.N.-60193_Seite_2"/>eventuelle <anchor type="commentary" xml:id="K_L03616-11"/>Rück<c rendition="#langesS">s</c>endung er<c rendition="#langesS">s</c>t nach <rs type="place" ref="#pmb224"><hi rend="latintype">London</hi></rs><note type="commentary" corresp="K_L03616-11">Hier ist »nach« nicht zeitlich, sondern
+                  räumlich zu verstehen: <rs type="person" ref="#pmb2121">Schnitzler</rs> bittet darum, dass
+                  ihm die Texte nach <rs type="place" ref="#pmb224">London</rs> gesandt werden. (Er reiste nicht direkt von <rs type="place" ref="#pmb168">Berlin</rs>, sondern über <rs type="place" ref="#pmb50">Wien</rs>.)
+                  Zu der hier noch angedachten Mitteilung der <rs type="place" ref="#pmb224">Londoner</rs> Adresse dürfte es nicht gekommen sein, was dafür spricht, 
+                  dass <rs type="person" ref="#pmb7218">Franzos</rs> unmittelbar auf dieses
+                  Schreiben mit der Rücksendung reagierte, <ref type="schnitzler-briefe" target="L03619" subtype="cf"/>.</note>
+               bitten, von wo aus ich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o frei<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein werde, Ihnen meine Adre<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e mitzutheilen.</p><closer>Indem ich mich Ihnen und Ihrer w. Frau <rs type="person" ref="#pmb7222" subtype="implied">Gemahlin</rs> ergeben<c rendition="#langesS">s</c>t empfehle, bin ich mit be<c rendition="#langesS">s</c>ondrer
                Hochachtung Ihr <signed>Dr. Arthur Schnitzler</signed></closer><postscript><dateline><hi rend="latintype"><rs type="place" ref="#pmb168">Berlin</rs></hi>, <date>11. 5. 88</date></dateline></postscript></div>
       </body>
       <back>
@@ -143,7 +147,7 @@
                </persName>
                <birth>
                   <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmbpmb50">
+                  <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>
@@ -152,7 +156,7 @@
                </birth>
                <death>
                   <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmbpmb50">
+                  <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>
@@ -274,24 +278,6 @@
                <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1428648.html?pmb33814</idno>
                <note type="work_kind">Erzählung</note>
             </bibl>
-            <bibl xml:id="pmb33838">
-               <title>Jugend in Wien</title>
-               <title type="namensvariante">Leben und Nachklang, Werk und Widerhall</title>
-               <title type="werk_link">http://www.zeno.org/Literatur/M/Schnitzler,+Arthur/Autobiographisches/Jugend+in+Wien</title>
-               <title type="werk_arbeitstitel">Leben, Kunst und Widerhall</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date notBefore="1968-01-01" when="1968-01-01">1968</date>
-               <idno type="URL" subtype="asaf">https://asaf.com/S.04.03.04</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q41815908</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31377.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31377/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33838/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33838.html</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Jugend_in_Wien</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb33838.html</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33838.html</idno>
-               <note type="work_kind">Autobiografie</note>
-            </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb168">
@@ -354,6 +340,51 @@
                <note type="image">
                   <figure>
                      <graphic url="https://iiif.onb.ac.at/images/AKON/AK077_288/288/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <desc type="entity_type">A.ADM2</desc>
+               <desc type="entity_type_id">1135</desc>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
                   </figure>
                </note>
             </place>

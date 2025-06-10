@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03617" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L03617" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -94,7 +94,7 @@
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb7218">Franzos, Karl Emil</persName>
-               <date when="1888-04-15">15. 4. 1888</date>
+               <date when="1888-04-15" evidence="external">15. 4. 1888</date>
                <placeName ref="#pmb168" evidence="external">Berlin</placeName>
             </correspAction>
             <correspContext>
@@ -104,9 +104,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="candidate">
          <change who="MAM" when="2025-05-08">Export aus Transkribus</change>
          <change who="SJ MAM" when="2025-05-12">Durchsicht</change>
+         <change who="MAM" when="2025-05-26">Durchsicht</change>
+         <change who="MAM" when="2025-05-26">Index check</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -114,8 +116,8 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><seg type="letterhead"><pb facs="H.I.N.-110962_Seite_1"/><hi rend="pre-print">Professor</hi><lb/><hi rend="pre-print">Dr. Joh. Schnitzler</hi><lb/><rs type="place" ref="#pmb50"><hi rend="pre-print">Wien</hi></rs><lb/><hi rend="pre-print"><rs type="place" ref="#pmb168765">I., Burgring 1</rs>. </hi></seg><salute>Sehr geehrter Herr u Freund!</salute></opener><p>Ich erlaube mir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>omit Ihnen mein<supplied>en</supplied> Sohn — <rs type="person" ref="#pmb2121"><hi rend="latintype">Arthur</hi></rs> – der zur Vervoll<c rendition="#langesS">s</c>tändigung<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>einer Studien <anchor type="commentary" xml:id="K_L03617-1"/>einige Monate<note type="commentary" xml:id="K_L03617-1h"><rs type="person" ref="#pmb2121">Schnitzler</rs> reiste am <ref type="schnitzler-tagebuch" target="1888-04-05" subtype="date-only"/> nach <rs type="place" ref="#pmb168">Berlin</rs>, blieb dort allerdings nur bis zum <ref type="schnitzler-tagebuch" target="1888-05-12" subtype="date-only"/>.</note> in <rs type="place" ref="#pmb168">Berlin</rs> zubringen<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>oll, vorzu<c rendition="#langesS">s</c>tellen u den<c rendition="#langesS">s</c>elben
-               Ihrer freundlichen Aufnahme be<c rendition="#langesS">s</c>tens zu empfehlen.</p><closer>Mit herzlich<c rendition="#langesS">s</c>ten Grüßen<lb/>Ihr aufrichtig ergebener<lb/><signed>DrSchnitzler</signed></closer><postscript><dateline><date>4/4 88</date></dateline></postscript></div>
+         <div type="writingSession" n="1"><opener><seg type="letterhead"><pb facs="H.I.N.-110962_Seite_1"/><hi rend="pre-print">Professor</hi><lb/><hi rend="pre-print">D<hi rend="superscript">r.</hi> Joh. Schnitzler</hi><lb/><rs type="place" ref="#pmb50"><hi rend="pre-print">Wien</hi></rs><lb/><hi rend="pre-print"><rs type="place" ref="#pmb168765">I., Burgring 1</rs>. </hi></seg><salute>Sehr geehrter Herr u Freund!</salute></opener><p>Ich erlaube mir hiemit Ihnen mein<supplied>en</supplied> Sohn – <rs type="person" ref="#pmb2121"><hi rend="latintype">Arthur</hi></rs> – der zur Vervoll<c rendition="#langesS">s</c>tändigung<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>einer Studien <anchor type="commentary" xml:id="K_L03617-1"/>einige Monate<note type="commentary" corresp="K_L03617-1"><rs type="person" ref="#pmb2121">Schnitzler</rs> reiste am <ref type="schnitzler-tagebuch" target="1888-04-05" subtype="date-only"/> nach <rs type="place" ref="#pmb168">Berlin</rs>, blieb dort allerdings nur bis zum <ref type="schnitzler-tagebuch" target="1888-05-12" subtype="date-only"/>.</note> in <rs type="place" ref="#pmb168">Berlin</rs> zubringen<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>oll, vorzu<c rendition="#langesS">s</c>tellen u den<c rendition="#langesS">s</c>elben
+               Ihrer freundlichen Aufnahme be<c rendition="#langesS">s</c>tens zu empfehlen.</p><closer>Mit herzlich<c rendition="#langesS">s</c>ten Grüßen<lb/>Ihr aufrichtig ergebener<lb/><signed>D<hi rend="superscript">r</hi>Schnitzler</signed></closer><postscript><dateline><date>4/4 88</date></dateline></postscript></div>
       </body>
       <back>
          <listPerson>

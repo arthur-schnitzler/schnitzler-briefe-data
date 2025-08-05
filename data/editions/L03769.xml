@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L03755" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L03769" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1921-01-03" n="01">1921-01-03</title>
-            <title level="a">Arthur Schnitzler an Stefan Zweig, 3. 1. 1921</title>
+            <title type="iso-date" when-iso="1915-05-05" n="01">1915-05-05</title>
+            <title level="a">Arthur Schnitzler an Stefan Zweig, 5.  5. 1915</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Jahnke, Selma</name>
@@ -68,7 +68,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="karte" ana="bildpostkarte"/>
+                  <objectType corresp="karte" ana="briefkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>ISR</country>
@@ -76,7 +76,7 @@
                         <repository>National Library of Israel</repository>
                         <idno>ARC. Ms. Var. 305 1 58 Stefan Zweig Collection</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="1"/><measure unit="blatt" quantity="1"/><measure unit="zeichenanzahl" quantity="316"/></extent></supportDesc></objectDesc><handDesc><handNote medium="schwarze-tinte" style="lateinische-kurrent"/></handDesc><additions><incident type="postal"><desc><stamp n="1"><date when="1921-01-05">5. I. <unclear>21</unclear></date><time>XI</time></stamp></desc></incident><incident type="receiver" rend="roter-buntstift"><desc>Vermerk: »<quote><hi rend="latintype">Schnitzler</hi></quote>«</desc></incident></additions></physDesc>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="1"/><measure unit="blatt" quantity="1"/><measure unit="zeichenanzahl" quantity="304"/></extent></supportDesc></objectDesc><handDesc><handNote medium="schwarze-tinte" style="deutsche-kurrent"><p>Unterschrift</p></handNote></handDesc><typeDesc><typeNote medium="schreibmaschine"/></typeDesc></physDesc>
                   </msDesc>
                </witness>
             </listWit>
@@ -89,45 +89,39 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1921-01-03" n="01">3. 1. 1921</date>
-               <placeName ref="#pmb50" evidence="external">Wien</placeName>
-            </correspAction>
-            <correspAction type="transmitted">
-               <date when="1921-01-05">5. 1. 1921</date>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <date when="1915-05-05" n="01">5.  5. 1915</date>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb13212">Zweig, Stefan</persName>
-               <date evidence="conjecture" notBefore="1921-01-06" notAfter="1921-01-10">[6. 1. 1921 – 10. 1. 1921?]</date>
-               <placeName ref="#pmb30">Salzburg</placeName>
+               <date evidence="conjecture" notBefore="1915-05-05" notAfter="1915-05-08">[5. 5. 1915 – 8. 5. 1915?]</date>
+               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_13212">Zweig, Stefan</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L02358">Schnitzler an Adam, 20. 11. 1920</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L02359">Schnitzler an Beer-Hofmann, 29. 1. 1921</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_13212" target="L03763">Schnitzler an Zweig, 20. 8. 1920</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_13212" target="L03680">Zweig an Schnitzler, 15. 5. [1922]</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L03654">Zweig an Schnitzler, [26. 4. 1915]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L02206">Hofmannsthal an Schnitzler, 27. [5. 1915]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_13212" target="L03654">Zweig an Schnitzler, [26. 4. 1915]</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_13212" target="L03655">Zweig an Schnitzler, 13. 10. 1915</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2025-07-17">Export aus Transkribus</change>
-         <change who="MAM" when="2025-08-01">Durchsicht</change>
+         <change who="MAM" when="2025-08-05">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="0117_FL81799698"/>
-      <graphic url="0118_FL81799552"/>
-      <graphic url="0117_FL81799698"/>
+      <graphic url="0095_FL81799597"/>
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="0117_FL81799698"/>Hrn Dr. Stefan Zweig</addrLine><addrLine><rs type="place" ref="#pmb30">Salzburg</rs></addrLine><addrLine><rs type="place" ref="#pmb297">Kapuzinerberg</rs></addrLine></address></div>
-         <div type="image"><p rend="center"><pb facs="0118_FL81799552"/><hi rend="pre-print"><rs type="place" ref="#pmb168815">Wien, XVIII, Sternwartestr. 71</rs></hi></p></div>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="0117_FL81799698"/><date>3. 1. <supplied>1</supplied>921</date></dateline><salute>lieber und verehrter Herr Doctor,</salute></opener><p>eben in der Lecture Ihres schönen <rs type="work" ref="#pmb76771" subtype="implied"><rs type="person" ref="#pmb12543">Rolland</rs></rs> Buches begriffen, für dessen freundliche Übersendg ich
-               Ihnen herzlichst danke, sende ich Ihnen die besten Grüße u<unclear>nd</unclear>
-               Wünsche zum neuen Jahr. </p><closer>Ihr 
-               <signed>Arthur Schnitzler</signed></closer></div>
+         <div type="writingSession" n="1"><opener><seg><seg rend="left"><pb facs="0095_FL81799597"/><hi rend="pre-print">Dr. Arthur Schnitzler</hi></seg><seg rend="right"><date>5. 5. 1915</date>. </seg></seg><seg><hi rend="pre-print"><rs type="place" ref="#pmb168815">Wien XVIII.
+                        Sternwartestrasse 71</rs></hi></seg><salute rend="center">Lieber Herr Doktor!</salute></opener><p>Beigeschlossen der <anchor type="commentary" xml:id="K_L03769-1"/><rs type="work" subtype="implied" ref="#pmb33107">Brief</rs> an Dr. <rs type="person" ref="#pmb12556">Rosenbaum</rs> für die <rs type="work" ref="#pmb36374">Neue freie
+                  Presse</rs><note type="commentary" corresp="K_L03769-1"><ref type="schnitzler-interviews" target="M050" subtype="See"/>.</note>. Da Sie so
+               gütig sind ihn selbst dorthin zu geben haben Sie vielleicht auch die Freundlichkeit
+               mir eine Korrektur zu verschaffen, die ich in diesem Fall besonders gern lesen
+               möchte.</p><closer>Herzlichst<lb/>Ihr<lb/><signed><handShift/>Arthur Schnitzler</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -294,60 +288,104 @@
                   <graphic url="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Zweig_Setzer_1927.jpg/250px-Zweig_Setzer_1927.jpg"/>
                </figure>
             </person>
-            <person xml:id="pmb12543">
+            <person xml:id="pmb12556">
                <persName>
-                  <forename>Romain</forename>
-                  <surname>Rolland</surname>
+                  <forename>Richard</forename>
+                  <surname>Rosenbaum</surname>
                </persName>
                <birth>
-                  <date when="1866-01-29">29.01.1866</date>
-                  <settlement ref="pmb48686">
-                     <placeName type="pref">Clamecy</placeName>
+                  <date when="1867-11-04">04.11.1867</date>
+                  <settlement ref="pmb46918">
+                     <placeName type="pref">Žikov</placeName>
                      <location>
-                        <geo>47,46017 3,5194</geo>
+                        <geo>49,2319 13,45724</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1944-12-30">30.12.1944</date>
-                  <settlement ref="pmb58488">
-                     <placeName type="pref">Vézelay</placeName>
+                  <date when="1942-06-25">25.06.1942</date>
+                  <settlement ref="pmb2258">
+                     <placeName type="pref">Konzentrationslager Theresienstadt</placeName>
                      <location>
-                        <geo>47,46572 3,74559</geo>
+                        <geo>50,513639 14,164694</geo>
                      </location>
                   </settlement>
                </death>
                <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118602330</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_19333.html</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb12543.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/12543/</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb12543.html</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp52430</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=R#DWpers0200</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q47162</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Romain_Rolland</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb12543.html</idno>
-               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416477.html?pmb12543</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb12543.html</idno>
-               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb12543.html</idno>
-               <idno type="URL" subtype="stefanzweig">https://www.stefanzweig.digital/o:szd.personen/sdef:TEI/get#SZDPER.1192</idno>
-               <idno type="URL" subtype="brenner">https://brenner.oeaw.ac.at/?p=brennerp10255</idno>
-               <figure>
-                  <graphic url="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Romain_Rolland_1915.jpg/250px-Romain_Rolland_1915.jpg"/>
-               </figure>
+               <occupation ref="pmb115">Dramaturg/Dramaturgin</occupation>
+               <occupation ref="pmb144">Verleger/Verlegerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/11662177X</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_19364.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb12556.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/12556/</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp52478</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284309</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q19225581</idno>
+               <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=358479</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb12556.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb12556.html</idno>
+               <affiliation notBefore="1918-01-01" when="1918-01-01" notAfter="1918-12-31">
+                  <term ref="pmb1182">arbeitet für</term>
+                  <orgName ref="pmb267034">S. Fischer Verlag – Filiale Wien</orgName>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/267034/</idno>
+               </affiliation>
+               <affiliation>
+                  <term ref="pmb1182">arbeitet für</term>
+                  <orgName ref="pmb36247">Burgtheater</orgName>
+                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/38633-9</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36247/</idno>
+                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/institutionen/pmb36247</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q308720</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Burgtheater</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb36247.html</idno>
+                  <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416713.html?pmb36247</idno>
+                  <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416714.html?pmb36247</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36247.html</idno>
+               </affiliation>
+               <listEvent>
+                  <event n="Bankett" ref="pmb47517" when="1912-11-17">
+                     <desc n="1370">teilgenommen an</desc>
+                     <label>Hauptmann-Bankett der Concordia, 17.11.1912</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/47517/</idno>
+                  </event>
+                  <event n="Schiedsgericht" ref="pmb281669" when="1919-06-17">
+                     <desc n="1256">ist Arbeitskraft bei</desc>
+                     <label>Schiedsverfahren Rosenbaum – S. Fischer, 17.6.1919</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/281669/</idno>
+                  </event>
+               </listEvent>
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb76771">
-               <title>Romain Rolland</title>
-               <title type="werk_bibliografische-angabe">Stefan Zweig: Romain Rolland. Der Mann und das Werk. Frankfurt am Main: Rütten und Loening 1921.</title>
-               <author ref="" role="hat-geschaffen">Zweig, Stefan</author>
-               <date notBefore="1921-01-01" when="1921-01-01">1921</date>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/76771/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb76771.html</idno>
-               <note type="work_kind">Biografie</note>
+            <bibl xml:id="pmb33107">
+               <title>Der Rücktritt des Burgtheatersekretärs Dr. Rosenbaum</title>
+               <title type="werk_bibliografische-angabe">Neue Freie Presse, 16. 5. 1915</title>
+               <title type="legacy-name-merge">Der Rücktritt des Burgtheatersekretärs Dr. Rosenbaum</title>
+               <author ref="" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author ref="" role="hat-geschaffen">Hauptmann, Gerhart</author>
+               <date when="1915-05-16">16.05.1915</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33107/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33109/</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb33107.html</idno>
+               <note type="work_kind">Umfrage</note>
+            </bibl>
+            <bibl xml:id="pmb36374">
+               <title>Neue Freie Presse</title>
+               <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=nfp</title>
+               <title type="legacy-name-merge">Neue freie Presse (Zeitung, Wien)</title>
+               <author ref="" role="hat-herausgegeben">Bacher, Eduard</author>
+               <author ref="" role="hat-herausgegeben">Benedikt, Moriz</author>
+               <author ref="" role="hat-herausgegeben">Benedikt, Ernst</author>
+               <date from="1864-01-01" to="1939-01-01">1864 – 1939</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36374/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/werke/pmb36374</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb36374.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36374.html</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/7640546-1</idno>
+               <idno type="URL" subtype="hanslick">https://hanslick.acdh.oeaw.ac.at/hsl_work_id_82.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb36374.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/201326/</idno>
+               <note type="work_kind">Tageszeitung</note>
             </bibl>
          </listBibl>
          <listPlace>
@@ -393,60 +431,6 @@
                <note type="image">
                   <figure>
                      <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
-                  </figure>
-               </note>
-            </place>
-            <place xml:id="pmb30">
-               <placeName>Salzburg</placeName>
-               <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <placeName type="legacy-name-merge">Salzburg?</placeName>
-               <desc type="entity_type">A.ADM2</desc>
-               <desc type="entity_type_id">1135</desc>
-               <location type="coords">
-                  <geo>47,80067 13,04532</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg [Land]</placeName>
-                  <geo>47,41667 13,25</geo>
-               </location>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb30</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91649/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/93885/</idno>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2766818/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/94039/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4076982-3</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q34713</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Salzburg</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb30.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30.html</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/262547/</idno>
-               <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb30.html</idno>
-            </place>
-            <place xml:id="pmb297">
-               <placeName>Kapuzinerberg</placeName>
-               <desc type="entity_type">T.MT</desc>
-               <desc type="entity_type_id">1623</desc>
-               <location type="coords">
-                  <geo>47,80399 13,05734</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb30">Salzburg</placeName>
-                  <geo>47,80067 13,04532</geo>
-               </location>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q873917</idno>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2774753/</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb297.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/297/</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Kapuzinerberg</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb297.html</idno>
-               <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb297.html</idno>
-               <note type="image">
-                  <figure>
-                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK041_140/140/full/,600/0/native.jpg"/>
                   </figure>
                </note>
             </place>

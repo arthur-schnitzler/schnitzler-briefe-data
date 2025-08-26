@@ -106,9 +106,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="candidate">
          <change who="MAM" when="2025-07-17">Export aus Transkribus</change>
          <change who="MAM" when="2025-08-11">Durchsicht</change>
+         <change who="MAM" when="2025-08-25">Index check</change>
+         <change who="MAM" when="2025-08-25">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -119,9 +121,9 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="0011_FL81799686"/><hi rend="latintype">Dr. Stefan Zweig</hi></addrLine><addrLine><rs type="place" ref="#pmb58">Wien VIII</rs></addrLine><addrLine><rs type="place" ref="#pmb249577"><hi rend="latintype">Kochgasse 8</hi></rs></addrLine></address></div>
-         <div type="image"><seg><seg rend="left"><pb facs="0012_FL81799636"/><hi rend="pre-print"><rs type="place" ref="#pmb296521">Santnerspitze</rs></hi><space unit="chars" quantity="10"/><hi rend="pre-print"><rs type="place" ref="#pmb296523">Burgstall</rs></hi></seg><seg rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb296525">Jung-Schlern</rs></hi></seg></seg><p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb969">Tirol</rs>: <rs type="place" ref="#pmb467">Seis am Schlern</rs>, 1000m. Nach dem <rs type="work" ref="#pmb51884" subtype="implied">Aquarell</rs> von <rs type="person" ref="#pmb27687">F. A. C. M. Reisch</rs>,
+         <div type="image"><seg><seg rend="left"><pb facs="0012_FL81799636"/><hi rend="pre-print"><rs type="place" ref="#pmb296521">Santnerspitze</rs></hi><space unit="chars" quantity="5"/><hi rend="pre-print"><rs type="place" ref="#pmb296523">Burgstall</rs></hi></seg><seg rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb296525">Jung-Schlern</rs></hi></seg></seg><p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb969">Tirol</rs>: <rs type="place" ref="#pmb988">Seis am Schlern</rs>, 1000m. Nach dem <rs type="work" ref="#pmb51884" subtype="implied">Aquarell</rs> von <rs type="person" ref="#pmb27687">F. A. C. M. Reisch</rs>,
                      <rs type="place" ref="#pmb43520">Meran</rs>.</hi></p></div>
-         <div type="writingSession" n="1"><opener><dateline><pb facs="0011_FL81799686"/><date>5. 7. 08</date></dateline></opener><p>herzlichen Dank, <salute>lieber Herr Doktor,</salute> für das <anchor type="commentary" xml:id="K_L03800-1"/><rs type="work" ref="#pmb296135" subtype="implied"><rs type="person" ref="#pmb10825">Balzac</rs>-Büchlein</rs><note type="commentary" corresp="K_L03800-1"><bibl><rs type="person" ref="#pmb13212">Stefan Zweig</rs>:
+         <div type="writingSession" n="1"><opener><dateline><pb facs="0011_FL81799686"/><date>5. 7. 08</date></dateline></opener><p>herzlichen Dank, <salute>lieber Herr Doktor,</salute> für das <anchor type="commentary" xml:id="K_L03800-1"/><rs type="work" ref="#pmb296135" subtype="implied"><hi rend="latintype"><rs type="person" ref="#pmb10825">Balzac</rs></hi>-Büchlein</rs><note type="commentary" corresp="K_L03800-1"><bibl><rs type="person" ref="#pmb13212">Stefan Zweig</rs>:
                         <rs type="work" ref="#pmb296135">Balzac. Sein Weltbild aus den Werken</rs>.
                      <pubPlace>Stuttgart</pubPlace>: <rs type="org" ref="#pmb143489">Verlag von
                         Robert Lutz</rs><space unit="chars" quantity="1"/><date><supplied>1908</supplied></date> (<rs type="work" ref="#pmb296138">Aus
@@ -559,8 +561,8 @@
             <place xml:id="pmb296521">
                <placeName>Punta Santner</placeName>
                <placeName type="ort_namensvariante">Santnerspitze</placeName>
-               <desc type="entity_type">Berg (N.BRG)</desc>
-               <desc type="entity_type_id">28</desc>
+               <desc type="entity_type">T.PK</desc>
+               <desc type="entity_type_id">1621</desc>
                <location type="coords">
                   <geo>46,525332 11,570442</geo>
                </location>
@@ -571,6 +573,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/296521/</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q28668217</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/6697113/</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Santnerspitze</idno>
             </place>
             <place xml:id="pmb296523">
                <placeName>Burgstall</placeName>
@@ -625,22 +628,6 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/S%C3%BCdtirol</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb969.html</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb969.html</idno>
-            </place>
-            <place xml:id="pmb467">
-               <placeName>Villa Heufler</placeName>
-               <desc type="entity_type">Beherbergungsgebäude (K.BHB)</desc>
-               <desc type="entity_type_id">42</desc>
-               <location type="coords">
-                  <geo>46,54555 11,560026</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb988">Seis am Schlern</placeName>
-                  <geo>46,54133 11,55868</geo>
-               </location>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb467.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/467/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb467.html</idno>
-               <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb467.html</idno>
             </place>
             <place xml:id="pmb43520">
                <placeName>Meran</placeName>

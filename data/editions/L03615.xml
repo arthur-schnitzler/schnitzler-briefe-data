@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03615" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L03615" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1903-11-12" n="01">1903-11-12</title>
-            <title level="a">Arthur Schnitzler an Felix Salten, 12. 11. 1903</title>
+            <title type="iso-date" when-iso="1892-06-25" n="01">1892-06-25</title>
+            <title level="a">Arthur Schnitzler an Karl Emil Franzos, 25. 6. 1892</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
+               <name>Jahnke, Selma</name>
                <name>Müller, Martin Anton</name>
-               <name>Untner, Laura</name>
             </editor>
             <funder>
-               <name>FWF - Der Wissenschaftsfonds</name>
+               <name>Österreichischer Wissenschaftsfonds FWF</name>
                <address>
-                  <street>Sensengasse 1</street>
-                  <postCode>1090 Wien</postCode>
+                  <street>Georg-Coch-Platz 2</street>
+                  <postCode>1010 Wien</postCode>
                   <placeName>
                      <country>A</country>
                      <settlement>Wien</settlement>
@@ -23,17 +23,17 @@
             </funder>
          </titleStmt>
          <editionStmt>
-            <edition>ASBW</edition>
+            <edition>schnitzler-briefe</edition>
             <respStmt>
                <resp>Transkription und Kommentierung</resp>
+               <name>Jahnke, Selma</name>
                <name>Müller, Martin Anton</name>
-               <name>Untner, Laura</name>
             </respStmt>
          </editionStmt>
          <publicationStmt>
-            <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
+            <publisher>Austrian Centre for Digital Humanities </publisher>
             <pubPlace>Vienna</pubPlace>
-            <date when="2023">2023</date>
+            <date when="2025">2025</date>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
                   <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
@@ -68,16 +68,15 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="bild" ana="fotografie"/>
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>A</country>
                         <settlement>Wien</settlement>
                         <repository>Wienbibliothek im Rathaus</repository>
-                        <idno>Nachlass Salten, ZPH 1681, 17.3.11.11.40.2</idno>
+                        <idno>H.I.N.-60192</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="2"/><measure unit="karte" quantity="1"/><measure unit="zeichenanzahl" quantity="50"/></extent></supportDesc></objectDesc><handDesc><handNote medium="schwarze-tinte" style="deutsche-kurrent"/></handDesc><additions><incident type="editorial" rend="bleistift"><desc>auf der Fotografie die handschriftliche Signatur
-                                 »<quote><rs type="person" ref="#pmb2370"><hi rend="latintype">A Hertwig</hi></rs></quote>« und »<quote><date>1903</date></quote>«</desc></incident></additions></physDesc>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="1"/><measure unit="blatt" quantity="1"/><measure unit="zeichenanzahl" quantity="208"/></extent></supportDesc></objectDesc><handDesc><handNote medium="schwarze-tinte" style="deutsche-kurrent"/></handDesc></physDesc>
                   </msDesc>
                </witness>
             </listWit>
@@ -90,209 +89,254 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1903-11-12" n="01">12. 11. 1903</date>
+               <date when="1892-06-25" n="01">25. 6. 1892</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
-               <persName ref="#pmb2167">Salten, Felix</persName>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
-               <date evidence="conjecture" notBefore="1903-11-12" notAfter="1903-11-14">[12. 11. 1903 – 14. 11. 1903?]</date>
+               <persName ref="#pmb7218">Franzos, Karl Emil</persName>
+               <date evidence="conjecture" notBefore="1892-06-26" notAfter="1892-06-30">[26. 6. 1892 – 30. 6. 1892?]</date>
+               <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
             </correspAction>
             <correspContext>
-               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L03355">Salten an Schnitzler, [11. 11?. 1903]</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L01342">Bahr an Schnitzler, 13. 11. 1903</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_2167" target="L03355">Salten an Schnitzler, [11. 11?. 1903]</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_2167" target="L03351">Salten an Schnitzler, [19?. 11. 1903]</ref>
+               <ref type="belongsToCorrespondence" target="correspondence_7218">Franzos, Karl Emil</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L02698">Goldmann an Schnitzler, 24. 6. [1892]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L02699">Goldmann an Schnitzler, 27. 6. [1892]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_7218" target="L03619">Franzos an Schnitzler, [3. 5. 1888 – 11. 5. 1888?]</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_7218" target="L03620">Franzos an Schnitzler, 8. 9. 1900</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
-         <change who="MAM" when="2024-02-13">angelegt</change>
+      <revisionDesc status="candidate">
+         <change who="MAM" when="2025-05-08">Export aus Transkribus</change>
+         <change who="SJ MAM" when="2025-05-08">Valide gemacht</change>
+         <change who="MAM" when="2025-05-26">Durchsicht</change>
+         <change who="MAM" when="2025-05-26">Index check</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="ZPH1681_Box_17_3_11_11_40_2_0001_2"/>
+      <graphic url="H.I.N.-60192_Seite_1"/>
    </facsimile>
    <text>
       <body>
-         <div type="image" n="1"><figure><graphic width="10cm" url="ZPH1681_Box_17_3_11_11_40_2_0001_1"/></figure></div>
-         <div type="writingSession" n="1"><p><rs type="work" ref="#pmb167490" subtype="implied"><pb facs="ZPH1681_Box 17_3_11_11_40_2_0001_2"/>Meinem lieben Felix Salten</rs></p><closer><signed>ArthSch</signed></closer><postscript><dateline><rs type="place" ref="#pmb50">Wien</rs><space unit="chars" quantity="1"/><date>12. 11. 903</date>.</dateline></postscript></div>
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="H.I.N.-60192_Seite_1"/><date>25/6 92</date></dateline><salute>Hochge<c rendition="#langesS">s</c>chätzter Herr,</salute></opener><p>es wäre mir eine be<c rendition="#langesS">s</c>ondre Ehre,  wenn Sie das beifolgende
+               <anchor type="commentary" xml:id="K_L03615-1"/><rs type="work" ref="#pmb30181" subtype="implied">Gedicht</rs><note type="commentary" corresp="K_L03615-1"><bibl><rs type="person" ref="#pmb2121">Arthur Schnitzler</rs>: <rs type="work" ref="#pmb30181">Anfang vom Ende</rs>. In:
+                     <rs type="work" ref="#pmb41113">Deutsche Dichtung</rs>, Bd. 12, Nr. 8,
+                     <date>15. 7. 1892</date>, S. 192</bibl>.
+               </note> der Aufnahme in der »<hi rend="latintype"><rs type="work" ref="#pmb41113">Deutschen Dichtung</rs></hi>« werth hielten. </p><closer>Hochachtungsvoll<lb/><signed>Dr. Arthur Schnitzler</signed></closer><postscript><p><rs type="place" ref="#pmb265330">Wien, I. <hi rend="latintype">Giselastraße 11</hi></rs>.</p></postscript></div>
       </body>
       <back>
          <listPerson>
             <person xml:id="pmb2121">
                <persName>
-                  <forename>Arthur</forename>
                   <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15.05.1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>48,2066 16,37341</geo>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21.10.1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>48,2066 16,37341</geo>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
                <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
-               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <occupation ref="pmb90">Schriftsteller*in</occupation>
+               <occupation ref="pmb97">Mediziner*in</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
-            <person xml:id="pmb2370">
+            <person xml:id="pmb7218">
                <persName>
-                  <forename>Aura</forename>
-                  <surname>Hertwig</surname>
+                  <forename>Karl Emil</forename>
+                  <surname>Franzos</surname>
                </persName>
-               <persName type="person_geburtsname-vorname">Aurelie</persName>
-               <persName type="person_geburtsname_nachname">Paschke</persName>
-               <persName type="person_ehename_nachname">Brendel</persName>
                <birth>
-                  <date when="1861-06-06">06.06.1861</date>
-                  <settlement ref="pmb44282">
-                     <placeName type="pref">Poznan</placeName>
+                  <date when="1848-10-25">25.10.1848</date>
+                  <settlement ref="pmb45274">
+                     <placeName type="pref">Tschortkiw</placeName>
                      <location>
-                        <geo>52,40692 16,92993</geo>
+                        <geo>49,01701 25,79808</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1944-09-28">28.09.1944</date>
-                  <settlement ref="pmb53804">
-                     <placeName type="pref">Lossow</placeName>
+                  <date when="1904-01-28">28.01.1904</date>
+                  <settlement ref="pmb168">
+                     <placeName type="pref">Berlin</placeName>
                      <location>
-                        <geo>52,28818 14,55023</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="female"/>
-               <occupation ref="pmb145">Fotograf/Fotografin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16130</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2370.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2370/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2370.html</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q24486500</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Aura_Hertwig</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1015449700</idno>
-            </person>
-            <person xml:id="pmb2167">
-               <persName>
-                  <forename>Felix</forename>
-                  <surname>Salten</surname>
-               </persName>
-               <persName type="person_geburtsname-vorname">Siegmund</persName>
-               <persName type="person_geburtsname_nachname">Salzmann</persName>
-               <persName type="person_pseudonym">Sascha</persName>
-               <persName type="person_pseudonym">Martin Finder</persName>
-               <persName type="person_pseudonym">Karl Heinrich</persName>
-               <persName type="legacy-name-merge">Salten, Felix</persName>
-               <birth>
-                  <date when="1869-09-06">06.09.1869</date>
-                  <settlement ref="pmb43471">
-                     <placeName type="pref">Budapest</placeName>
-                     <location>
-                        <geo>47,49835 19,04045</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1945-10-08">08.10.1945</date>
-                  <settlement ref="pmb484">
-                     <placeName type="pref">Zürich</placeName>
-                     <location>
-                        <geo>47,37174 8,54226</geo>
+                        <geo>52,52437 13,41053</geo>
                      </location>
                   </settlement>
                </death>
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118840819</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2167/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp43175</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
-               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284367</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q163747</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Felix_Salten</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162012/</idno>
-               <idno type="URL" subtype="">https://hermanbahrtextverzeichnis/HB-TSN_3793</idno>
+               <idno type="URL" subtype="gnd">https://d-nb.info/gnd/118702599</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/7218/</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb7218.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp47508</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q78846</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Karl_Emil_Franzos</idno>
+               <idno type="URL" subtype="wiengeschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=24605</idno>
+               <idno type="URL" subtype="oebl">https://doi.org/10.1553/0x00281638</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb7218.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_15153.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb7218.html</idno>
+               <idno type="URL" subtype="bahr-tsn">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb7218</idno>
+               <idno type="URL" subtype="zweig-digital">https://www.stefanzweig.digital/o:szd.personen/sdef:TEI/get#SZDPER.429</idno>
+               <affiliation when="1886-01-01" notAfter="1886-12-31" notBefore="1886-01-01">
+                  <term ref="pmb1182">arbeitet für</term>
+                  <orgName ref="pmb292896">Deutsche Dichtung</orgName>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/292896/</idno>
+               </affiliation>
+               <listEvent>
+                  <event n="Souper" when="1888-04-28" ref="pmb208237">
+                     <desc n="1256">ist Arbeitskraft bei</desc>
+                     <label>Diner bei Karl Emil Franzos, 28.4.1888</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/208237/</idno>
+                  </event>
+               </listEvent>
+               <figure>
+                  <graphic url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Karl_Emil_Franzos_Photographie_1891_%28K%C3%B6nnecke_1895%29.png/250px-Karl_Emil_Franzos_Photographie_1891_%28K%C3%B6nnecke_1895%29.png"/>
+               </figure>
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb167490">
-               <title>Arthur Schnitzler [Halbprofil 1903]</title>
-               <author ref="pmb2370" role="hat-geschaffen">Hertwig, Aura</author>
-               <date when="1903-03-09">1903-03-09</date>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/167490/</idno>
-               <note type="work_kind">Fotografie</note>
+            <bibl xml:id="pmb30181">
+               <title type="main">Anfang vom Ende</title>
+               <title type="werk_bibliografische-angabe">Deutsche Dichtung, Bd. 12, Nr. 8, 15. 7. 1892, S. 192</title>
+               <title type="werk_link">https://archive.org/details/bub_gb_Pz0VAAAAYAAJ/page/n204/mode/1up</title>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <date when="1892-03-03">1892-03-03</date>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30181.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30181/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30181.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30181.html</idno>
+               <note type="work_kind">Gedicht</note>
+            </bibl>
+            <bibl xml:id="pmb41113">
+               <title type="main">Deutsche Dichtung</title>
+               <title type="werk_link">https://de.wikisource.org/wiki/Zeitschriften_(Literatur)#533239-4</title>
+               <author role="hat-herausgegeben" ref="pmb7218">Franzos, Karl Emil</author>
+               <date from="1886-01-01" to="1904-01-01">1886 – 1904</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41113/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41113.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q134452073</idno>
+               <note type="work_kind">Zeitschrift</note>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb168">
+               <placeName>Berlin</placeName>
+               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Barlīn</placeName>
+               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Berolino</placeName>
+               <placeName type="legacy-name-merge">B-n</placeName>
+               <desc type="entity_type">P.PPLC</desc>
+               <desc type="entity_type_id">1418</desc>
+               <location type="coords">
+                  <geo>52,52437 13,41053</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4005728-8</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
+               <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb168.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK113_515/515/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
+            </place>
+            <place xml:id="pmb265330">
+               <placeName>Bösendorferstraße 7</placeName>
+               <placeName type="ort_fruherer-name">Giselastraße 7</placeName>
+               <desc type="entity_type">Wohngebäude (K.WHS)</desc>
+               <desc type="entity_type_id">36</desc>
+               <location type="coords">
+                  <geo>48,201414 16,370844</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb542">Bösendorferstraße</placeName>
+                  <geo>48,201213 16,371141</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/265330/</idno>
+               <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb265330.html</idno>
+            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer_name">Vindobona</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <desc type="entity_type">A.ADM2</desc>
                <desc type="entity_type_id">1135</desc>
                <location type="coords">
-                  <geo>48,2066 16,37341</geo>
+                  <geo>48,208333 16,373056</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+               <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4066009-6</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
-               <figure>
-                  <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
-               </figure>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb50.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
             </place>
          </listPlace>
       </back>

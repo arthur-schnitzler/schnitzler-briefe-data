@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02398" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L02398" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -11,10 +11,10 @@
                <name>Susen, Gerd-Hermann</name>
             </editor>
             <funder>
-               <name>FWF - Der Wissenschaftsfonds</name>
+               <name>Österreichischer Wissenschaftsfonds FWF</name>
                <address>
-                  <street>Sensengasse 1</street>
-                  <postCode>1090 Wien</postCode>
+                  <street>Georg-Coch-Platz 2</street>
+                  <postCode>1010 Wien</postCode>
                   <placeName>
                      <country>A</country>
                      <settlement>Wien</settlement>
@@ -23,7 +23,7 @@
             </funder>
          </titleStmt>
          <editionStmt>
-            <edition>ASBW</edition>
+            <edition>schnitzler-briefe</edition>
             <respStmt>
                <resp>Transkription und Kommentierung</resp>
                <name>Müller, Martin Anton</name>
@@ -31,22 +31,22 @@
             </respStmt>
          </editionStmt>
          <publicationStmt>
-            <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
+            <publisher>Austrian Centre for Digital Humanities </publisher>
             <pubPlace>Vienna</pubPlace>
             <date when="2023">2023</date>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
-                  <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
-                     vervielfältigen und weiterverbreiten Bearbeiten — das Material remixen,
+                  <p>Sie dürfen: Teilen – das Material in jedwedem Format oder Medium
+                     vervielfältigen und weiterverbreiten Bearbeiten – das Material remixen,
                      verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar
                      kommerziell.</p>
                   <p>Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die
                      Lizenzbedingungen halten. Unter folgenden Bedingungen:</p>
-                  <p>Namensnennung — Sie müssen angemessene Urheber- und Rechteangaben machen, einen
+                  <p>Namensnennung – Sie müssen angemessene Urheber- und Rechteangaben machen, einen
                      Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese
                      Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings
                      nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie
-                     oder Ihre Nutzung besonders. Keine weiteren Einschränkungen — Sie dürfen keine
+                     oder Ihre Nutzung besonders. Keine weiteren Einschränkungen – Sie dürfen keine
                      zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen
                      rechtlich irgendetwas untersagen, was die Lizenz erlaubt.</p>
                   <p>Hinweise:</p>
@@ -71,10 +71,10 @@
                   <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
-                        <country>Dk</country>
-                        <settlement>Kopenhagen</settlement>
-                        <repository>Det Kongelige Bibliotek</repository>
-                        <idno>Georg Brandes Arkiv, box 125</idno>
+                        <country>GB</country>
+                        <settlement>Cambridge</settlement>
+                        <repository>University Library</repository>
+                        <idno>Schnitzler, B 17</idno>
                      </msIdentifier>
                      <physDesc><objectDesc><supportDesc><extent><measure unit="blatt" quantity="1"/><measure unit="seite" quantity="1"/><measure unit="zeichenanzahl" quantity="385"/></extent></supportDesc></objectDesc><handDesc><handNote medium="bleistift" style="lateinische-kurrent"/></handDesc><additions><incident type="receiver"><desc>datiert: »<quote>Mai 923</quote>«</desc></incident><incident type="archival" rend="bleistift"><desc>von unbekannter Hand in der rechten oberen Ecke
                                  notiert: »<quote><hi rend="underline" n="1">erg.</hi></quote>«</desc></incident><incident type="archival" rend="bleistift"><desc>von unbekannter Hand nummeriert:
@@ -107,19 +107,19 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb10992">Brandes, Georg</persName>
-               <placeName ref="#pmb36300">Kopenhagen</placeName>
                <date when="1923-05-11" n="01">[11. 5. 1923]</date>
+               <placeName ref="#pmb36300">Kopenhagen</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+               <date evidence="conjecture" notBefore="1923-05-11" notAfter="1923-05-12">[11. 5. 1923
+                  – 12. 5. 1923?]</date>
                <placeName ref="#pmb36300">Kopenhagen</placeName>
-               <date evidence="conjecture" notBefore="1923-05-11" notAfter="1923-05-13">[11. 5. 1923
-                  – 15. 5. 1923?]</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10992">Brandes, Georg</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L02572">Rie an Schnitzler, 3. 5. 1923</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L02399">Hofmannsthal an Schnitzler, 15. 5. 1923</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L03665">Zweig an Schnitzler, 13. 5. 1923</ref>
                <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10992" target="L02387">Schnitzler an Brandes, 7. 6. 1922</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10992" target="L02401">Brandes an Schnitzler, 11. 6. 1923</ref>
             </correspContext>
@@ -133,14 +133,14 @@
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic facs="MS-SCHNITZLER-B-00017-A-00001-000-00099"/>
+      <graphic url="MS-SCHNITZLER-B-00017-A-00001-000-00099"/>
    </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="MS-SCHNITZLER-B-00017-A-00001-000-00099"/><rs ref="#pmb1151" type="place">Allégade 31</rs><lb/><rs ref="#pmb1152" type="place"><rs ref="#pmb5530" type="person">Dr. Meisens</rs> Klinik</rs><lb/><date>Freitag</date></dateline><salute>Lieber Schnitzler</salute></opener><p>Wegen eines Unwohlseins bin ich seit ein Paar Wochen auf einer <rs type="place" ref="#pmb1152" subtype="implied">Klinik</rs>. Es ist mir ein wahrer Trauer, Sie
                nicht in diesen Tagen bei mir empfangen zu können; <hi n="1" rend="underline">muss</hi> Sie aber sehen.</p><p>Bitte suchen Sie mich morgen <date>Sonnabend</date> etwa um <time>2</time> und
-               bleiben Sie ruhig bis gegen <time>5</time>. Ihre <anchor type="commentary" xml:id="K_L02398-1"/>Vorlesung<note xml:id="K_L02398-1h" type="commentary">am
-                     <date>12. 5. 1923</date></note> findet ja erst <time>Abends</time><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>tatt.</p><closer>Mit tausend Grüssen<lb/>Ihr Freund<lb/><signed>Georg Brandes</signed></closer></div>
+               bleiben Sie ruhig bis gegen <time>5</time>. Ihre <anchor type="commentary" xml:id="K_L02398-1"/>Vorlesung<note type="commentary" corresp="K_L02398-1"><ref type="schnitzler-tagebuch" target="1923-05-12" subtype="Cf"/>.
+               </note> findet ja erst <time>Abends</time><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>tatt.</p><closer>Mit tausend Grüssen<lb/>Ihr Freund<lb/><signed>Georg Brandes</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -149,6 +149,7 @@
                   <forename>Georg</forename>
                   <surname>Brandes</surname>
                </persName>
+               <persName type="legacy-name-merge">Brandes, Georg</persName>
                <birth>
                   <date when="1842-02-04">04.02.1842</date>
                   <settlement ref="pmb36300">
@@ -168,55 +169,102 @@
                   </settlement>
                </death>
                <sex value="male"/>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13920</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118514326</idno>
+               <idno type="URL" subtype="gnd">https://d-nb.info/gnd/118514326</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_13920.html</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10992.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10992/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10992.html</idno>
                <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10992.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp44279</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q316045</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Georg_Brandes</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10992.html</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416704.html?pmb10992</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1428210.html?pmb10992</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1428211.html?pmb10992</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416755.html?pmb10992</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416756.html?pmb10992</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416757.html?pmb10992</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416758.html?pmb10992</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416759.html?pmb10992</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10992.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/159465/</idno>
+               <idno type="URL" subtype="hanslick-online">https://hanslick.acdh.oeaw.ac.at/hsl_person_id_2668.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb10992.html</idno>
+               <idno type="URL" subtype="bahr-tsn">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb10992</idno>
+               <idno type="URL" subtype="zweig-digital">https://www.stefanzweig.digital/o:szd.personen/sdef:TEI/get#SZDPER.161</idno>
+               <idno type="URL" subtype="brenner">https://brenner.oeaw.ac.at/?p=brennerp3884</idno>
+               <idno type="URL" subtype="schaubuehne">https://schaubuehne.oeaw.ac.at/register.html?author=2386</idno>
+               <affiliation>
+                  <term ref="pmb1153">in Bezug zu</term>
+                  <orgName ref="pmb34262">Morgen. Wochenschrift für deutsche Kultur</orgName>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34262/</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb34262.html</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34262.html</idno>
+               </affiliation>
+               <listEvent>
+                  <event n="Vortrag" when="1900-03-18" ref="pmb207334">
+                     <desc n="1256">ist Arbeitskraft bei</desc>
+                     <label>Vortrag von Georg Brandes, 18.3.1900</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/207334/</idno>
+                  </event>
+                  <event n="Lesung" when="1900-03-19" ref="pmb183209">
+                     <desc n="1370">teilgenommen an</desc>
+                     <label>Lesung von Der Ehrentag, Der verflogene Ruf, 19.3.1900</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/183209/</idno>
+                  </event>
+                  <event n="Vortrag" when="1912-11-21" ref="pmb253932">
+                     <desc n="1256">ist Arbeitskraft bei</desc>
+                     <label>Vortrag von Georg Brandes: Goethe und die Zeitalter, 21.11.1912</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/253932/</idno>
+                  </event>
+                  <event n="Vortrag" when="1925-03-31" ref="pmb37731">
+                     <desc n="1256">ist Arbeitskraft bei</desc>
+                     <label>Vortrag von Georg Brandes in Berlin</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/37731/</idno>
+                  </event>
+                  <event n="Vortrag" when="1925-04-08" ref="pmb37735">
+                     <desc n="1256">ist Arbeitskraft bei</desc>
+                     <label>Vortrag von Georg Brandes in Wien</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/37735/</idno>
+                  </event>
+                  <event n="Vortrag" when="1925-04-08" ref="pmb210338">
+                     <desc n="1256">ist Arbeitskraft bei</desc>
+                     <label>Vortrag »Das heutige Europa« von Georg Brandes, 8.4.1925</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/210338/</idno>
+                  </event>
+               </listEvent>
+               <note type="references"> </note>
+               <figure>
+                  <graphic url="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Georg_Brandes_by_L_Szacinski.jpg/250px-Georg_Brandes_by_L_Szacinski.jpg"/>
+               </figure>
             </person>
             <person xml:id="pmb2121">
                <persName>
-                  <forename>Arthur</forename>
                   <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15.05.1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>48,2066 16,37341</geo>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21.10.1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>48,2066 16,37341</geo>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
                <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
-               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <occupation ref="pmb90">Schriftsteller*in</occupation>
+               <occupation ref="pmb97">Mediziner*in</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb5530">
                <persName>
@@ -243,45 +291,19 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <occupation ref="pmb364">Mediziner/Medizinerin &gt;&gt;
-                  Chirurg/Chirurgin</occupation>
-               <occupation ref="pmb365">Mediziner/Medizinerin &gt;&gt;
-                  Sanatoriumsleiter/Sanatoriumsleiterin</occupation>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/101737823</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_18051</idno>
+               <occupation ref="pmb364">Chirurg/Chirurgin</occupation>
+               <occupation ref="pmb365">Sanatoriumsleiter/Sanatoriumsleiterin</occupation>
+               <idno type="URL" subtype="gnd">https://d-nb.info/gnd/101737823</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_18051.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/5530/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q98915802</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb5530.html</idno>
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb36300">
-               <placeName>Kopenhagen</placeName>
-               <placeName type="alternative-name">Copenhagen</placeName>
-               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
-               <desc type="entity_type_id">14</desc>
-               <location type="coords">
-                  <geo>55,67594 12,56553</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43570">Dänemark</placeName>
-                  <geo>56,0 10,0</geo>
-               </location>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1748</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb36300.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36300/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36300.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58083/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4032399-7</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64393/</idno>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2618425/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb36300</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb36300.html</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Kopenhagen</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb36300.html</idno>
-            </place>
             <place xml:id="pmb1151">
                <placeName>Allégade</placeName>
-               <placeName type="legacy-name-merge">Alleegade</placeName>
+               <placeName type="ort_namensvariante">Alleegade</placeName>
                <desc type="entity_type">Straße (K.STR)</desc>
                <desc type="entity_type_id">26</desc>
                <location type="coords">
@@ -293,9 +315,9 @@
                </location>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q12301121</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1151/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1151.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92137/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92137.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb1151.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1151.html</idno>
             </place>
             <place xml:id="pmb1152">
                <placeName>Meisen’s Klinik</placeName>
@@ -308,8 +330,48 @@
                   <placeName ref="pmb36300">Kopenhagen</placeName>
                   <geo>55,67594 12,56553</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1151">Allégade</placeName>
+                  <geo>55,67713 12,53295</geo>
+               </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1152/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb1152.html</idno>
+               <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb1152.html</idno>
+            </place>
+            <place xml:id="pmb36300">
+               <placeName>Kopenhagen</placeName>
+               <placeName type="alternative-name">Kopenhagen</placeName>
+               <placeName type="legacy-name">Kopenhagen</placeName>
+               <placeName type="legacy-name-merge">Kopenhagen</placeName>
+               <placeName type="alternative-name">Copenhagen</placeName>
+               <placeName type="legacy-name-merge">Copenhagen</placeName>
+               <desc type="entity_type">P.PPLC</desc>
+               <desc type="entity_type_id">1418</desc>
+               <location type="coords">
+                  <geo>55,67594 12,56553</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43570">Dänemark</placeName>
+                  <geo>56,0 10,0</geo>
+               </location>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1748</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb36300.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36300/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58083/</idno>
+               <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4032399-7</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64393/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2618425/</idno>
+               <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb36300</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Kopenhagen</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb36300.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb36300.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36300.html</idno>
+               <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb36300.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK111_382/382/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
             </place>
          </listPlace>
       </back>

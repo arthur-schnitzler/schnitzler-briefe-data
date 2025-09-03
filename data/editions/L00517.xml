@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L00517" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L00517" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -11,10 +11,10 @@
                <name>Susen, Gerd-Hermann</name>
             </editor>
             <funder>
-               <name>FWF - Der Wissenschaftsfonds</name>
+               <name>Österreichischer Wissenschaftsfonds FWF</name>
                <address>
-                  <street>Sensengasse 1</street>
-                  <postCode>1090 Wien</postCode>
+                  <street>Georg-Coch-Platz 2</street>
+                  <postCode>1010 Wien</postCode>
                   <placeName>
                      <country>A</country>
                      <settlement>Wien</settlement>
@@ -23,7 +23,7 @@
             </funder>
          </titleStmt>
          <editionStmt>
-            <edition>ASBW</edition>
+            <edition>schnitzler-briefe</edition>
             <respStmt>
                <resp>Transkription und Kommentierung</resp>
                <name>Müller, Martin Anton</name>
@@ -31,22 +31,22 @@
             </respStmt>
          </editionStmt>
          <publicationStmt>
-            <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
+            <publisher>Austrian Centre for Digital Humanities </publisher>
             <pubPlace>Vienna</pubPlace>
             <date when="2023">2023</date>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
-                  <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
-                     vervielfältigen und weiterverbreiten Bearbeiten — das Material remixen,
+                  <p>Sie dürfen: Teilen – das Material in jedwedem Format oder Medium
+                     vervielfältigen und weiterverbreiten Bearbeiten – das Material remixen,
                      verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar
                      kommerziell.</p>
                   <p>Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die
                      Lizenzbedingungen halten. Unter folgenden Bedingungen:</p>
-                  <p>Namensnennung — Sie müssen angemessene Urheber- und Rechteangaben machen, einen
+                  <p>Namensnennung – Sie müssen angemessene Urheber- und Rechteangaben machen, einen
                      Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese
                      Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings
                      nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie
-                     oder Ihre Nutzung besonders. Keine weiteren Einschränkungen — Sie dürfen keine
+                     oder Ihre Nutzung besonders. Keine weiteren Einschränkungen – Sie dürfen keine
                      zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen
                      rechtlich irgendetwas untersagen, was die Lizenz erlaubt.</p>
                   <p>Hinweise:</p>
@@ -90,13 +90,13 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb10762">Andreas-Salomé, Lou</persName>
-               <placeName ref="#pmb50">Wien</placeName>
                <date when="1895-11-25" n="02">[25. –26.? 11. 1895]</date>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50">Wien</placeName>
                <date evidence="conjecture" notBefore="1895-11-25" notAfter="1895-11-27">[25. 11. 1895 – 29. 11. 1895?]</date>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10762">Andreas-Salomé, Lou</ref>
@@ -110,17 +110,17 @@
       <revisionDesc status="approved">
          <change who="GHS" when="2018-08-02">Angelegt</change>
          <change who="MAM" when="2018-08-08">Durchsicht</change>
-         <change who="MAM" when="2018-02-14">Index check</change>
+         <change when="2018-08-09" who="MAM">Index check</change>
          <change who="GHS" when="2019-07-05">facs aktualisiert, korrigiert, finalisiert</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic facs="MS-SCHNITZLER-B-00003-000-00019"/>
+      <graphic url="MS-SCHNITZLER-B-00003-000-00019"/>
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><salute><pb facs="MS-SCHNITZLER-B-00003-000-00019"/>Lieber Herr <hi rend="latintype">D<hi rend="superscript">r</hi></hi>,</salute></opener><p>wäre es Ihnen möglich, noch <anchor type="commentary" xml:id="K_L00517-1"/>heute<note xml:id="K_L00517-1h" type="commentary">Die Datierung basiert auf der Annahme, dass
-                  die Krankheit die täglichen Treffen unterbricht, die zwischen dem <ref target="1895-11-23" subtype="date-only" type="schnitzler-tagebuch"/> und <ref target="1895-11-23" subtype="date-only" type="schnitzler-tagebuch"/>
+         <div type="writingSession" n="1"><opener><salute><pb facs="MS-SCHNITZLER-B-00003-000-00019"/>Lieber Herr <hi rend="latintype">D<hi rend="superscript">r</hi></hi>,</salute></opener><p>wäre es Ihnen möglich, noch <anchor type="commentary" xml:id="K_L00517-1"/>heute<note type="commentary" corresp="K_L00517-1">Die Datierung basiert auf der Annahme, dass
+                  die Krankheit die täglichen Treffen unterbrach, die zwischen dem <ref target="1895-11-23" subtype="date-only" type="schnitzler-tagebuch"/> und <ref target="1895-11-27" subtype="date-only" type="schnitzler-tagebuch"/>
                   stattfanden.</note> Abend einen Augenblick hier vorzu<c rendition="#langesS">s</c>prechen? <rs ref="#pmb5412" type="person">Frieda</rs> i<c rendition="#langesS">s</c>t krank geworden, heute Nacht,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie hat Fieber und
                Hals<c rendition="#langesS">s</c>chmerzen, und läßt bei Ihnen anfragen, ob Sie kommen mögen.</p><closer>Mit herzlichem Gruß<lb/>Ihre <signed>LouAS.</signed></closer><postscript><p>Klopfen Sie bei mir, bitte, N<hi rend="superscript">o</hi> 36.</p></postscript></div>
       </body>
@@ -131,8 +131,9 @@
                   <forename>Lou</forename>
                   <surname>Andreas-Salomé</surname>
                </persName>
-               <persName type="person_geburtsname-vorname">Louise</persName>
+               <persName type="person_geburtsname_vorname">Louise</persName>
                <persName type="person_geburtsname_nachname">von Salomé</persName>
+               <persName type="legacy-name-merge">Andreas-Salomé, Lou</persName>
                <birth>
                   <date when="1861-02-12">12.02.1861</date>
                   <settlement ref="pmb433">
@@ -153,53 +154,70 @@
                </death>
                <sex value="female"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13196</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118502921</idno>
+               <idno type="URL" subtype="gnd">https://d-nb.info/gnd/118502921</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_13196.html</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10762.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10762/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10762.html</idno>
                <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10762.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q38873</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Lou_Andreas-Salom%C3%A9</idno>
+               <idno type="URL" subtype="wiengeschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=50494</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1411536.html?pmb10762</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10762.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/159119/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb10762.html</idno>
+               <idno type="URL" subtype="bahr-tsn">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb10762</idno>
+               <idno type="URL" subtype="schaubuehne">https://schaubuehne.oeaw.ac.at/register.html?author=2616</idno>
+               <listEvent>
+                  <event n="Theateraufführung" when="1895-05-21" ref="pmb42232">
+                     <desc n="1370">teilgenommen an</desc>
+                     <label>Aufführung von Macbeth, 21.5.1895</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42232/</idno>
+                  </event>
+                  <event n="Theaterpremiere" when="1906-02-24" ref="pmb35179">
+                     <desc n="1370">teilgenommen an</desc>
+                     <label>Premiere von Der Ruf des Lebens, 24.2.1906</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35179/</idno>
+                  </event>
+                  <event n="Generalprobe" when="1921-12-07" ref="pmb238815">
+                     <desc n="1370">teilgenommen an</desc>
+                     <label>Generalprobe von Lebendige Stunden, 7.12.1921</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/238815/</idno>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/239514/</idno>
+                  </event>
+               </listEvent>
+               <note type="references"> </note>
+               <figure>
+                  <graphic url="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Lou_Andreas-Salom%C3%A9_-_Foto_Atelier_Elvira.jpg/250px-Lou_Andreas-Salom%C3%A9_-_Foto_Atelier_Elvira.jpg"/>
+               </figure>
             </person>
             <person xml:id="pmb2121">
                <persName>
-                  <forename>Arthur</forename>
                   <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15.05.1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>48,2066 16,37341</geo>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21.10.1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>48,2066 16,37341</geo>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
                <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
-               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <occupation ref="pmb90">Schriftsteller*in</occupation>
+               <occupation ref="pmb97">Mediziner*in</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb5412">
                <persName>
@@ -226,50 +244,64 @@
                </death>
                <sex value="female"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/11706646X</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14051</idno>
+               <idno type="URL" subtype="gnd">https://d-nb.info/gnd/11706646X</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_14051.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/5412/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb5412.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1456366</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frieda_von_B%C3%BClow</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb5412.html</idno>
             </person>
          </listPerson>
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer_name">Vindobona</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
-               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
-               <desc type="entity_type_id">14</desc>
+               <placeName type="legacy-name-merge">Vienna</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <desc type="entity_type">A.ADM2</desc>
+               <desc type="entity_type_id">1135</desc>
                <location type="coords">
-                  <geo>48,2066 16,37341</geo>
+                  <geo>48,208333 16,373056</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+               <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4066009-6</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb50.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
             </place>
          </listPlace>
       </back>

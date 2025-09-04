@@ -1,43 +1,28 @@
-name: Setup Repository Dispatch Trigger
-
-# This workflow needs to be added to the schnitzler-briefe-data repository
-# It will trigger the PDF generation workflow when XML files are changed in schnitzler-briefe-tex
+name: 'Trigger actions in other repos on push'
 
 on:
   push:
-    branches: [main]
-    paths: ['data/editions/*.xml']
+    branches:
+      - main
 
 jobs:
-  trigger-pdf-generation:
+  # Existing job for schnitzler-briefe-tex
+  dispatch_to_tex_repo:
+    if: contains(join(github.event.commits.*.modified), 'data/editions/')
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout
+    - name: Check out repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 2
-
-    - name: Get changed XML files
-      id: changes
-      run: |
-        CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- data/editions/*.xml)
-        
-        if [ -z "$CHANGED_FILES" ]; then
-          echo "No XML files changed"
-          echo "has_changes=false" >> $GITHUB_OUTPUT
-        else
-          echo "Changed XML files:"
-          echo "$CHANGED_FILES"
-          echo "has_changes=true" >> $GITHUB_OUTPUT
-          
-          # Create JSON payload with changed files
-          FILES_JSON=$(echo "$CHANGED_FILES" | jq -R -s -c 'split("\n") | map(select(length > 0))')
-          echo "changed_files=$FILES_JSON" >> $GITHUB_OUTPUT
-        fi
-
-    - name: Trigger PDF generation workflow
-      if: steps.changes.outputs.has_changes == 'true'
+    - name: Get changed files
+      id: changed-files
+      uses: tj-actions/changed-files@v45
+      with:
+        files: data/editions/*.xml
+        files_separator: ','
+    - name: Repository Dispatch to schnitzler-briefe-tex
+      if: steps.changed-files.outputs.any_changed == 'true'
       uses: peter-evans/repository-dispatch@v3
       with:
         token: ${{ secrets.REPO_ACCESS_TOKEN }}
@@ -45,7 +30,23 @@ jobs:
         event-type: xml-files-changed
         client-payload: |
           {
-            "changed_files": ${{ steps.changes.outputs.changed_files }},
-            "commit_sha": "${{ github.sha }}",
+            "changed_files": "${{ steps.changed-files.outputs.all_changed_files }}",
+            "sha": "${{ github.sha }}",
+            "commit_message": "${{ github.event.head_commit.message }}"
+          }
+
+  # New job for schnitzler-briefe-charts
+  dispatch_to_charts_repo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Repository Dispatch to schnitzler-briefe-charts
+      uses: peter-evans/repository-dispatch@v3
+      with:
+        token: ${{ secrets.REPO_ACCESS_TOKEN }}
+        repository: arthur-schnitzler/schnitzler-briefe-charts
+        event-type: data-updated
+        client-payload: |
+          {
+            "sha": "${{ github.sha }}",
             "commit_message": "${{ github.event.head_commit.message }}"
           }

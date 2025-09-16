@@ -19,6 +19,9 @@ jobs:
     - name: Fetch and preprocess Data
       run: |
         ./fetch_data.sh
+    - name: Generate CSV from list XML files
+      run: |
+        python3 process_list_xml.py
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: Downloaded/Updated Data

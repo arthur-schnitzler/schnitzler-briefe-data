@@ -53,8 +53,11 @@ def process_xml_files():
         except Exception as e:
             print(f"Error processing {xml_file}: {e}")
     
+    # Create csv directory if it doesn't exist
+    os.makedirs('./csv', exist_ok=True)
+    
     # Write to CSV
-    with open('output.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('./csv/uris-in-use.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         # Write header
         writer.writerow(['id', 'uri', 'domain'])
@@ -63,7 +66,7 @@ def process_xml_files():
     
     print(f"Processed {len(xml_files)} XML files")
     print(f"Extracted {len(results)} entries")
-    print("Output written to output.csv")
+    print("Output written to ./csv/uris-in-use.csv")
 
 if __name__ == "__main__":
     process_xml_files()

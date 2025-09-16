@@ -12,7 +12,7 @@ import glob
 
 def process_xml_files():
     # Find all list*.xml files in data/indices/
-    xml_files = glob.glob('./data/indices/list*.xml')
+    xml_files = [f for f in glob.glob('./data/indices/list*.xml') if not f.endswith('listcorrespondence.xml')]
     
     results = []
     

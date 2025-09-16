@@ -4,6 +4,18 @@
     version="3.0">
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
+    <xsl:template match="tei:c[@rendition='#gemination-m']">
+        <xsl:element name="c" namespace="http://www.tei-c.org/ns/1.0">
+            <xsl:copy select="@*"/>
+            <xsl:text>mm</xsl:text>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template match="tei:c[@rendition='#gemination-n']">
+        <xsl:element name="c" namespace="http://www.tei-c.org/ns/1.0">
+            <xsl:copy select="@*"/>
+            <xsl:text>nn</xsl:text>
+        </xsl:element>
+    </xsl:template>
     <xsl:template match="text()">
         <xsl:analyze-string select="." regex="[ \t\n]+ſ">
             <xsl:matching-substring>

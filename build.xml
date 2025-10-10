@@ -26,5 +26,11 @@
         <fileset dir="${tmpDir}"/>
     </move>
     <delete dir="${tmpDir}"/>
+    <!-- Adapt schema to match transformations -->
+    <xslt style="./import-xslts/adapt-schema.xsl" in="./data/meta/schnitzler-briefe-schema.xsd" out="./data/meta/schnitzler-briefe-schema.xsd.tmp">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+    </xslt>
+    <move file="./data/meta/schnitzler-briefe-schema.xsd.tmp" tofile="./data/meta/schnitzler-briefe-schema.xsd" overwrite="true"/>
 
 </project>

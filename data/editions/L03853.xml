@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L03841" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L03853" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1894-12-29" n="01">1894-12-29</title>
-            <title level="a">Theodor Herzl an Arthur Schnitzler, 29. 12. 1894</title>
+            <title type="iso-date" when-iso="1895-03-08" n="01">1895-03-08</title>
+            <title level="a">Theodor Herzl an Arthur Schnitzler, [zwischen 8. und
+               17. 3. 1895?]</title>
             <author ref="#pmb11673">Herzl, Theodor</author>
             <editor>
-               <name>Jahnke, Selma</name>
-               <name>Müller, Martin Anton</name>
+               <persName>Jahnke, Selma</persName>
+               <persName>Müller, Martin Anton</persName>
             </editor>
             <funder>
                <name>Österreichischer Wissenschaftsfonds FWF</name>
@@ -26,8 +27,8 @@
             <edition>schnitzler-briefe</edition>
             <respStmt>
                <resp>Transkription und Kommentierung</resp>
-               <persName>Jahnke, Selma</persName>
-               <persName>Müller, Martin Anton</persName>
+               <name>Jahnke, Selma</name>
+               <name>Müller, Martin Anton</name>
             </respStmt>
          </editionStmt>
          <publicationStmt>
@@ -76,7 +77,7 @@
                         <repository>University Library</repository>
                         <idno>Schnitzler, B 39</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="1"/><measure unit="blatt" quantity="1"/><measure unit="zeichenanzahl" quantity="573"/></extent></supportDesc></objectDesc><handDesc><handNote medium="schwarze-tinte" style="lateinische-kurrent"/></handDesc><additions><incident type="archival" rend="bleistift"><desc>von unbekannter Hand nummeriert: »<quote>20</quote>«</desc></incident></additions></physDesc>
+                     <physDesc><objectDesc><supportDesc><condition ana="fragment">Textverlust durch Ausriss der oberen Blattecke</condition><extent><measure unit="seite" quantity="3"/><measure unit="blatt" quantity="1"/><measure unit="zeichenanzahl" quantity="1228"/></extent></supportDesc></objectDesc><handDesc><handNote medium="schwarze-tinte" style="lateinische-kurrent"/></handDesc><additions><incident type="receiver" rend="bleistift"><desc>datiert: »<quote>Mitt März 95</quote>«</desc></incident><incident type="archival" rend="bleistift"><desc>von unbekannter Hand nummeriert: »<quote>32</quote>«</desc></incident></additions></physDesc>
                   </msDesc>
                </witness>
             </listWit>
@@ -84,8 +85,7 @@
                <biblStruct>
                   <monogr>
                      <author ref="#pmb11673">Herzl, Theodor</author>
-                     <title level="m">Briefe und
-                        autobiographische Notizen 1866–1895</title>
+                     <title level="m">Briefe und autobiographische Notizen 1866–1895</title>
                      <respStmt>
                         <resp>Bearbeitet von</resp>
                         <persName>Wachten, Johannes</persName>
@@ -103,7 +103,7 @@
                         <publisher>Propyläen</publisher>
                         <date>1983</date>
                      </imprint>
-                     <biblScope unit="pp">565</biblScope>
+                     <biblScope unit="pp">579</biblScope>
                   </monogr>
                   <series>
                      <title level="s">Briefe und Tagebücher</title>
@@ -132,46 +132,58 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11673">Herzl, Theodor</persName>
-               <date when="1894-12-29" n="01">29. 12. 1894</date>
+               <date notBefore="1895-03-08" notAfter="1895-03-17" n="01">[zwischen 8. und
+                  17. 3. 1895?]</date>
                <placeName ref="#pmb182">Paris</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date evidence="conjecture" notBefore="1894-12-30" notAfter="1895-01-03">[30. 12. 1894 – 3. 1. 1895?]</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11673">Herzl, Theodor</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L03840">Herzl an Schnitzler, 23. 12. 1894</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00412">Hofmannsthal an Schnitzler, [30. 12. 1894?]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11673" target="L03840">Herzl an Schnitzler, 23. 12. 1894</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11673" target="L03842">Herzl an Schnitzler, 31. 12. 1894</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L02730">Goldmann an Schnitzler, 7. 3. [1895]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00424">Schnitzler an Beer-Hofmann, 9. 3. 1895</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11673" target="L03852">Herzl an Schnitzler, 4. 3. 1895</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11673" target="L03854">Herzl an Schnitzler, 21. 3. 1895</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2025-08-12">Export aus Transkribus</change>
-         <change who="SJ" when="2025-09-23">Durchsicht</change>
+         <change who="SJ" when="2025-10-09">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="MS-SCHNITZLER-B-00039-000-00059"/>
+      <graphic url="MS-SCHNITZLER-B-00039-000-00091-2"/>
+      <graphic url="MS-SCHNITZLER-B-00039-000-00092-1"/>
+      <graphic url="MS-SCHNITZLER-B-00039-000-00092-2"/>
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><seg type="letterhead"><seg rend="left"><pb facs="MS-SCHNITZLER-B-00039-000-00059"/><hi rend="capitals"><rs type="org" ref="#pmb29351"><hi rend="pre-print">Nouvelle Presse Libre</hi></rs></hi></seg><seg rend="right"><hi rend="capitals"><rs type="place" ref="#pmb296731"><hi rend="pre-print">8, Rue de Monceau </hi></rs></hi></seg></seg><seg type="letterhead"><seg rend="left"><hi rend="pre-print">D<hi rend="superscript">r</hi><space unit="chars" quantity="1"/><hi rend="capitals">Th. Herzl</hi></hi></seg><seg rend="right"><date>29. XII. 94</date></seg></seg><salute>Mein lieber Freund!</salute></opener><p>Hier <anchor type="commentary" xml:id="K_L03841-1"/>III.<note type="commentary" corresp="K_L03841-1">Das Manuskript des dritten Aktes des Schauspiels <rs type="work" ref="#pmb76499">Das neue Ghetto</rs>, das als Beilage den Brief
-                  begleitete, ist nicht überliefert.</note></p><p><date>Morgen</date> wahrscheinlich IV und Titelblatt mit Personenverzeichniss,
-               vielleicht auch schon der Begleitbrief. </p><p>Dann werde ich auch Ihren lieben <anchor type="commentary" xml:id="K_L03841-2"/>vorgestrigen Brief<note type="commentary" corresp="K_L03841-2">XXXX26.12.1894</note> beantworten. </p><closer>Herzlich Ihr aufrichtiger <lb/><signed>Th Herzl</signed></closer><postscript><p>Seite 9 <anchor type="commentary" xml:id="K_L03841-3"/>des heutigen Mscpts<note type="commentary" corresp="K_L03841-3">dritter Akt des Schauspiels <rs type="work" ref="#pmb76499">Das neue Ghetto</rs></note> (ich fing die
-                  Nummerirung von vorn an weil ich die frühere Zahl nicht mehr wusste) Seite 9 in
-                  der <anchor type="commentary" xml:id="K_L03841-4"/>Erzählung des Rabbiners<note type="commentary" corresp="K_L03841-4">Die Figur des Rabbiners
-                     Dr. Friedheimer referiert in der sechsten Szene des dritten Aktes eine
-                     Anekdote aus einer alten Chronik, die in der Druckfassung auf den Monat »<date>Ab des Jahres
-                        5143</date>« des jüdischen Kalenders datiert wird, s. <bibl><rs type="person" ref="#pmb11673">Theodor Herzl</rs>: <rs type="work" ref="#pmb76499">Das neue Ghetto. Schauspiel in 4 Acten</rs>,
-                        <pubPlace>Wien</pubPlace>: <publisher>Buchdruckerei »Industrie« – Selbstverlag</publisher><space unit="chars" quantity="1"/><date>1903</date>, S. 74</bibl>. Das entspricht <date>Juli
-                        oder August des Jahres 1383</date> nach christlicher Zeitrechnung.</note>
-                  ist der jüdische Name des Sommermonats (<anchor type="commentary" xml:id="K_L03841-5"/><foreign xml:lang="he">Ab</foreign><note type="commentary" corresp="K_L03841-5">hebräisch <foreign xml:lang="he">אָב</foreign>, av: elfter Monat des jüdischen Kalenders</note>? <anchor type="commentary" xml:id="K_L03841-6"/><foreign xml:lang="he">Nischan</foreign><note type="commentary" corresp="K_L03841-6">hebräisch <foreign xml:lang="he">ניסן</foreign>, nisan: siebter Monat des jüdischen Kalenders</note>? ich weiss im Augenblick
-                  nicht) und die geeignete Jahreszahl nachzutragen. Ich werde sie Ihnen
-                     <date>morgen</date> schicken mit der Bitte sie einzuflicken</p></postscript></div>
+         <div type="writingSession" n="1"><opener><salute><pb facs="MS-SCHNITZLER-B-00039-000-00091-2"/>Mein lieber <damage agent="paperloss"><supplied>Freund,</supplied></damage></salute></opener><p><anchor type="commentary" xml:id="K_L03853-1"/><date>Nächster Tage</date><note type="commentary" corresp="K_L03853-1">Die Datierung des Briefes befand sich
+                  auf der ausgerissenen Ecke. <rs type="person" ref="#pmb11673">Herzl</rs> fordert
+                     <rs type="person" ref="#pmb2121">Schnitzler</rs> auf, ihm bis auf weiteres
+                  nicht nach <rs type="place" ref="#pmb182">Paris</rs> zu schreiben. Also lag die
+                  Abfassung des Briefes nach Absenden von <rs type="person" ref="#pmb2121">Schnitzlers</rs> vorangegangenem Brief vom refXXXX8.3.1895. Die angekündigte
+                  Abreise nach <rs type="place" ref="#pmb182">Wien</rs> terminiert <rs type="person" ref="#pmb11673">Herzl</rs> auf frühestens »Mitte der nächsten Woche«.
+                  Tatsächlich reiste er am <date>24. 3. 1895</date> ab, wie aus seinem Brief vom
+                  <ref type="schnitzler-briefe" target="L03854" subtype="date-only"/> hervorgeht. Daraus ergibt sich der <date>17. 3. 1895</date> als
+                  letzten Tag der Vorwoche vor der Abreise als hinteres Datum der Zeitspanne,
+                  innerhalb der der Brief abgefasst wurde.</note> we<damage agent="paperloss"><supplied>rde ich mich</supplied></damage> wahrscheinlich entschl<damage agent="paperloss"><supplied>ießen n</supplied></damage>ach <rs type="place" ref="#pmb50">Wien</rs> zu fahren, um m<damage agent="paperloss"><supplied>ei</supplied></damage>ne <rs type="person" ref="#pmb296543 #pmb28622" subtype="implied">Eltern</rs> zu besuchen, die ich jetzt schon über ein halbes Jahr nicht gesehen
+               habe.</p><p>Wann ich fahre, weiss ich noch nicht. Aber da es ebensowol <date>Mitte der nächsten
+                  Woche</date> als <date>knapp vor <anchor type="commentary" xml:id="K_L03853-2"/>Ostern<note type="commentary" corresp="K_L03853-2"><date>1895</date> fiel der Ostersonntag auf den <date>14. 4. 1895</date>.</note></date> sein kann, bitte ich Sie <anchor type="commentary" xml:id="K_L03853-3"/>mir und Albert<note type="commentary" corresp="K_L03853-3">Zu <rs type="person" ref="#pmb11673">Herzls</rs> Anweisungen
+                  bezüglich der klandestinen Kommunikation über sein unter dem Pseudonym Albert
+                  Schnabel eingereichtes Schauspiel <rs type="work" ref="#pmb76499">Das neue
+                     Ghetto</rs><space unit="chars" quantity="1"/><ref type="schnitzler-briefe" target="L03836" subtype="cf"/> und <ref type="schnitzler-briefe" target="L03844" subtype="date-only"/>.</note> nicht mehr zu schreiben, auch nicht zu telegraphiren. Brief
+               oder Depesche könnten die Geschichte ablüften, da in meiner Abwesenheit mein <rs type="person" ref="#pmb298703">Sekretär</rs> mich vertritt, u. Ihre Depesche würde
+               ihn <pb facs="MS-SCHNITZLER-B-00039-000-00092-1"/><damage agent="paperloss"><gap reason="textualLoss" unit="chars" quantity="4"/><space unit="chars" quantity="1"/><supplied>verwi</supplied></damage>rren.</p><p><damage agent="paperloss"><gap reason="textualLoss" unit="chars" quantity="12"/></damage>ch wirklich <gap reason="textualLoss" unit="chars" quantity="10"/> Ich
+               glaube, <gap reason="textualLoss" unit="chars" quantity="10"/>ch schon todt, <gap reason="textualLoss" unit="chars" quantity="6"/> ergebener Diener s<damage agent="paperloss"><supplied>ein</supplied></damage>. Mir scheint sogar, Sie verschweigen mir <rs type="person" ref="#pmb12331">Müllers</rs> abschlägigen Bescheid, um mich nicht zu kränken. Es wäre lieb, es
+               ist nicht nöthig.</p><p>Wenn Sie wüssten, wieviel ich an Misserfolgen u. verschiedenem Missgeschick schon
+               verwunden habe! Nicht leicht, aber hinter einer standhaften und hochmüthigen Maske.
+               So wirds auch damit gehen. Uebrigens plaudern wir uns darüber gut aus, wenn ich in
+                  <rs type="place" ref="#pmb50">Wien</rs> bin. Ich werde <del rend="strikethrough">übrigens</del> nur ein paar Minuten dort <pb facs="MS-SCHNITZLER-B-00039-000-00092-2"/>bleiben können u. bei meinen <rs type="person" ref="#pmb296543 #pmb28622" subtype="implied">Eltern</rs> wohnen.</p><p>Erwarten Sie mich zwischen dem <date>21 März</date> u. <date>21 Juni</date>.</p><p>Ich meine: im <date>Frühling</date>.</p><closer>Herzlich Ihr Freund<lb/><signed>Th. H.</signed></closer><postscript><p>Wenn mir etwas dazwischen kommen sollte, melde ich mich <date>Anfang der nächsten
+                     Woche</date> bei Ihnen ab.</p></postscript></div>
       </body>
       <back>
          <listPerson>
@@ -294,6 +306,132 @@
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
+            <person xml:id="pmb296543">
+               <persName>
+                  <forename>Jakob</forename>
+                  <surname>Herzl</surname>
+               </persName>
+               <birth>
+                  <date when="1837-03-14">1837-03-14</date>
+                  <settlement ref="pmb103147">
+                     <placeName type="pref">Zemun</placeName>
+                     <location>
+                        <geo>44,84306 20,401109</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1902-06-09">1902-06-09</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb465">Bankdirektor/Bankdirektorin</occupation>
+               <occupation ref="pmb946">Großkaufmann/Großkauffrau</occupation>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/296543/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb296543.html</idno>
+            </person>
+            <person xml:id="pmb28622">
+               <persName>
+                  <forename>Jeanette</forename>
+                  <surname>Herzl</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Diamant</persName>
+               <birth>
+                  <date when="1836-07-28">1836-07-28</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1911-02-20">1911-02-20</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb28622.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/28622/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q98639307</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb28622.html</idno>
+            </person>
+            <person xml:id="pmb298703">
+               <persName>
+                  <surname>?? [Sekretär von Theodor Herzl in Paris]</surname>
+               </persName>
+               <sex value="male"/>
+               <occupation ref="pmb367">Sekretär/Sekretärin</occupation>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/298703/</idno>
+            </person>
+            <person xml:id="pmb12331">
+               <persName>
+                  <forename>Adam</forename>
+                  <surname>Müller-Guttenbrunn</surname>
+               </persName>
+               <persName type="person_pseudonym">Alexander Erdmann</persName>
+               <persName type="person_geburtsname_nachname">Müller</persName>
+               <persName type="legacy-name-merge">Müller-Guttenbrunn, Adam</persName>
+               <birth>
+                  <date when="1852-10-22">22.10.1852</date>
+                  <settlement ref="pmb64663">
+                     <placeName type="pref">Zăbrani</placeName>
+                     <location>
+                        <geo>46,06667 21,55</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1923-01-05">05.01.1923</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb103">Theaterleiter/Theaterleiterin</occupation>
+               <occupation ref="pmb1472">Beamter/Beamte</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118585339</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_18311.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb12331.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/12331/</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp37775</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00283181</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q79061</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Adam_M%C3%BCller-Guttenbrunn</idno>
+               <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=13851</idno>
+               <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001da5b</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb12331.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/161448/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb12331.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb12331</idno>
+               <idno type="URL" subtype="brenner">https://brenner.oeaw.ac.at/?p=brennerp7842</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb12331.html</idno>
+               <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb12331.html</idno>
+               <listEvent>
+                  <event n="Feier" ref="pmb184703" when="1893-10-02">
+                     <desc n="1370">teilgenommen an</desc>
+                     <label>Festmahl zu Ehren Ferdinand von Saars. 2.10.1893</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/184703/</idno>
+                     <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb184703.html</idno>
+                  </event>
+               </listEvent>
+               <figure>
+                  <graphic url="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Adam_M%C3%BCller-Guttenbrunn.jpg/250px-Adam_M%C3%BCller-Guttenbrunn.jpg"/>
+               </figure>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb76499" ana="comment">
@@ -311,7 +449,7 @@
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb182">
+            <place xml:id="pmb182" ana="comment">
                <placeName>Paris</placeName>
                <placeName type="alternative-name">P'ariz</placeName>
                <placeName type="alternative-name">Pariž</placeName>
@@ -390,82 +528,7 @@
                   </figure>
                </note>
             </place>
-            <place xml:id="pmb296731">
-               <placeName>8, Rue de Monceau</placeName>
-               <desc type="entity_type">Wohngebäude (K.WHS)</desc>
-               <desc type="entity_type_id">36</desc>
-               <location type="coords">
-                  <geo>48,875505 2,306854</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb87814">rue Monceau</placeName>
-                  <geo>48,87552 2,30671</geo>
-               </location>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/296731/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb296731.html</idno>
-            </place>
          </listPlace>
-         <listOrg>
-            <org xml:id="pmb29351">
-               <orgName>Neue Freie Presse</orgName>
-               <orgName type="werk_link">http://anno.onb.ac.at/info/nfp_info.htm</orgName>
-               <desc type="entity_type">Tageszeitungsredaktion</desc>
-               <desc type="entity_type_id">972</desc>
-               <location type="located_in_place">
-                  <placeName ref="pmb296731">8, Rue de Monceau</placeName>
-                  <geo>48,875505 2,306854</geo>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/296731/</idno>
-                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb296731.html</idno>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-                  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
-                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
-                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
-                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb50.html</idno>
-                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb50.html</idno>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb63189">Schubertring</placeName>
-                  <geo>48,20281 16,37602</geo>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63189/</idno>
-                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb63189.html</idno>
-                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q115773863</idno>
-                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Schubertring</idno>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb237534">Fichtegasse 11</placeName>
-                  <geo>48,202628 16,37689</geo>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/237534/</idno>
-                  <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb237534.html</idno>
-                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb237534.html</idno>
-               </location>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29351.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29351/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/institutionen/pmb29351</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb29351.html</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2919142</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29351.html</idno>
-               <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb29351.html</idno>
-               <note type="apis_dates">
-                  <date to="1939-02-01">1864-09-01 – 1939-02-01</date>
-               </note>
-            </org>
-         </listOrg>
       </back>
    </text>
 </TEI>

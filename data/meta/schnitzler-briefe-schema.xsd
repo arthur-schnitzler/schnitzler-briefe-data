@@ -73,6 +73,8 @@
                   <xs:enumeration value="withinCorrespondence"/>
                   <xs:enumeration value="withinCollection"/>
                   <xs:enumeration value="belongsToCorrespondence"/>
+                  <xs:enumeration value="URL"/>
+                  <xs:enumeration value="DOI"/>
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
@@ -556,13 +558,14 @@
    </xs:element>
    <xs:element name="monogr">
       <xs:complexType mixed="true">
-         <xs:all minOccurs="0">
-            <xs:element ref="tei:author" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element ref="tei:biblScope" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element ref="tei:editor" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element ref="tei:imprint" minOccurs="0" maxOccurs="1"/>
-            <xs:element ref="tei:title" minOccurs="0" maxOccurs="1"/>
-         </xs:all>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element ref="tei:author"/>
+            <xs:element ref="tei:biblScope"/>
+            <xs:element ref="tei:editor"/>
+            <xs:element ref="tei:imprint"/>
+            <xs:element ref="tei:title"/>
+            <xs:element ref="tei:ref"/>
+         </xs:choice>
       </xs:complexType>
    </xs:element>
    <xs:element name="series">
@@ -731,7 +734,7 @@
             <xs:simpleType>
                <xs:restriction base="xs:NCName">
                   <xs:enumeration value="archival"/>
-                  <xs:enumeration value="supplement"/>
+                  <xs:enumeration value="attachment"/>
                   <xs:enumeration value="postal"/>
                   <xs:enumeration value="receiver"/>
                   <xs:enumeration value="editorial"/>
@@ -1291,6 +1294,7 @@
             <xs:element ref="tei:gap" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:time" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:handShift" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
          <xs:attribute name="place" use="required">
             <xs:simpleType>
@@ -1797,6 +1801,7 @@
          <xs:element ref="tei:note" maxOccurs="unbounded" minOccurs="0"/>
       </xs:all>
       <xs:attribute ref="xml:id" use="required"/>
+      <xs:attribute name="ana" use="optional"/>
    </xs:complexType>
    <xs:element name="bibl">
       <xs:alternative test="@xml:id" type="bibl_in_back_listBibl"/>
@@ -1885,6 +1890,7 @@
                <xs:restriction base="xs:NCName">
                   <xs:enumeration value="illegible"/>
                   <xs:enumeration value="outOfScope"/>
+                  <xs:enumeration value="textualLoss"/>
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
@@ -1967,6 +1973,7 @@
          </xs:choice>
          <xs:attribute ref="xml:id" use="optional"/>
          <xs:attribute name="role" use="optional"/>
+         <xs:attribute name="ana" use="optional"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="listEvent">
@@ -1998,6 +2005,7 @@
          <xs:attribute name="from" type="xs:date"/>
          <xs:attribute name="to" type="xs:date"/>
          <xs:attribute name="n" type="xs:string"/>
+         <xs:attribute name="ana" use="optional"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="eventName" type="eventNameType"/>
@@ -2032,6 +2040,7 @@
          </xs:choice>
          <xs:attribute ref="xml:id" use="optional"/>
          <xs:attribute name="role" use="optional"/>
+         <xs:attribute name="ana" use="optional"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="forename" type="xs:string"/>
@@ -2104,6 +2113,7 @@
             <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:gap"/>
          </xs:all>
          <xs:attribute ref="xml:id" use="optional"/>
+         <xs:attribute name="ana" use="optional"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="location">

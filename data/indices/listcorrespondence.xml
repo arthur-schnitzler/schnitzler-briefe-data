@@ -22,7 +22,8 @@
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage
                (ACDH-CH)</publisher>
             <date>2024</date>
-            <idno type="URI">https://id.acdh.oeaw.ac.at/arthur-schnitzler-briefe/v1/indices/listcorrespondence.xml</idno>
+            <idno type="URI"
+               >https://id.acdh.oeaw.ac.at/arthur-schnitzler-briefe/v1/indices/listcorrespondence.xml</idno>
          </publicationStmt>
          <sourceDesc>
             <p>Liste der Korrespondenzen der Schnitzler-Briefe.</p>
@@ -30,16 +31,60 @@
       </fileDesc>
    </teiHeader>
    <!-- Achtung, am Ende stehen noch Namen, von denen Briefe aufgenommen sind, die aber nicht als vollständige Korrespondenzen
-    ediert sind und darum nicht als Korrespondenz angezeigt werden sollen -->
+    ediert sind und darum nicht als Korrespondenz angezeigt werden sollen.
+   
+   ana="corrections-in-progress" -> Alle Korrespondenzstücke sind aufgenommen, aber noch nicht fertig korrigiert
+   ana="edition-in-progress" -> Es sind noch nicht alle Korrespondenzstücke aufgenommen
+   ana="planned" -> Geplant
+   -->
    <text>
       <body>
          <listPerson>
-            <personGrp xml:id="correspondence_11370">
+            <personGrp xml:id="correspondence_9531" ana="planned">
+               <persName role="main" ref="#pmb9531">Rilke, Rainer Maria</persName>
+            </personGrp>
+            <personGrp xml:id="correspondence_10986" ana="planned">
+               <persName role="main" ref="#pmb10986">Brahm, Otto</persName>
+            </personGrp>
+            <personGrp xml:id="correspondence_12170" ana="planned">
+               <persName role="main" ref="#pmb12170">Mann, Heinrich</persName>
+            </personGrp>
+            <personGrp xml:id="correspondence_12671" ana="planned">
+               <persName role="main" ref="#pmb12671">Schlenther, Paul</persName>
+            </personGrp>
+            <personGrp xml:id="correspondence_12740" ana="planned">
+               <persName role="main" ref="#pmb12740">Schwarzkopf, Gustav</persName>
+            </personGrp>
+            <personGrp xml:id="correspondence_2312" ana="planned"
+               corresp="female-correspondence-partner">
+               <persName role="main" ref="#pmb2312">Zuckerkandl, Berta</persName>
+            </personGrp>
+            <!-- 2025 -->
+            <personGrp xml:id="correspondence_12543" ana="corrections-in-progress">
+               <persName role="main" ref="#pmb12543">Rolland, Romain</persName>
+            </personGrp>
+            <personGrp xml:id="correspondence_298422" ana="corrections-in-progress"
+               corresp="female-correspondence-partner">
+               <persName role="main" ref="#pmb298422">Sacher-Masoch, Wanda</persName>
+            </personGrp>
+            <personGrp xml:id="correspondence_7218" ana="corrections-in-progress">
+               <persName role="main" ref="#pmb7218">Franzos, Karl Emil</persName>
+            </personGrp>
+            <personGrp xml:id="correspondence_11673" ana="edition-in-progress">
+               <persName role="main" ref="#pmb11673">Herzl, Theodor</persName>
+            </personGrp>
+            <personGrp xml:id="correspondence_13212" ana="corrections-in-progress">
+               <persName role="main" ref="#pmb13212">Zweig, Stefan</persName>
+               <persName ref="#pmb4829">Zweig, Friderike</persName>
+            </personGrp>
+            <personGrp xml:id="correspondence_11370" ana="corrections-in-progress">
                <persName role="main" ref="#pmb11370">Freud, Sigmund</persName>
             </personGrp>
-            <personGrp xml:id="correspondence_2128" corresp="female-correspondence-partner">
+            <personGrp xml:id="correspondence_2128" corresp="female-correspondence-partner"
+               ana="corrections-in-progress">
                <persName role="main" ref="#pmb2128">Plessner, Else</persName>
             </personGrp>
+            <!-- 2024 und früher: -->
             <personGrp xml:id="correspondence_11666" corresp="female-correspondence-partner">
                <persName role="main" ref="#pmb11666">Herzfeld, Marie</persName>
             </personGrp>
@@ -79,7 +124,6 @@
                <persName role="main" ref="#pmb10815">Bahr, Hermann</persName>
                <persName ref="#pmb10818">Bahr-Mildenburg, Anna</persName>
                <persName ref="#pmb11054">Buschbeck, Erhard</persName>
-               
             </personGrp>
             <personGrp xml:id="correspondence_10863">
                <persName role="main" ref="#pmb10863">Beer-Hofmann, Richard</persName>
@@ -152,9 +196,6 @@
             <personGrp xml:id="correspondence_11763">
                <persName role="main" ref="#pmb11763">Holz, Arno</persName>
             </personGrp>
-            <personGrp xml:id="correspondence_11673">
-               <persName role="main" ref="#pmb11673">Herzl, Theodor</persName>
-            </personGrp>
             <personGrp xml:id="correspondence_2563">
                <persName role="main" ref="#pmb2563">Kafka, Eduard Michael</persName>
                <persName ref="#pmb18870">Joachim, Jaques</persName>
@@ -188,7 +229,7 @@
                <persName role="main" ref="#pmb12176">Mann, Thomas</persName>
                <persName ref="#pmb12173">Mann, Katia</persName>
             </personGrp>
-            <personGrp xml:id="correspondence_12183">
+            <personGrp xml:id="correspondence_12183" corresp="female-correspondence-partner">
                <persName role="main" ref="#pmb12183">Marholm, Laura</persName>
             </personGrp>
             <personGrp xml:id="correspondence_12225">
@@ -236,15 +277,9 @@
                <persName ref="#pmb23915">Salten, Anna Katharina</persName>
                <persName ref="#pmb21365">Metzl, Richard</persName>
             </personGrp>
-            <personGrp xml:id="correspondence_7218">
-               <persName role="main" ref="#pmb7218">Franzos, Karl Emil</persName>
-            </personGrp>
-            <personGrp xml:id="correspondence_13212">
-               <persName role="main" ref="#pmb13212">Zweig, Stefan</persName>
-               <persName ref="#pmb4829">Zweig, Friderike</persName>
-            </personGrp>
             <!-- Briefe von Personen, die (noch) nicht als eigene Korrespondenz geführt werden -->
             <personGrp xml:id="correspondence_null">
+               <persName ref="#pmb5295">Goldstein, Franz</persName>
                <persName role="main" ref="#pmb10912">Bettelheim, Anton</persName>
                <persName ref="#pmb13055">Wassermann, Jakob</persName>
                <persName ref="#pmb13058">Wassermann, Julie</persName>
@@ -254,15 +289,12 @@
                <persName ref="#pmb12695">Schnitzler, Johann</persName>
                <persName ref="#pmb2173">Schnitzler, Olga</persName>
                <persName ref="#pmb10986">Brahm, Ludwig</persName>
-               <persName ref="#pmb5187">Brahm, Otto</persName>
                <persName ref="#pmb2496">Kaufmann, Arthur</persName>
                <persName ref="#pmb26392">Van-Jung, Leo</persName>
                <persName ref="#pmb21766">Mütter, Franziska</persName>
                <persName ref="#pmb14953">Glümer, Marie</persName>
                <persName ref="#pmb14948">Chlum, Auguste</persName>
                <persName ref="#pmb28645">Coschell, Moritz</persName>
-               <persName role="main" ref="#pmb12740">Schwarzkopf, Gustav</persName>
-               <persName role="main" ref="#pmb12170">Mann, Heinrich</persName>
                <persName role="main" ref="#pmb26121">Torresani-Lanzenfeld, Carl von</persName>
                <persName ref="#pmb144420">Schlesinger, Gretl</persName>
                <persName ref="#pmb3261">Fanto, Leonhard</persName>

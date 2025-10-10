@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L03716" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L03716" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -76,7 +76,7 @@
                         <repository>Deutsches Literaturarchiv</repository>
                         <idno>A:Schnitzler, HS.1985.1.419</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="2"/><measure unit="blatt" quantity=""/><measure unit="zeichenanzahl" quantity="1078"/></extent></supportDesc></objectDesc><handDesc><handNote medium="" style="lateinische-kurrent"/></handDesc></physDesc>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="2"/><measure unit="blatt" quantity=""/><measure unit="zeichenanzahl" quantity="1078"/></extent></supportDesc></objectDesc><handDesc><handNote medium="schwarze-tinte" style="lateinische-kurrent"/></handDesc></physDesc>
                   </msDesc>
                </witness>
             </listWit>
@@ -113,7 +113,7 @@
    </teiHeader>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><dateline><pb facs=""/><rs type="place" ref="#pmb295169"> Wien, I. Spiegelgasse N<hi rend="superscript">o</hi> 2</rs>, den <date>23. October 1897</date>.</dateline><seg rend="right">Telef. N<hi rend="superscript">r</hi> 7819</seg><salute rend="center">Verehrter Herr Doctor!</salute></opener><p>Nachdem ich Sie einige Zeit in Ruhe gelassen habe, übermittle ich heute wieder einmal
+         <div type="writingSession" n="1"><opener><dateline><pb facs="HS000409661_0053-1"/><rs type="place" ref="#pmb295169"> Wien, I. Spiegelgasse N<hi rend="superscript">o</hi> 2</rs>, den <date>23. October 1897</date>.</dateline><seg rend="right">Telef. N<hi rend="superscript">r</hi> 7819</seg><salute rend="center">Verehrter Herr Doctor!</salute></opener><p>Nachdem ich Sie einige Zeit in Ruhe gelassen habe, übermittle ich heute wieder einmal
                eine neue kleine <rs type="work" ref="#pmb296096" subtype="implied">Arbeit</rs> Ihrem
                Urtheil. </p><p>Wenn sie Ihnen gefiele, würde ich mich sehr, sehr freuen. Ich glaube, relativ
                anständig, das heisst ohne stylistische Schlampereien gearbeitet zu haben. Vielleicht
@@ -121,7 +121,7 @@
                und zwar gerade die gebräuchlichsten Wendungen, blos <del rend="strikethrough">von</del> der besseren, satirischen Wirkung halber<supplied>.</supplied>
                Natürlich nehme ich das <rs type="work" ref="#pmb296096" subtype="implied">Ding</rs>
                nicht als »<foreign xml:lang="fr"><anchor type="commentary" xml:id="K_L03716-1"/>grande chose<note type="commentary" corresp="K_L03716-1">französisch: große Sache</note><space unit="chars" quantity="1"/></foreign>«, allein ich habe seit <hi rend="underline" n="2">¾</hi> Jahren meine
-               Feder überhaupt nur zu Briefen spazieren geführt. Darum ist mir »<rs type="work" ref="#pmb296096">Irmedals Kum <pb facs=""/>mer</rs>« sehr werth....</p><p><anchor type="commentary" xml:id="K_L03716-2"/>Ein neues <rs type="work" ref="#pmb295177" subtype="implied" cert="low">Stück</rs><note type="commentary" corresp="K_L03716-2">Möglicherweise handelt es sich um erste Entwürfe zum
+               Feder überhaupt nur zu Briefen spazieren geführt. Darum ist mir »<rs type="work" ref="#pmb296096">Irmedals Kum<pb facs="HS000409661_0053-2"/>mer</rs>« sehr werth....</p><p><anchor type="commentary" xml:id="K_L03716-2"/>Ein neues <rs type="work" ref="#pmb295177" subtype="implied" cert="low">Stück</rs><note type="commentary" corresp="K_L03716-2">Möglicherweise handelt es sich um erste Entwürfe zum
                   Schaupiel <rs type="work" ref="#pmb295204">Die Ehrlosen</rs>, dessen Entstehung
                   Plessner im Brief vom <ref type="schnitzler-briefe" target="L03720" subtype="date-only"/> allerdings auf den <date>Herbst 1898</date>
                   datiert.</note> liegt auf der Pfanne. <date>Ende Dezember</date> dürften Sie davon
@@ -150,11 +150,17 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1932-05-01">01.05.1932</date>
+                  <date when="1932-05-07">07.05.1932</date>
                   <settlement ref="pmb49185">
                      <placeName type="pref">Alicante</placeName>
                      <location>
                         <geo>38,34517 -0,48149</geo>
+                     </location>
+                  </settlement>
+                  <settlement ref="pmb296401">
+                     <placeName type="pref">calle Gravina 15</placeName>
+                     <location>
+                        <geo>38,3456446 -0,47927879</geo>
                      </location>
                   </settlement>
                </death>
@@ -168,17 +174,21 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q19193427</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Elsa_Plessner</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2128.html</idno>
+               <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb2128.html</idno>
                <listEvent>
                   <event n="Theateruraufführung" ref="pmb42011" when="1896-10-16">
                      <desc n="1370">teilgenommen an</desc>
                      <label>Uraufführung von Sein Sohn, 16.10.1896</label>
                      <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42011/</idno>
                      <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/208861/</idno>
+                     <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42011.html</idno>
+                     <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb42011.html</idno>
                   </event>
                   <event n="Theateruraufführung" ref="pmb296012" when="1901-03-16">
                      <desc n="1370">teilgenommen an</desc>
                      <label>Uraufführung von Die Ehrlosen, 16.3.1901</label>
                      <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/296012/</idno>
+                     <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb296012.html</idno>
                   </event>
                </listEvent>
                <figure>
@@ -209,38 +219,41 @@
                   </settlement>
                </death>
                <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller*in</occupation>
-               <occupation ref="pmb97">Mediziner*in</occupation>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb296096">
                <title>Irmedals Kummer</title>
-               <author ref="" role="hat-geschaffen">Plessner, Elsa</author>
+               <author ref="pmb2128" role="hat-geschaffen">Plessner, Elsa</author>
                <date>1897</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/296096/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb296096.html</idno>
                <note type="work_kind">Unveröffentlichte Erzählung</note>
             </bibl>
             <bibl xml:id="pmb295177">
                <title>Das erste Kapitel. Schauspiel in drei Akten</title>
                <title type="werk_namensvariante">Das erste Capitel</title>
                <title type="werk_link">https://archive.org/details/daserstekapitels00ples/page/n1</title>
-               <author ref="" role="hat-geschaffen">Plessner, Elsa</author>
+               <author ref="pmb2128" role="hat-geschaffen">Plessner, Elsa</author>
                <date notBefore="1910-01-01" when="1910-01-01">1910</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/295177/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb295177.html</idno>
                <note type="work_kind">Mehraktiges Drama</note>
             </bibl>
-            <bibl xml:id="pmb295204">
+            <bibl xml:id="pmb295204" ana="comment">
                <title>Die Ehrlosen. Schauspiel in drei Acten</title>
                <title type="werk_arbeitstitel">Singende Flammen</title>
                <title type="legacy-name-merge">Die Ehrlosen</title>
-               <author ref="" role="hat-geschaffen">Plessner, Elsa</author>
+               <author ref="pmb2128" role="hat-geschaffen">Plessner, Elsa</author>
                <date notBefore="1901-01-01" when="1901-01-01">1901</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/296183/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/295204/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/164619/</idno>
                <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb164619</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb295204.html</idno>
                <note type="work_kind">Mehraktiges Drama</note>
                <note type="references">  </note>
             </bibl>
@@ -307,6 +320,7 @@
                   <geo>48,20804 16,37063</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/295169/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb295169.html</idno>
             </place>
          </listPlace>
       </back>

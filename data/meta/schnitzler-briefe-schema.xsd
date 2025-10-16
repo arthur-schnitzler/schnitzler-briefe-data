@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-   xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
-   xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified"
-   targetNamespace="http://www.tei-c.org/ns/1.0" vc:minVersion="1.1">
+<xs:schema xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tei="http://www.tei-c.org/ns/1.0"
+           xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+           elementFormDefault="qualified"
+           targetNamespace="http://www.tei-c.org/ns/1.0"
+           vc:minVersion="1.1">
    <xs:import namespace="http://www.w3.org/XML/1998/namespace"
-      schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+              schemaLocation="http://www.w3.org/2001/xml.xsd"/>
    <!-- Schema der XML-Dateien für https://schnitzler-briefe.acdh.oeaw.ac.at/ 
    -->
    <xs:element name="TEI">
@@ -306,8 +310,7 @@
    <xs:element name="objectType">
       <xs:complexType>
          <xs:simpleContent>
-            <xs:extension base="xs:string">
-               <!-- 'corresp' attribute with possible values -->
+            <xs:extension base="xs:string"><!-- 'corresp' attribute with possible values -->
                <xs:attribute name="corresp" type="objectTypeCorresp" use="required"/>
                <!-- 'ana' attribute is optional -->
                <xs:attribute name="ana" type="objectTypeAna" use="optional"/>
@@ -429,8 +432,7 @@
    </xs:simpleType>
    <xs:element name="support">
       <xs:complexType mixed="true">
-         <xs:all>
-            <!-- 'rs' element as child -->
+         <xs:all><!-- 'rs' element as child -->
             <xs:element ref="tei:rs" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="tei:quote" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="tei:space" minOccurs="0" maxOccurs="unbounded"/>
@@ -553,6 +555,7 @@
             <xs:element ref="tei:author" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="tei:title" maxOccurs="1"/>
             <xs:element ref="tei:editor" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="tei:respStmt" minOccurs="0" maxOccurs="unbounded"/>
          </xs:all>
       </xs:complexType>
    </xs:element>
@@ -562,6 +565,7 @@
             <xs:element ref="tei:author"/>
             <xs:element ref="tei:biblScope"/>
             <xs:element ref="tei:editor"/>
+            <xs:element ref="tei:respStmt"/>
             <xs:element ref="tei:imprint"/>
             <xs:element ref="tei:title"/>
             <xs:element ref="tei:ref"/>
@@ -571,8 +575,11 @@
    <xs:element name="series">
       <xs:complexType>
          <xs:sequence>
-            <xs:element ref="tei:title"/>
-            <xs:element ref="tei:biblScope"/>
+            <xs:element ref="tei:title" maxOccurs="1" minOccurs="1"/>
+            <xs:element ref="tei:biblScope" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="tei:editor" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="tei:respStmt" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="tei:imprint" minOccurs="0" maxOccurs="unbounded"/>
          </xs:sequence>
       </xs:complexType>
    </xs:element>
@@ -718,11 +725,10 @@
    </xs:complexType>
    <xs:element name="desc">
       <xs:alternative type="tei:desc_with_n_only_type"
-         test="@n and not(@type) and not(child::tei:*)"/>
+                      test="@n and not(@type) and not(child::tei:*)"/>
       <xs:alternative type="tei:back_desc_type"
-         test="(@type = 'entity_type' or @type = 'entity_type_id')"/>
-      <xs:alternative type="tei:incident_desc_type"
-         test="not(@type)"/>
+                      test="(@type = 'entity_type' or @type = 'entity_type_id')"/>
+      <xs:alternative type="tei:incident_desc_type" test="not(@type)"/>
       <xs:alternative type="tei:objectDesc_desc_type"/>
    </xs:element>
    <xs:element name="incident">
@@ -1158,8 +1164,7 @@
       </xs:sequence>
       <xs:attribute name="type" type="xs:string" use="required"/>
    </xs:complexType>
-   <xs:complexType name="backNote_type">
-      <!-- Element mit Textinhalt und Attributen, aber keinen Kindern -->
+   <xs:complexType name="backNote_type"><!-- Element mit Textinhalt und Attributen, aber keinen Kindern -->
       <xs:simpleContent>
          <xs:extension base="xs:string">
             <xs:attribute name="type" type="xs:string" use="required"/>
@@ -1168,7 +1173,7 @@
    </xs:complexType>
    <xs:element name="note">
       <xs:alternative type="backNote_type"
-         test="@type = 'work_kind' or @type = 'uri_worklink' or @type = 'bibliografische_angabe' or @type = 'references' "/>
+                      test="@type = 'work_kind' or @type = 'uri_worklink' or @type = 'bibliografische_angabe' or @type = 'references' "/>
       <xs:alternative type="backNote_type-org" test="@type = 'apis_dates'"/>
       <xs:alternative type="backNote_type-listorg" test="@type='listorg'"/>
       <xs:alternative type="backNote_type_image" test="@type = 'image'"/>
@@ -1640,6 +1645,8 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:attribute name="type" type="xs:string"/>
+         <xs:attribute name="when-iso" type="xs:string"/>
+         <xs:attribute name="n" type="xs:string"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="author">
@@ -1663,11 +1670,14 @@
       </xs:complexType>
    </xs:element>
    <xs:element name="respStmt">
-      <xs:complexType mixed="true">
-         <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element ref="tei:name" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:resp" maxOccurs="unbounded" minOccurs="0"/>
-         </xs:choice>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element ref="tei:resp" minOccurs="1"/>
+            <xs:choice minOccurs="1" maxOccurs="unbounded">
+               <xs:element ref="tei:persName"/>
+               <xs:element ref="tei:orgName"/>
+            </xs:choice>
+         </xs:sequence>
       </xs:complexType>
    </xs:element>
    <xs:element name="resp" type="xs:string"/>
@@ -1865,8 +1875,7 @@
       </xs:complexType>
    </xs:element>
    <xs:element name="orgName" type="orgAttr"/>
-   <xs:complexType name="orgAttr">
-      <!-- Element mit Textinhalt und Attributen, aber keinen Kindern -->
+   <xs:complexType name="orgAttr"><!-- Element mit Textinhalt und Attributen, aber keinen Kindern -->
       <xs:simpleContent>
          <xs:extension base="xs:string">
             <xs:attribute name="ref" type="xs:string" use="optional"/>
@@ -1934,7 +1943,7 @@
       </xs:complexType>
    </xs:element>
    <xs:element name="c">
-      <xs:complexType>
+      <xs:complexType mixed="true">
          <xs:attribute name="n" type="xs:integer"/>
          <xs:attribute name="rendition" use="required">
             <xs:simpleType>
@@ -2090,8 +2099,6 @@
          <xs:attribute name="ref" use="required" type="xs:NCName"/>
       </xs:complexType>
    </xs:element>
-   
-   
    <xs:element name="label" type="xs:string"/>
    <xs:element name="listPlace">
       <xs:complexType>

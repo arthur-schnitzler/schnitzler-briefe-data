@@ -50,3 +50,29 @@ jobs:
             "sha": "${{ github.sha }}",
             "commit_message": "${{ github.event.head_commit.message }}"
           }
+
+  # New job for schnitzler-tagebuch-charts when listcorrespondence.xml changes
+  dispatch_to_tagebuch_charts:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+    - name: Check if listcorrespondence.xml changed
+      id: changed-listcorrespondence
+      uses: tj-actions/changed-files@v45
+      with:
+        files: data/indices/listcorrespondence.xml
+    - name: Repository Dispatch to schnitzler-tagebuch-charts
+      if: steps.changed-listcorrespondence.outputs.any_changed == 'true'
+      uses: peter-evans/repository-dispatch@v3
+      with:
+        token: ${{ secrets.REPO_ACCESS_TOKEN }}
+        repository: arthur-schnitzler/schnitzler-tagebuch-charts
+        event-type: update-korrespondenzpartner
+        client-payload: |
+          {
+            "sha": "${{ github.sha }}",
+            "commit_message": "${{ github.event.head_commit.message }}"
+          }

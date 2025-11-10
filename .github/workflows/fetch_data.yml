@@ -12,9 +12,6 @@ jobs:
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v4
-    - name: Install Saxon, Ant
-      run: |
-        ./dl_saxon.sh
     - name: Fetch and preprocess Data
       run: |
         ./fetch_data.sh

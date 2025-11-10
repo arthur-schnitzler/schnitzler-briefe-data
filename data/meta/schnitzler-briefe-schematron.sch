@@ -142,6 +142,20 @@
                 > Wenn placeName vorhanden ist, muss @ref ein gültiger #pmb-Wert sein </sch:assert>
         </sch:rule>
     </sch:pattern>
+    <!-- stamp @n must be unique and ascending -->
+    <sch:pattern id="stamp-n-unique-ascending">
+        <sch:rule context="tei:additions">
+            <sch:let name="stamp-ns" value="descendant::tei:stamp/@n"/>
+            <sch:assert test="count($stamp-ns) = count(distinct-values($stamp-ns))">
+                Die @n-Werte von tei:stamp müssen eindeutig sein.
+            </sch:assert>
+            <sch:assert test="
+                every $i in (1 to count(descendant::tei:stamp) - 1)
+                satisfies xs:integer(descendant::tei:stamp[$i]/@n) lt xs:integer(descendant::tei:stamp[$i + 1]/@n)">
+                Die @n-Werte von tei:stamp müssen aufsteigend sein.
+            </sch:assert>
+        </sch:rule>
+    </sch:pattern>
     <!-- addSpan -->
     <sch:pattern id="addSpan-content">
         <sch:rule context="tei:addSpan">
@@ -464,6 +478,14 @@
         <sch:rule context="tei:hi[@rend = 'underline']">
             <sch:assert test="@n">
                 tei:hi mit @type='underline' muss ein Attribut @n haben.
+            </sch:assert>
+        </sch:rule>
+    </sch:pattern>
+    <!-- hi element with rend spaced-out must not have child elements -->
+    <sch:pattern id="hi-spaced-out-no-children">
+        <sch:rule context="tei:hi[@rend = 'spaced-out']">
+            <sch:assert test="not(child::*)">
+                tei:hi mit @rend='spaced-out' darf keine Kindelemente enthalten.
             </sch:assert>
         </sch:rule>
     </sch:pattern>

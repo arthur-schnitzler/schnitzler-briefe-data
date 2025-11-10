@@ -12,5 +12,9 @@ PDF-Dateien von Briefen hier: [https://github.com/arthur-schnitzler/schnitzler-b
 
 Ein EPUB aller fertig gesichteten Briefe hier: [https://github.com/arthur-schnitzler/schnitzler-briefe-epub](https://github.com/arthur-schnitzler/schnitzler-briefe-epub)
 
-Wir arbeiten nicht direkt in diesem Repositorium, sondern haben ein Arbeitsrepositorium. Das hat vorwiegend praktische Gründe – Arbeitsplätze sind nicht immer im aufgeräumten Zustand – und darum äußern wir uns nicht zu diesem »intimeren« Bereich der Edition. Aber auch er ist frei verfügbar: https://github.com/arthur-schnitzler/schnitzler-briefe-arbeit – schließlich haben wir nichts zu verbergen. 
+Wir arbeiten nicht direkt in diesem Repositorium, sondern haben ein Arbeitsrepositorium. Das hat vorwiegend praktische Gründe – Arbeitsplätze sind nicht immer im aufgeräumten Zustand – und darum äußern wir uns nicht zu diesem »intimeren« Bereich der Edition. Aber auch er ist frei verfügbar: https://github.com/arthur-schnitzler/schnitzler-briefe-arbeit – schließlich haben wir nichts zu verbergen.
+
+## SAXON-HE
+
+The project also includes Saxon-HE, which is licensed separately under the Mozilla Public License, Version 2.0 (MPL 2.0). See the dedicated LICENSE.txt
 

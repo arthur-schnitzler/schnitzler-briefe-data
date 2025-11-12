@@ -16,5 +16,5 @@ Wir arbeiten nicht direkt in diesem Repositorium, sondern haben ein Arbeitsrepos
 
 ## SAXON-HE
 
-The project also includes Saxon-HE, which is licensed separately under the Mozilla Public License, Version 2.0 (MPL 2.0). See the dedicated LICENSE.txt
+The project also includes Saxon-HE, which is licensed separately under the Mozilla Public License, Version 2.0 (MPL 2.0). See the dedicated [LICENSE.txt](saxon/notices/LICENSE.txt)
 

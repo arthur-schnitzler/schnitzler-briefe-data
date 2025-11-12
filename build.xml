@@ -6,21 +6,21 @@
     <mkdir dir="${tmpDir}"/>
     <xslt style="./import-xslts/add-title-with-iso-date.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+        <classpath location="${basedir}/saxon/saxon.jar"/>
     </xslt>
     <move todir="${editions}">
         <fileset dir="${tmpDir}"/>
     </move>
     <xslt style="./import-xslts/langesS-neu.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+        <classpath location="${basedir}/saxon/saxon.jar"/>
     </xslt>
     <move todir="${editions}">
         <fileset dir="${tmpDir}"/>
     </move>
     <xslt style="./import-xslts/remove-whitespace.xsl"  basedir="./data/editions" destdir="${tmpDir}" includes="*.xml" extension=".xml">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+        <classpath location="${basedir}/saxon/saxon.jar"/>
     </xslt>
     <move todir="${editions}">
         <fileset dir="${tmpDir}"/>
@@ -29,7 +29,7 @@
     <!-- Adapt schema to match transformations -->
     <xslt style="./import-xslts/adapt-schema.xsl" in="./data/meta/schnitzler-briefe-schema.xsd" out="./data/meta/schnitzler-briefe-schema.xsd.tmp">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+        <classpath location="${basedir}/saxon/saxon.jar"/>
     </xslt>
     <move file="./data/meta/schnitzler-briefe-schema.xsd.tmp" tofile="./data/meta/schnitzler-briefe-schema.xsd" overwrite="true"/>
 

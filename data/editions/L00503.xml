@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L00503" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L00503" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -231,6 +231,10 @@
                <idno type="URL" subtype="schaubuehne">https://schaubuehne.oeaw.ac.at/register.html?author=2628</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2147.html</idno>
                <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb2147.html</idno>
+               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/pmb2147</idno>
+               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/DWpers0003</idno>
+               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/p_51379</idno>
+               <idno type="URL" subtype="wiener-rundschau">https://acdh-oeaw.github.io/wiener-rundschau-static/wr-person-0004</idno>
                <affiliation>
                   <term ref="pmb3415">Lernender/Lernende an</term>
                   <orgName ref="pmb46027">Akademisches Gymnasium Wien</orgName>
@@ -253,6 +257,11 @@
                      <label>Ausstellungsbesuch Völkerschau Aschanti-Dorf, 17.9.1896</label>
                      <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/199860/</idno>
                      <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb199860.html</idno>
+                  </event>
+                  <event n="Liederkonzert" when="1904-04-14" ref="pmb300186">
+                     <desc n="1370">teilgenommen an</desc>
+                     <label>2. Liliencron-Abend, 14.4.1904</label>
+                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/300186/</idno>
                   </event>
                </listEvent>
                <note type="references"> </note>
@@ -308,10 +317,18 @@
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb29917">
+            <bibl xml:id="pmb33418">
+               <title type="main">En route</title>
+               <author role="hat-geschaffen" ref="pmb5449">Huysmans, Joris-Karl</author>
+               <date when="1895-01-01" notBefore="1895-01-01">1895</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33418/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33418.html</idno>
+               <note type="work_kind">Roman</note>
+            </bibl>
+            <bibl xml:id="pmb29917" ana="comment">
                <title type="main">Liebelei. Schauspiel in drei Akten</title>
                <title type="werk_link">https://www.deutschestextarchiv.de/book/show/schnitzler_liebelei_1896</title>
-               <title type="legacy-name-merge">Liebelei</title>
+               <title type="werk_arbeitstitel">Das arme Mädl</title>
                <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
                <date>1895-10-09</date>
                <idno type="URL">https://asaf.com/S.04.01.27</idno>
@@ -332,14 +349,6 @@
                <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb29917.html</idno>
                <note type="work_kind">Mehraktiges Drama</note>
                <note type="references"> </note>
-            </bibl>
-            <bibl xml:id="pmb33418">
-               <title type="main">En route</title>
-               <author role="hat-geschaffen" ref="pmb5449">Huysmans, Joris-Karl</author>
-               <date when="1895-01-01" notBefore="1895-01-01">1895</date>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33418/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33418.html</idno>
-               <note type="work_kind">Roman</note>
             </bibl>
          </listBibl>
          <listPlace>
@@ -402,6 +411,9 @@
                <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb50.html</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/DWplace00347</idno>
+               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/DWplace00066</idno>
+               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                <note type="image">
                   <figure>
                      <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
@@ -435,6 +447,9 @@
                <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb874.html</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb874.html</idno>
                <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb874.html</idno>
+               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/fa_place00000467</idno>
+               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/fa_place00004481</idno>
+               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/fa_place00004679</idno>
                <note type="image">
                   <figure>
                      <graphic url="https://iiif.onb.ac.at/images/AKON/AK114_425/425/full/,600/0/native.jpg"/>
@@ -443,7 +458,7 @@
             </place>
          </listPlace>
          <listEvent>
-            <event xml:id="pmb35203" ana="implied">
+            <event xml:id="pmb35203" ana="comment">
                <eventName n="Theateruraufführung">Uraufführung von Liebelei, Premiere von Rechte der Seele, 9.10.1895</eventName>
                <note type="listorg">
                   <listOrg>

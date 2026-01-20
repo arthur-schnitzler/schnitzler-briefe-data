@@ -18,7 +18,7 @@
             <sch:assert test="normalize-space(.) = ''">tei:ref darf keinen Textinhalt haben (nur
                 leere Elemente sind erlaubt). </sch:assert>
         </sch:rule>
-    </sch:pattern>
+    </sch:pattern>mi
     <sch:pattern id="title-rules">
         <sch:rule context="tei:title[not(ancestor::tei:back)]">
             <sch:assert test="@level"> Das Attribut @level des tei:title muss vorhanden sein.
@@ -115,6 +115,11 @@
                 kleiner als @hands sein. </sch:assert>
             <sch:assert test="not(tei:handNote[not(@corresp)] and tei:handNote[2])"> Nur eine
                 handNote ohne @corresp erlaubt. </sch:assert>
+            <sch:assert test="not(count(tei:handNote) > 1) or @hands"> Wenn mehr als ein handNote-Element
+                vorhanden ist, muss das Attribut @hands vorhanden sein. </sch:assert>
+            <sch:assert test="not(@hands) or @hands = count(distinct-values(descendant::tei:handNote/@corresp))">
+                Der Wert von @hands muss der Anzahl der unterschiedlichen @corresp-Werte in den handNote-Elementen entsprechen.
+            </sch:assert>
         </sch:rule>
     </sch:pattern>
     <!-- typeNote -->
@@ -398,10 +403,16 @@
                 > Wenn @type = "DOI", muss @target eine gültige DOI sein (z.B. "10.1234/example"
                 oder "https://doi.org/10.1234/example"). </sch:assert>
             <sch:assert test="
-                    not(@type = 'schnitzler-zeitungen' or @type = 'schnitzler-mikrofilme') or
-                    (matches(@target, '^\d{6,7}_\d{1,4}$'))"> Wenn @type =
-                "schnitzler-zeitungen" oder "schnitzler-mikrofilme", muss @target dem Format
-                entsprechen: 6- oder 7-stellige Ziffer, Unterstrich, 1-4 Ziffern (z.B. "1234567_123").
+                    not(@type = 'schnitzler-mikrofilme') or
+                    (matches(@target, '^\d{6,7}_\d{1,4}$') or matches(@target, '^\d{6,7}$'))"> Wenn @type =
+                 "schnitzler-mikrofilme", muss @target dem Format
+                entsprechen: 6- oder 7-stellige Ziffer und eventuell Unterstrich, 1-4 Ziffern (z.B. "1234567_123").
+            </sch:assert>
+            <sch:assert test="
+                not(@type = 'schnitzler-zeitungen') or
+                (matches(@target, '^\d{6,7}_\d{1,4}$'))"> Wenn @type =
+                "schnitzler-zeitungen", muss @target dem Format
+                entsprechen: 6- oder 7-stellige Ziffer und eventuell Unterstrich, 1-4 Ziffern (z.B. "1234567_123").
             </sch:assert>
             <sch:assert test="
                     (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren' or @type = 'schnitzler-bahr' or @type = 'schnitzler-interviews' or @type = 'schnitzler-kultur' or @type = 'wienerschnitzler' or @type = 'URL' or @type = 'DOI' or @type = 'schnitzler-mikrofilme' or @type = 'schnitzler-zeitungen')"

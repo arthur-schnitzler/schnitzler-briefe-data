@@ -76,7 +76,7 @@
                         <repository>Deutsches Literaturarchiv</repository>
                         <idno>A:Schnitzler, HS.1985.1.419</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="2"/><measure unit="blatt" quantity="1"/><measure unit="zeichenanzahl" quantity="482"/></extent></supportDesc></objectDesc><handDesc hands="0"><handNote medium="schwarze-tinte" style="deutsche-kurrent"/></handDesc></physDesc>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="2"/><measure unit="blatt" quantity="1"/><measure unit="zeichenanzahl" quantity="482"/></extent></supportDesc></objectDesc><handDesc hands="1"><handNote medium="schwarze-tinte" style="lateinische-kurrent"/></handDesc></physDesc>
                   </msDesc>
                </witness>
             </listWit>
@@ -107,18 +107,24 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="candidate">
          <change who="SJ" when="2025-07-03">Export aus Transkribus</change>
+         <change who="MAM" when="2026-01-26">Durchsicht</change>
+         <change who="MAM" when="2026-01-26">Index check</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="HS000409661_0050-1"/>
+      <graphic url="HS000409661_0050-2"/>
+   </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><seg><pb facs="HS000409661_0050-1"/><rs type="place" ref="#pmb295164">Wien – Sievering. Fröschlgasse 6</rs></seg><dateline rend="right"><date>den 7. VIII.</date></dateline><salute>Verehrter Herr Doctor!</salute></opener><p>Ich thue es doch nicht – d. h. die <anchor type="commentary" xml:id="K_L03714-1"/>höchstpersönliche Correctur<note type="commentary" corresp="K_L03714-1"><rs type="person" ref="#pmb2128">Plessners</rs> Text <rs type="work" ref="#pmb30265">Der gläserne Käfig</rs> erschien im Erstdruck (<bibl><rs type="org" ref="#pmb29209">Die Zeit</rs>, Bd. 12, Nr. 149, <date>7. 8.
+         <div type="writingSession" n="1"><opener><seg rend="right"><pb facs="HS000409661_0050-1"/><rs type="place" ref="#pmb295164">Wien – Sievering. Fröschlgasse 6</rs></seg><dateline rend="right"><date>den 7. VIII.</date></dateline><salute>Verehrter Herr Doctor!</salute></opener><p>Ich thue es doch nicht – d. h. die <anchor type="commentary" xml:id="K_L03714-1"/>höchstpersönliche Correctur<note type="commentary" corresp="K_L03714-1"><rs type="person" ref="#pmb2128">Plessners</rs> Text <rs type="work" ref="#pmb30265">Der gläserne Käfig</rs> erschien im Erstdruck (<bibl><rs type="org" ref="#pmb29209">Die Zeit</rs>, Bd. 12, Nr. 149, <date>7. 8.
                         1897</date>, S. 95–96</bibl>) mit unautorisierten Änderungen, u. a. mit der
                   nicht von der Autorin vorgesehenen Gattungsbezeichnung »eine Parabel«. Als erste
                   wutentbrannte Reaktion darauf hatte <rs type="person" ref="#pmb2128">Plessner</rs>
                   angekündigt, die ausliegenden Zeitungsexemplare in allen wichtigen Kaffeehäusern
-                  per Hand zu korrigieren, <ref type="schnitzler-briefe" target="L03697" subtype="cf"/>.</note>. – Noch geschmackloser – ja lächerlich! Nicht? Muss
+                  per Hand zu korrigieren, <ref type="schnitzler-briefe" target="L03697" subtype="see"/>.</note>. – Noch geschmackloser – ja lächerlich! Nicht? Muss
                verzichten! Aber sie werden doch meine <anchor type="commentary" xml:id="K_L03714-2"/>große Bitte<note type="commentary" corresp="K_L03714-2"><rs type="person" ref="#pmb2121">Schnitzler</rs> sollte die »literarischen Kreise«
                   wissen lassen, dass <rs type="person" ref="#pmb2128">Plessners</rs><space unit="chars" quantity="1"/><rs type="work" ref="#pmb30265" subtype="implied">Text</rs> gegen ihren Willen
                   verändert abgedruckt worden war, <ref type="schnitzler-briefe" target="L03697" subtype="cf"/>.</note> erfüllen? – Die bleibt aufrecht!! <pb facs="HS000409661_0050-2"/>War
@@ -128,34 +134,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2128">
                <persName>
                   <forename>Elsa</forename>
@@ -191,7 +169,7 @@
                </death>
                <sex value="female"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="gnd">https://d-nb.info/gnd/1041571119</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1041571119</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_15435.html</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2128.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2128/</idno>
@@ -200,30 +178,40 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Elsa_Plessner</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2128.html</idno>
                <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb2128.html</idno>
-               <listEvent>
-                  <event n="Theateruraufführung" when="1896-10-16" ref="pmb42011">
-                     <desc n="1370">teilgenommen an</desc>
-                     <label>Uraufführung von Sein Sohn, 16.10.1896</label>
-                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42011/</idno>
-                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/208861/</idno>
-                     <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42011.html</idno>
-                     <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb42011.html</idno>
-                  </event>
-                  <event n="Theateruraufführung" when="1901-03-16" ref="pmb296012">
-                     <desc n="1370">teilgenommen an</desc>
-                     <label>Uraufführung von Die Ehrlosen, 16.3.1901</label>
-                     <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/296012/</idno>
-                     <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb296012.html</idno>
-                  </event>
-               </listEvent>
-               <figure>
-                  <graphic url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Elsa_Plessner%2C_Autorin_von_%E2%80%9EDie_Ehrlosen%E2%80%9C.png/250px-Elsa_Plessner%2C_Autorin_von_%E2%80%9EDie_Ehrlosen%E2%80%9C.png"/>
-               </figure>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb158649</idno>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30265" ana="comment">
-               <title type="main">Der gläserne Käfig. Eine Parabel</title>
+               <title>Der gläserne Käfig. Eine Parabel</title>
                <title type="werk_bibliografische-angabe">Die Zeit, Bd. 12, Nr. 149, 7. 8. 1897</title>
                <author role="hat-geschaffen" ref="pmb2128">Plessner, Elsa</author>
                <date when="1897-08-07">07.08.1897</date>
@@ -234,6 +222,51 @@
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <desc type="entity_type">A.ADM2</desc>
+               <desc type="entity_type_id">1135</desc>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
+                  </figure>
+               </note>
+            </place>
             <place xml:id="pmb295164">
                <placeName>Fröschelgasse 6</placeName>
                <desc type="entity_type">Wohngebäude (K.WHS)</desc>
@@ -255,56 +288,6 @@
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/295164/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb295164.html</idno>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <desc type="entity_type">A.ADM2</desc>
-               <desc type="entity_type_id">1135</desc>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-               <idno type="URL" subtype="gnd">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="legalkraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb50.html</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb50.html</idno>
-               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/DWplace00347</idno>
-               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/DWplace00066</idno>
-               <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
-               <note type="image">
-                  <figure>
-                     <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
-                  </figure>
-               </note>
             </place>
          </listPlace>
          <listOrg>
@@ -331,7 +314,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>

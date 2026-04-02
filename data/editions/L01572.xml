@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L01572" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L01572" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -181,6 +181,9 @@
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11230.html</idno>
                <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/pmb11230</idno>
                <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/p_37909</idno>
+               <figure>
+                  <graphic url="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Albert_Ehrenstein.jpg/250px-Albert_Ehrenstein.jpg"/>
+               </figure>
             </person>
             <person xml:id="pmb15712">
                <persName>
@@ -305,9 +308,16 @@
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb5925.html</idno>
                <idno type="URL" subtype="zweig-digital">https://www.stefanzweig.digital/o:szd.personen/sdef:TEI/get#SZDPER.1801</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb5925.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44439/</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q685872</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wiener_Psychoanalytische_Vereinigung</idno>
+               <affiliation when="1908-01-01" notAfter="1908-12-31" notBefore="1908-01-01">
+                  <term ref="pmb1182">arbeitet für</term>
+                  <orgName ref="pmb44439">Wiener psychoanalytische Vereinigung</orgName>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44439/</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q685872</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wiener_Psychoanalytische_Vereinigung</idno>
+               </affiliation>
+               <figure>
+                  <graphic url="https://upload.wikimedia.org/wikipedia/commons/3/33/AlfredAdler.jpg"/>
+               </figure>
             </person>
             <person xml:id="pmb15716" ana="implied">
                <persName>
@@ -350,7 +360,7 @@
                   <geo>48,241167 16,354861</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmbplace__69">XIX., Döbling</placeName>
+                  <placeName ref="pmb69">XIX., Döbling</placeName>
                   <geo>48,25 16,33306</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34550/</idno>
@@ -360,9 +370,6 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Oberd%C3%B6bling</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34550.html</idno>
                <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/fa_place00001716</idno>
-               <listBibl>
-                  <bibl type="collections" n="77">SemanticKraus</bibl>
-               </listBibl>
             </place>
             <place xml:id="pmb34552">
                <placeName>Sanatorium Obersteiner</placeName>
@@ -372,11 +379,11 @@
                   <geo>48,241658257085 16,345734836158</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmbplace__69">XIX., Döbling</placeName>
+                  <placeName ref="pmb69">XIX., Döbling</placeName>
                   <geo>48,25 16,33306</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmbplace__34550">Oberdöbling</placeName>
+                  <placeName ref="pmb34550">Oberdöbling</placeName>
                   <geo>48,241167 16,354861</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34552/</idno>
@@ -405,7 +412,7 @@
                   <geo>48,208333 16,373056</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmbplace__41240">Österreich</placeName>
+                  <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
@@ -430,12 +437,6 @@
                <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/DWplace00066</idno>
                <idno type="URL" subtype="semantickraus">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                <idno type="URL" subtype="schnitzler-fischer">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
-               <listBibl>
-                  <bibl type="collections" n="5">Karl Kraus: Rechtsakten</bibl>
-                  <bibl type="collections" n="43">Wiener Schnitzler – Schnitzlers Wien</bibl>
-                  <bibl type="collections" n="77">SemanticKraus</bibl>
-                  <bibl type="collections" n="85">S-Fischer</bibl>
-               </listBibl>
                <note type="image">
                   <figure>
                      <graphic url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>

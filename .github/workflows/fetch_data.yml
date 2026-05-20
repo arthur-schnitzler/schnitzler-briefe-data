@@ -7,11 +7,15 @@ jobs:
   build_pages:
     name: Copy data to repo
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
       ANT_OPTS: -Xmx6g
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
     - name: Fetch and preprocess Data
       run: |
         ./fetch_data.sh
@@ -21,4 +25,25 @@ jobs:
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: Downloaded/Updated Data
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+    - name: Compute release tag
+      id: tag
+      run: |
+        git fetch --tags
+        YEAR=$(date +%Y)
+        MONTH=$(date +%m)
+        LATEST=$(git tag -l "${YEAR}.${MONTH}.*" | sort -V | tail -n1)
+        if [ -z "$LATEST" ]; then
+          PATCH=0
+        else
+          PATCH=$(echo "$LATEST" | awk -F. '{print $3}')
+          PATCH=$((PATCH + 1))
+        fi
+        echo "tag=${YEAR}.${MONTH}.${PATCH}" >> "$GITHUB_OUTPUT"
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: ${{ steps.tag.outputs.tag }}
+        name: ${{ steps.tag.outputs.tag }}
         token: ${{ secrets.REPO_ACCESS_TOKEN }}

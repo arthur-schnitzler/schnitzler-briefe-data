@@ -11,6 +11,7 @@ jobs:
       contents: write
     env:
       ANT_OPTS: -Xmx6g
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
     steps:
     - name: Perform Checkout
       uses: actions/checkout@v4
@@ -22,7 +23,7 @@ jobs:
     - name: Generate CSV from list XML files
       run: |
         python3 process_list_xml.py
-    - uses: stefanzweifel/git-auto-commit-action@v5
+    - uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: Downloaded/Updated Data
       env:
@@ -42,7 +43,7 @@ jobs:
         fi
         echo "tag=${YEAR}.${MONTH}.${PATCH}" >> "$GITHUB_OUTPUT"
     - name: Create GitHub Release
-      uses: softprops/action-gh-release@v2
+      uses: softprops/action-gh-release@v3
       with:
         tag_name: ${{ steps.tag.outputs.tag }}
         name: ${{ steps.tag.outputs.tag }}

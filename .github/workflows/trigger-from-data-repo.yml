@@ -4,11 +4,18 @@ on:
   push:
     branches:
       - main
+  workflow_run:
+    workflows: ["Fetch data"]
+    types:
+      - completed
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
 jobs:
   # Existing job for schnitzler-briefe-tex
   dispatch_to_tex_repo:
-    if: contains(join(github.event.commits.*.modified), 'data/editions/')
+    if: github.event_name == 'workflow_run' || contains(join(github.event.commits.*.modified), 'data/editions/')
     runs-on: ubuntu-latest
     steps:
     - name: Check out repository
@@ -17,7 +24,7 @@ jobs:
         fetch-depth: 2
     - name: Get changed files
       id: changed-files
-      uses: tj-actions/changed-files@v45
+      uses: tj-actions/changed-files@v47
       with:
         files: data/editions/*.xml
         files_separator: ','
@@ -61,7 +68,7 @@ jobs:
         fetch-depth: 2
     - name: Check if listcorrespondence.xml changed
       id: changed-listcorrespondence
-      uses: tj-actions/changed-files@v45
+      uses: tj-actions/changed-files@v47
       with:
         files: data/indices/listcorrespondence.xml
     - name: Repository Dispatch to schnitzler-tagebuch-charts

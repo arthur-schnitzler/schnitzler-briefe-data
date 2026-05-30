@@ -61,7 +61,7 @@ def update_wikidata(correspondents, letter_count, dry_run=False):
         print("WIKIDATA_USERNAME and WIKIDATA_PASSWORD must be set", file=sys.stderr)
         sys.exit(1)
 
-    login = wbi_login.Clientlogin(user=username, password=password)
+    login = wbi_login.Login(user=username, password=password)
     wbi = WikibaseIntegrator(login=login)
     item = wbi.item.get(ITEM_ID)
 

@@ -120,21 +120,29 @@ def update_wikidata(correspondents, letter_count, dry_run=False):
 
     # --- P1114 + P5017: separate write ---
     item = wbi.item.get(ITEM_ID)
-    item.claims.add(
-        Quantity(prop_nr="P1114", amount=letter_count),
-        action_if_exists=ActionIfExists.REPLACE_ALL,
-    )
+
+    new_p1114 = Quantity(prop_nr="P1114", amount=letter_count)
+    existing_p1114 = item.claims.get("P1114")
+    if existing_p1114:
+        new_p1114.id = existing_p1114[0].id
+    item.claims.add(new_p1114, action_if_exists=ActionIfExists.REPLACE_ALL)
+
     today = datetime.now(timezone.utc).strftime("+%Y-%m-%dT00:00:00Z")
-    item.claims.add(
-        Time(prop_nr="P5017", time=today, precision=11),
-        action_if_exists=ActionIfExists.REPLACE_ALL,
-    )
-    item.write(
-        summary=(
-            "Bot: update P1114 letter count, P5017 last update "
-            "(schnitzler-briefe-data)"
+    new_p5017 = Time(prop_nr="P5017", time=today, precision=11)
+    existing_p5017 = item.claims.get("P5017")
+    if existing_p5017:
+        new_p5017.id = existing_p5017[0].id
+    item.claims.add(new_p5017, action_if_exists=ActionIfExists.REPLACE_ALL)
+    try:
+        item.write(
+            summary=(
+                "Bot: update P1114 letter count, P5017 last update "
+                "(schnitzler-briefe-data)"
+            )
         )
-    )
+    except MWApiError as e:
+        print(f"  MWApiError: {e.error_dict}", file=sys.stderr)
+        raise
     print(f"P1114: {letter_count} letters")
     print(f"P5017: {today}")
     print("Done")

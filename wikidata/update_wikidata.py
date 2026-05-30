@@ -9,10 +9,16 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
-from wikibaseintegrator import WikibaseIntegrator, wbi_login
+from wikibaseintegrator import WikibaseIntegrator, wbi_login, wbi_config
 from wikibaseintegrator.datatypes import Item as WDItem
 from wikibaseintegrator.datatypes import Quantity, Time
 from wikibaseintegrator.wbi_enums import ActionIfExists
+
+wbi_config.config["USER_AGENT"] = (
+    "schnitzler-briefe-bot/1.0 "
+    "(https://schnitzler-briefe.acdh.oeaw.ac.at/; "
+    "martin.anton.mueller@gmail.com)"
+)
 
 ITEM_ID = "Q124341526"
 REPO_ROOT = Path(__file__).resolve().parent.parent

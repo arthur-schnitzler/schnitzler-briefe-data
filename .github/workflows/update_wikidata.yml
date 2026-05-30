@@ -28,5 +28,5 @@ jobs:
           WIKIDATA_CONSUMER_TOKEN: ${{ secrets.WIKIDATA_CONSUMER_TOKEN }}
           WIKIDATA_CONSUMER_SECRET: ${{ secrets.WIKIDATA_CONSUMER_SECRET }}
           WIKIDATA_ACCESS_TOKEN: ${{ secrets.WIKIDATA_ACCESS_TOKEN }}
-          WIKIDATA_ACCESS_TOKEN_SECRET: ${{ secrets.WIKIDATA_ACCESS_TOKEN_SECRET }}
+          WIKIDATA_ACCESS_SECRET: ${{ secrets.WIKIDATA_ACCESS_SECRET }}
         run: python3 wikidata/update_wikidata.py

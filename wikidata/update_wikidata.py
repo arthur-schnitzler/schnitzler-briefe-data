@@ -58,11 +58,11 @@ def update_wikidata(correspondents, letter_count, dry_run=False):
     consumer_token = os.environ.get("WIKIDATA_CONSUMER_TOKEN")
     consumer_secret = os.environ.get("WIKIDATA_CONSUMER_SECRET")
     access_token = os.environ.get("WIKIDATA_ACCESS_TOKEN")
-    access_token_secret = os.environ.get("WIKIDATA_ACCESS_TOKEN_SECRET")
-    if not all([consumer_token, consumer_secret, access_token, access_token_secret]):
+    access_secret = os.environ.get("WIKIDATA_ACCESS_SECRET")
+    if not all([consumer_token, consumer_secret, access_token, access_secret]):
         print(
             "WIKIDATA_CONSUMER_TOKEN, WIKIDATA_CONSUMER_SECRET, "
-            "WIKIDATA_ACCESS_TOKEN and WIKIDATA_ACCESS_TOKEN_SECRET must be set",
+            "WIKIDATA_ACCESS_TOKEN and WIKIDATA_ACCESS_SECRET must be set",
             file=sys.stderr,
         )
         sys.exit(1)
@@ -71,7 +71,7 @@ def update_wikidata(correspondents, letter_count, dry_run=False):
         consumer_token=consumer_token,
         consumer_secret=consumer_secret,
         access_token=access_token,
-        access_token_secret=access_token_secret,
+        access_secret=access_secret,
     )
     wbi = WikibaseIntegrator(login=login)
     item = wbi.item.get(ITEM_ID)

@@ -1,0 +1,30 @@
+name: Update Wikidata
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'  # First of each month at 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install -r wikidata/requirements.txt
+
+      - name: Update Wikidata item
+        env:
+          WIKIDATA_USERNAME: ${{ secrets.WIKIDATA_USERNAME }}
+          WIKIDATA_PASSWORD: ${{ secrets.WIKIDATA_PASSWORD }}
+        run: python3 wikidata/update_wikidata.py

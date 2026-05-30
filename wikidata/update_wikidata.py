@@ -94,7 +94,10 @@ def update_wikidata(correspondents, letter_count, dry_run=False):
     print(f"P921: {len(existing_p921)} already present, {len(to_add)} new")
     for qid, name in to_add:
         print(f"  + {qid}  ({name})")
-        item.claims.add(WDItem(prop_nr="P921", value=qid))
+        item.claims.add(
+            WDItem(prop_nr="P921", value=qid),
+            action_if_exists=ActionIfExists.APPEND_OR_REPLACE,
+        )
 
     # --- P1114: total letter count ---
     item.claims.add(

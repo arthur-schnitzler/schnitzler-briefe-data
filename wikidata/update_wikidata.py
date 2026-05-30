@@ -13,6 +13,7 @@ from wikibaseintegrator import WikibaseIntegrator, wbi_login, wbi_config
 from wikibaseintegrator.datatypes import Item as WDItem
 from wikibaseintegrator.datatypes import Quantity, Time
 from wikibaseintegrator.wbi_enums import ActionIfExists
+from wikibaseintegrator.wbi_exceptions import MWApiError
 
 wbi_config.config["USER_AGENT"] = (
     "schnitzler-briefe-bot/1.0 "
@@ -110,8 +111,12 @@ def update_wikidata(correspondents, letter_count, dry_run=False):
                 action_if_exists=ActionIfExists.APPEND_OR_REPLACE,
             )
         if batch:
-            item.write(summary="Bot: add P921 correspondence partners (schnitzler-briefe-data)")
-            print(f"  wrote batch {i // BATCH_SIZE + 1}")
+            try:
+                item.write(summary="Bot: add P921 correspondence partners (schnitzler-briefe-data)")
+                print(f"  wrote batch {i // BATCH_SIZE + 1}")
+            except MWApiError as e:
+                print(f"  MWApiError: {e.error_dict}", file=sys.stderr)
+                raise
 
     # --- P1114 + P5017: separate write ---
     item = wbi.item.get(ITEM_ID)

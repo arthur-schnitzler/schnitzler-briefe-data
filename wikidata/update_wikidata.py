@@ -94,38 +94,45 @@ def update_wikidata(correspondents, letter_count, dry_run=False):
     print(f"P921: {len(existing_p921)} already present, {len(to_add)} new")
     for qid, name in to_add:
         print(f"  + {qid}  ({name})")
-        item.claims.add(
-            WDItem(prop_nr="P921", value=qid),
-            action_if_exists=ActionIfExists.APPEND_OR_REPLACE,
-        )
-
-    # --- P1114: total letter count ---
-    item.claims.add(
-        Quantity(prop_nr="P1114", amount=letter_count),
-        action_if_exists=ActionIfExists.REPLACE_ALL,
-    )
-    print(f"P1114: {letter_count} letters")
-
-    # --- P5017: last update ---
-    today = datetime.now(timezone.utc).strftime("+%Y-%m-%dT00:00:00Z")
-    item.claims.add(
-        Time(prop_nr="P5017", time=today, precision=11),
-        action_if_exists=ActionIfExists.REPLACE_ALL,
-    )
-    print(f"P5017: {today}")
 
     if dry_run:
         print("Dry run — no changes written to Wikidata")
         return
 
+    # Write P921 in batches of 10 to stay within API limits
+    BATCH_SIZE = 10
+    for i in range(0, max(len(to_add), 1), BATCH_SIZE):
+        batch = to_add[i:i + BATCH_SIZE]
+        item = wbi.item.get(ITEM_ID)
+        for qid, name in batch:
+            item.claims.add(
+                WDItem(prop_nr="P921", value=qid),
+                action_if_exists=ActionIfExists.APPEND_OR_REPLACE,
+            )
+        if batch:
+            item.write(summary="Bot: add P921 correspondence partners (schnitzler-briefe-data)")
+            print(f"  wrote batch {i // BATCH_SIZE + 1}")
+
+    # --- P1114 + P5017: separate write ---
+    item = wbi.item.get(ITEM_ID)
+    item.claims.add(
+        Quantity(prop_nr="P1114", amount=letter_count),
+        action_if_exists=ActionIfExists.REPLACE_ALL,
+    )
+    today = datetime.now(timezone.utc).strftime("+%Y-%m-%dT00:00:00Z")
+    item.claims.add(
+        Time(prop_nr="P5017", time=today, precision=11),
+        action_if_exists=ActionIfExists.REPLACE_ALL,
+    )
     item.write(
         summary=(
-            "Bot: update P921 correspondence partners, "
-            "P1114 letter count, P5017 last update "
+            "Bot: update P1114 letter count, P5017 last update "
             "(schnitzler-briefe-data)"
         )
     )
-    print("Done — item written to Wikidata")
+    print(f"P1114: {letter_count} letters")
+    print(f"P5017: {today}")
+    print("Done")
 
 
 def main():

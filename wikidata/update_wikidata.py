@@ -55,13 +55,24 @@ def count_letters():
 
 
 def update_wikidata(correspondents, letter_count, dry_run=False):
-    username = os.environ.get("WIKIDATA_USERNAME")
-    password = os.environ.get("WIKIDATA_PASSWORD")
-    if not (username and password):
-        print("WIKIDATA_USERNAME and WIKIDATA_PASSWORD must be set", file=sys.stderr)
+    consumer_token = os.environ.get("WIKIDATA_CONSUMER_TOKEN")
+    consumer_secret = os.environ.get("WIKIDATA_CONSUMER_SECRET")
+    access_token = os.environ.get("WIKIDATA_ACCESS_TOKEN")
+    access_token_secret = os.environ.get("WIKIDATA_ACCESS_TOKEN_SECRET")
+    if not all([consumer_token, consumer_secret, access_token, access_token_secret]):
+        print(
+            "WIKIDATA_CONSUMER_TOKEN, WIKIDATA_CONSUMER_SECRET, "
+            "WIKIDATA_ACCESS_TOKEN and WIKIDATA_ACCESS_TOKEN_SECRET must be set",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
-    login = wbi_login.Login(user=username, password=password)
+    login = wbi_login.OAuth1(
+        consumer_token=consumer_token,
+        consumer_secret=consumer_secret,
+        access_token=access_token,
+        access_token_secret=access_token_secret,
+    )
     wbi = WikibaseIntegrator(login=login)
     item = wbi.item.get(ITEM_ID)
 

@@ -25,6 +25,8 @@ jobs:
 
       - name: Update Wikidata item
         env:
-          WIKIDATA_USERNAME: ${{ secrets.WIKIDATA_USERNAME }}
-          WIKIDATA_PASSWORD: ${{ secrets.WIKIDATA_PASSWORD }}
+          WIKIDATA_CONSUMER_TOKEN: ${{ secrets.WIKIDATA_CONSUMER_TOKEN }}
+          WIKIDATA_CONSUMER_SECRET: ${{ secrets.WIKIDATA_CONSUMER_SECRET }}
+          WIKIDATA_ACCESS_TOKEN: ${{ secrets.WIKIDATA_ACCESS_TOKEN }}
+          WIKIDATA_ACCESS_TOKEN_SECRET: ${{ secrets.WIKIDATA_ACCESS_TOKEN_SECRET }}
         run: python3 wikidata/update_wikidata.py

@@ -53,6 +53,15 @@ def process_xml_files():
         except Exception as e:
             print(f"Error processing {xml_file}: {e}")
     
+    # Sort by id descending (highest number first)
+    def sort_key(row):
+        try:
+            return (0, int(row[0]))
+        except (ValueError, TypeError):
+            return (-1, row[0])
+
+    results.sort(key=sort_key, reverse=True)
+
     # Create csv directory if it doesn't exist
     os.makedirs('./csv', exist_ok=True)
     

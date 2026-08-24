@@ -141,34 +141,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2128">
                <persName>
                   <forename>Elsa</forename>
@@ -199,34 +171,41 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb296030">
-               <title type="main">Orchideen [Schauspiel in drei Akten]</title>
-               <author role="hat-geschaffen" ref="pmb2128">Plessner, Elsa</author>
+               <title>Orchideen [Schauspiel in drei Akten]</title>
+               <author ref="pmb2128" role="hat-geschaffen">Plessner, Elsa</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb296017">
-               <placeName>Hotel Meranerhof</placeName>
-               <placeName type="ort_namensvariante">Pension Wolf</placeName>
-               <placeName type="ort_namensvariante">Villa Adelheid</placeName>
-               <placeName type="ort_namensvariante">Villa Giovanni</placeName>
-               <location type="coords">
-                  <geo>46,66964 11,15971</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43520">Meran</placeName>
-                  <geo>46,66817 11,15953</geo>
-               </location>
-            </place>
             <place xml:id="pmb43520">
                <placeName>Meran</placeName>
-               <placeName type="alternative-name">Meran</placeName>
                <placeName type="alternative-name">Merano</placeName>
-               <placeName type="legacy-name-merge">Meran</placeName>
-               <placeName type="legacy-name-merge">Merano</placeName>
-               <placeName type="legacy-name-merge">Meran</placeName>
                <location type="coords">
                   <geo>46,66817 11,15953</geo>
                </location>
@@ -238,16 +217,12 @@
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -255,6 +230,23 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb296017">
+               <placeName>Hotel Meranerhof</placeName>
+               <placeName type="ort_namensvariante">Pension Wolf</placeName>
+               <placeName type="ort_namensvariante">Villa Adelheid</placeName>
+               <placeName type="ort_namensvariante">Villa Giovanni</placeName>
+               <location type="coords">
+                  <geo>46,66964 11,15971</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43520">Meran</placeName>
+                  <geo>46,66817 11,15953</geo>
                </location>
             </place>
          </listPlace>

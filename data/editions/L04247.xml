@@ -165,7 +165,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -174,7 +174,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -182,6 +182,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2513" ana="comment">
                <persName>
@@ -232,58 +236,6 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb334746" ana="comment">
-               <placeName>Rab [Stadt]</placeName>
-               <placeName type="ort_namensvariante">Arbe</placeName>
-               <location type="coords">
-                  <geo>44,75697971262979 14,759960156402798</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb90258">Rab</placeName>
-                  <geo>44,75694 14,76083</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb34494">Kroatien</placeName>
-                  <geo>45,16667 15,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
-                  <geo>48,24077 16,32092</geo>
-               </location>
-            </place>
-            <place xml:id="pmb68">
-               <placeName>XVIII., Währing</placeName>
-               <placeName type="legacy-name-merge">Währing</placeName>
-               <location type="coords">
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">
@@ -302,9 +254,64 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
+            <place xml:id="pmb334746">
+               <placeName>Rab [Stadt]</placeName>
+               <placeName type="ort_namensvariante">Arbe</placeName>
+               <location type="coords">
+                  <geo>44,75697971262979 14,759960156402798</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb90258">Rab</placeName>
+                  <geo>44,75694 14,76083</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb34494">Kroatien</placeName>
+                  <geo>45,16667 15,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb68">
+               <placeName>XVIII., Währing</placeName>
+               <placeName type="legacy-name-merge">Währing</placeName>
+               <location type="coords">
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
             <place xml:id="pmb38096" ana="comment">
                <placeName>Opatija</placeName>
+               <placeName type="alternative-name">Opatija</placeName>
                <placeName type="legacy-name">Abbazia</placeName>
+               <placeName type="legacy-name-merge">Opatija</placeName>
+               <placeName type="legacy-name">Opatija</placeName>
                <placeName type="legacy-name-merge">Grad Opatija</placeName>
                <location type="coords">
                   <geo>45,33771 14,30515</geo>

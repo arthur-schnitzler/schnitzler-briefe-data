@@ -198,6 +198,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb10788">
+               <persName>
+                  <forename>Raoul</forename>
+                  <surname>Auernheimer</surname>
+               </persName>
+               <birth>
+                  <date when="1876-04-15">1876-04-15</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1948-01-06">1948-01-06</date>
+                  <settlement ref="pmb47770">
+                     <placeName type="pref">Oakland</placeName>
+                     <location>
+                        <geo>37,80437 -122,2708</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb11230">
                <persName>
                   <forename>Albert</forename>
@@ -228,7 +252,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -237,7 +261,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -245,6 +269,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb4769">
                <persName>
@@ -272,30 +300,6 @@
                      <placeName type="pref">Longwood</placeName>
                      <location>
                         <geo>-15,94916 -5,68571</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb10788">
-               <persName>
-                  <forename>Raoul</forename>
-                  <surname>Auernheimer</surname>
-               </persName>
-               <birth>
-                  <date when="1876-04-15">1876-04-15</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1948-01-06">1948-01-06</date>
-                  <settlement ref="pmb47770">
-                     <placeName type="pref">Oakland</placeName>
-                     <location>
-                        <geo>37,80437 -122,2708</geo>
                      </location>
                   </settlement>
                </death>
@@ -329,7 +333,7 @@
                   <surname>?? [Studienkollege von Albert Ehrenstein]</surname>
                </persName>
                <birth>
-                  <date notBefore="1909-01-01" when="1909-01-01" notAfter="1909-12-31">1909</date>
+                  <date when="1909-01-01" notAfter="1909-12-31" notBefore="1909-01-01">1909</date>
                </birth>
             </person>
             <person xml:id="pmb5644" ana="implied">
@@ -380,89 +384,34 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb4107">
-               <persName>
-                  <surname>Euripides</surname>
-               </persName>
-               <birth>
-                  <date when="0001-01-01">485?</date>
-                  <settlement ref="pmb61023">
-                     <placeName type="pref">Salamina</placeName>
-                     <location>
-                        <geo>37,96427 23,49649</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="0001-01-01">406? v. u. Z.</date>
-                  <settlement ref="pmb60992">
-                     <placeName type="pref">Pella</placeName>
-                     <location>
-                        <geo>40,76169 22,52637</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33454">
-               <title>Tod des Zehir eddin Muhammed Baber</title>
-               <author ref="pmb11230" role="hat-geschaffen">Ehrenstein, Albert</author>
-            </bibl>
-            <bibl xml:id="pmb33458" ana="implied">
-               <title>Die Lage in Ungarn (Siebenbürgen und Serbien ausgenommen) im Jahre 1790</title>
-               <author ref="pmb11230" role="hat-geschaffen">Ehrenstein, Albert</author>
-            </bibl>
-            <bibl xml:id="pmb33480" ana="implied">
-               <title>Napoleon I. Eine Biographie</title>
-               <author ref="pmb11349" role="hat-geschaffen">Fournier, August</author>
-            </bibl>
-            <bibl xml:id="pmb33478" ana="implied">
-               <title>?? [Dissertation]</title>
-               <author ref="pmb27755" role="hat-geschaffen">?? [Studienkollege von Albert Ehrenstein]</author>
+               <title type="main">Tod des Zehir eddin Muhammed Baber</title>
+               <author role="hat-geschaffen" ref="pmb11230">Ehrenstein, Albert</author>
             </bibl>
             <bibl xml:id="pmb33398" ana="implied">
-               <title>Helena</title>
-               <author ref="pmb4107" role="hat-geschaffen">Euripides</author>
+               <title type="main">Helena</title>
+               <author role="hat-geschaffen" ref="pmb4107">Euripides</author>
+            </bibl>
+            <bibl xml:id="pmb33458" ana="implied">
+               <title type="main">Die Lage in Ungarn (Siebenbürgen und Serbien ausgenommen) im Jahre 1790</title>
+               <author role="hat-geschaffen" ref="pmb11230">Ehrenstein, Albert</author>
             </bibl>
             <bibl xml:id="pmb33476" ana="implied">
-               <title>Baburnama</title>
-               <author ref="pmb5647" role="hat-geschaffen">Babur, Zahir ad-Din Muhammad</author>
+               <title type="main">Baburnama</title>
+               <author role="hat-geschaffen" ref="pmb5647">Babur, Zahir ad-Din Muhammad</author>
+            </bibl>
+            <bibl xml:id="pmb33478" ana="implied">
+               <title type="main">?? [Dissertation]</title>
+               <author role="hat-geschaffen" ref="pmb27755">?? [Studienkollege von Albert Ehrenstein]</author>
+            </bibl>
+            <bibl xml:id="pmb33480" ana="implied">
+               <title type="main">Napoleon I. Eine Biographie</title>
+               <author role="hat-geschaffen" ref="pmb11349">Fournier, August</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
-                  <geo>48,24077 16,32092</geo>
-               </location>
-            </place>
-            <place xml:id="pmb470">
-               <placeName>Edlach</placeName>
-               <location type="coords">
-                  <geo>47,69255 15,80915</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb483">Reichenau an der Rax</placeName>
-                  <geo>47,7 15,83333</geo>
-               </location>
-            </place>
             <place xml:id="pmb237241">
                <placeName>Ottakringer Straße 114</placeName>
                <location type="coords">
@@ -477,26 +426,9 @@
                   <geo>48,214134550754 16,321028123618</geo>
                </location>
             </place>
-            <place xml:id="pmb644">
-               <placeName>Galizien</placeName>
-               <location type="coords">
-                  <geo>49,521 23,245</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb313">Polen</placeName>
-                  <geo>52,0 20,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb666">Ukraine</placeName>
-                  <geo>49,0 32,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb687">Österreich-Ungarn</placeName>
-                  <geo>48,4054 16,4887</geo>
-               </location>
-            </place>
             <place xml:id="pmb313">
                <placeName>Polen</placeName>
+               <placeName type="alternative-name">Polen</placeName>
                <placeName type="alternative-name">Republic of Poland</placeName>
                <placeName type="legacy-name-merge">Poland</placeName>
                <location type="coords">
@@ -509,7 +441,9 @@
             </place>
             <place xml:id="pmb35512">
                <placeName>Ungarn</placeName>
+               <placeName type="alternative-name">Ungarn</placeName>
                <placeName type="alternative-name">Republic of Hungary</placeName>
+               <placeName type="legacy-name-merge">Ungarn</placeName>
                <placeName type="legacy-name-merge">Hungary</placeName>
                <location type="coords">
                   <geo>47,0 20,0</geo>
@@ -517,6 +451,56 @@
                <location type="located_in_place">
                   <placeName ref="pmb468">Europa</placeName>
                   <geo>48,69096 9,14062</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb687">Österreich-Ungarn</placeName>
+                  <geo>48,4054 16,4887</geo>
+               </location>
+            </place>
+            <place xml:id="pmb470">
+               <placeName>Edlach</placeName>
+               <location type="coords">
+                  <geo>47,69255 15,80915</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb483">Reichenau an der Rax</placeName>
+                  <geo>47,7 15,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb644">
+               <placeName>Galizien</placeName>
+               <location type="coords">
+                  <geo>49,521 23,245</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb313">Polen</placeName>
+                  <geo>52,0 20,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb666">Ukraine</placeName>
+                  <geo>49,0 32,0</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb687">Österreich-Ungarn</placeName>
@@ -545,7 +529,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -559,7 +543,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb63189">Schubertring</placeName>

@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04544">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04535">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1899-07-14" n="03">1899-07-14</title>
-            <title level="a">Rainer Maria Rilke: Widmungsexemplar Lieder der Mädchen für Arthur Schnitzler,
-               14. 7. 1899</title>
+            <title type="iso-date" when-iso="1899-04-15" n="01">1899-04-15</title>
+            <title level="a">Rainer Maria Rilke an Arthur Schnitzler, 15. 4. 1899</title>
             <author ref="#pmb9531">Rilke, Rainer Maria</author>
             <editor>
                <persName>Jahnke, Selma</persName>
@@ -67,10 +66,25 @@
             <p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
          </seriesStmt>
          <sourceDesc>
+            <listWit>
+               <witness n="1">
+                  <objectType corresp="brief"/>
+                  <msDesc>
+                     <msIdentifier>
+                        <country>GB</country>
+                        <settlement>Cambridge</settlement>
+                        <repository>University Library</repository>
+                        <idno>Schnitzler, B 84</idno>
+                     </msIdentifier>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="seite" quantity="2"/><measure unit="blatt" quantity="1"/><measure unit="zeichenanzahl" quantity="839"/></extent></supportDesc></objectDesc><handDesc hands="1"><handNote medium="schwarze-tinte" style="deutsche-kurrent"/></handDesc></physDesc>
+                  </msDesc>
+               </witness>
+            </listWit>
             <listBibl>
                <biblStruct>
                   <analytic>
-                     <title level="a">Rainer Maria Rilke und Arthur Schnitzler. Ihr Briefwechsel</title>
+                     <title level="a">Rainer Maria Rilke und Arthur Schnitzler. Ihr
+                        Briefwechsel</title>
                      <respStmt>
                         <resp>Mit Anmerkungen herausgegeben von</resp>
                         <persName>Schnitzler, Heinrich</persName>
@@ -83,10 +97,10 @@
                      <imprint>
                         <date when="1958-04">April 1958</date>
                      </imprint>
-                     <biblScope unit="pp">282–298, hier S. 295</biblScope>
+                     <biblScope unit="pp">282–298, hier S. 285</biblScope>
                   </monogr>
                   <note type="zeichenanzahl">
-                     <measure unit="zeichenanzahl" quantity="109"/>
+                     <measure unit="zeichenanzahl" quantity="111"/>
                   </note>
                </biblStruct>
             </listBibl>
@@ -99,35 +113,42 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb9531">Rilke, Rainer Maria</persName>
-               <date when="1899-07-14" n="03">14. 7. 1899</date>
+               <date when="1899-04-15" n="01">15. 4. 1899</date>
                <placeName ref="#pmb61048">Schmargendorf</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date evidence="conjecture" notBefore="1899-07-15" notAfter="1899-07-19">[15. 7. 1899 – 19. 7. 1899?]</date>
+               <date evidence="conjecture" notBefore="1899-04-16" notAfter="1899-04-20">[16. 4. 1899 – 20. 4. 1899?]</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_9531">Rilke, Rainer Maria</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00942">Beer-Hofmann an Schnitzler, 14. 7. 1899</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00943">Schnitzler an Hauptmann, 15. 7. 1899</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_9531" target="L04535">Rilke an Schnitzler, 15. 4. 1899</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_9531" target="L04342">Schnitzler an Rilke, 20. 1. 1900</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L04341">Schnitzler an Rilke, 13. 4. 1899</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L04133">Schnitzler an Schwarzkopf, 20. 4. 1899</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_9531" target="L04341">Schnitzler an Rilke, 13. 4. 1899</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_9531" target="L04544">Rilke an Schnitzler, 14. 7. 1899</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
-         <change who="MAM" when="2026-09-03">Angelegt</change>
+         <change who="MAM" when="2026-08-28">Export aus Transkribus</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="1958-rilke_widmungsexemplar_3"/>
+      <graphic url="MS-SCHNITZLER-B-00084-000-00005"/>
+      <graphic url="MS-SCHNITZLER-B-00084-000-00006"/>
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><p><pb facs="1958-rilke_widmungsexemplar_3"/><rs type="work" ref="#pmb364368"/><anchor type="commentary" xml:id="K_L04539-1"/>Herrn Dr. Schnitzler<note type="commentary" corresp="K_L04539-1">Die Widmung stand in einem Separatdruck des Texts aus der
-                  Zeitschrift <rs type="work" ref="#pmb36133">Pan</rs> (<bibl><rs type="person" ref="#pmb9531">Rainer Maria Rilke</rs>: <rs type="work" ref="#pmb364368">Lieder der Mädchen</rs>. In: <rs type="work" ref="#pmb36133">Pan</rs>, Jg. 4, H. 4, <date>[April] 1899</date>, S. 209–212</bibl>.) Dieser befand sich <date>1958</date> im Besitz
-                  von <rs type="person" ref="#pmb12692">Heinrich Schnitzler</rs>. Der Verbleib ist ungeklärt.</note> mit vielen verehrungsvollen Grüßen</p><closer><signed>Rainer Maria Rilke.</signed></closer><postscript><dateline><rs type="place" ref="#pmb61048">Berlin-Schmargendorf</rs>, am <date>14. July 99</date>.</dateline></postscript></div>
+         <div type="writingSession" n="1"><opener><seg><pb facs="MS-SCHNITZLER-B-00084-000-00005"/><rs type="place" ref="#pmb61048"><hi rend="latintype">Schmargendorf</hi><space unit="chars" quantity="1"/><hi rend="superscript">bei</hi><space unit="chars" quantity="1"/><hi rend="latintype">Berlin</hi></rs></seg><dateline><hi rend="latintype"><rs type="place" ref="#pmb340535">Villa Waldfrieden</rs></hi>, am <date>15. April 99</date>.</dateline></opener><p>Daß Sie mir, <salute><c rendition="#langesS">s</c>ehr verehrter Herr <hi rend="latintype">Doctor</hi>,</salute>
+               aus verdunkelten Stunden heraus – dennoch<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chreiben, bedeutet mir fa<c rendition="#langesS">s</c>t mehr als ein
+               längerer Brief, der<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich leicht und unwillkürlich aus der Stimmung lö<c rendition="#langesS">s</c>t. Vielen
+               Dank!</p><p>Und wenn Sie <anchor type="commentary" xml:id="K_L04535-1"/>in <hi rend="latintype"><rs type="place" ref="#pmb168">Berlin</rs></hi><note type="commentary" corresp="K_L04535-1"><rs type="person" ref="#pmb2121">Schnitzler</rs> war zwischen <ref type="wienerschnitzler" subtype="date-only" target="1899-04-24"/> und <ref type="wienerschnitzler" subtype="date-only" target="1899-05-02"/> in <rs type="place" ref="#pmb168">Berlin</rs>.</note><space unit="chars" quantity="1"/><add place="above"><c rendition="#langesS">s</c>ind</add>, bitte, erinnern Sie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich meiner. Vielleicht <anchor type="commentary" xml:id="K_L04535-2"/>darf ich Sie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ogar im »<hi rend="latintype"><rs type="place" ref="#pmb340535">Waldfrieden</rs></hi>« erwarten<note type="commentary" corresp="K_L04535-2"><rs type="person" ref="#pmb9531">Rilke</rs> reiste zwar erst nach dem
+                     <date>25. 4. 1899</date> nach <rs type="place" ref="#pmb34438">Russland</rs> ab, es dürfte aber trotzdem zu keinem Zusammentreffen gekommen
+                  sein – zumindest findet sich keines im <rs type="work" ref="#pmb33243">Tagebuch</rs> erwähnt.</note>? – In die<c rendition="#langesS">s</c>em be<c rendition="#langesS">s</c>ten Fall be<c rendition="#langesS">s</c>timmen Sie auf einer
+               Karte die Stunde; jede i<c rendition="#langesS">s</c>t mir recht.</p><p>Ich würde nicht wagen bei enger Zeit von <hi rend="latintype"><rs type="place" ref="#pmb61048">Schmargendorf</rs></hi> zu reden, wenn <hi rend="underline" n="1">nur</hi><hi rend="underline" n="1">ich</hi> hier draußen wäre; allein es i<c rendition="#langesS">s</c>t ja auch der
+               er<c rendition="#langesS">s</c>te Frühling da an meinem Waldrand – und die Ga<c rendition="#langesS">s</c><c rendition="#langesS">s</c>en <hi rend="latintype"><rs type="place" ref="#pmb168">Berlins</rs></hi> wi<c rendition="#langesS">s</c><c rendition="#langesS">s</c>en nichts davon!</p><p>Am <date>24.</date> oder <date>25.</date> rei<c rendition="#langesS">s</c>e ich fort – aber hoffent<pb facs="MS-SCHNITZLER-B-00084-000-00006"/>lich nicht ohne Erinnerung an eine
+               Gemein<c rendition="#langesS">s</c>amkeit.</p><p>Von Frau <hi rend="latintype"><rs type="person" ref="#pmb10762">Lou Andreas-Salomé</rs></hi> Gegengrüße und von mir: Alles Bewu<c rendition="#langesS">s</c>ste!</p><closer>Ihr:<lb/><signed>RainerMariaRilke</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -179,71 +200,36 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb12692" ana="comment">
+            <person xml:id="pmb10762">
                <persName>
-                  <forename>Heinrich</forename>
-                  <surname>Schnitzler</surname>
+                  <forename>Lou</forename>
+                  <surname>Andreas-Salomé</surname>
                </persName>
                <birth>
-                  <date when="1902-08-09">1902-08-09</date>
-                  <settlement ref="pmb75">
-                     <placeName type="pref">Hinterbrühl</placeName>
+                  <date when="1861-02-12">1861-02-12</date>
+                  <settlement ref="pmb433">
+                     <placeName type="pref">Sankt Petersburg</placeName>
                      <location>
-                        <geo>48,08611 16,24809</geo>
-                     </location>
-                  </settlement>
-                  <settlement ref="pmb145165">
-                     <placeName type="pref">Hauptstraße 56</placeName>
-                     <location>
-                        <geo>48,08736 16,24924</geo>
+                        <geo>59,93863 30,31413</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1982-07-12">1982-07-12</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
+                  <date when="1937-02-05">1937-02-05</date>
+                  <settlement ref="pmb42325">
+                     <placeName type="pref">Göttingen</placeName>
                      <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb11910" ana="comment">
-               <persName>
-                  <forename>Alfred</forename>
-                  <surname>Kerr</surname>
-               </persName>
-               <birth>
-                  <date when="1867-12-25">1867-12-25</date>
-                  <settlement ref="pmb677">
-                     <placeName type="pref">Breslau</placeName>
-                     <location>
-                        <geo>51,10773 17,03533</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1948-10-12">1948-10-12</date>
-                  <settlement ref="pmb506">
-                     <placeName type="pref">Hamburg</placeName>
-                     <location>
-                        <geo>53,55055 9,993333</geo>
+                        <geo>51,53443 9,93228</geo>
                      </location>
                   </settlement>
                </death>
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb364368">
-               <title>Lieder der Mädchen</title>
-               <title type="werk_link">https://doi.org/10.11588/diglit.3242#0086</title>
-               <author role="hat-geschaffen" ref="pmb9531">Rilke, Rainer Maria</author>
-            </bibl>
-            <bibl xml:id="pmb36133" ana="comment">
-               <title>Pan</title>
-               <title type="werk_link">https://digi.ub.uni-heidelberg.de/diglit/pan</title>
-               <author ref="pmb11910" role="hat-herausgegeben">Kerr, Alfred</author>
+            <bibl xml:id="pmb33243" ana="comment">
+               <title>Tagebuch</title>
+               <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
@@ -282,6 +268,52 @@
                <location type="located_in_place">
                   <placeName ref="pmb235218">Windmühlhöhe</placeName>
                   <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb340535">
+               <placeName>Villa Waldfrieden</placeName>
+               <location type="coords">
+                  <geo>52,476027 13,287052</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb61048">Schmargendorf</placeName>
+                  <geo>52,47517 13,29071</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+            </place>
+            <place xml:id="pmb168" ana="comment">
+               <placeName>Berlin</placeName>
+               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Barlīn</placeName>
+               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Berolino</placeName>
+               <placeName type="legacy-name-merge">B-n</placeName>
+               <location type="coords">
+                  <geo>52,52437 13,41053</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb34438" ana="comment">
+               <placeName>Russland</placeName>
+               <placeName type="alternative-name">Russische Föderation</placeName>
+               <placeName type="alternative-name">Russian Federation</placeName>
+               <placeName type="alternative-name">Russian Soviet Federated Socialist Republic</placeName>
+               <placeName type="alternative-name">Russian Soviet Federative Socialist Republic</placeName>
+               <placeName type="alternative-name">Russian Socialist Federative Soviet Republic</placeName>
+               <placeName type="legacy-name-merge">Russia</placeName>
+               <placeName type="legacy-name-merge">Rußland</placeName>
+               <location type="coords">
+                  <geo>60,0 100,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1019">Asien</placeName>
+                  <geo>29,84064 89,29688</geo>
                </location>
             </place>
          </listPlace>

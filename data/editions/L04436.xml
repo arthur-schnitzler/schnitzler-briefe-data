@@ -1,12 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04502">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04436">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1901-06-17" n="01">1901-06-17</title>
-            <title level="a">Arthur Schnitzler und Olga Gussmann an Gustav Schwarzkopf, 17. 6. 1901</title>
+            <title type="iso-date" when-iso="1901-08-14" n="01">1901-08-14</title>
+            <title level="a">Arthur Schnitzler und Olga und Elisabeth Gussmann an Gustav
+               Schwarzkopf, 14. 8. 1901</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <author ref="#pmb2173">Gussmann, Olga</author>
+            <author ref="#pmb2315">Gussmann, Elisabeth</author>
             <editor>
                <persName>Jahnke, Selma</persName>
                <persName>Müller, Martin Anton</persName>
@@ -77,7 +79,7 @@
                         <repository>Deutsches Literaturarchiv</repository>
                         <idno>A:Schnitzler, HS.1985.1.1897</idno>
                      </msIdentifier>
-                     <physDesc><objectDesc><supportDesc><extent><measure unit="karte" quantity="1"/><measure unit="zeichenanzahl" quantity="195"/></extent></supportDesc></objectDesc><handDesc hands="2"><handNote corresp="#pmb2121" medium="bleistift" style="deutsche-kurrent"/><handNote corresp="#pmb2173" medium="bleistift" style="lateinische-kurrent"/></handDesc><additions><incident type="postal"><desc><stamp n="1"><placeName ref="#pmb30">Salzburg-Bahnhof</placeName><date when="1901-06-17">17. 6. 01</date><time>11 A</time></stamp></desc></incident><incident type="postal"><desc><stamp n="2"><placeName ref="#pmb51">Wien 1/1 1</placeName><date when="1901-06-18">18/6. 1901</date><time>9–10½ V.</time><addSpan>bestellt</addSpan></stamp></desc></incident></additions></physDesc>
+                     <physDesc><objectDesc><supportDesc><extent><measure unit="karte" quantity="1"/><measure unit="zeichenanzahl" quantity="104"/></extent></supportDesc></objectDesc><handDesc hands="3"><handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb2121"/><handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb2173"/><handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb2315"/></handDesc><additions><incident type="postal"><desc><stamp n="1"><date when="1901-08-14">14. 8. 0<unclear>1</unclear></date><placeName ref="#pmb40260"><unclear>Bozen</unclear></placeName><time><unclear>2</unclear>N</time></stamp></desc></incident><incident type="postal"><desc><stamp n="2"><placeName ref="#pmb51">Wien 1/1 1</placeName><date when="1901-08-15">15. 8. 01</date><time>11½–1V.</time><addSpan>Bestellt</addSpan></stamp></desc></incident></additions></physDesc>
                   </msDesc>
                </witness>
             </listWit>
@@ -91,28 +93,29 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <persName ref="#pmb2173">Gussmann, Olga</persName>
-               <date when="1901-06-17" n="01">17. 6. 1901</date>
-               <placeName ref="#pmb30">Salzburg</placeName>
+               <persName ref="#pmb2315">Gussmann, Elisabeth</persName>
+               <date when="1901-08-14" n="01">14. 8. 1901</date>
+               <placeName ref="#pmb246116">Ritten</placeName>
             </correspAction>
             <correspAction type="transmitted">
-               <date when="1901-06-17">17. 6. 1901</date>
-               <placeName ref="#pmb30">Salzburg</placeName>
+               <date when="1901-08-14">14. 8. 1901</date>
+               <placeName ref="#pmb40260">Bozen</placeName>
             </correspAction>
             <correspAction type="delivered">
-               <date when="1901-06-18">18. 6. 1901</date>
-               <placeName ref="#pmb51">I., Innere Stadt</placeName>
+               <date when="1901-08-15">15. 8. 1901</date>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
-               <date evidence="conjecture" notBefore="1901-06-18" notAfter="1901-06-22">[18. 6. 1901 – 22. 6. 1901?]</date>
+               <date when="1901-08-15">15. 8. 1901</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_12740">Schwarzkopf, Gustav</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L01129">Brandes an Schnitzler, 16. 6. 1901</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L01130">Saar an Schnitzler, 19. 6. 1901</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04429">Schnitzler, Schnitzler an Schwarzkopf, 17. 4. 1901</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740" target="L04076">Schnitzler, Gussmann, Gussmann an Schwarzkopf, 3. 7. 1901</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01161">Hofmannsthal an Schnitzler, 12. 8. 1901</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L03079">Goldmann an Schnitzler, 15. 8. [1901]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04078">Schnitzler an Schwarzkopf, 10. 8. 1901</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740" target="L04303">Schwarzkopf an Schnitzler, 16. 8. 1901</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -121,53 +124,27 @@
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="HS00048772X_0313"/>
-      <graphic url="HS00048772X_0314"/>
+      <graphic url="HS00048772X_0178"/>
+      <graphic url="HS00048772X_0177"/>
+      <graphic url="HS00048772X_0177"/>
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="HS00048772X_0314"/><hi rend="latintype">Herrn Gustav
-                     Schwarzkopf</hi></addrLine><addrLine><rs type="place" ref="#pmb50"><hi rend="latintype">Wien</hi></rs></addrLine><addrLine><rs type="place" ref="#pmb207301"><hi rend="latintype">I. Tiefer
-                        Graben 23</hi></rs></addrLine></address></div>
-         <div type="image"><p rend="center"><pb facs="HS00048772X_0313"/><hi rend="pre-print"><rs type="place" ref="#pmb363458">Residenz-Platz</rs> mit Hofbrunnen und
-                  Glockenthurm.</hi><space unit="chars" quantity="5"/><hi rend="pre-print"><rs type="place" ref="#pmb30">Salzburg</rs>.</hi></p></div>
-         <div type="writingSession" n="1"><p><pb facs="HS00048772X_0313"/>Herzliche Grüße. Wir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind vorläufig hier geblieben wo es<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chön i<c rendition="#langesS">s</c>t und regnet, was<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich zuweilen miteinander verträgt.</p><closer>Ihr <signed>A. S.</signed></closer></div>
-         <div type="writingSession" n="2"><p><handShift scribe="#pmb2173"/><anchor type="textConst" xml:id="T_L04502-1"/>Herzlichen Gruss. <signed>O.G.</signed><note type="textConst" corresp="T_L04502-1"><rs type="person" ref="#pmb2173">Olga Gussmanns</rs> Gruß findet sich am
-                  oberen Rand der Karte.</note></p></div>
+         <div type="address"><address><addrLine><pb facs="HS00048772X_0178"/>Herrn Gustav  Schwarzkopf</addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb207296">I Tiefer Graben 23</rs>.</addrLine></address></div>
+         <div type="image"><p rend="center"><pb facs="HS00048772X_0177"/><rs type="place" ref="#pmb90090"><hi rend="pre-print">Runkelstein bei Bozen</hi></rs></p></div>
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="HS00048772X_0177"/><date>14/8 901</date></dateline></opener><p>Herzliche Grüße</p><closer>Ihr <signed>Arthur</signed></closer></div>
+         <div type="writingSession" n="2"><closer><handShift scribe="#pmb2173"/>Herzl.<lb/><signed>Olga</signed></closer></div>
+         <div type="writingSession" n="3"><closer><handShift scribe="#pmb2315"/>Schöne Grüße<lb/><signed>L.</signed></closer></div>
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb12740">
-               <persName>
-                  <forename>Gustav</forename>
-                  <surname>Schwarzkopf</surname>
-               </persName>
-               <birth>
-                  <date when="1853-11-07">1853-11-07</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1939-11-13">1939-11-13</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -176,7 +153,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -184,10 +161,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173">
                <persName>
@@ -213,68 +186,59 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2315">
+               <persName>
+                  <forename>Elisabeth</forename>
+                  <surname>Steinrück</surname>
+               </persName>
+               <birth>
+                  <date when="1885-11-19">1885-11-19</date>
+               </birth>
+               <death>
+                  <date when="1920-04-07">1920-04-07</date>
+                  <settlement ref="pmb2318">
+                     <placeName type="pref">Partenkirchen</placeName>
+                     <location>
+                        <geo>47,4956 11,1097</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb12740">
+               <persName>
+                  <forename>Gustav</forename>
+                  <surname>Schwarzkopf</surname>
+               </persName>
+               <birth>
+                  <date when="1853-11-07">1853-11-07</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1939-11-13">1939-11-13</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb207301">
-               <placeName>Tiefer Graben 17</placeName>
+            <place xml:id="pmb40260">
+               <placeName>Bozen</placeName>
+               <placeName type="ort_namensvariante">Bolzano</placeName>
                <location type="coords">
-                  <geo>48,212284 16,367725</geo>
+                  <geo>46,49067 11,33982</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb50825">Tiefer Graben</placeName>
-                  <geo>48,2125 16,368333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-            </place>
-            <place xml:id="pmb30">
-               <placeName>Salzburg</placeName>
-               <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="alternative-name">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg?</placeName>
-               <location type="coords">
-                  <geo>47,80067 13,04532</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg [Land]</placeName>
-                  <geo>47,41667 13,25</geo>
-               </location>
-            </place>
-            <place xml:id="pmb363458">
-               <placeName>Residenzplatz</placeName>
-               <location type="coords">
-                  <geo>47,7984 13,0464</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb30">Salzburg</placeName>
-                  <geo>47,80067 13,04532</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
                </location>
             </place>
             <place xml:id="pmb51">
@@ -283,7 +247,6 @@
                <placeName type="alternative-name">Wien,Innere Stadt</placeName>
                <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
                <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
-               <placeName type="legacy-name-merge">Inner city</placeName>
                <location type="coords">
                   <geo>48,20769 16,37049</geo>
                </location>
@@ -294,6 +257,71 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb246116">
+               <placeName>Ritten</placeName>
+               <location type="coords">
+                  <geo>46,54039 11,457027</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb207296">
+               <placeName>Tiefer Graben 23</placeName>
+               <location type="coords">
+                  <geo>48,213038 16,368738</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50825">Tiefer Graben</placeName>
+                  <geo>48,2125 16,368333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+            </place>
+            <place xml:id="pmb90090">
+               <placeName>Castel Roncolo</placeName>
+               <placeName type="ort_namensvariante">Schloss Runkelstein</placeName>
+               <location type="coords">
+                  <geo>46,51754 11,35888</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb246116">Ritten</placeName>
+                  <geo>46,54039 11,457027</geo>
                </location>
             </place>
          </listPlace>

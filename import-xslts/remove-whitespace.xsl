@@ -4,6 +4,6 @@
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="no"/>
     <xsl:template
-        match="text()[normalize-space(.) = '' and (ancestor::tei:div[parent::tei:body] or ancestor::tei:physDesc)]"
+        match="text()[normalize-space(.) = '' and ancestor::tei:div[parent::tei:body]]"
     />
 </xsl:stylesheet>

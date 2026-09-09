@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04438">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04418">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1899-09-24" n="02">1899-09-24</title>
-            <title level="a">Arthur Schnitzler an Gustav Schwarzkopf, 24. 9. 1899</title>
+            <title type="iso-date" when-iso="1899-09-19" n="02">1899-09-19</title>
+            <title level="a">Arthur Schnitzler und Paul Goldmann an Gustav Schwarzkopf, XXXX</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
+            <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <persName>Jahnke, Selma</persName>
                <persName>Müller, Martin Anton</persName>
@@ -81,40 +82,31 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="323"/>
+                                 <measure unit="zeichenanzahl" quantity="108"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc hands="1">
-                           <handNote medium="bleistift" style="deutsche-kurrent"/>
+                        <handDesc hands="2">
+                           <handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb2121"/>
+                           <handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb11485"/>
                         </handDesc>
                         <additions>
                            <incident type="postal">
                               <desc>
                                  <stamp n="1">
-                                    <placeName ref="#pmb883">Wies<supplied>baden</supplied>
-                                    </placeName>
-                                    <date when="1899-09-24">24. 9. 99</date>
-                                    <time>5–6</time>
+                                    <date when="1899-09-19">
+                                       <unclear>1</unclear>9. 9. 99</date>
+                                    <placeName ref="#pmb146">Frankfurt (Main) 1</placeName>
+                                    <time>6–7</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
                                  <stamp n="2">
-                                    <placeName ref="#pmb993">Bucuresci C<unclear>ursa</unclear>
-                                    </placeName>
-                                    <date when="1899-09-27">27 <supplied>9 99</supplied>
-                                    </date>
-                                 </stamp>
-                              </desc>
-                           </incident>
-                           <incident type="postal">
-                              <desc>
-                                 <stamp n="3">
                                     <placeName ref="#pmb51">Wien 1/1 1</placeName>
-                                    <date when="1899-09-29">29. 9. 99</date>
-                                    <time>8–9½V.</time>
+                                    <date when="1899-09-22">22. 9. 99</date>
+                                    <time>11½V–1N.</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
                               </desc>
@@ -133,32 +125,29 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1899-09-24" n="02">24. 9. 1899</date>
-               <placeName ref="#pmb883">Wiesbaden</placeName>
+               <persName ref="#pmb11485">Goldmann, Paul</persName>
+               <date when="1899-09-19" n="02">19. 9. 1899</date>
+               <placeName ref="#pmb146">Frankfurt am Main</placeName>
             </correspAction>
             <correspAction type="transmitted">
-               <date when="1899-09-24">24. 9. 1899</date>
-               <placeName ref="#pmb883">Wiesbaden</placeName>
-            </correspAction>
-            <correspAction type="redirected">
-               <date when="1899-09-27">27. 9. 1899</date>
-               <placeName ref="#pmb993">Bukarest</placeName>
+               <date when="1899-09-19">19. 9. 1899</date>
+               <placeName ref="#pmb146">Frankfurt am Main</placeName>
             </correspAction>
             <correspAction type="delivered">
-               <date when="1899-09-29">29. 9. 1899</date>
+               <date when="1899-09-22">22. 9. 1899</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
-               <date when="1899-09-29">29. 9. 1899</date>
+               <date when="1899-09-22">22. 9. 1899</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_12740">Schwarzkopf, Gustav</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00980">Schnitzler an Beer-Hofmann, 24. 9. 1899</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L02887">Goldmann an Schnitzler, 25. 9. [1899]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04418">Schnitzler, Goldmann an Schwarzkopf, 19. 9. 1899</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740" target="L04093">Schnitzler an Schwarzkopf, 29. 9. 1899</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00977">Schnitzler an Beer-Hofmann, 19. 9. 1899</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00978">Beer-Hofmann, Hofmannsthal an Schnitzler, 19. 9. 1899</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04423">Schnitzler an Schwarzkopf, 18. 9. 1899</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740" target="L04438">Schnitzler an Schwarzkopf, 24. 9. 1899</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -167,16 +156,17 @@
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="HS00048772X_0182"/>
-      <graphic url="HS00048772X_0181"/>
-      <graphic url="HS00048772X_0181"/>
+      <graphic url="HS00048772X_0142"/>
+      <graphic url="HS00048772X_0141"/>
+      <graphic url="HS00048772X_0141"/>
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="HS00048772X_0182"/>Herrn Gustav Schwarzkopf</addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb207296">I. Tiefer Graben 23</rs>.</addrLine></address></div>
-         <div type="image"><seg><seg rend="left"><pb facs="HS00048772X_0181"/><hi rend="pre-print"><rs type="place" ref="#pmb364445">Nerothal</rs> mit <rs type="place" subtype="implied" ref="#pmb364447">Kapelle</rs></hi></seg><seg rend="right"><rs type="place" ref="#pmb883"><hi rend="pre-print">Wiesbaden</hi></rs></seg></seg><seg rend="right"><hi rend="pre-print"><rs type="person" ref="#pmb364449">J. Jacob</rs>, Kgl. Hof-Phot.</hi></seg><seg rend="right"><hi rend="pre-print"><rs type="place" ref="#pmb883">Wiesbaden</rs><space unit="chars" quantity="1"/><date>1898</date>.</hi></seg></div>
-         <div type="writingSession" n="1"><p><pb facs="HS00048772X_0181"/>Bin <anchor type="commentary" xml:id="K_L04438-1"/>heut<note type="commentary" corresp="K_L04438-1"><ref type="wienerschnitzler" target="1899-09-24" subtype="Cf"/>.</note> aus <rs type="place" ref="#pmb146">Frkf.</rs> über<c rendition="#langesS">s</c>iedelt, werde ver<c rendition="#langesS">s</c>uchen etwa 8 Tage ganz allein hier zubleiben u
-               zu arbeiten. Bitte la<c rendition="#langesS">s</c><c rendition="#langesS">s</c>en Sie was von <c rendition="#langesS">s</c>ich hören<supplied>.</supplied> Ich wohne <hi rend="latintype"><rs type="place" ref="#pmb43055">Parkhotel</rs></hi>. – <rs type="place" ref="#pmb45258">München</rs>, <rs type="place" ref="#pmb44172">Nürnberg</rs> – war <c rendition="#langesS">s</c>ehr hüb<c rendition="#langesS">s</c>ch. <anchor type="commentary" xml:id="K_L04438-2"/><rs type="person" ref="#pmb11485">Paul G.</rs> i<c rendition="#langesS">s</c>t nach <rs type="place" ref="#pmb263">Florenz</rs><note type="commentary" corresp="K_L04438-2"><ref type="schnitzler-briefe" target="L02888" subtype="Cf"/>.</note> gerei<c rendition="#langesS">s</c>t. Grüßen Sie wer <c rendition="#langesS">s</c>ich meiner erinnert.</p><closer>Herzlich<c rendition="#langesS">s</c>t Ihr<lb/><signed>A. S.</signed></closer></div>
+         <div type="address"><address><addrLine><pb facs="HS00048772X_0142"/>Herrn <hi rend="latintype">Gustav
+                     Schwarzkopf.</hi></addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb207296"><hi rend="latintype">I. Tiefer Graben 23</hi></rs>.</addrLine></address></div>
+         <div type="image"><seg><seg rend="left"><pb facs="HS00048772X_0141"/><hi rend="pre-print">Blick vom <rs type="place" ref="#pmb364304">Deutschherrnhaus</rs>.</hi></seg><seg rend="right"><rs type="place" ref="#pmb146"><hi rend="pre-print">Frankfurt a. M.</hi></rs></seg></seg></div>
+         <div type="writingSession" n="1"><closer><pb facs="HS00048772X_0141"/>Herzliche Grüße!<lb/><signed>ArthurSchn.</signed></closer></div>
+         <div type="writingSession" n="2"><p><handShift scribe="#pmb11485"/>Herzlichen Gruß!</p><closer><signed>Dr. Paul Goldmann</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -196,6 +186,30 @@
                </birth>
                <death>
                   <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb11485">
+               <persName>
+                  <forename>Paul</forename>
+                  <surname>Goldmann</surname>
+               </persName>
+               <birth>
+                  <date when="1865-01-31">1865-01-31</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
+                     <location>
+                        <geo>51,10773 17,03533</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1935-09-25">1935-09-25</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -228,61 +242,18 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb364449">
-               <persName>
-                  <forename>Julius</forename>
-                  <surname>Jacob</surname>
-               </persName>
-            </person>
-            <person xml:id="pmb11485">
-               <persName>
-                  <forename>Paul</forename>
-                  <surname>Goldmann</surname>
-               </persName>
-               <birth>
-                  <date when="1865-01-31">1865-01-31</date>
-                  <settlement ref="pmb677">
-                     <placeName type="pref">Breslau</placeName>
-                     <location>
-                        <geo>51,10773 17,03533</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1935-09-25">1935-09-25</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb883">
-               <placeName>Wiesbaden</placeName>
-               <placeName type="alternative-name">Aquae Mattiacorum</placeName>
-               <placeName type="alternative-name">Landeshauptstadt Wiesbaden</placeName>
-               <placeName type="alternative-name">Wisibada</placeName>
-               <placeName type="alternative-name">Stadt Wiesbaden</placeName>
+            <place xml:id="pmb146">
+               <placeName>Frankfurt am Main</placeName>
+               <placeName type="ort_namensvariante">Frankfurt a. Main</placeName>
+               <placeName type="ort_namensvariante">Frankfurt/Main</placeName>
                <location type="coords">
-                  <geo>50,08258 8,24932</geo>
+                  <geo>50,11552 8,68417</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb993">
-               <placeName>Bukarest</placeName>
-               <placeName type="legacy-name-merge">Bucharest</placeName>
-               <location type="coords">
-                  <geo>44,432 26,106</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb378">Rumänien</placeName>
-                  <geo>46,0 25,0</geo>
                </location>
             </place>
             <place xml:id="pmb51">
@@ -339,85 +310,14 @@
                   <geo>48,20769 16,37049</geo>
                </location>
             </place>
-            <place xml:id="pmb364445">
-               <placeName>Nerotalanlagen</placeName>
+            <place xml:id="pmb364304">
+               <placeName>Deutschordenskirche</placeName>
                <location type="coords">
-                  <geo>50,09361111111111 8,2325</geo>
+                  <geo>50,1064 8,68833</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb883">Wiesbaden</placeName>
-                  <geo>50,08258 8,24932</geo>
-               </location>
-            </place>
-            <place xml:id="pmb146">
-               <placeName>Frankfurt am Main</placeName>
-               <placeName type="ort_namensvariante">Frankfurt a. Main</placeName>
-               <placeName type="ort_namensvariante">Frankfurt/Main</placeName>
-               <location type="coords">
+                  <placeName ref="pmb146">Frankfurt am Main</placeName>
                   <geo>50,11552 8,68417</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb43055">
-               <placeName>Hôtel du Parc &amp; Bristol</placeName>
-               <location type="coords">
-                  <geo>50,08161 8,24473</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb883">Wiesbaden</placeName>
-                  <geo>50,08258 8,24932</geo>
-               </location>
-            </place>
-            <place xml:id="pmb45258">
-               <placeName>München</placeName>
-               <placeName type="legacy-name-merge">München?</placeName>
-               <placeName type="legacy-name-merge">Munich</placeName>
-               <placeName type="alternative-name">Monacho</placeName>
-               <location type="coords">
-                  <geo>48,13743 11,57549</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb314">Bayern</placeName>
-                  <geo>49,0 11,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb44172">
-               <placeName>Nürnberg</placeName>
-               <placeName type="alternative-name">Nürenberg</placeName>
-               <location type="coords">
-                  <geo>49,45421 11,07752</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb263">
-               <placeName>Florenz</placeName>
-               <placeName type="alternative-name">Florence</placeName>
-               <location type="coords">
-                  <geo>43,77925 11,24626</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb364447" ana="implied">
-               <placeName>Russisch-Orthodoxe Kirche [Wiesbaden]</placeName>
-               <location type="coords">
-                  <geo>50,0975 8,234722</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb883">Wiesbaden</placeName>
-                  <geo>50,08258 8,24932</geo>
                </location>
             </place>
          </listPlace>

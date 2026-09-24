@@ -190,7 +190,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -199,7 +199,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -207,10 +207,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb40394" ana="implied">
                <persName>
@@ -218,7 +214,7 @@
                   <surname>Schwarz</surname>
                </persName>
                <birth>
-                  <date when="1828-01-01" notAfter="1828-12-31" notBefore="1828-01-01">1828</date>
+                  <date notBefore="1828-01-01" when="1828-01-01" notAfter="1828-12-31">1828</date>
                   <settlement ref="pmb40817">
                      <placeName type="pref">Boskovice</placeName>
                      <location>
@@ -236,29 +232,79 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb12201">
+               <persName>
+                  <forename>Guy de</forename>
+                  <surname>Maupassant</surname>
+               </persName>
+               <birth>
+                  <date when="1850-08-05">1850-08-05</date>
+                  <settlement ref="pmb39903">
+                     <placeName type="pref">Tourville-sur-Arques</placeName>
+                     <location>
+                        <geo>49,85926 1,10238</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1893-07-07">1893-07-07</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb4323">
+               <persName>
+                  <forename>Jacques</forename>
+                  <surname>Normand</surname>
+               </persName>
+               <birth>
+                  <date when="1848-11-25">1848-11-25</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-01-01" notAfter="1931-12-31">1931</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb154426">
+               <persName>
+                  <forename>Leo</forename>
+                  <surname>Gerhard</surname>
+               </persName>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb31971">
-               <title type="main">Musotte. Schauspiel in drei Akten</title>
-               <author role="hat-geschaffen" ref="pmb12201">Maupassant, Guy de</author>
-               <author role="hat-geschaffen" ref="pmb4323">Normand, Jacques</author>
-               <author role="hat-ubersetzt" ref="pmb154426">Gerhard, Leo</author>
+               <title>Musotte. Schauspiel in drei Akten</title>
+               <author ref="pmb12201" role="hat-geschaffen">Maupassant, Guy de</author>
+               <author ref="pmb4323" role="hat-geschaffen">Normand, Jacques</author>
+               <author ref="pmb154426" role="hat-ubersetzt">Gerhard, Leo</author>
             </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -267,17 +313,16 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
             </place>
             <place xml:id="pmb833">
                <placeName>Brünn</placeName>
                <placeName type="alternative-name">Brunna</placeName>
-               <placeName type="legacy-name-merge">Brünn</placeName>
                <placeName type="alternative-name">Eburodunum</placeName>
                <placeName type="namensvariante">Brno</placeName>
-               <placeName type="alternative-name">Brno</placeName>
-               <placeName type="alternative-name">Brünn</placeName>
-               <placeName type="legacy-name-merge">Brno</placeName>
-               <placeName type="legacy-name-merge">Brünn</placeName>
                <placeName type="legacy-name-merge">Brünn (Mähren)</placeName>
                <location type="coords">
                   <geo>49,19522 16,60796</geo>

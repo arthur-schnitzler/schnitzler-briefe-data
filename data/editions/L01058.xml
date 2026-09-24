@@ -3,9 +3,9 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1900-07-18" n="01">1900-07-18</title>
+            <title type="iso-date" when-iso="1900-07-17" n="01">1900-07-17</title>
             <title level="a">Hugo von Hofmannsthal und Richard Beer-Hofmann an Arthur Schnitzler,
-               18. 7. 1900</title>
+               [17. oder 18]. 7. 1900</title>
             <author ref="#pmb11740">Hofmannsthal, Hugo von</author>
             <author ref="#pmb10863">Beer-Hofmann, Richard</author>
             <editor>
@@ -94,18 +94,18 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb30">Salzburg-Stadt</placeName>
-                                    <date>18 7 00</date>
+                                    <date when="1900-07-18">18 7 00</date>
                                     <time>11–</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb483">Reichenau N. Ö.</placeName>
-                                    <date>
+                                    <date when="1900-07-19">
                                        <unclear>19</unclear> 7 00</date>
                                  </stamp>
                               </desc>
@@ -150,22 +150,30 @@
             <correspAction type="sent">
                <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
-               <date when="1900-07-18" n="01">18. 7. 1900</date>
+               <date n="01" notBefore="1900-07-17" notAfter="1900-07-18">[17. oder 18]. 7. 1900</date>
                <placeName ref="#pmb30">Salzburg</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1900-07-18">18. 7. 1900</date>
+               <placeName ref="#pmb30">Salzburg</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1900-07-19">19. 7. 1900</date>
+               <placeName ref="#pmb483">Reichenau an der Rax</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1900-07-19">
                   <unclear>19</unclear>. 7. 1900</date>
-               <placeName ref="#pmb483">Reichenau an der Rax</placeName>
+               <placeName ref="#pmb44982">Kurhaus Rudolfsbad</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo von</ref>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L01057">Schnitzler an Hofmannsthal, 17. 7. 1900</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L02924">Goldmann an Schnitzler, 18. 7. [1900]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11740" target="L01057">Schnitzler an Hofmannsthal, 17. 7. 1900</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11740" target="L01061">Hofmannsthal an Schnitzler, 27. 7. 1900</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01056">Hofmannsthal an Schnitzler, 15. 7. 1900</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01057">Schnitzler an Hofmannsthal, 17. 7. 1900</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11740" target="L01056">Hofmannsthal an Schnitzler, 15. 7. 1900</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11740" target="L01057">Schnitzler an Hofmannsthal, 17. 7. 1900</ref>
                <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L01055">Schnitzler an Beer-Hofmann, 15. 7. 1900</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L01059">Schnitzler an Beer-Hofmann, 26. 7. 1900</ref>
             </correspContext>
@@ -176,6 +184,7 @@
          <change who="GHS" when="2020-03-28">Durchsicht</change>
          <change who="MAM" when="2020-04-28">Durchsicht</change>
          <change when="2020-04-29" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

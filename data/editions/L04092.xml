@@ -92,9 +92,9 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb59">Wien 9/3</placeName>
-                                    <date>1. 2. <supplied>0</supplied>0</date>
+                                    <date when="1900-02-01">1. 2. <supplied>0</supplied>0</date>
                                     <time>5–6N</time>
                                  </stamp>
                               </desc>
@@ -113,13 +113,17 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1900-02-01" n="02">1. 2. [1900?]</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <date when="1900-02-01" n="02">1. 2. [1900]</date>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1900-02-01">1. 2. 1900</date>
+               <placeName ref="#pmb59">Wien 9/3</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
-               <date evidence="conjecture" notBefore="1900-02-01" notAfter="1900-02-04">[1. 2. 1900 – 4. 2. 1900?]</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <date evidence="conjecture" notBefore="1900-02-01" notAfter="1900-02-04">[1. 2. 1900 – 2. 2. 1900?]</date>
+               <placeName ref="#pmb207296">Tiefer Graben 23</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_12740">Schwarzkopf, Gustav</ref>
@@ -132,6 +136,7 @@
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2025-12-10">Export aus Transkribus</change>
+         <change who="SJ" when="2026-09-21">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -141,7 +146,7 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-00096-B-000-00151"/>Herrn <hi rend="latintype">Gustav Schwarzkopf</hi></addrLine><addrLine><rs type="place" ref="#pmb51"><hi rend="latintype">Wien</hi></rs></addrLine><addrLine><rs type="place" ref="#pmb207296">I. Tiefer Graben 23</rs></addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-00096-B-000-00152"/><salute>lieber Gu<c rendition="#langesS">s</c>tav,</salute> die <anchor type="commentary" xml:id="K_L04092-1"/><rs type="event" ref="#pmb141489" subtype="implied"><rs type="work" ref="#pmb32426" subtype="implied">Vorle<c rendition="#langesS">s</c>g</rs></rs><note type="commentary" corresp="K_L04092-1"><rs type="person" ref="#pmb2167">Salten</rs> las sein Stück <rs type="work" ref="#pmb32426">Der Gemeine</rs> vor.</note> i<c rendition="#langesS">s</c>t morgen
+         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-00096-B-000-00152"/><salute>lieber Gu<c rendition="#langesS">s</c>tav,</salute> die <anchor type="commentary" xml:id="K_L04092-1"/><rs type="event" ref="#pmb141489" subtype="implied"><rs type="work" ref="#pmb32426" subtype="implied">Vorle<c rendition="#langesS">s</c>g</rs></rs><note type="commentary" corresp="K_L04092-1"><rs type="person" ref="#pmb2167">Salten</rs> las sein Stück <rs type="work" ref="#pmb32426">Der Gemeine</rs> vor, <ref type="schnitzler-tagebuch" target="1900-02-03" subtype="cf"/>.</note> i<c rendition="#langesS">s</c>t morgen
             etwas <c rendition="#langesS">s</c>päter; <hi rend="underline" n="1"><time>6 Uhr</time></hi>.</p><closer>herzlich<c rendition="#langesS">s</c>t Ihr<lb/><signed>Arthur</signed></closer></div>
       </body>
       <back>

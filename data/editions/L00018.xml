@@ -93,9 +93,9 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb50">Wien</placeName>
-                                    <date>6 6 91</date>
+                                    <date when="1891-06-06">6 6 91</date>
                                     <time>4–5 N</time>
                                  </stamp>
                               </desc>
@@ -155,7 +155,7 @@
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date evidence="conjecture" notBefore="1891-06-07" notAfter="1891-06-11">[7. 6. 1891
                   – 11. 6. 1891?]</date>
-               <placeName ref="#pmb833">Brünn</placeName>
+               <placeName ref="#pmb40154">Hotel Neuhauser</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -171,6 +171,7 @@
          <change who="GHS" when="2019-09-06">finalisiert, soweit mir möglich</change>
          <change who="MAM" when="2019-09-17">Index check</change>
          <change who="MAM" when="2019-09-23">Finalisiert</change>
+         <change who="MAM" when="2026-09-14">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -203,6 +204,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -226,34 +251,6 @@
                      </location>
                   </settlement>
                </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2563">
                <persName>
@@ -306,12 +303,34 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33688">
-               <title type="main">Aus der Kaffeehausecke</title>
+               <title>Aus der Kaffeehausecke</title>
                <title type="legacy-name-merge">Aus der Kaffeehausecke</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb40154">
                <placeName>Hotel Neuhauser</placeName>
                <location type="coords">
@@ -320,6 +339,24 @@
                <location type="located_in_place">
                   <placeName ref="pmb833">Brünn</placeName>
                   <geo>49,19522 16,60796</geo>
+               </location>
+            </place>
+            <place xml:id="pmb833">
+               <placeName>Brünn</placeName>
+               <placeName type="alternative-name">Brunna</placeName>
+               <placeName type="alternative-name">Eburodunum</placeName>
+               <placeName type="namensvariante">Brno</placeName>
+               <placeName type="legacy-name-merge">Brünn (Mähren)</placeName>
+               <location type="coords">
+                  <geo>49,19522 16,60796</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43430">Tschechien</placeName>
+                  <geo>49,75 15,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40823">Mähren</placeName>
+                  <geo>49,5 17,0</geo>
                </location>
             </place>
             <place xml:id="pmb40823">
@@ -335,51 +372,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb40822">Olomoucký kraj</placeName>
                   <geo>49,75 17,16667</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb833">
-               <placeName>Brünn</placeName>
-               <placeName type="alternative-name">Brunna</placeName>
-               <placeName type="legacy-name-merge">Brünn</placeName>
-               <placeName type="alternative-name">Eburodunum</placeName>
-               <placeName type="namensvariante">Brno</placeName>
-               <placeName type="alternative-name">Brno</placeName>
-               <placeName type="alternative-name">Brünn</placeName>
-               <placeName type="legacy-name-merge">Brno</placeName>
-               <placeName type="legacy-name-merge">Brünn</placeName>
-               <placeName type="legacy-name-merge">Brünn (Mähren)</placeName>
-               <location type="coords">
-                  <geo>49,19522 16,60796</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43430">Tschechien</placeName>
-                  <geo>49,75 15,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40823">Mähren</placeName>
-                  <geo>49,5 17,0</geo>
                </location>
             </place>
          </listPlace>

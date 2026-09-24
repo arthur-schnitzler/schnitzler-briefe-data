@@ -80,7 +80,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="kartenbrief" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="313"/>
+                                 <measure unit="zeichenanzahl" quantity="312"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -90,7 +90,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb46000">Grundlsee</placeName>
                                     <date when="1894-07-20">20/7</date>
                                  </stamp>
@@ -98,7 +98,7 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb213">Ischl</placeName>
                                     <date when="1894-07-20">20 7 94</date>
                                     <time>12M</time>
@@ -111,12 +111,10 @@
                                  </quote>«</desc>
                            </incident>
                            <incident type="archival" rend="roter-buntstift">
-                              <desc>von unbekannter Hand nummeriert:
-                                    »<quote>24</quote>«</desc>
+                              <desc>von unbekannter Hand nummeriert: »<quote>24</quote>«</desc>
                            </incident>
                            <incident type="archival" rend="bleistift">
-                              <desc>von unbekannter Hand nummeriert:
-                                    »<quote>24</quote>«</desc>
+                              <desc>von unbekannter Hand nummeriert: »<quote>24</quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -150,12 +148,20 @@
             <correspAction type="sent">
                <persName ref="#pmb10815">Bahr, Hermann</persName>
                <date when="1894-07-20" n="01">20. 7. 1894</date>
-               <placeName ref="#pmb46000">Grundlsee</placeName>
+               <placeName ref="#pmb46000">Grundlsee [Gemeinde]</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1894-07-20">20. 7. 1894</date>
+               <placeName ref="#pmb46000">Grundlsee [Gemeinde]</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1894-07-20">20. 7. 1894</date>
+               <placeName ref="#pmb213">Bad Ischl</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1894-07-20">20. 7. 1894</date>
-               <placeName ref="#pmb213">Bad Ischl</placeName>
+               <placeName ref="#pmb414">Hotel und Pension Rudolfshöhe (Leopold Petter)</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10815">Bahr, Hermann</ref>
@@ -172,6 +178,7 @@
          <change who="MAM" when="2018-07-15">Überführt aus Bahr–Schnitzler-Daten</change>
          <change who="GHS" when="2019-11-10">finalisiert</change>
          <change when="2019-11-11" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-17">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -181,9 +188,9 @@
    <text>
       <body>
          <div type="address"><address><addrLine><hi rend="latintype"><pb facs="MS-B-00005-B-000-00036"/>Herrn D<hi rend="superscript">r</hi> Arthur
-                  Schnitzler</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb414" type="place">Pension Leop. Petta</rs><space unit="chars" quantity="1"/><rs ref="#pmb414" type="place">Rudolfshöhe</rs></hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb213" type="place">Ischl</rs></hi></addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="MS-B-00005-B-000-00037"/><salute>Lieber Thuri!</salute> Ich komme <date>Sam<c rendition="#langesS">s</c>tag</date> mit dem Zuge, der
-                  <time>9 Uhr 40</time> von <rs ref="#pmb415" type="place"><hi rend="latintype">Aussee</hi></rs> geht. Da<c rendition="#gemination-n">nn</c><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chaue ich ins <rs ref="#pmb416" type="place"><hi rend="latintype">Café Walter</hi></rs> u.<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>uche zunäch<c rendition="#langesS">s</c>t einen <hi rend="latintype">Masseur</hi> oder <hi rend="latintype">Masseuse</hi>, da ich wahn<c rendition="#langesS">s</c>innige rheumat. Kreuz<c rendition="#langesS">s</c>chmerzen habe.
+                     Schnitzler</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb414" type="place">Pension Leop. Petta</rs><space unit="chars" quantity="1"/><rs ref="#pmb414" type="place">Rudolfshöhe</rs></hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb213" type="place">Ischl</rs></hi></addrLine></address></div>
+         <div type="writingSession" n="1"><p><pb facs="MS-B-00005-B-000-00037"/><salute>Lieber Thuri!</salute> Ich <anchor type="commentary" xml:id="K_L00357-1"/>komme <date>Sam<c rendition="#langesS">s</c>tag</date><note type="commentary" corresp="K_L00357-1"><ref type="schnitzler-tagebuch" target="1894-07-21" subtype="Cf"/>.</note> mit dem
+               Zuge, der <time>9 Uhr 40</time> von <rs ref="#pmb415" type="place"><hi rend="latintype">Aussee</hi></rs> geht. Da<c rendition="#gemination-n">nn</c><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chaue ich ins <rs ref="#pmb416" type="place"><hi rend="latintype">Café Walter</hi></rs> u.<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>uche zunäch<c rendition="#langesS">s</c>t einen <hi rend="latintype">Masseur</hi> oder <hi rend="latintype">Masseuse</hi>, da ich wahn<c rendition="#langesS">s</c>innige rheumat. Kreuz<c rendition="#langesS">s</c>chmerzen habe.
                Dann bleibe ich bei euch bis <time>6 Uhr Abds</time>.</p><closer>Herzlichst Dein<lb/><signed>Hermann</signed></closer></div>
       </body>
       <back>
@@ -218,7 +225,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -227,7 +234,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -235,17 +242,22 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb46000">
+               <placeName>Grundlsee [Gemeinde]</placeName>
+               <placeName type="legacy-name">Grundlsee</placeName>
+               <location type="coords">
+                  <geo>47,61667 13,81667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
             <place xml:id="pmb213">
                <placeName>Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
                <location type="coords">
                   <geo>47,71109 13,61893</geo>
                </location>
@@ -272,9 +284,6 @@
             <place xml:id="pmb415">
                <placeName>Bad Aussee</placeName>
                <placeName type="ort_fruherer-name">Markt Aussee</placeName>
-               <placeName type="legacy-name-merge">Bad Aussee</placeName>
-               <placeName type="legacy-name-merge">Bad Aussee</placeName>
-               <placeName type="legacy-name-merge">Markt Aussee</placeName>
                <location type="coords">
                   <geo>47,60998 13,78243</geo>
                </location>
@@ -292,18 +301,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb213">Bad Ischl</placeName>
                   <geo>47,71109 13,61893</geo>
-               </location>
-            </place>
-            <place xml:id="pmb46000">
-               <placeName>Grundlsee [Gemeinde]</placeName>
-               <placeName type="legacy-name">Grundlsee</placeName>
-               <placeName type="legacy-name-merge">Grundlsee</placeName>
-               <location type="coords">
-                  <geo>47,61667 13,81667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

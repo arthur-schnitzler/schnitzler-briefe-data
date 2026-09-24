@@ -96,19 +96,19 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb50">Wien</placeName>
-                                    <date>30 IX 01</date>
+                                    <date when="1901-09-30">30 IX 01</date>
                                     <time>11 10</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb51">
                                        <pb facs="1901_AS_RBH_2_00053"/>Wien 1/1</placeName>
-                                    <date>30 IX 01</date>
+                                    <date when="1901-09-30">30 IX 01</date>
                                     <time>11 30</time>
                                  </stamp>
                               </desc>
@@ -148,13 +148,21 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1901-09-30" n="01">30. 9. 1901</date>
+               <date n="01" when="1901-09-30">30. 9. 1901</date>
                <placeName ref="#pmb50">Wien</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1901-09-30">30. 9. 1901</date>
+               <placeName ref="#pmb50">Wien</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1901-09-30">30. 9. 1901</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1901-09-30">30. 9. 1901</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb190427">Wollzeile 15 (»Berthahof«)</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -170,6 +178,7 @@
          <change who="MAM" when="2020-05-23">Index check</change>
          <change who="GHS" when="2020-07-04">Durchsicht</change>
          <change who="MAM" when="2020-11-23">Durchsicht</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -183,7 +192,7 @@
                      Beer-Hofmann</hi></addrLine><addrLine><rs ref="#pmb50" type="place">Wien</rs></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb190427" type="place">I. Wollzeile 15</rs></hi>.</addrLine></address></div>
          <div type="writingSession" n="1"><p><pb facs="1901_AS_RBH_2_00054"/><salute>lieber Richard,</salute> wie<c rendition="#langesS">s</c>o hört u<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ieht man nichts von Ihnen? Neulich war
                ich bei Ihnen, Sie waren in <rs ref="#pmb173" type="place">Rodaun</rs>. Wollen Sie
-               heut mit mir zu <hi rend="underline" n="1"><rs ref="#pmb42026" type="work">Hannah Jagert</rs>? Ich habe 2 Sitze</hi>.
+               heut mit mir zu <hi rend="underline" n="1"><rs type="event" ref="#pmb42028" subtype="implied"><rs ref="#pmb42026" type="work">Hannah Jagert</rs></rs>? Ich habe 2 Sitze</hi>.
                Telephoniren Sie mir etwa <time>2</time>, oder pneumatisiren Sie. <add place="inline">(Rendezvous wäre im Foyer unten.)</add></p><closer>Herzlich<c rendition="#langesS">s</c>t Ihr<signed>Arthur</signed></closer></div>
       </body>
       <back>
@@ -321,6 +330,19 @@
                </location>
             </place>
          </listPlace>
+         <listEvent>
+            <event xml:id="pmb42028" ana="implied">
+               <eventName n="Theateraufführung">Aufführung von Hanna Jagert, 30.9.1901</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb20">Volkstheater</placeName>
+                     <location>
+                        <geo>48,205142 16,3566</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+         </listEvent>
       </back>
    </text>
 </TEI>

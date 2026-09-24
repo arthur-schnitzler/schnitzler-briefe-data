@@ -93,19 +93,19 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb51">Wien 1/1 1</placeName>
-                                    <date>19. 6. 00</date>
+                                    <date when="1900-06-19">19. 6. 00</date>
                                     <time>11–12N</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb34401">
                                        <pb facs="1900_AS_RBH_2_00010"/>Alt-Aussee</placeName>
-                                    <date>20/6 00</date>
+                                    <date when="1900-06-20">20/6 00</date>
                                  </stamp>
                               </desc>
                            </incident>
@@ -142,6 +142,14 @@
                <date when="1900-06-19" n="01">19. 6. 1900</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1900-06-19">19. 6. 1900</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1900-06-20">20. 6. 1900</date>
+               <placeName ref="#pmb34401">Altaussee</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1900-06-20">20. 6. 1900</date>
@@ -162,6 +170,7 @@
          <change who="GHS" when="2020-06-30">Durchsicht</change>
          <change who="MAM" when="2020-10-02">Durchsicht</change>
          <change when="2020-10-03" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

@@ -90,7 +90,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb849">Konstanz–Basel Bahnpost</placeName>
                                     <addSpan>Zug 1627</addSpan>
                                     <date when="1904-02-13">13/2 04</date>
@@ -107,7 +107,7 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="3">
+                                 <stamp n="3" type="delivery">
                                     <date when="1904-02-15">
                                        <gap unit="chars" quantity="2" reason="illegible"/>
                                        <supplied>/2</supplied> 04</date>
@@ -171,7 +171,7 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1904-02-14">14. 2. 1904</date>
-               <placeName ref="#pmb168">Berlin</placeName>
+               <placeName ref="#pmb3">Deutsches Theater Berlin</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10815">Bahr, Hermann</ref>
@@ -411,6 +411,19 @@
                </location>
             </place>
          </listPlace>
+         <listEvent>
+            <event xml:id="pmb35272" ana="implied">
+               <eventName n="Theateruraufführung">Uraufführung von Der einsame Weg, 13.2.1904</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb3">Deutsches Theater Berlin</placeName>
+                     <location>
+                        <geo>52,524444 13,382222</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+         </listEvent>
       </back>
    </text>
 </TEI>

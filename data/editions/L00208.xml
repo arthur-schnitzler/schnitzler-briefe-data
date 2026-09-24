@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="kuvert" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="912"/>
+                                 <measure unit="zeichenanzahl" quantity="911"/>
                               </extent>
                               <support>gedruckte Todesanzeige, Umschlag mit Trauerrand</support>
                            </supportDesc>
@@ -110,9 +110,9 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
-                                    <placeName ref="#pmb50">Wien 1/1</placeName>
-                                    <date>3. 5. 93</date>
+                                 <stamp n="1" type="transmission">
+                                    <placeName ref="#pmb51">Wien 1/1</placeName>
+                                    <date when="1893-05-03">3. 5. 93</date>
                                     <time>3–4 N</time>
                                  </stamp>
                               </desc>
@@ -132,12 +132,17 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1893-05-03" n="01">3. 5. 1893</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168765">Wohnung und Ordination Johann Schnitzler Burgring 1</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1893-05-03">3. 5. 1893</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date evidence="conjecture" notBefore="1893-05-03" notAfter="1893-05-07">[3. 5. 1893
                   – 7. 5. 1893?]</date>
+               <placeName ref="#pmb190427">Wollzeile 15 (»Berthahof«)</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -153,6 +158,7 @@
          <change who="MAM" when="2019-09-27">angelegt</change>
          <change when="2019-09-28" who="MAM">Index check</change>
          <change when="2019-09-29" who="GHS">finalisiert</change>
+         <change who="MAM" when="2026-09-16">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -174,6 +180,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -222,30 +252,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb12698">
-               <persName>
-                  <forename>Julius</forename>
-                  <surname>Schnitzler</surname>
-               </persName>
-               <birth>
-                  <date when="1865-07-13">1865-07-13</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1939-06-29">1939-06-29</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb12701">
                <persName>
                   <forename>Louise</forename>
@@ -266,82 +272,6 @@
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
-            <person xml:id="pmb2284">
-               <persName>
-                  <forename>Markus</forename>
-                  <surname>Hajek</surname>
-               </persName>
-               <birth>
-                  <date when="1861-11-25">1861-11-25</date>
-                  <settlement ref="pmb46727">
-                     <placeName type="pref">Vršac</placeName>
-                     <location>
-                        <geo>45,11667 21,30361</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1941-04-04">1941-04-04</date>
-                  <settlement ref="pmb224">
-                     <placeName type="pref">London</placeName>
-                     <location>
-                        <geo>51,50853 -0,12574</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb2461">
-               <persName>
-                  <forename>Gisela</forename>
-                  <surname>Hajek</surname>
-               </persName>
-               <birth>
-                  <date when="1867-12-20">1867-12-20</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1953-02-03">1953-02-03</date>
-                  <settlement ref="pmb893">
-                     <placeName type="pref">Cambridge</placeName>
-                     <location>
-                        <geo>52,2 0,11667</geo>
                      </location>
                   </settlement>
                </death>
@@ -370,8 +300,108 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb12698">
+               <persName>
+                  <forename>Julius</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1865-07-13">1865-07-13</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1939-06-29">1939-06-29</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2461">
+               <persName>
+                  <forename>Gisela</forename>
+                  <surname>Hajek</surname>
+               </persName>
+               <birth>
+                  <date when="1867-12-20">1867-12-20</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1953-02-03">1953-02-03</date>
+                  <settlement ref="pmb893">
+                     <placeName type="pref">Cambridge</placeName>
+                     <location>
+                        <geo>52,2 0,11667</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2284">
+               <persName>
+                  <forename>Markus</forename>
+                  <surname>Hajek</surname>
+               </persName>
+               <birth>
+                  <date when="1861-11-25">1861-11-25</date>
+                  <settlement ref="pmb46727">
+                     <placeName type="pref">Vršac</placeName>
+                     <location>
+                        <geo>45,11667 21,30361</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1941-04-04">1941-04-04</date>
+                  <settlement ref="pmb224">
+                     <placeName type="pref">London</placeName>
+                     <location>
+                        <geo>51,50853 -0,12574</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb95">
+               <placeName>Lichtenfelsgasse</placeName>
+               <location type="coords">
+                  <geo>48,210037490674 16,357104381105</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+            </place>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <location type="coords">
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
             <place xml:id="pmb168765">
                <placeName>Wohnung und Ordination Johann Schnitzler Burgring 1</placeName>
                <location type="coords">
@@ -404,22 +434,32 @@
                   <geo>48,20769 16,37049</geo>
                </location>
             </place>
-            <place xml:id="pmb41376">
-               <placeName>Wiener Zentralfriedhof</placeName>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
-                  <geo>48,149444 16,441111</geo>
+                  <geo>48,208333 16,373056</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb61">XI., Simmering</placeName>
-                  <geo>48,17147 16,43126</geo>
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
             <place xml:id="pmb43570">
                <placeName>Dänemark</placeName>
-               <placeName type="alternative-name">Dänemark</placeName>
                <placeName type="legacy-name-merge">Denmark</placeName>
                <placeName type="alternative-name">Kingdom of Denmark</placeName>
-               <placeName type="legacy-name-merge">Dänemark</placeName>
                <location type="coords">
                   <geo>56,0 10,0</geo>
                </location>
@@ -432,36 +472,14 @@
                   <geo>48,69096 9,14062</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb41376">
+               <placeName>Wiener Zentralfriedhof</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>48,149444 16,441111</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb95">
-               <placeName>Lichtenfelsgasse</placeName>
-               <location type="coords">
-                  <geo>48,210037490674 16,357104381105</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
+                  <placeName ref="pmb61">XI., Simmering</placeName>
+                  <geo>48,17147 16,43126</geo>
                </location>
             </place>
          </listPlace>
@@ -489,7 +507,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -503,7 +521,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
             </org>
             <org xml:id="pmb41367">
@@ -513,7 +531,7 @@
                   <geo>48,216547 16,357685</geo>
                   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb41.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41/</idno>
-                  <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=15996</idno>
+                  <idno type="URL" subtype="www">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=15996</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb41.html</idno>
                   <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb41.html</idno>
                   <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb41.html</idno>
@@ -533,7 +551,7 @@
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/2782729/</idno>
                   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb59.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb59.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb59.html</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb59.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/143650/</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066013-8</idno>
@@ -542,7 +560,7 @@
                   <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb59.html</idno>
                   <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb59.html</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb59.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11.1</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11.1</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/352089/</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2430175</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/10040416-9</idno>
@@ -565,7 +583,7 @@
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb43570.html</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb43570.html</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb43570</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.1</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.1</idno>
                </location>
             </org>
          </listOrg>

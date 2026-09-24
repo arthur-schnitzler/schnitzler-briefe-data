@@ -3,8 +3,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1898-07-15" n="03">1898-07-15</title>
-            <title level="a">Arthur Schnitzler an Gustav Schwarzkopf, 15. 7. 1898</title>
+            <title type="iso-date" when-iso="1898-07-14" n="01">1898-07-14</title>
+            <title level="a">Arthur Schnitzler an Gustav Schwarzkopf, [14. oder 15]. 7. 1898</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <persName>Jahnke, Selma</persName>
@@ -91,7 +91,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb860">Graz Murvorstadt</placeName>
                                     <date when="1898-07-15">15/7 98</date>
                                     <time>11V</time>
@@ -100,7 +100,7 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb51">Wien 1</placeName>
                                     <date when="1898-07-16">16. 7. 98</date>
                                     <time>6–9½V</time>
@@ -122,25 +122,34 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1898-07-15" n="03">15. 7. 1898</date>
+               <date n="01" notBefore="1898-07-14" notAfter="1898-07-15">[14. oder 15]. 7. 1898</date>
                <placeName ref="#pmb860">Graz</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1898-07-15">15. 7. 1898</date>
+               <placeName ref="#pmb860">Graz Murvorstadt</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1898-07-16">16. 7. 1898</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
                <date when="1898-07-16">16. 7. 1898</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb207296">Tiefer Graben 23</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_12740">Schwarzkopf, Gustav</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00820">Schnitzler an Hofmannsthal, 15. 7. 1898</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L04128">Schnitzler an Schwarzkopf, 15. 7. 1898</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00818">Hofmannsthal an Schnitzler, 12. 7. [1898]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L04128">Schnitzler an Schwarzkopf, [14. oder 15]. 7. 1898</ref>
                <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04505">Schnitzler an Schwarzkopf, 6. 6. 1898</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740" target="L04128">Schnitzler an Schwarzkopf, 15. 7. 1898</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740" target="L04128">Schnitzler an Schwarzkopf, [14. oder 15]. 7. 1898</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2025-12-10">Export aus Transkribus</change>
+         <change who="SJ" when="2026-09-21">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -151,7 +160,7 @@
       <body>
          <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-00096-B-000-00227"/>Herrn <hi rend="latintype">Gustav Schwarzkopf</hi></addrLine><addrLine><rs type="place" ref="#pmb51">Wien I</rs></addrLine><addrLine><hi rend="latintype"><rs type="place" ref="#pmb207296">Tiefer
                         Graben 23</rs></hi>.</addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-00096-B-000-00228"/><salute>Lieber Gu<c rendition="#langesS">s</c>tav,</salute>das ist mein vorläufiges Programm</p><p><hi rend="underline" n="1"><date>So<c rendition="#gemination-n">nn</c>tag</date></hi>
+         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-00096-B-000-00228"/><salute>Lieber Gu<c rendition="#langesS">s</c>tav,</salute> das ist mein vorläufiges Programm</p><p><hi rend="underline" n="1"><date>So<c rendition="#gemination-n">nn</c>tag</date></hi>
                 (<date>17</date>) <rs type="place" ref="#pmb860">Graz</rs> – <rs type="place" ref="#pmb35493">Steinach</rs> (Bahn) – <rs type="place" ref="#pmb35496">Schladming</rs> (Rad)</p><p><date>Montag 18.</date><space unit="chars" quantity="1"/><rs type="place" ref="#pmb35496">Schladming</rs> – <rs type="place" ref="#pmb41003">Bi<c rendition="#langesS">s</c>chofshofen</rs> (Rad–) – <rs type="place" ref="#pmb40336">Zell a S.</rs>
                   (Bahn<supplied>)</supplied></p><p><date><hi rend="underline" n="1">Din<c rendition="#langesS">s</c>tg</hi> 19.</date><space unit="chars" quantity="1"/><rs type="place" ref="#pmb40336">Zell am See</rs>, <rs type="place" ref="#pmb34191">Bruck</rs> – <rs type="place" ref="#pmb305739">Fu<c rendition="#langesS">s</c>ch</rs>.</p><p><date><hi rend="underline" n="1">Mittwoch</hi> 20</date> (<rs type="place" ref="#pmb40632">Ferleiten</rs>), <rs type="place" ref="#pmb34191">Bruck</rs> – <rs type="place" ref="#pmb521">Bad-Ga<c rendition="#langesS">s</c>tein</rs></p><p>Bis <date>So<c rendition="#gemination-n">nn</c>tag</date> etwa <rs type="place" ref="#pmb521">Ga<c rendition="#langesS">s</c>tein</rs>; da<c rendition="#gemination-n">nn</c> per Rad <rs type="place" ref="#pmb30">Salzburg</rs>; wo ich jedenfalls von <date>Montag
                   (25)</date> – <date>Do<c rendition="#gemination-n">nn</c>er<c rendition="#langesS">s</c>tg 28.</date> bin. –

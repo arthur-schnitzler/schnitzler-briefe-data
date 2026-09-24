@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="557"/>
+                                 <measure unit="zeichenanzahl" quantity="555"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -97,18 +97,18 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb51">Wien 1/1</placeName>
-                                    <date>19. 10. 94</date>
+                                    <date when="1894-10-19">19. 10. 94</date>
                                     <time>9–10 N</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb595">Napoli</placeName>
-                                    <date>21 10–94</date>
+                                    <date when="1894-10-21">21 10–94</date>
                                     <time>8 S</time>
                                  </stamp>
                               </desc>
@@ -144,22 +144,26 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1894-10-19" n="01">19. 10. 1894</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
-            <correspAction type="forwarded">
+            <correspAction type="transmitted">
+               <date when="1894-10-19">19. 10. 1894</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
+            </correspAction>
+            <correspAction type="delivered">
                <date when="1894-10-21">21. 10. 1894</date>
                <placeName ref="#pmb595">Neapel</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
-               <date evidence="conjecture" notBefore="1894-10-22" notAfter="1894-10-26">[22. 10. 1894 – 26. 10. 1894?]</date>
-               <placeName ref="#pmb445">Rom</placeName>
+               <date when="1894-10-21">21. 10. 1894</date>
+               <placeName ref="#pmb364923">Hotel Hassler [Neapel]</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00385">Beer-Hofmann an Schnitzler, 18. 10. 1894</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00384">Beer-Hofmann an Schnitzler, 18. 10. 1894</ref>
                <ref subtype="next_letter" type="withinCollection" target="L00387">Schnitzler an Beer-Hofmann, 20. 10. 1894</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00385">Beer-Hofmann an Schnitzler, 18. 10. 1894</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00384">Beer-Hofmann an Schnitzler, 18. 10. 1894</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L00387">Schnitzler an Beer-Hofmann, 20. 10. 1894</ref>
             </correspContext>
          </correspDesc>
@@ -169,6 +173,7 @@
          <change who="GHS" when="2019-10-11">kontrolliert am Faksimile</change>
          <change who="MAM" when="2019-10-14">Index check</change>
          <change who="MAM" when="2019-12-09">Durchsicht</change>
+         <change who="MAM" when="2026-09-17">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -180,15 +185,39 @@
          <div type="address"><address><addrLine><pb facs="1894_AS_RBH_3_00018"/>Herrn <hi rend="latintype">Dr. Richard Beer
                      Hofmann</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb595" type="place">Neapel</rs></hi></addrLine><addrLine><hi rend="latintype">a posta ferma</hi></addrLine><addrLine><hi rend="latintype"><anchor type="textConst" xml:id="T_L00386-1"/><rs ref="#pmb40306" type="place">Italien</rs><note type="textConst" corresp="T_L00386-1">in jede Ecke der Karte
                         geschrieben</note></hi></addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="1894_AS_RBH_3_00019"/><salute>Lieber Richard,</salute> ich habe Ihren Brief aus
-                  <rs ref="#pmb40272" type="place"><hi rend="latintype">Frascati</hi></rs> beko<c rendition="#gemination-m">mm</c>en und danke be<c rendition="#langesS">s</c>tens. Sie meinen er<c rendition="#langesS">s</c>ten nach
-                  <rs ref="#pmb595" type="place">Neapel</rs> und die <rs ref="#pmb36340" type="work"><hi rend="underline" n="1">Zeit</hi></rs> doch wohl auch? Ihre gute und hohe Sti<c rendition="#gemination-m">mm</c>ung i<c rendition="#langesS">s</c>t<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr erfreulich – man kann gewi<c rendition="#langesS">s</c>s be<c rendition="#langesS">s</c><c rendition="#langesS">s</c>eres von Rei<c rendition="#langesS">s</c>en heimbringen als Novellen – ob
+         <div type="writingSession" n="1"><p><pb facs="1894_AS_RBH_3_00019"/><salute>Lieber Richard,</salute> ich habe Ihren <anchor type="commentary" xml:id="K_L00386-1"/>Brief aus <rs ref="#pmb40272" type="place"><hi rend="latintype">Frascati</hi></rs><note type="commentary" corresp="K_L00386-1"><ref type="schnitzler-briefe" target="L00383"/>.</note> beko<c rendition="#gemination-m">mm</c>en und danke
+               be<c rendition="#langesS">s</c>tens. Sie meinen er<c rendition="#langesS">s</c>ten nach <rs ref="#pmb595" type="place">Neapel</rs> und die
+                  <rs ref="#pmb36340" type="work"><hi rend="underline" n="1">Zeit</hi></rs> doch wohl auch? Ihre gute und hohe Sti<c rendition="#gemination-m">mm</c>ung i<c rendition="#langesS">s</c>t<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr erfreulich – man kann gewi<c rendition="#langesS">s</c>s be<c rendition="#langesS">s</c><c rendition="#langesS">s</c>eres von Rei<c rendition="#langesS">s</c>en heimbringen als Novellen – ob
                aber auch be<c rendition="#langesS">s</c><c rendition="#langesS">s</c>eres – als <hi n="1" rend="underline">Ihre</hi> Novellen??? – Mein <rs type="work" ref="#pmb29917" subtype="implied">Stück</rs> beim <rs type="person" ref="#pmb27711" subtype="implied">Ab<c rendition="#langesS">s</c>chreiber</rs>; vielleicht ka<c rendition="#gemination-n">nn</c> ich bei Ihrer Heimkehr<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chon mit Re<c rendition="#langesS">s</c>ultaten aufwarten.
                Mache die Correcturen am Buch (<rs ref="#pmb30117" type="work">Sterben</rs>.) – Heute
-               arges Kopfweh. – Viele herzliche Grüße, bitte<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chreiben Sie mir.</p><closer>Ihr <signed>Arth.</signed></closer></div>
+               arges <anchor type="commentary" xml:id="K_L00386-2"/>Kopfweh<note type="commentary" corresp="K_L00386-2"><ref type="schnitzler-tagebuch" target="1894-10-19" subtype="Cf"/>.</note>. – Viele herzliche Grüße, bitte<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chreiben Sie mir.</p><closer>Ihr <signed>Arth.</signed></closer></div>
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -213,22 +242,27 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
+            <person xml:id="pmb27711" ana="implied">
                <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
+                  <surname>?? [Schreibkraft für Arthur Schnitzler]</surname>
+               </persName>
+            </person>
+            <person xml:id="pmb12790">
+               <persName>
+                  <forename>Isidor</forename>
+                  <surname>Singer</surname>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
+                  <date when="1857-01-16">1857-01-16</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
                      <location>
-                        <geo>48,208333 16,373056</geo>
+                        <geo>47,49835 19,04045</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1927-12-08">1927-12-08</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -236,98 +270,86 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
-            <person xml:id="pmb27711" ana="implied">
+            <person xml:id="pmb11867">
                <persName>
-                  <surname>?? [Schreibkraft für Arthur Schnitzler]</surname>
+                  <forename>Heinrich</forename>
+                  <surname>Kanner</surname>
                </persName>
+               <birth>
+                  <date when="1864-11-09">1864-11-09</date>
+                  <settlement ref="pmb36202">
+                     <placeName type="pref">Galați</placeName>
+                     <location>
+                        <geo>45,43687 28,05028</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1930-02-15">1930-02-15</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb10815">
+               <persName>
+                  <forename>Hermann</forename>
+                  <surname>Bahr</surname>
+               </persName>
+               <birth>
+                  <date when="1863-07-19">1863-07-19</date>
+                  <settlement ref="pmb332">
+                     <placeName type="pref">Linz</placeName>
+                     <location>
+                        <geo>48,3 14,28333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1934-01-15">1934-01-15</date>
+                  <settlement ref="pmb45258">
+                     <placeName type="pref">München</placeName>
+                     <location>
+                        <geo>48,13743 11,57549</geo>
+                     </location>
+                  </settlement>
+               </death>
             </person>
          </listPerson>
          <listBibl>
+            <bibl xml:id="pmb36340">
+               <title>Die Zeit. Wiener Wochenschrift</title>
+               <author ref="pmb12790" role="hat-herausgegeben">Singer, Isidor</author>
+               <author ref="pmb11867" role="hat-herausgegeben">Kanner, Heinrich</author>
+               <author ref="pmb10815" role="hat-herausgegeben">Bahr, Hermann</author>
+            </bibl>
             <bibl xml:id="pmb30117">
-               <title type="main">Sterben. Novelle</title>
+               <title>Sterben. Novelle</title>
                <title type="werk_bibliografische-angabe">Neue Deutsche Rundschau, Jg. 5, H. 10–12, Oktober–Dezember 1894</title>
                <title type="legacy-name-merge">Sterben</title>
                <title type="werk_link">https://babel.hathitrust.org/cgi/pt?id=coo.31924069263006&amp;seq=325</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
-            </bibl>
-            <bibl xml:id="pmb36340">
-               <title type="main">Die Zeit. Wiener Wochenschrift</title>
-               <author role="hat-herausgegeben" ref="pmb12790">Singer, Isidor</author>
-               <author role="hat-herausgegeben" ref="pmb11867">Kanner, Heinrich</author>
-               <author role="hat-herausgegeben" ref="pmb10815">Bahr, Hermann</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
             <bibl xml:id="pmb29917" ana="implied">
-               <title type="main">Liebelei. Schauspiel in drei Akten</title>
+               <title>Liebelei. Schauspiel in drei Akten</title>
                <title type="werk_link">https://www.deutschestextarchiv.de/book/show/schnitzler_liebelei_1896</title>
                <title type="werk_arbeitstitel">Das arme Mädl</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb40272">
-               <placeName>Frascati</placeName>
-               <placeName type="alternative-name">Frascati</placeName>
-               <placeName type="legacy-name">Frascati</placeName>
+            <place xml:id="pmb623">
+               <placeName>Hôtel Hassler</placeName>
                <location type="coords">
-                  <geo>41,8091 12,67942</geo>
+                  <geo>41,90627 12,4829</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb40306">
-               <placeName>Italien</placeName>
-               <placeName type="alternative-name">Italian Republic</placeName>
-               <placeName type="alternative-name">Republic of Italy</placeName>
-               <placeName type="legacy-name-merge">Italien</placeName>
-               <placeName type="legacy-name-merge">Italy</placeName>
-               <location type="coords">
-                  <geo>42,83333 12,83333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
-               </location>
-            </place>
-            <place xml:id="pmb445">
-               <placeName>Rom</placeName>
-               <placeName type="legacy-name-merge">bei Rom</placeName>
-               <placeName type="legacy-name-merge">Roma</placeName>
-               <placeName type="legacy-name-merge">Rom</placeName>
-               <location type="coords">
+                  <placeName ref="pmb445">Rom</placeName>
                   <geo>41,89193 12,51133</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
             <place xml:id="pmb51">
@@ -336,7 +358,6 @@
                <placeName type="alternative-name">Wien,Innere Stadt</placeName>
                <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
                <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
-               <placeName type="legacy-name-merge">Inner city</placeName>
                <location type="coords">
                   <geo>48,20769 16,37049</geo>
                </location>
@@ -352,9 +373,6 @@
             <place xml:id="pmb595">
                <placeName>Neapel</placeName>
                <placeName type="alternative-name">Naples</placeName>
-               <placeName type="alternative-name">Neapel</placeName>
-               <placeName type="legacy-name-merge">Naples</placeName>
-               <placeName type="legacy-name-merge">Neapel</placeName>
                <location type="coords">
                   <geo>40,85216 14,26811</geo>
                </location>
@@ -363,14 +381,51 @@
                   <geo>42,83333 12,83333</geo>
                </location>
             </place>
-            <place xml:id="pmb623">
-               <placeName>Hôtel Hassler</placeName>
+            <place xml:id="pmb168934">
+               <placeName>Frankgasse 1</placeName>
                <location type="coords">
-                  <geo>41,90627 12,4829</geo>
+                  <geo>48,21533 16,35736</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb445">Rom</placeName>
-                  <geo>41,89193 12,51133</geo>
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb397">Frankgasse</placeName>
+                  <geo>48,215516628628 16,356475515829</geo>
+               </location>
+            </place>
+            <place xml:id="pmb364923">
+               <placeName>Hotel Hassler [Neapel]</placeName>
+               <location type="coords">
+                  <geo>40,8302153354582 14,246194459892541</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb595">Neapel</placeName>
+                  <geo>40,85216 14,26811</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40306">
+               <placeName>Italien</placeName>
+               <placeName type="alternative-name">Italian Republic</placeName>
+               <placeName type="alternative-name">Republic of Italy</placeName>
+               <placeName type="legacy-name-merge">Italy</placeName>
+               <location type="coords">
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40272">
+               <placeName>Frascati</placeName>
+               <location type="coords">
+                  <geo>41,8091 12,67942</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
                </location>
             </place>
          </listPlace>

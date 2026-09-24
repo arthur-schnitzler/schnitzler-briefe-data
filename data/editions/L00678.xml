@@ -92,9 +92,9 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb43403">Paris 2 B. Milton</placeName>
-                                    <date>20 Mai 97</date>
+                                    <date when="1897-05-20">20 Mai 97</date>
                                     <time>7<hi rend="superscript">E</hi>
                                     </time>
                                  </stamp>
@@ -102,9 +102,9 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb51">Wien 1/1</placeName>
-                                    <date>22 5. 97</date>
+                                    <date when="1897-05-22">22 5. 97</date>
                                     <time>9–10½V.</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
@@ -169,19 +169,27 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1897-05-20" n="01">20. 5. 1897</date>
-               <placeName ref="#pmb182">Paris</placeName>
+               <placeName ref="#pmb592">5, rue de Maubeuge</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1897-05-20">20. 5. 1897</date>
+               <placeName ref="#pmb43403">Paris 2 B. Milton</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1897-05-22">22. 5. 1897</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1897-05-22">22. 5. 1897</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb190427">Wollzeile 15 (»Berthahof«)</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L00677">Hofmannsthal an Schnitzler, 17. 5. [1897]</ref>
                <ref subtype="next_letter" type="withinCollection" target="L00679">Schnitzler an Hofmannsthal, 20. 5. 1897</ref>
                <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00675">Beer-Hofmann an Schnitzler, 12. 5. 1897</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L00680">Beer-Hofmann an Schnitzler, 20. 5. 1897</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L00680">Beer-Hofmann an Schnitzler, 22. 5. 1897</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -192,6 +200,7 @@
          <change who="MAM" when="2018-07-15">Überführt aus Bahr–Schnitzler-Daten</change>
          <change who="GHS" when="2019-10-31">finalisiert</change>
          <change when="2019-11-01" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-23">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

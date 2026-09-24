@@ -91,18 +91,18 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb43409">Forest Hill</placeName>
-                                    <date>MY 29 9<unclear>7</unclear>
+                                    <date when="1897-05-29">MY 29 9<unclear>7</unclear>
                                     </date>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb51">Wien 1/1</placeName>
-                                    <date>31 5. 97</date>
+                                    <date when="1897-05-31">31 5. 97</date>
                                     <time>6½–8N</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
@@ -149,16 +149,24 @@
                <date when="1897-05-29" n="01">29. 5. 1897</date>
                <placeName ref="#pmb224">London</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1897-05-29">29. 5. 1897</date>
+               <placeName ref="#pmb43409">Forest Hill</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1897-05-31">31. 5. 1897</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1897-05-31">31. 5. 1897</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb190427">Wollzeile 15 (»Berthahof«)</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L02813">Goldmann an Schnitzler, 26. 5. [1897]</ref>
                <ref subtype="next_letter" type="withinCollection" target="L02964">Schnitzler an Salten, 29. 5. 1897</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00680">Beer-Hofmann an Schnitzler, 20. 5. 1897</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00680">Beer-Hofmann an Schnitzler, 22. 5. 1897</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L00682">Schnitzler an Beer-Hofmann, 5. 6. 1897</ref>
             </correspContext>
          </correspDesc>
@@ -168,6 +176,7 @@
          <change who="GHS" when="2019-10-31">überprüft am Faksimile</change>
          <change who="MAM" when="2020-01-21">Durchsicht</change>
          <change when="2020-01-22" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-23">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -178,7 +187,7 @@
       <body>
          <div type="address"><address><addrLine><pb facs="1897_AS_RBH_2_00025"/>Herrn <hi rend="latintype">Dr. Richard
                      Beer-Hofmann</hi></addrLine><addrLine><rs ref="#pmb50" type="place"><hi rend="latintype">Wien</hi></rs></addrLine><addrLine><rs ref="#pmb190427" type="place"><hi rend="latintype">I. Bez. Wollzeile 15</hi>.</rs></addrLine></address></div>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="1897_AS_RBH_2_00024"/><rs ref="#pmb224" type="place">London S. E.</rs><lb/><date when="1897-05-29">29. 5. <unclear>97</unclear></date></dateline></opener><p><salute>Mein lieber Richard,</salute> Ihren Brief hab ich noch in <rs ref="#pmb182" type="place">Paris</rs><note xml:id="FN2464-1" type="footnote"><p>I<c rendition="#langesS">s</c>t ja gar nicht wahr; in <rs ref="#pmb224" type="place">London</rs> hab ich
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="1897_AS_RBH_2_00024"/><rs ref="#pmb224" type="place">London S. E.</rs><lb/><date when="1897-05-29">29. 5. <unclear>97</unclear></date></dateline></opener><p><salute>Mein lieber Richard,</salute> Ihren <anchor type="commentary" xml:id="K_L00681-1"/>Brief<note type="commentary" corresp="K_L00681-1"><ref type="schnitzler-briefe" target="L00680"/>.</note> hab ich noch in <rs ref="#pmb182" type="place">Paris</rs><note xml:id="FN2464-1" type="footnote"><p>I<c rendition="#langesS">s</c>t ja gar nicht wahr; in <rs ref="#pmb224" type="place">London</rs> hab ich
                      ihn gefunden.</p></note> beko<c rendition="#gemination-m">mm</c>en. – »Wie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chätz ich Euch um die<c rendition="#langesS">s</c>es Ekels
                willen!«</p><p>Aber es<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>cheint wirklich, ich treffe Sie in <rs ref="#pmb50" type="place">Wien</rs>
                nicht mehr an? – Möchte <date>Mittwoch</date><space unit="chars" quantity="1"/><add place="above"><time>Ab</time></add> oder <date>Do<c rendition="#gemination-n">nn</c>er<c rendition="#langesS">s</c>tag</date><space unit="chars" quantity="1"/><time>Früh</time> anlangen. Ich wün<c rendition="#langesS">s</c>chte eine Zeile von Ihnen vorzufinden. Ja? – Nach

@@ -91,7 +91,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb36549">
                                        <supplied>Versai</supplied>lles Seine et Oise</placeName>
                                     <date when="1901-07-02">2<supplied>. 7.</supplied> 01</date>
@@ -100,7 +100,7 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb59">Wien 9/3 72</placeName>
                                     <date when="1901-07-03">
                                        <gap reason="illegible" unit="chars" quantity="1"/>. 7. <unclear>01</unclear>
@@ -129,8 +129,12 @@
                <date when="1901-07-02" n="01">2. 7. 1901</date>
                <placeName ref="#pmb36549">Versailles</placeName>
             </correspAction>
-            <correspAction type="forwarded">
+            <correspAction type="in_transit">
                <placeName ref="#pmb50">Wien</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1901-07-03">3. 7. 1901</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>

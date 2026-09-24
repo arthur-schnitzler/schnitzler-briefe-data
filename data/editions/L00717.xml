@@ -92,36 +92,36 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb50">Wien</placeName>
-                                    <date>17 8 97</date>
+                                    <date when="1897-08-17">17 8 97</date>
                                     <time>11–12 N</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="arrival">
                                     <placeName ref="#pmb30">Salzburg Stadt</placeName>
-                                    <date>18 8 97</date>
-                                    <time>11–F</time>
-                                 </stamp>
-                              </desc>
-                           </incident>
-                           <incident type="postal">
-                              <desc>
-                                 <stamp n="3">
-                                    <placeName ref="#pmb30">Salzburg Stadt</placeName>
-                                    <date>18 8 97</date>
+                                    <date when="1897-08-18">18 8 97</date>
                                     <time>1–F</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="4">
+                                 <stamp n="3" type="redirection">
+                                    <placeName ref="#pmb30">Salzburg Stadt</placeName>
+                                    <date when="1897-08-18">18 8 97</date>
+                                    <time>11–F</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="4" type="delivery">
                                     <placeName ref="#pmb213">Ischl</placeName>
-                                    <date>18. 8. 97</date>
+                                    <date when="1897-08-18">18. 8. 97</date>
                                     <time>7–8 N</time>
                                  </stamp>
                               </desc>
@@ -130,7 +130,7 @@
                               <desc>die drei Adresszeilen durchgestrichen und darunter von
                                  unbekannter Hand mit Bleistift: »<quote>
                                     <p>
-                                       <rs ref="#pmb766" type="place">Ischl, Eglmoos 22</rs>.</p>
+                                       <rs ref="#pmb364910" type="place">Ischl, Eglmoos 22</rs>.</p>
                                  </quote>«</desc>
                            </incident>
                         </additions>
@@ -148,16 +148,28 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1897-08-17" n="01">17. 8. 1897</date>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1897-08-17">17. 8. 1897</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
-            <correspAction type="forwarded">
+            <correspAction type="arrived">
                <date when="1897-08-18">18. 8. 1897</date>
                <placeName ref="#pmb30">Salzburg</placeName>
+            </correspAction>
+            <correspAction type="redirected">
+               <date when="1897-08-18">18. 8. 1897</date>
+               <placeName ref="#pmb30">Salzburg Stadt</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1897-08-18">18. 8. 1897</date>
+               <placeName ref="#pmb213">Ischl</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1897-08-18">18. 8. 1897</date>
-               <placeName ref="#pmb213">Bad Ischl</placeName>
+               <placeName ref="#pmb364910">Egelmoos 22</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -172,6 +184,7 @@
          <change who="GHS" when="2019-11-06">angelegt aus Faksimile</change>
          <change who="MAM" when="2019-11-13">Durchsicht</change>
          <change when="2019-11-14" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-23">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -332,7 +345,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>

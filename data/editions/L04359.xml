@@ -91,7 +91,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb332">Linz</placeName>
                                     <date when="1903-04-09">9<unclear>.</unclear> 4. 03</date>
                                     <time>2–3</time>
@@ -100,7 +100,7 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb50">Wien</placeName>
                                     <date when="1903-04-10">10<unclear>.</unclear> 4<unclear>.</unclear> <unclear>0</unclear>3</date>
                                     <addSpan>Bestellt</addSpan>
@@ -122,28 +122,33 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1903-04-09" n="01">9. 4. 1903</date>
-               <placeName ref="#pmb332">Linz</placeName>
+               <placeName ref="#pmb130" evidence="conjecture">Hotel Weinzinger</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1903-04-09">9. 4. 1903</date>
                <placeName ref="#pmb332">Linz</placeName>
             </correspAction>
-            <correspAction type="received">
-               <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
+            <correspAction type="delivered">
                <date when="1903-04-10">10. 4. 1903</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspAction type="received">
+               <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
+               <date when="1903-04-10">10. 4. 1903</date>
+               <placeName ref="#pmb207296">Tiefer Graben 23</placeName>
+            </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_12740">Schwarzkopf, Gustav</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L01287">Schnitzler an Bahr, 6. 4. 1903</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L04198">Schnitzler an Schwarzkopf, [6. 4. 1903?]</ref>
                <ref subtype="next_letter" type="withinCollection" target="L04060">Schnitzler an Schwarzkopf, 12. 4. 1903</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04062">Schnitzler an Schwarzkopf, 28. 3. 1903</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04198">Schnitzler an Schwarzkopf, [6. 4. 1903?]</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740" target="L04060">Schnitzler an Schwarzkopf, 12. 4. 1903</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2026-06-11">Export aus Transkribus</change>
+         <change who="SJ" when="2026-09-17">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

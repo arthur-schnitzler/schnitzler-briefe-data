@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L01218" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L01218" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1903-05-05" n="01">1903-05-05</title>
-            <title level="a">Arthur Schnitzler an Richard Beer-Hofmann, [5.?] 5. 1902</title>
+            <title type="iso-date" when-iso="1902-05-04" n="01">1902-05-04</title>
+            <title level="a">Arthur Schnitzler an Richard Beer-Hofmann, [4. oder 5]. 5. 1902</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -99,7 +99,7 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb59">
                                        <unclear>Wien 9/3</unclear>
                                     </placeName>
@@ -113,10 +113,10 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb173">
                                        <pb facs="1902_AS_RBH_1_00025"/>Rodaun</placeName>
-                                    <date>5/5 02</date>
+                                    <date when="1902-05-05">5/5 02</date>
                                  </stamp>
                               </desc>
                            </incident>
@@ -134,20 +134,28 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1903-05-05" n="01">[5.?] 5. 1902</date>
+               <date n="01" notBefore="1902-05-04" notAfter="1902-05-05">[4. oder 5]. 5. 1902</date>
                <placeName ref="#pmb50">Wien</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1902-03-05" error="Zeitabfolge Fehler 1">5. 3. [1902]</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1902-05-05">5. 5. 1902</date>
+               <placeName ref="#pmb173">Rodaun</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
-               <date when="1903-05-05">5. 5. 1902</date>
-               <placeName ref="#pmb173">Rodaun</placeName>
+               <date when="1902-05-05">5. 5. 1902</date>
+               <placeName ref="#pmb40101">Liesingerstraße</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L04205">Schnitzler an Schwarzkopf, [4. 5. 1903?]</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L01288">Widmann an Schnitzler, 9. 5. 1903</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L01280">Schnitzler an Beer-Hofmann, 27. 3. 1903</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L01289">Beer-Hofmann an Schnitzler, 14. 5. 190[3?]</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L03206">Goldmann an Schnitzler, 2. 5. [1902]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L03207">Goldmann an Schnitzler, 5. 5. [1902]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L01217">Schnitzler an Beer-Hofmann, [1. oder 2.] [5.?] 1902</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L01223">Schnitzler an Beer-Hofmann, [12. oder 13]. 6. 1902</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -156,6 +164,8 @@
          <change who="MAM" when="2021-02-11">Index check</change>
          <change who="MAM" when="2021-03-15">Durchsicht</change>
          <change who="GHS" when="2021-04-13">Finalisiert</change>
+         <change who="MAM" when="2026-09-11">Datum korrigiert</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -167,7 +177,7 @@
       <body>
          <div type="address"><address><addrLine><pb facs="1902_AS_RBH_1_00024"/><hi rend="latintype">rec.</hi></addrLine><addrLine><hi rend="latintype">Dr. Richard Beer-Hofmann</hi></addrLine><addrLine><rs ref="#pmb173" type="place"><hi rend="latintype">Rodaun</hi></rs></addrLine><addrLine><rs ref="#pmb40101" type="place"><hi rend="latintype">Liesinger</hi><c rendition="#langesS">s</c>traße 2</rs>.</addrLine><addrLine><hi rend="latintype">Reco<c rendition="#gemination-m">mm</c>andirt</hi>.</addrLine></address></div>
          <div type="writingSession" n="1"><p><pb facs="1902_AS_RBH_1_00026"/>Auf Wieder<c rendition="#langesS">s</c>ehen</p><closer>herzlich<c rendition="#langesS">s</c>t<lb/><signed>A.</signed></closer><postscript><p>An <rs type="person" ref="#pmb11227">Eger</rs> (<anchor type="commentary" xml:id="K_L01218-1"/><rs type="work" ref="#pmb31557"><hi rend="latintype">Peer Gynt</hi></rs><note type="commentary" corresp="K_L01218-1">Am <ref target="1902-05-07" subtype="date-only" type="schnitzler-tagebuch"/> veranstaltete der <rs type="org" ref="#pmb29767">Akademische Verein für Kunst und Literatur</rs>
-                     im <rs type="place" ref="#pmb20">Deutschen Volkstheater</rs> die Generalprobe
+                     im <rs type="place" ref="#pmb20">Deutschen Volkstheater</rs> die <rs type="event" subtype="implied" ref="#pmb50860">Generalprobe</rs>
                      für eine zweimalige Wohltätigkeitsaufführung.</note><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chrieb ich eben)</p></postscript></div>
       </body>
       <back>
@@ -377,6 +387,19 @@
                </location>
             </org>
          </listOrg>
+         <listEvent>
+            <event xml:id="pmb50860" ana="comment">
+               <eventName n="Generalprobe">Generalprobe von Peer Gynt, 7.5.1902</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb20">Volkstheater</placeName>
+                     <location>
+                        <geo>48,205142 16,3566</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+         </listEvent>
       </back>
    </text>
 </TEI>

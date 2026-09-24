@@ -94,18 +94,18 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb53">Wien 3/1 40</placeName>
-                                    <date>19. 3. 92</date>
+                                    <date when="1892-03-19">19. 3. 92</date>
                                     <time>1–2N</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb501">Wien Kärntnerring</placeName>
-                                    <date>19. 3. 92</date>
+                                    <date when="1892-03-19">19. 3. 92</date>
                                     <time>1–2N</time>
                                  </stamp>
                               </desc>
@@ -147,12 +147,20 @@
             <correspAction type="sent">
                <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
                <date when="1892-03-19" n="01">19. 3. 1892</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb192623">Salesianergasse 12</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1892-03-19">19. 3. 1892</date>
+               <placeName ref="#pmb53">III., Landstraße</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1892-03-19">19. 3. 1892</date>
+               <placeName ref="#pmb501">Kärntnerring</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1892-03-19">19. 3. 1892</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb167805">Kärntnerring 12/Bösendorferstraße 11</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo von</ref>
@@ -169,6 +177,7 @@
          <change who="GHS" when="2019-09-13">finalisiert</change>
          <change who="MAM" when="2020-05-23">Durchsicht</change>
          <change when="2020-05-24" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -210,6 +219,30 @@
                      <placeName type="pref">Rodaun</placeName>
                      <location>
                         <geo>48,132793312328 16,256152195922</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -262,34 +295,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -316,6 +321,52 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb53">
+               <placeName>III., Landstraße</placeName>
+               <placeName type="alternative-name">Landstraße</placeName>
+               <placeName type="legacy-name-merge">Landstraßer Hauptstraße</placeName>
+               <placeName type="legacy-name-merge">Wien-Landstraße</placeName>
+               <placeName type="legacy-name-merge">Gemeindebezirk Landstrasse</placeName>
+               <location type="coords">
+                  <geo>48,19811 16,39482</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb501">
+               <placeName>Kärntnerring</placeName>
+               <location type="coords">
+                  <geo>48,201874800905 16,371985203093</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb112">Ringstraße</placeName>
+                  <geo>48,202432234197 16,371296264238</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+            </place>
+            <place xml:id="pmb192623">
+               <placeName>Salesianergasse 12</placeName>
+               <location type="coords">
+                  <geo>48,198484 16,380905</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb76">Salesianergasse</placeName>
+                  <geo>48,199226239476 16,380633449365</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb53">III., Landstraße</placeName>
+                  <geo>48,19811 16,39482</geo>
+               </location>
+            </place>
             <place xml:id="pmb167805">
                <placeName>Kärntnerring 12/Bösendorferstraße 11</placeName>
                <placeName type="ort_fruherer-name">Giselastraße 11</placeName>
@@ -335,13 +386,31 @@
                   <geo>48,201213 16,371141</geo>
                </location>
             </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb39792">
                <placeName>Purkersdorf</placeName>
                <placeName type="legacy-name-merge">Purkersdorf bei Wien</placeName>
-               <placeName type="legacy-name">Purkersdorf</placeName>
-               <placeName type="legacy-name-merge">Purkersdorf</placeName>
-               <placeName type="legacy-name-merge">Purkersdorf</placeName>
-               <placeName type="legacy-name-merge">Purkersdorf</placeName>
                <location type="coords">
                   <geo>48,19512 16,16265</geo>
                </location>
@@ -352,78 +421,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb1003">Niederösterreich</placeName>
                   <geo>48,33333 15,75</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb501">
-               <placeName>Kärntnerring</placeName>
-               <location type="coords">
-                  <geo>48,201874800905 16,371985203093</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb112">Ringstraße</placeName>
-                  <geo>48,202432234197 16,371296264238</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-            </place>
-            <place xml:id="pmb53">
-               <placeName>III., Landstraße</placeName>
-               <placeName type="alternative-name">Landstraße</placeName>
-               <placeName type="legacy-name-merge">Landstraßer Hauptstraße</placeName>
-               <placeName type="legacy-name-merge">Wien-Landstraße</placeName>
-               <placeName type="legacy-name-merge">Gemeindebezirk Landstrasse</placeName>
-               <placeName type="legacy-name-merge">Landstraße</placeName>
-               <location type="coords">
-                  <geo>48,19811 16,39482</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb652">
-               <placeName>Prag</placeName>
-               <placeName type="alternative-name">Hauptstadt Prag</placeName>
-               <placeName type="legacy-name-merge">Prag</placeName>
-               <placeName type="legacy-name-merge">Prag-Smichow</placeName>
-               <placeName type="legacy-name-merge">Bohnitz bei Prag</placeName>
-               <placeName type="legacy-name-merge">Prag-Dejwitz</placeName>
-               <placeName type="legacy-name-merge">Hlavní město Praha</placeName>
-               <placeName type="legacy-name-merge">Prague</placeName>
-               <location type="coords">
-                  <geo>50,08333 14,46667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43430">Tschechien</placeName>
-                  <geo>49,75 15,0</geo>
                </location>
             </place>
             <place xml:id="pmb860">
@@ -441,10 +438,25 @@
                   <geo>47,38 15,7925</geo>
                </location>
             </place>
+            <place xml:id="pmb652">
+               <placeName>Prag</placeName>
+               <placeName type="alternative-name">Hauptstadt Prag</placeName>
+               <placeName type="legacy-name-merge">Prag-Smichow</placeName>
+               <placeName type="legacy-name-merge">Bohnitz bei Prag</placeName>
+               <placeName type="legacy-name-merge">Prag-Dejwitz</placeName>
+               <placeName type="legacy-name-merge">Hlavní město Praha</placeName>
+               <placeName type="legacy-name-merge">Prague</placeName>
+               <location type="coords">
+                  <geo>50,08333 14,46667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43430">Tschechien</placeName>
+                  <geo>49,75 15,0</geo>
+               </location>
+            </place>
             <place xml:id="pmb869">
                <placeName>Moskau</placeName>
                <placeName type="alternative-name">Pravitelʹstvo Moskvy</placeName>
-               <placeName type="legacy-name-merge">Moskau</placeName>
                <placeName type="legacy-name-merge">Moscow</placeName>
                <location type="coords">
                   <geo>55,76167 37,60667</geo>

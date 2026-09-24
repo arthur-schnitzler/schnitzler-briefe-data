@@ -90,7 +90,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb53">Wien 3/3</placeName>
                                     <date when="1893-02-22">22. 2. 93</date>
                                     <time>
@@ -148,13 +148,17 @@
             <correspAction type="sent">
                <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
                <date when="1893-02-22" n="01">22. 2. 1893</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb192623">Salesianergasse 12</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1893-02-22">22. 2. 1893</date>
+               <placeName ref="#pmb53">III., Landstraße</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date evidence="conjecture" notBefore="1893-02-22" notAfter="1893-02-24">[22. 2. 1893
                   – 26. 2. 1893?]</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb167782">Wohnung und Ordination Arthur Schnitzler Grillparzerstraße 7/3. Stock</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo von</ref>
@@ -173,6 +177,7 @@
             <c rendition="#langesS">s</c>, @facs, Nummerierungen ergänzt</change>
          <change who="GHS" when="2019-09-22">finalisiert</change>
          <change when="2019-09-23" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-16">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -181,7 +186,7 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><hi rend="latintype"><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00083"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb50" type="place">Wien</rs></hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb412" type="place">I. Grillparzerstrasse 7</rs></hi></addrLine></address></div>
+         <div type="address"><address><addrLine><hi rend="latintype"><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00083"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb50" type="place">Wien</rs></hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb167782" type="place">I. Grillparzerstrasse 7</rs></hi></addrLine></address></div>
          <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00084"/><rs ref="#pmb50" type="place">Wien</rs>, <date>22 II 93.</date></dateline><salute>lieber Arthur.</salute></opener><p>Ich habe nach einem Ge<c rendition="#langesS">s</c>präch mit <rs ref="#pmb10815" type="person">Bahr</rs> die
                volle Überzeugung, da<c rendition="#langesS">s</c>s er<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ich ern<c rendition="#langesS">s</c>tlich bemühen wird, <rs ref="#pmb2450" type="person">Fels</rs>, sei es bei der »<rs ref="#pmb29424" type="org">Deut<c rendition="#langesS">s</c>chen</rs>«<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ei es wo anders, unterzubringen und bin des Erfolges<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>einer
                Bemühung vollkommen<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>icher, habe auch an <rs ref="#pmb2450" type="person">Fels</rs>
@@ -191,30 +196,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10815">
-               <persName>
-                  <forename>Hermann</forename>
-                  <surname>Bahr</surname>
-               </persName>
-               <birth>
-                  <date when="1863-07-19">1863-07-19</date>
-                  <settlement ref="pmb332">
-                     <placeName type="pref">Linz</placeName>
-                     <location>
-                        <geo>48,3 14,28333</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1934-01-15">1934-01-15</date>
-                  <settlement ref="pmb45258">
-                     <placeName type="pref">München</placeName>
-                     <location>
-                        <geo>48,13743 11,57549</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
@@ -245,7 +226,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -254,7 +235,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -262,10 +243,30 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb10815">
+               <persName>
+                  <forename>Hermann</forename>
+                  <surname>Bahr</surname>
+               </persName>
+               <birth>
+                  <date when="1863-07-19">1863-07-19</date>
+                  <settlement ref="pmb332">
+                     <placeName type="pref">Linz</placeName>
+                     <location>
+                        <geo>48,3 14,28333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1934-01-15">1934-01-15</date>
+                  <settlement ref="pmb45258">
+                     <placeName type="pref">München</placeName>
+                     <location>
+                        <geo>48,13743 11,57549</geo>
+                     </location>
+                  </settlement>
+               </death>
             </person>
             <person xml:id="pmb2450">
                <persName>
@@ -273,7 +274,7 @@
                   <surname>Fels</surname>
                </persName>
                <birth>
-                  <date when="1864-01-01" notAfter="1864-12-31" notBefore="1864-01-01">1864</date>
+                  <date notBefore="1864-01-01" when="1864-01-01" notAfter="1864-12-31">1864</date>
                   <settlement ref="pmb41882">
                      <placeName type="pref">Bad Dürkheim</placeName>
                      <location>
@@ -284,45 +285,12 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb412">
-               <placeName>Grillparzerstraße</placeName>
-               <location type="coords">
-                  <geo>48,212643768549 16,357353835756</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
             <place xml:id="pmb53">
                <placeName>III., Landstraße</placeName>
                <placeName type="alternative-name">Landstraße</placeName>
                <placeName type="legacy-name-merge">Landstraßer Hauptstraße</placeName>
                <placeName type="legacy-name-merge">Wien-Landstraße</placeName>
                <placeName type="legacy-name-merge">Gemeindebezirk Landstrasse</placeName>
-               <placeName type="legacy-name-merge">Landstraße</placeName>
                <location type="coords">
                   <geo>48,19811 16,39482</geo>
                </location>
@@ -333,6 +301,56 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb192623">
+               <placeName>Salesianergasse 12</placeName>
+               <location type="coords">
+                  <geo>48,198484 16,380905</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb76">Salesianergasse</placeName>
+                  <geo>48,199226239476 16,380633449365</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb53">III., Landstraße</placeName>
+                  <geo>48,19811 16,39482</geo>
+               </location>
+            </place>
+            <place xml:id="pmb167782">
+               <placeName>Wohnung und Ordination Arthur Schnitzler Grillparzerstraße 7/3. Stock</placeName>
+               <location type="coords">
+                  <geo>48,212477 16,357233</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb412">Grillparzerstraße</placeName>
+                  <geo>48,212643768549 16,357353835756</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
          </listPlace>
@@ -350,7 +368,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -364,7 +382,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
             </org>
          </listOrg>

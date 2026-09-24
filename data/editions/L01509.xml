@@ -102,9 +102,9 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb173">Rodaun</placeName>
-                                    <date>
+                                    <date when="1905-03-17">
                                        <unclear>17. 3. 05</unclear>
                                     </date>
                                     <time>4–6N</time>
@@ -165,30 +165,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
@@ -212,6 +188,34 @@
                      </location>
                   </settlement>
                </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2292">
                <persName>
@@ -245,20 +249,22 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb44246">
-               <placeName>Rijeka</placeName>
-               <placeName type="namensvariante">Fiume</placeName>
+            <place xml:id="pmb1006">
+               <placeName>Badgasse</placeName>
+               <placeName type="namensvariante">Ketzergasse</placeName>
                <location type="coords">
-                  <geo>45,32673 14,44241</geo>
+                  <geo>48,130176324727 16,278871077438</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb34494">Kroatien</placeName>
-                  <geo>45,16667 15,5</geo>
+                  <placeName ref="pmb73">XXIII., Liesing</placeName>
+                  <geo>48,13333 16,3</geo>
                </location>
             </place>
             <place xml:id="pmb173">
                <placeName>Rodaun</placeName>
                <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
+               <placeName type="legacy-name-merge">Rodaun</placeName>
+               <placeName type="legacy-name-merge">Rodaun</placeName>
                <location type="coords">
                   <geo>48,132793312328 16,256152195922</geo>
                </location>
@@ -271,30 +277,31 @@
                   <geo>48,13333 16,3</geo>
                </location>
             </place>
-            <place xml:id="pmb682">
-               <placeName>Dubrovnik</placeName>
-               <placeName type="ort_fruherer-name">Ragusa</placeName>
+            <place xml:id="pmb175">
+               <placeName>Amerika</placeName>
                <location type="coords">
-                  <geo>42,64807 18,09216</geo>
+                  <geo>32,530833 -117,02</geo>
+               </location>
+            </place>
+            <place xml:id="pmb44246">
+               <placeName>Rijeka</placeName>
+               <placeName type="namensvariante">Fiume</placeName>
+               <placeName type="alternative-name">Rijeka</placeName>
+               <placeName type="legacy-name">Rijeka</placeName>
+               <placeName type="legacy-name-merge">Rijeka</placeName>
+               <placeName type="legacy-name-merge">Fiume</placeName>
+               <location type="coords">
+                  <geo>45,32673 14,44241</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb34494">Kroatien</placeName>
                   <geo>45,16667 15,5</geo>
                </location>
             </place>
-            <place xml:id="pmb1006">
-               <placeName>Badgasse</placeName>
-               <placeName type="namensvariante">Ketzergasse</placeName>
-               <location type="coords">
-                  <geo>48,130176324727 16,278871077438</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb73">XXIII., Liesing</placeName>
-                  <geo>48,13333 16,3</geo>
-               </location>
-            </place>
             <place xml:id="pmb506">
                <placeName>Hamburg</placeName>
+               <placeName type="legacy-name-merge">Hamburg</placeName>
+               <placeName type="alternative-name">Hamburg</placeName>
                <location type="coords">
                   <geo>53,55055 9,993333</geo>
                </location>
@@ -303,10 +310,16 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
-            <place xml:id="pmb175">
-               <placeName>Amerika</placeName>
+            <place xml:id="pmb682">
+               <placeName>Dubrovnik</placeName>
+               <placeName type="legacy-name-merge">Dubrovnik</placeName>
+               <placeName type="ort_fruherer-name">Ragusa</placeName>
                <location type="coords">
-                  <geo>32,530833 -117,02</geo>
+                  <geo>42,64807 18,09216</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb34494">Kroatien</placeName>
+                  <geo>45,16667 15,5</geo>
                </location>
             </place>
          </listPlace>

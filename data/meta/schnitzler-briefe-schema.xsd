@@ -228,7 +228,8 @@
                   <xs:enumeration value="received"/>
                   <xs:enumeration value="transmitted"/>
                   <xs:enumeration value="redirected"/>
-                  <xs:enumeration value="forwarded"/>
+                  <xs:enumeration value="in_transit"/>
+                  <xs:enumeration value="arrived"/>
                   <xs:enumeration value="delivered"/>
                </xs:restriction>
             </xs:simpleType>
@@ -520,6 +521,19 @@
             </xs:choice>
          </xs:sequence>
          <xs:attribute name="n" use="required" type="xs:integer"/>
+         <xs:attribute name="type" use="optional">
+            <xs:simpleType>
+               <xs:restriction base="xs:NCName">
+                  <xs:enumeration value="non-postal"/>
+                  <xs:enumeration value="arrival"/>
+                  <xs:enumeration value="transmission"/>
+                  <xs:enumeration value="redirection"/>
+                  <xs:enumeration value="delivery"/>
+                  <xs:enumeration value="transit"/>
+                  <xs:enumeration value="other"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:attribute>
       </xs:complexType>
    </xs:element>
    <xs:element name="addSpan">

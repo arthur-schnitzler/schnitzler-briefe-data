@@ -91,17 +91,17 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb984">Bellagio (Como)</placeName>
-                                    <date>16 9 94</date>
+                                    <date when="1894-09-16">16 9 94</date>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb59">Wien 9/3</placeName>
-                                    <date>18. 9. 94</date>
+                                    <date when="1894-09-18">18. 9. 94</date>
                                     <time>8.V</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
@@ -143,17 +143,25 @@
                <date when="1894-09-16" n="01">16. 9. 1894</date>
                <placeName ref="#pmb984">Bellagio</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1894-09-16">16. 9. 1894</date>
+               <placeName ref="#pmb984">Bellagio</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1894-09-18">18. 9. 1894</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1894-09-18">18. 9. 1894</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L03147">Salten an Schnitzler, 15. 9. 189[4?]</ref>
                <ref subtype="next_letter" type="withinCollection" target="L00371">Hofmannsthal an Schnitzler, [20. 9. 1894]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00369">Beer-Hofmann an Schnitzler, 15. 9. 1894</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L00373">Beer-Hofmann an Schnitzler, 2[6?]. 9. 189</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00369">Beer-Hofmann an Schnitzler, [14. oder 15]. 9. 1894</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L00373">Beer-Hofmann an Schnitzler, [zwischen 23. und 27.] 9. 1894</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -161,6 +169,7 @@
          <change who="GHS" when="2019-10-09">angelegt aus Faksimile</change>
          <change who="MAM" when="2019-10-10">Durchsicht</change>
          <change when="2019-10-11" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-17">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -177,30 +186,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10815">
-               <persName>
-                  <forename>Hermann</forename>
-                  <surname>Bahr</surname>
-               </persName>
-               <birth>
-                  <date when="1863-07-19">1863-07-19</date>
-                  <settlement ref="pmb332">
-                     <placeName type="pref">Linz</placeName>
-                     <location>
-                        <geo>48,3 14,28333</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1934-01-15">1934-01-15</date>
-                  <settlement ref="pmb45258">
-                     <placeName type="pref">München</placeName>
-                     <location>
-                        <geo>48,13743 11,57549</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -221,6 +206,30 @@
                      <placeName type="pref">New York City</placeName>
                      <location>
                         <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -249,6 +258,30 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb10815">
+               <persName>
+                  <forename>Hermann</forename>
+                  <surname>Bahr</surname>
+               </persName>
+               <birth>
+                  <date when="1863-07-19">1863-07-19</date>
+                  <settlement ref="pmb332">
+                     <placeName type="pref">Linz</placeName>
+                     <location>
+                        <geo>48,3 14,28333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1934-01-15">1934-01-15</date>
+                  <settlement ref="pmb45258">
+                     <placeName type="pref">München</placeName>
+                     <location>
+                        <geo>48,13743 11,57549</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb12618">
                <persName>
                   <forename>Adele</forename>
@@ -273,36 +306,30 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb984">
+               <placeName>Bellagio</placeName>
+               <location type="coords">
+                  <geo>45,98745 9,26199</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Thurygrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
             <place xml:id="pmb168934">
                <placeName>Frankgasse 1</placeName>
                <location type="coords">
@@ -317,12 +344,32 @@
                   <geo>48,215516628628 16,356475515829</geo>
                </location>
             </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -344,61 +391,12 @@
             <place xml:id="pmb44205">
                <placeName>Pallanza</placeName>
                <placeName type="alternative-name">Verbania-Pallanza</placeName>
-               <placeName type="legacy-name-merge">Pallanza</placeName>
-               <placeName type="legacy-name">Pallanza</placeName>
-               <placeName type="legacy-name-merge">Pallanza</placeName>
                <location type="coords">
                   <geo>45,92298 8,55045</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb49193">Verbania</placeName>
                   <geo>45,93333 8,55</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
-               <location type="coords">
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb984">
-               <placeName>Bellagio</placeName>
-               <placeName type="alternative-name">Bellagio</placeName>
-               <placeName type="legacy-name-merge">Bellagio</placeName>
-               <location type="coords">
-                  <geo>45,98745 9,26199</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb40306">Italien</placeName>

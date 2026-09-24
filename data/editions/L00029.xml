@@ -93,7 +93,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb50">Wien</placeName>
                                     <date when="1891-08-11">11 <unclear>8</unclear>
                                        <supplied>1891</supplied>
@@ -104,12 +104,12 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb415">
                                        <pb facs="1891_AS_RBH_00043"/>Aussee in
                                           Stei<unclear>ermark</unclear>
                                     </placeName>
-                                    <date when="1891-08-11">12. <supplied>8.</supplied> 9<unclear>1</unclear>
+                                    <date when="1891-08-12">12. <supplied>8.</supplied> 9<unclear>1</unclear>
                                     </date>
                                  </stamp>
                               </desc>
@@ -147,6 +147,14 @@
                <date when="1891-08-11" n="02">11. 8. 1891</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1891-08-11">11. 8. [1891]</date>
+               <placeName ref="#pmb50">Wien</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1891-08-11">11. [8]. 1891</date>
+               <placeName ref="#pmb415">Bad Aussee</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1891-08-12">12. 8. 1891</date>
@@ -165,6 +173,7 @@
          <change who="MAM" when="2019-06-12">Automatisch angelegt aus Buchausgabe</change>
          <change who="GHS" when="2019-09-06">finalisiert</change>
          <change who="MAM" when="2019-09-17">Index check</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -185,6 +194,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -233,34 +266,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2513" ana="comment">
                <persName>
                   <surname>Franz Joseph I. von Österreich-Ungarn</surname>
@@ -286,6 +291,39 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb415">
+               <placeName>Bad Aussee</placeName>
+               <placeName type="ort_fruherer-name">Markt Aussee</placeName>
+               <location type="coords">
+                  <geo>47,60998 13,78243</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb17">Steiermark</placeName>
+                  <geo>47,38 15,7925</geo>
+               </location>
+            </place>
             <place xml:id="pmb17">
                <placeName>Steiermark</placeName>
                <location type="coords">
@@ -298,8 +336,6 @@
             </place>
             <place xml:id="pmb213">
                <placeName>Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
                <location type="coords">
                   <geo>47,71109 13,61893</geo>
                </location>
@@ -308,45 +344,8 @@
                   <geo>47,75 13,5</geo>
                </location>
             </place>
-            <place xml:id="pmb415">
-               <placeName>Bad Aussee</placeName>
-               <placeName type="ort_fruherer-name">Markt Aussee</placeName>
-               <placeName type="legacy-name-merge">Bad Aussee</placeName>
-               <placeName type="legacy-name-merge">Bad Aussee</placeName>
-               <placeName type="legacy-name-merge">Markt Aussee</placeName>
-               <location type="coords">
-                  <geo>47,60998 13,78243</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb17">Steiermark</placeName>
-                  <geo>47,38 15,7925</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
             <place xml:id="pmb895">
                <placeName>Strobl</placeName>
-               <placeName type="legacy-name-merge">Strobl</placeName>
                <location type="coords">
                   <geo>47,71667 13,48333</geo>
                </location>

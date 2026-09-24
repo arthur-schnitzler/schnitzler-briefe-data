@@ -91,7 +91,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb51">Wien 1/1</placeName>
                                     <date when="1896-11-23">23. 11. <supplied>96</supplied>
                                     </date>
@@ -101,7 +101,7 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb59">Wien 9/3</placeName>
                                     <date when="1896-11-24">24. 11. 1896</date>
                                     <time>8.V</time>
@@ -152,15 +152,22 @@
                <date when="1896-11-23" n="02">23. 11. 1896</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1896-11-23">23. 11. [1896]</date>
+               <placeName ref="#pmb51">Wien 1/1</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1896-11-24">24. 11. 1896</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1896-11-24">24. 11. 1896</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo von</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L04041">Schnitzler an Schwarzkopf, [23. oder
-                  24. 11. 1896?]</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L02686">Schnitzler an Goldmann, 22. 11. 1896</ref>
                <ref subtype="next_letter" type="withinCollection" target="L02791">Goldmann an Schnitzler, 23. 11. [1896]</ref>
                <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11740" target="L00619">Hofmannsthal an Schnitzler, 9. 11. [1896]</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11740" target="L00640">Hofmannsthal an Schnitzler, [16. 1. 1897]</ref>
@@ -172,6 +179,7 @@
          <change who="MAM" when="2019-04-26">Durchsicht</change>
          <change who="MAM" when="2019-07-10">Index check</change>
          <change who="GHS" when="2019-10-23">finalisiert</change>
+         <change who="MAM" when="2026-09-23">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -181,7 +189,7 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00231"/><hi rend="latintype">Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</hi></addrLine><addrLine><rs ref="#pmb168934" type="place"><hi rend="latintype">IX Franckgasse</hi> 1</rs></addrLine></address></div>
-         <div type="writingSession" n="1"><opener><salute><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00232"/>lieber Arthur</salute></opener><p>mir fällt ein da<c rendition="#langesS">s</c>s glaub ich der <rs ref="#pmb10765" type="person"><hi rend="latintype">Poldy</hi></rs> morgen abend zu Ihnen kommen will. Falls es also bei <rs ref="#pmb10863" type="person">Richard</rs> i<c rendition="#langesS">s</c>t, bitte<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chreiben Sie ihm eine Zeile (<rs ref="#pmb353557" type="place"><hi rend="latintype">Habsburgergasse 5</hi></rs>) ich weiß es<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t nicht weiß auch nicht ob ich kommen oder arbeiten
+         <div type="writingSession" n="1"><opener><salute><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00232"/>lieber Arthur</salute></opener><p>mir fällt ein da<c rendition="#langesS">s</c>s glaub ich der <rs ref="#pmb10765" type="person"><hi rend="latintype">Poldy</hi></rs> morgen abend zu Ihnen kommen will. Falls es also <anchor type="commentary" xml:id="K_L00624-1"/>bei <rs ref="#pmb10863" type="person">Richard</rs><note type="commentary" corresp="K_L00624-1"><ref type="schnitzler-tagebuch" target="1896-11-24" subtype="Cf"/>.</note> i<c rendition="#langesS">s</c>t, bitte<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chreiben Sie ihm eine Zeile (<rs ref="#pmb353557" type="place"><hi rend="latintype">Habsburgergasse 5</hi></rs>) ich weiß es<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t nicht weiß auch nicht ob ich kommen oder arbeiten
                werde.</p><closer>Ihr<lb/><signed>Hugo.</signed></closer></div>
       </body>
       <back>

@@ -91,18 +91,18 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb59">Wien 9/3</placeName>
-                                    <date>31. 7. 94</date>
+                                    <date when="1894-07-31">31. 7. 94</date>
                                     <time>10–11 V</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb213">Ischl</placeName>
-                                    <date>31/7 94</date>
+                                    <date when="1894-07-31">31/7 94</date>
                                     <time>
                                        <unclear>11–A</unclear>
                                     </time>
@@ -124,19 +124,27 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1894-07-31" n="01">31. 7. 1894</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1894-07-31">31. 7. 1894</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1894-07-31">31. 7. 1894</date>
+               <placeName ref="#pmb213">Bad Ischl</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1894-07-31">31. 7. 1894</date>
-               <placeName ref="#pmb213">Bad Ischl</placeName>
+               <placeName ref="#pmb766">Eglmoosgasse</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L00360">Beer-Hofmann an Schnitzler, [30. 7. 1894]</ref>
                <ref subtype="next_letter" type="withinCollection" target="L03142">Salten an Schnitzler, 7. 8. 1894</ref>
                <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00360">Beer-Hofmann an Schnitzler, [30. 7. 1894]</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L00362">Beer-Hofmann an Schnitzler, [18. 8. 1894]</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L00363">Schnitzler an Beer-Hofmann, 19. 8. 1894</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -144,6 +152,7 @@
          <change who="GHS" when="2019-10-09">angelegt aus Faksimile</change>
          <change who="MAM" when="2019-10-12">Durchsicht</change>
          <change when="2019-10-13" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-17">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -153,12 +162,36 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="1894_AS_RBH_2_00015"/>Herrn <hi rend="latintype">Dr. Rich. Beer
-                     Hofmann</hi></addrLine><addrLine><rs ref="#pmb213" type="place"><hi rend="latintype">Ischl</hi></rs></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb766" type="place">Egelmoos 22</rs></hi></addrLine></address></div>
+                     Hofmann</hi></addrLine><addrLine><rs ref="#pmb213" type="place"><hi rend="latintype">Ischl</hi></rs></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb364910" type="place">Egelmoos 22</rs></hi></addrLine></address></div>
          <div type="writingSession" n="1"><p><pb facs="1894_AS_RBH_2_00016"/><salute>Lieber Richard,</salute> ich ko<c rendition="#gemination-m">mm</c> im Lauf des <anchor type="commentary" xml:id="K_L00361-1"/><date>Mittwoch</date><note type="commentary" corresp="K_L00361-1"><ref type="wienerschnitzler" target="1894-08-01" subtype="date-only"/>.</note> in <rs ref="#pmb30" type="place">S.</rs> an u<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>teig auch im <rs ref="#pmb230" type="place">Oe<c rendition="#langesS">s</c>t.
                   Hof</rs> ab. –</p><closer>Herzlichen Gruß<lb/><signed>Arthur</signed></closer></div>
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -183,97 +216,8 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb213">
-               <placeName>Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <location type="coords">
-                  <geo>47,71109 13,61893</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb429">Salzkammergut</placeName>
-                  <geo>47,75 13,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb230">
-               <placeName>Österreichischer Hof</placeName>
-               <placeName type="legacy-name-merge">Hotel Englischer Hof [Salzburg]</placeName>
-               <location type="coords">
-                  <geo>47,802045 13,043401</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb30">Salzburg</placeName>
-                  <geo>47,80067 13,04532</geo>
-               </location>
-            </place>
-            <place xml:id="pmb30">
-               <placeName>Salzburg</placeName>
-               <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="alternative-name">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg?</placeName>
-               <location type="coords">
-                  <geo>47,80067 13,04532</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg [Land]</placeName>
-                  <geo>47,41667 13,25</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
             <place xml:id="pmb59">
                <placeName>IX., Alsergrund</placeName>
                <placeName type="legacy-name-merge">Thurygrund</placeName>
@@ -286,6 +230,30 @@
                   <geo>48,208333 16,373056</geo>
                </location>
             </place>
+            <place xml:id="pmb213">
+               <placeName>Bad Ischl</placeName>
+               <location type="coords">
+                  <geo>47,71109 13,61893</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb429">Salzkammergut</placeName>
+                  <geo>47,75 13,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb168934">
+               <placeName>Frankgasse 1</placeName>
+               <location type="coords">
+                  <geo>48,21533 16,35736</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb397">Frankgasse</placeName>
+                  <geo>48,215516628628 16,356475515829</geo>
+               </location>
+            </place>
             <place xml:id="pmb766">
                <placeName>Eglmoosgasse</placeName>
                <location type="coords">
@@ -294,6 +262,44 @@
                <location type="located_in_place">
                   <placeName ref="pmb213">Bad Ischl</placeName>
                   <geo>47,71109 13,61893</geo>
+               </location>
+            </place>
+            <place xml:id="pmb364910">
+               <placeName>Eglmoosgasse 22</placeName>
+               <location type="coords">
+                  <geo>47,712155 13,616607</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb213">Bad Ischl</placeName>
+                  <geo>47,71109 13,61893</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb766">Eglmoosgasse</placeName>
+                  <geo>47,713083 13,61758</geo>
+               </location>
+            </place>
+            <place xml:id="pmb30">
+               <placeName>Salzburg</placeName>
+               <placeName type="alternative-name">Iuvavum</placeName>
+               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
+               <placeName type="legacy-name-merge">Salzburg?</placeName>
+               <location type="coords">
+                  <geo>47,80067 13,04532</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb697">Salzburg [Land]</placeName>
+                  <geo>47,41667 13,25</geo>
+               </location>
+            </place>
+            <place xml:id="pmb230">
+               <placeName>Österreichischer Hof</placeName>
+               <placeName type="legacy-name-merge">Hotel Englischer Hof [Salzburg]</placeName>
+               <location type="coords">
+                  <geo>47,802045 13,043401</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb30">Salzburg</placeName>
+                  <geo>47,80067 13,04532</geo>
                </location>
             </place>
          </listPlace>

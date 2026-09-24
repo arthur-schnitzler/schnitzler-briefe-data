@@ -90,19 +90,19 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb53">Wien 3/3</placeName>
-                                    <date>16. 6. 94</date>
+                                    <date when="1894-06-16">16. 6. 94</date>
                                     <time>5–6 N</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <addSpan>Bestellt</addSpan>
                                     <placeName ref="#pmb59">Wien 9/3</placeName>
-                                    <date>17. 6. 94</date>
+                                    <date when="1894-06-17">17. 6. 94</date>
                                     <time>8. V</time>
                                  </stamp>
                               </desc>
@@ -163,12 +163,20 @@
             <correspAction type="sent">
                <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
                <date when="1894-06-16" n="01">16. 6. 1894</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb192623">Salesianergasse 12</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1894-06-16">16. 6. 1894</date>
+               <placeName ref="#pmb53">III., Landstraße</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1894-06-17">17. 6. 1894</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1894-06-17">17. 6. 94</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo von</ref>
@@ -187,6 +195,7 @@
             <c rendition="#langesS">s</c>, @facs, Nummerierungen, Seitenzahlen ergänzt</change>
          <change who="GHS" when="2019-10-05">finalisiert</change>
          <change when="2019-10-06" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-17">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -197,7 +206,7 @@
       <body>
          <div type="address"><address><addrLine><hi rend="latintype"><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00134"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb59" type="place">IX</rs></hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb168934" type="place">Frankgasse 1</rs></hi></addrLine></address></div>
          <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00133"/><salute>lieber,</salute> ich werde dem
-                  <rs ref="#pmb10815" type="person">Bahr</rs><space unit="chars" quantity="1"/><anchor type="commentary" xml:id="K_L00339-1"/>das Mitgehen<note type="commentary" corresp="K_L00339-1">Sie wollten nach <rs ref="#pmb968" type="place">Mödling</rs>, um <rs ref="#pmb24686" type="person">Christine Schönberger</rs>, die Wirtstochter des
+                  <rs ref="#pmb10815" type="person">Bahr</rs><space unit="chars" quantity="1"/><anchor type="commentary" xml:id="K_L00339-1"/>das Mitgehen<note type="commentary" corresp="K_L00339-1">Die Planung betrifft den Ausflug am <ref type="wienerschnitzler" subtype="date-only" target="1894-06-17"/> nach <rs ref="#pmb968" type="place">Mödling</rs>, um <rs ref="#pmb24686" type="person">Christine Schönberger</rs>, die Wirtstochter des
                   <rs ref="#pmb625" type="place">Goldenen Sterns</rs> zu besuchen. Diese dürfte in <rs ref="#pmb29917" type="work">Liebelei</rs> porträtiert sein, <ref type="schnitzler-bahr" target="L041496" subtype="cf"/> und <bibl>Valerie Reichert-Heidt: <title level="a">Das Urbild der
                         Christine</title>. In: <title level="m">Neues Österreich</title>, Jg. 11,
                      Nr. 3208, <date when="1955-11-13">13. 11. 1955</date>, S. 17–18</bibl>.</note>
@@ -207,30 +216,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10815">
-               <persName>
-                  <forename>Hermann</forename>
-                  <surname>Bahr</surname>
-               </persName>
-               <birth>
-                  <date when="1863-07-19">1863-07-19</date>
-                  <settlement ref="pmb332">
-                     <placeName type="pref">Linz</placeName>
-                     <location>
-                        <geo>48,3 14,28333</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1934-01-15">1934-01-15</date>
-                  <settlement ref="pmb45258">
-                     <placeName type="pref">München</placeName>
-                     <location>
-                        <geo>48,13743 11,57549</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
@@ -261,7 +246,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -270,7 +255,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -278,10 +263,30 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb10815">
+               <persName>
+                  <forename>Hermann</forename>
+                  <surname>Bahr</surname>
+               </persName>
+               <birth>
+                  <date when="1863-07-19">1863-07-19</date>
+                  <settlement ref="pmb332">
+                     <placeName type="pref">Linz</placeName>
+                     <location>
+                        <geo>48,3 14,28333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1934-01-15">1934-01-15</date>
+                  <settlement ref="pmb45258">
+                     <placeName type="pref">München</placeName>
+                     <location>
+                        <geo>48,13743 11,57549</geo>
+                     </location>
+                  </settlement>
+               </death>
             </person>
             <person xml:id="pmb24686" ana="comment">
                <persName>
@@ -304,22 +309,55 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29917" ana="comment">
-               <title type="main">Liebelei. Schauspiel in drei Akten</title>
+               <title>Liebelei. Schauspiel in drei Akten</title>
                <title type="werk_link">https://www.deutschestextarchiv.de/book/show/schnitzler_liebelei_1896</title>
                <title type="werk_arbeitstitel">Das arme Mädl</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb15">
-               <placeName>Oper</placeName>
-               <placeName type="ort_namensvariante">Staatsoper</placeName>
+            <place xml:id="pmb53">
+               <placeName>III., Landstraße</placeName>
+               <placeName type="alternative-name">Landstraße</placeName>
+               <placeName type="legacy-name-merge">Landstraßer Hauptstraße</placeName>
+               <placeName type="legacy-name-merge">Wien-Landstraße</placeName>
+               <placeName type="legacy-name-merge">Gemeindebezirk Landstrasse</placeName>
                <location type="coords">
-                  <geo>48,203 16,3691</geo>
+                  <geo>48,19811 16,39482</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Thurygrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb192623">
+               <placeName>Salesianergasse 12</placeName>
+               <location type="coords">
+                  <geo>48,198484 16,380905</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb76">Salesianergasse</placeName>
+                  <geo>48,199226239476 16,380633449365</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb53">III., Landstraße</placeName>
+                  <geo>48,19811 16,39482</geo>
                </location>
             </place>
             <place xml:id="pmb168934">
@@ -336,45 +374,15 @@
                   <geo>48,215516628628 16,356475515829</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb15">
+               <placeName>Oper</placeName>
+               <placeName type="ort_namensvariante">Staatsoper</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>48,203 16,3691</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb53">
-               <placeName>III., Landstraße</placeName>
-               <placeName type="alternative-name">Landstraße</placeName>
-               <placeName type="legacy-name-merge">Landstraßer Hauptstraße</placeName>
-               <placeName type="legacy-name-merge">Wien-Landstraße</placeName>
-               <placeName type="legacy-name-merge">Gemeindebezirk Landstrasse</placeName>
-               <placeName type="legacy-name-merge">Landstraße</placeName>
-               <location type="coords">
-                  <geo>48,19811 16,39482</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
                </location>
             </place>
             <place xml:id="pmb571">
@@ -387,16 +395,14 @@
                   <geo>48,20769 16,37049</geo>
                </location>
             </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+            <place xml:id="pmb968" ana="comment">
+               <placeName>Mödling</placeName>
                <location type="coords">
-                  <geo>48,22387 16,35641</geo>
+                  <geo>48,08605 16,28921</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
             <place xml:id="pmb625" ana="comment">
@@ -412,19 +418,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb957">Vorderbrühl</placeName>
                   <geo>48,08153 16,26108</geo>
-               </location>
-            </place>
-            <place xml:id="pmb968" ana="comment">
-               <placeName>Mödling</placeName>
-               <placeName type="alternative-name">Mödling</placeName>
-               <placeName type="legacy-name-merge">Mödling</placeName>
-               <placeName type="legacy-name-merge">Mödling</placeName>
-               <location type="coords">
-                  <geo>48,08605 16,28921</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

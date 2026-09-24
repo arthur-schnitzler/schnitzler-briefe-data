@@ -3,8 +3,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1895-12-27" n="01">1895-12-27</title>
-            <title level="a">Lou Andreas-Salomé an Arthur Schnitzler, 27. 12. 1895</title>
+            <title type="iso-date" when-iso="1895-12-26" n="01">1895-12-26</title>
+            <title level="a">Lou Andreas-Salomé an Arthur Schnitzler, [26. oder 27]. 12. 1895</title>
             <author ref="#pmb10762">Andreas-Salomé, Lou</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -91,18 +91,18 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb51">Wien 1/1</placeName>
-                                    <date>27.12.95</date>
+                                    <date when="1895-12-27">27.12.95</date>
                                     <time>7–8V</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb59">Wien 9/3</placeName>
-                                    <date>27.12.95</date>
+                                    <date when="1895-12-27">27.12.95</date>
                                     <time>9.V</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
@@ -131,13 +131,21 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb10762">Andreas-Salomé, Lou</persName>
-               <date when="1895-12-27" n="01">27. 12. 1895</date>
+               <date n="01" notBefore="1895-12-26" notAfter="1895-12-27">[26. oder 27]. 12. 1895</date>
                <placeName ref="#pmb50">Wien</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1895-12-27">27. 12. 1895</date>
+               <placeName ref="#pmb51">Wien 1/1</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1895-12-27">27. 12. 1895</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1895-12-27">27. 12. 1895</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10762">Andreas-Salomé, Lou</ref>
@@ -153,6 +161,7 @@
          <change who="MAM" when="2018-08-08">Durchsicht</change>
          <change when="2018-08-09" who="MAM">Index check</change>
          <change who="GHS" when="2019-06-23">facs aktualisiert, korrigiert, finalisiert</change>
+         <change who="MAM" when="2026-09-21">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

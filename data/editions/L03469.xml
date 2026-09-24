@@ -96,8 +96,8 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
-                                    <placeName ref="#pmb50">
+                                 <stamp n="1" type="transmission">
+                                    <placeName ref="#pmb51">
                                        <unclear>1/1</unclear>
                                        <space unit="chars" quantity="1"/>
                                        <unclear>Wi</unclear>
@@ -127,11 +127,15 @@
                <date when="1909-10-01" n="02">1. 10. 1909</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1909-10-01">1. 10. [1909]</date>
+               <placeName ref="#pmb51">1/1 Wi en</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date evidence="conjecture" notBefore="1909-10-01" notAfter="1909-10-05">[1. 10. 1909
                   – 5. 10. 1909?]</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168940">Edmund-Weiß-Gasse 7</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann, Paul</ref>
@@ -147,6 +151,7 @@
          <change who="LU" when="2024-07-04">Durchsicht</change>
          <change when="2024-07-05" who="LU">Index check</change>
          <change who="MAM" when="2024-08-01">Durchsicht</change>
+         <change who="SJ" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -415,6 +420,25 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <placeName type="legacy-name-merge">Inner city</placeName>
+               <location type="coords">
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
             <place xml:id="pmb722">

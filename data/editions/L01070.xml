@@ -91,7 +91,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb36570">
                                        <supplied>Sambor</supplied>
                                     </placeName>
@@ -100,9 +100,9 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb59">Wien 9/3</placeName>
-                                    <date>4. 9. 00</date>
+                                    <date when="1900-09-04">4. 9. 00</date>
                                     <time>5.<supplied>N</supplied>
                                     </time>
                                     <addSpan>Bestellt</addSpan>
@@ -152,10 +152,17 @@
                <date when="1900-09-03" n="01">[3.?] 9. 1900</date>
                <placeName ref="#pmb36570">Sambir</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <placeName ref="#pmb36570">Sambir</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1900-09-04">4. 9. 1900</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1900-09-04">4. 9. 1900</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo von</ref>
@@ -171,6 +178,7 @@
          <change who="MAM" when="2019-10-15">Index check</change>
          <change who="GHS" when="2020-03-28">Durchsicht</change>
          <change who="MAM" when="2020-04-28">Durchsicht</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

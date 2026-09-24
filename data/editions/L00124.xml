@@ -83,7 +83,7 @@
                                  <measure unit="kuvert" quantity="1"/>
                                  <measure unit="blatt" quantity="1"/>
                                  <measure unit="seite" quantity="2"/>
-                                 <measure unit="zeichenanzahl" quantity="313"/>
+                                 <measure unit="zeichenanzahl" quantity="312"/>
                               </extent>
                               <support>die Innenseite des Blattes in voller Breite
                                  beschrieben</support>
@@ -95,9 +95,9 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb462">Venezia</placeName>
-                                    <date>19 <supplied>9 92</supplied>
+                                    <date when="1892-09-19">19 <supplied>9 92</supplied>
                                     </date>
                                     <time>8 S</time>
                                  </stamp>
@@ -105,9 +105,9 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
-                                    <placeName ref="#pmb40">Wien 1/1</placeName>
-                                    <date>21/9 92</date>
+                                 <stamp n="2" type="delivery">
+                                    <placeName ref="#pmb51">Wien 1/1</placeName>
+                                    <date when="1892-09-21">21/9 92</date>
                                     <time>9–9½ V.</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
@@ -146,10 +146,18 @@
                <date when="1892-09-19" n="01">19. 9. 1892</date>
                <placeName ref="#pmb462">Venedig</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1892-09-19">19. [9. 1892]</date>
+               <placeName ref="#pmb462">Venedig</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1892-09-21">21. 9. 1892</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1892-09-21">21. 9. 1892</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb190427">Wollzeile 15 (»Berthahof«)</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -167,6 +175,7 @@
          <change who="GHS" when="2019-09-18">überprüft am Faksimile</change>
          <change who="MAM" when="2019-10-07">Index check</change>
          <change who="MAM" when="2019-10-18">Finalisiert</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -178,11 +187,38 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="1892_AS_RBH_2_00033"/><hi rend="latintype"><rs ref="#pmb41240" type="place">Austria</rs></hi></addrLine><addrLine>Hrn Dr. <hi rend="latintype">Richard Beer Hofmann</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb50" type="place">Wien</rs>.</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb190427" type="place">I Wollzeile 15</rs></hi>.</addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="1892_AS_RBH_2_00031"/>Ich will Ihnen nur, <salute>mein lieber Richard,</salute> aus <rs ref="#pmb462" type="place">Venedig</rs> die herzlich<c rendition="#langesS">s</c>ten Grüße<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>agen. Wir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehn uns wohl bald wieder. Für alle Fälle mögen Sie wi<c rendition="#langesS">s</c><c rendition="#langesS">s</c>en, <pb facs="1892_AS_RBH_2_00032"/>daß ich Montag den <date>26. September</date> Abends
+         <div type="writingSession" n="1"><p><pb facs="1892_AS_RBH_2_00031"/>Ich will Ihnen nur, <salute>mein lieber
+                  Richard,</salute> aus <rs ref="#pmb462" type="place">Venedig</rs> die herzlich<c rendition="#langesS">s</c>ten
+               Grüße<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>agen. Wir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehn uns wohl bald wieder. Für alle Fälle mögen Sie wi<c rendition="#langesS">s</c><c rendition="#langesS">s</c>en, <pb facs="1892_AS_RBH_2_00032"/>daß ich <anchor type="commentary" xml:id="K_L00124-1"/>Montag den <date>26. September</date><note type="commentary" corresp="K_L00124-1"><ref type="wienerschnitzler" target="1892-09-26" subtype="Cf"/>.
+                  </note> Abends
                nach <time>zehn Uhr</time> im Café <rs ref="#pmb46" type="place"><hi rend="latintype">Kremser</hi></rs> zu<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein beab<c rendition="#langesS">s</c>ichtige.</p><closer>Ganz der Ihre<lb/><signed>Arthur</signed></closer><postscript><dateline>Am <date>19. 9. 1892</date></dateline></postscript></div>
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -207,36 +243,37 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb462">
+               <placeName>Venedig</placeName>
+               <placeName type="legacy-name-merge">Venice</placeName>
+               <location type="coords">
+                  <geo>45,43713 12,33265</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <location type="coords">
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
             <place xml:id="pmb190427">
                <placeName>Wollzeile 15 (»Berthahof«)</placeName>
                <location type="coords">
@@ -251,27 +288,10 @@
                   <geo>48,20769 16,37049</geo>
                </location>
             </place>
-            <place xml:id="pmb40">
-               <placeName>Theater in der Josefstadt</placeName>
-               <placeName type="legacy-name-merge">Josefst.-Th.</placeName>
-               <location type="coords">
-                  <geo>48,209583 16,351111</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb58">VIII., Josefstadt</placeName>
-                  <geo>48,21126 16,34706</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51915">Josefstädter Straße</placeName>
-                  <geo>48,20995865037859 16,347448769410484</geo>
-               </location>
-            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -290,6 +310,28 @@
                   <geo>48,4054 16,4887</geo>
                </location>
             </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb46">
                <placeName>Café Kremser</placeName>
                <placeName type="legacy-name-merge">Kremser</placeName>
@@ -299,41 +341,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb51">I., Innere Stadt</placeName>
                   <geo>48,20769 16,37049</geo>
-               </location>
-            </place>
-            <place xml:id="pmb462">
-               <placeName>Venedig</placeName>
-               <placeName type="alternative-name">Venedig</placeName>
-               <placeName type="legacy-name-merge">Venice</placeName>
-               <placeName type="legacy-name-merge">Venedig</placeName>
-               <location type="coords">
-                  <geo>45,43713 12,33265</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

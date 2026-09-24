@@ -3,8 +3,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1900-12-31" n="02">1900-12-31</title>
-            <title level="a">Arthur Schnitzler an Gustav Schwarzkopf, 31. 12. 1900</title>
+            <title type="iso-date" when-iso="1900-12-30" n="02">1900-12-30</title>
+            <title level="a">Arthur Schnitzler an Gustav Schwarzkopf, [30. oder 31]. 12. 1900</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <persName>Jahnke, Selma</persName>
@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="261"/>
+                                 <measure unit="zeichenanzahl" quantity="262"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -91,7 +91,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb59">Wien 9/1 66</placeName>
                                     <date when="1900-12-31">31. 12. 00</date>
                                     <time>9 10 N</time>
@@ -100,7 +100,7 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb51">Wien 1/1</placeName>
                                     <date when="1901-01-01">1. 1. 01</date>
                                     <time>11½V</time>
@@ -122,25 +122,34 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1900-12-31" n="02">31. 12. 1900</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <date notBefore="1900-12-30" notAfter="1900-12-31" n="02">[30. oder 31]. 12. 1900</date>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1900-12-31">31. 12. 1900</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1901-01-01">1. 1. 1901</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
                <date when="1901-01-01">1. 1. 1901</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb207296">Tiefer Graben 23</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_12740">Schwarzkopf, Gustav</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L03916">Schnitzler an Herzl, [zwischen 31. 12. 1900 und 7. 1. 1901?]</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L02947">Goldmann an Schnitzler, 31. 12. [1900]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04087">Schnitzler an Schwarzkopf, 24. 12. 1900</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L03538">Goldmann an Gussmann, Gussmann, 28. 12. [1900?]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L03916">Schnitzler an Herzl, [zwischen 31. 12. 1900 und 7. 1. 1901?]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04087">Schnitzler an Schwarzkopf, [23. oder 24]. 12. 1900</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740" target="L04306">Schwarzkopf an Schnitzler, 4. 2. 1901</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2025-12-10">Export aus Transkribus</change>
+         <change who="SJ" when="2026-09-22">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -151,12 +160,36 @@
       <body>
          <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-00096-B-000-00139"/>Herrn <hi rend="latintype">Gustav Schwarzkopf</hi></addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb207296"><hi rend="latintype">I. Tiefer
                         Graben 23</hi></rs>.</addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-00096-B-000-00140"/><salute>lieber Gu<c rendition="#langesS">s</c>tav,</salute><date>Donner<c rendition="#langesS">s</c>tag</date><space unit="chars" quantity="1"/><time>Nachmittg</time><space unit="chars" quantity="1"/><time><hi rend="underline" n="2">vor</hi> 6</time> wird <rs type="person" ref="#pmb13055">Wasserma<c rendition="#gemination-n">nn</c></rs> eine <rs type="work" ref="#pmb76951" subtype="implied">Novelle</rs> bei mir <rs type="event" ref="#pmb183933" subtype="implied">vorle<c rendition="#langesS">s</c>en</rs>, wozu Sie
+         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-00096-B-000-00140"/><salute>lieber Gu<c rendition="#langesS">s</c>tav,</salute><space unit="chars" quantity="1"/><date>Donner<c rendition="#langesS">s</c>tag</date><space unit="chars" quantity="1"/><time>Nachmittg</time><space unit="chars" quantity="1"/><time><hi rend="underline" n="2">vor</hi> 6</time> wird <rs type="person" ref="#pmb13055">Wasserma<c rendition="#gemination-n">nn</c></rs> eine <rs type="work" ref="#pmb76951" subtype="implied">Novelle</rs> bei mir <rs type="event" ref="#pmb183933" subtype="implied">vorle<c rendition="#langesS">s</c>en</rs>, wozu Sie
                freundlich<c rendition="#langesS">s</c>t gebeten sind. Obzwar ich Sie früher zu <c rendition="#langesS">s</c>ehn hoffe, theil ich Ihnen dies
                gleich heute mit.</p><closer>Herzlich<c rendition="#langesS">s</c>t Ihr <signed>ArthurSch</signed></closer></div>
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb12740">
                <persName>
                   <forename>Gustav</forename>
@@ -205,42 +238,66 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb76951" ana="implied">
-               <title type="main">Hilperich</title>
-               <author role="hat-geschaffen" ref="pmb13055">Wassermann, Jakob</author>
+               <title>Hilperich</title>
+               <author ref="pmb13055" role="hat-geschaffen">Wassermann, Jakob</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Thurygrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <location type="coords">
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb207296">
                <placeName>Tiefer Graben 23</placeName>
                <location type="coords">
@@ -253,59 +310,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb51">I., Innere Stadt</placeName>
                   <geo>48,20769 16,37049</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb51">
-               <placeName>I., Innere Stadt</placeName>
-               <placeName type="alternative-name">Inner city</placeName>
-               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
-               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
-               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
-               <placeName type="legacy-name-merge">Inner city</placeName>
-               <location type="coords">
-                  <geo>48,20769 16,37049</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
-               <location type="coords">
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
          </listPlace>

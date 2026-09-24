@@ -80,7 +80,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="kartenbrief" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="463"/>
+                                 <measure unit="zeichenanzahl" quantity="466"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -90,9 +90,9 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb53">Wien 3/3</placeName>
-                                    <date>1. 1. 92</date>
+                                    <date when="1892-01-01">1. 1. 92</date>
                                     <time>5–6 N</time>
                                  </stamp>
                               </desc>
@@ -155,17 +155,21 @@
             <correspAction type="sent">
                <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
                <date when="1892-01-01" n="03">1. 1. 1892</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb192623">Salesianergasse 12</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1892-01-01">1. 1. 1892</date>
+               <placeName ref="#pmb53">III., Landstraße</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1892-01-01">1. 1. 92</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb167805">Kärntnerring 12/Bösendorferstraße 11</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo von</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L00058">Beer-Hofmann an Schnitzler, [1892–1893?]</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00060">Schnitzler an Beer-Hofmann, 12. 1. 1892</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00060">Schnitzler an Beer-Hofmann, [11. oder 12]. 1. 1892</ref>
                <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11740" target="L00050">Hofmannsthal an Schnitzler, 7. 12. 1891</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11740" target="L00061">Hofmannsthal an Schnitzler, 12. 1. 1892</ref>
             </correspContext>
@@ -178,6 +182,7 @@
          <change who="GHS" when="2018-11-28">
             <c rendition="#langesS">s</c>, @facs, Nummerierungen ergänzt</change>
          <change who="MAM" when="2019-01-20">Index check</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -187,8 +192,8 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00027"/>Herrn <hi rend="latintype">D<hi rend="superscript">r</hi> Arthur Schnitzler</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb50" type="place">Wien</rs></hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb167805" type="place">I. Kärnthnerring 12</rs>.</hi></addrLine></address></div>
-         <div type="writingSession" n="1"><opener><salute><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00028"/>Lieber Freund!</salute></opener><p><rs ref="#pmb2425" type="person">Dörmann</rs> will uns<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein neues <anchor type="commentary" xml:id="K_L00059-1"/><rs type="work" ref="#pmb30171" subtype="implied">Buch</rs><note type="commentary" corresp="K_L00059-1"><bibl><rs ref="#pmb2425" type="person">Felix Dörmann</rs>: <rs ref="#pmb30171" type="work">Sensationen</rs>. Wien: <publisher>Verlag von Leopold
-                        Weiss</publisher><space unit="chars" quantity="1"/><date>1892</date></bibl>.</note> vorle<c rendition="#langesS">s</c>en und hat mich gebeten, Sie einzuladen.</p><p>Wenn Sie al<c rendition="#langesS">s</c>o <anchor type="commentary" xml:id="K_L00059-2"/>nichts be<c rendition="#langesS">s</c><c rendition="#langesS">s</c>eres<note type="commentary" corresp="K_L00059-2">Schnitzler war bei der Lesung.</note>
+         <div type="writingSession" n="1"><opener><salute><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00028"/>Lieber Freund!</salute></opener><p><anchor type="commentary" xml:id="K_L00059-1"/><rs ref="#pmb2425" type="person">Dörmann</rs> will uns<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ein neues <anchor type="commentary" xml:id="K_L00059-2"/><rs type="work" ref="#pmb30171" subtype="implied">Buch</rs><note type="commentary" corresp="K_L00059-2"><bibl><rs ref="#pmb2425" type="person">Felix Dörmann</rs>: <rs ref="#pmb30171" type="work">Sensationen</rs>. Wien: <publisher>Verlag von Leopold
+                        Weiss</publisher><space unit="chars" quantity="1"/><date>1892</date></bibl>.</note><space unit="chars" quantity="1"/><rs type="event" ref="#pmb364753" subtype="implied">vorle<c rendition="#langesS">s</c>en</rs><note type="commentary" corresp="K_L00059-1"><ref type="schnitzler-kultur" target="pmb364753"/>.</note> und hat mich gebeten, Sie einzuladen.</p><p>Wenn Sie al<c rendition="#langesS">s</c>o nichts be<c rendition="#langesS">s</c><c rendition="#langesS">s</c>eres
                vorhaben, kommen Sie morgen <date>Samstag</date>, <time><hi rend="underline" n="1">½ 8</hi> Uhr</time> (pünktlich) <rs ref="#pmb29778" type="org">Gewerbeverein</rs>, <rs ref="#pmb564" type="place">E<c rendition="#langesS">s</c>chenbachga<c rendition="#langesS">s</c><c rendition="#langesS">s</c>e</rs>, 3 Stock, im Secretariat. Es kommen <rs ref="#pmb2167" type="person">Salten</rs>, <rs ref="#pmb10815" type="person">Bahr</rs>, Sie und
                ich. Wenn Sie nicht können,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>agen Sie bitte mir pneumati<c rendition="#langesS">s</c>ch ab. Ich war heute bei dem
                Leichenbegängnis von <rs ref="#pmb10863" type="person">Richards</rs><space unit="chars" quantity="1"/><rs type="person" ref="#pmb28533" subtype="implied">Mutter</rs>. Soll man ihn
@@ -196,54 +201,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10815">
-               <persName>
-                  <forename>Hermann</forename>
-                  <surname>Bahr</surname>
-               </persName>
-               <birth>
-                  <date when="1863-07-19">1863-07-19</date>
-                  <settlement ref="pmb332">
-                     <placeName type="pref">Linz</placeName>
-                     <location>
-                        <geo>48,3 14,28333</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1934-01-15">1934-01-15</date>
-                  <settlement ref="pmb45258">
-                     <placeName type="pref">München</placeName>
-                     <location>
-                        <geo>48,13743 11,57549</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb10863">
-               <persName>
-                  <forename>Richard</forename>
-                  <surname>Beer-Hofmann</surname>
-               </persName>
-               <birth>
-                  <date when="1866-07-11">1866-07-11</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1945-09-26">1945-09-26</date>
-                  <settlement ref="pmb44053">
-                     <placeName type="pref">New York City</placeName>
-                     <location>
-                        <geo>40,71427 -74,00597</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
@@ -274,7 +231,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -283,7 +240,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -291,31 +248,27 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
-            <person xml:id="pmb2167">
+            <person xml:id="pmb10815">
                <persName>
-                  <forename>Felix</forename>
-                  <surname>Salten</surname>
+                  <forename>Hermann</forename>
+                  <surname>Bahr</surname>
                </persName>
                <birth>
-                  <date when="1869-09-06">1869-09-06</date>
-                  <settlement ref="pmb43471">
-                     <placeName type="pref">Budapest</placeName>
+                  <date when="1863-07-19">1863-07-19</date>
+                  <settlement ref="pmb332">
+                     <placeName type="pref">Linz</placeName>
                      <location>
-                        <geo>47,49835 19,04045</geo>
+                        <geo>48,3 14,28333</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1945-10-08">1945-10-08</date>
-                  <settlement ref="pmb484">
-                     <placeName type="pref">Zürich</placeName>
+                  <date when="1934-01-15">1934-01-15</date>
+                  <settlement ref="pmb45258">
+                     <placeName type="pref">München</placeName>
                      <location>
-                        <geo>47,37174 8,54226</geo>
+                        <geo>48,13743 11,57549</geo>
                      </location>
                   </settlement>
                </death>
@@ -344,13 +297,61 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2167">
+               <persName>
+                  <forename>Felix</forename>
+                  <surname>Salten</surname>
+               </persName>
+               <birth>
+                  <date when="1869-09-06">1869-09-06</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-10-08">1945-10-08</date>
+                  <settlement ref="pmb484">
+                     <placeName type="pref">Zürich</placeName>
+                     <location>
+                        <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb10863">
+               <persName>
+                  <forename>Richard</forename>
+                  <surname>Beer-Hofmann</surname>
+               </persName>
+               <birth>
+                  <date when="1866-07-11">1866-07-11</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-09-26">1945-09-26</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb28533" ana="implied">
                <persName>
                   <forename>Bertha</forename>
                   <surname>Hofmann</surname>
                </persName>
                <birth>
-                  <date when="1840-01-01" notAfter="1840-12-31" notBefore="1840-01-01">1840</date>
+                  <date notBefore="1840-01-01" when="1840-01-01" notAfter="1840-12-31">1840</date>
                </birth>
                <death>
                   <date when="1891-12-30">1891-12-30</date>
@@ -364,12 +365,44 @@
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb30171" ana="comment">
-               <title type="main">Sensationen</title>
-               <author role="hat-geschaffen" ref="pmb2425">Dörmann, Felix</author>
+            <bibl xml:id="pmb30171" ana="implied">
+               <title>Sensationen</title>
+               <author ref="pmb2425" role="hat-geschaffen">Dörmann, Felix</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb53">
+               <placeName>III., Landstraße</placeName>
+               <placeName type="alternative-name">Landstraße</placeName>
+               <placeName type="legacy-name-merge">Landstraßer Hauptstraße</placeName>
+               <placeName type="legacy-name-merge">Wien-Landstraße</placeName>
+               <placeName type="legacy-name-merge">Gemeindebezirk Landstrasse</placeName>
+               <location type="coords">
+                  <geo>48,19811 16,39482</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb192623">
+               <placeName>Salesianergasse 12</placeName>
+               <location type="coords">
+                  <geo>48,198484 16,380905</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb76">Salesianergasse</placeName>
+                  <geo>48,199226239476 16,380633449365</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb53">III., Landstraße</placeName>
+                  <geo>48,19811 16,39482</geo>
+               </location>
+            </place>
             <place xml:id="pmb167805">
                <placeName>Kärntnerring 12/Bösendorferstraße 11</placeName>
                <placeName type="ort_fruherer-name">Giselastraße 11</placeName>
@@ -392,16 +425,12 @@
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -410,24 +439,9 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
-            </place>
-            <place xml:id="pmb53">
-               <placeName>III., Landstraße</placeName>
-               <placeName type="alternative-name">Landstraße</placeName>
-               <placeName type="legacy-name-merge">Landstraßer Hauptstraße</placeName>
-               <placeName type="legacy-name-merge">Wien-Landstraße</placeName>
-               <placeName type="legacy-name-merge">Gemeindebezirk Landstrasse</placeName>
-               <placeName type="legacy-name-merge">Landstraße</placeName>
-               <location type="coords">
-                  <geo>48,19811 16,39482</geo>
-               </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
             <place xml:id="pmb564">
@@ -455,7 +469,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -469,10 +483,23 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
             </org>
          </listOrg>
+         <listEvent>
+            <event xml:id="pmb364753" ana="implied">
+               <eventName n="Private Lesung">Private Lesung von Sensationen, 2.1.1892</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb563">Saal des Niederösterreichischen Gewerbevereins</placeName>
+                     <location>
+                        <geo>48,20185 16,36327</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+         </listEvent>
       </back>
    </text>
 </TEI>

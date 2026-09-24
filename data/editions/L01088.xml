@@ -94,18 +94,18 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb53">Wien 3/3</placeName>
-                                    <date>22 XII 00</date>
+                                    <date when="1900-12-22">22 XII 00</date>
                                     <time>5 30N</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb59">Wien 9/2</placeName>
-                                    <date>
+                                    <date when="1900-12-22">
                                        <unclear>22</unclear> XII 00</date>
                                     <time>5 <supplied>40N</supplied>
                                     </time>
@@ -118,8 +118,8 @@
                                  </quote>«</desc>
                            </incident>
                            <incident type="archival" rend="bleistift">
-                              <desc>von unbekannter Hand mehrfach nummeriert, diese
-                                 gestrichen und zuletzt geändert zu: »<quote>170</quote>«</desc>
+                              <desc>von unbekannter Hand mehrfach nummeriert, diese gestrichen und
+                                 zuletzt geändert zu: »<quote>170</quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -155,10 +155,18 @@
                <date when="1900-12-22" n="02">22. 12. 1900</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1900-12-22">22. 12. 1900</date>
+               <placeName ref="#pmb53">III., Landstraße</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1900-12-22">22. 12. 1900</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1900-12-22">22. 12. 1900</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo von</ref>
@@ -174,6 +182,7 @@
          <change who="GHS" when="2020-03-27">Durchsicht</change>
          <change who="MAM" when="2020-03-30">Index check</change>
          <change who="MAM" when="2020-05-04">Durchsicht</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -183,14 +192,15 @@
    <text>
       <body>
          <div type="address"><address><addrLine><hi rend="latintype"><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00365"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb168934" type="place">IX. Franckgasse 1.</rs></hi></addrLine><addrLine><hi rend="latintype"><rs type="place" ref="#pmb50">Wien</rs></hi></addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00366"/><salute>lieber Arthur,</salute> ich bin auch morgen <date>Sonntag</date> wieder bei
-                  <rs ref="#pmb10863" type="person">Richard</rs>, vielleicht da<c rendition="#langesS">s</c>s Sie gegen
-                  <time>¾ 8</time> hinko<c rendition="#gemination-m">mm</c>en, mich abzuholen oder
-               gemein<c rendition="#langesS">s</c>am dortzubleiben, das wäre<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chön.</p><closer>Herzlich<lb/><signed>Hugo</signed></closer><postscript><dateline><date>Samstag</date>.</dateline><p>Man kann Sie nun ruhig den <anchor type="commentary" xml:id="K_L01088-1"/><rs type="person" ref="#pmb8316" subtype="implied"><hi rend="latintype">Kotzebue</hi></rs> der Novelle<note type="commentary" corresp="K_L01088-1">Die Bemerkung erfolgt anlässlich der 
-                     bevorstehenden und bereits beworbenen Veröffentlichung von <rs type="work" ref="#pmb29853">Lieutenant
-                        Gustl</rs> am <ref type="schnitzler-tagebuch" subtype="date-only" target="1900-12-25"/> in der <rs type="work" ref="#pmb36374">Neuen Freie Presse</rs>. Es handelt sich um einen foppenden Vergleich mit <rs type="person" ref="#pmb8316">August von Kotzebue</rs>,
-                     der ein sehr
-                     umfangreiches Theaterwerk von über 200 Stücken hinterlassen hat.</note> nennen.</p></postscript></div>
+         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00366"/><salute>lieber Arthur,</salute> ich bin auch morgen <anchor type="commentary" xml:id="K_L01088-11"/><date>Sonntag</date> wieder bei <rs ref="#pmb10863" type="person">Richard</rs><note type="commentary" corresp="K_L01088-11"><ref type="schnitzler-tagebuch" target="1900-12-23" subtype="Cf"/>.</note>,
+               vielleicht da<c rendition="#langesS">s</c>s Sie gegen <time>¾ 8</time> hinko<c rendition="#gemination-m">mm</c>en,
+               mich abzuholen oder gemein<c rendition="#langesS">s</c>am dortzubleiben, das wäre<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chön.</p><closer>Herzlich<lb/><signed>Hugo</signed></closer><postscript><dateline><date>Samstag</date>.</dateline><p>Man kann Sie nun ruhig den <anchor type="commentary" xml:id="K_L01088-1"/><rs type="person" ref="#pmb8316" subtype="implied"><hi rend="latintype">Kotzebue</hi></rs> der Novelle<note type="commentary" corresp="K_L01088-1">Die Bemerkung
+                     erfolgt anlässlich der bevorstehenden und bereits beworbenen Veröffentlichung
+                     von <rs type="work" ref="#pmb29853">Lieutenant Gustl</rs> am <ref type="schnitzler-tagebuch" subtype="date-only" target="1900-12-25"/> in der
+                        <rs type="work" ref="#pmb36374">Neuen Freie Presse</rs>. Es handelt sich um
+                     einen foppenden Vergleich mit <rs type="person" ref="#pmb8316">August von
+                        Kotzebue</rs>, der ein sehr umfangreiches Theaterwerk von über 200 Stücken
+                     hinterlassen hat.</note> nennen.</p></postscript></div>
       </body>
       <back>
          <listPerson>

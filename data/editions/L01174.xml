@@ -91,17 +91,17 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
-                                    <placeName ref="#pmb50">1 Wien 1</placeName>
-                                    <date>20. 9. 01</date>
+                                 <stamp n="1" type="transmission">
+                                    <placeName ref="#pmb51">1 Wien 1</placeName>
+                                    <date when="1901-09-20">20. 9. 01</date>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb59">Wien 9/3</placeName>
-                                    <date>21. 9. 01</date>
+                                    <date when="1901-09-21">21. 9. 01</date>
                                     <time>8.V</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
@@ -113,8 +113,7 @@
                                  </quote>«</desc>
                            </incident>
                            <incident type="archival" rend="bleistift">
-                              <desc>von unbekannter Hand nummeriert:
-                                    »<quote>171</quote>«</desc>
+                              <desc>von unbekannter Hand nummeriert: »<quote>171</quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -131,11 +130,20 @@
             <correspAction type="sent">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1901-09-20" n="01">20. 9. 1901</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1901-09-20">20. 9. 1901</date>
+               <placeName ref="#pmb51" evidence="conjecture">I., Innere Stadt</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1901-09-21">21. 9. 1901</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1901-09-21">21. 9. 1901</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -151,6 +159,7 @@
          <change who="GHS" when="2020-06-24">Durchsicht</change>
          <change who="MAM" when="2020-10-19">Index check</change>
          <change who="GHS" when="2020-11-02">Finalisiert</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -161,7 +170,7 @@
       <body>
          <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-0008-B-00002-000-00024"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine><addrLine><rs ref="#pmb50" type="place">Wien</rs></addrLine><addrLine><rs ref="#pmb168934" type="place">IX Frankgasse 1</rs>.</addrLine></address></div>
          <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-0008-B-00002-000-00023"/><salute>Lieber Arthur!</salute> Ich bin vielleicht morgen – <date>Samstag</date> – in
-                  <rs type="place" ref="#pmb173">Rodaun</rs></p><p>Was haben Sie Abend vor, und sind Sie frei, und wo wohnt <rs type="person" ref="#pmb12740">Schwarzkopf</rs>?</p><closer>Herzlichst Ihr<lb/><signed>R.</signed></closer></div>
+                  <rs type="place" ref="#pmb173">Rodaun</rs></p><p>Was haben Sie Abend vor, und sind Sie frei, und wo <rs type="place" ref="#pmb207296">wohnt <rs type="person" ref="#pmb12740">Schwarzkopf</rs></rs>?</p><closer>Herzlichst Ihr<lb/><signed>R.</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -274,6 +283,20 @@
                   <geo>48,13333 16,3</geo>
                </location>
             </place>
+            <place xml:id="pmb207296">
+               <placeName>Tiefer Graben 23</placeName>
+               <location type="coords">
+                  <geo>48,213038 16,368738</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50825">Tiefer Graben</placeName>
+                  <geo>48,2125 16,368333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
@@ -294,6 +317,25 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <placeName type="legacy-name-merge">Inner city</placeName>
+               <location type="coords">
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
             <place xml:id="pmb59">

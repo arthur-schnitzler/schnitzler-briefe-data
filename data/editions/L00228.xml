@@ -94,18 +94,18 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb59">Wien 9/2</placeName>
-                                    <date>30. 6. 93</date>
+                                    <date when="1893-06-30">30. 6. 93</date>
                                     <time>10–11 V</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb213">Ischl</placeName>
-                                    <date>1 7 93</date>
+                                    <date when="1893-07-01">1 7 93</date>
                                     <time>7 F</time>
                                  </stamp>
                               </desc>
@@ -141,12 +141,20 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1893-06-30" n="01">30. 6. 1893</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb167782">Wohnung und Ordination Arthur Schnitzler Grillparzerstraße 7/3. Stock</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1893-06-30">30. 6. 1893</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1893-07-01">1. 7. 1893</date>
+               <placeName ref="#pmb213">Bad Ischl</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1893-07-01">1. 7. 1893</date>
-               <placeName ref="#pmb213">Bad Ischl</placeName>
+               <placeName ref="#pmb41463">Schulgasse</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -162,6 +170,7 @@
          <change who="GHS" when="2019-09-26">überprüft am Faksimile</change>
          <change who="MAM" when="2019-10-01">Index check</change>
          <change who="MAM" when="2019-12-04">Durchsicht</change>
+         <change who="MAM" when="2026-09-16">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -172,12 +181,36 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="1893_AS_RBH_2_00045"/><hi rend="latintype">Herrn Dr. Rich. Beer-Hofmann</hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb213" type="place">Ischl</rs></hi></addrLine><addrLine><rs ref="#pmb41463" type="place"><hi rend="latintype">Schulgasse 8</hi></rs>.</addrLine></address></div>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="1893_AS_RBH_2_00041"/><date when="1823-06-30">30/6</date></dateline><salute>Lieber Richard,</salute></opener><p>aller Wahr<c rendition="#langesS">s</c>cheinlichkeit nach bin ich <date>So<c rendition="#gemination-n">nn</c>tag</date><space unit="chars" quantity="1"/><time>Früh</time> mit meiner <rs type="person" ref="#pmb12701" subtype="implied">Mama</rs> in <rs ref="#pmb213" type="place">I<c rendition="#langesS">s</c>chl</rs>. – Cigaretten u Parfum für
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="1893_AS_RBH_2_00041"/><date when="1823-06-30">30/6</date></dateline><salute>Lieber Richard,</salute></opener><p>aller Wahr<c rendition="#langesS">s</c>cheinlichkeit nach bin ich <anchor type="commentary" xml:id="K_L00228-1"/><date>So<c rendition="#gemination-n">nn</c>tag</date><space unit="chars" quantity="1"/><time>Früh</time><note type="commentary" corresp="K_L00228-1"><ref type="wienerschnitzler" subtype="Cf" target="1893-07-02"/>.</note> mit meiner <rs type="person" ref="#pmb12701" subtype="implied">Mama</rs> in <rs ref="#pmb213" type="place">I<c rendition="#langesS">s</c>chl</rs>. – Cigaretten u Parfum für
                Sie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>tehen bereit. –</p><p><rs ref="#pmb2601" type="person"><hi rend="latintype">Jarno</hi></rs> tritt ja<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chon auf. – Schon ge<c rendition="#langesS">s</c>prochen? –</p><p>Ich werde bei <rs ref="#pmb414" type="place">Leopold</rs> wohnen u. täglich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>tundenlang Bicycle fahren – was ein <pb facs="1893_AS_RBH_2_00042"/>wirkliches
                Vergnügen i<c rendition="#langesS">s</c>t. – <rs ref="#pmb11740" type="person"><hi rend="latintype">Loris</hi></rs> wirds auch lernen. –</p><p>Adieu ein<c rendition="#langesS">s</c>tweilen, ich freue mich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr, Sie wiederzu<c rendition="#langesS">s</c>ehen.</p><closer>Herzlich der Ihre <signed>Arth</signed></closer></div>
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -202,58 +235,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb11740">
-               <persName>
-                  <forename>Hugo von</forename>
-                  <surname>Hofmannsthal</surname>
-               </persName>
-               <birth>
-                  <date when="1874-02-01">1874-02-01</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1929-07-15">1929-07-15</date>
-                  <settlement ref="pmb173">
-                     <placeName type="pref">Rodaun</placeName>
-                     <location>
-                        <geo>48,132793312328 16,256152195922</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2601">
                <persName>
                   <forename>Josef</forename>
@@ -274,6 +255,30 @@
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb11740">
+               <persName>
+                  <forename>Hugo von</forename>
+                  <surname>Hofmannsthal</surname>
+               </persName>
+               <birth>
+                  <date when="1874-02-01">1874-02-01</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1929-07-15">1929-07-15</date>
+                  <settlement ref="pmb173">
+                     <placeName type="pref">Rodaun</placeName>
+                     <location>
+                        <geo>48,132793312328 16,256152195922</geo>
                      </location>
                   </settlement>
                </death>
@@ -304,16 +309,50 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Thurygrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
             <place xml:id="pmb213">
                <placeName>Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
                <location type="coords">
                   <geo>47,71109 13,61893</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb429">Salzkammergut</placeName>
                   <geo>47,75 13,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb167782">
+               <placeName>Wohnung und Ordination Arthur Schnitzler Grillparzerstraße 7/3. Stock</placeName>
+               <location type="coords">
+                  <geo>48,212477 16,357233</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb412">Grillparzerstraße</placeName>
+                  <geo>48,212643768549 16,357353835756</geo>
+               </location>
+            </place>
+            <place xml:id="pmb41463">
+               <placeName>Schulgasse</placeName>
+               <location type="coords">
+                  <geo>47,71222 13,62186</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb213">Bad Ischl</placeName>
+                  <geo>47,71109 13,61893</geo>
                </location>
             </place>
             <place xml:id="pmb414">
@@ -329,50 +368,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb43015">Kaltenbach</placeName>
                   <geo>47,69778 13,60913</geo>
-               </location>
-            </place>
-            <place xml:id="pmb41463">
-               <placeName>Schulgasse</placeName>
-               <location type="coords">
-                  <geo>47,71222 13,62186</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb213">Bad Ischl</placeName>
-                  <geo>47,71109 13,61893</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
-               <location type="coords">
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
          </listPlace>

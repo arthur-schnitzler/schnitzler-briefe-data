@@ -3,8 +3,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1900-02-07" n="01">1900-02-07</title>
-            <title level="a">Richard Beer-Hofmann an Arthur Schnitzler, [7.?] 2. 1900</title>
+            <title type="iso-date" when-iso="1900-02-06" n="01">1900-02-06</title>
+            <title level="a">Richard Beer-Hofmann an Arthur Schnitzler, [7. oder 8.] 2. 1900</title>
             <author ref="#pmb10863">Beer-Hofmann, Richard</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -91,19 +91,19 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb994">Geno<supplied>va</supplied>
                                     </placeName>
-                                    <date>
+                                    <date when="1900-02-07">
                                        <supplied>7. 2.</supplied> 00</date>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb59">Wien 9/3</placeName>
-                                    <date>9. 2. 00</date>
+                                    <date when="1900-02-09">9. 2. 00</date>
                                     <time>V</time>
                                  </stamp>
                               </desc>
@@ -126,13 +126,21 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
-               <date when="1900-02-07" n="01">[7.?] 2. 1900</date>
+               <date n="01" notBefore="1900-02-06" notAfter="1900-02-07">[6. oder 7.] 2. 1900</date>
                <placeName ref="#pmb994">Genua</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1900-02-07">[7. 2]. 1900</date>
+               <placeName ref="#pmb994">Genua</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1900-02-09">9. 2. 1900</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1900-02-09">9. 2. 1900</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -147,6 +155,7 @@
          <change who="GHS" when="2021-01-09">Angelegt aus Faksimile</change>
          <change who="MAM" when="2021-01-27">Index check</change>
          <change when="2021-01-28" who="MAM">Durchsicht</change>
+         <change who="MAM" when="2026-09-15">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>

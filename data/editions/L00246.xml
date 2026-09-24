@@ -82,7 +82,7 @@
                               <extent>
                                  <measure unit="karte" quantity="1"/>
                                  <measure unit="kuvert" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="780"/>
+                                 <measure unit="zeichenanzahl" quantity="779"/>
                               </extent>
                               <support>Karte und Umschlag mit Trauerrand</support>
                            </supportDesc>
@@ -93,18 +93,18 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
-                                    <placeName ref="#pmb50">Wien 1/1</placeName>
-                                    <date>29. 7. 93</date>
+                                 <stamp n="1" type="transmission">
+                                    <placeName ref="#pmb51">Wien 1/1</placeName>
+                                    <date when="1893-07-29">29. 7. 93</date>
                                     <time>2–3 N</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb213">Ischl</placeName>
-                                    <date>30 7 93</date>
+                                    <date when="1893-07-30">30 7 93</date>
                                     <time>7–F</time>
                                  </stamp>
                               </desc>
@@ -144,12 +144,20 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1893-07-29" n="01">29. 7. 1893</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb167782">Wohnung und Ordination Arthur Schnitzler Grillparzerstraße 7/3. Stock</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1893-07-29">29. 7. 1893</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1893-07-30">30. 7. 1893</date>
+               <placeName ref="#pmb213">Bad Ischl</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1893-07-30">30. 7. 1893</date>
-               <placeName ref="#pmb213">Bad Ischl</placeName>
+               <placeName ref="#pmb41463">Schulgasse</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -165,6 +173,7 @@
          <change who="GHS" when="2019-09-26">überprüft am Faksimile</change>
          <change who="MAM" when="2019-10-14">Index check</change>
          <change who="MAM" when="2019-12-04">Durchsicht</change>
+         <change who="MAM" when="2026-09-16">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -176,9 +185,9 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="1893_AS_RBH_2_00027"/><hi rend="latintype">Herrn Doctor</hi></addrLine><addrLine><hi rend="latintype">Richard Beer-Hof<damage agent="paperloss"><supplied>mann</supplied></damage></hi></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb213" type="place">Isch</rs><damage agent="paperloss"><supplied>l</supplied></damage></hi></addrLine><addrLine><rs ref="#pmb41463" type="place"><hi rend="latintype">Schulgasse </hi></rs><damage agent="paperloss"><supplied>8</supplied></damage></addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="1893_AS_RBH_2_00025"/><salute>Lieber Richard! –</salute> Der <rs type="person" ref="#pmb27711" subtype="implied">Ab<c rendition="#langesS">s</c>chreiber</rs> bringt die <rs type="work" ref="#pmb30437" subtype="implied">Novelle</rs><space unit="chars" quantity="1"/><date>Montag</date>; – <date>Din<c rendition="#langesS">s</c>tag</date> haben Sie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie. – Neulich <rs type="work" ref="#pmb42156" subtype="implied"><c rendition="#langesS">s</c>tand</rs> im <rs ref="#pmb40968" type="work">Magazin</rs> (<rs ref="#pmb11988" type="person">Kraus</rs><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chickt es mir) d<c rendition="#langesS">s</c>s noch die<c rendition="#langesS">s</c>en <date>So<c rendition="#gemination-m">mm</c>er</date> im <rs ref="#pmb18" type="place">Le<c rendition="#langesS">s</c><c rendition="#langesS">s</c>.th.</rs> das <rs ref="#pmb29823" type="work">Märchen</rs> dranko<c rendition="#gemination-m">mm</c>t. – Die »lustige« <rs type="work" ref="#pmb31975" subtype="implied">Novelle</rs> beendet. – Aerztlich be<c rendition="#langesS">s</c>chäftigt, eine <rs type="person" ref="#pmb25739" subtype="implied">Cousine</rs>, 14j. Mädel,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chwerer
+         <div type="writingSession" n="1"><p><pb facs="1893_AS_RBH_2_00025"/><salute>Lieber Richard! –</salute> Der <rs type="person" ref="#pmb27711" subtype="implied">Ab<c rendition="#langesS">s</c>chreiber</rs> bringt die <rs type="work" ref="#pmb30437" subtype="implied">Novelle</rs><space unit="chars" quantity="1"/><date>Montag</date>; – <date>Din<c rendition="#langesS">s</c>tag</date> haben Sie<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ie. – Neulich <rs type="work" ref="#pmb42156" subtype="implied"><c rendition="#langesS">s</c>tand</rs> im <rs ref="#pmb40968" type="work">Magazin</rs> (<anchor type="commentary" xml:id="K_L00246-1"/><rs ref="#pmb11988" type="person">Kraus</rs><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chickt es<note type="commentary" corresp="K_L00246-1"><ref type="schnitzler-briefe" target="L00244"/>.</note> mir) d<c rendition="#langesS">s</c>s noch die<c rendition="#langesS">s</c>en <date>So<c rendition="#gemination-m">mm</c>er</date> im <rs ref="#pmb18" type="place">Le<c rendition="#langesS">s</c><c rendition="#langesS">s</c>.th.</rs> das <rs ref="#pmb29823" type="work">Märchen</rs> dranko<c rendition="#gemination-m">mm</c>t. – Die »lustige« <rs type="work" ref="#pmb31975" subtype="implied">Novelle</rs> beendet. – Aerztlich be<c rendition="#langesS">s</c>chäftigt, eine <rs type="person" ref="#pmb25739" subtype="implied">Cousine</rs>, 14j. Mädel,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chwerer
                Typhus. – Habe noch keine <pb facs="1893_AS_RBH_2_00026"/>Einberufung. – <rs type="work" ref="#pmb33470" subtype="implied">Notiz</rs> im <rs ref="#pmb41289" type="work">B. B.</rs> gele<c rendition="#langesS">s</c>en;<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr gut – aber natürlich »<rs type="work" ref="#pmb41289" subtype="implied">naturali<c rendition="#langesS">s</c>ti<c rendition="#langesS">s</c>cher Dichter</rs>«. – Ge<c rendition="#langesS">s</c>tern war
-               ich angeblich im <rs ref="#pmb25798" type="person"><rs type="work" ref="#pmb42146" subtype="implied"><hi rend="latintype">Szeps</hi></rs></rs><space unit="chars" quantity="1"/><anchor type="commentary" xml:id="K_L00246-1"/><rs type="work" ref="#pmb42207" subtype="implied">verschimpfirt</rs><note type="commentary" corresp="K_L00246-1">In dem Bericht ohne Autornennung heißt
+               ich angeblich im <rs ref="#pmb25798" type="person"><rs type="work" ref="#pmb42146" subtype="implied"><hi rend="latintype">Szeps</hi></rs></rs><space unit="chars" quantity="1"/><anchor type="commentary" xml:id="K_L00246-2"/><rs type="work" ref="#pmb42207" subtype="implied">verschimpfirt</rs><note type="commentary" corresp="K_L00246-2">In dem Bericht ohne Autornennung heißt
                   es: »<quote>Das Theaterleben ist ein sehr bewegtes, Tag für Tag Vorstellung,
                      berühmte und unberühmte Gäste, ja sogar Novitäten, sogenannte Sommer-Einakter,
                      die freilich oft nur aus Courtoisie aufgeführt werden. Ein realistisches
@@ -186,7 +195,7 @@
                      Feder eines jungen <rs ref="#pmb50" type="place">Wien</rs>er <rs type="person" ref="#pmb2121" subtype="implied">Realisten</rs> hat wenig Erfolg gehabt, um
                      nicht zu sagen, gar keinen</quote>«. (<bibl><rs ref="#pmb42207" type="work">Die Saison in Ischl</rs>. In: <rs ref="#pmb42146" type="work">Wiener Tagblatt</rs>, Jg. 43, Nr. 206,
                         <date>28. 7. 1893</date>, S. 4</bibl>.)</note> (las es nicht) – nachdem ich
-               vor 3 Tagen <anchor type="commentary" xml:id="K_L00246-2"/>gelobt<note type="commentary" corresp="K_L00246-2">nicht nachweisbar</note> war. Gute
+               vor 3 Tagen <anchor type="commentary" xml:id="K_L00246-3"/>gelobt<note type="commentary" corresp="K_L00246-3">nicht nachweisbar</note> war. Gute
                Redaction! – Was macht der <rs ref="#pmb31535" type="work">Götterliebling</rs>? – Ist
                   <rs ref="#pmb20723" type="person">Löbl</rs> noch in <rs ref="#pmb213" type="place">I<c rendition="#langesS">s</c>chl</rs>? Wohin<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chreibt man ihm? Las übrigens die Nu<c rendition="#gemination-m">mm</c>er noch gar nicht. – Schreibt <rs ref="#pmb11740" type="person">Loris</rs>? – Grüßen Sie alles! <anchor type="textConst" xml:id="T_L00246-1"/>Ich würde mehr<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>chreiben, we<c rendition="#gemination-n">nn</c> ich
                nicht auf<note type="textConst" corresp="T_L00246-1">quer am rechten Rand
@@ -196,6 +205,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -220,30 +253,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb11740">
-               <persName>
-                  <forename>Hugo von</forename>
-                  <surname>Hofmannsthal</surname>
-               </persName>
-               <birth>
-                  <date when="1874-02-01">1874-02-01</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1929-07-15">1929-07-15</date>
-                  <settlement ref="pmb173">
-                     <placeName type="pref">Rodaun</placeName>
-                     <location>
-                        <geo>48,132793312328 16,256152195922</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11988">
                <persName>
                   <forename>Karl</forename>
@@ -260,6 +269,30 @@
                </birth>
                <death>
                   <date when="1936-06-12">1936-06-12</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb25798">
+               <persName>
+                  <forename>Moriz</forename>
+                  <surname>Szeps</surname>
+               </persName>
+               <birth>
+                  <date when="1834-11-04">1834-11-04</date>
+                  <settlement ref="pmb55976">
+                     <placeName type="pref">Busk</placeName>
+                     <location>
+                        <geo>49,96548 24,61227</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1902-08-09">1902-08-09</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -292,13 +325,13 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
+            <person xml:id="pmb11740">
                <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
+                  <forename>Hugo von</forename>
+                  <surname>Hofmannsthal</surname>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1874-02-01">1874-02-01</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -307,42 +340,19 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
+                  <date when="1929-07-15">1929-07-15</date>
+                  <settlement ref="pmb173">
+                     <placeName type="pref">Rodaun</placeName>
                      <location>
-                        <geo>48,208333 16,373056</geo>
+                        <geo>48,132793312328 16,256152195922</geo>
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
-            <person xml:id="pmb25798">
+            <person xml:id="pmb27711" ana="implied">
                <persName>
-                  <forename>Moriz</forename>
-                  <surname>Szeps</surname>
+                  <surname>?? [Schreibkraft für Arthur Schnitzler]</surname>
                </persName>
-               <birth>
-                  <date when="1834-11-04">1834-11-04</date>
-                  <settlement ref="pmb55976">
-                     <placeName type="pref">Busk</placeName>
-                     <location>
-                        <geo>49,96548 24,61227</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1902-08-09">1902-08-09</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
             </person>
             <person xml:id="pmb25739" ana="implied">
                <persName>
@@ -368,66 +378,113 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb27711" ana="implied">
-               <persName>
-                  <surname>?? [Schreibkraft für Arthur Schnitzler]</surname>
-               </persName>
-            </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb29823">
-               <title type="main">Das Märchen. Schauspiel in drei Aufzügen</title>
-               <title type="werk_bibliografische-angabe">Arthur Schnitzler: Das Märchen. Schauspiel in drei Aufzügen. Dresden, Leipzig: E. Pierson’s Verlag 1894.</title>
-               <title type="werk_link">https://babel.hathitrust.org/cgi/pt?id=coo.31924026341598&amp;view=1up&amp;seq=5</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
-            </bibl>
-            <bibl xml:id="pmb31535">
-               <title type="main">Der Tod Georgs</title>
-               <title type="alternative-name">Der Götterliebling</title>
-               <title type="werk_link">https://archive.org/details/dertodgeorgs00beergoog</title>
-               <author role="hat-geschaffen" ref="pmb10863">Beer-Hofmann, Richard</author>
-            </bibl>
             <bibl xml:id="pmb40968">
-               <title type="main">Magazin für die Literatur des Auslandes</title>
+               <title>Magazin für die Literatur des Auslandes</title>
                <title type="werk_link">https://de.wikisource.org/wiki/Magazin_für_die_Literatur_des_Auslandes</title>
                <title type="namensvariante">Das Magazin für Litteratur</title>
             </bibl>
+            <bibl xml:id="pmb29823">
+               <title>Das Märchen. Schauspiel in drei Aufzügen</title>
+               <title type="werk_bibliografische-angabe">Arthur Schnitzler: Das Märchen. Schauspiel in drei Aufzügen. Dresden, Leipzig: E. Pierson’s Verlag 1894.</title>
+               <title type="werk_link">https://babel.hathitrust.org/cgi/pt?id=coo.31924026341598&amp;view=1up&amp;seq=5</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            </bibl>
             <bibl xml:id="pmb41289">
-               <title type="main">Berliner Börsen-Courier</title>
+               <title>Berliner Börsen-Courier</title>
+            </bibl>
+            <bibl xml:id="pmb31535">
+               <title>Der Tod Georgs</title>
+               <title type="alternative-name">Der Götterliebling</title>
+               <title type="werk_link">https://archive.org/details/dertodgeorgs00beergoog</title>
+               <author ref="pmb10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
             </bibl>
             <bibl xml:id="pmb30005" ana="comment">
-               <title type="main">Abschiedssouper</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <title>Abschiedssouper</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
-            <bibl xml:id="pmb42146" ana="comment">
-               <title type="main">Wiener Tagblatt</title>
-               <author role="hat-herausgegeben" ref="pmb25798">Szeps, Moriz</author>
-            </bibl>
-            <bibl xml:id="pmb42207" ana="comment">
-               <title type="main">Die Saison in Ischl</title>
+            <bibl xml:id="pmb42207" ana="implied">
+               <title>Die Saison in Ischl</title>
                <title type="werk_bibliografische-angabe">Jg. 43, Nr. 206, 28.7.1893, S. 4.</title>
                <title type="legacy-name-merge">??[Kritik an Schnitzler]</title>
             </bibl>
+            <bibl xml:id="pmb42146" ana="implied">
+               <title>Wiener Tagblatt</title>
+               <author ref="pmb25798" role="hat-herausgegeben">Szeps, Moriz</author>
+            </bibl>
             <bibl xml:id="pmb30437" ana="implied">
-               <title type="main">Das Kind</title>
-               <author role="hat-geschaffen" ref="pmb10863">Beer-Hofmann, Richard</author>
-            </bibl>
-            <bibl xml:id="pmb31975" ana="implied">
-               <title type="main">Die kleine Komödie</title>
-               <title type="werk_bibliografische-angabe">Neue Deutsche Rundschau, Jg. 6, H. 8, 1. 8. 1895, S. 779-798</title>
-               <title type="werk_arbeitstitel">Die Verwandlung</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
-            </bibl>
-            <bibl xml:id="pmb33470" ana="implied">
-               <title type="main">[Man schreibt uns aus Ischl]</title>
-               <title type="werk_bibliografische-angabe">Berliner Börsen-Courier, Nr. 343, 25.7.1893, Morgen-Ausgabe, S. 4</title>
+               <title>Das Kind</title>
+               <author ref="pmb10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
             </bibl>
             <bibl xml:id="pmb42156" ana="implied">
-               <title type="main">[Am Lessingtheater … Ohne Geläut … Das Märchen … zur Aufführung]</title>
+               <title>[Am Lessingtheater … Ohne Geläut … Das Märchen … zur Aufführung]</title>
                <title type="werk_bibliografische-angabe">Das Magazin für Litteratur, Jg. 62, Nr. 29, 22.7.1893, S. 469.</title>
+            </bibl>
+            <bibl xml:id="pmb31975" ana="implied">
+               <title>Die kleine Komödie</title>
+               <title type="werk_bibliografische-angabe">Neue Deutsche Rundschau, Jg. 6, H. 8, 1. 8. 1895, S. 779-798</title>
+               <title type="werk_arbeitstitel">Die Verwandlung</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            </bibl>
+            <bibl xml:id="pmb33470" ana="implied">
+               <title>[Man schreibt uns aus Ischl]</title>
+               <title type="werk_bibliografische-angabe">Berliner Börsen-Courier, Nr. 343, 25.7.1893, Morgen-Ausgabe, S. 4</title>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <location type="coords">
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb213">
+               <placeName>Bad Ischl</placeName>
+               <location type="coords">
+                  <geo>47,71109 13,61893</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb429">Salzkammergut</placeName>
+                  <geo>47,75 13,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb167782">
+               <placeName>Wohnung und Ordination Arthur Schnitzler Grillparzerstraße 7/3. Stock</placeName>
+               <location type="coords">
+                  <geo>48,212477 16,357233</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb412">Grillparzerstraße</placeName>
+                  <geo>48,212643768549 16,357353835756</geo>
+               </location>
+            </place>
+            <place xml:id="pmb41463">
+               <placeName>Schulgasse</placeName>
+               <location type="coords">
+                  <geo>47,71222 13,62186</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb213">Bad Ischl</placeName>
+                  <geo>47,71109 13,61893</geo>
+               </location>
+            </place>
             <place xml:id="pmb18">
                <placeName>Lessing-Theater</placeName>
                <location type="coords">
@@ -442,41 +499,15 @@
                   <geo>52,52315 13,374789</geo>
                </location>
             </place>
-            <place xml:id="pmb213">
-               <placeName>Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <location type="coords">
-                  <geo>47,71109 13,61893</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb429">Salzkammergut</placeName>
-                  <geo>47,75 13,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb41463">
-               <placeName>Schulgasse</placeName>
-               <location type="coords">
-                  <geo>47,71222 13,62186</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb213">Bad Ischl</placeName>
-                  <geo>47,71109 13,61893</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
+            <place xml:id="pmb50" ana="comment">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -484,6 +515,10 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
          </listPlace>

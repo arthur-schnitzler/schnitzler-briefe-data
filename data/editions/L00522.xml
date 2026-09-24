@@ -93,9 +93,9 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb53">Wien 3/1</placeName>
-                                    <date>16. <unclear>1</unclear>2. 95</date>
+                                    <date when="1895-12-16">16. <unclear>1</unclear>2. 95</date>
                                     <time>6–7<unclear>S</unclear>
                                     </time>
                                  </stamp>
@@ -103,10 +103,10 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb51">
                                        <pb facs="1895_AS_RBH_3_00017"/>Wien 1/1</placeName>
-                                    <date>17. 12. 95</date>
+                                    <date when="1895-12-17">17. 12. 95</date>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
                               </desc>
@@ -142,18 +142,26 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1895-12-16" n="01">16. 12. 1895</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1895-12-16">16. 12. 1895</date>
+               <placeName ref="#pmb53">Wien 3/1</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1895-12-17">17. 12. 1895</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1895-12-17">17. 12. 1895</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb190427">Wollzeile 15 (»Berthahof«)</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L00521">Andreas-Salomé an Schnitzler, 15. 12. 1895</ref>
                <ref subtype="next_letter" type="withinCollection" target="L02759">Goldmann an Schnitzler, 16. 12. [1895]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00513">Schnitzler an Beer-Hofmann, 1[6.?] 11. 1895</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00513">Schnitzler an Beer-Hofmann, [15. oder 16.] 11. 1895</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L00523">Beer-Hofmann an Schnitzler, [17. 12. 1895]</ref>
             </correspContext>
          </correspDesc>
@@ -163,6 +171,7 @@
          <change who="GHS" when="2019-10-20">überprüft am Faksimile</change>
          <change who="MAM" when="2019-12-13">Durchsicht</change>
          <change when="2019-12-14" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-21">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -177,7 +186,7 @@
                      Beer-Hofmann</hi></addrLine><addrLine><rs ref="#pmb50" type="place">Wien</rs></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb190427" type="place">I Wollzeile 15</rs></hi>.</addrLine></address></div>
          <div type="writingSession" n="1"><opener><salute><pb facs="1895_AS_RBH_3_00014"/>Lieber Richard,</salute></opener><p>eben war Frau <rs ref="#pmb10762" type="person">Lou</rs> bei mir. Haben Sie morgen
                   <date>Din<c rendition="#langesS">s</c>tag</date><space unit="chars" quantity="1"/><time>Abend</time> Zeit? Ich erinnere mich, Sie äußerten irgend was dergleichen. Ich
-               bin bei <rs ref="#pmb12570" type="person"><hi rend="latintype">Rosé</hi></rs>; i<c rendition="#langesS">s</c>ts Ihnen recht,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o hole ich <pb facs="1895_AS_RBH_3_00015"/>von dort aus
+               bin bei <anchor type="commentary" xml:id="K_L00522-11"/><rs type="event" ref="#pmb208805"><rs ref="#pmb12570" type="person"><hi rend="latintype">Rosé</hi></rs></rs><note type="commentary" corresp="K_L00522-11"><ref type="schnitzler-kultur" target="pmb208805"/>.</note>; i<c rendition="#langesS">s</c>ts Ihnen recht,<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>o hole ich <pb facs="1895_AS_RBH_3_00015"/>von dort aus
                   (<time>½ 10</time>) Sie, u wir zu<c rendition="#langesS">s</c>a<c rendition="#gemination-m">mm</c>en Fr. <rs ref="#pmb10762" type="person">Lou</rs> ab. Oder Sie holen Sie  früher
                ab und<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>agen mir, wo ich Sie nach <rs ref="#pmb12570" type="person"><hi rend="latintype">Rosé</hi></rs> finde. <rs ref="#pmb34" type="place"><hi rend="latintype">Grstdl</hi></rs> i<c rendition="#langesS">s</c>t wohl in letzterem Falle das einfach<c rendition="#langesS">s</c>te.</p><closer>Herzlich Ihr <signed>Arthur</signed></closer></div>
       </body>

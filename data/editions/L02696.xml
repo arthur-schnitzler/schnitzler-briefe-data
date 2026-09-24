@@ -91,7 +91,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <date when="1892-08-10">10 <foreign xml:lang="es">Ago.</foreign> 92</date>
                                     <addSpan>Amb. Des<unclear>c</unclear>.</addSpan>
                                  </stamp>
@@ -99,8 +99,8 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
-                                    <placeName ref="#pmb50">Wien 1/1</placeName>
+                                 <stamp n="2" type="delivery">
+                                    <placeName ref="#pmb51">Wien 1/1</placeName>
                                     <date when="1892-08-13">13<supplied>.</supplied> 8. 92</date>
                                     <time>9–10½ V.</time>
                                     <addSpan>Bestellt</addSpan>
@@ -131,10 +131,17 @@
                <date when="1892-08-10" n="01">10. 8. 1892</date>
                <placeName ref="#pmb40165">San Sebastian</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1892-08-10">10. 8. 1892</date>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1892-08-13">13. 8. 1892</date>
+               <placeName ref="#pmb50">Wien</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1892-08-13">13. 8. 1892</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb167789">Ordination Arthur Schnitzler [Bösendorferstraße 11]</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann, Paul</ref>
@@ -383,6 +390,25 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <placeName type="legacy-name-merge">Inner city</placeName>
+               <location type="coords">
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
             <place xml:id="pmb53337">

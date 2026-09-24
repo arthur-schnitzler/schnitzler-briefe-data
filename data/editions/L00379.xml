@@ -91,7 +91,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb68">Wien 18<supplied>/1</supplied>
                                     </placeName>
                                     <date when="1894-10-07">7 10 <supplied>1894</supplied>
@@ -101,7 +101,7 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb59">Wien 9/3</placeName>
                                     <date when="1894-10-08">8. 10. 1894</date>
                                     <time>8.V</time>
@@ -129,12 +129,20 @@
             <correspAction type="sent">
                <persName ref="#pmb2450">Fels, Friedrich M.</persName>
                <date when="1894-10-07" n="02">7. 10. 1894</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb364920">Währinger Gürtel 90</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1894-10-07">7. 10. [1894]</date>
+               <placeName ref="#pmb68">XVIII., Währing</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1894-10-08">8. 10. 1894</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1894-10-08">8. 10. 1894</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2450">Fels, Friedrich M.</ref>
@@ -149,6 +157,7 @@
          <change who="GHS" when="2020-01-25">angelegt aus Faksimile</change>
          <change who="MAM" when="2020-01-31">Durchsicht</change>
          <change who="MAM" when="2020-02-03">Index check</change>
+         <change who="MAM" when="2026-09-17">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -158,7 +167,7 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="HS.NZ85.1.2956_0020"/>Herrn Dr. Arthur Schnitzler</addrLine><addrLine>Schriftsteller</addrLine><addrLine><rs ref="#pmb50" type="place">Wien</rs></addrLine><addrLine><rs ref="#pmb168934" type="place">IX, Frankgaße 1</rs></addrLine></address></div>
-         <div type="writingSession" n="1"><opener><seg rend="right"><pb facs="HS.NZ85.1.2956_0019"/><rs ref="#pmb727" type="place">Wien XVIII, Gürtelstraße 90</rs> parterre Th. 9</seg><salute>Lieber Dr. Schnitzler!</salute></opener><p>Entschuldigen Sie, we<c rendition="#gemination-n">nn</c> ich Sie schon wieder mit einer
+         <div type="writingSession" n="1"><opener><seg rend="right"><pb facs="HS.NZ85.1.2956_0019"/><rs ref="#pmb364920" type="place">Wien XVIII, Gürtelstraße 90</rs> parterre Th. 9</seg><salute>Lieber Dr. Schnitzler!</salute></opener><p>Entschuldigen Sie, we<c rendition="#gemination-n">nn</c> ich Sie schon wieder mit einer
                Bitte belästige. Bei der »<hi n="1" rend="underline"><rs ref="#pmb29670" type="org">Wiener Allgemeinen Zeitung</rs></hi>« soll eine große Veränderung bevorstehen, wobei <damage agent="ink"><supplied>viel</supplied></damage>leicht auch für mich etwas abfallen kö<c rendition="#gemination-n">nn</c>te. Doch
                hat mein Gewährsma<c rendition="#gemination-n">nn</c> versprechen müßen, niemanden etwas
                von der Sache zu verraten; er behauptet aber, <hi rend="underline" n="1">Sie</hi>
@@ -170,41 +179,13 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2450">
                <persName>
                   <forename>Friedrich Michael</forename>
                   <surname>Fels</surname>
                </persName>
                <birth>
-                  <date when="1864-01-01" notAfter="1864-12-31" notBefore="1864-01-01">1864</date>
+                  <date notBefore="1864-01-01" when="1864-01-01" notAfter="1864-12-31">1864</date>
                   <settlement ref="pmb41882">
                      <placeName type="pref">Bad Dürkheim</placeName>
                      <location>
@@ -213,7 +194,31 @@
                   </settlement>
                </birth>
             </person>
-            <person xml:id="pmb11406" ana="comment">
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb11406" ana="implied">
                <persName>
                   <forename>Julius von</forename>
                   <surname>Gans-Ludassy</surname>
@@ -239,6 +244,47 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb68">
+               <placeName>XVIII., Währing</placeName>
+               <placeName type="legacy-name-merge">Währing</placeName>
+               <location type="coords">
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Thurygrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb364920">
+               <placeName>Währinger Gürtel 90</placeName>
+               <location type="coords">
+                  <geo>48,223863 16,34974</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb727">Währinger Gürtel</placeName>
+                  <geo>48,224723893306 16,347931771842</geo>
+               </location>
+            </place>
             <place xml:id="pmb168934">
                <placeName>Frankgasse 1</placeName>
                <location type="coords">
@@ -256,16 +302,12 @@
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -274,50 +316,9 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
-            </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
-               <location type="coords">
-                  <geo>48,22387 16,35641</geo>
-               </location>
                <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb68">
-               <placeName>XVIII., Währing</placeName>
-               <placeName type="legacy-name-merge">Währing</placeName>
-               <location type="coords">
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb727">
-               <placeName>Währinger Gürtel</placeName>
-               <location type="coords">
-                  <geo>48,224723893306 16,347931771842</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb59">IX., Alsergrund</placeName>
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40772">Gürtel</placeName>
-                  <geo>48,199167 16,338694</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb68">XVIII., Währing</placeName>
-                  <geo>48,23333 16,31667</geo>
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
          </listPlace>
@@ -330,7 +331,7 @@
                   <geo>48,214120366337 16,358756425131</geo>
                   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb653.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/653/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb653.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb653.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb653.html</idno>
                   <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb653.html</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb653.html</idno>
@@ -343,7 +344,7 @@
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb338.html</idno>
                   <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb338.html</idno>
                   <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb338.html</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb338.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb338.html</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb338.html</idno>
                </location>
                <location type="located_in_place">
@@ -374,7 +375,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -388,7 +389,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
             </org>
          </listOrg>

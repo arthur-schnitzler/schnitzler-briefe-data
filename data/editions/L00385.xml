@@ -3,8 +3,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1894-10-18" n="02">1894-10-18</title>
-            <title level="a">Richard Beer-Hofmann an Arthur Schnitzler, 18. 10. 1894</title>
+            <title type="iso-date" when-iso="1894-10-17" n="02">1894-10-17</title>
+            <title level="a">Richard Beer-Hofmann an Arthur Schnitzler, 17. 10. 1894</title>
             <author ref="#pmb10863">Beer-Hofmann, Richard</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -91,18 +91,18 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb595">Napoli Ferrovia</placeName>
-                                    <date>18 10–94</date>
+                                    <date when="1894-10-18">18 10–94</date>
                                     <time>4 M</time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb59">Wien 9/3</placeName>
-                                    <date>20. 10. 94</date>
+                                    <date when="1894-10-20">20. 10. 94</date>
                                     <time>8.V</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
@@ -133,20 +133,28 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
-               <date when="1894-10-18" n="02">18. 10. 1894</date>
+               <date when="1894-10-17" n="02">17. 10. 1894</date>
+               <placeName ref="#pmb364923">Hotel Hassler [Neapel]</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1894-10-18">18. 10. 1894</date>
                <placeName ref="#pmb595">Neapel</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1894-10-20">20. 10. 1894</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1894-10-20">20. 10. 1894</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00384">Beer-Hofmann an Schnitzler, 18. 10. 1894</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00386">Schnitzler an Beer-Hofmann, 19. 10. 1894</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00384">Beer-Hofmann an Schnitzler, 18. 10. 1894</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L00386">Schnitzler an Beer-Hofmann, 19. 10. 1894</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00382">Schnitzler an Beer-Hofmann, 15. 10. 1894</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00384">Beer-Hofmann an Schnitzler, 18. 10. 1894</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L00382">Schnitzler an Beer-Hofmann, 15. 10. 1894</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L00384">Beer-Hofmann an Schnitzler, 18. 10. 1894</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -155,6 +163,7 @@
          <change who="MAM" when="2019-10-10">Durchsicht</change>
          <change who="MAM" when="2019-10-14">Index check</change>
          <change who="MAM" when="2019-12-10">Durchsicht</change>
+         <change who="MAM" when="2026-09-17">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -194,30 +203,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb12618">
-               <persName>
-                  <forename>Adele</forename>
-                  <surname>Sandrock</surname>
-               </persName>
-               <birth>
-                  <date when="1863-08-19">1863-08-19</date>
-                  <settlement ref="pmb44303">
-                     <placeName type="pref">Rotterdam</placeName>
-                     <location>
-                        <geo>51,9225 4,47917</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1937-08-30">1937-08-30</date>
-                  <settlement ref="pmb168">
-                     <placeName type="pref">Berlin</placeName>
-                     <location>
-                        <geo>52,52437 13,41053</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb14953">
                <persName>
                   <forename>Marie</forename>
@@ -242,13 +227,37 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb12618">
+               <persName>
+                  <forename>Adele</forename>
+                  <surname>Sandrock</surname>
+               </persName>
+               <birth>
+                  <date when="1863-08-19">1863-08-19</date>
+                  <settlement ref="pmb44303">
+                     <placeName type="pref">Rotterdam</placeName>
+                     <location>
+                        <geo>51,9225 4,47917</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1937-08-30">1937-08-30</date>
+                  <settlement ref="pmb168">
+                     <placeName type="pref">Berlin</placeName>
+                     <location>
+                        <geo>52,52437 13,41053</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -257,7 +266,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -265,24 +274,101 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb11581">
+               <persName>
+                  <forename>Maximilian</forename>
+                  <surname>Harden</surname>
+               </persName>
+               <birth>
+                  <date when="1861-10-20">1861-10-20</date>
+                  <settlement ref="pmb168">
+                     <placeName type="pref">Berlin</placeName>
+                     <location>
+                        <geo>52,52437 13,41053</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1927-10-30">1927-10-30</date>
+                  <settlement ref="pmb61038">
+                     <placeName type="pref">Montana</placeName>
+                     <location>
+                        <geo>46,31338 7,48839</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb12899">
+               <persName>
+                  <forename>Hermann</forename>
+                  <surname>Sudermann</surname>
+               </persName>
+               <birth>
+                  <date when="1857-09-30">1857-09-30</date>
+                  <settlement ref="pmb58616">
+                     <placeName type="pref">Macikai</placeName>
+                     <location>
+                        <geo>55,35468 21,52004</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1928-11-21">1928-11-21</date>
+                  <settlement ref="pmb168">
+                     <placeName type="pref">Berlin</placeName>
+                     <location>
+                        <geo>52,52437 13,41053</geo>
+                     </location>
+                  </settlement>
+               </death>
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb30397">
-               <title type="main">Die Schmetterlingsschlacht. Komödie in 4 Akten</title>
-               <author role="hat-geschaffen" ref="pmb12899">Sudermann, Hermann</author>
-            </bibl>
             <bibl xml:id="pmb40042">
-               <title type="main">Die Zukunft</title>
+               <title>Die Zukunft</title>
                <title type="werk_link">https://de.wikisource.org/wiki/Die_Zukunft_(Harden)</title>
-               <author role="hat-einen-beitrag-geschaffen-zu" ref="pmb11581">Harden, Maximilian</author>
+               <author ref="pmb11581" role="hat-einen-beitrag-geschaffen-zu">Harden, Maximilian</author>
+            </bibl>
+            <bibl xml:id="pmb30397">
+               <title>Die Schmetterlingsschlacht. Komödie in 4 Akten</title>
+               <author ref="pmb12899" role="hat-geschaffen">Sudermann, Hermann</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb595">
+               <placeName>Neapel</placeName>
+               <placeName type="alternative-name">Naples</placeName>
+               <location type="coords">
+                  <geo>40,85216 14,26811</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Thurygrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb364923">
+               <placeName>Hotel Hassler [Neapel]</placeName>
+               <location type="coords">
+                  <geo>40,8302153354582 14,246194459892541</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb595">Neapel</placeName>
+                  <geo>40,85216 14,26811</geo>
+               </location>
+            </place>
             <place xml:id="pmb168934">
                <placeName>Frankgasse 1</placeName>
                <location type="coords">
@@ -297,12 +383,32 @@
                   <geo>48,215516628628 16,356475515829</geo>
                </location>
             </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -319,54 +425,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb687">Österreich-Ungarn</placeName>
                   <geo>48,4054 16,4887</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
-               <location type="coords">
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb595">
-               <placeName>Neapel</placeName>
-               <placeName type="alternative-name">Naples</placeName>
-               <placeName type="alternative-name">Neapel</placeName>
-               <placeName type="legacy-name-merge">Naples</placeName>
-               <placeName type="legacy-name-merge">Neapel</placeName>
-               <location type="coords">
-                  <geo>40,85216 14,26811</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
                </location>
             </place>
             <place xml:id="pmb623">

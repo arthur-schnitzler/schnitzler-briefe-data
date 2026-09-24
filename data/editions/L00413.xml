@@ -82,7 +82,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="233"/>
+                                 <measure unit="zeichenanzahl" quantity="232"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -93,7 +93,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb51">Wien 1/1</placeName>
                                     <date when="1894-12-31">31. 12. 94</date>
                                     <time>7–8 V</time>
@@ -118,10 +118,14 @@
                <date when="1894-12-31" n="01">31. 12. 1894</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1894-12-31">31. 12. 1894</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
-               <date evidence="conjecture" notBefore="1894-12-31" notAfter="1895-01-02">[31. 12. 1894 – 4. 1. 1895?]</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <date when="1894-12-31">31. 12. 1894</date>
+               <placeName ref="#pmb190427">Wollzeile 15 (»Berthahof«)</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -136,6 +140,7 @@
          <change who="GHS" when="2019-10-12">Angelegt aus Faksimile</change>
          <change who="MAM" when="2019-10-14">Index check</change>
          <change when="2019-10-15" who="MAM">Durchsicht</change>
+         <change who="MAM" when="2026-09-17">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -146,18 +151,18 @@
       <body>
          <div type="address"><address><addrLine><pb facs="1894_AS_RBH_4_00022"/>Herrn <hi rend="latintype">Dr. Richard
                      Beer-Hofmann</hi></addrLine><addrLine><rs ref="#pmb50" type="place">Wien</rs></addrLine><addrLine><hi rend="latintype"><rs ref="#pmb190427" type="place">I Wollzeile 15</rs></hi></addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="1894_AS_RBH_4_00023"/><salute>Lieber Richard!</salute> Wir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind am <date>Neujahrstag</date><space unit="chars" quantity="1"/><time>10.45</time> Vormittg bei Ihnen, um mit Ihnen nach der <rs ref="#pmb44413" type="place">Brühl</rs> zu fahren. Schli<c rendition="#gemination-m">mm</c><c rendition="#langesS">s</c>ten Falls
+         <div type="writingSession" n="1"><p><pb facs="1894_AS_RBH_4_00023"/><salute>Lieber Richard!</salute> Wir<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ind am <anchor type="commentary" xml:id="K_L00413-1"/><date>Neujahrstag</date><space unit="chars" quantity="1"/><time>10.45 Vormittg</time> bei Ihnen, um mit Ihnen<note type="commentary" corresp="K_L00413-1">Er fuhr mit, <ref type="schnitzler-tagebuch" target="1895-01-01" subtype="see"/>.</note> nach der <rs ref="#pmb44413" type="place">Brühl</rs> zu fahren. Schli<c rendition="#gemination-m">mm</c><c rendition="#langesS">s</c>ten Falls
                fahren Sie nicht mit. Aber fahren Sie lieber mit.</p><closer>Herzlich<c rendition="#langesS">s</c>t <signed>Arthur</signed><lb/><signed><handShift scribe="#pmb11740"/>Hugo</signed></closer></div>
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10863">
+            <person xml:id="pmb2121">
                <persName>
-                  <forename>Richard</forename>
-                  <surname>Beer-Hofmann</surname>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1866-07-11">1866-07-11</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -166,11 +171,11 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1945-09-26">1945-09-26</date>
-                  <settlement ref="pmb44053">
-                     <placeName type="pref">New York City</placeName>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>40,71427 -74,00597</geo>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -199,13 +204,13 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
+            <person xml:id="pmb10863">
                <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
+                  <forename>Richard</forename>
+                  <surname>Beer-Hofmann</surname>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1866-07-11">1866-07-11</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -214,21 +219,57 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
+                  <date when="1945-09-26">1945-09-26</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
                      <location>
-                        <geo>48,208333 16,373056</geo>
+                        <geo>40,71427 -74,00597</geo>
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <location type="coords">
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb190427">
                <placeName>Wollzeile 15 (»Berthahof«)</placeName>
                <location type="coords">
@@ -251,47 +292,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb1003">Niederösterreich</placeName>
                   <geo>48,33333 15,75</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb51">
-               <placeName>I., Innere Stadt</placeName>
-               <placeName type="alternative-name">Inner city</placeName>
-               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
-               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
-               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
-               <placeName type="legacy-name-merge">Inner city</placeName>
-               <location type="coords">
-                  <geo>48,20769 16,37049</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
          </listPlace>

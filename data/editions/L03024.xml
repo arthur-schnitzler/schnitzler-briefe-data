@@ -174,7 +174,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -183,7 +183,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -191,10 +191,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2167">
                <persName>
@@ -268,46 +264,53 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb4785">
+               <persName>
+                  <forename>Theodor</forename>
+                  <surname>Zasche</surname>
+               </persName>
+               <birth>
+                  <date when="1862-10-18">1862-10-18</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1922-11-15">1922-11-15</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30969">
-               <title type="main">Quer durch den Wurstelprater</title>
+               <title>Quer durch den Wurstelprater</title>
                <title type="legacy-name-merge">Wurstelprater</title>
                <title type="werk_link">https://anno.onb.ac.at/cgi-content/anno?aid=waz&amp;datum=18950602&amp;seite=13&amp;zoom=33</title>
                <title type="werk_bibliografische-angabe">Felix Salten: Quer durch den Wurstelprater. In: Wiener Allgemeine Zeitung, Jg. 16, Nr. 5.174, 2. 6. 1895, Pfingst-Beilage, S. [1]–[4] und Nr. 5.179, 9. 6. 1895, S. 2–4.</title>
                <title type="legacy-name-merge">Wurstelprater</title>
                <title type="werk_link">https://anno.onb.ac.at/cgi-content/anno?aid=waz&amp;datum=18950609&amp;seite=2&amp;zoom=33</title>
-               <author role="hat-geschaffen" ref="pmb2167">Salten, Felix</author>
-               <author role="hat-illustriert" ref="pmb4785">Zasche, Theodor</author>
+               <author ref="pmb2167" role="hat-geschaffen">Salten, Felix</author>
+               <author ref="pmb4785" role="hat-illustriert">Zasche, Theodor</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb44292">
-               <placeName>Rhodos</placeName>
-               <placeName type="alternative-name">Rhodos</placeName>
-               <placeName type="alternative-name">Rhodes Town</placeName>
-               <placeName type="legacy-name">Rhodos</placeName>
-               <location type="coords">
-                  <geo>36,43556 28,22199</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb44293">Griechenland</placeName>
-                  <geo>39,0 22,0</geo>
-               </location>
-            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -316,10 +319,24 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb873">
+               <placeName>Triest</placeName>
+               <placeName type="alternative-name">Trieste</placeName>
+               <location type="coords">
+                  <geo>45,66667 13,76667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
             </place>
             <place xml:id="pmb505">
                <placeName>Athen</placeName>
-               <placeName type="legacy-name-merge">Athen</placeName>
                <placeName type="legacy-name-merge">v. Chr., Athen</placeName>
                <placeName type="legacy-name-merge">vor Chr., Athen</placeName>
                <location type="coords">
@@ -330,28 +347,12 @@
                   <geo>39,0 22,0</geo>
                </location>
             </place>
-            <place xml:id="pmb873">
-               <placeName>Triest</placeName>
-               <placeName type="alternative-name">Trieste</placeName>
-               <placeName type="alternative-name">Triest</placeName>
-               <placeName type="legacy-name-merge">Trieste</placeName>
-               <placeName type="legacy-name-merge">Triest</placeName>
-               <location type="coords">
-                  <geo>45,66667 13,76667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
             <place xml:id="pmb966">
                <placeName>Istanbul</placeName>
                <placeName type="legacy-name-merge">Konstantinopel</placeName>
                <placeName type="alternative-name">Istanbul Province</placeName>
-               <placeName type="legacy-name-merge">Istanbul</placeName>
                <placeName type="alternative-name">Byzantion</placeName>
                <placeName type="alternative-name">Byzantium</placeName>
-               <placeName type="alternative-name">Konstantinopel</placeName>
                <placeName type="alternative-name">Constantinople</placeName>
                <location type="coords">
                   <geo>41,01384 28,94966</geo>
@@ -359,6 +360,17 @@
                <location type="located_in_place">
                   <placeName ref="pmb773">Türkei</placeName>
                   <geo>39,0 35,0</geo>
+               </location>
+            </place>
+            <place xml:id="pmb44292">
+               <placeName>Rhodos</placeName>
+               <placeName type="alternative-name">Rhodes Town</placeName>
+               <location type="coords">
+                  <geo>36,43556 28,22199</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb44293">Griechenland</placeName>
+                  <geo>39,0 22,0</geo>
                </location>
             </place>
          </listPlace>

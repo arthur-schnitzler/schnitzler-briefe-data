@@ -100,7 +100,7 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="delivery">
                                     <placeName ref="#pmb34860">Steindorf am Ossiacher
                                        See</placeName>
                                     <date when="1898-08-15">15 8 98</date>
@@ -145,6 +145,14 @@
                <date when="1898-08-13" n="01">13. 8. 1898</date>
                <placeName ref="#pmb36477">Biel</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1898-08-13">13. 8. 1898</date>
+               <placeName ref="#pmb36477">Biel</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1898-08-15">15. 8. 1898</date>
+               <placeName ref="#pmb34860">Steindorf am Ossiacher See</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date evidence="conjecture" notBefore="1898-08-13" notAfter="1898-08-17">[13. 8. 1898
@@ -164,6 +172,7 @@
          <change who="MAM" when="2019-11-25">Index check</change>
          <change who="GHS" when="2019-11-26">finalisiert</change>
          <change who="MAM" when="2020-09-25">Durchsicht</change>
+         <change who="MAM" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -182,6 +191,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -230,54 +263,12 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb34860">
-               <placeName>Steindorf am Ossiacher See</placeName>
-               <placeName type="legacy-name-merge">Steindorf am Ossiacher See</placeName>
-               <placeName type="legacy-name-merge">Steindorf am Ossiacher See</placeName>
-               <location type="coords">
-                  <geo>46,6992 13,98892</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
             <place xml:id="pmb36477">
                <placeName>Biel</placeName>
                <placeName type="alternative-name">Ville de Bienne</placeName>
-               <placeName type="legacy-name-merge">Biel</placeName>
                <placeName type="alternative-name">Biel/Bienne</placeName>
-               <placeName type="legacy-name">Biel</placeName>
                <location type="coords">
                   <geo>47,13713 7,24608</geo>
                </location>
@@ -290,6 +281,16 @@
                   <geo>46,2 6,15</geo>
                </location>
             </place>
+            <place xml:id="pmb34860">
+               <placeName>Steindorf am Ossiacher See</placeName>
+               <location type="coords">
+                  <geo>46,6992 13,98892</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
             <place xml:id="pmb40374">
                <placeName>Ossiacher See</placeName>
                <location type="coords">
@@ -300,18 +301,14 @@
                   <geo>46,75 13,83333</geo>
                </location>
             </place>
-            <place xml:id="pmb512">
-               <placeName>Genfer See</placeName>
+            <place xml:id="pmb651">
+               <placeName>Kärnten</placeName>
                <location type="coords">
-                  <geo>46,43774 6,46906</geo>
+                  <geo>46,75 13,83333</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb43435">Schweiz</placeName>
-                  <geo>47,00016 8,01427</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb166">Frankreich</placeName>
-                  <geo>46,0 2,0</geo>
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
             <place xml:id="pmb562">
@@ -329,14 +326,18 @@
                   <geo>46,2 6,15</geo>
                </location>
             </place>
-            <place xml:id="pmb651">
-               <placeName>Kärnten</placeName>
+            <place xml:id="pmb512">
+               <placeName>Genfer See</placeName>
                <location type="coords">
-                  <geo>46,75 13,83333</geo>
+                  <geo>46,43774 6,46906</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb43435">Schweiz</placeName>
+                  <geo>47,00016 8,01427</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb166">Frankreich</placeName>
+                  <geo>46,0 2,0</geo>
                </location>
             </place>
             <place xml:id="pmb885">

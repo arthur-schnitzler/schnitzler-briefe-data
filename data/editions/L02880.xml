@@ -153,30 +153,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10863">
-               <persName>
-                  <forename>Richard</forename>
-                  <surname>Beer-Hofmann</surname>
-               </persName>
-               <birth>
-                  <date when="1866-07-11">1866-07-11</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1945-09-26">1945-09-26</date>
-                  <settlement ref="pmb44053">
-                     <placeName type="pref">New York City</placeName>
-                     <location>
-                        <geo>40,71427 -74,00597</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11485">
                <persName>
                   <forename>Paul</forename>
@@ -197,6 +173,54 @@
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb10863">
+               <persName>
+                  <forename>Richard</forename>
+                  <surname>Beer-Hofmann</surname>
+               </persName>
+               <birth>
+                  <date when="1866-07-11">1866-07-11</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-09-26">1945-09-26</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
                      </location>
                   </settlement>
                </death>
@@ -225,34 +249,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb4986" ana="implied">
                <persName>
                   <forename>Fedor</forename>
@@ -279,20 +275,20 @@
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb135130" ana="comment">
-               <title type="main">Geschichte der französischen Literatur im achtzehnten Jahrhundert</title>
+            <bibl xml:id="pmb135130" ana="implied">
+               <title>Geschichte der französischen Literatur im achtzehnten Jahrhundert</title>
                <title type="werk_link">https://www.digitale-sammlungen.de/de/view/bsb11266835?page=5</title>
-               <author role="hat-geschaffen" ref="pmb135122">Hettner, Hermann</author>
+               <author ref="pmb135122" role="hat-geschaffen">Hettner, Hermann</author>
             </bibl>
             <bibl xml:id="pmb33346" ana="implied">
-               <title type="main">Ein Sommer in China. Reisebilder</title>
+               <title>Ein Sommer in China. Reisebilder</title>
                <title type="werk_link">https://archive.org/details/einsommerinchina01gold</title>
                <title type="werk_link">https://archive.org/details/einsommerinchina02gold</title>
-               <author role="hat-geschaffen" ref="pmb11485">Goldmann, Paul</author>
+               <author ref="pmb11485" role="hat-geschaffen">Goldmann, Paul</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb146">
+            <place xml:id="pmb146" ana="comment">
                <placeName>Frankfurt am Main</placeName>
                <placeName type="ort_namensvariante">Frankfurt a. Main</placeName>
                <placeName type="ort_namensvariante">Frankfurt/Main</placeName>
@@ -304,12 +300,64 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
+            <place xml:id="pmb50" ana="comment">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb734">
+               <placeName>Bayreuth</placeName>
+               <location type="coords">
+                  <geo>49,94782 11,57893</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb55293">
+               <placeName>Rennes</placeName>
+               <location type="coords">
+                  <geo>48,11198 -1,67429</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb166">Frankreich</placeName>
+                  <geo>46,0 2,0</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40306">
+               <placeName>Italien</placeName>
+               <placeName type="alternative-name">Italian Republic</placeName>
+               <placeName type="alternative-name">Republic of Italy</placeName>
+               <placeName type="legacy-name-merge">Italy</placeName>
+               <location type="coords">
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
             <place xml:id="pmb263">
                <placeName>Florenz</placeName>
                <placeName type="alternative-name">Florence</placeName>
-               <placeName type="alternative-name">Florenz</placeName>
-               <placeName type="legacy-name-merge">Florenz</placeName>
-               <placeName type="legacy-name-merge">Florence</placeName>
                <location type="coords">
                   <geo>43,77925 11,24626</geo>
                </location>
@@ -318,18 +366,16 @@
                   <geo>42,83333 12,83333</geo>
                </location>
             </place>
-            <place xml:id="pmb40306">
-               <placeName>Italien</placeName>
-               <placeName type="alternative-name">Italian Republic</placeName>
-               <placeName type="alternative-name">Republic of Italy</placeName>
-               <placeName type="legacy-name-merge">Italien</placeName>
-               <placeName type="legacy-name-merge">Italy</placeName>
+            <place xml:id="pmb445">
+               <placeName>Rom</placeName>
+               <placeName type="legacy-name-merge">bei Rom</placeName>
+               <placeName type="legacy-name-merge">Roma</placeName>
                <location type="coords">
-                  <geo>42,83333 12,83333</geo>
+                  <geo>41,89193 12,51133</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
                </location>
             </place>
             <place xml:id="pmb40529">
@@ -343,89 +389,27 @@
                   <geo>45,16667 15,5</geo>
                </location>
             </place>
-            <place xml:id="pmb445">
-               <placeName>Rom</placeName>
-               <placeName type="legacy-name-merge">bei Rom</placeName>
-               <placeName type="legacy-name-merge">Roma</placeName>
-               <placeName type="legacy-name-merge">Rom</placeName>
-               <location type="coords">
-                  <geo>41,89193 12,51133</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb55293">
-               <placeName>Rennes</placeName>
-               <placeName type="legacy-name-merge">Rennes</placeName>
-               <location type="coords">
-                  <geo>48,11198 -1,67429</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb166">Frankreich</placeName>
-                  <geo>46,0 2,0</geo>
-               </location>
-            </place>
-            <place xml:id="pmb734">
-               <placeName>Bayreuth</placeName>
-               <location type="coords">
-                  <geo>49,94782 11,57893</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb35572" ana="comment">
-               <placeName>Braunschweig</placeName>
-               <placeName type="alternative-name">Braunschweig</placeName>
-               <placeName type="legacy-name">Braunschweig</placeName>
-               <placeName type="alternative-name">Brunswick</placeName>
-               <placeName type="legacy-name-merge">Braunschweig</placeName>
-               <placeName type="legacy-name-merge">Braunschweig</placeName>
-               <location type="coords">
-                  <geo>52,26594 10,52673</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
             <place xml:id="pmb909" ana="comment">
                <placeName>Velden am Wörthersee</placeName>
                <placeName type="alternative-name">Velden</placeName>
-               <placeName type="alternative-name">Velden am Wörthersee</placeName>
                <placeName type="alternative-name">Velden am Wörther See</placeName>
-               <placeName type="legacy-name-merge">Velden am Wörther See</placeName>
                <location type="coords">
                   <geo>46,61901 14,03129</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb35572" ana="comment">
+               <placeName>Braunschweig</placeName>
+               <placeName type="alternative-name">Brunswick</placeName>
+               <location type="coords">
+                  <geo>52,26594 10,52673</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
                </location>
             </place>
          </listPlace>
@@ -445,7 +429,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurt_am_Main</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb146.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
@@ -460,7 +444,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004069</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb146</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb146.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb144603">Redaktion der Frankfurter Zeitung</placeName>
@@ -498,7 +482,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64495/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64497/</idno>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/2945024/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb35572.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb35572.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/106797/</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4008065-1</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2773</idno>
@@ -520,7 +504,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/9140/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62734/</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066043-6</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb883.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb883.html</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wiesbaden</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb883.html</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb883.html</idno>
@@ -530,7 +514,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00000228</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb883.html</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb883</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.36</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.2.36</idno>
                </location>
             </org>
          </listOrg>

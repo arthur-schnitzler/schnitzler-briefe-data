@@ -168,64 +168,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb11809">
-               <persName>
-                  <forename>Jens Peter</forename>
-                  <surname>Jacobsen</surname>
-               </persName>
-               <birth>
-                  <date when="1847-04-07">1847-04-07</date>
-                  <settlement ref="pmb64646">
-                     <placeName type="pref">Thisted</placeName>
-                     <location>
-                        <geo>56,95523 8,69491</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1885-04-30">1885-04-30</date>
-                  <settlement ref="pmb64646">
-                     <placeName type="pref">Thisted</placeName>
-                     <location>
-                        <geo>56,95523 8,69491</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb144609">
-               <persName>
-                  <forename>W.</forename>
-                  <surname>Bogdanovits</surname>
-               </persName>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -250,6 +192,36 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb144609">
+               <persName>
+                  <forename>W.</forename>
+                  <surname>Bogdanovits</surname>
+               </persName>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb65098">
                <persName>
                   <forename>Vladimir Galaktionovič</forename>
@@ -260,6 +232,30 @@
                </birth>
                <death>
                   <date when="1921-12-25">1921-12-25</date>
+               </death>
+            </person>
+            <person xml:id="pmb11809">
+               <persName>
+                  <forename>Jens Peter</forename>
+                  <surname>Jacobsen</surname>
+               </persName>
+               <birth>
+                  <date when="1847-04-07">1847-04-07</date>
+                  <settlement ref="pmb64646">
+                     <placeName type="pref">Thisted</placeName>
+                     <location>
+                        <geo>56,95523 8,69491</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1885-04-30">1885-04-30</date>
+                  <settlement ref="pmb64646">
+                     <placeName type="pref">Thisted</placeName>
+                     <location>
+                        <geo>56,95523 8,69491</geo>
+                     </location>
+                  </settlement>
                </death>
             </person>
          </listPerson>
@@ -281,7 +277,6 @@
             <place xml:id="pmb40387">
                <placeName>Kärntner Straße</placeName>
                <placeName type="namensvariante">Kärntnerstraße</placeName>
-               <placeName type="legacy-name-merge">Kärntnerstraße</placeName>
                <location type="coords">
                   <geo>48,204832 16,370809</geo>
                </location>
@@ -293,16 +288,12 @@
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -311,8 +302,12 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
             </place>
-            <place xml:id="pmb312" ana="comment">
+            <place xml:id="pmb312" ana="implied">
                <placeName>Währinger Straße</placeName>
                <location type="coords">
                   <geo>48,226694 16,341333</geo>
@@ -357,7 +352,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51010/</idno>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/2775259/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb51.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb51.html</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb51.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q267329</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Innere_Stadt_(Wien)</idno>

@@ -130,12 +130,12 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb13212">Zweig, Stefan</persName>
-               <date n="01" notBefore="1923-07-11" notAfter="1923-07-12">[11. oder 12]. 7. 1923</date>
+               <date notBefore="1923-07-11" notAfter="1923-07-12" n="01">[11. oder 12]. 7. 1923</date>
                <placeName ref="#pmb253003">Paschinger Schlössl</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1923-07-12">12. 7. 1923</date>
-               <placeName ref="#pmb30">Salzburg 2</placeName>
+               <placeName ref="#pmb30">Salzburg</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -209,7 +209,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -218,7 +218,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -226,22 +226,35 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb118890">
-               <placeName>Nordsee</placeName>
-               <placeName type="alternative-name">North Sea</placeName>
+            <place xml:id="pmb30">
+               <placeName>Salzburg</placeName>
+               <placeName type="alternative-name">Iuvavum</placeName>
+               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
+               <placeName type="legacy-name-merge">Salzburg?</placeName>
                <location type="coords">
-                  <geo>55,33333 3,0</geo>
+                  <geo>47,80067 13,04532</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
+                  <placeName ref="pmb697">Salzburg [Land]</placeName>
+                  <geo>47,41667 13,25</geo>
+               </location>
+            </place>
+            <place xml:id="pmb253003">
+               <placeName>Paschinger Schlössl</placeName>
+               <placeName type="ort_namensvariante">Kapuzinerberg 5</placeName>
+               <location type="coords">
+                  <geo>47,8027 13,0478</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb297">Kapuzinerberg</placeName>
+                  <geo>47,80399 13,05734</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb30">Salzburg</placeName>
+                  <geo>47,80067 13,04532</geo>
                </location>
             </place>
             <place xml:id="pmb168815">
@@ -262,22 +275,6 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
-            <place xml:id="pmb30">
-               <placeName>Salzburg</placeName>
-               <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="alternative-name">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg?</placeName>
-               <location type="coords">
-                  <geo>47,80067 13,04532</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg [Land]</placeName>
-                  <geo>47,41667 13,25</geo>
-               </location>
-            </place>
             <place xml:id="pmb533">
                <placeName>Währinger Cottage</placeName>
                <location type="coords">
@@ -288,9 +285,19 @@
                   <geo>48,23333 16,31667</geo>
                </location>
             </place>
+            <place xml:id="pmb118890">
+               <placeName>Nordsee</placeName>
+               <placeName type="alternative-name">North Sea</placeName>
+               <location type="coords">
+                  <geo>55,33333 3,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
             <place xml:id="pmb91863">
                <placeName>Sylt</placeName>
-               <placeName type="alternative-name">Sylt</placeName>
                <location type="coords">
                   <geo>54,91823 8,33113</geo>
                </location>

@@ -101,7 +101,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="2" type="delivery">
-                                    <placeName ref="#pmb59">9/3 Wien 72</placeName>
+                                    <placeName ref="#pmb365208">9/3 Wien 72</placeName>
                                     <date when="1902-02-16">16. 2. 02</date>
                                     <time>9.V</time>
                                     <addSpan>Bestellt</addSpan>
@@ -125,7 +125,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11148">Dehmel, Richard</persName>
-               <date n="01" notBefore="1902-02-13" notAfter="1902-02-14">[13. oder 14]. 2. 1902</date>
+               <date notBefore="1902-02-13" notAfter="1902-02-14" n="01">[13. oder 14]. 2. 1902</date>
                <placeName ref="#pmb1226">Blankenese</placeName>
             </correspAction>
             <correspAction type="transmitted">
@@ -203,7 +203,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -212,7 +212,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -220,19 +220,15 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29857">
-               <title type="main">Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
+               <title>Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
                <title type="werk_arbeitstitel">Shawl</title>
                <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=601&amp;teil=0111&amp;seite=00000001&amp;zoom=2</title>
                <title type="legacy-name-merge">Der Schleier der Beatrice</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
@@ -240,7 +236,6 @@
                <placeName>Blankenese</placeName>
                <placeName type="legacy-name-merge">Blankenese bei Hamburg</placeName>
                <placeName type="alternative-name">Hamburg-Blankenese</placeName>
-               <placeName type="legacy-name-merge">Blankenese</placeName>
                <placeName type="legacy-name-merge">Blankenese/Hamburg</placeName>
                <location type="coords">
                   <geo>53,5652 9,7972</geo>
@@ -252,6 +247,32 @@
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb365208">
+               <placeName>9/3 Post- und Telegraphenamt 72</placeName>
+               <location type="coords">
+                  <geo>48,216197 16,356623</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb731">Garnisongasse</placeName>
+                  <geo>48,216533356678 16,356214321972</geo>
+               </location>
+            </place>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Thurygrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
             <place xml:id="pmb168934">
@@ -271,16 +292,12 @@
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -289,17 +306,9 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
-            </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
-               <location type="coords">
-                  <geo>48,22387 16,35641</geo>
-               </location>
                <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
          </listPlace>

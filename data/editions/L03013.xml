@@ -171,6 +171,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10986">
                <persName>
                   <forename>Otto</forename>
@@ -200,34 +224,6 @@
                      </location>
                   </settlement>
                </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2167">
                <persName>
@@ -280,24 +276,34 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb51884" ana="implied">
-               <title type="main">Partie in Seis am Schlern</title>
-               <author role="hat-geschaffen" ref="pmb27687">Reisch, Franz August Carl Maria</author>
+               <title>Partie in Seis am Schlern</title>
+               <author ref="pmb27687" role="hat-geschaffen">Reisch, Franz August Carl Maria</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb43520">
-               <placeName>Meran</placeName>
-               <placeName type="alternative-name">Meran</placeName>
-               <placeName type="alternative-name">Merano</placeName>
-               <placeName type="legacy-name-merge">Meran</placeName>
-               <placeName type="legacy-name-merge">Merano</placeName>
-               <placeName type="legacy-name-merge">Meran</placeName>
+            <place xml:id="pmb988">
+               <placeName>Seis am Schlern</placeName>
                <location type="coords">
-                  <geo>46,66817 11,15953</geo>
+                  <geo>46,54133 11,55868</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb91012">Kastelruth</placeName>
+                  <geo>46,56662 11,56098</geo>
+               </location>
+            </place>
+            <place xml:id="pmb960">
+               <placeName>Noordwijk</placeName>
+               <placeName type="legacy-name-merge">Noordwijk-Binnen</placeName>
+               <location type="coords">
+                  <geo>52,26953 4,46354</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb44016">Niederlande</placeName>
+                  <geo>52,25 5,75</geo>
                </location>
             </place>
             <place xml:id="pmb44016">
@@ -312,30 +318,8 @@
                   <geo>48,69096 9,14062</geo>
                </location>
             </place>
-            <place xml:id="pmb467">
-               <placeName>Villa Heufler</placeName>
-               <location type="coords">
-                  <geo>46,54555 11,560026</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb988">Seis am Schlern</placeName>
-                  <geo>46,54133 11,55868</geo>
-               </location>
-            </place>
-            <place xml:id="pmb960">
-               <placeName>Noordwijk</placeName>
-               <placeName type="legacy-name-merge">Noordwijk-Binnen</placeName>
-               <location type="coords">
-                  <geo>52,26953 4,46354</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb44016">Niederlande</placeName>
-                  <geo>52,25 5,75</geo>
-               </location>
-            </place>
             <place xml:id="pmb969">
                <placeName>Südtirol</placeName>
-               <placeName type="legacy-name-merge">Südtirol</placeName>
                <placeName type="namensvariante">Autonome Provinz Bozen</placeName>
                <location type="coords">
                   <geo>46,71667 11,5</geo>
@@ -353,18 +337,25 @@
                   <geo>48,5 16,383333333333333</geo>
                </location>
             </place>
-            <place xml:id="pmb988">
-               <placeName>Seis am Schlern</placeName>
+            <place xml:id="pmb467">
+               <placeName>Villa Heufler</placeName>
                <location type="coords">
+                  <geo>46,54555 11,560026</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb988">Seis am Schlern</placeName>
                   <geo>46,54133 11,55868</geo>
                </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb969">Südtirol</placeName>
-                  <geo>46,71667 11,5</geo>
+            </place>
+            <place xml:id="pmb43520">
+               <placeName>Meran</placeName>
+               <placeName type="alternative-name">Merano</placeName>
+               <location type="coords">
+                  <geo>46,66817 11,15953</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb91012">Kastelruth</placeName>
-                  <geo>46,56662 11,56098</geo>
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
                </location>
             </place>
          </listPlace>

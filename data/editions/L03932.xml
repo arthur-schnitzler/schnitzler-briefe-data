@@ -82,6 +82,7 @@
                               <extent>
                                  <measure unit="seite" quantity=""/>
                                  <measure unit="blatt" quantity=""/>
+                                 <measure unit="zeichenanzahl" quantity="1350"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -138,10 +139,17 @@
          <change who="MAM" when="2025-10-20">Export aus Transkribus</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="H1_1925_17_001"/>
+      <graphic url="H1_1925_17_002"/>
+      <graphic url="H1_1925_17_003"/>
+      <graphic url="H1_1925_17_004"/>
+   </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1"><opener><dateline><pb facs="H1_1925_17_001"/><rs type="place" ref="#pmb50">Wien</rs><space unit="chars" quantity="1"/><date>30. 6. 95</date>.</dateline><salute>Lieber Freund!</salute></opener><p>die wunder<c rendition="#langesS">s</c>chöne Sti<c rendition="#gemination-m">mm</c>ung, von der Ihr Gedankenleben
-               jetzt erfüllt <del rend="strikethrough">ist</del> und welche in Ihrem <anchor type="commentary" xml:id="K_L03932-1"/>Brief<note type="commentary" corresp="K_L03932-1"><ref type="schnitzler-briefe" target="L03896"/></note> an mich über<c rendition="#langesS">s</c>trömt i<c rendition="#langesS">s</c>t, freut mich um Ihres und um Ihres <rs type="work" ref="#pmb33053" subtype="implied">Werkes</rs> willen. Was i<c rendition="#langesS">s</c>t es? Wieder ein
+               jetzt erfüllt <del rend="strikethrough">ist</del> und welche in Ihrem <anchor type="commentary" xml:id="K_L03932-1"/>Brief<note type="commentary" corresp="K_L03932-1"><ref type="schnitzler-briefe" target="L03896"/>.
+               </note> an mich über<c rendition="#langesS">s</c>trömt i<c rendition="#langesS">s</c>t, freut mich um Ihres und um Ihres <rs type="work" ref="#pmb33053" subtype="implied">Werkes</rs> willen. Was i<c rendition="#langesS">s</c>t es? Wieder ein
                Stück? Wollen Sie mir auch das er<c rendition="#langesS">s</c>t<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>agen, wenn wir uns, wie ich ja mit Sicherheit
                erwarten darf, im Sommer treffen? <pb facs="H1_1925_17_002"/>Ich will Ihnen gleich
                mittheilen, da<c rendition="#langesS">s</c>s ich etwa <date>Mitte Juli</date> nach <rs type="place" ref="#pmb213">I<c rendition="#langesS">s</c>chl</rs> ko<c rendition="#gemination-m">mm</c>e, nacher will ich mir die <rs type="place" ref="#pmb628">böhmi<c rendition="#langesS">s</c>chen</rs> Bäder an<c rendition="#langesS">s</c>ehen, die ich noch nicht
@@ -156,6 +164,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb11673">
                <persName>
                   <forename>Theodor</forename>
@@ -180,83 +212,39 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb29899" ana="implied">
-               <title type="main">Freiwild. Schauspiel in 3 Akten</title>
-               <title type="legacy-name-merge">Freiwild</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
-            </bibl>
-            <bibl xml:id="pmb30075" ana="implied">
-               <title type="main">Die Frau des Weisen. Erzählung</title>
-               <title type="werk_bibliografische-angabe">Die Zeit, Bd. 10, Nr. 118–120, 2.–16. 1. 1897</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
-            </bibl>
             <bibl xml:id="pmb33053" ana="implied">
-               <title type="main">Der Judenstaat. Versuch einer modernen Lösung der Judenfrage</title>
+               <title>Der Judenstaat. Versuch einer modernen Lösung der Judenfrage</title>
                <title type="werk_link">https://de.wikisource.org/wiki/Der_Judenstaat</title>
                <title type="legacy-name-merge">Der Judenstaat</title>
-               <author role="hat-geschaffen" ref="pmb11673">Herzl, Theodor</author>
+               <author ref="pmb11673" role="hat-geschaffen">Herzl, Theodor</author>
+            </bibl>
+            <bibl xml:id="pmb29899" ana="implied">
+               <title>Freiwild. Schauspiel in 3 Akten</title>
+               <title type="legacy-name-merge">Freiwild</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            </bibl>
+            <bibl xml:id="pmb30075" ana="implied">
+               <title>Die Frau des Weisen. Erzählung</title>
+               <title type="werk_bibliografische-angabe">Die Zeit, Bd. 10, Nr. 118–120, 2.–16. 1. 1897</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
             <bibl xml:id="pmb33806" ana="implied">
-               <title type="main">Ein Abschied</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <title>Ein Abschied</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb213">
-               <placeName>Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <location type="coords">
-                  <geo>47,71109 13,61893</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb429">Salzkammergut</placeName>
-                  <geo>47,75 13,5</geo>
-               </location>
-            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -265,12 +253,24 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb213">
+               <placeName>Bad Ischl</placeName>
+               <location type="coords">
+                  <geo>47,71109 13,61893</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb429">Salzkammergut</placeName>
+                  <geo>47,75 13,5</geo>
+               </location>
             </place>
             <place xml:id="pmb628">
                <placeName>Böhmen</placeName>
                <placeName type="alternative-name">Bohemia</placeName>
-               <placeName type="alternative-name">Böhmen</placeName>
-               <placeName type="legacy-name-merge">Bohemia</placeName>
                <location type="coords">
                   <geo>50,0651 14,3797</geo>
                </location>
@@ -282,7 +282,6 @@
             <place xml:id="pmb652">
                <placeName>Prag</placeName>
                <placeName type="alternative-name">Hauptstadt Prag</placeName>
-               <placeName type="legacy-name-merge">Prag</placeName>
                <placeName type="legacy-name-merge">Prag-Smichow</placeName>
                <placeName type="legacy-name-merge">Bohnitz bei Prag</placeName>
                <placeName type="legacy-name-merge">Prag-Dejwitz</placeName>

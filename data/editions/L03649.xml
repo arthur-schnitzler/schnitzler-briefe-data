@@ -204,54 +204,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb12156">
-               <persName>
-                  <forename>Maurice</forename>
-                  <surname>Maeterlinck</surname>
-               </persName>
-               <birth>
-                  <date when="1862-08-29">1862-08-29</date>
-                  <settlement ref="pmb58674">
-                     <placeName type="pref">Gent</placeName>
-                     <location>
-                        <geo>51,05 3,71667</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1949-05-06">1949-05-06</date>
-                  <settlement ref="pmb926">
-                     <placeName type="pref">Nizza</placeName>
-                     <location>
-                        <geo>43,70313 7,26608</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb12543">
-               <persName>
-                  <forename>Romain</forename>
-                  <surname>Rolland</surname>
-               </persName>
-               <birth>
-                  <date when="1866-01-29">1866-01-29</date>
-                  <settlement ref="pmb48686">
-                     <placeName type="pref">Clamecy</placeName>
-                     <location>
-                        <geo>47,46017 3,5194</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1944-12-30">1944-12-30</date>
-                  <settlement ref="pmb58488">
-                     <placeName type="pref">Vézelay</placeName>
-                     <location>
-                        <geo>47,46572 3,74559</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb13212">
                <persName>
                   <forename>Stefan</forename>
@@ -282,7 +234,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -291,7 +243,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -299,10 +251,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb3739">
                <persName>
@@ -352,6 +300,54 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb12156">
+               <persName>
+                  <forename>Maurice</forename>
+                  <surname>Maeterlinck</surname>
+               </persName>
+               <birth>
+                  <date when="1862-08-29">1862-08-29</date>
+                  <settlement ref="pmb58674">
+                     <placeName type="pref">Gent</placeName>
+                     <location>
+                        <geo>51,05 3,71667</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1949-05-06">1949-05-06</date>
+                  <settlement ref="pmb926">
+                     <placeName type="pref">Nizza</placeName>
+                     <location>
+                        <geo>43,70313 7,26608</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb12543">
+               <persName>
+                  <forename>Romain</forename>
+                  <surname>Rolland</surname>
+               </persName>
+               <birth>
+                  <date when="1866-01-29">1866-01-29</date>
+                  <settlement ref="pmb48686">
+                     <placeName type="pref">Clamecy</placeName>
+                     <location>
+                        <geo>47,46017 3,5194</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1944-12-30">1944-12-30</date>
+                  <settlement ref="pmb58488">
+                     <placeName type="pref">Vézelay</placeName>
+                     <location>
+                        <geo>47,46572 3,74559</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb15271" ana="comment">
                <persName>
                   <forename>Eugen</forename>
@@ -396,19 +392,41 @@
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb36376" ana="comment">
-               <title type="main">Neues Wiener Journal</title>
-               <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=nwj</title>
-            </bibl>
-            <bibl xml:id="pmb58490" ana="comment">
-               <title type="main">Une protestation d’Arthur Schnitzler</title>
+            <bibl xml:id="pmb58490" ana="implied">
+               <title>Une protestation d’Arthur Schnitzler</title>
                <title type="werk_link">https://schnitzler-interviews.acdh.oeaw.ac.at/P111.html</title>
                <title type="werk_bibliografische-angabe">Schnitzler, Arthur, Rolland, Romain [Einleitung und Übersetzung]: Une protestation d’Arthur Schnitzler. In: Journal de Genève, Jg. 85, 21. 12. 1914, 3. Ausgabe, S. [1]</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
-               <author role="hat-ubersetzt" ref="pmb12543">Rolland, Romain</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author ref="pmb12543" role="hat-ubersetzt">Rolland, Romain</author>
+            </bibl>
+            <bibl xml:id="pmb36376" ana="comment">
+               <title>Neues Wiener Journal</title>
+               <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=nwj</title>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb249577">
                <placeName>Kochgasse 8</placeName>
                <location type="coords">
@@ -421,28 +439,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb58">VIII., Josefstadt</placeName>
                   <geo>48,21126 16,34706</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

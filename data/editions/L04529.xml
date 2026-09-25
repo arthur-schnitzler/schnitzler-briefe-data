@@ -81,10 +81,11 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
+                                 <measure unit="zeichenanzahl" quantity="82"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc>
+                        <handDesc hands="1">
                            <handNote medium="bleistift" style="deutsche-kurrent"/>
                         </handDesc>
                      </physDesc>
@@ -100,7 +101,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1901-10-01" n="01" evidence="conjecture">[1. 10. 1901?]</date>
+               <date when="1901-10-01" evidence="conjecture" n="01">[1. 10. 1901?]</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
@@ -121,6 +122,10 @@
          <change who="MAM" when="2026-06-11">Export aus Transkribus</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="HS00048772X_0371"/>
+      <graphic url="HS00048772X_0372"/>
+   </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1"><opener><seg rend="center"><pb facs="HS00048772X_0371"/><hi rend="pre-print"><anchor type="commentary" xml:id="K_L04529-1"/>Gustav
@@ -134,5 +139,152 @@
                   Hauptallee</rs> linke Seite bis <rs type="place" ref="#pmb364205">1.
                   Kaffehaus</rs>.</p></div>
       </body>
+      <back>
+         <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb12740">
+               <persName>
+                  <forename>Gustav</forename>
+                  <surname>Schwarzkopf</surname>
+               </persName>
+               <birth>
+                  <date when="1853-11-07">1853-11-07</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1939-11-13">1939-11-13</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+         </listPerson>
+         <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb530">
+               <placeName>Praterstern</placeName>
+               <location type="coords">
+                  <geo>48,21836158258 16,391366725274</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb52">II., Leopoldstadt</placeName>
+                  <geo>48,21667 16,4</geo>
+               </location>
+            </place>
+            <place xml:id="pmb53159">
+               <placeName>Hauptallee</placeName>
+               <placeName type="legacy-name-merge">Prater Hauptallee</placeName>
+               <location type="coords">
+                  <geo>48,20508551408161 16,41575606941028</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb8">Prater</placeName>
+                  <geo>48,194558 16,430054</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb52">II., Leopoldstadt</placeName>
+                  <geo>48,21667 16,4</geo>
+               </location>
+            </place>
+            <place xml:id="pmb364205">
+               <placeName>Erstes Kaffeehaus</placeName>
+               <location type="coords">
+                  <geo>48,21421113 16,39866643</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb52">II., Leopoldstadt</placeName>
+                  <geo>48,21667 16,4</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb685">Wurstelprater</placeName>
+                  <geo>48,214722 16,402222</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb53159">Hauptallee</placeName>
+                  <geo>48,20508551408161 16,41575606941028</geo>
+               </location>
+            </place>
+            <place xml:id="pmb8" ana="comment">
+               <placeName>Prater</placeName>
+               <location type="coords">
+                  <geo>48,194558 16,430054</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb52">II., Leopoldstadt</placeName>
+                  <geo>48,21667 16,4</geo>
+               </location>
+            </place>
+            <place xml:id="pmb190716" ana="comment">
+               <placeName>Restaurant Zur schönen Schäferin (Inh. Peter Kaubek)</placeName>
+               <location type="coords">
+                  <geo>48,21528 16,400807</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb52">II., Leopoldstadt</placeName>
+                  <geo>48,21667 16,4</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb685">Wurstelprater</placeName>
+                  <geo>48,214722 16,402222</geo>
+               </location>
+            </place>
+         </listPlace>
+      </back>
    </text>
 </TEI>

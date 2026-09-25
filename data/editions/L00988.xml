@@ -196,6 +196,30 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10986">
                <persName>
                   <forename>Otto</forename>
@@ -226,56 +250,17 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30233" ana="implied">
-               <title type="main">Der Graf von Charolais. Ein Trauerspiel</title>
+               <title>Der Graf von Charolais. Ein Trauerspiel</title>
                <title type="werk_arbeitstitel">Die unseelige Mitgift</title>
                <title type="legacy-name-merge">Der Graf von Charolais</title>
                <title type="legacy-name-merge">Der Graf von Charolais</title>
-               <author role="hat-geschaffen" ref="pmb10863">Beer-Hofmann, Richard</author>
+               <author ref="pmb10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb40260">
-               <placeName>Bozen</placeName>
-               <placeName type="ort_namensvariante">Bolzano</placeName>
-               <location type="coords">
-                  <geo>46,49067 11,33982</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
             <place xml:id="pmb40832">
                <placeName>Sankt Michael</placeName>
                <location type="coords">
@@ -288,6 +273,45 @@
                <location type="located_in_place">
                   <placeName ref="pmb36485">Eppan an der Weinstraße</placeName>
                   <geo>46,45472 11,26178</geo>
+               </location>
+            </place>
+            <place xml:id="pmb946">
+               <placeName>Vahrn</placeName>
+               <location type="coords">
+                  <geo>46,73901 11,63749</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40260">
+               <placeName>Bozen</placeName>
+               <placeName type="ort_namensvariante">Bolzano</placeName>
+               <location type="coords">
+                  <geo>46,49067 11,33982</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb42210">
+               <placeName>Caldaro sulla strada del vino</placeName>
+               <placeName type="alternative-name">Kaltern an der Weinstrasse</placeName>
+               <placeName type="legacy-name">Kaltern</placeName>
+               <placeName type="legacy-name-merge">Kaltern an der Weinstraße</placeName>
+               <placeName type="legacy-name-merge">Caldaro sulla Strada del Vino</placeName>
+               <location type="coords">
+                  <geo>46,41321 11,24118</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
                </location>
             </place>
             <place xml:id="pmb41083">
@@ -309,26 +333,6 @@
                   <geo>42,83333 12,83333</geo>
                </location>
             </place>
-            <place xml:id="pmb42210">
-               <placeName>Caldaro sulla strada del vino</placeName>
-               <placeName type="alternative-name">Kaltern an der Weinstrasse</placeName>
-               <placeName type="legacy-name">Kaltern</placeName>
-               <placeName type="alternative-name">Kaltern</placeName>
-               <placeName type="alternative-name">Kaltern an der Weinstrasse</placeName>
-               <placeName type="legacy-name-merge">Kaltern an der Weinstraße</placeName>
-               <placeName type="legacy-name-merge">Caldaro sulla Strada del Vino</placeName>
-               <location type="coords">
-                  <geo>46,41321 11,24118</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb969">Südtirol</placeName>
-                  <geo>46,71667 11,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
             <place xml:id="pmb43052">
                <placeName>Eppaner Hof</placeName>
                <location type="coords">
@@ -337,16 +341,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb36485">Eppan an der Weinstraße</placeName>
                   <geo>46,45472 11,26178</geo>
-               </location>
-            </place>
-            <place xml:id="pmb946">
-               <placeName>Vahrn</placeName>
-               <location type="coords">
-                  <geo>46,73901 11,63749</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb969">Südtirol</placeName>
-                  <geo>46,71667 11,5</geo>
                </location>
             </place>
          </listPlace>

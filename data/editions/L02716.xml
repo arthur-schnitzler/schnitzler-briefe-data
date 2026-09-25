@@ -185,7 +185,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -194,7 +194,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -202,10 +202,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb87771">
                <persName>
@@ -223,6 +219,30 @@
                </birth>
                <death>
                   <date when="1909-10-30">1909-10-30</date>
+                  <settlement ref="pmb146">
+                     <placeName type="pref">Frankfurt am Main</placeName>
+                     <location>
+                        <geo>50,11552 8,68417</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb4986" ana="implied">
+               <persName>
+                  <forename>Fedor</forename>
+                  <surname>Mamroth</surname>
+               </persName>
+               <birth>
+                  <date when="1851-02-21">1851-02-21</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
+                     <location>
+                        <geo>51,10773 17,03533</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1907-06-25">1907-06-25</date>
                   <settlement ref="pmb146">
                      <placeName type="pref">Frankfurt am Main</placeName>
                      <location>
@@ -255,44 +275,54 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb4986" ana="comment">
-               <persName>
-                  <forename>Fedor</forename>
-                  <surname>Mamroth</surname>
-               </persName>
-               <birth>
-                  <date when="1851-02-21">1851-02-21</date>
-                  <settlement ref="pmb677">
-                     <placeName type="pref">Breslau</placeName>
-                     <location>
-                        <geo>51,10773 17,03533</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1907-06-25">1907-06-25</date>
-                  <settlement ref="pmb146">
-                     <placeName type="pref">Frankfurt am Main</placeName>
-                     <location>
-                        <geo>50,11552 8,68417</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29823" ana="comment">
-               <title type="main">Das Märchen. Schauspiel in drei Aufzügen</title>
+               <title>Das Märchen. Schauspiel in drei Aufzügen</title>
                <title type="werk_bibliografische-angabe">Arthur Schnitzler: Das Märchen. Schauspiel in drei Aufzügen. Dresden, Leipzig: E. Pierson’s Verlag 1894.</title>
                <title type="werk_link">https://babel.hathitrust.org/cgi/pt?id=coo.31924026341598&amp;view=1up&amp;seq=5</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb30" ana="comment">
+               <placeName>Salzburg</placeName>
+               <placeName type="alternative-name">Iuvavum</placeName>
+               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
+               <placeName type="legacy-name-merge">Salzburg?</placeName>
+               <location type="coords">
+                  <geo>47,80067 13,04532</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb697">Salzburg [Land]</placeName>
+                  <geo>47,41667 13,25</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb182">
                <placeName>Paris</placeName>
                <placeName type="alternative-name">P'ariz</placeName>
-               <placeName type="legacy-name-merge">Paris</placeName>
                <placeName type="alternative-name">Pariž</placeName>
                <placeName type="alternative-name">Parisius</placeName>
                <placeName type="alternative-name">Île-de-France</placeName>
@@ -304,22 +334,6 @@
                   <geo>46,0 2,0</geo>
                </location>
             </place>
-            <place xml:id="pmb30">
-               <placeName>Salzburg</placeName>
-               <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="alternative-name">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg?</placeName>
-               <location type="coords">
-                  <geo>47,80067 13,04532</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg [Land]</placeName>
-                  <geo>47,41667 13,25</geo>
-               </location>
-            </place>
             <place xml:id="pmb34187">
                <placeName>rue Richelieu</placeName>
                <location type="coords">
@@ -328,28 +342,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb182">Paris</placeName>
                   <geo>48,85341 2,3488</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
             <place xml:id="pmb89852">
@@ -407,7 +399,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurt_am_Main</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb146.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
@@ -422,7 +414,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004069</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb146</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb146.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb144603">Redaktion der Frankfurter Zeitung</placeName>
@@ -430,7 +422,7 @@
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb144603.html</idno>
                </location>
             </org>
-            <org xml:id="pmb36430">
+            <org xml:id="pmb36430" ana="comment">
                <orgName>Volkstheater</orgName>
                <orgName type="institution_namensvariante">Deutsches Volkstheater</orgName>
                <location type="located_in_place">
@@ -444,7 +436,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -458,31 +450,31 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb20">Volkstheater</placeName>
                   <geo>48,205142 16,3566</geo>
                   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb20.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb20.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb20.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92202/</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q688555</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Volkstheater_(Wien)</idno>
-                  <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=6125</idno>
+                  <idno type="URL" subtype="www">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=6125</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb20.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb20.html</idno>
                   <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb20.html</idno>
                   <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb20.html</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb20.html</idno>
-                  <idno type="URL" subtype="dla-marbach">https://www.dla-marbach.de/find/opac/id/KS00004119</idno>
+                  <idno type="URL" subtype="www">https://www.dla-marbach.de/find/opac/id/KS00004119</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb57">VII., Neubau</placeName>
                   <geo>48,2 16,35</geo>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/2770853/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb57.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb57.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/147180/</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb57.html</idno>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/12214072/</idno>
@@ -492,7 +484,7 @@
                   <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb57.html</idno>
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00397</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb57.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11.11</idno>
                </location>
             </org>
          </listOrg>

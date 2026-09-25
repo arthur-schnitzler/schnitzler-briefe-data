@@ -131,7 +131,7 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1931-08-22" n="01">22. 8. 1931</date>
-               <placeName ref="#pmb147776">Hotel Excelsior</placeName>
+               <placeName ref="#pmb147776">Hotel Excelsior [Velden]</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1931-08-22">22. 8. 1931</date>
@@ -208,7 +208,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -217,7 +217,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -225,10 +225,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb17164" ana="implied">
                <persName>
@@ -256,26 +252,29 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb468">
+               <placeName>Europa</placeName>
+               <location type="coords">
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
+            <place xml:id="pmb909">
+               <placeName>Velden am Wörthersee</placeName>
+               <placeName type="alternative-name">Velden</placeName>
+               <placeName type="alternative-name">Velden am Wörther See</placeName>
+               <location type="coords">
+                  <geo>46,61901 14,03129</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
             <place xml:id="pmb147776">
                <placeName>Hotel Excelsior [Velden]</placeName>
                <location type="located_in_place">
                   <placeName ref="pmb909">Velden am Wörthersee</placeName>
                   <geo>46,61901 14,03129</geo>
-               </location>
-            </place>
-            <place xml:id="pmb168">
-               <placeName>Berlin</placeName>
-               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Barlīn</placeName>
-               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Berolino</placeName>
-               <placeName type="legacy-name-merge">B-n</placeName>
-               <location type="coords">
-                  <geo>52,52437 13,41053</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
                </location>
             </place>
             <place xml:id="pmb168815">
@@ -296,22 +295,6 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
-            <place xml:id="pmb468">
-               <placeName>Europa</placeName>
-               <location type="coords">
-                  <geo>48,69096 9,14062</geo>
-               </location>
-            </place>
-            <place xml:id="pmb651">
-               <placeName>Kärnten</placeName>
-               <location type="coords">
-                  <geo>46,75 13,83333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
             <place xml:id="pmb68">
                <placeName>XVIII., Währing</placeName>
                <placeName type="legacy-name-merge">Währing</placeName>
@@ -327,14 +310,25 @@
                   <geo>48,208333 16,373056</geo>
                </location>
             </place>
-            <place xml:id="pmb909">
-               <placeName>Velden am Wörthersee</placeName>
-               <placeName type="alternative-name">Velden</placeName>
-               <placeName type="alternative-name">Velden am Wörthersee</placeName>
-               <placeName type="alternative-name">Velden am Wörther See</placeName>
-               <placeName type="legacy-name-merge">Velden am Wörther See</placeName>
+            <place xml:id="pmb168">
+               <placeName>Berlin</placeName>
+               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Barlīn</placeName>
+               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Berolino</placeName>
+               <placeName type="legacy-name-merge">B-n</placeName>
                <location type="coords">
-                  <geo>46,61901 14,03129</geo>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb651">
+               <placeName>Kärnten</placeName>
+               <location type="coords">
+                  <geo>46,75 13,83333</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
@@ -343,7 +337,6 @@
             </place>
             <place xml:id="pmb874" ana="comment">
                <placeName>Gmunden</placeName>
-               <placeName type="legacy-name-merge">Gmunden</placeName>
                <location type="coords">
                   <geo>47,91839 13,79933</geo>
                </location>
@@ -358,7 +351,6 @@
             </place>
             <place xml:id="pmb430" ana="implied">
                <placeName>Wörthersee</placeName>
-               <placeName type="legacy-name-merge">Wörthersee</placeName>
                <location type="coords">
                   <geo>46,62917 14,12306</geo>
                </location>

@@ -204,7 +204,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -213,7 +213,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -221,10 +221,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173" ana="implied">
                <persName>
@@ -253,12 +249,29 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29999" ana="implied">
-               <title type="main">Die Andere</title>
+               <title>Die Andere</title>
                <title type="werk_link">https://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=63&amp;teil=0201&amp;seite=00000002&amp;zoom=1</title>
-               <author role="hat-geschaffen" ref="pmb10815">Bahr, Hermann</author>
+               <author ref="pmb10815" role="hat-geschaffen">Bahr, Hermann</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb45258">
+               <placeName>München</placeName>
+               <placeName type="legacy-name-merge">München?</placeName>
+               <placeName type="legacy-name-merge">Munich</placeName>
+               <placeName type="alternative-name">Monacho</placeName>
+               <location type="coords">
+                  <geo>48,13743 11,57549</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb314">Bayern</placeName>
+                  <geo>49,0 11,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -278,39 +291,6 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
-            <place xml:id="pmb45258">
-               <placeName>München</placeName>
-               <placeName type="alternative-name">München</placeName>
-               <placeName type="legacy-name-merge">München?</placeName>
-               <placeName type="legacy-name-merge">München</placeName>
-               <placeName type="legacy-name-merge">Munich</placeName>
-               <placeName type="alternative-name">Monacho</placeName>
-               <placeName type="alternative-name">Munich</placeName>
-               <placeName type="legacy-name">München</placeName>
-               <placeName type="legacy-name-merge">München?</placeName>
-               <location type="coords">
-                  <geo>48,13743 11,57549</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb314">Bayern</placeName>
-                  <geo>49,0 11,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb497">
-               <placeName>Glaspalast</placeName>
-               <placeName type="legacy-name-merge">Glaspalast</placeName>
-               <location type="coords">
-                  <geo>48,142331 11,564675</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb45258">München</placeName>
-                  <geo>48,13743 11,57549</geo>
-               </location>
-            </place>
             <place xml:id="pmb68">
                <placeName>XVIII., Währing</placeName>
                <placeName type="legacy-name-merge">Währing</placeName>
@@ -324,6 +304,16 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb497">
+               <placeName>Glaspalast</placeName>
+               <location type="coords">
+                  <geo>48,142331 11,564675</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb45258">München</placeName>
+                  <geo>48,13743 11,57549</geo>
                </location>
             </place>
          </listPlace>

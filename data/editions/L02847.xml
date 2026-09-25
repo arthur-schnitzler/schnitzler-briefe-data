@@ -180,7 +180,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -189,7 +189,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -197,10 +197,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2378" ana="implied">
                <persName>
@@ -228,23 +224,70 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb118369">
-               <placeName>Peking</placeName>
-               <placeName type="alternative-name">Beijing</placeName>
-               <placeName type="alternative-name">Peking</placeName>
+            <place xml:id="pmb994">
+               <placeName>Genua</placeName>
+               <placeName type="ort_namensvariante">Genoa</placeName>
                <location type="coords">
-                  <geo>39,9075 116,39723</geo>
+                  <geo>44,40478 8,94439</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb363502">Palazzo della nuova borsa</placeName>
+                  <geo>44,40688 8,93456</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb146">
+               <placeName>Frankfurt am Main</placeName>
+               <placeName type="ort_namensvariante">Frankfurt a. Main</placeName>
+               <placeName type="ort_namensvariante">Frankfurt/Main</placeName>
+               <location type="coords">
+                  <geo>50,11552 8,68417</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb44086">
+               <placeName>Hong Kong</placeName>
+               <placeName type="ort_namensvariante">Hongkong</placeName>
+               <location type="coords">
+                  <geo>22,27832 114,17469</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb1108">China</placeName>
                   <geo>32,8 103,083</geo>
                </location>
             </place>
-            <place xml:id="pmb118682">
-               <placeName>Tianjin</placeName>
-               <placeName type="ort_fruherer-name">Tientsin</placeName>
+            <place xml:id="pmb118806">
+               <placeName>Perlfluss</placeName>
                <location type="coords">
-                  <geo>39,03839 117,17994</geo>
+                  <geo>22,089457 113,770294</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb1108">China</placeName>
@@ -262,10 +305,14 @@
                   <geo>32,8 103,083</geo>
                </location>
             </place>
-            <place xml:id="pmb118806">
-               <placeName>Perlfluss</placeName>
+            <place xml:id="pmb37885">
+               <placeName>Shanghai</placeName>
                <location type="coords">
-                  <geo>22,089457 113,770294</geo>
+                  <geo>31,22222 121,45806</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb37883">Shanghai Municipality</placeName>
+                  <geo>31,16667 121,41667</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb1108">China</placeName>
@@ -303,6 +350,28 @@
                   <geo>32,8 103,083</geo>
                </location>
             </place>
+            <place xml:id="pmb118682">
+               <placeName>Tianjin</placeName>
+               <placeName type="ort_fruherer-name">Tientsin</placeName>
+               <location type="coords">
+                  <geo>39,03839 117,17994</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1108">China</placeName>
+                  <geo>32,8 103,083</geo>
+               </location>
+            </place>
+            <place xml:id="pmb118369">
+               <placeName>Peking</placeName>
+               <placeName type="alternative-name">Beijing</placeName>
+               <location type="coords">
+                  <geo>39,9075 116,39723</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1108">China</placeName>
+                  <geo>32,8 103,083</geo>
+               </location>
+            </place>
             <place xml:id="pmb118814">
                <placeName>Incheon</placeName>
                <placeName type="ort_fruherer-name">Chemulpo</placeName>
@@ -324,16 +393,14 @@
                   <geo>36,5 127,75</geo>
                </location>
             </place>
-            <place xml:id="pmb146">
-               <placeName>Frankfurt am Main</placeName>
-               <placeName type="ort_namensvariante">Frankfurt a. Main</placeName>
-               <placeName type="ort_namensvariante">Frankfurt/Main</placeName>
+            <place xml:id="pmb318">
+               <placeName>Japan</placeName>
                <location type="coords">
-                  <geo>50,11552 8,68417</geo>
+                  <geo>35,68536 139,75309</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
+                  <placeName ref="pmb1019">Asien</placeName>
+                  <geo>29,84064 89,29688</geo>
                </location>
             </place>
             <place xml:id="pmb168">
@@ -354,7 +421,6 @@
             <place xml:id="pmb182">
                <placeName>Paris</placeName>
                <placeName type="alternative-name">P'ariz</placeName>
-               <placeName type="legacy-name-merge">Paris</placeName>
                <placeName type="alternative-name">Pariž</placeName>
                <placeName type="alternative-name">Parisius</placeName>
                <placeName type="alternative-name">Île-de-France</placeName>
@@ -366,133 +432,13 @@
                   <geo>46,0 2,0</geo>
                </location>
             </place>
-            <place xml:id="pmb318">
-               <placeName>Japan</placeName>
-               <placeName type="alternative-name">Japan</placeName>
-               <placeName type="legacy-name-merge">Japan</placeName>
-               <location type="coords">
-                  <geo>35,68536 139,75309</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb1019">Asien</placeName>
-                  <geo>29,84064 89,29688</geo>
-               </location>
-            </place>
-            <place xml:id="pmb37885">
-               <placeName>Shanghai</placeName>
-               <placeName type="alternative-name">Shanghai</placeName>
-               <placeName type="legacy-name">Shanghai</placeName>
-               <location type="coords">
-                  <geo>31,22222 121,45806</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb37883">Shanghai Municipality</placeName>
-                  <geo>31,16667 121,41667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb1108">China</placeName>
-                  <geo>32,8 103,083</geo>
-               </location>
-            </place>
             <place xml:id="pmb40306">
                <placeName>Italien</placeName>
                <placeName type="alternative-name">Italian Republic</placeName>
                <placeName type="alternative-name">Republic of Italy</placeName>
-               <placeName type="legacy-name-merge">Italien</placeName>
                <placeName type="legacy-name-merge">Italy</placeName>
                <location type="coords">
                   <geo>42,83333 12,83333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
-               </location>
-            </place>
-            <place xml:id="pmb44086">
-               <placeName>Hong Kong</placeName>
-               <placeName type="ort_namensvariante">Hongkong</placeName>
-               <location type="coords">
-                  <geo>22,27832 114,17469</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb1108">China</placeName>
-                  <geo>32,8 103,083</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb994">
-               <placeName>Genua</placeName>
-               <placeName type="ort_namensvariante">Genoa</placeName>
-               <location type="coords">
-                  <geo>44,40478 8,94439</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb363502">Palazzo della nuova borsa</placeName>
-                  <geo>44,40688 8,93456</geo>
-               </location>
-            </place>
-            <place xml:id="pmb141888" ana="implied">
-               <placeName>Deutsches Postamt in Shanghai</placeName>
-               <location type="coords">
-                  <geo>31,233958 121,489434</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb37885">Shanghai</placeName>
-                  <geo>31,22222 121,45806</geo>
-               </location>
-            </place>
-            <place xml:id="pmb151" ana="implied">
-               <placeName>Deutschland</placeName>
-               <placeName type="alternative-name">Bundesrepublik Deutschland</placeName>
-               <placeName type="legacy-name-merge">Deutschland</placeName>
-               <placeName type="alternative-name">West Germany</placeName>
-               <placeName type="alternative-name">Federal Republic of Germany</placeName>
-               <placeName type="legacy-name-merge">Bundesrepublik Deutschland</placeName>
-               <placeName type="legacy-name-merge">Germany</placeName>
-               <placeName type="legacy-name-merge">Deutschland</placeName>
-               <placeName type="ort_fruherer-name">Deutsches Kaiserreich</placeName>
-               <placeName type="ort_fruherer-name">Weimarer Republik</placeName>
-               <location type="coords">
-                  <geo>51,5 10,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
-               </location>
-            </place>
-            <place xml:id="pmb166" ana="implied">
-               <placeName>Frankreich</placeName>
-               <placeName type="alternative-name">France</placeName>
-               <placeName type="alternative-name">Frankreich</placeName>
-               <placeName type="legacy-name-merge">Frankreich</placeName>
-               <placeName type="legacy-name-merge">France</placeName>
-               <location type="coords">
-                  <geo>46,0 2,0</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb468">Europa</placeName>
@@ -509,6 +455,43 @@
                <location type="located_in_place">
                   <placeName ref="pmb1019">Asien</placeName>
                   <geo>29,84064 89,29688</geo>
+               </location>
+            </place>
+            <place xml:id="pmb141888" ana="implied">
+               <placeName>Deutsches Postamt in Shanghai</placeName>
+               <location type="coords">
+                  <geo>31,233958 121,489434</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb37885">Shanghai</placeName>
+                  <geo>31,22222 121,45806</geo>
+               </location>
+            </place>
+            <place xml:id="pmb166" ana="implied">
+               <placeName>Frankreich</placeName>
+               <placeName type="alternative-name">France</placeName>
+               <location type="coords">
+                  <geo>46,0 2,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
+            <place xml:id="pmb151" ana="implied">
+               <placeName>Deutschland</placeName>
+               <placeName type="alternative-name">Bundesrepublik Deutschland</placeName>
+               <placeName type="alternative-name">West Germany</placeName>
+               <placeName type="alternative-name">Federal Republic of Germany</placeName>
+               <placeName type="legacy-name-merge">Germany</placeName>
+               <placeName type="ort_fruherer-name">Deutsches Kaiserreich</placeName>
+               <placeName type="ort_fruherer-name">Weimarer Republik</placeName>
+               <location type="coords">
+                  <geo>51,5 10,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
                </location>
             </place>
          </listPlace>
@@ -528,7 +511,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurt_am_Main</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb146.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
@@ -543,7 +526,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004069</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb146</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb146.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb144603">Redaktion der Frankfurter Zeitung</placeName>

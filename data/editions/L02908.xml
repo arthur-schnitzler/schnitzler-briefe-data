@@ -155,30 +155,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb11301">
-               <persName>
-                  <forename>Karl</forename>
-                  <surname>Federn</surname>
-               </persName>
-               <birth>
-                  <date when="1868-02-02">1868-02-02</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1943-03-22">1943-03-22</date>
-                  <settlement ref="pmb224">
-                     <placeName type="pref">London</placeName>
-                     <location>
-                        <geo>51,50853 -0,12574</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11485">
                <persName>
                   <forename>Paul</forename>
@@ -195,6 +171,30 @@
                </birth>
                <death>
                   <date when="1935-09-25">1935-09-25</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -251,34 +251,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb3326">
                <persName>
                   <surname>Dante Alighieri</surname>
@@ -304,6 +276,30 @@
                      <placeName type="pref">Ravenna</placeName>
                      <location>
                         <geo>44,41344 12,20121</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb11301">
+               <persName>
+                  <forename>Karl</forename>
+                  <surname>Federn</surname>
+               </persName>
+               <birth>
+                  <date when="1868-02-02">1868-02-02</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1943-03-22">1943-03-22</date>
+                  <settlement ref="pmb224">
+                     <placeName type="pref">London</placeName>
+                     <location>
+                        <geo>51,50853 -0,12574</geo>
                      </location>
                   </settlement>
                </death>
@@ -335,16 +331,16 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33307">
-               <title type="main">Dante</title>
+               <title>Dante</title>
                <title type="werk_namensvariante">Dante und seine Zeit</title>
                <title type="werk_link">https://babel.hathitrust.org/cgi/pt?id=hvd.hnnq9j</title>
-               <author role="hat-geschaffen" ref="pmb11301">Federn, Karl</author>
+               <author ref="pmb11301" role="hat-geschaffen">Federn, Karl</author>
             </bibl>
-            <bibl xml:id="pmb40595" ana="comment">
-               <title type="main">Vorspiel zur Antigone des Sophokles</title>
+            <bibl xml:id="pmb40595" ana="implied">
+               <title>Vorspiel zur Antigone des Sophokles</title>
                <title type="werk_link">https://babel.hathitrust.org/cgi/pt?id=uc1.b2935471&amp;view=1up&amp;seq=246</title>
                <title type="werk_bibliografische-angabe">Die Insel, Jg. 1, H. 8, Mai 1900, S. 230–241</title>
-               <author role="hat-geschaffen" ref="pmb11740">Hofmannsthal, Hugo von</author>
+               <author ref="pmb11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             </bibl>
          </listBibl>
          <listPlace>
@@ -363,6 +359,28 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb40583">
                <placeName>Dessauer Straße</placeName>
                <location type="coords">
@@ -371,28 +389,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb168">Berlin</placeName>
                   <geo>52,52437 13,41053</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

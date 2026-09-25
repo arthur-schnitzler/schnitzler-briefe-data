@@ -203,6 +203,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10815">
                <persName>
                   <forename>Hermann</forename>
@@ -226,34 +250,6 @@
                      </location>
                   </settlement>
                </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2167">
                <persName>
@@ -303,25 +299,94 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb11867" ana="comment">
+               <persName>
+                  <forename>Heinrich</forename>
+                  <surname>Kanner</surname>
+               </persName>
+               <birth>
+                  <date when="1864-11-09">1864-11-09</date>
+                  <settlement ref="pmb36202">
+                     <placeName type="pref">Galați</placeName>
+                     <location>
+                        <geo>45,43687 28,05028</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1930-02-15">1930-02-15</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb12790" ana="comment">
+               <persName>
+                  <forename>Isidor</forename>
+                  <surname>Singer</surname>
+               </persName>
+               <birth>
+                  <date when="1857-01-16">1857-01-16</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1927-12-08">1927-12-08</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb31287">
-               <title type="main">Burgtheater. »Husarenfieber.« Schwank in vier Akten von Gustav Kadelburg und Richard Skowronnek. – Zum erstenmal: am 17. Januar 1907</title>
+               <title>Burgtheater. »Husarenfieber.« Schwank in vier Akten von Gustav Kadelburg und Richard Skowronnek. – Zum erstenmal: am 17. Januar 1907</title>
                <title type="werk_bibliografische-angabe">Die Zeit, Jg. 6, Nr. 1552, 18. 1. 1907, S. 1–2</title>
                <title type="werk_link">https://anno.onb.ac.at/cgi-content/anno?aid=zei&amp;datum=19070118&amp;seite=1&amp;zoom=33</title>
-               <author role="hat-geschaffen" ref="pmb2167">Salten, Felix</author>
+               <author ref="pmb2167" role="hat-geschaffen">Salten, Felix</author>
             </bibl>
             <bibl xml:id="pmb35935" ana="comment">
-               <title type="main">Die Zeit</title>
+               <title>Die Zeit</title>
                <title type="werk_link">https://anno.onb.ac.at/cgi-content/anno?aid=zei&amp;datum=19021026</title>
-               <author role="hat-herausgegeben" ref="pmb11867">Kanner, Heinrich</author>
-               <author role="hat-herausgegeben" ref="pmb12790">Singer, Isidor</author>
+               <author ref="pmb11867" role="hat-herausgegeben">Kanner, Heinrich</author>
+               <author ref="pmb12790" role="hat-herausgegeben">Singer, Isidor</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb159">
                <placeName>Heiligenstadt</placeName>
-               <placeName type="legacy-name-merge">Heiligenstadt</placeName>
                <placeName type="legacy-name-merge">Wien-Heiligenstadt</placeName>
                <placeName type="legacy-name-merge">Heiligenstadt (Wien)</placeName>
                <location type="coords">
@@ -330,6 +395,16 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb69">XIX., Döbling</placeName>
+                  <geo>48,25 16,33306</geo>
+               </location>
+            </place>
+            <place xml:id="pmb722">
+               <placeName>Armbrustergasse</placeName>
+               <location type="coords">
+                  <geo>48,25624 16,35657</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb69">XIX., Döbling</placeName>
@@ -358,9 +433,7 @@
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -377,38 +450,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb687">Österreich-Ungarn</placeName>
                   <geo>48,4054 16,4887</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb722">
-               <placeName>Armbrustergasse</placeName>
-               <location type="coords">
-                  <geo>48,25624 16,35657</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb69">XIX., Döbling</placeName>
-                  <geo>48,25 16,33306</geo>
                </location>
             </place>
          </listPlace>

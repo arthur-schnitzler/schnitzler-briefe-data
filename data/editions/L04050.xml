@@ -130,7 +130,7 @@
             </correspAction>
             <correspAction type="delivered">
                <date when="1904-09-21">21. 9. 1904</date>
-               <placeName ref="#pmb51">Wien 1/1</placeName>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
@@ -165,22 +165,22 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb11485">
+            <person xml:id="pmb2121">
                <persName>
-                  <forename>Paul</forename>
-                  <surname>Goldmann</surname>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1865-01-31">1865-01-31</date>
-                  <settlement ref="pmb677">
-                     <placeName type="pref">Breslau</placeName>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>51,10773 17,03533</geo>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1935-09-25">1935-09-25</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -213,22 +213,22 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
+            <person xml:id="pmb11485">
                <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
+                  <forename>Paul</forename>
+                  <surname>Goldmann</surname>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
+                  <date when="1865-01-31">1865-01-31</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
                      <location>
-                        <geo>48,208333 16,373056</geo>
+                        <geo>51,10773 17,03533</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1935-09-25">1935-09-25</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -236,13 +236,68 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <location type="coords">
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb168940">
+               <placeName>Edmund-Weiß-Gasse 7</placeName>
+               <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
+               <location type="coords">
+                  <geo>48,2304 16,33472</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb533">Währinger Cottage</placeName>
+                  <geo>48,233056 16,341944</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb133">Edmund-Weiß-Gasse</placeName>
+                  <geo>48,23056 16,3348</geo>
+               </location>
+            </place>
             <place xml:id="pmb207296">
                <placeName>Tiefer Graben 23</placeName>
                <location type="coords">
@@ -255,47 +310,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb51">I., Innere Stadt</placeName>
                   <geo>48,20769 16,37049</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb51">
-               <placeName>I., Innere Stadt</placeName>
-               <placeName type="alternative-name">Inner city</placeName>
-               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
-               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
-               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
-               <placeName type="legacy-name-merge">Inner city</placeName>
-               <location type="coords">
-                  <geo>48,20769 16,37049</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
          </listPlace>

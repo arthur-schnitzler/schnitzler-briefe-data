@@ -82,7 +82,7 @@
                               <extent>
                                  <measure unit="blatt" quantity="3"/>
                                  <measure unit="seite" quantity="5"/>
-                                 <measure unit="zeichenanzahl" quantity="4633"/>
+                                 <measure unit="zeichenanzahl" quantity="4634"/>
                               </extent>
                               <support>Blatt 2 und 3 mit Schreibmaschine paginiert</support>
                            </supportDesc>
@@ -238,6 +238,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10992">
                <persName>
                   <forename>Georg</forename>
@@ -262,33 +286,17 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
+            <person xml:id="pmb4394" ana="implied">
                <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
+                  <forename>Reinhold</forename>
+                  <surname>Philipp</surname>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
+                  <date when="1883-08-15">1883-08-15</date>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
+                  <date when="1968-01-01" notAfter="1968-12-31">1968</date>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173" ana="implied">
                <persName>
@@ -314,48 +322,28 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb4394" ana="implied">
-               <persName>
-                  <forename>Reinhold</forename>
-                  <surname>Philipp</surname>
-               </persName>
-               <birth>
-                  <date when="1883-08-15">1883-08-15</date>
-               </birth>
-               <death>
-                  <date when="1968-01-01" notAfter="1968-12-31">1968</date>
-               </death>
-            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb12589">
-               <placeName>Celerina</placeName>
-               <placeName type="ort_namensvariante">Schlarigna</placeName>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
-                  <geo>46,5146 9,8622</geo>
+                  <geo>48,208333 16,373056</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb1061">Engadin</placeName>
-                  <geo>46,601337 9,965973</geo>
-               </location>
-            </place>
-            <place xml:id="pmb151">
-               <placeName>Deutschland</placeName>
-               <placeName type="alternative-name">Bundesrepublik Deutschland</placeName>
-               <placeName type="legacy-name-merge">Deutschland</placeName>
-               <placeName type="alternative-name">West Germany</placeName>
-               <placeName type="alternative-name">Federal Republic of Germany</placeName>
-               <placeName type="legacy-name-merge">Bundesrepublik Deutschland</placeName>
-               <placeName type="legacy-name-merge">Germany</placeName>
-               <placeName type="legacy-name-merge">Deutschland</placeName>
-               <placeName type="ort_fruherer-name">Deutsches Kaiserreich</placeName>
-               <placeName type="ort_fruherer-name">Weimarer Republik</placeName>
-               <location type="coords">
-                  <geo>51,5 10,5</geo>
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
             <place xml:id="pmb168815">
@@ -376,12 +364,53 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
+            <place xml:id="pmb12589">
+               <placeName>Celerina</placeName>
+               <placeName type="ort_namensvariante">Schlarigna</placeName>
+               <location type="coords">
+                  <geo>46,5146 9,8622</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1061">Engadin</placeName>
+                  <geo>46,601337 9,965973</geo>
+               </location>
+            </place>
+            <place xml:id="pmb43570">
+               <placeName>Dänemark</placeName>
+               <placeName type="legacy-name-merge">Denmark</placeName>
+               <placeName type="alternative-name">Kingdom of Denmark</placeName>
+               <location type="coords">
+                  <geo>56,0 10,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb745">Skandinavien</placeName>
+                  <geo>63,0 25,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
+            <place xml:id="pmb151">
+               <placeName>Deutschland</placeName>
+               <placeName type="alternative-name">Bundesrepublik Deutschland</placeName>
+               <placeName type="alternative-name">West Germany</placeName>
+               <placeName type="alternative-name">Federal Republic of Germany</placeName>
+               <placeName type="legacy-name-merge">Germany</placeName>
+               <placeName type="ort_fruherer-name">Deutsches Kaiserreich</placeName>
+               <placeName type="ort_fruherer-name">Weimarer Republik</placeName>
+               <location type="coords">
+                  <geo>51,5 10,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -398,46 +427,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb687">Österreich-Ungarn</placeName>
                   <geo>48,4054 16,4887</geo>
-               </location>
-            </place>
-            <place xml:id="pmb43570">
-               <placeName>Dänemark</placeName>
-               <placeName type="alternative-name">Dänemark</placeName>
-               <placeName type="legacy-name-merge">Denmark</placeName>
-               <placeName type="alternative-name">Kingdom of Denmark</placeName>
-               <placeName type="legacy-name-merge">Dänemark</placeName>
-               <location type="coords">
-                  <geo>56,0 10,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb745">Skandinavien</placeName>
-                  <geo>63,0 25,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

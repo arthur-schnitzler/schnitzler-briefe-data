@@ -164,6 +164,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -188,34 +212,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb43191">
                <persName>
                   <surname>?? [Schreibkraft der Menükarte 3.10.1899]</surname>
@@ -224,30 +220,29 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30233">
-               <title type="main">Der Graf von Charolais. Ein Trauerspiel</title>
+               <title>Der Graf von Charolais. Ein Trauerspiel</title>
                <title type="werk_arbeitstitel">Die unseelige Mitgift</title>
                <title type="legacy-name-merge">Der Graf von Charolais</title>
                <title type="legacy-name-merge">Der Graf von Charolais</title>
-               <author role="hat-geschaffen" ref="pmb10863">Beer-Hofmann, Richard</author>
+               <author ref="pmb10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
             </bibl>
             <bibl xml:id="pmb29857" ana="implied">
-               <title type="main">Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
+               <title>Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
                <title type="werk_arbeitstitel">Shawl</title>
                <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=601&amp;teil=0111&amp;seite=00000001&amp;zoom=2</title>
                <title type="legacy-name-merge">Der Schleier der Beatrice</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb168">
-               <placeName>Berlin</placeName>
-               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Barlīn</placeName>
-               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Berolino</placeName>
-               <placeName type="legacy-name-merge">B-n</placeName>
+            <place xml:id="pmb883">
+               <placeName>Wiesbaden</placeName>
+               <placeName type="alternative-name">Aquae Mattiacorum</placeName>
+               <placeName type="alternative-name">Landeshauptstadt Wiesbaden</placeName>
+               <placeName type="alternative-name">Wisibada</placeName>
+               <placeName type="alternative-name">Stadt Wiesbaden</placeName>
                <location type="coords">
-                  <geo>52,52437 13,41053</geo>
+                  <geo>50,08258 8,24932</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
@@ -278,6 +273,21 @@
                   <geo>50,08258 8,24932</geo>
                </location>
             </place>
+            <place xml:id="pmb168">
+               <placeName>Berlin</placeName>
+               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Barlīn</placeName>
+               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Berolino</placeName>
+               <placeName type="legacy-name-merge">B-n</placeName>
+               <location type="coords">
+                  <geo>52,52437 13,41053</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
             <place xml:id="pmb545">
                <placeName>Hotel Savoy [Berlin]</placeName>
                <location type="coords">
@@ -290,21 +300,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb482">Friedrichstraße [Berlin]</placeName>
                   <geo>52,50319 13,39108</geo>
-               </location>
-            </place>
-            <place xml:id="pmb883">
-               <placeName>Wiesbaden</placeName>
-               <placeName type="alternative-name">Aquae Mattiacorum</placeName>
-               <placeName type="alternative-name">Landeshauptstadt Wiesbaden</placeName>
-               <placeName type="alternative-name">Wisibada</placeName>
-               <placeName type="alternative-name">Stadt Wiesbaden</placeName>
-               <placeName type="legacy-name-merge">Wiesbaden</placeName>
-               <location type="coords">
-                  <geo>50,08258 8,24932</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
                </location>
             </place>
          </listPlace>

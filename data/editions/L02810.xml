@@ -168,19 +168,13 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb118481">
-               <persName>
-                  <forename>Dora</forename>
-                  <surname>Villé</surname>
-               </persName>
-            </person>
-            <person xml:id="pmb2121">
+            <person xml:id="pmb2121" ana="comment">
                <persName>
                   <surname>Schnitzler</surname>
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -189,7 +183,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -197,12 +191,14 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
-            <person xml:id="pmb2378" ana="comment">
+            <person xml:id="pmb118481">
+               <persName>
+                  <forename>Dora</forename>
+                  <surname>Villé</surname>
+               </persName>
+            </person>
+            <person xml:id="pmb2378" ana="implied">
                <persName>
                   <forename>Marie</forename>
                   <surname>Reinhard</surname>
@@ -233,50 +229,6 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb118464">
-               <placeName>Hotel Deutscher Kaiser</placeName>
-               <location type="coords">
-                  <geo>50,10568 8,66567</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb146">Frankfurt am Main</placeName>
-                  <geo>50,11552 8,68417</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb118467">Wiesenhüttenplatz</placeName>
-                  <geo>50,10568 8,66567</geo>
-               </location>
-            </place>
-            <place xml:id="pmb118474">
-               <placeName>Concert Parisien</placeName>
-               <location type="coords">
-                  <geo>48,870964 2,353306</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb182">Paris</placeName>
-                  <geo>48,85341 2,3488</geo>
-               </location>
-            </place>
-            <place xml:id="pmb118489">
-               <placeName>Hôtel de Ville</placeName>
-               <location type="coords">
-                  <geo>48,8571 2,35237</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb182">Paris</placeName>
-                  <geo>48,85341 2,3488</geo>
-               </location>
-            </place>
-            <place xml:id="pmb118491">
-               <placeName>Panthéon</placeName>
-               <location type="coords">
-                  <geo>48,84673 2,34646</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb182">Paris</placeName>
-                  <geo>48,85341 2,3488</geo>
-               </location>
-            </place>
             <place xml:id="pmb146">
                <placeName>Frankfurt am Main</placeName>
                <placeName type="ort_namensvariante">Frankfurt a. Main</placeName>
@@ -287,6 +239,50 @@
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb182" ana="comment">
+               <placeName>Paris</placeName>
+               <placeName type="alternative-name">P'ariz</placeName>
+               <placeName type="alternative-name">Pariž</placeName>
+               <placeName type="alternative-name">Parisius</placeName>
+               <placeName type="alternative-name">Île-de-France</placeName>
+               <location type="coords">
+                  <geo>48,85341 2,3488</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb166">Frankreich</placeName>
+                  <geo>46,0 2,0</geo>
+               </location>
+            </place>
+            <place xml:id="pmb118474" ana="comment">
+               <placeName>Concert Parisien</placeName>
+               <location type="coords">
+                  <geo>48,870964 2,353306</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb182">Paris</placeName>
+                  <geo>48,85341 2,3488</geo>
+               </location>
+            </place>
+            <place xml:id="pmb118489" ana="comment">
+               <placeName>Hôtel de Ville</placeName>
+               <location type="coords">
+                  <geo>48,8571 2,35237</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb182">Paris</placeName>
+                  <geo>48,85341 2,3488</geo>
+               </location>
+            </place>
+            <place xml:id="pmb118491" ana="comment">
+               <placeName>Panthéon</placeName>
+               <location type="coords">
+                  <geo>48,84673 2,34646</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb182">Paris</placeName>
+                  <geo>48,85341 2,3488</geo>
                </location>
             </place>
             <place xml:id="pmb168">
@@ -304,19 +300,18 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
-            <place xml:id="pmb182">
-               <placeName>Paris</placeName>
-               <placeName type="alternative-name">P'ariz</placeName>
-               <placeName type="legacy-name-merge">Paris</placeName>
-               <placeName type="alternative-name">Pariž</placeName>
-               <placeName type="alternative-name">Parisius</placeName>
-               <placeName type="alternative-name">Île-de-France</placeName>
+            <place xml:id="pmb118464">
+               <placeName>Hotel Deutscher Kaiser</placeName>
                <location type="coords">
-                  <geo>48,85341 2,3488</geo>
+                  <geo>50,10568 8,66567</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb166">Frankreich</placeName>
-                  <geo>46,0 2,0</geo>
+                  <placeName ref="pmb146">Frankfurt am Main</placeName>
+                  <geo>50,11552 8,68417</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb118467">Wiesenhüttenplatz</placeName>
+                  <geo>50,10568 8,66567</geo>
                </location>
             </place>
          </listPlace>
@@ -336,7 +331,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurt_am_Main</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb146.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
@@ -351,7 +346,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004069</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb146</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb146.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb144603">Redaktion der Frankfurter Zeitung</placeName>

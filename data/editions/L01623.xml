@@ -166,6 +166,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -190,41 +214,22 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb197">
+               <placeName>Weimar</placeName>
+               <placeName type="legacy-name-merge">Kreisfreie Stadt Weimar</placeName>
+               <location type="coords">
+                  <geo>50,97361 11,33806</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
             <place xml:id="pmb173">
                <placeName>Rodaun</placeName>
                <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
-               <placeName type="legacy-name-merge">Rodaun</placeName>
-               <placeName type="legacy-name-merge">Rodaun</placeName>
                <location type="coords">
                   <geo>48,132793312328 16,256152195922</geo>
                </location>
@@ -235,33 +240,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb73">XXIII., Liesing</placeName>
                   <geo>48,13333 16,3</geo>
-               </location>
-            </place>
-            <place xml:id="pmb195">
-               <placeName>Schloss Belvedere [Weimar]</placeName>
-               <location type="coords">
-                  <geo>50,94873 11,35203</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb238181">Schlosspark Belvedere [Weimar]</placeName>
-                  <geo>50,94806 11,3519</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb197">Weimar</placeName>
-                  <geo>50,97361 11,33806</geo>
-               </location>
-            </place>
-            <place xml:id="pmb197">
-               <placeName>Weimar</placeName>
-               <placeName type="alternative-name">Weimar</placeName>
-               <placeName type="legacy-name-merge">Kreisfreie Stadt Weimar</placeName>
-               <placeName type="legacy-name-merge">Weimar</placeName>
-               <location type="coords">
-                  <geo>50,97361 11,33806</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
                </location>
             </place>
             <place xml:id="pmb40101">
@@ -276,6 +254,20 @@
                <location type="located_in_place">
                   <placeName ref="pmb40103">Ketzergasse</placeName>
                   <geo>48,133896 16,272342</geo>
+               </location>
+            </place>
+            <place xml:id="pmb195">
+               <placeName>Schloss Belvedere [Weimar]</placeName>
+               <location type="coords">
+                  <geo>50,94873 11,35203</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb238181">Schlosspark Belvedere [Weimar]</placeName>
+                  <geo>50,94806 11,3519</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb197">Weimar</placeName>
+                  <geo>50,97361 11,33806</geo>
                </location>
             </place>
          </listPlace>

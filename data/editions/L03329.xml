@@ -102,7 +102,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="2" type="delivery">
-                                    <placeName ref="#pmb59">9/3 W<unclear>ien 72</unclear>
+                                    <placeName ref="#pmb365208">9/3 W<unclear>ien 72</unclear>
                                     </placeName>
                                     <date when="1902-05-20">20. <supplied>5. 02</supplied>
                                     </date>
@@ -137,6 +137,14 @@
                <date when="1902-05-13" n="01">13. [5.] 1902</date>
                <placeName ref="#pmb954">Trient</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1902-05-13">13. 5. [1902]</date>
+               <placeName ref="#pmb954">Trient</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1902-05-20">20. [5. 1902]</date>
+               <placeName ref="#pmb365208">9/3 Post- und Telegraphenamt 72</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1902-05-20">20. 5. 1902</date>
@@ -156,6 +164,7 @@
          <change who="LU" when="2024-04-09">Durchsicht</change>
          <change when="2024-04-10" who="LU">Index check</change>
          <change who="MAM" when="2024-05-27">Durchsicht</change>
+         <change who="SJ" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -170,34 +179,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -222,16 +203,55 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb144077">
-               <placeName>Kaserne Ca’ di Dio</placeName>
+            <place xml:id="pmb954">
+               <placeName>Trient</placeName>
+               <placeName type="ort_namensvariante">Trento</placeName>
                <location type="coords">
-                  <geo>46,0687812 11,118871696</geo>
+                  <geo>46,06787 11,12108</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb954">Trient</placeName>
-                  <geo>46,06787 11,12108</geo>
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb365208">
+               <placeName>9/3 Post- und Telegraphenamt 72</placeName>
+               <location type="coords">
+                  <geo>48,216197 16,356623</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb731">Garnisongasse</placeName>
+                  <geo>48,216533356678 16,356214321972</geo>
                </location>
             </place>
             <place xml:id="pmb168934">
@@ -260,15 +280,14 @@
                   <geo>48,208333 16,373056</geo>
                </location>
             </place>
-            <place xml:id="pmb954">
-               <placeName>Trient</placeName>
-               <placeName type="ort_namensvariante">Trento</placeName>
+            <place xml:id="pmb144077">
+               <placeName>Kaserne Ca’ di Dio</placeName>
                <location type="coords">
-                  <geo>46,06787 11,12108</geo>
+                  <geo>46,0687812 11,118871696</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
+                  <placeName ref="pmb954">Trient</placeName>
+                  <geo>46,06787 11,12108</geo>
                </location>
             </place>
          </listPlace>

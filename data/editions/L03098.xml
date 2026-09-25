@@ -179,7 +179,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -188,7 +188,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -196,10 +196,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb17163" ana="implied">
                <persName>
@@ -228,23 +224,13 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29863">
-               <title type="main">Lebendige Stunden. Vier Einakter</title>
+               <title>Lebendige Stunden. Vier Einakter</title>
                <title type="werk_link">https://archive.org/details/3490676/page/n4</title>
                <title type="legacy-name-merge">Lebendige Stunden</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb144131">
-               <placeName>Bethmannstraße</placeName>
-               <location type="coords">
-                  <geo>50,11048 8,679201</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb146">Frankfurt am Main</placeName>
-                  <geo>50,11552 8,68417</geo>
-               </location>
-            </place>
             <place xml:id="pmb146">
                <placeName>Frankfurt am Main</placeName>
                <placeName type="ort_namensvariante">Frankfurt a. Main</placeName>
@@ -257,7 +243,7 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
-            <place xml:id="pmb168">
+            <place xml:id="pmb168" ana="comment">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
                <placeName type="alternative-name">Barlīn</placeName>
@@ -286,6 +272,16 @@
                   <geo>50,11048 8,679201</geo>
                </location>
             </place>
+            <place xml:id="pmb144131">
+               <placeName>Bethmannstraße</placeName>
+               <location type="coords">
+                  <geo>50,11048 8,679201</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb146">Frankfurt am Main</placeName>
+                  <geo>50,11552 8,68417</geo>
+               </location>
+            </place>
             <place xml:id="pmb3" ana="comment">
                <placeName>Deutsches Theater Berlin</placeName>
                <location type="coords">
@@ -302,7 +298,7 @@
             </place>
          </listPlace>
          <listEvent>
-            <event xml:id="pmb35104" ana="comment">
+            <event xml:id="pmb35104" ana="implied">
                <eventName n="Theateruraufführung">Uraufführung von Lebendige Stunden, 4.1.1902</eventName>
                <listPlace>
                   <place>

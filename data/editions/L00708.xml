@@ -177,30 +177,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10765">
-               <persName>
-                  <forename>Leopold von</forename>
-                  <surname>Andrian-Werburg</surname>
-               </persName>
-               <birth>
-                  <date when="1875-05-09">1875-05-09</date>
-                  <settlement ref="pmb168">
-                     <placeName type="pref">Berlin</placeName>
-                     <location>
-                        <geo>52,52437 13,41053</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1951-11-19">1951-11-19</date>
-                  <settlement ref="pmb60994">
-                     <placeName type="pref">Fribourg</placeName>
-                     <location>
-                        <geo>46,80237 7,15128</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
@@ -231,7 +207,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -240,7 +216,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -248,10 +224,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb34159">
                <persName>
@@ -263,6 +235,30 @@
                </birth>
                <death>
                   <date when="1901-07-28">1901-07-28</date>
+               </death>
+            </person>
+            <person xml:id="pmb10765">
+               <persName>
+                  <forename>Leopold von</forename>
+                  <surname>Andrian-Werburg</surname>
+               </persName>
+               <birth>
+                  <date when="1875-05-09">1875-05-09</date>
+                  <settlement ref="pmb168">
+                     <placeName type="pref">Berlin</placeName>
+                     <location>
+                        <geo>52,52437 13,41053</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1951-11-19">1951-11-19</date>
+                  <settlement ref="pmb60994">
+                     <placeName type="pref">Fribourg</placeName>
+                     <location>
+                        <geo>46,80237 7,15128</geo>
+                     </location>
+                  </settlement>
                </death>
             </person>
             <person xml:id="pmb45818">
@@ -297,18 +293,6 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb213">
-               <placeName>Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <location type="coords">
-                  <geo>47,71109 13,61893</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb429">Salzkammergut</placeName>
-                  <geo>47,75 13,5</geo>
-               </location>
-            </place>
             <place xml:id="pmb305739">
                <placeName>Bad Fusch</placeName>
                <location type="coords">
@@ -319,11 +303,40 @@
                   <geo>47,22729 12,82727</geo>
                </location>
             </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb213">
+               <placeName>Bad Ischl</placeName>
+               <location type="coords">
+                  <geo>47,71109 13,61893</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb429">Salzkammergut</placeName>
+                  <geo>47,75 13,5</geo>
+               </location>
+            </place>
             <place xml:id="pmb34401">
                <placeName>Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
                <location type="coords">
                   <geo>47,639444 13,763333</geo>
                </location>
@@ -334,28 +347,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb429">Salzkammergut</placeName>
                   <geo>47,75 13,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

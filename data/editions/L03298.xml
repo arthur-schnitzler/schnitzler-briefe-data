@@ -126,6 +126,14 @@
                <date when="1899-08-21" n="02">21. 8. 1899</date>
                <placeName ref="#pmb877">Unterach am Attersee</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1899-08-21">21. 8. 1899</date>
+               <placeName ref="#pmb877">Unterach am Attersee</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1899-08-21">21. 8. 1899</date>
+               <placeName ref="#pmb213">Bad Ischl</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1899-08-21">21. 8. 1899</date>
@@ -145,6 +153,7 @@
          <change who="LU" when="2024-03-25">Durchsicht</change>
          <change when="2024-03-26" who="LU">Index check</change>
          <change who="MAM" when="2024-05-15">Durchsicht</change>
+         <change who="SJ" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -161,34 +170,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -209,6 +190,30 @@
                      <placeName type="pref">Zürich</placeName>
                      <location>
                         <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -239,10 +244,19 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb877">
+               <placeName>Unterach am Attersee</placeName>
+               <placeName type="legacy-name-merge">Unterach</placeName>
+               <location type="coords">
+                  <geo>47,80494 13,48728</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
             <place xml:id="pmb213">
                <placeName>Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
                <location type="coords">
                   <geo>47,71109 13,61893</geo>
                </location>
@@ -276,22 +290,8 @@
                   <geo>47,71109 13,61893</geo>
                </location>
             </place>
-            <place xml:id="pmb877">
-               <placeName>Unterach am Attersee</placeName>
-               <placeName type="legacy-name-merge">Unterach am Attersee</placeName>
-               <placeName type="legacy-name-merge">Unterach</placeName>
-               <placeName type="legacy-name-merge">Unterach am Attersee</placeName>
-               <location type="coords">
-                  <geo>47,80494 13,48728</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
             <place xml:id="pmb895">
                <placeName>Strobl</placeName>
-               <placeName type="legacy-name-merge">Strobl</placeName>
                <location type="coords">
                   <geo>47,71667 13,48333</geo>
                </location>

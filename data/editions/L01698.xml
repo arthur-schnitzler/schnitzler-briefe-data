@@ -175,34 +175,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb5765">
                <persName>
                   <forename>Maria</forename>
@@ -227,8 +199,61 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb54762">
+               <placeName>Peggau</placeName>
+               <location type="coords">
+                  <geo>47,2 15,35</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb17">Steiermark</placeName>
+                  <geo>47,38 15,7925</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50963">
+               <placeName>Deutschfeistritz</placeName>
+               <placeName type="legacy-name-merge">Deutsch Feistritz</placeName>
+               <location type="coords">
+                  <geo>47,19852 15,33623</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb17">Steiermark</placeName>
+                  <geo>47,38 15,7925</geo>
+               </location>
+            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -248,47 +273,6 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
-            <place xml:id="pmb50844">
-               <placeName>Schloss Thinnfeld</placeName>
-               <location type="coords">
-                  <geo>47,201072 15,337659</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50963">Deutschfeistritz</placeName>
-                  <geo>47,19852 15,33623</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50963">
-               <placeName>Deutschfeistritz</placeName>
-               <placeName type="legacy-name-merge">Deutsch Feistritz</placeName>
-               <placeName type="legacy-name-merge">Deutschfeistritz</placeName>
-               <location type="coords">
-                  <geo>47,19852 15,33623</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb17">Steiermark</placeName>
-                  <geo>47,38 15,7925</geo>
-               </location>
-            </place>
-            <place xml:id="pmb54762">
-               <placeName>Peggau</placeName>
-               <placeName type="legacy-name-merge">Peggau</placeName>
-               <location type="coords">
-                  <geo>47,2 15,35</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb17">Steiermark</placeName>
-                  <geo>47,38 15,7925</geo>
-               </location>
-            </place>
             <place xml:id="pmb68">
                <placeName>XVIII., Währing</placeName>
                <placeName type="legacy-name-merge">Währing</placeName>
@@ -302,6 +286,16 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50844">
+               <placeName>Schloss Thinnfeld</placeName>
+               <location type="coords">
+                  <geo>47,201072 15,337659</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50963">Deutschfeistritz</placeName>
+                  <geo>47,19852 15,33623</geo>
                </location>
             </place>
          </listPlace>

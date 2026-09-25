@@ -82,7 +82,7 @@
                               <extent>
                                  <measure unit="seite" quantity="2"/>
                                  <measure unit="blatt" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="2674"/>
+                                 <measure unit="zeichenanzahl" quantity="2675"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -240,7 +240,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -249,7 +249,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -257,10 +257,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2456">
                <persName>
@@ -334,31 +330,72 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb257718">
+               <persName>
+                  <forename>P. S.</forename>
+                  <surname>Bernštejn</surname>
+               </persName>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb295206">
-               <title type="main">Sobranie sočinenij</title>
-               <author role="hat-ubersetzt" ref="pmb257718">Bernštejn, P. S.</author>
-               <author role="hat-geschaffen" ref="pmb13212">Zweig, Stefan</author>
+               <title>Sobranie sočinenij</title>
+               <author ref="pmb257718" role="hat-ubersetzt">Bernštejn, P. S.</author>
+               <author ref="pmb13212" role="hat-geschaffen">Zweig, Stefan</author>
             </bibl>
-            <bibl xml:id="pmb296316" ana="comment">
-               <title type="main">Stefan Zweig. Versuch eines Bildnisses</title>
-               <author role="hat-geschaffen" ref="pmb2456">Specht, Richard</author>
+            <bibl xml:id="pmb296316" ana="implied">
+               <title>Stefan Zweig. Versuch eines Bildnisses</title>
+               <author ref="pmb2456" role="hat-geschaffen">Specht, Richard</author>
             </bibl>
             <bibl xml:id="pmb293680" ana="implied">
-               <title type="main">Drei Dichter ihres Lebens. Casanova – Stendhal – Tolstoi</title>
+               <title>Drei Dichter ihres Lebens. Casanova – Stendhal – Tolstoi</title>
                <title type="werk_link">https://www.projekt-gutenberg.org/zweig/3dichter/3dichter.html</title>
-               <author role="hat-geschaffen" ref="pmb13212">Zweig, Stefan</author>
+               <author ref="pmb13212" role="hat-geschaffen">Zweig, Stefan</author>
             </bibl>
             <bibl xml:id="pmb293997" ana="implied">
-               <title type="main">Quiproquo. Komödie in drei Akten</title>
+               <title>Quiproquo. Komödie in drei Akten</title>
                <title type="werk_namensvariante">Gelegenheit macht Liebe</title>
                <title type="person_pseudonym">Clemens Neydisser</title>
-               <author role="hat-unter-pseudonym-geschrieben" ref="pmb13212">Zweig, Stefan</author>
-               <author role="hat-unter-pseudonym-geschrieben" ref="pmb8596">Lernet-Holenia, Alexander</author>
+               <author ref="pmb13212" role="hat-unter-pseudonym-geschrieben">Zweig, Stefan</author>
+               <author ref="pmb8596" role="hat-unter-pseudonym-geschrieben">Lernet-Holenia, Alexander</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb30">
+               <placeName>Salzburg</placeName>
+               <placeName type="alternative-name">Iuvavum</placeName>
+               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
+               <placeName type="legacy-name-merge">Salzburg?</placeName>
+               <location type="coords">
+                  <geo>47,80067 13,04532</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb697">Salzburg [Land]</placeName>
+                  <geo>47,41667 13,25</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb253003">
                <placeName>Paschinger Schlössl</placeName>
                <placeName type="ort_namensvariante">Kapuzinerberg 5</placeName>
@@ -374,61 +411,15 @@
                   <geo>47,80067 13,04532</geo>
                </location>
             </place>
-            <place xml:id="pmb254">
-               <placeName>England</placeName>
-               <placeName type="legacy-name-merge">England</placeName>
-               <location type="coords">
-                  <geo>52,483333 -1,566667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb34523">Vereinigtes Königreich</placeName>
-                  <geo>54,75844 -2,69531</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
-               </location>
-            </place>
-            <place xml:id="pmb30">
-               <placeName>Salzburg</placeName>
-               <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="alternative-name">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg?</placeName>
-               <location type="coords">
-                  <geo>47,80067 13,04532</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg [Land]</placeName>
-                  <geo>47,41667 13,25</geo>
-               </location>
-            </place>
-            <place xml:id="pmb313">
-               <placeName>Polen</placeName>
-               <placeName type="alternative-name">Polen</placeName>
-               <placeName type="alternative-name">Republic of Poland</placeName>
-               <placeName type="legacy-name-merge">Poland</placeName>
-               <location type="coords">
-                  <geo>52,0 20,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
-               </location>
-            </place>
             <place xml:id="pmb34438">
                <placeName>Russland</placeName>
                <placeName type="alternative-name">Russische Föderation</placeName>
-               <placeName type="legacy-name-merge">Russland</placeName>
                <placeName type="alternative-name">Russian Federation</placeName>
                <placeName type="alternative-name">Russian Soviet Federated Socialist Republic</placeName>
                <placeName type="alternative-name">Russian Soviet Federative Socialist Republic</placeName>
                <placeName type="alternative-name">Russian Socialist Federative Soviet Republic</placeName>
                <placeName type="legacy-name-merge">Russia</placeName>
                <placeName type="legacy-name-merge">Rußland</placeName>
-               <placeName type="legacy-name-merge">Russland</placeName>
                <location type="coords">
                   <geo>60,0 100,0</geo>
                </location>
@@ -445,31 +436,12 @@
                <placeName type="alternative-name">UK</placeName>
                <placeName type="alternative-name">Britain</placeName>
                <placeName type="alternative-name">United Kingdom of Great Britain and Northern Ireland</placeName>
-               <placeName type="legacy-name-merge">Vereinigtes Königreich</placeName>
                <location type="coords">
                   <geo>54,75844 -2,69531</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb468">Europa</placeName>
                   <geo>48,69096 9,14062</geo>
-               </location>
-            </place>
-            <place xml:id="pmb35512">
-               <placeName>Ungarn</placeName>
-               <placeName type="alternative-name">Ungarn</placeName>
-               <placeName type="alternative-name">Republic of Hungary</placeName>
-               <placeName type="legacy-name-merge">Ungarn</placeName>
-               <placeName type="legacy-name-merge">Hungary</placeName>
-               <location type="coords">
-                  <geo>47,0 20,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb687">Österreich-Ungarn</placeName>
-                  <geo>48,4054 16,4887</geo>
                </location>
             </place>
             <place xml:id="pmb43406">
@@ -490,10 +462,24 @@
                   <geo>32,530833 -117,02</geo>
                </location>
             </place>
+            <place xml:id="pmb64465">
+               <placeName>Norwegen</placeName>
+               <placeName type="legacy-name-merge">Norway</placeName>
+               <placeName type="alternative-name">Kingdom of Norway</placeName>
+               <location type="coords">
+                  <geo>62,0 10,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb745">Skandinavien</placeName>
+                  <geo>63,0 25,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
             <place xml:id="pmb44335">
                <placeName>Schweden</placeName>
-               <placeName type="alternative-name">Schweden</placeName>
-               <placeName type="legacy-name-merge">Schweden</placeName>
                <placeName type="alternative-name">Kingdom of Sweden</placeName>
                <location type="coords">
                   <geo>62,0 15,0</geo>
@@ -507,40 +493,42 @@
                   <geo>48,69096 9,14062</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb313">
+               <placeName>Polen</placeName>
+               <placeName type="alternative-name">Republic of Poland</placeName>
+               <placeName type="legacy-name-merge">Poland</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>52,0 20,0</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
                </location>
             </place>
-            <place xml:id="pmb64465">
-               <placeName>Norwegen</placeName>
-               <placeName type="alternative-name">Norwegen</placeName>
-               <placeName type="legacy-name-merge">Norway</placeName>
-               <placeName type="legacy-name-merge">Norwegen</placeName>
-               <placeName type="alternative-name">Kingdom of Norway</placeName>
+            <place xml:id="pmb35512">
+               <placeName>Ungarn</placeName>
+               <placeName type="alternative-name">Republic of Hungary</placeName>
+               <placeName type="legacy-name-merge">Hungary</placeName>
                <location type="coords">
-                  <geo>62,0 10,0</geo>
+                  <geo>47,0 20,0</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb745">Skandinavien</placeName>
-                  <geo>63,0 25,0</geo>
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb687">Österreich-Ungarn</placeName>
+                  <geo>48,4054 16,4887</geo>
+               </location>
+            </place>
+            <place xml:id="pmb254">
+               <placeName>England</placeName>
+               <location type="coords">
+                  <geo>52,483333 -1,566667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb34523">Vereinigtes Königreich</placeName>
+                  <geo>54,75844 -2,69531</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb468">Europa</placeName>
@@ -575,7 +563,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00002766</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb433</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb433.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.10.2</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.10.2</idno>
                </location>
             </org>
          </listOrg>

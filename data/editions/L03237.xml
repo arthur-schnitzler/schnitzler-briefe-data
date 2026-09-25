@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="436"/>
+                                 <measure unit="zeichenanzahl" quantity="437"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -211,7 +211,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -220,7 +220,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -228,10 +228,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb11813" ana="comment">
                <persName>
@@ -257,27 +253,41 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb10866">
+               <persName>
+                  <forename>Ludwig van</forename>
+                  <surname>Beethoven</surname>
+               </persName>
+               <birth>
+                  <date when="1770-12-17">1770-12-17</date>
+                  <settlement ref="pmb913">
+                     <placeName type="pref">Bonn</placeName>
+                     <location>
+                        <geo>50,73438 7,09549</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1827-03-26">1827-03-26</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb32011">
-               <title type="main">Fidelio op. 72</title>
+               <title>Fidelio op. 72</title>
                <title type="legacy-name-merge">Fidelio op. 72</title>
                <title type="legacy-name-merge">Fidelio</title>
                <title type="legacy-name-merge">Fidelio</title>
-               <author role="hat-geschaffen" ref="pmb10866">Beethoven, Ludwig van</author>
+               <author ref="pmb10866" role="hat-geschaffen">Beethoven, Ludwig van</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb127">
-               <placeName>Hotel Bristol Berlin</placeName>
-               <location type="coords">
-                  <geo>52,516152 13,383456</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
-               </location>
-            </place>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
@@ -297,6 +307,16 @@
                <placeName>Hotel Continental [Berlin]</placeName>
                <location type="coords">
                   <geo>52,518889 13,385556</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+            </place>
+            <place xml:id="pmb127">
+               <placeName>Hotel Bristol Berlin</placeName>
+               <location type="coords">
+                  <geo>52,516152 13,383456</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb168">Berlin</placeName>

@@ -187,7 +187,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -196,7 +196,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -204,10 +204,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb298521">
                <persName>
@@ -215,28 +211,89 @@
                   <surname>Santo</surname>
                </persName>
             </person>
+            <person xml:id="pmb259326">
+               <persName>
+                  <forename>Paul</forename>
+                  <surname>Seippel</surname>
+               </persName>
+               <birth>
+                  <date when="1858-04-24">1858-04-24</date>
+                  <settlement ref="pmb294016">
+                     <placeName type="pref">Gingins</placeName>
+                     <location>
+                        <geo>46,416666666667 6,1833333333333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1926-03-13">1926-03-13</date>
+                  <settlement ref="pmb294018">
+                     <placeName type="pref">Chêne-Bourg</placeName>
+                     <location>
+                        <geo>46,19737 6,19704</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb58490">
-               <title type="main">Une protestation d’Arthur Schnitzler</title>
+               <title>Une protestation d’Arthur Schnitzler</title>
                <title type="werk_link">https://schnitzler-interviews.acdh.oeaw.ac.at/P111.html</title>
                <title type="werk_bibliografische-angabe">Schnitzler, Arthur, Rolland, Romain [Einleitung und Übersetzung]: Une protestation d’Arthur Schnitzler. In: Journal de Genève, Jg. 85, 21. 12. 1914, 3. Ausgabe, S. [1]</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
-               <author role="hat-ubersetzt" ref="pmb12543">Rolland, Romain</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author ref="pmb12543" role="hat-ubersetzt">Rolland, Romain</author>
             </bibl>
             <bibl xml:id="pmb58493">
-               <title type="main">Journal de Genève</title>
-               <author role="hat-herausgegeben" ref="pmb259326">Seippel, Paul</author>
+               <title>Journal de Genève</title>
+               <author ref="pmb259326" role="hat-herausgegeben">Seippel, Paul</author>
             </bibl>
-            <bibl xml:id="pmb296393" ana="comment">
-               <title type="main">Ein Brief Artur Schnitzlers</title>
+            <bibl xml:id="pmb296393" ana="implied">
+               <title>Ein Brief Artur Schnitzlers</title>
                <title type="werk_link">https://www.e-newspaperarchives.ch/?a=d&amp;d=NZZ19141222-04.2.4</title>
                <title type="werk_link">https://schnitzler-interviews.acdh.oeaw.ac.at/P111.html</title>
                <title type="werk_bibliografische-angabe">Ein Brief Artur Schnitzlers. In: Neue Zürcher Zeitung, Jg. 135, Nr. 1700, 22. 12. 1914, 2. Mittagsblatt, S. 2</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb562">
+               <placeName>Genf</placeName>
+               <placeName type="ort_namensvariante">Genève</placeName>
+               <location type="coords">
+                  <geo>46,20222 6,14569</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43435">Schweiz</placeName>
+                  <geo>47,00016 8,01427</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb294758">Romandie</placeName>
+                  <geo>46,2 6,15</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb294001">
                <placeName>Hôtel Beau-Séjour</placeName>
                <location type="coords">
@@ -261,52 +318,15 @@
                   <geo>46,20222 6,14569</geo>
                </location>
             </place>
-            <place xml:id="pmb468">
+            <place xml:id="pmb468" ana="comment">
                <placeName>Europa</placeName>
                <location type="coords">
                   <geo>48,69096 9,14062</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb562">
-               <placeName>Genf</placeName>
-               <placeName type="ort_namensvariante">Genève</placeName>
-               <location type="coords">
-                  <geo>46,20222 6,14569</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43435">Schweiz</placeName>
-                  <geo>47,00016 8,01427</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb294758">Romandie</placeName>
-                  <geo>46,2 6,15</geo>
-               </location>
-            </place>
          </listPlace>
          <listOrg>
-            <org xml:id="pmb29672">
+            <org xml:id="pmb29672" ana="comment">
                <orgName>Neue Zürcher Zeitung</orgName>
                <location type="located_in_place">
                   <placeName ref="pmb484">Zürich</placeName>
@@ -317,7 +337,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/484/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62728/</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4068038-1</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb484.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb484.html</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Z%C3%BCrich</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb484.html</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb484.html</idno>
@@ -328,7 +348,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00003366</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb484</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb484.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.11.6</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.11.6</idno>
                </location>
             </org>
          </listOrg>

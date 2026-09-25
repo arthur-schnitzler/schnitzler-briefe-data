@@ -3,9 +3,9 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1906-05-09" n="01">1906-05-09</title>
+            <title type="iso-date" when-iso="1906-05-08" n="01">1906-05-08</title>
             <title level="a">Felix Salten, Paul Lindau und Marie Barthel an Arthur
-               Schnitzler, 9. 5. 1906</title>
+               Schnitzler, [8. oder 9]. 5. 1906</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <author ref="#pmb12078">Lindau, Paul</author>
             <author ref="#pmb147533">Barthel, Marie</author>
@@ -129,7 +129,11 @@
                <persName ref="#pmb2167">Salten, Felix</persName>
                <persName ref="#pmb12078">Lindau, Paul</persName>
                <persName ref="#pmb147533">Barthel, Marie</persName>
-               <date when="1906-05-09" n="01">9. 5. 1906</date>
+               <date notBefore="1906-05-08" notAfter="1906-05-09" n="01">[8. oder 9]. 5. 1906</date>
+               <placeName ref="#pmb143185">Wartburg</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1906-05-09">9. 5. 1906</date>
                <placeName ref="#pmb143185">Wartburg</placeName>
             </correspAction>
             <correspAction type="received">
@@ -151,6 +155,7 @@
          <change who="LU" when="2024-05-14">Durchsicht</change>
          <change when="2024-05-15" who="LU">Index check</change>
          <change who="MAM" when="2024-06-13">Durchsicht</change>
+         <change who="SJ" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -167,6 +172,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2167">
+               <persName>
+                  <forename>Felix</forename>
+                  <surname>Salten</surname>
+               </persName>
+               <birth>
+                  <date when="1869-09-06">1869-09-06</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-10-08">1945-10-08</date>
+                  <settlement ref="pmb484">
+                     <placeName type="pref">Zürich</placeName>
+                     <location>
+                        <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb12078">
                <persName>
                   <forename>Paul</forename>
@@ -203,7 +232,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -212,39 +241,11 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
-            <person xml:id="pmb2167">
-               <persName>
-                  <forename>Felix</forename>
-                  <surname>Salten</surname>
-               </persName>
-               <birth>
-                  <date when="1869-09-06">1869-09-06</date>
-                  <settlement ref="pmb43471">
-                     <placeName type="pref">Budapest</placeName>
-                     <location>
-                        <geo>47,49835 19,04045</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1945-10-08">1945-10-08</date>
-                  <settlement ref="pmb484">
-                     <placeName type="pref">Zürich</placeName>
-                     <location>
-                        <geo>47,37174 8,54226</geo>
                      </location>
                   </settlement>
                </death>
@@ -277,7 +278,6 @@
          <listPlace>
             <place xml:id="pmb143185">
                <placeName>Wartburg</placeName>
-               <placeName type="alternative-name">Wartburg</placeName>
                <placeName type="alternative-name">Wartburg Castle</placeName>
                <location type="coords">
                   <geo>50,96605 10,30646</geo>

@@ -196,37 +196,13 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb11910">
-               <persName>
-                  <forename>Alfred</forename>
-                  <surname>Kerr</surname>
-               </persName>
-               <birth>
-                  <date when="1867-12-25">1867-12-25</date>
-                  <settlement ref="pmb677">
-                     <placeName type="pref">Breslau</placeName>
-                     <location>
-                        <geo>51,10773 17,03533</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1948-10-12">1948-10-12</date>
-                  <settlement ref="pmb506">
-                     <placeName type="pref">Hamburg</placeName>
-                     <location>
-                        <geo>53,55055 9,993333</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -235,7 +211,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -243,10 +219,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173">
                <persName>
@@ -290,6 +262,30 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb11910">
+               <persName>
+                  <forename>Alfred</forename>
+                  <surname>Kerr</surname>
+               </persName>
+               <birth>
+                  <date when="1867-12-25">1867-12-25</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
+                     <location>
+                        <geo>51,10773 17,03533</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1948-10-12">1948-10-12</date>
+                  <settlement ref="pmb506">
+                     <placeName type="pref">Hamburg</placeName>
+                     <location>
+                        <geo>53,55055 9,993333</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listPlace>
             <place xml:id="pmb168">
@@ -311,7 +307,6 @@
                <placeName>St. Anton am Arlberg</placeName>
                <placeName type="alternative-name">St Anton am Arlberg</placeName>
                <placeName type="alternative-name">St. Anton</placeName>
-               <placeName type="alternative-name">St. Anton am Arlberg</placeName>
                <placeName type="legacy-name-merge">Saint Anton</placeName>
                <location type="coords">
                   <geo>47,1275 10,26372</geo>
@@ -331,52 +326,7 @@
                   <geo>52,52437 13,41053</geo>
                </location>
             </place>
-            <place xml:id="pmb41240">
-               <placeName>Österreich</placeName>
-               <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
-               <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
-               <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
-               <placeName type="legacy-name-merge">Altoesterreich</placeName>
-               <location type="coords">
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb298373">Cisleithanien</placeName>
-                  <geo>48,5 16,383333333333333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb687">Österreich-Ungarn</placeName>
-                  <geo>48,4054 16,4887</geo>
-               </location>
-            </place>
-            <place xml:id="pmb423">
-               <placeName>Tirol</placeName>
-               <location type="coords">
-                  <geo>47,25 11,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb430">
-               <placeName>Wörthersee</placeName>
-               <placeName type="legacy-name-merge">Wörthersee</placeName>
-               <location type="coords">
-                  <geo>46,62917 14,12306</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb651">Kärnten</placeName>
-                  <geo>46,75 13,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb43435">
+            <place xml:id="pmb43435" ana="comment">
                <placeName>Schweiz</placeName>
                <placeName type="ort_namensvariante">Schweizerische Eidgenossenschaft</placeName>
                <location type="coords">
@@ -397,9 +347,18 @@
                   <geo>47,33333 13,33333</geo>
                </location>
             </place>
+            <place xml:id="pmb423">
+               <placeName>Tirol</placeName>
+               <location type="coords">
+                  <geo>47,25 11,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
             <place xml:id="pmb969">
                <placeName>Südtirol</placeName>
-               <placeName type="legacy-name-merge">Südtirol</placeName>
                <placeName type="namensvariante">Autonome Provinz Bozen</placeName>
                <location type="coords">
                   <geo>46,71667 11,5</geo>
@@ -417,6 +376,38 @@
                   <geo>48,5 16,383333333333333</geo>
                </location>
             </place>
+            <place xml:id="pmb41240">
+               <placeName>Österreich</placeName>
+               <placeName type="alternative-name">Republik Österreich</placeName>
+               <placeName type="alternative-name">Republic of Austria</placeName>
+               <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
+               <placeName type="legacy-name-merge">Altoesterreich</placeName>
+               <location type="coords">
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb298373">Cisleithanien</placeName>
+                  <geo>48,5 16,383333333333333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb687">Österreich-Ungarn</placeName>
+                  <geo>48,4054 16,4887</geo>
+               </location>
+            </place>
+            <place xml:id="pmb430">
+               <placeName>Wörthersee</placeName>
+               <location type="coords">
+                  <geo>46,62917 14,12306</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb651">Kärnten</placeName>
+                  <geo>46,75 13,83333</geo>
+               </location>
+            </place>
          </listPlace>
          <listOrg>
             <org xml:id="pmb29218">
@@ -426,7 +417,7 @@
                   <geo>47,33333 13,33333</geo>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/2782113/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41240/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb41240.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb41240.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92143/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92203/</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb41240.html</idno>
@@ -437,7 +428,7 @@
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4043271-3</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41240.html</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb41240</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9</idno>
                </location>
             </org>
          </listOrg>

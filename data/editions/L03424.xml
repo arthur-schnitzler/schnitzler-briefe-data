@@ -3,8 +3,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1906-06-09" n="01">1906-06-09</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 9. 6. 1906</title>
+            <title type="iso-date" when-iso="1906-06-08" n="01">1906-06-08</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, [8. oder 9]. 6. 1906</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -91,21 +91,14 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="non-postal">
                                     <placeName ref="#pmb191">Goethe-Haus Weimar</placeName>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
-                                    <placeName ref="#pmb191">Goethe-Haus Weimar</placeName>
-                                 </stamp>
-                              </desc>
-                           </incident>
-                           <incident type="postal">
-                              <desc>
-                                 <stamp n="3" type="delivery">
+                                 <stamp n="2" type="transmission">
                                     <placeName ref="#pmb197">Weimar 1</placeName>
                                     <date when="1906-06-09">9<supplied>.</supplied> 6. 06</date>
                                  </stamp>
@@ -128,7 +121,11 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1906-06-09" n="01">9. 6. 1906</date>
+               <date notBefore="1906-06-08" notAfter="1906-06-09" n="01">[8. oder 9]. 6. 1906</date>
+               <placeName ref="#pmb197">Weimar</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1906-06-09">9. 6. 1906</date>
                <placeName ref="#pmb197">Weimar</placeName>
             </correspAction>
             <correspAction type="received">
@@ -151,6 +148,7 @@
          <change who="LU" when="2024-05-14">Durchsicht</change>
          <change when="2024-05-15" who="LU">Index check</change>
          <change who="MAM" when="2024-06-17">Durchsicht</change>
+         <change who="SJ" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -166,34 +164,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -218,8 +188,53 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb191">
+               <placeName>Goethes Wohnhaus</placeName>
+               <location type="coords">
+                  <geo>50,9775 11,328611</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb197">Weimar</placeName>
+                  <geo>50,97361 11,33806</geo>
+               </location>
+            </place>
+            <place xml:id="pmb197">
+               <placeName>Weimar</placeName>
+               <placeName type="legacy-name-merge">Kreisfreie Stadt Weimar</placeName>
+               <location type="coords">
+                  <geo>50,97361 11,33806</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -237,29 +252,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb133">Edmund-Weiß-Gasse</placeName>
                   <geo>48,23056 16,3348</geo>
-               </location>
-            </place>
-            <place xml:id="pmb191">
-               <placeName>Goethes Wohnhaus</placeName>
-               <location type="coords">
-                  <geo>50,9775 11,328611</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb197">Weimar</placeName>
-                  <geo>50,97361 11,33806</geo>
-               </location>
-            </place>
-            <place xml:id="pmb197">
-               <placeName>Weimar</placeName>
-               <placeName type="alternative-name">Weimar</placeName>
-               <placeName type="legacy-name-merge">Kreisfreie Stadt Weimar</placeName>
-               <placeName type="legacy-name-merge">Weimar</placeName>
-               <location type="coords">
-                  <geo>50,97361 11,33806</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
                </location>
             </place>
             <place xml:id="pmb68">

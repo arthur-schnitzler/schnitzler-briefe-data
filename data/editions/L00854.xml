@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="358"/>
+                                 <measure unit="zeichenanzahl" quantity="357"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -95,7 +95,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1" type="transmission">
-                                    <placeName ref="#pmb51">Wien 1/1</placeName>
+                                    <placeName ref="#pmb365214">Wien 1/1</placeName>
                                     <date when="1898-11-04">4 XI 98</date>
                                     <time>8 20N</time>
                                  </stamp>
@@ -150,7 +150,15 @@
             <correspAction type="sent">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1898-11-04" n="01">4. 11. 1898</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb190427">Wollzeile 15 (»Berthahof«)</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1898-11-04">4. 11. 1898</date>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1898-11-04">4. 11. 1898</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -171,6 +179,7 @@
          <change who="GHS" when="2019-11-11">überprüft am Faksimile</change>
          <change who="MAM" when="2020-04-20">Index check</change>
          <change who="MAM" when="2020-06-12">Durchsicht</change>
+         <change who="MAM" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -181,10 +190,10 @@
       <body>
          <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-0008-B-00001-000-00274"/>Herrn</addrLine><addrLine>D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine><addrLine>IX <rs ref="#pmb168934" type="place">Frankgasse 1</rs></addrLine></address></div>
          <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-0008-B-00001-000-00275"/><salute>Lieber Arthur!</salute><space unit="chars" quantity="1"/><rs ref="#pmb11740" type="person">Hugo</rs> will <date>Samstag</date> od
-                  <date>Sonnt</date> uns Beiden den II Akt seiner »<rs type="work" ref="#pmb32512" subtype="implied">Posse</rs>« wieder vorlesen. Ich schreibe ihm daß Sie
-                  <date>Samstag</date> ins Theater gehen und daß <date>Sonntag</date> daher besser
-               wäre. Um <time>8<hi rend="superscript">h</hi></time> bei mir dann <rs type="place" ref="#pmb96">Meißl <c rendition="#kaufmannsund"/> Schaden</rs>, dann Schnitzler. Gut? Bitte <hi rend="underline" n="1">schreiben
-                  Sie direkt an <rs ref="#pmb11740" type="person">Hugo</rs></hi> ob Sie einverstanden; mir nur, wenn es nicht geht. Herzl</p><closer><signed>Richard</signed></closer></div>
+               <date>Sonnt</date> uns Beiden den II Akt seiner »<rs type="work" ref="#pmb32512" subtype="implied">Posse</rs>« wieder <rs type="event" subtype="implied" ref="#pmb365200">vorlesen</rs>. Ich schreibe ihm daß Sie
+               <anchor type="commentary" xml:id="K_L00854-1"/><rs type="event" ref="#pmb209039" subtype="implied"><date>Samstag</date> ins Theater</rs><note type="commentary" corresp="K_L00854-1"><ref type="schnitzler-kultur" target="pmb209039"/>.</note> gehen und daß <date>Sonntag</date> daher besser
+               wäre. Um <time>8<hi rend="superscript">h</hi></time> bei mir dann <rs type="place" ref="#pmb96">Meißl <c rendition="#kaufmannsund"/> Schaden</rs>, dann Schnitzler. Gut? Bitte <hi rend="underline" n="1"><anchor type="commentary" xml:id="K_L00854-2"/>schreiben
+                  Sie direkt an <rs ref="#pmb11740" type="person">Hugo</rs><note type="commentary" corresp="K_L00854-2">nicht überliefert</note></hi> ob Sie einverstanden; mir nur, wenn es nicht geht. Herzl</p><closer><signed>Richard</signed></closer></div>
       </body>
       <back>
          <listPerson>
@@ -208,6 +217,30 @@
                      <placeName type="pref">New York City</placeName>
                      <location>
                         <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -236,95 +269,26 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb32512" ana="implied">
-               <title type="main">Der Abenteurer und die Sängerin oder Die Geschenke des Lebens</title>
-               <author role="hat-geschaffen" ref="pmb11740">Hofmannsthal, Hugo von</author>
+               <title>Der Abenteurer und die Sängerin oder Die Geschenke des Lebens</title>
+               <author ref="pmb11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb168934">
-               <placeName>Frankgasse 1</placeName>
+            <place xml:id="pmb365214">
+               <placeName>1/1 Post- und Telegraphenamt 1</placeName>
                <location type="coords">
-                  <geo>48,21533 16,35736</geo>
+                  <geo>48,210359 16,378357</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb59">IX., Alsergrund</placeName>
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb397">Frankgasse</placeName>
-                  <geo>48,215516628628 16,356475515829</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb51">
-               <placeName>I., Innere Stadt</placeName>
-               <placeName type="alternative-name">Inner city</placeName>
-               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
-               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
-               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
-               <placeName type="legacy-name-merge">Inner city</placeName>
-               <location type="coords">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
                   <geo>48,20769 16,37049</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
+                  <placeName ref="pmb50667">Fleischmarkt</placeName>
+                  <geo>48,211117 16,376627</geo>
                </location>
             </place>
             <place xml:id="pmb59">
@@ -337,6 +301,52 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb190427">
+               <placeName>Wollzeile 15 (»Berthahof«)</placeName>
+               <location type="coords">
+                  <geo>48,208656 16,375924</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb338">Wollzeile</placeName>
+                  <geo>48,20852 16,37592</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+            </place>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <location type="coords">
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb168934">
+               <placeName>Frankgasse 1</placeName>
+               <location type="coords">
+                  <geo>48,21533 16,35736</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb397">Frankgasse</placeName>
+                  <geo>48,215516628628 16,356475515829</geo>
                </location>
             </place>
             <place xml:id="pmb96">
@@ -358,6 +368,30 @@
                </location>
             </place>
          </listPlace>
+         <listEvent>
+            <event xml:id="pmb365200" ana="implied">
+               <eventName n="Private Lesung">Private Lesung von Der Abenteurer und die Sängerin, 6.11.1898</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb168934">Frankgasse 1</placeName>
+                     <location>
+                        <geo>48,21533 16,35736</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+            <event xml:id="pmb209039" ana="implied">
+               <eventName n="Theateraufführung">Aufführung von Die gute Partie, 5.11.1898</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb118">Carl-Theater</placeName>
+                     <location>
+                        <geo>48,215 16,384444</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+         </listEvent>
       </back>
    </text>
 </TEI>

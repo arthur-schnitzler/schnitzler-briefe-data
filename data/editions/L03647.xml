@@ -186,30 +186,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10836">
-               <persName>
-                  <forename>Rudolf Hans</forename>
-                  <surname>Bartsch</surname>
-               </persName>
-               <birth>
-                  <date when="1873-02-11">1873-02-11</date>
-                  <settlement ref="pmb860">
-                     <placeName type="pref">Graz</placeName>
-                     <location>
-                        <geo>47,06667 15,43333</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1952-02-07">1952-02-07</date>
-                  <settlement ref="pmb860">
-                     <placeName type="pref">Graz</placeName>
-                     <location>
-                        <geo>47,06667 15,43333</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb13212">
                <persName>
                   <forename>Stefan</forename>
@@ -240,7 +216,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -249,7 +225,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -257,10 +233,30 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb10836">
+               <persName>
+                  <forename>Rudolf Hans</forename>
+                  <surname>Bartsch</surname>
+               </persName>
+               <birth>
+                  <date when="1873-02-11">1873-02-11</date>
+                  <settlement ref="pmb860">
+                     <placeName type="pref">Graz</placeName>
+                     <location>
+                        <geo>47,06667 15,43333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1952-02-07">1952-02-07</date>
+                  <settlement ref="pmb860">
+                     <placeName type="pref">Graz</placeName>
+                     <location>
+                        <geo>47,06667 15,43333</geo>
+                     </location>
+                  </settlement>
+               </death>
             </person>
             <person xml:id="pmb7414">
                <persName>
@@ -286,26 +282,53 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb27739" ana="comment">
+               <persName>
+                  <surname>?? [Journalist, der fiktives russisches Interview verantwortet]</surname>
+               </persName>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb294943" ana="comment">
-               <title type="main">Tagebuch im Kriegsjahr 1914 vom Tage der deutschen Kriegserklärung an Rußland</title>
+               <title>Tagebuch im Kriegsjahr 1914 vom Tage der deutschen Kriegserklärung an Rußland</title>
                <title type="werk_bibliografische-angabe">Stefan Zweig: Tagebuch im Kriegsjahr 1914. In: https://stefanzweig.digital/context:szd.facsimiles.lebensdokumente/sdef:Context/get?locale=de, SZ-AAP/L2</title>
-               <author role="hat-geschaffen" ref="pmb13212">Zweig, Stefan</author>
+               <author ref="pmb13212" role="hat-geschaffen">Zweig, Stefan</author>
             </bibl>
-            <bibl xml:id="pmb296393" ana="comment">
-               <title type="main">Ein Brief Artur Schnitzlers</title>
+            <bibl xml:id="pmb296393" ana="implied">
+               <title>Ein Brief Artur Schnitzlers</title>
                <title type="werk_link">https://www.e-newspaperarchives.ch/?a=d&amp;d=NZZ19141222-04.2.4</title>
                <title type="werk_link">https://schnitzler-interviews.acdh.oeaw.ac.at/P111.html</title>
                <title type="werk_bibliografische-angabe">Ein Brief Artur Schnitzlers. In: Neue Zürcher Zeitung, Jg. 135, Nr. 1700, 22. 12. 1914, 2. Mittagsblatt, S. 2</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
             <bibl xml:id="pmb32959" ana="comment">
-               <title type="main">?? [Fiktives Interview aus St. Petersburg, 1914]</title>
-               <author role="hat-geschaffen" ref="pmb27739">?? [Journalist, der fiktives russisches Interview verantwortet]</author>
+               <title>?? [Fiktives Interview aus St. Petersburg, 1914]</title>
+               <author ref="pmb27739" role="hat-geschaffen">?? [Journalist, der fiktives russisches Interview verantwortet]</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb249577">
                <placeName>Kochgasse 8</placeName>
                <location type="coords">
@@ -320,31 +343,8 @@
                   <geo>48,21126 16,34706</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb865">
+            <place xml:id="pmb865" ana="comment">
                <placeName>Klosterneuburg</placeName>
-               <placeName type="legacy-name-merge">Klosterneuburg</placeName>
                <location type="coords">
                   <geo>48,30521 16,32522</geo>
                </location>
@@ -363,7 +363,6 @@
                <placeName type="alternative-name">Leningrad</placeName>
                <placeName type="alternative-name">Peterburg</placeName>
                <placeName type="alternative-name">Saint Petersburg</placeName>
-               <placeName type="alternative-name">Sankt Petersburg</placeName>
                <placeName type="alternative-name">Petrograd</placeName>
                <placeName type="alternative-name">Petersburg</placeName>
                <placeName type="alternative-name">St. Petersburg</placeName>

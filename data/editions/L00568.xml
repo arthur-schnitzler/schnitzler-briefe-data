@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="258"/>
+                                 <measure unit="zeichenanzahl" quantity="256"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -129,7 +129,7 @@
             </correspAction>
             <correspAction type="transmitted">
                <date when="1896-07-26">26. 7. 1896</date>
-               <placeName ref="#pmb36300">Kjøbenhavn</placeName>
+               <placeName ref="#pmb36300">Kopenhagen</placeName>
             </correspAction>
             <correspAction type="delivered">
                <date when="1896-07-27">27. 7. 1896</date>
@@ -198,7 +198,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -207,7 +207,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -215,17 +215,22 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb36300">
+               <placeName>Kopenhagen</placeName>
+               <placeName type="alternative-name">Copenhagen</placeName>
+               <location type="coords">
+                  <geo>55,67594 12,56553</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43570">Dänemark</placeName>
+                  <geo>56,0 10,0</geo>
+               </location>
+            </place>
             <place xml:id="pmb1119">
                <placeName>Stockholm</placeName>
-               <placeName type="alternative-name">Stockholm</placeName>
-               <placeName type="legacy-name-merge">Stockholm</placeName>
                <placeName type="legacy-name-merge">Stockholm City</placeName>
                <location type="coords">
                   <geo>59,325 18,05</geo>
@@ -233,21 +238,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb44335">Schweden</placeName>
                   <geo>62,0 15,0</geo>
-               </location>
-            </place>
-            <place xml:id="pmb36300">
-               <placeName>Kopenhagen</placeName>
-               <placeName type="alternative-name">Kopenhagen</placeName>
-               <placeName type="legacy-name">Kopenhagen</placeName>
-               <placeName type="legacy-name-merge">Kopenhagen</placeName>
-               <placeName type="alternative-name">Copenhagen</placeName>
-               <placeName type="legacy-name-merge">Copenhagen</placeName>
-               <location type="coords">
-                  <geo>55,67594 12,56553</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43570">Dänemark</placeName>
-                  <geo>56,0 10,0</geo>
                </location>
             </place>
          </listPlace>

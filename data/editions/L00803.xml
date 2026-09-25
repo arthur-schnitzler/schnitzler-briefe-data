@@ -97,8 +97,8 @@
                                  <stamp n="1" type="delivery">
                                     <placeName ref="#pmb34860">Steindorf am Ossiacher
                                        See</placeName>
-                                    <date when="1898-06-05">
-                                       <supplied>5</supplied> 6 <supplied>98</supplied>
+                                    <date when="1898-06-06">6
+                                       <supplied>6 98</supplied>
                                     </date>
                                  </stamp>
                               </desc>
@@ -137,9 +137,13 @@
                <date when="1898-06-05" n="01">5. 6. 1898</date>
                <placeName ref="#pmb36189">Krieglach</placeName>
             </correspAction>
+            <correspAction type="delivered">
+               <date when="1898-06-06">6. [6. 1898]</date>
+               <placeName ref="#pmb34860">Steindorf am Ossiacher See</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
-               <date when="1898-06-05">5. 6. 1898</date>
+               <date when="1898-06-06">6. 6. 1898</date>
                <placeName ref="#pmb34860">Steindorf am Ossiacher See</placeName>
             </correspAction>
             <correspContext>
@@ -156,6 +160,7 @@
          <change who="GHS" when="2019-11-22">überprüft am Faksimile</change>
          <change who="MAM" when="2020-01-22">Durchsicht</change>
          <change when="2020-01-23" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -175,13 +180,13 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10863">
+            <person xml:id="pmb2121">
                <persName>
-                  <forename>Richard</forename>
-                  <surname>Beer-Hofmann</surname>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1866-07-11">1866-07-11</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -190,11 +195,11 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1945-09-26">1945-09-26</date>
-                  <settlement ref="pmb44053">
-                     <placeName type="pref">New York City</placeName>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>40,71427 -74,00597</geo>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -223,6 +228,30 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb10863">
+               <persName>
+                  <forename>Richard</forename>
+                  <surname>Beer-Hofmann</surname>
+               </persName>
+               <birth>
+                  <date when="1866-07-11">1866-07-11</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-09-26">1945-09-26</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb12551">
                <persName>
                   <forename>Peter</forename>
@@ -247,40 +276,10 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
             <place xml:id="pmb34860">
                <placeName>Steindorf am Ossiacher See</placeName>
-               <placeName type="legacy-name-merge">Steindorf am Ossiacher See</placeName>
-               <placeName type="legacy-name-merge">Steindorf am Ossiacher See</placeName>
                <location type="coords">
                   <geo>46,6992 13,98892</geo>
                </location>
@@ -292,7 +291,6 @@
             <place xml:id="pmb36189">
                <placeName>Krieglach</placeName>
                <placeName type="legacy-name-merge">Krieglach, Steiermark</placeName>
-               <placeName type="legacy-name">Krieglach</placeName>
                <location type="coords">
                   <geo>47,54728 15,56248</geo>
                </location>
@@ -311,6 +309,16 @@
                   <geo>46,75 13,83333</geo>
                </location>
             </place>
+            <place xml:id="pmb651">
+               <placeName>Kärnten</placeName>
+               <location type="coords">
+                  <geo>46,75 13,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
             <place xml:id="pmb40376">
                <placeName>Ossiach</placeName>
                <location type="coords">
@@ -323,16 +331,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb40375">Feldkirchen [Bezirk]</placeName>
                   <geo>46,72127 14,09683</geo>
-               </location>
-            </place>
-            <place xml:id="pmb651">
-               <placeName>Kärnten</placeName>
-               <location type="coords">
-                  <geo>46,75 13,83333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

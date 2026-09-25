@@ -187,6 +187,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
@@ -207,6 +231,30 @@
                      <placeName type="pref">Rodaun</placeName>
                      <location>
                         <geo>48,132793312328 16,256152195922</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb4194">
+               <persName>
+                  <forename>Ernst Theodor Amadeus</forename>
+                  <surname>Hoffmann</surname>
+               </persName>
+               <birth>
+                  <date when="1776-01-24">1776-01-24</date>
+                  <settlement ref="pmb304404">
+                     <placeName type="pref">Kaliningrad</placeName>
+                     <location>
+                        <geo>54,733333 20,483333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1822-06-25">1822-06-25</date>
+                  <settlement ref="pmb168">
+                     <placeName type="pref">Berlin</placeName>
+                     <location>
+                        <geo>52,52437 13,41053</geo>
                      </location>
                   </settlement>
                </death>
@@ -259,58 +307,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
-            <person xml:id="pmb4194">
-               <persName>
-                  <forename>Ernst Theodor Amadeus</forename>
-                  <surname>Hoffmann</surname>
-               </persName>
-               <birth>
-                  <date when="1776-01-24">1776-01-24</date>
-                  <settlement ref="pmb304404">
-                     <placeName type="pref">Kaliningrad</placeName>
-                     <location>
-                        <geo>54,733333 20,483333</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1822-06-25">1822-06-25</date>
-                  <settlement ref="pmb168">
-                     <placeName type="pref">Berlin</placeName>
-                     <location>
-                        <geo>52,52437 13,41053</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb4326" ana="implied">
                <persName>
                   <forename>Robert</forename>
@@ -338,11 +334,47 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33702">
-               <title type="main">Der letzte Tanz</title>
-               <author role="hat-geschaffen" ref="pmb4326">Ehrhart-Ehrhartstein, Robert</author>
+               <title>Der letzte Tanz</title>
+               <author ref="pmb4326" role="hat-geschaffen">Ehrhart-Ehrhartstein, Robert</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb34401">
+               <placeName>Altaussee</placeName>
+               <location type="coords">
+                  <geo>47,639444 13,763333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb429">Salzkammergut</placeName>
+                  <geo>47,75 13,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">
@@ -359,45 +391,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb150">Sternwartestraße</placeName>
                   <geo>48,23099349198 16,340117830625</geo>
-               </location>
-            </place>
-            <place xml:id="pmb34401">
-               <placeName>Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
-               <location type="coords">
-                  <geo>47,639444 13,763333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb429">Salzkammergut</placeName>
-                  <geo>47,75 13,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

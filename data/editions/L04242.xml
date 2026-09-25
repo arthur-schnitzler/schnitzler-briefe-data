@@ -85,7 +85,7 @@
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc hands="0">
+                        <handDesc hands="1">
                            <handNote medium="schwarze-tinte" style="deutsche-kurrent"/>
                         </handDesc>
                         <additions>
@@ -112,12 +112,12 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
-               <date n="01" when="1927-09-10">[10?]. 9. 1927</date>
+               <date when="1927-09-10" n="01">[10?]. 9. 1927</date>
                <placeName ref="#pmb207301">Tiefer Graben 17</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1927-09-12">12. 9. 1927</date>
-               <placeName ref="#pmb51">1/1 Wien 9</placeName>
+               <placeName ref="#pmb51">I., Innere Stadt</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -192,7 +192,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -201,39 +201,11 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
-            <person xml:id="pmb2238">
-               <persName>
-                  <forename>Lili</forename>
-                  <surname>Cappellini</surname>
-               </persName>
-               <birth>
-                  <date when="1909-09-13">1909-09-13</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1928-07-26">1928-07-26</date>
-                  <settlement ref="pmb462">
-                     <placeName type="pref">Venedig</placeName>
-                     <location>
-                        <geo>45,43713 12,33265</geo>
                      </location>
                   </settlement>
                </death>
@@ -262,23 +234,103 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2238">
+               <persName>
+                  <forename>Lili</forename>
+                  <surname>Cappellini</surname>
+               </persName>
+               <birth>
+                  <date when="1909-09-13">1909-09-13</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1928-07-26">1928-07-26</date>
+                  <settlement ref="pmb462">
+                     <placeName type="pref">Venedig</placeName>
+                     <location>
+                        <geo>45,43713 12,33265</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb6879" ana="comment">
+               <persName>
+                  <forename>Ashley</forename>
+                  <surname>Dukes</surname>
+               </persName>
+               <birth>
+                  <date when="1885-05-29">1885-05-29</date>
+                  <settlement ref="pmb44865">
+                     <placeName type="pref">Bridgwater</placeName>
+                     <location>
+                        <geo>51,12837 -3,00356</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1959-05-04">1959-05-04</date>
+                  <settlement ref="pmb224">
+                     <placeName type="pref">London</placeName>
+                     <location>
+                        <geo>51,50853 -0,12574</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2167" ana="comment">
+               <persName>
+                  <forename>Felix</forename>
+                  <surname>Salten</surname>
+               </persName>
+               <birth>
+                  <date when="1869-09-06">1869-09-06</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-10-08">1945-10-08</date>
+                  <settlement ref="pmb484">
+                     <placeName type="pref">Zürich</placeName>
+                     <location>
+                        <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb80387" ana="comment">
-               <title type="main">Im Wirtshaus zum Pechvogel. Komödie in drei Akten</title>
-               <author role="hat-geschaffen" ref="pmb6879">Dukes, Ashley</author>
-               <author role="hat-ubersetzt" ref="pmb2167">Salten, Felix</author>
+               <title>Im Wirtshaus zum Pechvogel. Komödie in drei Akten</title>
+               <author ref="pmb6879" role="hat-geschaffen">Dukes, Ashley</author>
+               <author ref="pmb2167" role="hat-ubersetzt">Salten, Felix</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb201000">
-               <placeName>Verona Arena</placeName>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
                <location type="coords">
-                  <geo>45,438888888889 10,994444444444</geo>
+                  <geo>48,20769 16,37049</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb44153">Verona</placeName>
-                  <geo>45,4299 10,98444</geo>
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
             <place xml:id="pmb207301">
@@ -308,7 +360,6 @@
             </place>
             <place xml:id="pmb259">
                <placeName>Lido</placeName>
-               <placeName type="legacy-name-merge">Lido</placeName>
                <location type="coords">
                   <geo>45,38333 12,35</geo>
                </location>
@@ -321,77 +372,14 @@
                   <geo>45,43713 12,33265</geo>
                </location>
             </place>
-            <place xml:id="pmb462">
-               <placeName>Venedig</placeName>
-               <placeName type="alternative-name">Venedig</placeName>
-               <placeName type="legacy-name-merge">Venice</placeName>
-               <placeName type="legacy-name-merge">Venedig</placeName>
+            <place xml:id="pmb201000">
+               <placeName>Verona Arena</placeName>
                <location type="coords">
-                  <geo>45,43713 12,33265</geo>
+                  <geo>45,438888888889 10,994444444444</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb51">
-               <placeName>I., Innere Stadt</placeName>
-               <placeName type="alternative-name">Inner city</placeName>
-               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
-               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
-               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
-               <placeName type="legacy-name-merge">Inner city</placeName>
-               <location type="coords">
-                  <geo>48,20769 16,37049</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb662">
-               <placeName>Baden bei Wien</placeName>
-               <placeName type="alternative-name">Baden</placeName>
-               <placeName type="legacy-name-merge">Baden</placeName>
-               <placeName type="legacy-name-merge">Baden bei Wien</placeName>
-               <placeName type="alternative-name">Baden bei Wien</placeName>
-               <placeName type="legacy-name-merge">Baden (Niederösterreich)</placeName>
-               <location type="coords">
-                  <geo>48,00543 16,23264</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb1003">Niederösterreich</placeName>
-                  <geo>48,33333 15,75</geo>
+                  <placeName ref="pmb44153">Verona</placeName>
+                  <geo>45,4299 10,98444</geo>
                </location>
             </place>
             <place xml:id="pmb92519">
@@ -409,9 +397,25 @@
                   <geo>48,18479 16,31227</geo>
                </location>
             </place>
+            <place xml:id="pmb662">
+               <placeName>Baden bei Wien</placeName>
+               <placeName type="alternative-name">Baden</placeName>
+               <placeName type="legacy-name-merge">Baden (Niederösterreich)</placeName>
+               <location type="coords">
+                  <geo>48,00543 16,23264</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1003">Niederösterreich</placeName>
+                  <geo>48,33333 15,75</geo>
+               </location>
+            </place>
          </listPlace>
          <listOrg>
-            <org xml:id="pmb36247">
+            <org xml:id="pmb36247" ana="comment">
                <orgName>Burgtheater</orgName>
                <orgName type="institution_namensvariante">Burgtheater GmbH</orgName>
                <location type="located_in_place">
@@ -429,7 +433,7 @@
                   <placeName ref="pmb48198">Redoutensaal</placeName>
                   <geo>48,206783 16,366551</geo>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/48198/</idno>
-                  <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Redoutensäle</idno>
+                  <idno type="URL" subtype="www">https://www.geschichtewiki.wien.gv.at/Redoutensäle</idno>
                   <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb48198.html</idno>
                   <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb48198.html</idno>
                </location>
@@ -441,7 +445,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51010/</idno>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/2775259/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb51.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb51.html</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb51.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q267329</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Innere_Stadt_(Wien)</idno>
@@ -474,7 +478,7 @@
             </org>
          </listOrg>
          <listEvent>
-            <event xml:id="pmb334996" ana="comment">
+            <event xml:id="pmb334996" ana="implied">
                <eventName n="Generalprobe">Generalprobe von Im Wirtshaus zum Pechvogel, 10.9.1927</eventName>
                <listPlace>
                   <place>

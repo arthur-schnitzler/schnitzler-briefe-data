@@ -130,12 +130,12 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb13212">Zweig, Stefan</persName>
-               <date n="01" notBefore="1911-04-03" notAfter="1911-04-04">[3. oder 4]. 4. 1911</date>
+               <date notBefore="1911-04-03" notAfter="1911-04-04" n="01">[3. oder 4]. 4. 1911</date>
                <placeName ref="#pmb39944">Havanna</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1911-04-04">4. 4. 1911</date>
-               <placeName ref="#pmb39944">Habana Cuba</placeName>
+               <placeName ref="#pmb39944">Havanna</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -209,7 +209,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -218,7 +218,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -226,10 +226,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173" ana="implied">
                <persName>
@@ -257,6 +253,16 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb39944">
+               <placeName>Havanna</placeName>
+               <location type="coords">
+                  <geo>23,13302 -82,38304</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb39943">Kuba</placeName>
+                  <geo>22,0 -79,5</geo>
+               </location>
+            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">
@@ -275,34 +281,10 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
-            <place xml:id="pmb293943">
-               <placeName>Castillo de la Real Fuerza</placeName>
-               <location type="coords">
-                  <geo>23,141 -82,3498</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb39944">Havanna</placeName>
-                  <geo>23,13302 -82,38304</geo>
-               </location>
-            </place>
-            <place xml:id="pmb39944">
-               <placeName>Havanna</placeName>
-               <placeName type="alternative-name">Havanna</placeName>
-               <placeName type="legacy-name">Havanna</placeName>
-               <location type="coords">
-                  <geo>23,13302 -82,38304</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb39943">Kuba</placeName>
-                  <geo>22,0 -79,5</geo>
-               </location>
-            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -324,16 +306,12 @@
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -342,21 +320,25 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb293943">
+               <placeName>Castillo de la Real Fuerza</placeName>
+               <location type="coords">
+                  <geo>23,141 -82,3498</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb39944">Havanna</placeName>
+                  <geo>23,13302 -82,38304</geo>
+               </location>
             </place>
             <place xml:id="pmb175" ana="comment">
                <placeName>Amerika</placeName>
                <location type="coords">
                   <geo>32,530833 -117,02</geo>
-               </location>
-            </place>
-            <place xml:id="pmb39943" ana="comment">
-               <placeName>Kuba</placeName>
-               <placeName type="alternative-name">Kuba</placeName>
-               <placeName type="alternative-name">Republic of Cuba</placeName>
-               <placeName type="legacy-name-merge">Cuba</placeName>
-               <placeName type="legacy-name-merge">Kuba</placeName>
-               <location type="coords">
-                  <geo>22,0 -79,5</geo>
                </location>
             </place>
             <place xml:id="pmb44053" ana="comment">
@@ -365,11 +347,7 @@
                <placeName type="legacy-name-merge">New York, N. Y.</placeName>
                <placeName type="alternative-name">Neu-Amsterdam, NY</placeName>
                <placeName type="legacy-name-merge">New York, NY</placeName>
-               <placeName type="alternative-name">New York City</placeName>
                <placeName type="alternative-name">Big Apple</placeName>
-               <placeName type="legacy-name-merge">New York City</placeName>
-               <placeName type="legacy-name-merge">New York, NY</placeName>
-               <placeName type="legacy-name-merge">New York</placeName>
                <placeName type="legacy-name-merge">New York?</placeName>
                <location type="coords">
                   <geo>40,71427 -74,00597</geo>
@@ -379,12 +357,36 @@
                   <geo>39,76 -98,5</geo>
                </location>
             </place>
+            <place xml:id="pmb91362" ana="comment">
+               <placeName>Nordamerika</placeName>
+               <placeName type="alternative-name">Northern America</placeName>
+               <location type="coords">
+                  <geo>54,77535 -105,64453</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb175">Amerika</placeName>
+                  <geo>32,530833 -117,02</geo>
+               </location>
+            </place>
+            <place xml:id="pmb880" ana="comment">
+               <placeName>Chicago</placeName>
+               <placeName type="legacy-name-merge">Chicago, Ill.</placeName>
+               <placeName type="legacy-name-merge">Chicago, Il.</placeName>
+               <location type="coords">
+                  <geo>41,85003 -87,65005</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb49195">Illinois</placeName>
+                  <geo>40,00032 -89,25037</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43406">Vereinigte Staaten von Amerika [USA]</placeName>
+                  <geo>39,76 -98,5</geo>
+               </location>
+            </place>
             <place xml:id="pmb45794" ana="comment">
                <placeName>Kanada</placeName>
-               <placeName type="alternative-name">Kanada</placeName>
                <placeName type="alternative-name">Canada</placeName>
-               <placeName type="legacy-name-merge">Canada</placeName>
-               <placeName type="legacy-name-merge">Kanada</placeName>
                <location type="coords">
                   <geo>60,10867 -113,64258</geo>
                </location>
@@ -404,39 +406,19 @@
                   <geo>52,483333 -1,566667</geo>
                </location>
             </place>
+            <place xml:id="pmb39943" ana="comment">
+               <placeName>Kuba</placeName>
+               <placeName type="alternative-name">Republic of Cuba</placeName>
+               <placeName type="legacy-name-merge">Cuba</placeName>
+               <location type="coords">
+                  <geo>22,0 -79,5</geo>
+               </location>
+            </place>
             <place xml:id="pmb57051" ana="comment">
                <placeName>Südamerika</placeName>
                <placeName type="legacy-name-merge">South America</placeName>
                <location type="coords">
                   <geo>-13,0 -59,4</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb175">Amerika</placeName>
-                  <geo>32,530833 -117,02</geo>
-               </location>
-            </place>
-            <place xml:id="pmb880" ana="comment">
-               <placeName>Chicago</placeName>
-               <placeName type="legacy-name-merge">Chicago, Ill.</placeName>
-               <placeName type="legacy-name-merge">Chicago, Il.</placeName>
-               <placeName type="legacy-name-merge">Chicago, Ill.</placeName>
-               <location type="coords">
-                  <geo>41,85003 -87,65005</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb49195">Illinois</placeName>
-                  <geo>40,00032 -89,25037</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43406">Vereinigte Staaten von Amerika [USA]</placeName>
-                  <geo>39,76 -98,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb91362" ana="comment">
-               <placeName>Nordamerika</placeName>
-               <placeName type="alternative-name">Northern America</placeName>
-               <location type="coords">
-                  <geo>54,77535 -105,64453</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb175">Amerika</placeName>

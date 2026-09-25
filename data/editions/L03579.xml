@@ -124,12 +124,12 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date n="01" notBefore="1922-04-20" notAfter="1922-04-21">[20. oder 21]. 4. 1922</date>
+               <date notBefore="1922-04-20" notAfter="1922-04-21" n="01">[20. oder 21]. 4. 1922</date>
                <placeName ref="#pmb1283">Pompeji</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1922-04-21">21. 4. 1922</date>
-               <placeName ref="#pmb1283">Pompei (Napoli)</placeName>
+               <placeName ref="#pmb1283">Pompeji</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -168,34 +168,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -244,6 +216,30 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listPlace>
             <place xml:id="pmb1283">
@@ -254,16 +250,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb40306">Italien</placeName>
                   <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb143721">
-               <placeName>Jupitertempel</placeName>
-               <location type="coords">
-                  <geo>40,7499 14,4845</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb1283">Pompeji</placeName>
-                  <geo>40,750556 14,489722</geo>
                </location>
             </place>
             <place xml:id="pmb168815">
@@ -287,9 +273,7 @@
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -311,16 +295,12 @@
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -328,6 +308,20 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb143721">
+               <placeName>Jupitertempel</placeName>
+               <location type="coords">
+                  <geo>40,7499 14,4845</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1283">Pompeji</placeName>
+                  <geo>40,750556 14,489722</geo>
                </location>
             </place>
          </listPlace>

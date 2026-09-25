@@ -80,7 +80,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="kartenbrief" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="287"/>
+                                 <measure unit="zeichenanzahl" quantity="283"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -204,6 +204,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10815">
                <persName>
                   <forename>Hermann</forename>
@@ -227,34 +251,6 @@
                      </location>
                   </settlement>
                </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173" ana="implied">
                <persName>
@@ -282,6 +278,68 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb68">
+               <placeName>XVIII., Währing</placeName>
+               <placeName type="legacy-name-merge">Währing</placeName>
+               <location type="coords">
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb63">
+               <placeName>XIII., Hietzing</placeName>
+               <placeName type="legacy-name-merge">Hietzing</placeName>
+               <location type="coords">
+                  <geo>48,17547 16,29101</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50" ana="comment">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb220">
+               <placeName>Veitlissengasse</placeName>
+               <location type="coords">
+                  <geo>48,186622327678 16,259712159437</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb165">Ober Sankt Veit</placeName>
+                  <geo>48,188056 16,266389</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb63">XIII., Hietzing</placeName>
+                  <geo>48,17547 16,29101</geo>
+               </location>
+            </place>
             <place xml:id="pmb165">
                <placeName>Ober Sankt Veit</placeName>
                <placeName type="legacy-name-merge">Wien-Ober-Sankt-Veit</placeName>
@@ -302,21 +360,7 @@
                   <geo>48,17547 16,29101</geo>
                </location>
             </place>
-            <place xml:id="pmb220">
-               <placeName>Veitlissengasse</placeName>
-               <location type="coords">
-                  <geo>48,186622327678 16,259712159437</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb165">Ober Sankt Veit</placeName>
-                  <geo>48,188056 16,266389</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb63">XIII., Hietzing</placeName>
-                  <geo>48,17547 16,29101</geo>
-               </location>
-            </place>
-            <place xml:id="pmb304">
+            <place xml:id="pmb304" ana="comment">
                <placeName>Ottakringer Bräu</placeName>
                <placeName type="namensvariante">Hietzinger Restaurant</placeName>
                <placeName type="namensvariante">Kuffner</placeName>
@@ -328,48 +372,13 @@
                   <geo>48,17547 16,29101</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb66" ana="comment">
+               <placeName>XVI., Ottakring</placeName>
+               <placeName type="legacy-name-merge">Wien-Neulerchenfeld</placeName>
+               <placeName type="legacy-name-merge">Ottakring</placeName>
+               <placeName type="legacy-name-merge">Wien-Ottakring</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb63">
-               <placeName>XIII., Hietzing</placeName>
-               <placeName type="legacy-name-merge">Hietzing</placeName>
-               <location type="coords">
-                  <geo>48,17547 16,29101</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb68">
-               <placeName>XVIII., Währing</placeName>
-               <placeName type="legacy-name-merge">Währing</placeName>
-               <location type="coords">
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <geo>48,21667 16,3</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
@@ -384,19 +393,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb66">XVI., Ottakring</placeName>
                   <geo>48,21667 16,3</geo>
-               </location>
-            </place>
-            <place xml:id="pmb66" ana="comment">
-               <placeName>XVI., Ottakring</placeName>
-               <placeName type="legacy-name-merge">Wien-Neulerchenfeld</placeName>
-               <placeName type="legacy-name-merge">Ottakring</placeName>
-               <placeName type="legacy-name-merge">Wien-Ottakring</placeName>
-               <location type="coords">
-                  <geo>48,21667 16,3</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
          </listPlace>

@@ -187,36 +187,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10986">
-               <persName>
-                  <forename>Otto</forename>
-                  <surname>Brahm</surname>
-               </persName>
-               <birth>
-                  <date when="1856-02-05">1856-02-05</date>
-                  <settlement ref="pmb506">
-                     <placeName type="pref">Hamburg</placeName>
-                     <location>
-                        <geo>53,55055 9,993333</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1912-11-28">1912-11-28</date>
-                  <settlement ref="pmb168">
-                     <placeName type="pref">Berlin</placeName>
-                     <location>
-                        <geo>52,52437 13,41053</geo>
-                     </location>
-                  </settlement>
-                  <settlement ref="pmb253956">
-                     <placeName type="pref">Ungersche Klinik</placeName>
-                     <location>
-                        <geo>52,5037 13,3567</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
@@ -247,7 +217,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -256,7 +226,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -264,10 +234,36 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb10986">
+               <persName>
+                  <forename>Otto</forename>
+                  <surname>Brahm</surname>
+               </persName>
+               <birth>
+                  <date when="1856-02-05">1856-02-05</date>
+                  <settlement ref="pmb506">
+                     <placeName type="pref">Hamburg</placeName>
+                     <location>
+                        <geo>53,55055 9,993333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1912-11-28">1912-11-28</date>
+                  <settlement ref="pmb168">
+                     <placeName type="pref">Berlin</placeName>
+                     <location>
+                        <geo>52,52437 13,41053</geo>
+                     </location>
+                  </settlement>
+                  <settlement ref="pmb253956">
+                     <placeName type="pref">Ungersche Klinik</placeName>
+                     <location>
+                        <geo>52,5037 13,3567</geo>
+                     </location>
+                  </settlement>
+               </death>
             </person>
             <person xml:id="pmb44876" ana="comment">
                <persName>
@@ -277,16 +273,26 @@
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb29857" ana="comment">
-               <title type="main">Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
+            <bibl xml:id="pmb29857" ana="implied">
+               <title>Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
                <title type="werk_arbeitstitel">Shawl</title>
                <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=601&amp;teil=0111&amp;seite=00000001&amp;zoom=2</title>
                <title type="legacy-name-merge">Der Schleier der Beatrice</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb168">
+            <place xml:id="pmb667">
+               <placeName>Garmisch-Partenkirchen</placeName>
+               <location type="coords">
+                  <geo>47,49209 11,09576</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb314">Bayern</placeName>
+                  <geo>49,0 11,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb168" ana="comment">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
                <placeName type="alternative-name">Barlīn</placeName>
@@ -299,6 +305,21 @@
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb677">
+               <placeName>Breslau</placeName>
+               <placeName type="alternative-name">Wrotizla</placeName>
+               <placeName type="alternative-name">Breßlau</placeName>
+               <placeName type="legacy-name-merge">Breslau/Wrocłav</placeName>
+               <placeName type="ort_namensvariante">Wrocław</placeName>
+               <placeName type="legacy-name-merge">Wroclaw</placeName>
+               <location type="coords">
+                  <geo>51,10773 17,03533</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb313">Polen</placeName>
+                  <geo>52,0 20,0</geo>
                </location>
             </place>
             <place xml:id="pmb3">
@@ -317,7 +338,6 @@
             </place>
             <place xml:id="pmb307">
                <placeName>Schumannstraße</placeName>
-               <placeName type="legacy-name-merge">Schumannstraße</placeName>
                <location type="coords">
                   <geo>52,52402 13,38186</geo>
                </location>
@@ -334,34 +354,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb677">Breslau</placeName>
                   <geo>51,10773 17,03533</geo>
-               </location>
-            </place>
-            <place xml:id="pmb667">
-               <placeName>Garmisch-Partenkirchen</placeName>
-               <location type="coords">
-                  <geo>47,49209 11,09576</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb314">Bayern</placeName>
-                  <geo>49,0 11,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb677">
-               <placeName>Breslau</placeName>
-               <placeName type="alternative-name">Wrotizla</placeName>
-               <placeName type="legacy-name-merge">Breslau</placeName>
-               <placeName type="alternative-name">Breßlau</placeName>
-               <placeName type="legacy-name-merge">Breslau/Wrocłav</placeName>
-               <placeName type="alternative-name">Breslau</placeName>
-               <placeName type="ort_namensvariante">Wrocław</placeName>
-               <placeName type="legacy-name-merge">Wroclaw</placeName>
-               <placeName type="legacy-name-merge">Breslau</placeName>
-               <location type="coords">
-                  <geo>51,10773 17,03533</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb313">Polen</placeName>
-                  <geo>52,0 20,0</geo>
                </location>
             </place>
          </listPlace>

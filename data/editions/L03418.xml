@@ -143,6 +143,7 @@
          <change who="LU" when="2024-05-13">Durchsicht</change>
          <change when="2024-05-14" who="LU">Index check</change>
          <change who="MAM" when="2024-06-12">Durchsicht</change>
+         <change who="SJ" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -158,34 +159,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -206,6 +179,30 @@
                      <placeName type="pref">Zürich</placeName>
                      <location>
                         <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -237,25 +234,11 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb147443">
-               <title type="main">Bogenschütze</title>
-               <author role="hat-geschaffen" ref="pmb43702">Geyger, Ernst Moritz</author>
+               <title>Bogenschütze</title>
+               <author ref="pmb43702" role="hat-geschaffen">Geyger, Ernst Moritz</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb147438">
-               <placeName>Garten von Sanssouci</placeName>
-               <location type="coords">
-                  <geo>52,40043 13,03528</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb49592">Schloss Sanssouci</placeName>
-                  <geo>52,40416 13,0385</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
@@ -269,6 +252,28 @@
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
             <place xml:id="pmb168940">
@@ -293,10 +298,8 @@
             <place xml:id="pmb49592">
                <placeName>Schloss Sanssouci</placeName>
                <placeName type="alternative-name">Sanssouci</placeName>
-               <placeName type="alternative-name">Schloss Sanssouci</placeName>
                <placeName type="alternative-name">Sanssouci Palace</placeName>
                <placeName type="legacy-name-merge">Sanssouci bei Potsdam</placeName>
-               <placeName type="legacy-name-merge">Schloss Sanssouci</placeName>
                <location type="coords">
                   <geo>52,40416 13,0385</geo>
                </location>
@@ -309,26 +312,18 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb147438">
+               <placeName>Garten von Sanssouci</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>52,40043 13,03528</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb49592">Schloss Sanssouci</placeName>
+                  <geo>52,40416 13,0385</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
                </location>
             </place>
          </listPlace>

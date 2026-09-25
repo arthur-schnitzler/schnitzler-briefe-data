@@ -157,30 +157,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10863">
-               <persName>
-                  <forename>Richard</forename>
-                  <surname>Beer-Hofmann</surname>
-               </persName>
-               <birth>
-                  <date when="1866-07-11">1866-07-11</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1945-09-26">1945-09-26</date>
-                  <settlement ref="pmb44053">
-                     <placeName type="pref">New York City</placeName>
-                     <location>
-                        <geo>40,71427 -74,00597</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11485">
                <persName>
                   <forename>Paul</forename>
@@ -201,6 +177,54 @@
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb10863">
+               <persName>
+                  <forename>Richard</forename>
+                  <surname>Beer-Hofmann</surname>
+               </persName>
+               <birth>
+                  <date when="1866-07-11">1866-07-11</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-09-26">1945-09-26</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
                      </location>
                   </settlement>
                </death>
@@ -229,34 +253,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb26392">
                <persName>
                   <forename>Leo</forename>
@@ -284,9 +280,9 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33243" ana="comment">
-               <title type="main">Tagebuch</title>
+               <title>Tagebuch</title>
                <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
@@ -307,9 +303,6 @@
             </place>
             <place xml:id="pmb34401">
                <placeName>Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
                <location type="coords">
                   <geo>47,639444 13,763333</geo>
                </location>
@@ -352,7 +345,6 @@
             </place>
             <place xml:id="pmb969">
                <placeName>Südtirol</placeName>
-               <placeName type="legacy-name-merge">Südtirol</placeName>
                <placeName type="namensvariante">Autonome Provinz Bozen</placeName>
                <location type="coords">
                   <geo>46,71667 11,5</geo>
@@ -407,10 +399,7 @@
             <place xml:id="pmb30" ana="comment">
                <placeName>Salzburg</placeName>
                <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="alternative-name">Salzburg</placeName>
                <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
                <placeName type="legacy-name-merge">Salzburg?</placeName>
                <location type="coords">
                   <geo>47,80067 13,04532</geo>

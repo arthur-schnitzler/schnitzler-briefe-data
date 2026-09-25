@@ -81,7 +81,7 @@
                               <extent>
                                  <measure unit="blatt" quantity="1"/>
                                  <measure unit="seite" quantity="3"/>
-                                 <measure unit="zeichenanzahl" quantity="849"/>
+                                 <measure unit="zeichenanzahl" quantity="847"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -205,6 +205,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10815">
                <persName>
                   <forename>Hermann</forename>
@@ -228,34 +252,6 @@
                      </location>
                   </settlement>
                </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173" ana="implied">
                <persName>
@@ -283,31 +279,53 @@
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb29873">
-               <title type="main">Der Puppenspieler. Studie in einem Aufzuge</title>
-               <title type="werk_bibliografische-angabe">Neue Freie Presse, 31. 5. 1903</title>
-               <title type="werk_link">https://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19030531&amp;seite=31</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
-            </bibl>
             <bibl xml:id="pmb29903">
-               <title type="main">Zwischenspiel. Komödie in drei Akten</title>
+               <title>Zwischenspiel. Komödie in drei Akten</title>
                <title type="werk_arbeitstitel">Neue Ehe</title>
                <title type="werk_arbeitstitel">Das leichte Leben</title>
                <title type="werk_arbeitstitel">Cäcilie Adams</title>
                <title type="werk_arbeitstitel">Adagio</title>
                <title type="werk_arbeitstitel">»Nicht mehr zu dir zu gehn …«</title>
                <title type="legacy-name-merge">Zwischenspiel</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
             <bibl xml:id="pmb29905">
-               <title type="main">Der Ruf des Lebens. Schauspiel in drei Akten</title>
+               <title>Der Ruf des Lebens. Schauspiel in drei Akten</title>
                <title type="werk_link">http://www.literature.at/viewer.alo?objid=12117&amp;page=1&amp;viewmode=fullscreen</title>
                <title type="werk_arbeitstitel">Vatermörderin</title>
                <title type="legacy-name-merge">Der Ruf des Lebens</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            </bibl>
+            <bibl xml:id="pmb29873">
+               <title>Der Puppenspieler. Studie in einem Aufzuge</title>
+               <title type="werk_bibliografische-angabe">Neue Freie Presse, 31. 5. 1903</title>
+               <title type="werk_link">https://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19030531&amp;seite=31</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -325,28 +343,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb133">Edmund-Weiß-Gasse</placeName>
                   <geo>48,23056 16,3348</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
             <place xml:id="pmb63">
@@ -396,7 +392,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurt_am_Main</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb146.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
@@ -411,7 +407,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004069</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb146</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb146.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb168">Berlin</placeName>
@@ -420,7 +416,7 @@
                   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb168.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb168.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
@@ -435,14 +431,14 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004523</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb168</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.3</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.2.3</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb659">Bülowstraße</placeName>
                   <geo>52,49737 13,36385</geo>
                   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb659.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/659/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb659.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb659.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92181/</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb659.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb659.html</idno>

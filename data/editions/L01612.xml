@@ -207,37 +207,13 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10815">
-               <persName>
-                  <forename>Hermann</forename>
-                  <surname>Bahr</surname>
-               </persName>
-               <birth>
-                  <date when="1863-07-19">1863-07-19</date>
-                  <settlement ref="pmb332">
-                     <placeName type="pref">Linz</placeName>
-                     <location>
-                        <geo>48,3 14,28333</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1934-01-15">1934-01-15</date>
-                  <settlement ref="pmb45258">
-                     <placeName type="pref">München</placeName>
-                     <location>
-                        <geo>48,13743 11,57549</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -246,7 +222,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -254,10 +230,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173">
                <persName>
@@ -279,6 +251,30 @@
                      <placeName type="pref">Lugano</placeName>
                      <location>
                         <geo>46,01008 8,96004</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb10815">
+               <persName>
+                  <forename>Hermann</forename>
+                  <surname>Bahr</surname>
+               </persName>
+               <birth>
+                  <date when="1863-07-19">1863-07-19</date>
+                  <settlement ref="pmb332">
+                     <placeName type="pref">Linz</placeName>
+                     <location>
+                        <geo>48,3 14,28333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1934-01-15">1934-01-15</date>
+                  <settlement ref="pmb45258">
+                     <placeName type="pref">München</placeName>
+                     <location>
+                        <geo>48,13743 11,57549</geo>
                      </location>
                   </settlement>
                </death>
@@ -307,43 +303,41 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2412">
+               <persName>
+                  <forename>William</forename>
+                  <surname>Shakespeare</surname>
+               </persName>
+               <birth>
+                  <date when="1564-04-23">23.4.1564?</date>
+                  <settlement ref="pmb49870">
+                     <placeName type="pref">Stratford-upon-Avon</placeName>
+                     <location>
+                        <geo>52,19166 -1,70734</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1616-05-03">1616-05-03</date>
+                  <settlement ref="pmb49870">
+                     <placeName type="pref">Stratford-upon-Avon</placeName>
+                     <location>
+                        <geo>52,19166 -1,70734</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30009" ana="implied">
-               <title type="main">Hamlet</title>
-               <author role="hat-geschaffen" ref="pmb2412">Shakespeare, William</author>
+               <title>Hamlet</title>
+               <author ref="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb305">
-               <placeName>Casa Petrarca</placeName>
-               <location type="coords">
-                  <geo>45,43507 12,33541</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb462">Venedig</placeName>
-                  <geo>45,43713 12,33265</geo>
-               </location>
-            </place>
-            <place xml:id="pmb40306">
-               <placeName>Italien</placeName>
-               <placeName type="alternative-name">Italian Republic</placeName>
-               <placeName type="alternative-name">Republic of Italy</placeName>
-               <placeName type="legacy-name-merge">Italien</placeName>
-               <placeName type="legacy-name-merge">Italy</placeName>
-               <location type="coords">
-                  <geo>42,83333 12,83333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
-               </location>
-            </place>
             <place xml:id="pmb462">
                <placeName>Venedig</placeName>
-               <placeName type="alternative-name">Venedig</placeName>
                <placeName type="legacy-name-merge">Venice</placeName>
-               <placeName type="legacy-name-merge">Venedig</placeName>
                <location type="coords">
                   <geo>45,43713 12,33265</geo>
                </location>
@@ -363,9 +357,31 @@
                   <geo>56,0 10,0</geo>
                </location>
             </place>
+            <place xml:id="pmb305">
+               <placeName>Casa Petrarca</placeName>
+               <location type="coords">
+                  <geo>45,43507 12,33541</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb462">Venedig</placeName>
+                  <geo>45,43713 12,33265</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40306">
+               <placeName>Italien</placeName>
+               <placeName type="alternative-name">Italian Republic</placeName>
+               <placeName type="alternative-name">Republic of Italy</placeName>
+               <placeName type="legacy-name-merge">Italy</placeName>
+               <location type="coords">
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
             <place xml:id="pmb959">
                <placeName>Marienlyst</placeName>
-               <placeName type="legacy-name-merge">Marienlyst</placeName>
                <location type="coords">
                   <geo>56,042028 12,601917</geo>
                </location>

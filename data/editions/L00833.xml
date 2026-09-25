@@ -131,6 +131,14 @@
                <date when="1898-08-09" n="01">9. 8. 1898</date>
                <placeName ref="#pmb39752">Tegernsee</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1898-08-09">9. 8. 1898</date>
+               <placeName ref="#pmb39752">Tegernsee</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1898-08-10">10. 8. [1898]</date>
+               <placeName ref="#pmb34860">Steindorf am Ossiacher See</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1898-08-10">10. 8. 1898</date>
@@ -149,6 +157,7 @@
          <change who="GHS" when="2019-11-22">angelegt aus Faksimile</change>
          <change who="MAM" when="2019-11-25">Durchsicht</change>
          <change when="2019-11-26" who="MAM">Index check</change>
+         <change who="MAM" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -163,6 +172,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -211,51 +244,10 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb34860">
-               <placeName>Steindorf am Ossiacher See</placeName>
-               <placeName type="legacy-name-merge">Steindorf am Ossiacher See</placeName>
-               <placeName type="legacy-name-merge">Steindorf am Ossiacher See</placeName>
-               <location type="coords">
-                  <geo>46,6992 13,98892</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
             <place xml:id="pmb39752">
                <placeName>Tegernsee</placeName>
-               <placeName type="legacy-name">Tegernsee</placeName>
                <location type="coords">
                   <geo>47,7123 11,7582</geo>
                </location>
@@ -264,32 +256,10 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
-            <place xml:id="pmb40374">
-               <placeName>Ossiacher See</placeName>
+            <place xml:id="pmb34860">
+               <placeName>Steindorf am Ossiacher See</placeName>
                <location type="coords">
-                  <geo>46,670278 13,963889</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb651">Kärnten</placeName>
-                  <geo>46,75 13,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>46,6992 13,98892</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
@@ -306,11 +276,18 @@
                   <geo>47,33333 13,33333</geo>
                </location>
             </place>
+            <place xml:id="pmb40374">
+               <placeName>Ossiacher See</placeName>
+               <location type="coords">
+                  <geo>46,670278 13,963889</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb651">Kärnten</placeName>
+                  <geo>46,75 13,83333</geo>
+               </location>
+            </place>
             <place xml:id="pmb854">
                <placeName>Basel</placeName>
-               <placeName type="alternative-name">Basel</placeName>
-               <placeName type="legacy-name-merge">Basel</placeName>
-               <placeName type="legacy-name-merge">Basel</placeName>
                <location type="coords">
                   <geo>47,55839 7,57327</geo>
                </location>
@@ -321,6 +298,28 @@
                <location type="located_in_place">
                   <placeName ref="pmb43435">Schweiz</placeName>
                   <geo>47,00016 8,01427</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
          </listPlace>

@@ -87,7 +87,7 @@
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc hands="0">
+                        <handDesc hands="1">
                            <handNote medium="schwarze-tinte" style="lateinische-kurrent"/>
                         </handDesc>
                         <additions>
@@ -115,7 +115,7 @@
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
                <persName ref="#pmb23918">Salten, Ottilie</persName>
-               <date n="01" notBefore="1907-08-11" notAfter="1907-08-12">[11. oder 12]. 8. 1907</date>
+               <date notBefore="1907-08-11" notAfter="1907-08-12" n="01">[11. oder 12]. 8. 1907</date>
                <placeName ref="#pmb772">Marienbad</placeName>
             </correspAction>
             <correspAction type="transmitted">
@@ -157,34 +157,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -233,33 +205,42 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb147712">
-               <placeName>Café Forstwarte</placeName>
+            <place xml:id="pmb772">
+               <placeName>Marienbad</placeName>
+               <placeName type="alternative-name">Mariánské Lázně</placeName>
+               <placeName type="legacy-name-merge">Výhledy [Mariánské Lázně-Úšovice]</placeName>
                <location type="coords">
-                  <geo>49,977638 12,716619</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb772">Marienbad</placeName>
                   <geo>49,964444 12,701944</geo>
                </location>
-            </place>
-            <place xml:id="pmb428">
-               <placeName>Welsberg-Taisten</placeName>
-               <placeName type="legacy-name-merge">Welsberg</placeName>
-               <placeName type="legacy-name-merge">Welsberg</placeName>
-               <placeName type="legacy-name-merge">Welsberg-Taisten</placeName>
-               <location type="coords">
-                  <geo>46,75774 12,10556</geo>
-               </location>
                <location type="located_in_place">
-                  <placeName ref="pmb969">Südtirol</placeName>
-                  <geo>46,71667 11,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb724">Pustertal</placeName>
-                  <geo>46,75 12,33333</geo>
+                  <placeName ref="pmb43430">Tschechien</placeName>
+                  <geo>49,75 15,0</geo>
                </location>
             </place>
             <place xml:id="pmb723">
@@ -273,19 +254,29 @@
                   <geo>46,75774 12,10556</geo>
                </location>
             </place>
-            <place xml:id="pmb772">
-               <placeName>Marienbad</placeName>
-               <placeName type="alternative-name">Mariánské Lázně</placeName>
-               <placeName type="legacy-name-merge">Marienbad</placeName>
-               <placeName type="alternative-name">Marienbad</placeName>
-               <placeName type="legacy-name-merge">Mariánské Lázně</placeName>
-               <placeName type="legacy-name-merge">Výhledy [Mariánské Lázně-Úšovice]</placeName>
+            <place xml:id="pmb428">
+               <placeName>Welsberg-Taisten</placeName>
+               <placeName type="legacy-name-merge">Welsberg</placeName>
                <location type="coords">
-                  <geo>49,964444 12,701944</geo>
+                  <geo>46,75774 12,10556</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb43430">Tschechien</placeName>
-                  <geo>49,75 15,0</geo>
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb724">Pustertal</placeName>
+                  <geo>46,75 12,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb147712">
+               <placeName>Café Forstwarte</placeName>
+               <location type="coords">
+                  <geo>49,977638 12,716619</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb772">Marienbad</placeName>
+                  <geo>49,964444 12,701944</geo>
                </location>
             </place>
          </listPlace>

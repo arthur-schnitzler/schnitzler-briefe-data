@@ -193,6 +193,30 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb145344">
                <persName>
                   <surname>?? [Portier des Hotel Continental Berlin]</surname>
@@ -203,34 +227,6 @@
                <death>
                   <date when="1906-02-07">1906-02-07</date>
                </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173" ana="implied">
                <persName>
@@ -258,7 +254,7 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb168">
+            <place xml:id="pmb168" ana="comment">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
                <placeName type="alternative-name">Barlīn</placeName>
@@ -271,6 +267,18 @@
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb58">
+               <placeName>VIII., Josefstadt</placeName>
+               <placeName type="alternative-name">Josefstadt (Wien-Josefstadt)</placeName>
+               <placeName type="legacy-name-merge">Josefstadt</placeName>
+               <location type="coords">
+                  <geo>48,21126 16,34706</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
             <place xml:id="pmb168940">
@@ -292,29 +300,15 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
-            <place xml:id="pmb399">
-               <placeName>Hotel Continental [Berlin]</placeName>
-               <location type="coords">
-                  <geo>52,518889 13,385556</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
+            <place xml:id="pmb50" ana="comment">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -323,18 +317,19 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
             </place>
-            <place xml:id="pmb58">
-               <placeName>VIII., Josefstadt</placeName>
-               <placeName type="alternative-name">Josefstadt (Wien-Josefstadt)</placeName>
-               <placeName type="legacy-name-merge">VIII., Josefstadt</placeName>
-               <placeName type="legacy-name-merge">Josefstadt</placeName>
+            <place xml:id="pmb399">
+               <placeName>Hotel Continental [Berlin]</placeName>
                <location type="coords">
-                  <geo>48,21126 16,34706</geo>
+                  <geo>52,518889 13,385556</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
                </location>
             </place>
          </listPlace>

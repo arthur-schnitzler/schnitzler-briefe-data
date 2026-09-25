@@ -214,6 +214,30 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb11461">
                <persName>
                   <forename>Johann Wolfgang von</forename>
@@ -238,6 +262,29 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb3124">
+               <persName>
+                  <surname>Voltaire</surname>
+               </persName>
+               <birth>
+                  <date when="1694-11-21">1694-11-21</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1778-05-30">1778-05-30</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb14796">
                <persName>
                   <forename>Gaius Iulius</forename>
@@ -258,57 +305,6 @@
                      <placeName type="pref">Rom</placeName>
                      <location>
                         <geo>41,89193 12,51133</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
-            <person xml:id="pmb3124">
-               <persName>
-                  <surname>Voltaire</surname>
-               </persName>
-               <birth>
-                  <date when="1694-11-21">1694-11-21</date>
-                  <settlement ref="pmb182">
-                     <placeName type="pref">Paris</placeName>
-                     <location>
-                        <geo>48,85341 2,3488</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1778-05-30">1778-05-30</date>
-                  <settlement ref="pmb182">
-                     <placeName type="pref">Paris</placeName>
-                     <location>
-                        <geo>48,85341 2,3488</geo>
                      </location>
                   </settlement>
                </death>
@@ -340,35 +336,46 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30881">
-               <title type="main">Fink und Fliederbusch. Komödie in drei Akten</title>
+               <title>Fink und Fliederbusch. Komödie in drei Akten</title>
                <title type="werk_arbeitstitel">Journalisten</title>
                <title type="werk_arbeitstitel">Der Unsichtbare und die zwei Schatten</title>
                <title type="werk_arbeitstitel">Zwei Schatten</title>
                <title type="werk_arbeitstitel">Die Feuerprobe</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
-            </bibl>
-            <bibl xml:id="pmb32093" ana="implied">
-               <title type="main">Wolfgang Goethe</title>
-               <author role="hat-geschaffen" ref="pmb10992">Brandes, Georg</author>
-            </bibl>
-            <bibl xml:id="pmb33237" ana="implied">
-               <title type="main">Voltaire und sein Jahrhundert</title>
-               <author role="hat-geschaffen" ref="pmb10992">Brandes, Georg</author>
-            </bibl>
-            <bibl xml:id="pmb33376" ana="implied">
-               <title type="main">Gaius Julius Cæsar</title>
-               <author role="hat-geschaffen" ref="pmb10992">Brandes, Georg</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
             <bibl xml:id="pmb33378" ana="implied">
-               <title type="main">Verdenskrigen [The World at War]</title>
-               <author role="hat-geschaffen" ref="pmb10992">Brandes, Georg</author>
+               <title>Verdenskrigen [The World at War]</title>
+               <author ref="pmb10992" role="hat-geschaffen">Brandes, Georg</author>
+            </bibl>
+            <bibl xml:id="pmb32093" ana="implied">
+               <title>Wolfgang Goethe</title>
+               <author ref="pmb10992" role="hat-geschaffen">Brandes, Georg</author>
+            </bibl>
+            <bibl xml:id="pmb33237" ana="implied">
+               <title>Voltaire und sein Jahrhundert</title>
+               <author ref="pmb10992" role="hat-geschaffen">Brandes, Georg</author>
             </bibl>
             <bibl xml:id="pmb33380" ana="implied">
-               <title type="main">Udvalgte Stykker</title>
-               <author role="hat-geschaffen" ref="pmb10992">Brandes, Georg</author>
+               <title>Udvalgte Stykker</title>
+               <author ref="pmb10992" role="hat-geschaffen">Brandes, Georg</author>
+            </bibl>
+            <bibl xml:id="pmb33376" ana="implied">
+               <title>Gaius Julius Cæsar</title>
+               <author ref="pmb10992" role="hat-geschaffen">Brandes, Georg</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb36300">
+               <placeName>Kopenhagen</placeName>
+               <placeName type="alternative-name">Copenhagen</placeName>
+               <location type="coords">
+                  <geo>55,67594 12,56553</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43570">Dänemark</placeName>
+                  <geo>56,0 10,0</geo>
+               </location>
+            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">
@@ -387,40 +394,6 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
-            <place xml:id="pmb175">
-               <placeName>Amerika</placeName>
-               <location type="coords">
-                  <geo>32,530833 -117,02</geo>
-               </location>
-            </place>
-            <place xml:id="pmb36300">
-               <placeName>Kopenhagen</placeName>
-               <placeName type="alternative-name">Kopenhagen</placeName>
-               <placeName type="legacy-name">Kopenhagen</placeName>
-               <placeName type="legacy-name-merge">Kopenhagen</placeName>
-               <placeName type="alternative-name">Copenhagen</placeName>
-               <placeName type="legacy-name-merge">Copenhagen</placeName>
-               <location type="coords">
-                  <geo>55,67594 12,56553</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43570">Dänemark</placeName>
-                  <geo>56,0 10,0</geo>
-               </location>
-            </place>
-            <place xml:id="pmb445">
-               <placeName>Rom</placeName>
-               <placeName type="legacy-name-merge">bei Rom</placeName>
-               <placeName type="legacy-name-merge">Roma</placeName>
-               <placeName type="legacy-name-merge">Rom</placeName>
-               <location type="coords">
-                  <geo>41,89193 12,51133</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
             <place xml:id="pmb68">
                <placeName>XVIII., Währing</placeName>
                <placeName type="legacy-name-merge">Währing</placeName>
@@ -434,6 +407,24 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb175">
+               <placeName>Amerika</placeName>
+               <location type="coords">
+                  <geo>32,530833 -117,02</geo>
+               </location>
+            </place>
+            <place xml:id="pmb445">
+               <placeName>Rom</placeName>
+               <placeName type="legacy-name-merge">bei Rom</placeName>
+               <placeName type="legacy-name-merge">Roma</placeName>
+               <location type="coords">
+                  <geo>41,89193 12,51133</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
                </location>
             </place>
          </listPlace>
@@ -451,7 +442,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -465,7 +456,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
             </org>
          </listOrg>

@@ -172,6 +172,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
@@ -195,34 +219,6 @@
                      </location>
                   </settlement>
                </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb11447" ana="comment">
                <persName>
@@ -272,41 +268,85 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb10883" ana="comment">
+               <persName>
+                  <forename>Alfred von</forename>
+                  <surname>Berger</surname>
+               </persName>
+               <birth>
+                  <date when="1853-04-30">1853-04-30</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1912-08-24">1912-08-24</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb6638" ana="comment">
+               <persName>
+                  <forename>Leopold von</forename>
+                  <surname>Chlumecký</surname>
+               </persName>
+               <birth>
+                  <date when="1873-02-03">1873-02-03</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1940-01-14">1940-01-14</date>
+                  <settlement ref="pmb54042">
+                     <placeName type="pref">Buenos Aires</placeName>
+                     <location>
+                        <geo>-34,61315 -58,37723</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb41611">
-               <title type="main">Cristinas Heimreise. Komödie</title>
+               <title>Cristinas Heimreise. Komödie</title>
                <title type="werk_link">http://ds.ub.uni-bielefeld.de/viewer/image/1667898/1/LOG_0000/</title>
                <title type="werk_arbeitstitel">Florindos Werk</title>
-               <author role="hat-geschaffen" ref="pmb11740">Hofmannsthal, Hugo von</author>
-            </bibl>
-            <bibl xml:id="pmb41555" ana="comment">
-               <title type="main">Österreichische Rundschau</title>
-               <title type="werk_link">https://de.wikisource.org/wiki/Zeitschriften_(Österreich)</title>
-               <author role="hat-herausgegeben" ref="pmb11447">Glossy, Karl</author>
-               <author role="hat-herausgegeben" ref="pmb10883">Berger, Alfred von</author>
-               <author role="hat-herausgegeben" ref="pmb6638">Chlumecký, Leopold von</author>
-               <author role="hat-herausgegeben" ref="pmb2527">Oppenheimer, Felix von</author>
+               <author ref="pmb11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             </bibl>
             <bibl xml:id="pmb41613" ana="comment">
-               <title type="main">Komödie in Prosa</title>
+               <title>Komödie in Prosa</title>
                <title type="werk_bibliografische-angabe">Österreichische Rundschau, Bd. 18, H. 1, 1.1.1909, S. 11–23</title>
+            </bibl>
+            <bibl xml:id="pmb41555" ana="comment">
+               <title>Österreichische Rundschau</title>
+               <title type="werk_link">https://de.wikisource.org/wiki/Zeitschriften_(Österreich)</title>
+               <author ref="pmb11447" role="hat-herausgegeben">Glossy, Karl</author>
+               <author ref="pmb10883" role="hat-herausgegeben">Berger, Alfred von</author>
+               <author ref="pmb6638" role="hat-herausgegeben">Chlumecký, Leopold von</author>
+               <author ref="pmb2527" role="hat-herausgegeben">Oppenheimer, Felix von</author>
             </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -315,10 +355,14 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
             </place>
          </listPlace>
          <listOrg>
-            <org xml:id="pmb29496">
+            <org xml:id="pmb29496" ana="comment">
                <orgName>Österreichische Rundschau</orgName>
                <location type="located_in_place">
                   <placeName ref="pmb236570">Opernring 3</placeName>
@@ -337,7 +381,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -351,7 +395,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
             </org>
          </listOrg>

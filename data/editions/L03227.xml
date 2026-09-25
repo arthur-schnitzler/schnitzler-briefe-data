@@ -173,6 +173,54 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb28645">
+               <persName>
+                  <forename>Moritz</forename>
+                  <surname>Coschell</surname>
+               </persName>
+               <birth>
+                  <date when="1872-09-18">1872-09-18</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1943-07-11">1943-07-11</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb14948">
                <persName>
                   <forename>Auguste</forename>
@@ -215,86 +263,14 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
-            <person xml:id="pmb28645">
-               <persName>
-                  <forename>Moritz</forename>
-                  <surname>Coschell</surname>
-               </persName>
-               <birth>
-                  <date when="1872-09-18">1872-09-18</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1943-07-11">1943-07-11</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb145682" ana="implied">
-               <title type="main">?? [Jüdisches Gemälde]</title>
-               <author role="hat-geschaffen" ref="pmb28645">Coschell, Moritz</author>
+               <title>?? [Jüdisches Gemälde]</title>
+               <author ref="pmb28645" role="hat-geschaffen">Coschell, Moritz</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb129">
-               <placeName>Grunewald</placeName>
-               <location type="coords">
-                  <geo>52,48338 13,26586</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
-               </location>
-            </place>
-            <place xml:id="pmb145685">
-               <placeName>Café Grunewald</placeName>
-               <location type="coords">
-                  <geo>52,48692 13,28608</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb129">Grunewald</placeName>
-                  <geo>52,48338 13,26586</geo>
-               </location>
-            </place>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
@@ -330,6 +306,26 @@
                <location type="located_in_place">
                   <placeName ref="pmb666">Ukraine</placeName>
                   <geo>49,0 32,0</geo>
+               </location>
+            </place>
+            <place xml:id="pmb129">
+               <placeName>Grunewald</placeName>
+               <location type="coords">
+                  <geo>52,48338 13,26586</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+            </place>
+            <place xml:id="pmb145685">
+               <placeName>Café Grunewald</placeName>
+               <location type="coords">
+                  <geo>52,48692 13,28608</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb129">Grunewald</placeName>
+                  <geo>52,48338 13,26586</geo>
                </location>
             </place>
          </listPlace>

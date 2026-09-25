@@ -90,7 +90,7 @@
                                  <measure unit="blatt" quantity="1"/>
                                  <measure unit="seite" quantity="2"/>
                                  <measure unit="kuvert" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="1570"/>
+                                 <measure unit="zeichenanzahl" quantity="1562"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -224,6 +224,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -247,6 +271,12 @@
                      </location>
                   </settlement>
                </death>
+            </person>
+            <person xml:id="pmb47572">
+               <persName>
+                  <forename>Josef</forename>
+                  <surname>Böhm</surname>
+               </persName>
             </person>
             <person xml:id="pmb11485">
                <persName>
@@ -296,34 +326,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2292">
                <persName>
                   <forename>Gertrude von</forename>
@@ -354,217 +356,17 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb47572">
-               <persName>
-                  <forename>Josef</forename>
-                  <surname>Böhm</surname>
-               </persName>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29923" ana="implied">
-               <title type="main">Der Weg ins Freie. Roman</title>
+               <title>Der Weg ins Freie. Roman</title>
                <title type="werk_bibliografische-angabe">Die neue Rundschau, Jg. 19, H. 1–6, Januar–Juni 1908</title>
                <title type="werk_arbeitstitel">Die Entrüsteten</title>
                <title type="werk_bibliografische-angabe">Arthur Schnitzler: Der Weg ins Freie. In: Die neue Rundschau, Jg. 19, H. 1, Januar 1908, S. 31–71.</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb11483">
-               <placeName>Obermais</placeName>
-               <placeName type="legacy-name-merge">Meran-Obermais</placeName>
-               <location type="coords">
-                  <geo>46,668909 11,1739</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43520">Meran</placeName>
-                  <geo>46,66817 11,15953</geo>
-               </location>
-            </place>
-            <place xml:id="pmb189">
-               <placeName>Semmering</placeName>
-               <placeName type="alternative-name">Gemeinde Semmering</placeName>
-               <placeName type="alternative-name">Semmering-Semmering-Kurort</placeName>
-               <placeName type="alternative-name">Kurort Semmering</placeName>
-               <placeName type="alternative-name">Semmering-Kurort</placeName>
-               <placeName type="alternative-name">Heilklimatischer Höhenluftkurort Semmering</placeName>
-               <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
-               <placeName type="legacy-name-merge">Semmering</placeName>
-               <placeName type="legacy-name-merge">Semmering</placeName>
-               <location type="coords">
-                  <geo>47,64224 15,8241</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb39975">
-               <placeName>Lago di Garda</placeName>
-               <placeName type="alternative-name">Gardasee</placeName>
-               <placeName type="alternative-name">Lake Garda</placeName>
-               <placeName type="legacy-name-merge">Gardasee</placeName>
-               <location type="coords">
-                  <geo>45,6316 10,660517</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb142864">Oberitalienische Seen</placeName>
-                  <geo>45,716 10,083</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb40120">
-               <placeName>Große Dolomitenstraße</placeName>
-               <location type="coords">
-                  <geo>46,4893 11,4036</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb969">Südtirol</placeName>
-                  <geo>46,71667 11,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb58636">Dolomiten</placeName>
-                  <geo>46,4138 11,8398</geo>
-               </location>
-            </place>
-            <place xml:id="pmb40294">
-               <placeName>Torbole sul Garda</placeName>
-               <placeName type="alternative-name">Turbel</placeName>
-               <location type="coords">
-                  <geo>45,86951 10,87561</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb36469">Nago-Torbole</placeName>
-                  <geo>45,87594 10,89106</geo>
-               </location>
-            </place>
-            <place xml:id="pmb40369">
-               <placeName>Pordoijoch</placeName>
-               <location type="coords">
-                  <geo>46,4875 11,8125</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb969">Südtirol</placeName>
-                  <geo>46,71667 11,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb40371">
-               <placeName>Karersee</placeName>
-               <location type="coords">
-                  <geo>46,409167 11,575</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb969">Südtirol</placeName>
-                  <geo>46,71667 11,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb40808">
-               <placeName>Palast Hotel Lido</placeName>
-               <location type="coords">
-                  <geo>45,883272 10,846236</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb465">Riva del Garda</placeName>
-                  <geo>45,88576 10,84118</geo>
-               </location>
-            </place>
-            <place xml:id="pmb40812">
-               <placeName>Hotel du Lac</placeName>
-               <location type="coords">
-                  <geo>45,883097 10,852736</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb465">Riva del Garda</placeName>
-                  <geo>45,88576 10,84118</geo>
-               </location>
-            </place>
-            <place xml:id="pmb40815">
-               <placeName>Grand Hotel Riva</placeName>
-               <location type="coords">
-                  <geo>45,885167 10,84253</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb465">Riva del Garda</placeName>
-                  <geo>45,88576 10,84118</geo>
-               </location>
-            </place>
-            <place xml:id="pmb423">
-               <placeName>Tirol</placeName>
-               <location type="coords">
-                  <geo>47,25 11,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb428">
-               <placeName>Welsberg-Taisten</placeName>
-               <placeName type="legacy-name-merge">Welsberg</placeName>
-               <placeName type="legacy-name-merge">Welsberg</placeName>
-               <placeName type="legacy-name-merge">Welsberg-Taisten</placeName>
-               <location type="coords">
-                  <geo>46,75774 12,10556</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb969">Südtirol</placeName>
-                  <geo>46,71667 11,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb724">Pustertal</placeName>
-                  <geo>46,75 12,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb43520">
-               <placeName>Meran</placeName>
-               <placeName type="alternative-name">Meran</placeName>
-               <placeName type="alternative-name">Merano</placeName>
-               <placeName type="legacy-name-merge">Meran</placeName>
-               <placeName type="legacy-name-merge">Merano</placeName>
-               <placeName type="legacy-name-merge">Meran</placeName>
-               <location type="coords">
-                  <geo>46,66817 11,15953</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb45277">
-               <placeName>Maria Schutz</placeName>
-               <placeName type="legacy-name">Maria Schutz</placeName>
-               <location type="coords">
-                  <geo>47,64168 15,86924</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb465">
-               <placeName>Riva del Garda</placeName>
-               <placeName type="alternative-name">Riva del Garda</placeName>
-               <placeName type="legacy-name-merge">Riva del Garda</placeName>
-               <location type="coords">
-                  <geo>45,88576 10,84118</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
             <place xml:id="pmb47570">
                <placeName>Hotel &amp; Pension Bavaria</placeName>
                <location type="coords">
@@ -575,14 +377,15 @@
                   <geo>46,668909 11,1739</geo>
                </location>
             </place>
-            <place xml:id="pmb651">
-               <placeName>Kärnten</placeName>
+            <place xml:id="pmb11483">
+               <placeName>Obermais</placeName>
+               <placeName type="legacy-name-merge">Meran-Obermais</placeName>
                <location type="coords">
-                  <geo>46,75 13,83333</geo>
+                  <geo>46,668909 11,1739</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb43520">Meran</placeName>
+                  <geo>46,66817 11,15953</geo>
                </location>
             </place>
             <place xml:id="pmb723">
@@ -612,6 +415,187 @@
                <location type="located_in_place">
                   <placeName ref="pmb40306">Italien</placeName>
                   <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb428">
+               <placeName>Welsberg-Taisten</placeName>
+               <placeName type="legacy-name-merge">Welsberg</placeName>
+               <location type="coords">
+                  <geo>46,75774 12,10556</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb724">Pustertal</placeName>
+                  <geo>46,75 12,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb45277">
+               <placeName>Maria Schutz</placeName>
+               <location type="coords">
+                  <geo>47,64168 15,86924</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb189">
+               <placeName>Semmering</placeName>
+               <placeName type="alternative-name">Gemeinde Semmering</placeName>
+               <placeName type="alternative-name">Semmering-Semmering-Kurort</placeName>
+               <placeName type="alternative-name">Kurort Semmering</placeName>
+               <placeName type="alternative-name">Semmering-Kurort</placeName>
+               <placeName type="alternative-name">Heilklimatischer Höhenluftkurort Semmering</placeName>
+               <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
+               <location type="coords">
+                  <geo>47,64224 15,8241</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb423">
+               <placeName>Tirol</placeName>
+               <location type="coords">
+                  <geo>47,25 11,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40808">
+               <placeName>Palast Hotel Lido</placeName>
+               <location type="coords">
+                  <geo>45,883272 10,846236</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb465">Riva del Garda</placeName>
+                  <geo>45,88576 10,84118</geo>
+               </location>
+            </place>
+            <place xml:id="pmb465">
+               <placeName>Riva del Garda</placeName>
+               <location type="coords">
+                  <geo>45,88576 10,84118</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40815">
+               <placeName>Grand Hotel Riva</placeName>
+               <location type="coords">
+                  <geo>45,885167 10,84253</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb465">Riva del Garda</placeName>
+                  <geo>45,88576 10,84118</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40812">
+               <placeName>Hotel du Lac</placeName>
+               <location type="coords">
+                  <geo>45,883097 10,852736</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb465">Riva del Garda</placeName>
+                  <geo>45,88576 10,84118</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40294">
+               <placeName>Torbole sul Garda</placeName>
+               <placeName type="alternative-name">Turbel</placeName>
+               <location type="coords">
+                  <geo>45,86951 10,87561</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb36469">Nago-Torbole</placeName>
+                  <geo>45,87594 10,89106</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40120">
+               <placeName>Große Dolomitenstraße</placeName>
+               <location type="coords">
+                  <geo>46,4893 11,4036</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb58636">Dolomiten</placeName>
+                  <geo>46,4138 11,8398</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40369">
+               <placeName>Pordoijoch</placeName>
+               <location type="coords">
+                  <geo>46,4875 11,8125</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40371">
+               <placeName>Karersee</placeName>
+               <location type="coords">
+                  <geo>46,409167 11,575</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb43520">
+               <placeName>Meran</placeName>
+               <placeName type="alternative-name">Merano</placeName>
+               <location type="coords">
+                  <geo>46,66817 11,15953</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb39975">
+               <placeName>Lago di Garda</placeName>
+               <placeName type="alternative-name">Gardasee</placeName>
+               <placeName type="alternative-name">Lake Garda</placeName>
+               <location type="coords">
+                  <geo>45,6316 10,660517</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb142864">Oberitalienische Seen</placeName>
+                  <geo>45,716 10,083</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb651">
+               <placeName>Kärnten</placeName>
+               <location type="coords">
+                  <geo>46,75 13,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

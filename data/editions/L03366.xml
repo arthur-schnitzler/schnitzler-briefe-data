@@ -128,12 +128,20 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1903-03-06" n="01">6. 3. 1903</date>
+               <placeName ref="#pmb40583">Dessauer Straße</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1903-03-06">6. 3. 1903</date>
+               <placeName ref="#pmb168">Berlin</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1903-03-07">7. 3. 1903</date>
                <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1903-03-07">7. 3. 1903</date>
-               <placeName ref="#pmb168">Berlin</placeName>
+               <placeName ref="#pmb88">Palasthotel Berlin</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann, Paul</ref>
@@ -149,6 +157,7 @@
          <change who="MAM" when="2023-12-04">Index check</change>
          <change when="2023-12-05" who="MAM">Durchsicht</change>
          <change who="LU" when="2024-01-11">Durchsicht</change>
+         <change who="SJ" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -198,7 +207,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -207,7 +216,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -215,28 +224,24 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listBibl>
+            <bibl xml:id="pmb33243" ana="comment">
+               <title>Tagebuch</title>
+               <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            </bibl>
             <bibl xml:id="pmb29857" ana="comment">
-               <title type="main">Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
+               <title>Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
                <title type="werk_arbeitstitel">Shawl</title>
                <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=601&amp;teil=0111&amp;seite=00000001&amp;zoom=2</title>
                <title type="legacy-name-merge">Der Schleier der Beatrice</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
-            </bibl>
-            <bibl xml:id="pmb33243" ana="comment">
-               <title type="main">Tagebuch</title>
-               <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb168">
+            <place xml:id="pmb168" ana="comment">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
                <placeName type="alternative-name">Barlīn</placeName>
@@ -251,29 +256,17 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb40583">
+               <placeName>Dessauer Straße</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>52,504956 13,378587</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
                </location>
             </place>
-            <place xml:id="pmb88">
+            <place xml:id="pmb88" ana="comment">
                <placeName>Palasthotel Berlin</placeName>
                <location type="coords">
                   <geo>52,509241 13,376984</geo>
@@ -285,6 +278,28 @@
                <location type="located_in_place">
                   <placeName ref="pmb141471">Potsdamer Platz</placeName>
                   <geo>52,51028 13,3759</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
             <place xml:id="pmb3" ana="comment">
@@ -324,7 +339,7 @@
                   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb168.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb168.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
@@ -339,7 +354,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004523</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb168</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.3</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.2.3</idno>
                </location>
             </org>
          </listOrg>

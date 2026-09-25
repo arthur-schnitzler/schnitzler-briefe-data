@@ -83,7 +83,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="787"/>
+                                 <measure unit="zeichenanzahl" quantity="786"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -104,7 +104,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="2" type="delivery">
-                                    <placeName ref="#pmb59">Wien 9/3 72</placeName>
+                                    <placeName ref="#pmb365208">Wien 9/3 72</placeName>
                                     <date when="1898-09-07">7. 9. 98</date>
                                     <time>8.N</time>
                                     <addSpan>Bestellt</addSpan>
@@ -149,6 +149,10 @@
                <date when="1898-09-05" n="01">5. 9. 1898</date>
                <placeName ref="#pmb885">Lugano</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1898-09-05">5. 9. 1898</date>
+               <placeName ref="#pmb885">Lugano</placeName>
+            </correspAction>
             <correspAction type="delivered">
                <date when="1898-09-07">7. 9. 1898</date>
                <placeName ref="#pmb59">IX., Alsergrund</placeName>
@@ -176,6 +180,7 @@
          <change who="MAM" when="2020-04-20">Durchsicht</change>
          <change when="2020-04-21" who="MAM">Index check</change>
          <change who="MAM" when="2023-05-12">Das war keine Fussnote.</change>
+         <change who="MAM" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -260,7 +265,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -269,7 +274,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -277,24 +282,56 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb31535">
-               <title type="main">Der Tod Georgs</title>
+               <title>Der Tod Georgs</title>
                <title type="alternative-name">Der Götterliebling</title>
                <title type="werk_link">https://archive.org/details/dertodgeorgs00beergoog</title>
-               <author role="hat-geschaffen" ref="pmb10863">Beer-Hofmann, Richard</author>
+               <author ref="pmb10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
             </bibl>
             <bibl xml:id="pmb41293">
-               <title type="main">Il Secolo</title>
+               <title>Il Secolo</title>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb885">
+               <placeName>Lugano</placeName>
+               <location type="coords">
+                  <geo>46,01008 8,96004</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43435">Schweiz</placeName>
+                  <geo>47,00016 8,01427</geo>
+               </location>
+            </place>
+            <place xml:id="pmb365208">
+               <placeName>9/3 Post- und Telegraphenamt 72</placeName>
+               <location type="coords">
+                  <geo>48,216197 16,356623</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb731">Garnisongasse</placeName>
+                  <geo>48,216533356678 16,356214321972</geo>
+               </location>
+            </place>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Thurygrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
             <place xml:id="pmb168934">
                <placeName>Frankgasse 1</placeName>
                <location type="coords">
@@ -309,12 +346,32 @@
                   <geo>48,215516628628 16,356475515829</geo>
                </location>
             </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -340,6 +397,16 @@
                   <geo>46,01008 8,96004</geo>
                </location>
             </place>
+            <place xml:id="pmb513">
+               <placeName>Hôtel du Parc</placeName>
+               <location type="coords">
+                  <geo>46,002723 8,946726</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb885">Lugano</placeName>
+                  <geo>46,01008 8,96004</geo>
+               </location>
+            </place>
             <place xml:id="pmb44626">
                <placeName>Villa Beauséjour</placeName>
                <location type="located_in_place">
@@ -357,63 +424,8 @@
                   <geo>46,01008 8,96004</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb513">
-               <placeName>Hôtel du Parc</placeName>
-               <location type="coords">
-                  <geo>46,002723 8,946726</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb885">Lugano</placeName>
-                  <geo>46,01008 8,96004</geo>
-               </location>
-            </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
-               <location type="coords">
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb885">
-               <placeName>Lugano</placeName>
-               <location type="coords">
-                  <geo>46,01008 8,96004</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43435">Schweiz</placeName>
-                  <geo>47,00016 8,01427</geo>
-               </location>
-            </place>
             <place xml:id="pmb886">
                <placeName>Mailand</placeName>
-               <placeName type="legacy-name-merge">Mailand</placeName>
                <location type="coords">
                   <geo>45,46427 9,18951</geo>
                </location>

@@ -123,7 +123,7 @@
                <placeName ref="#pmb758">Höhlenstein</placeName>
             </correspAction>
             <correspAction type="transmitted">
-               <placeName ref="#pmb758">Landro</placeName>
+               <placeName ref="#pmb758">Höhlenstein</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -162,6 +162,54 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2167">
+               <persName>
+                  <forename>Felix</forename>
+                  <surname>Salten</surname>
+               </persName>
+               <birth>
+                  <date when="1869-09-06">1869-09-06</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-10-08">1945-10-08</date>
+                  <settlement ref="pmb484">
+                     <placeName type="pref">Zürich</placeName>
+                     <location>
+                        <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb12692">
                <persName>
                   <forename>Heinrich</forename>
@@ -188,58 +236,6 @@
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
-            <person xml:id="pmb2167">
-               <persName>
-                  <forename>Felix</forename>
-                  <surname>Salten</surname>
-               </persName>
-               <birth>
-                  <date when="1869-09-06">1869-09-06</date>
-                  <settlement ref="pmb43471">
-                     <placeName type="pref">Budapest</placeName>
-                     <location>
-                        <geo>47,49835 19,04045</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1945-10-08">1945-10-08</date>
-                  <settlement ref="pmb484">
-                     <placeName type="pref">Zürich</placeName>
-                     <location>
-                        <geo>47,37174 8,54226</geo>
                      </location>
                   </settlement>
                </death>
@@ -300,10 +296,30 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb758">
+               <placeName>Höhlenstein</placeName>
+               <placeName type="namensvariante">Landro</placeName>
+               <location type="coords">
+                  <geo>46,641944 12,2322</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb987">Toblach</placeName>
+                  <geo>46,72493 12,22109</geo>
+               </location>
+            </place>
+            <place xml:id="pmb470">
+               <placeName>Edlach</placeName>
+               <location type="coords">
+                  <geo>47,69255 15,80915</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb483">Reichenau an der Rax</placeName>
+                  <geo>47,7 15,83333</geo>
+               </location>
+            </place>
             <place xml:id="pmb1003">
                <placeName>Niederösterreich</placeName>
                <placeName type="alternative-name">Nideristaraich</placeName>
-               <placeName type="legacy-name-merge">Niederösterreich</placeName>
                <location type="coords">
                   <geo>48,33333 15,75</geo>
                </location>
@@ -327,17 +343,6 @@
                   <geo>46,641944 12,2322</geo>
                </location>
             </place>
-            <place xml:id="pmb39757">
-               <placeName>Ampezzo</placeName>
-               <placeName type="alternative-name">Ampezzo</placeName>
-               <location type="coords">
-                  <geo>46,41459 12,79634</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
             <place xml:id="pmb43157">
                <placeName>Monte Cristallo</placeName>
                <location type="coords">
@@ -348,30 +353,18 @@
                   <geo>45,5 11,75</geo>
                </location>
             </place>
-            <place xml:id="pmb470">
-               <placeName>Edlach</placeName>
+            <place xml:id="pmb39757">
+               <placeName>Ampezzo</placeName>
                <location type="coords">
-                  <geo>47,69255 15,80915</geo>
+                  <geo>46,41459 12,79634</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb483">Reichenau an der Rax</placeName>
-                  <geo>47,7 15,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb758">
-               <placeName>Höhlenstein</placeName>
-               <placeName type="namensvariante">Landro</placeName>
-               <location type="coords">
-                  <geo>46,641944 12,2322</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb987">Toblach</placeName>
-                  <geo>46,72493 12,22109</geo>
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
                </location>
             </place>
             <place xml:id="pmb969">
                <placeName>Südtirol</placeName>
-               <placeName type="legacy-name-merge">Südtirol</placeName>
                <placeName type="namensvariante">Autonome Provinz Bozen</placeName>
                <location type="coords">
                   <geo>46,71667 11,5</geo>

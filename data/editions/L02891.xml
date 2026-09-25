@@ -187,7 +187,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -196,7 +196,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -204,10 +204,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb13055" ana="comment">
                <persName>
@@ -281,26 +277,50 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb11701" ana="comment">
+               <persName>
+                  <forename>Georg</forename>
+                  <surname>Hirschfeld</surname>
+               </persName>
+               <birth>
+                  <date when="1873-02-11">1873-02-11</date>
+                  <settlement ref="pmb168">
+                     <placeName type="pref">Berlin</placeName>
+                     <location>
+                        <geo>52,52437 13,41053</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1942-01-17">1942-01-17</date>
+                  <settlement ref="pmb45258">
+                     <placeName type="pref">München</placeName>
+                     <location>
+                        <geo>48,13743 11,57549</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb140839" ana="comment">
-               <title type="main">Wiener Burgtheater. (»Agnes Jordan« von Georg Hirschfeld.)</title>
+            <bibl xml:id="pmb140839" ana="implied">
+               <title>Wiener Burgtheater. (»Agnes Jordan« von Georg Hirschfeld.)</title>
                <title type="werk_bibliografische-angabe">–rm– [=Arthur Schnitzler]: Wiener Burgtheater. (»Agnes Jordan« von Georg Hirschfeld.). In: Frankfurter Zeitung, Jg. 44, Nr. 296, 25. 10. 1899, Zweites Morgenblatt, S. 1</title>
                <title type="werk_unter-diesem-namen-oder-kurzel-veroffentlicht">–rm–</title>
-               <author role="hat-unter-einem-kurzel-veroffentlicht" ref="pmb2121">Schnitzler, Arthur</author>
-            </bibl>
-            <bibl xml:id="pmb30474" ana="comment">
-               <title type="main">Agnes Jordan. Schauspiel in fünf Akten</title>
-               <author role="hat-geschaffen" ref="pmb11701">Hirschfeld, Georg</author>
-            </bibl>
-            <bibl xml:id="pmb33243" ana="comment">
-               <title type="main">Tagebuch</title>
-               <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-unter-einem-kurzel-veroffentlicht">Schnitzler, Arthur</author>
             </bibl>
             <bibl xml:id="pmb36344" ana="comment">
-               <title type="main">Frankfurter Zeitung</title>
+               <title>Frankfurter Zeitung</title>
                <title type="werk_link">https://sammlungen.ub.uni-frankfurt.de/periodika/periodical/titleinfo/6198103</title>
+            </bibl>
+            <bibl xml:id="pmb30474" ana="comment">
+               <title>Agnes Jordan. Schauspiel in fünf Akten</title>
+               <author ref="pmb11701" role="hat-geschaffen">Hirschfeld, Georg</author>
+            </bibl>
+            <bibl xml:id="pmb33243" ana="comment">
+               <title>Tagebuch</title>
+               <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
@@ -316,6 +336,28 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
+            <place xml:id="pmb50" ana="comment">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
@@ -329,28 +371,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>
@@ -375,7 +395,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -389,7 +409,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb63189">Schubertring</placeName>
@@ -422,7 +442,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurt_am_Main</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb146.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
@@ -437,7 +457,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004069</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb146</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb146.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb144603">Redaktion der Frankfurter Zeitung</placeName>

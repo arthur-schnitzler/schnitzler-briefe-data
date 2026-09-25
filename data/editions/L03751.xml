@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="459"/>
+                                 <measure unit="zeichenanzahl" quantity="460"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -92,7 +92,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1" type="transmission">
-                                    <placeName ref="#pmb68">
+                                    <placeName ref="#pmb365223">
                                        <supplied>18/<hi rend="subscript">1</hi>
                                           Wien</supplied> 110</placeName>
                                     <date when="1923-07-30">
@@ -120,7 +120,7 @@
             </correspAction>
             <correspAction type="transmitted">
                <date when="1923-07-30">30. 7. 1923</date>
-               <placeName ref="#pmb68">18/1 Wien 110</placeName>
+               <placeName ref="#pmb365223">18/1 Post- und Telegraphenamt 110</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb13212">Zweig, Stefan</persName>
@@ -158,6 +158,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb13212">
                <persName>
                   <forename>Stefan</forename>
@@ -182,36 +206,22 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb365223">
+               <placeName>18/1 Post- und Telegraphenamt 110</placeName>
+               <location type="coords">
+                  <geo>48,22513 16,343276</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41463">Schulgasse</placeName>
+                  <geo>47,71222 13,62186</geo>
+               </location>
+            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">
@@ -230,17 +240,6 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
-            <place xml:id="pmb230">
-               <placeName>Österreichischer Hof</placeName>
-               <placeName type="legacy-name-merge">Hotel Englischer Hof [Salzburg]</placeName>
-               <location type="coords">
-                  <geo>47,802045 13,043401</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb30">Salzburg</placeName>
-                  <geo>47,80067 13,04532</geo>
-               </location>
-            </place>
             <place xml:id="pmb253003">
                <placeName>Paschinger Schlössl</placeName>
                <placeName type="ort_namensvariante">Kapuzinerberg 5</placeName>
@@ -254,6 +253,56 @@
                <location type="located_in_place">
                   <placeName ref="pmb30">Salzburg</placeName>
                   <geo>47,80067 13,04532</geo>
+               </location>
+            </place>
+            <place xml:id="pmb68">
+               <placeName>XVIII., Währing</placeName>
+               <placeName type="legacy-name-merge">Währing</placeName>
+               <location type="coords">
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb30">
+               <placeName>Salzburg</placeName>
+               <placeName type="alternative-name">Iuvavum</placeName>
+               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
+               <placeName type="legacy-name-merge">Salzburg?</placeName>
+               <location type="coords">
+                  <geo>47,80067 13,04532</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb697">Salzburg [Land]</placeName>
+                  <geo>47,41667 13,25</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
             <place xml:id="pmb253605">
@@ -270,57 +319,15 @@
                   <geo>48,2081 12,9291</geo>
                </location>
             </place>
-            <place xml:id="pmb30">
-               <placeName>Salzburg</placeName>
-               <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="alternative-name">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg?</placeName>
+            <place xml:id="pmb230">
+               <placeName>Österreichischer Hof</placeName>
+               <placeName type="legacy-name-merge">Hotel Englischer Hof [Salzburg]</placeName>
                <location type="coords">
+                  <geo>47,802045 13,043401</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb30">Salzburg</placeName>
                   <geo>47,80067 13,04532</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg [Land]</placeName>
-                  <geo>47,41667 13,25</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb68">
-               <placeName>XVIII., Währing</placeName>
-               <placeName type="legacy-name-merge">Währing</placeName>
-               <location type="coords">
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
          </listPlace>

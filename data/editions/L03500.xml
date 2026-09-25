@@ -125,7 +125,7 @@
             </correspAction>
             <correspAction type="transmitted">
                <date when="1909-06-28">28. 6. 1909</date>
-               <placeName ref="#pmb850">Venezia Ferrovia</placeName>
+               <placeName ref="#pmb850">Stazione di Venezia Santa Lucia</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -162,34 +162,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -210,6 +182,30 @@
                      <placeName type="pref">Zürich</placeName>
                      <location>
                         <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -240,19 +236,27 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb147816">
-               <placeName>Santa Maria della Salute</placeName>
-               <placeName type="legacy-name-merge">Santa Maria della Salute</placeName>
+            <place xml:id="pmb850">
+               <placeName>Stazione di Venezia Santa Lucia</placeName>
+               <placeName type="namensvariante">Venezia Ferrovia</placeName>
+               <placeName type="ort_namensvariante">Bahnhof Venedig</placeName>
                <location type="coords">
-                  <geo>45,43062 12,33471</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
+                  <geo>45,44143 12,32024</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb462">Venedig</placeName>
                   <geo>45,43713 12,33265</geo>
+               </location>
+            </place>
+            <place xml:id="pmb462">
+               <placeName>Venedig</placeName>
+               <placeName type="legacy-name-merge">Venice</placeName>
+               <location type="coords">
+                  <geo>45,43713 12,33265</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
                </location>
             </place>
             <place xml:id="pmb168940">
@@ -277,9 +281,7 @@
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -298,32 +300,15 @@
                   <geo>48,4054 16,4887</geo>
                </location>
             </place>
-            <place xml:id="pmb462">
-               <placeName>Venedig</placeName>
-               <placeName type="alternative-name">Venedig</placeName>
-               <placeName type="legacy-name-merge">Venice</placeName>
-               <placeName type="legacy-name-merge">Venedig</placeName>
-               <location type="coords">
-                  <geo>45,43713 12,33265</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -332,13 +317,19 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
             </place>
-            <place xml:id="pmb850">
-               <placeName>Stazione di Venezia Santa Lucia</placeName>
-               <placeName type="namensvariante">Venezia Ferrovia</placeName>
-               <placeName type="ort_namensvariante">Bahnhof Venedig</placeName>
+            <place xml:id="pmb147816">
+               <placeName>Santa Maria della Salute</placeName>
                <location type="coords">
-                  <geo>45,44143 12,32024</geo>
+                  <geo>45,43062 12,33471</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb462">Venedig</placeName>

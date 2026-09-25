@@ -206,7 +206,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -215,7 +215,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -223,17 +223,13 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29859">
-               <title type="main">Marionetten. Drei Einakter</title>
+               <title>Marionetten. Drei Einakter</title>
                <title type="werk_link">https://www.arthur-schnitzler.de/edition/genetisch</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
@@ -245,14 +241,55 @@
                <placeName type="alternative-name">Semmering-Kurort</placeName>
                <placeName type="alternative-name">Heilklimatischer Höhenluftkurort Semmering</placeName>
                <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
-               <placeName type="legacy-name-merge">Semmering</placeName>
-               <placeName type="legacy-name-merge">Semmering</placeName>
                <location type="coords">
                   <geo>47,64224 15,8241</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb413">
+               <placeName>Südbahnhotel [Semmering]</placeName>
+               <location type="coords">
+                  <geo>47,647222 15,83</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb189">Semmering</placeName>
+                  <geo>47,64224 15,8241</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40884">
+               <placeName>Rax</placeName>
+               <placeName type="legacy-name-merge">Raxalpe</placeName>
+               <location type="coords">
+                  <geo>47,68897 15,68948</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1003">Niederösterreich</placeName>
+                  <geo>48,33333 15,75</geo>
                </location>
             </place>
             <place xml:id="pmb27068">
@@ -269,23 +306,10 @@
                   <geo>46,41667 10,0</geo>
                </location>
             </place>
-            <place xml:id="pmb40884">
-               <placeName>Rax</placeName>
-               <placeName type="legacy-name-merge">Raxalpe</placeName>
-               <location type="coords">
-                  <geo>47,68897 15,68948</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb1003">Niederösterreich</placeName>
-                  <geo>48,33333 15,75</geo>
-               </location>
-            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -304,48 +328,6 @@
                   <geo>48,4054 16,4887</geo>
                </location>
             </place>
-            <place xml:id="pmb413">
-               <placeName>Südbahnhotel [Semmering]</placeName>
-               <location type="coords">
-                  <geo>47,647222 15,83</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb189">Semmering</placeName>
-                  <geo>47,64224 15,8241</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb795">
-               <placeName>Elisabethstraße [Wien]</placeName>
-               <location type="coords">
-                  <geo>48,202505409168 16,365996258067</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-            </place>
             <place xml:id="pmb860">
                <placeName>Graz</placeName>
                <placeName type="ort_namensvariante">Grätz</placeName>
@@ -361,10 +343,19 @@
                   <geo>47,38 15,7925</geo>
                </location>
             </place>
+            <place xml:id="pmb795">
+               <placeName>Elisabethstraße [Wien]</placeName>
+               <location type="coords">
+                  <geo>48,202505409168 16,365996258067</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+            </place>
             <place xml:id="pmb20" ana="comment">
                <placeName>Volkstheater</placeName>
                <placeName type="namensvariante">Deutsches Volkstheater</placeName>
-               <placeName type="legacy-name-merge">Deutsches Volkstheater</placeName>
                <location type="coords">
                   <geo>48,205142 16,3566</geo>
                </location>
@@ -382,7 +373,7 @@
                   <geo>47,33333 13,33333</geo>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/2782113/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41240/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb41240.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb41240.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92143/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92203/</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb41240.html</idno>
@@ -393,7 +384,7 @@
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4043271-3</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41240.html</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb41240</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9</idno>
                </location>
             </org>
          </listOrg>

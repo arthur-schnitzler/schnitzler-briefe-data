@@ -203,7 +203,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -212,7 +212,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -220,10 +220,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb24230">
                <persName>
@@ -276,15 +272,61 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30219" ana="implied">
-               <title type="main">Das Vermächtnis. Schauspiel in drei Akten</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <title>Das Vermächtnis. Schauspiel in drei Akten</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
             <bibl xml:id="pmb32512" ana="implied">
-               <title type="main">Der Abenteurer und die Sängerin oder Die Geschenke des Lebens</title>
-               <author role="hat-geschaffen" ref="pmb11740">Hofmannsthal, Hugo von</author>
+               <title>Der Abenteurer und die Sängerin oder Die Geschenke des Lebens</title>
+               <author ref="pmb11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb75">
+               <placeName>Hinterbrühl</placeName>
+               <location type="coords">
+                  <geo>48,08611 16,24809</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb44413">Brühl</placeName>
+                  <geo>48,08509 16,24801</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb34104">
+               <placeName>Gießhüblerstraße</placeName>
+               <location type="coords">
+                  <geo>48,091236 16,250761</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb75">Hinterbrühl</placeName>
+                  <geo>48,08611 16,24809</geo>
+               </location>
+            </place>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
@@ -300,64 +342,15 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
-            <place xml:id="pmb34104">
-               <placeName>Gießhüblerstraße</placeName>
-               <location type="coords">
-                  <geo>48,091236 16,250761</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb75">Hinterbrühl</placeName>
-                  <geo>48,08611 16,24809</geo>
-               </location>
-            </place>
             <place xml:id="pmb462">
                <placeName>Venedig</placeName>
-               <placeName type="alternative-name">Venedig</placeName>
                <placeName type="legacy-name-merge">Venice</placeName>
-               <placeName type="legacy-name-merge">Venedig</placeName>
                <location type="coords">
                   <geo>45,43713 12,33265</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb40306">Italien</placeName>
                   <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb75">
-               <placeName>Hinterbrühl</placeName>
-               <placeName type="legacy-name-merge">Hinterbrühl</placeName>
-               <location type="coords">
-                  <geo>48,08611 16,24809</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb44413">Brühl</placeName>
-                  <geo>48,08509 16,24801</geo>
                </location>
             </place>
          </listPlace>

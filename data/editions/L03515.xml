@@ -193,7 +193,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -202,35 +202,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
-            <person xml:id="pmb17164" ana="implied">
-               <persName>
-                  <forename>Eva Marie</forename>
-                  <surname>Goldmann</surname>
-               </persName>
-               <birth>
-                  <date when="1877-10-27">1877-10-27</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1937-11-02">1937-11-02</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -263,19 +235,43 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb17164" ana="implied">
+               <persName>
+                  <forename>Eva Marie</forename>
+                  <surname>Goldmann</surname>
+               </persName>
+               <birth>
+                  <date when="1877-10-27">1877-10-27</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1937-11-02">1937-11-02</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb30053" ana="comment">
-               <title type="main">Buch der Sprüche und Bedenken</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+            <bibl xml:id="pmb30053" ana="implied">
+               <title>Buch der Sprüche und Bedenken</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
-            <bibl xml:id="pmb32101" ana="comment">
-               <title type="main">Es ist mein Wille! Eine unwahrscheinliche Begebenheit aus dem 18. Jahrhundert in einem Akt</title>
+            <bibl xml:id="pmb32101" ana="implied">
+               <title>Es ist mein Wille! Eine unwahrscheinliche Begebenheit aus dem 18. Jahrhundert in einem Akt</title>
                <title type="werk_namensvariante">Es ist mein Wille! Eine unwahrscheinliche Begebenheit aus dem achtzehnten Jahrhundert. In einem Akt</title>
                <title type="werk_bibliografische-angabe">Paul Goldmann: Es ist mein Wille! Eine unwahrscheinliche Begebenheit aus dem 18. Jahrhundert in einem Akt. Wien: Österreichische Journal-A. G. 1924</title>
                <title type="werk_bibliografische-angabe">Paul Goldmann: Es ist mein Wille! Eine unwahrscheinliche Begebenheit aus dem achtzehnten Jahrhundert. In einem Akt. In: Neue Freie Presse, Nr. 21335, 2. 2. 1924, Morgenblatt, S. 31–35</title>
                <title type="werk_link">https://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19240202&amp;ref=anno-search&amp;seite=31</title>
-               <author role="hat-geschaffen" ref="pmb11485">Goldmann, Paul</author>
+               <author ref="pmb11485" role="hat-geschaffen">Goldmann, Paul</author>
             </bibl>
          </listBibl>
          <listPlace>
@@ -294,19 +290,15 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
+            <place xml:id="pmb50" ana="comment">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -315,8 +307,23 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
             </place>
-            <place xml:id="pmb520">
+            <place xml:id="pmb63858">
+               <placeName>Stauffenbergstraße</placeName>
+               <placeName type="ort_fruherer-name">Bendlerstraße</placeName>
+               <location type="coords">
+                  <geo>52,50803115685549 13,363494826997902</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+            </place>
+            <place xml:id="pmb520" ana="comment">
                <placeName>Akademietheater</placeName>
                <placeName type="ort_namensvariante">Bösendorferstraße 12</placeName>
                <location type="coords">
@@ -335,20 +342,9 @@
                   <geo>48,201213 16,371141</geo>
                </location>
             </place>
-            <place xml:id="pmb63858">
-               <placeName>Stauffenbergstraße</placeName>
-               <placeName type="ort_fruherer-name">Bendlerstraße</placeName>
-               <location type="coords">
-                  <geo>52,50803115685549 13,363494826997902</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
-               </location>
-            </place>
          </listPlace>
          <listOrg>
-            <org xml:id="pmb29351">
+            <org xml:id="pmb29351" ana="comment">
                <orgName>Neue Freie Presse</orgName>
                <orgName type="werk_link">http://anno.onb.ac.at/info/nfp_info.htm</orgName>
                <location type="located_in_place">
@@ -368,7 +364,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -382,7 +378,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb63189">Schubertring</placeName>
@@ -413,7 +409,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -427,7 +423,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb235885">Phaidon Verlag</placeName>

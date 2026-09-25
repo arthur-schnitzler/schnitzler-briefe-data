@@ -175,6 +175,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -223,34 +247,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -293,15 +289,13 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb49338" ana="comment">
-               <title type="main">Ausseer Cur- und Fremden-Liste</title>
+               <title>Ausseer Cur- und Fremden-Liste</title>
                <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=cba</title>
             </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb213">
                <placeName>Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
-               <placeName type="legacy-name-merge">Bad Ischl</placeName>
                <location type="coords">
                   <geo>47,71109 13,61893</geo>
                </location>
@@ -310,27 +304,8 @@
                   <geo>47,75 13,5</geo>
                </location>
             </place>
-            <place xml:id="pmb30">
-               <placeName>Salzburg</placeName>
-               <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="alternative-name">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <placeName type="legacy-name-merge">Salzburg</placeName>
-               <placeName type="legacy-name-merge">Salzburg?</placeName>
-               <location type="coords">
-                  <geo>47,80067 13,04532</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg [Land]</placeName>
-                  <geo>47,41667 13,25</geo>
-               </location>
-            </place>
             <place xml:id="pmb34401">
                <placeName>Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
-               <placeName type="legacy-name-merge">Altaussee</placeName>
                <location type="coords">
                   <geo>47,639444 13,763333</geo>
                </location>
@@ -343,12 +318,22 @@
                   <geo>47,75 13,5</geo>
                </location>
             </place>
+            <place xml:id="pmb30">
+               <placeName>Salzburg</placeName>
+               <placeName type="alternative-name">Iuvavum</placeName>
+               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
+               <placeName type="legacy-name-merge">Salzburg?</placeName>
+               <location type="coords">
+                  <geo>47,80067 13,04532</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb697">Salzburg [Land]</placeName>
+                  <geo>47,41667 13,25</geo>
+               </location>
+            </place>
             <place xml:id="pmb415">
                <placeName>Bad Aussee</placeName>
                <placeName type="ort_fruherer-name">Markt Aussee</placeName>
-               <placeName type="legacy-name-merge">Bad Aussee</placeName>
-               <placeName type="legacy-name-merge">Bad Aussee</placeName>
-               <placeName type="legacy-name-merge">Markt Aussee</placeName>
                <location type="coords">
                   <geo>47,60998 13,78243</geo>
                </location>
@@ -374,16 +359,12 @@
             <place xml:id="pmb50" ana="comment">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -391,6 +372,10 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
          </listPlace>

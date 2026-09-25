@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="209"/>
+                                 <measure unit="zeichenanzahl" quantity="208"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -212,7 +212,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -221,7 +221,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -229,10 +229,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb44758">
                <persName>
@@ -250,6 +246,30 @@
                </birth>
                <death>
                   <date when="1807-04-10">1807-04-10</date>
+                  <settlement ref="pmb197">
+                     <placeName type="pref">Weimar</placeName>
+                     <location>
+                        <geo>50,97361 11,33806</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb4996">
+               <persName>
+                  <forename>Johann Gottfried von</forename>
+                  <surname>Herder</surname>
+               </persName>
+               <birth>
+                  <date when="1744-08-25">1744-08-25</date>
+                  <settlement ref="pmb56118">
+                     <placeName type="pref">Morąg</placeName>
+                     <location>
+                        <geo>53,91711 19,92602</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1803-12-18">1803-12-18</date>
                   <settlement ref="pmb197">
                      <placeName type="pref">Weimar</placeName>
                      <location>
@@ -294,38 +314,25 @@
                   <date when="1813-05-11">1813-05-11</date>
                </death>
             </person>
-            <person xml:id="pmb4996">
-               <persName>
-                  <forename>Johann Gottfried von</forename>
-                  <surname>Herder</surname>
-               </persName>
-               <birth>
-                  <date when="1744-08-25">1744-08-25</date>
-                  <settlement ref="pmb56118">
-                     <placeName type="pref">Morąg</placeName>
-                     <location>
-                        <geo>53,91711 19,92602</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1803-12-18">1803-12-18</date>
-                  <settlement ref="pmb197">
-                     <placeName type="pref">Weimar</placeName>
-                     <location>
-                        <geo>50,97361 11,33806</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb46586" ana="implied">
-               <title type="main">Anna Amalia und ihre Begleiter im Garten der Villa d’Este zu Tivoli</title>
-               <author role="hat-geschaffen" ref="pmb44761">Schütz, Johann Georg</author>
+               <title>Anna Amalia und ihre Begleiter im Garten der Villa d’Este zu Tivoli</title>
+               <author ref="pmb44761" role="hat-geschaffen">Schütz, Johann Georg</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb197">
+               <placeName>Weimar</placeName>
+               <placeName type="legacy-name-merge">Kreisfreie Stadt Weimar</placeName>
+               <location type="coords">
+                  <geo>50,97361 11,33806</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -345,27 +352,26 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
-            <place xml:id="pmb194">
-               <placeName>Schloss Tiefurt</placeName>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
-                  <geo>50,993889 11,363611</geo>
+                  <geo>48,208333 16,373056</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb197">Weimar</placeName>
-                  <geo>50,97361 11,33806</geo>
-               </location>
-            </place>
-            <place xml:id="pmb197">
-               <placeName>Weimar</placeName>
-               <placeName type="alternative-name">Weimar</placeName>
-               <placeName type="legacy-name-merge">Kreisfreie Stadt Weimar</placeName>
-               <placeName type="legacy-name-merge">Weimar</placeName>
-               <location type="coords">
-                  <geo>50,97361 11,33806</geo>
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
             <place xml:id="pmb44762">
@@ -378,26 +384,14 @@
                   <geo>41,95952 12,8016</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb194">
+               <placeName>Schloss Tiefurt</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>50,993889 11,363611</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb197">Weimar</placeName>
+                  <geo>50,97361 11,33806</geo>
                </location>
             </place>
          </listPlace>

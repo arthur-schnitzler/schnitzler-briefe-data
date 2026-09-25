@@ -81,7 +81,7 @@
                               <extent>
                                  <measure unit="blatt" quantity="1"/>
                                  <measure unit="seite" quantity="3"/>
-                                 <measure unit="zeichenanzahl" quantity="841"/>
+                                 <measure unit="zeichenanzahl" quantity="840"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -191,6 +191,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10815">
                <persName>
                   <forename>Hermann</forename>
@@ -215,58 +239,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb12504">
-               <persName>
-                  <forename>Max</forename>
-                  <surname>Reinhardt</surname>
-               </persName>
-               <birth>
-                  <date when="1873-09-09">1873-09-09</date>
-                  <settlement ref="pmb662">
-                     <placeName type="pref">Baden bei Wien</placeName>
-                     <location>
-                        <geo>48,00543 16,23264</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1943-10-30">1943-10-30</date>
-                  <settlement ref="pmb44053">
-                     <placeName type="pref">New York City</placeName>
-                     <location>
-                        <geo>40,71427 -74,00597</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2303">
                <persName>
                   <forename>Helene</forename>
@@ -287,6 +259,30 @@
                      <placeName type="pref">Hamburg</placeName>
                      <location>
                         <geo>53,55055 9,993333</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb12504">
+               <persName>
+                  <forename>Max</forename>
+                  <surname>Reinhardt</surname>
+               </persName>
+               <birth>
+                  <date when="1873-09-09">1873-09-09</date>
+                  <settlement ref="pmb662">
+                     <placeName type="pref">Baden bei Wien</placeName>
+                     <location>
+                        <geo>48,00543 16,23264</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1943-10-30">1943-10-30</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
                      </location>
                   </settlement>
                </death>
@@ -318,32 +314,41 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29857">
-               <title type="main">Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
+               <title>Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
                <title type="werk_arbeitstitel">Shawl</title>
                <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=601&amp;teil=0111&amp;seite=00000001&amp;zoom=2</title>
                <title type="legacy-name-merge">Der Schleier der Beatrice</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
-            <bibl xml:id="pmb30021" ana="comment">
-               <title type="main">Die gelbe Nachtigall</title>
+            <bibl xml:id="pmb30021" ana="implied">
+               <title>Die gelbe Nachtigall</title>
                <title type="legacy-name-merge">Die gelbe Nachtigall. [Komödie in drei  Akten]</title>
                <title type="legacy-name-merge">Die gelbe Nachtigall</title>
                <title type="legacy-name-merge">Die gelbe Nachtigall</title>
-               <author role="hat-geschaffen" ref="pmb10815">Bahr, Hermann</author>
+               <author ref="pmb10815" role="hat-geschaffen">Bahr, Hermann</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb13">
-               <placeName>Hebbel-Theater</placeName>
-               <placeName type="ort_fruherer-name">Königgrätzer Theater</placeName>
-               <placeName type="ort_fruherer-name">Theater in der Königgrätzer Straße</placeName>
-               <placeName type="legacy-name-merge">Hebbel Theater</placeName>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
-                  <geo>52,500042 13,387328</geo>
+                  <geo>48,208333 16,373056</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
             <place xml:id="pmb168940">
@@ -365,6 +370,19 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
+            <place xml:id="pmb13">
+               <placeName>Hebbel-Theater</placeName>
+               <placeName type="ort_fruherer-name">Königgrätzer Theater</placeName>
+               <placeName type="ort_fruherer-name">Theater in der Königgrätzer Straße</placeName>
+               <placeName type="legacy-name-merge">Hebbel Theater</placeName>
+               <location type="coords">
+                  <geo>52,500042 13,387328</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+            </place>
             <place xml:id="pmb3">
                <placeName>Deutsches Theater Berlin</placeName>
                <location type="coords">
@@ -377,28 +395,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb307">Schumannstraße</placeName>
                   <geo>52,52402 13,38186</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
             <place xml:id="pmb168" ana="comment">
@@ -424,8 +420,6 @@
                <placeName type="alternative-name">Semmering-Kurort</placeName>
                <placeName type="alternative-name">Heilklimatischer Höhenluftkurort Semmering</placeName>
                <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
-               <placeName type="legacy-name-merge">Semmering</placeName>
-               <placeName type="legacy-name-merge">Semmering</placeName>
                <location type="coords">
                   <geo>47,64224 15,8241</geo>
                </location>
@@ -443,7 +437,7 @@
                   <placeName ref="pmb34999">Kapelle-Ufer</placeName>
                   <geo>52,52315 13,374789</geo>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34999/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb34999.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb34999.html</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb34999.html</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34999.html</idno>
                </location>
@@ -464,7 +458,7 @@
                   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb168.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb168.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
@@ -479,7 +473,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004523</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb168</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.3</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.2.3</idno>
                </location>
             </org>
          </listOrg>

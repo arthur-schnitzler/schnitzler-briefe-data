@@ -164,37 +164,13 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb10863">
-               <persName>
-                  <forename>Richard</forename>
-                  <surname>Beer-Hofmann</surname>
-               </persName>
-               <birth>
-                  <date when="1866-07-11">1866-07-11</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1945-09-26">1945-09-26</date>
-                  <settlement ref="pmb44053">
-                     <placeName type="pref">New York City</placeName>
-                     <location>
-                        <geo>40,71427 -74,00597</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -203,7 +179,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -211,10 +187,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173">
                <persName>
@@ -240,8 +212,46 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb10863">
+               <persName>
+                  <forename>Richard</forename>
+                  <surname>Beer-Hofmann</surname>
+               </persName>
+               <birth>
+                  <date when="1866-07-11">1866-07-11</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-09-26">1945-09-26</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb51794">
+               <placeName>St. Johann am Wocheiner See</placeName>
+               <location type="coords">
+                  <geo>46,27876846439809 13,886888335799096</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb544">Slowenien</placeName>
+                  <geo>46,08333 15,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb246618">Ribčev Laz</placeName>
+                  <geo>46,272933333333 13,891441666667</geo>
+               </location>
+            </place>
             <place xml:id="pmb235251">
                <placeName>Hasenauerstraße 59</placeName>
                <location type="coords">
@@ -260,32 +270,6 @@
                   <geo>48,233816866614 16,337927920952</geo>
                </location>
             </place>
-            <place xml:id="pmb44456">
-               <placeName>Wocheiner See</placeName>
-               <placeName type="alternative-name">Wocheiner See</placeName>
-               <placeName type="legacy-name-merge">Lake Bohinj</placeName>
-               <location type="coords">
-                  <geo>46,283889 13,867222</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb544">Slowenien</placeName>
-                  <geo>46,08333 15,0</geo>
-               </location>
-            </place>
-            <place xml:id="pmb51794">
-               <placeName>St. Johann am Wocheiner See</placeName>
-               <location type="coords">
-                  <geo>46,27876846439809 13,886888335799096</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb544">Slowenien</placeName>
-                  <geo>46,08333 15,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb246618">Ribčev Laz</placeName>
-                  <geo>46,272933333333 13,891441666667</geo>
-               </location>
-            </place>
             <place xml:id="pmb68">
                <placeName>XVIII., Währing</placeName>
                <placeName type="legacy-name-merge">Währing</placeName>
@@ -299,6 +283,17 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb44456">
+               <placeName>Wocheiner See</placeName>
+               <placeName type="legacy-name-merge">Lake Bohinj</placeName>
+               <location type="coords">
+                  <geo>46,283889 13,867222</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb544">Slowenien</placeName>
+                  <geo>46,08333 15,0</geo>
                </location>
             </place>
          </listPlace>

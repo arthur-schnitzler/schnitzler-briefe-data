@@ -121,16 +121,16 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date n="02" notBefore="1896-07-25" notAfter="1896-07-26">[25. oder 26.] 7. 1896</date>
+               <date notBefore="1896-07-25" notAfter="1896-07-26" n="02">[25. oder 26.] 7. 1896</date>
                <placeName ref="#pmb36296">Oslo</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1896-07-26">[26]. 7. 1896</date>
-               <placeName ref="#pmb36296">Kristiania</placeName>
+               <placeName ref="#pmb36296">Oslo</placeName>
             </correspAction>
             <correspAction type="delivered">
                <date when="1896-07-27">27. 7. 1896</date>
-               <placeName ref="#pmb36300">Kjøbenhavn</placeName>
+               <placeName ref="#pmb36300">Kopenhagen</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
@@ -165,6 +165,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -213,60 +237,13 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb182">
-               <placeName>Paris</placeName>
-               <placeName type="alternative-name">P'ariz</placeName>
-               <placeName type="legacy-name-merge">Paris</placeName>
-               <placeName type="alternative-name">Pariž</placeName>
-               <placeName type="alternative-name">Parisius</placeName>
-               <placeName type="alternative-name">Île-de-France</placeName>
-               <location type="coords">
-                  <geo>48,85341 2,3488</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb166">Frankreich</placeName>
-                  <geo>46,0 2,0</geo>
-               </location>
-            </place>
             <place xml:id="pmb36296">
                <placeName>Oslo</placeName>
-               <placeName type="legacy-name-merge">Oslo</placeName>
                <placeName type="legacy-name-merge">Oslo – Kristiania</placeName>
                <placeName type="legacy-name-merge">Oslo – Christiania</placeName>
                <placeName type="legacy-name-merge">Oslo–Christiania</placeName>
-               <placeName type="alternative-name">Oslo</placeName>
-               <placeName type="legacy-name">Oslo</placeName>
-               <placeName type="legacy-name-merge">Oslo</placeName>
                <placeName type="legacy-name-merge">Kristiania</placeName>
                <location type="coords">
                   <geo>59,91273 10,74609</geo>
@@ -278,27 +255,13 @@
             </place>
             <place xml:id="pmb36300">
                <placeName>Kopenhagen</placeName>
-               <placeName type="alternative-name">Kopenhagen</placeName>
-               <placeName type="legacy-name">Kopenhagen</placeName>
-               <placeName type="legacy-name-merge">Kopenhagen</placeName>
                <placeName type="alternative-name">Copenhagen</placeName>
-               <placeName type="legacy-name-merge">Copenhagen</placeName>
                <location type="coords">
                   <geo>55,67594 12,56553</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb43570">Dänemark</placeName>
                   <geo>56,0 10,0</geo>
-               </location>
-            </place>
-            <place xml:id="pmb42671">
-               <placeName>rue Feydeau</placeName>
-               <location type="coords">
-                  <geo>48,87 2,3408</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb182">Paris</placeName>
-                  <geo>48,85341 2,3488</geo>
                </location>
             </place>
             <place xml:id="pmb958">
@@ -309,6 +272,30 @@
                <location type="located_in_place">
                   <placeName ref="pmb43570">Dänemark</placeName>
                   <geo>56,0 10,0</geo>
+               </location>
+            </place>
+            <place xml:id="pmb182">
+               <placeName>Paris</placeName>
+               <placeName type="alternative-name">P'ariz</placeName>
+               <placeName type="alternative-name">Pariž</placeName>
+               <placeName type="alternative-name">Parisius</placeName>
+               <placeName type="alternative-name">Île-de-France</placeName>
+               <location type="coords">
+                  <geo>48,85341 2,3488</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb166">Frankreich</placeName>
+                  <geo>46,0 2,0</geo>
+               </location>
+            </place>
+            <place xml:id="pmb42671">
+               <placeName>rue Feydeau</placeName>
+               <location type="coords">
+                  <geo>48,87 2,3408</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb182">Paris</placeName>
+                  <geo>48,85341 2,3488</geo>
                </location>
             </place>
          </listPlace>

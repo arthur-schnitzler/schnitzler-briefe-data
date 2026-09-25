@@ -157,34 +157,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -205,6 +177,30 @@
                      <placeName type="pref">Zürich</placeName>
                      <location>
                         <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -263,6 +259,30 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb25372" ana="comment">
+               <persName>
+                  <forename>Leo</forename>
+                  <surname>Stein</surname>
+               </persName>
+               <birth>
+                  <date when="1861-03-25">1861-03-25</date>
+                  <settlement ref="pmb46224">
+                     <placeName type="pref">Lviv</placeName>
+                     <location>
+                        <geo>49,83826 24,02324</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1921-07-28">1921-07-28</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb24173" ana="comment">
                <persName>
                   <forename>Alfred von</forename>
@@ -285,30 +305,6 @@
                </birth>
                <death>
                   <date when="1929-06-03">1929-06-03</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb25372" ana="comment">
-               <persName>
-                  <forename>Leo</forename>
-                  <surname>Stein</surname>
-               </persName>
-               <birth>
-                  <date when="1861-03-25">1861-03-25</date>
-                  <settlement ref="pmb46224">
-                     <placeName type="pref">Lviv</placeName>
-                     <location>
-                        <geo>49,83826 24,02324</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1921-07-28">1921-07-28</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -349,26 +345,22 @@
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb147212" ana="comment">
-               <title type="main">Eduard, der Herzensdieb. Posse mit Gesang in fünf Bildern</title>
-               <author role="hat-geschaffen" ref="pmb24173">Schik-Markenau, Alfred von</author>
-               <author role="hat-geschaffen" ref="pmb25372">Stein, Leo</author>
+            <bibl xml:id="pmb147212" ana="implied">
+               <title>Eduard, der Herzensdieb. Posse mit Gesang in fünf Bildern</title>
+               <author ref="pmb24173" role="hat-geschaffen">Schik-Markenau, Alfred von</author>
+               <author ref="pmb25372" role="hat-geschaffen">Stein, Leo</author>
             </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -376,6 +368,10 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
             <place xml:id="pmb77" ana="comment">

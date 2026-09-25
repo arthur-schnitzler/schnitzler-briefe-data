@@ -197,7 +197,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -206,59 +206,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
-            <person xml:id="pmb27910">
-               <persName>
-                  <forename>Lisa</forename>
-                  <surname>Clarus</surname>
-               </persName>
-               <birth>
-                  <date when="1868-08-27">1868-08-27</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1936-01-01" notAfter="1936-12-31">1936</date>
-               </death>
-            </person>
-            <person xml:id="pmb12692" ana="implied">
-               <persName>
-                  <forename>Heinrich</forename>
-                  <surname>Schnitzler</surname>
-               </persName>
-               <birth>
-                  <date when="1902-08-09">1902-08-09</date>
-                  <settlement ref="pmb75">
-                     <placeName type="pref">Hinterbrühl</placeName>
-                     <location>
-                        <geo>48,08611 16,24809</geo>
-                     </location>
-                  </settlement>
-                  <settlement ref="pmb145165">
-                     <placeName type="pref">Hauptstraße 56</placeName>
-                     <location>
-                        <geo>48,08736 16,24924</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1982-07-12">1982-07-12</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -291,6 +239,36 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb12692" ana="implied">
+               <persName>
+                  <forename>Heinrich</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1902-08-09">1902-08-09</date>
+                  <settlement ref="pmb75">
+                     <placeName type="pref">Hinterbrühl</placeName>
+                     <location>
+                        <geo>48,08611 16,24809</geo>
+                     </location>
+                  </settlement>
+                  <settlement ref="pmb145165">
+                     <placeName type="pref">Hauptstraße 56</placeName>
+                     <location>
+                        <geo>48,08736 16,24924</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1982-07-12">1982-07-12</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb2238" ana="implied">
                <persName>
                   <forename>Lili</forename>
@@ -315,15 +293,55 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb27910">
+               <persName>
+                  <forename>Lisa</forename>
+                  <surname>Clarus</surname>
+               </persName>
+               <birth>
+                  <date when="1868-08-27">1868-08-27</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1936-01-01" notAfter="1936-12-31">1936</date>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb29939" ana="comment">
-               <title type="main">O Mensch!</title>
+            <bibl xml:id="pmb29939" ana="implied">
+               <title>O Mensch!</title>
                <title type="werk_bibliografische-angabe">Neue Freie Presse, 31. 5. – 4. 9. 1910</title>
-               <author role="hat-geschaffen" ref="pmb10815">Bahr, Hermann</author>
+               <author ref="pmb10815" role="hat-geschaffen">Bahr, Hermann</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb165">
                <placeName>Ober Sankt Veit</placeName>
                <placeName type="legacy-name-merge">Wien-Ober-Sankt-Veit</placeName>
@@ -342,28 +360,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb63">XIII., Hietzing</placeName>
                   <geo>48,17547 16,29101</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

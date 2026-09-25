@@ -191,7 +191,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -200,7 +200,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -208,10 +208,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb13024" ana="comment">
                <persName>
@@ -240,11 +236,32 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33031">
-               <title type="main">Parsifal</title>
-               <author role="hat-geschaffen" ref="pmb13024">Wagner, Richard</author>
+               <title>Parsifal</title>
+               <author ref="pmb13024" role="hat-geschaffen">Wagner, Richard</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb734">
+               <placeName>Bayreuth</placeName>
+               <location type="coords">
+                  <geo>49,94782 11,57893</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb726">
+               <placeName>Helsingør</placeName>
+               <placeName type="legacy-name-merge">Höielt</placeName>
+               <location type="coords">
+                  <geo>56,03606 12,6136</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43570">Dänemark</placeName>
+                  <geo>56,0 10,0</geo>
+               </location>
+            </place>
             <place xml:id="pmb41010">
                <placeName>Kurhotellet</placeName>
                <placeName type="ort_namensvariante">Kurhaus</placeName>
@@ -256,12 +273,24 @@
                   <geo>56,042028 12,601917</geo>
                </location>
             </place>
+            <place xml:id="pmb959">
+               <placeName>Marienlyst</placeName>
+               <location type="coords">
+                  <geo>56,042028 12,601917</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43570">Dänemark</placeName>
+                  <geo>56,0 10,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb726">Helsingør</placeName>
+                  <geo>56,03606 12,6136</geo>
+               </location>
+            </place>
             <place xml:id="pmb43570">
                <placeName>Dänemark</placeName>
-               <placeName type="alternative-name">Dänemark</placeName>
                <placeName type="legacy-name-merge">Denmark</placeName>
                <placeName type="alternative-name">Kingdom of Denmark</placeName>
-               <placeName type="legacy-name-merge">Dänemark</placeName>
                <location type="coords">
                   <geo>56,0 10,0</geo>
                </location>
@@ -285,43 +314,7 @@
                   <geo>49,94782 11,57893</geo>
                </location>
             </place>
-            <place xml:id="pmb726">
-               <placeName>Helsingør</placeName>
-               <placeName type="legacy-name-merge">Höielt</placeName>
-               <location type="coords">
-                  <geo>56,03606 12,6136</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43570">Dänemark</placeName>
-                  <geo>56,0 10,0</geo>
-               </location>
-            </place>
-            <place xml:id="pmb734">
-               <placeName>Bayreuth</placeName>
-               <location type="coords">
-                  <geo>49,94782 11,57893</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb959">
-               <placeName>Marienlyst</placeName>
-               <placeName type="legacy-name-merge">Marienlyst</placeName>
-               <location type="coords">
-                  <geo>56,042028 12,601917</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43570">Dänemark</placeName>
-                  <geo>56,0 10,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb726">Helsingør</placeName>
-                  <geo>56,03606 12,6136</geo>
-               </location>
-            </place>
-            <place xml:id="pmb51377" ana="comment">
+            <place xml:id="pmb51377" ana="implied">
                <placeName>Richard-Wagner-Festspielhaus</placeName>
                <placeName type="alternative-name">Bayreuther Festspielhaus</placeName>
                <location type="coords">

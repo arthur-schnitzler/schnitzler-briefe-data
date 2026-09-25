@@ -184,6 +184,54 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb3220">
+               <persName>
+                  <forename>Christiane</forename>
+                  <surname>Zimmer</surname>
+               </persName>
+               <birth>
+                  <date when="1902-05-14">1902-05-14</date>
+                  <settlement ref="pmb173">
+                     <placeName type="pref">Rodaun</placeName>
+                     <location>
+                        <geo>48,132793312328 16,256152195922</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1987-01-05">1987-01-05</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb22728">
+               <persName>
+                  <forename>Frieda</forename>
+                  <surname>Pollak</surname>
+               </persName>
+               <birth>
+                  <date when="1881-12-08">1881-12-08</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1937-07-13">1937-07-13</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
@@ -214,7 +262,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -223,35 +271,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
-            <person xml:id="pmb22728">
-               <persName>
-                  <forename>Frieda</forename>
-                  <surname>Pollak</surname>
-               </persName>
-               <birth>
-                  <date when="1881-12-08">1881-12-08</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1937-07-13">1937-07-13</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -284,38 +304,29 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb3220">
-               <persName>
-                  <forename>Christiane</forename>
-                  <surname>Zimmer</surname>
-               </persName>
-               <birth>
-                  <date when="1902-05-14">1902-05-14</date>
-                  <settlement ref="pmb173">
-                     <placeName type="pref">Rodaun</placeName>
-                     <location>
-                        <geo>48,132793312328 16,256152195922</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1987-01-05">1987-01-05</date>
-                  <settlement ref="pmb44053">
-                     <placeName type="pref">New York City</placeName>
-                     <location>
-                        <geo>40,71427 -74,00597</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30839">
-               <title type="main">Das Salzburger große Welttheater</title>
-               <author role="hat-geschaffen" ref="pmb11740">Hofmannsthal, Hugo von</author>
+               <title>Das Salzburger große Welttheater</title>
+               <author ref="pmb11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb173">
+               <placeName>Rodaun</placeName>
+               <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
+               <location type="coords">
+                  <geo>48,132793312328 16,256152195922</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb73">XXIII., Liesing</placeName>
+                  <geo>48,13333 16,3</geo>
+               </location>
+            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">
@@ -332,23 +343,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb150">Sternwartestraße</placeName>
                   <geo>48,23099349198 16,340117830625</geo>
-               </location>
-            </place>
-            <place xml:id="pmb173">
-               <placeName>Rodaun</placeName>
-               <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
-               <placeName type="legacy-name-merge">Rodaun</placeName>
-               <placeName type="legacy-name-merge">Rodaun</placeName>
-               <location type="coords">
-                  <geo>48,132793312328 16,256152195922</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb73">XXIII., Liesing</placeName>
-                  <geo>48,13333 16,3</geo>
                </location>
             </place>
             <place xml:id="pmb68">

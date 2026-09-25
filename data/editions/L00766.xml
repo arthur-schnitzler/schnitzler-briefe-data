@@ -135,12 +135,15 @@
             <correspAction type="sent">
                <persName ref="#pmb10992">Brandes, Georg</persName>
                <date when="1898-01-25" n="01">25. 1. 1898</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb1106">Residenzhotel</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1898-01-25">25. 1. 1898</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date evidence="conjecture" notBefore="1898-01-25" notAfter="1898-01-27">[25. 1. 1898
-                  – 29. 1. 1898?]</date>
+               <date when="1898-01-25" evidence="external">25. 1. 1898</date>
                <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
@@ -159,6 +162,7 @@
          <change who="MAM" when="2019-01-14">Überarbeitet nach Leo Baeck</change>
          <change who="GHS" when="2019-11-26">finalisiert</change>
          <change who="MAM" when="2020-03-12">Durchsicht</change>
+         <change who="MAM" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -199,7 +203,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -208,7 +212,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -216,13 +220,21 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Thurygrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
             <place xml:id="pmb1106">
                <placeName>Residenzhotel</placeName>
                <location type="coords">
@@ -249,40 +261,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb397">Frankgasse</placeName>
                   <geo>48,215516628628 16,356475515829</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
-               <location type="coords">
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
          </listPlace>

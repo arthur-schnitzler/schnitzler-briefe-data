@@ -100,7 +100,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1" type="transmission">
-                                    <placeName ref="#pmb59">
+                                    <placeName ref="#pmb365208">
                                        <unclear>Wien 9/3</unclear>
                                     </placeName>
                                     <date when="1902-03-05">
@@ -134,7 +134,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date n="01" notBefore="1902-05-04" notAfter="1902-05-05">[4. oder 5]. 5. 1902</date>
+               <date notBefore="1902-05-04" notAfter="1902-05-05" n="01">[4. oder 5]. 5. 1902</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="transmitted">
@@ -182,6 +182,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -230,50 +254,82 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
+            <person xml:id="pmb11798">
                <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
+                  <forename>Henrik</forename>
+                  <surname>Ibsen</surname>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
+                  <date when="1828-03-20">1828-03-20</date>
+                  <settlement ref="pmb61065">
+                     <placeName type="pref">Skien</placeName>
                      <location>
-                        <geo>48,208333 16,373056</geo>
+                        <geo>59,20962 9,60897</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
+                  <date when="1906-05-23">1906-05-23</date>
+                  <settlement ref="pmb36296">
+                     <placeName type="pref">Oslo</placeName>
                      <location>
-                        <geo>48,208333 16,373056</geo>
+                        <geo>59,91273 10,74609</geo>
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb7535">
+               <persName>
+                  <forename>Edvard Hagerup</forename>
+                  <surname>Grieg</surname>
+               </persName>
+               <birth>
+                  <date when="1843-06-15">1843-06-15</date>
+                  <settlement ref="pmb119747">
+                     <placeName type="pref">Bergen [Norwegen]</placeName>
+                     <location>
+                        <geo>60,392777 5,323888</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1907-09-04">1907-09-04</date>
+                  <settlement ref="pmb119747">
+                     <placeName type="pref">Bergen [Norwegen]</placeName>
+                     <location>
+                        <geo>60,392777 5,323888</geo>
+                     </location>
+                  </settlement>
+               </death>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb31557">
-               <title type="main">Peer Gynt</title>
+               <title>Peer Gynt</title>
                <title type="legacy-name-merge">Peer Gynt</title>
                <title type="legacy-name-merge">Peer Gynt</title>
-               <author role="hat-geschaffen" ref="pmb11798">Ibsen, Henrik</author>
-               <author role="hat-vertont" ref="pmb7535">Grieg, Edvard Hagerup</author>
+               <author ref="pmb11798" role="hat-geschaffen">Ibsen, Henrik</author>
+               <author ref="pmb7535" role="hat-vertont">Grieg, Edvard Hagerup</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb365208">
+               <placeName>9/3 Post- und Telegraphenamt 72</placeName>
+               <location type="coords">
+                  <geo>48,216197 16,356623</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb731">Garnisongasse</placeName>
+                  <geo>48,216533356678 16,356214321972</geo>
+               </location>
+            </place>
             <place xml:id="pmb173">
                <placeName>Rodaun</placeName>
                <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
-               <placeName type="legacy-name-merge">Rodaun</placeName>
-               <placeName type="legacy-name-merge">Rodaun</placeName>
                <location type="coords">
                   <geo>48,132793312328 16,256152195922</geo>
                </location>
@@ -284,6 +340,40 @@
                <location type="located_in_place">
                   <placeName ref="pmb73">XXIII., Liesing</placeName>
                   <geo>48,13333 16,3</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Thurygrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
             <place xml:id="pmb40101">
@@ -300,44 +390,9 @@
                   <geo>48,133896 16,272342</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
-               <location type="coords">
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
             <place xml:id="pmb20" ana="comment">
                <placeName>Volkstheater</placeName>
                <placeName type="namensvariante">Deutsches Volkstheater</placeName>
-               <placeName type="legacy-name-merge">Deutsches Volkstheater</placeName>
                <location type="coords">
                   <geo>48,205142 16,3566</geo>
                </location>
@@ -369,7 +424,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -383,7 +438,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
             </org>
          </listOrg>

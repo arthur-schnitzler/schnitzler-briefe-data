@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="kartenbrief" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="577"/>
+                                 <measure unit="zeichenanzahl" quantity="576"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -101,7 +101,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="2" type="delivery">
-                                    <placeName ref="#pmb68">
+                                    <placeName ref="#pmb365226">
                                        <unclear>18/1 Wi</unclear>en 111</placeName>
                                     <date when="1905-01-21">
                                        <unclear>21.</unclear> 1. <unclear>0</unclear>5</date>
@@ -133,12 +133,19 @@
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
                <date when="1905-01-20" n="01">20. 1. 1905</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb231945">Porzellangasse 45</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1905-01-20">20. 1. 1905</date>
+               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1905-01-21">21. 1. 1905</date>
+               <placeName ref="#pmb365226">18/1 Post- und Telegraphenamt 111</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date evidence="conjecture" notBefore="1905-01-20" notAfter="1905-01-22">[20. 1. 1905
-                  – 24. 1. 1905?]</date>
+               <date whan="1905-01-21">21. 1. 1905</date>
                <placeName ref="#pmb168940">Edmund-Weiß-Gasse 7</placeName>
             </correspAction>
             <correspContext>
@@ -155,6 +162,7 @@
          <change who="LU" when="2024-04-29">Durchsicht</change>
          <change when="2024-04-30" who="LU">Index check</change>
          <change who="MAM" when="2024-06-07">Durchsicht</change>
+         <change who="SJ" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -175,58 +183,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb11727">
-               <persName>
-                  <forename>Camill</forename>
-                  <surname>Hoffmann</surname>
-               </persName>
-               <birth>
-                  <date when="1878-10-31">1878-10-31</date>
-                  <settlement ref="pmb46463">
-                     <placeName type="pref">Kolín</placeName>
-                     <location>
-                        <geo>50,02806 15,1998</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1944-10-01">1944-10-01</date>
-                  <settlement ref="pmb2290">
-                     <placeName type="pref">Konzentrationslager Auschwitz-Birkenau</placeName>
-                     <location>
-                        <geo>50,026389 19,203889</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -251,8 +207,96 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb11727">
+               <persName>
+                  <forename>Camill</forename>
+                  <surname>Hoffmann</surname>
+               </persName>
+               <birth>
+                  <date when="1878-10-31">1878-10-31</date>
+                  <settlement ref="pmb46463">
+                     <placeName type="pref">Kolín</placeName>
+                     <location>
+                        <geo>50,02806 15,1998</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1944-10-01">1944-10-01</date>
+                  <settlement ref="pmb2290">
+                     <placeName type="pref">Konzentrationslager Auschwitz-Birkenau</placeName>
+                     <location>
+                        <geo>50,026389 19,203889</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb59">
+               <placeName>IX., Alsergrund</placeName>
+               <placeName type="legacy-name-merge">Thurygrund</placeName>
+               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+               <location type="coords">
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb365226">
+               <placeName>18/1 Post- und Telegraphenamt 111</placeName>
+               <location type="coords">
+                  <geo>48,230794 16,344569</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb199145">Anastasius-Grün-Gasse</placeName>
+                  <geo>48,231448 16,342796</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+            </place>
+            <place xml:id="pmb231945">
+               <placeName>Porzellangasse 45</placeName>
+               <location type="coords">
+                  <geo>48,223406 16,361349</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb436">Porzellangasse</placeName>
+                  <geo>48,222287836145 16,362457240723</geo>
+               </location>
+            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -270,40 +314,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb133">Edmund-Weiß-Gasse</placeName>
                   <geo>48,23056 16,3348</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
-               <location type="coords">
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
             <place xml:id="pmb68">

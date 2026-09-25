@@ -82,7 +82,7 @@
                               <extent>
                                  <measure unit="seite" quantity="2"/>
                                  <measure unit="blatt" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="838"/>
+                                 <measure unit="zeichenanzahl" quantity="839"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -145,34 +145,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb26121">
                <persName>
                   <forename>Carl von</forename>
@@ -193,6 +165,30 @@
                      <placeName type="pref">Nago-Torbole</placeName>
                      <location>
                         <geo>45,87594 10,89106</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -301,13 +297,46 @@
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb185667" ana="comment">
-               <title type="main">Romeo und Julia. Trauerspiel in fünf Akten</title>
-               <author role="hat-geschaffen" ref="pmb2412">Shakespeare, William</author>
-               <author role="hat-ubersetzt" ref="pmb24212">Schlegel, August Wilhelm von</author>
+            <bibl xml:id="pmb185667" ana="implied">
+               <title>Romeo und Julia. Trauerspiel in fünf Akten</title>
+               <author ref="pmb2412" role="hat-geschaffen">Shakespeare, William</author>
+               <author ref="pmb24212" role="hat-ubersetzt">Schlegel, August Wilhelm von</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb462">
+               <placeName>Venedig</placeName>
+               <placeName type="legacy-name-merge">Venice</placeName>
+               <location type="coords">
+                  <geo>45,43713 12,33265</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb339370">
                <placeName>Tuchlauben 7</placeName>
                <location type="coords">
@@ -324,41 +353,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb790">Tuchlauben</placeName>
                   <geo>48,210369328822 16,370282346864</geo>
-               </location>
-            </place>
-            <place xml:id="pmb462">
-               <placeName>Venedig</placeName>
-               <placeName type="alternative-name">Venedig</placeName>
-               <placeName type="legacy-name-merge">Venice</placeName>
-               <placeName type="legacy-name-merge">Venedig</placeName>
-               <location type="coords">
-                  <geo>45,43713 12,33265</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

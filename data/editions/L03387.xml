@@ -100,7 +100,7 @@
                                     <time>2 10 N</time>
                                  </stamp>
                                  <stamp n="2" type="delivery">
-                                    <placeName ref="#pmb68">Wien 18 111</placeName>
+                                    <placeName ref="#pmb365226">Wien 18 111</placeName>
                                     <date when="1903-09-17">17. <unclear>IX</unclear>
                                        <space unit="chars" quantity="1"/>
                                        <supplied>03</supplied>
@@ -130,6 +130,14 @@
                <date when="1903-09-17" n="01">17. [9. 1903?]</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1903-09-17">17. 9. [1903]</date>
+               <placeName ref="#pmb65">XV., Rudolfsheim-Fünfhaus</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1903-09-17">17. 9. [1903]</date>
+               <placeName ref="#pmb365226">18/1 Post- und Telegraphenamt 111</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1903-09-17">17. [9. 1903?]</date>
@@ -149,6 +157,7 @@
          <change who="LU" when="2024-07-02">Durchsicht</change>
          <change when="2024-07-03" who="LU">Index check</change>
          <change who="MAM" when="2024-08-01">Durchsicht</change>
+         <change who="SJ" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -199,7 +208,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -208,7 +217,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -216,10 +225,30 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb9131" ana="comment">
+               <persName>
+                  <forename>Jacques</forename>
+                  <surname>Offenbach</surname>
+               </persName>
+               <birth>
+                  <date when="1819-06-20">1819-06-20</date>
+                  <settlement ref="pmb145">
+                     <placeName type="pref">Köln</placeName>
+                     <location>
+                        <geo>50,93835 6,95427</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1880-10-05">1880-10-05</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
             </person>
             <person xml:id="pmb148120" ana="comment">
                <persName>
@@ -269,30 +298,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb9131" ana="comment">
-               <persName>
-                  <forename>Jacques</forename>
-                  <surname>Offenbach</surname>
-               </persName>
-               <birth>
-                  <date when="1819-06-20">1819-06-20</date>
-                  <settlement ref="pmb145">
-                     <placeName type="pref">Köln</placeName>
-                     <location>
-                        <geo>50,93835 6,95427</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1880-10-05">1880-10-05</date>
-                  <settlement ref="pmb182">
-                     <placeName type="pref">Paris</placeName>
-                     <location>
-                        <geo>48,85341 2,3488</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb2173" ana="implied">
                <persName>
                   <forename>Olga</forename>
@@ -320,18 +325,69 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb148115" ana="comment">
-               <title type="main">Venedig in Paris. Operette in drei Akten</title>
-               <author role="hat-vertont" ref="pmb9131">Offenbach, Jacques</author>
-               <author role="hat-geschaffen" ref="pmb148120">Siraudin, Paul</author>
-               <author role="hat-geschaffen" ref="pmb21522">Moinaux, Jules</author>
+               <title>Venedig in Paris. Operette in drei Akten</title>
+               <author ref="pmb9131" role="hat-vertont">Offenbach, Jacques</author>
+               <author ref="pmb148120" role="hat-geschaffen">Siraudin, Paul</author>
+               <author ref="pmb21522" role="hat-geschaffen">Moinaux, Jules</author>
             </bibl>
             <bibl xml:id="pmb33243" ana="comment">
-               <title type="main">Tagebuch</title>
+               <title>Tagebuch</title>
                <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb65">
+               <placeName>XV., Rudolfsheim-Fünfhaus</placeName>
+               <placeName type="legacy-name-merge">Fünfhaus</placeName>
+               <location type="coords">
+                  <geo>48,19625 16,32749</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb365226">
+               <placeName>18/1 Post- und Telegraphenamt 111</placeName>
+               <location type="coords">
+                  <geo>48,230794 16,344569</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb199145">Anastasius-Grün-Gasse</placeName>
+                  <geo>48,231448 16,342796</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -351,7 +407,7 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
-            <place xml:id="pmb37">
+            <place xml:id="pmb37" ana="comment">
                <placeName>Theater an der Wien</placeName>
                <location type="coords">
                   <geo>48,19941 16,3642</geo>
@@ -359,43 +415,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb56">VI., Mariahilf</placeName>
                   <geo>48,19522 16,35032</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb68">
-               <placeName>XVIII., Währing</placeName>
-               <placeName type="legacy-name-merge">Währing</placeName>
-               <location type="coords">
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
          </listPlace>

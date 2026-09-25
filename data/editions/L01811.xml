@@ -166,6 +166,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -186,54 +210,6 @@
                      <placeName type="pref">New York City</placeName>
                      <location>
                         <geo>40,71427 -74,00597</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb11165">
-               <persName>
-                  <forename>Ernst von</forename>
-                  <surname>Dohnányi</surname>
-               </persName>
-               <birth>
-                  <date when="1877-07-27">1877-07-27</date>
-                  <settlement ref="pmb39615">
-                     <placeName type="pref">Bratislava</placeName>
-                     <location>
-                        <geo>48,14816 17,10674</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1960-02-09">1960-02-09</date>
-                  <settlement ref="pmb44053">
-                     <placeName type="pref">New York City</placeName>
-                     <location>
-                        <geo>40,71427 -74,00597</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb11640">
-               <persName>
-                  <forename>Heinrich</forename>
-                  <surname>Heine</surname>
-               </persName>
-               <birth>
-                  <date when="1797-12-13">1797-12-13</date>
-                  <settlement ref="pmb863">
-                     <placeName type="pref">Düsseldorf</placeName>
-                     <location>
-                        <geo>51,22172 6,77616</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1856-02-17">1856-02-17</date>
-                  <settlement ref="pmb182">
-                     <placeName type="pref">Paris</placeName>
-                     <location>
-                        <geo>48,85341 2,3488</geo>
                      </location>
                   </settlement>
                </death>
@@ -262,36 +238,78 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
+            <person xml:id="pmb11640">
                <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
+                  <forename>Heinrich</forename>
+                  <surname>Heine</surname>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
+                  <date when="1797-12-13">1797-12-13</date>
+                  <settlement ref="pmb863">
+                     <placeName type="pref">Düsseldorf</placeName>
                      <location>
-                        <geo>48,208333 16,373056</geo>
+                        <geo>51,22172 6,77616</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
+                  <date when="1856-02-17">1856-02-17</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
                      <location>
-                        <geo>48,208333 16,373056</geo>
+                        <geo>48,85341 2,3488</geo>
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb11165">
+               <persName>
+                  <forename>Ernst von</forename>
+                  <surname>Dohnányi</surname>
+               </persName>
+               <birth>
+                  <date when="1877-07-27">1877-07-27</date>
+                  <settlement ref="pmb39615">
+                     <placeName type="pref">Bratislava</placeName>
+                     <location>
+                        <geo>48,14816 17,10674</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1960-02-09">1960-02-09</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -311,47 +329,7 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
-            <place xml:id="pmb189">
-               <placeName>Semmering</placeName>
-               <placeName type="alternative-name">Gemeinde Semmering</placeName>
-               <placeName type="alternative-name">Semmering-Semmering-Kurort</placeName>
-               <placeName type="alternative-name">Kurort Semmering</placeName>
-               <placeName type="alternative-name">Semmering-Kurort</placeName>
-               <placeName type="alternative-name">Heilklimatischer Höhenluftkurort Semmering</placeName>
-               <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
-               <placeName type="legacy-name-merge">Semmering</placeName>
-               <placeName type="legacy-name-merge">Semmering</placeName>
-               <location type="coords">
-                  <geo>47,64224 15,8241</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb96">
+            <place xml:id="pmb96" ana="comment">
                <placeName>Meissl &amp; Schadn</placeName>
                <location type="coords">
                   <geo>48,206416 16,371211</geo>
@@ -367,6 +345,22 @@
                <location type="located_in_place">
                   <placeName ref="pmb763">Neuer Markt</placeName>
                   <geo>48,206114627397 16,370613981932</geo>
+               </location>
+            </place>
+            <place xml:id="pmb189">
+               <placeName>Semmering</placeName>
+               <placeName type="alternative-name">Gemeinde Semmering</placeName>
+               <placeName type="alternative-name">Semmering-Semmering-Kurort</placeName>
+               <placeName type="alternative-name">Kurort Semmering</placeName>
+               <placeName type="alternative-name">Semmering-Kurort</placeName>
+               <placeName type="alternative-name">Heilklimatischer Höhenluftkurort Semmering</placeName>
+               <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
+               <location type="coords">
+                  <geo>47,64224 15,8241</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
             <place xml:id="pmb4" ana="comment">
@@ -394,7 +388,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -408,7 +402,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
             </org>
          </listOrg>

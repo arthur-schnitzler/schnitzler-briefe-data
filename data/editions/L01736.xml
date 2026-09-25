@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="214"/>
+                                 <measure unit="zeichenanzahl" quantity="215"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -95,7 +95,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1" type="transmission">
-                                    <placeName ref="#pmb68">Wien 18/1 110</placeName>
+                                    <placeName ref="#pmb365223">Wien 18/1 110</placeName>
                                     <date when="1907-12-06">6 XII 07</date>
                                     <time>2.50</time>
                                  </stamp>
@@ -104,7 +104,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="2" type="delivery">
-                                    <placeName ref="#pmb68">18/1 Wien 111</placeName>
+                                    <placeName ref="#pmb365226">18/1 Wien 111</placeName>
                                     <date when="1907-12-06">
                                        <supplied>6. 12. </supplied>07</date>
                                     <time>3<hi rend="superscript">10</hi>
@@ -179,6 +179,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -202,34 +226,6 @@
                      </location>
                   </settlement>
                </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173">
                <persName>
@@ -257,23 +253,54 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb168940">
-               <placeName>Edmund-Weiß-Gasse 7</placeName>
-               <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
+            <place xml:id="pmb365223">
+               <placeName>18/1 Post- und Telegraphenamt 110</placeName>
                <location type="coords">
-                  <geo>48,2304 16,33472</geo>
+                  <geo>48,22513 16,343276</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb68">XVIII., Währing</placeName>
                   <geo>48,23333 16,31667</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb533">Währinger Cottage</placeName>
-                  <geo>48,233056 16,341944</geo>
+                  <placeName ref="pmb41463">Schulgasse</placeName>
+                  <geo>47,71222 13,62186</geo>
+               </location>
+            </place>
+            <place xml:id="pmb365226">
+               <placeName>18/1 Post- und Telegraphenamt 111</placeName>
+               <location type="coords">
+                  <geo>48,230794 16,344569</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb133">Edmund-Weiß-Gasse</placeName>
-                  <geo>48,23056 16,3348</geo>
+                  <placeName ref="pmb199145">Anastasius-Grün-Gasse</placeName>
+                  <geo>48,231448 16,342796</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
             <place xml:id="pmb235251">
@@ -294,26 +321,23 @@
                   <geo>48,233816866614 16,337927920952</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb168940">
+               <placeName>Edmund-Weiß-Gasse 7</placeName>
+               <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>48,2304 16,33472</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb533">Währinger Cottage</placeName>
+                  <geo>48,233056 16,341944</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb133">Edmund-Weiß-Gasse</placeName>
+                  <geo>48,23056 16,3348</geo>
                </location>
             </place>
             <place xml:id="pmb68">

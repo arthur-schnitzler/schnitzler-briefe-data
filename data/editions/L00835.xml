@@ -153,7 +153,15 @@
             <correspAction type="sent">
                <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
                <date when="1898-08-21" n="01">21. 8. 1898</date>
+               <placeName ref="#pmb513">Hôtel du Parc</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1898-08-21">21. 8. 1898</date>
                <placeName ref="#pmb885">Lugano</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1898-08-21">21. 8. 1898</date>
+               <placeName ref="#pmb967">Luzern</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -175,6 +183,7 @@
          <change who="GHS" when="2019-05-05">Korrektur gelesen, facs aktualisiert</change>
          <change who="MAM" when="2019-07-11">Index check</change>
          <change who="GHS" when="2019-11-10">finalisiert</change>
+         <change who="MAM" when="2026-09-24">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -220,7 +229,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -229,7 +238,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -237,17 +246,52 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb885">
+               <placeName>Lugano</placeName>
+               <location type="coords">
+                  <geo>46,01008 8,96004</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43435">Schweiz</placeName>
+                  <geo>47,00016 8,01427</geo>
+               </location>
+            </place>
+            <place xml:id="pmb967">
+               <placeName>Luzern</placeName>
+               <location type="coords">
+                  <geo>47,05048 8,30635</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43435">Schweiz</placeName>
+                  <geo>47,00016 8,01427</geo>
+               </location>
+            </place>
+            <place xml:id="pmb513">
+               <placeName>Hôtel du Parc</placeName>
+               <location type="coords">
+                  <geo>46,002723 8,946726</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb885">Lugano</placeName>
+                  <geo>46,01008 8,96004</geo>
+               </location>
+            </place>
+            <place xml:id="pmb43435">
+               <placeName>Schweiz</placeName>
+               <placeName type="ort_namensvariante">Schweizerische Eidgenossenschaft</placeName>
+               <location type="coords">
+                  <geo>47,00016 8,01427</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
             <place xml:id="pmb34005">
                <placeName>Zermatt</placeName>
-               <placeName type="alternative-name">Zermatt</placeName>
-               <placeName type="legacy-name-merge">Zermatt</placeName>
                <location type="coords">
                   <geo>46,023604 7,748607</geo>
                </location>
@@ -264,47 +308,6 @@
                <placeName>Simplon</placeName>
                <location type="coords">
                   <geo>46,2029 8,03625</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43435">Schweiz</placeName>
-                  <geo>47,00016 8,01427</geo>
-               </location>
-            </place>
-            <place xml:id="pmb43435">
-               <placeName>Schweiz</placeName>
-               <placeName type="ort_namensvariante">Schweizerische Eidgenossenschaft</placeName>
-               <location type="coords">
-                  <geo>47,00016 8,01427</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
-               </location>
-            </place>
-            <place xml:id="pmb513">
-               <placeName>Hôtel du Parc</placeName>
-               <location type="coords">
-                  <geo>46,002723 8,946726</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb885">Lugano</placeName>
-                  <geo>46,01008 8,96004</geo>
-               </location>
-            </place>
-            <place xml:id="pmb885">
-               <placeName>Lugano</placeName>
-               <location type="coords">
-                  <geo>46,01008 8,96004</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43435">Schweiz</placeName>
-                  <geo>47,00016 8,01427</geo>
-               </location>
-            </place>
-            <place xml:id="pmb967">
-               <placeName>Luzern</placeName>
-               <location type="coords">
-                  <geo>47,05048 8,30635</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb43435">Schweiz</placeName>

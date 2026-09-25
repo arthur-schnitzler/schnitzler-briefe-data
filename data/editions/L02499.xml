@@ -153,6 +153,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -177,36 +201,23 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb966">
+               <placeName>Istanbul</placeName>
+               <placeName type="legacy-name-merge">Konstantinopel</placeName>
+               <placeName type="alternative-name">Istanbul Province</placeName>
+               <placeName type="alternative-name">Byzantion</placeName>
+               <placeName type="alternative-name">Byzantium</placeName>
+               <placeName type="alternative-name">Constantinople</placeName>
+               <location type="coords">
+                  <geo>41,01384 28,94966</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb773">Türkei</placeName>
+                  <geo>39,0 35,0</geo>
+               </location>
+            </place>
             <place xml:id="pmb235251">
                <placeName>Hasenauerstraße 59</placeName>
                <location type="coords">
@@ -225,12 +236,25 @@
                   <geo>48,233816866614 16,337927920952</geo>
                </location>
             </place>
+            <place xml:id="pmb68">
+               <placeName>XVIII., Währing</placeName>
+               <placeName type="legacy-name-merge">Währing</placeName>
+               <location type="coords">
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -257,38 +281,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb966">Istanbul</placeName>
                   <geo>41,01384 28,94966</geo>
-               </location>
-            </place>
-            <place xml:id="pmb68">
-               <placeName>XVIII., Währing</placeName>
-               <placeName type="legacy-name-merge">Währing</placeName>
-               <location type="coords">
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb966">
-               <placeName>Istanbul</placeName>
-               <placeName type="legacy-name-merge">Konstantinopel</placeName>
-               <placeName type="alternative-name">Istanbul Province</placeName>
-               <placeName type="legacy-name-merge">Istanbul</placeName>
-               <placeName type="alternative-name">Byzantion</placeName>
-               <placeName type="alternative-name">Byzantium</placeName>
-               <placeName type="alternative-name">Konstantinopel</placeName>
-               <placeName type="alternative-name">Constantinople</placeName>
-               <location type="coords">
-                  <geo>41,01384 28,94966</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb773">Türkei</placeName>
-                  <geo>39,0 35,0</geo>
                </location>
             </place>
          </listPlace>

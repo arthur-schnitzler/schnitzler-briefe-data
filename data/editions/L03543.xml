@@ -192,6 +192,11 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb148058">
+               <persName>
+                  <surname>Frimmel</surname>
+               </persName>
+            </person>
             <person xml:id="pmb11402">
                <persName>
                   <forename>Ludwig</forename>
@@ -216,18 +221,13 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb148058">
-               <persName>
-                  <surname>Frimmel</surname>
-               </persName>
-            </person>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -236,7 +236,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -244,10 +244,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2142" ana="comment">
                <persName>
@@ -300,34 +296,23 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29843">
-               <title type="main">Der grüne Kakadu. Groteske in einem Akt</title>
+               <title>Der grüne Kakadu. Groteske in einem Akt</title>
                <title type="werk_bibliografische-angabe">Neue Deutsche Rundschau, Jg. 10, H. 3, März 1899, S. 282–308.</title>
                <title type="legacy-name-merge">Der grüne Kakadu</title>
                <title type="legacy-name-merge">Der grüne Kakadu</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
             <bibl xml:id="pmb50633" ana="comment">
-               <title type="main">Traum eines Frühlingsmorgens</title>
+               <title>Traum eines Frühlingsmorgens</title>
                <title type="namensvariante">Sogno d’un mattino di primavera</title>
-               <author role="hat-geschaffen" ref="pmb2142">D’Annunzio, Gabriele</author>
+               <author ref="pmb2142" role="hat-geschaffen">D’Annunzio, Gabriele</author>
             </bibl>
             <bibl xml:id="pmb50636" ana="comment">
-               <title type="main">Mein Fürst</title>
-               <author role="hat-geschaffen" ref="pmb9756">Scholz, Wilhelm von</author>
+               <title>Mein Fürst</title>
+               <author ref="pmb9756" role="hat-geschaffen">Scholz, Wilhelm von</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb148055">
-               <placeName>Haupttelegrafenamt</placeName>
-               <placeName type="ort_namensvariante">Haupt-Telegraphenamt</placeName>
-               <location type="coords">
-                  <geo>52,524293 13,394589</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
-               </location>
-            </place>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
@@ -343,39 +328,15 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
-            <place xml:id="pmb45258">
-               <placeName>München</placeName>
-               <placeName type="alternative-name">München</placeName>
-               <placeName type="legacy-name-merge">München?</placeName>
-               <placeName type="legacy-name-merge">München</placeName>
-               <placeName type="legacy-name-merge">Munich</placeName>
-               <placeName type="alternative-name">Monacho</placeName>
-               <placeName type="alternative-name">Munich</placeName>
-               <placeName type="legacy-name">München</placeName>
-               <placeName type="legacy-name-merge">München?</placeName>
+            <place xml:id="pmb148055">
+               <placeName>Haupttelegrafenamt</placeName>
+               <placeName type="ort_namensvariante">Haupt-Telegraphenamt</placeName>
                <location type="coords">
-                  <geo>48,13743 11,57549</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb314">Bayern</placeName>
-                  <geo>49,0 11,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb482">
-               <placeName>Friedrichstraße [Berlin]</placeName>
-               <location type="coords">
-                  <geo>52,50319 13,39108</geo>
+                  <geo>52,524293 13,394589</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb168">Berlin</placeName>
                   <geo>52,52437 13,41053</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb56712">Berlin SW 68</placeName>
                </location>
             </place>
             <place xml:id="pmb545">
@@ -392,7 +353,37 @@
                   <geo>52,50319 13,39108</geo>
                </location>
             </place>
-            <place xml:id="pmb635">
+            <place xml:id="pmb482">
+               <placeName>Friedrichstraße [Berlin]</placeName>
+               <location type="coords">
+                  <geo>52,50319 13,39108</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb56712">Berlin SW 68</placeName>
+               </location>
+            </place>
+            <place xml:id="pmb45258" ana="comment">
+               <placeName>München</placeName>
+               <placeName type="legacy-name-merge">München?</placeName>
+               <placeName type="legacy-name-merge">Munich</placeName>
+               <placeName type="alternative-name">Monacho</placeName>
+               <location type="coords">
+                  <geo>48,13743 11,57549</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb314">Bayern</placeName>
+                  <geo>49,0 11,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb635" ana="comment">
                <placeName>Residenztheater München</placeName>
                <location type="coords">
                   <geo>48,139944 11,578786</geo>
@@ -422,7 +413,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38129/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/45258/</idno>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/2867714/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb45258.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb45258.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1726</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/M%C3%BCnchen</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb45258.html</idno>

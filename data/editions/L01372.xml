@@ -80,7 +80,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="197"/>
+                                 <measure unit="zeichenanzahl" quantity="196"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -227,6 +227,30 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10986">
                <persName>
                   <forename>Otto</forename>
@@ -281,34 +305,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2173" ana="implied">
                <persName>
                   <forename>Olga</forename>
@@ -335,6 +331,29 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb849">
+               <placeName>Konstanz</placeName>
+               <placeName type="alternative-name">Costnitz</placeName>
+               <placeName type="alternative-name">Kostnitz</placeName>
+               <placeName type="legacy-name-merge">Konstanz?</placeName>
+               <location type="coords">
+                  <geo>47,66033 9,17582</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb399">
+               <placeName>Hotel Continental [Berlin]</placeName>
+               <location type="coords">
+                  <geo>52,518889 13,385556</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+            </place>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
@@ -366,19 +385,8 @@
             </place>
             <place xml:id="pmb307">
                <placeName>Schumannstraße</placeName>
-               <placeName type="legacy-name-merge">Schumannstraße</placeName>
                <location type="coords">
                   <geo>52,52402 13,38186</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
-               </location>
-            </place>
-            <place xml:id="pmb399">
-               <placeName>Hotel Continental [Berlin]</placeName>
-               <location type="coords">
-                  <geo>52,518889 13,385556</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb168">Berlin</placeName>
@@ -393,21 +401,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb849">Konstanz</placeName>
                   <geo>47,66033 9,17582</geo>
-               </location>
-            </place>
-            <place xml:id="pmb849">
-               <placeName>Konstanz</placeName>
-               <placeName type="alternative-name">Costnitz</placeName>
-               <placeName type="alternative-name">Kostnitz</placeName>
-               <placeName type="alternative-name">Konstanz</placeName>
-               <placeName type="legacy-name-merge">Konstanz?</placeName>
-               <placeName type="legacy-name-merge">Konstanz</placeName>
-               <location type="coords">
-                  <geo>47,66033 9,17582</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
                </location>
             </place>
          </listPlace>

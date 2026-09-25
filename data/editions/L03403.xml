@@ -145,40 +145,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb147246">
-               <persName>
-                  <forename>Johann</forename>
-                  <surname>Benedickter</surname>
-               </persName>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -202,6 +168,36 @@
                      </location>
                   </settlement>
                </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb147246">
+               <persName>
+                  <forename>Johann</forename>
+                  <surname>Benedickter</surname>
+               </persName>
             </person>
             <person xml:id="pmb23918">
                <persName>
@@ -257,15 +253,61 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb12163">
+               <persName>
+                  <forename>Gustav</forename>
+                  <surname>Mahler</surname>
+               </persName>
+               <birth>
+                  <date when="1860-07-07">1860-07-07</date>
+                  <settlement ref="pmb58623">
+                     <placeName type="pref">Kaliště</placeName>
+                     <location>
+                        <geo>49,24125 15,30133</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1911-05-18">1911-05-18</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30123" ana="implied">
-               <title type="main">3. Sinfonie in d-Moll</title>
+               <title>3. Sinfonie in d-Moll</title>
                <title type="legacy-name-merge">Symphonie Nr. 3 d-Moll</title>
-               <author role="hat-geschaffen" ref="pmb12163">Mahler, Gustav</author>
+               <author ref="pmb12163" role="hat-geschaffen">Mahler, Gustav</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
+            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -285,21 +327,22 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
-            <place xml:id="pmb42773">
-               <placeName>Schlösselgasse</placeName>
+            <place xml:id="pmb68">
+               <placeName>XVIII., Währing</placeName>
+               <placeName type="legacy-name-merge">Währing</placeName>
                <location type="coords">
-                  <geo>48,21429 16,35313</geo>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
                </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb58">VIII., Josefstadt</placeName>
-                  <geo>48,21126 16,34706</geo>
-               </location>
             </place>
-            <place xml:id="pmb44">
+            <place xml:id="pmb44" ana="comment">
                <placeName>Riedhof</placeName>
                <location type="coords">
                   <geo>48,2134031 16,3538456</geo>
@@ -317,26 +360,18 @@
                   <geo>48,21429 16,35313</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb42773">
+               <placeName>Schlösselgasse</placeName>
                <location type="coords">
+                  <geo>48,21429 16,35313</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb58">VIII., Josefstadt</placeName>
+                  <geo>48,21126 16,34706</geo>
                </location>
             </place>
             <place xml:id="pmb51237">
@@ -347,21 +382,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb58">VIII., Josefstadt</placeName>
                   <geo>48,21126 16,34706</geo>
-               </location>
-            </place>
-            <place xml:id="pmb68">
-               <placeName>XVIII., Währing</placeName>
-               <placeName type="legacy-name-merge">Währing</placeName>
-               <location type="coords">
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
          </listPlace>

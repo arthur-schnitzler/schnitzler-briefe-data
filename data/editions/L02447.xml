@@ -155,6 +155,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -179,36 +203,18 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb44248">
+               <placeName>Forte dei Marmi</placeName>
+               <location type="coords">
+                  <geo>43,96388 10,17478</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+            </place>
             <place xml:id="pmb235251">
                <placeName>Hasenauerstraße 59</placeName>
                <location type="coords">
@@ -227,12 +233,25 @@
                   <geo>48,233816866614 16,337927920952</geo>
                </location>
             </place>
+            <place xml:id="pmb68">
+               <placeName>XVIII., Währing</placeName>
+               <placeName type="legacy-name-merge">Währing</placeName>
+               <location type="coords">
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -249,18 +268,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb687">Österreich-Ungarn</placeName>
                   <geo>48,4054 16,4887</geo>
-               </location>
-            </place>
-            <place xml:id="pmb44248">
-               <placeName>Forte dei Marmi</placeName>
-               <placeName type="alternative-name">Forte dei Marmi</placeName>
-               <placeName type="legacy-name">Forte dei Marmi</placeName>
-               <location type="coords">
-                  <geo>43,96388 10,17478</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
                </location>
             </place>
             <place xml:id="pmb52707">
@@ -293,16 +300,6 @@
                   <geo>42,83333 12,83333</geo>
                </location>
             </place>
-            <place xml:id="pmb52716">
-               <placeName>Grand Hotel Forte dei Marmi</placeName>
-               <location type="coords">
-                  <geo>43,95291802957647 10,173758622210785</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb44248">Forte dei Marmi</placeName>
-                  <geo>43,96388 10,17478</geo>
-               </location>
-            </place>
             <place xml:id="pmb52718">
                <placeName>Monte Gabberi</placeName>
                <location type="coords">
@@ -323,19 +320,14 @@
                   <geo>42,83333 12,83333</geo>
                </location>
             </place>
-            <place xml:id="pmb68">
-               <placeName>XVIII., Währing</placeName>
-               <placeName type="legacy-name-merge">Währing</placeName>
+            <place xml:id="pmb52716">
+               <placeName>Grand Hotel Forte dei Marmi</placeName>
                <location type="coords">
-                  <geo>48,23333 16,31667</geo>
+                  <geo>43,95291802957647 10,173758622210785</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
+                  <placeName ref="pmb44248">Forte dei Marmi</placeName>
+                  <geo>43,96388 10,17478</geo>
                </location>
             </place>
          </listPlace>

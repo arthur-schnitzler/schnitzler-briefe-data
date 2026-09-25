@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="370"/>
+                                 <measure unit="zeichenanzahl" quantity="368"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -139,11 +139,11 @@
             </correspAction>
             <correspAction type="arrived">
                <date when="1896-07-12">12. 7. 1896</date>
-               <placeName ref="#pmb36300">Kjøbenhavn</placeName>
+               <placeName ref="#pmb36300">Kopenhagen</placeName>
             </correspAction>
             <correspAction type="delivered">
                <date when="1896-07-12">12. 7. 1896</date>
-               <placeName ref="#pmb36300">Kjøbenhavn</placeName>
+               <placeName ref="#pmb36300">Kopenhagen</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
@@ -181,6 +181,30 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -205,54 +229,22 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb118890">
-               <placeName>Nordsee</placeName>
-               <placeName type="alternative-name">North Sea</placeName>
+            <place xml:id="pmb42572">
+               <placeName>Stavanger</placeName>
+               <placeName type="legacy-name-merge">Stavanger Municipality</placeName>
                <location type="coords">
-                  <geo>55,33333 3,0</geo>
+                  <geo>58,97005 5,73332</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
+                  <placeName ref="pmb64465">Norwegen</placeName>
+                  <geo>62,0 10,0</geo>
                </location>
             </place>
             <place xml:id="pmb36300">
                <placeName>Kopenhagen</placeName>
-               <placeName type="alternative-name">Kopenhagen</placeName>
-               <placeName type="legacy-name">Kopenhagen</placeName>
-               <placeName type="legacy-name-merge">Kopenhagen</placeName>
                <placeName type="alternative-name">Copenhagen</placeName>
-               <placeName type="legacy-name-merge">Copenhagen</placeName>
                <location type="coords">
                   <geo>55,67594 12,56553</geo>
                </location>
@@ -261,17 +253,20 @@
                   <geo>56,0 10,0</geo>
                </location>
             </place>
-            <place xml:id="pmb40290">
-               <placeName>Trondheim</placeName>
-               <placeName type="alternative-name">Trondheim</placeName>
-               <placeName type="legacy-name">Trondheim</placeName>
-               <placeName type="legacy-name-merge">Trondheim</placeName>
+            <place xml:id="pmb43570">
+               <placeName>Dänemark</placeName>
+               <placeName type="legacy-name-merge">Denmark</placeName>
+               <placeName type="alternative-name">Kingdom of Denmark</placeName>
                <location type="coords">
-                  <geo>63,43049 10,39506</geo>
+                  <geo>56,0 10,0</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb64465">Norwegen</placeName>
-                  <geo>62,0 10,0</geo>
+                  <placeName ref="pmb745">Skandinavien</placeName>
+                  <geo>63,0 25,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
                </location>
             </place>
             <place xml:id="pmb41072">
@@ -284,31 +279,21 @@
                   <geo>62,0 10,0</geo>
                </location>
             </place>
-            <place xml:id="pmb42572">
-               <placeName>Stavanger</placeName>
-               <placeName type="alternative-name">Stavanger</placeName>
-               <placeName type="legacy-name">Stavanger</placeName>
-               <placeName type="legacy-name-merge">Stavanger Municipality</placeName>
+            <place xml:id="pmb40290">
+               <placeName>Trondheim</placeName>
                <location type="coords">
-                  <geo>58,97005 5,73332</geo>
+                  <geo>63,43049 10,39506</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb64465">Norwegen</placeName>
                   <geo>62,0 10,0</geo>
                </location>
             </place>
-            <place xml:id="pmb43570">
-               <placeName>Dänemark</placeName>
-               <placeName type="alternative-name">Dänemark</placeName>
-               <placeName type="legacy-name-merge">Denmark</placeName>
-               <placeName type="alternative-name">Kingdom of Denmark</placeName>
-               <placeName type="legacy-name-merge">Dänemark</placeName>
+            <place xml:id="pmb118890">
+               <placeName>Nordsee</placeName>
+               <placeName type="alternative-name">North Sea</placeName>
                <location type="coords">
-                  <geo>56,0 10,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb745">Skandinavien</placeName>
-                  <geo>63,0 25,0</geo>
+                  <geo>55,33333 3,0</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb468">Europa</placeName>

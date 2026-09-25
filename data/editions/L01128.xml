@@ -153,7 +153,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
-               <date n="01" notBefore="1901-06-13" notAfter="1901-06-14">[13. oder 14]. 6. 1901</date>
+               <date notBefore="1901-06-13" notAfter="1901-06-14" n="01">[13. oder 14]. 6. 1901</date>
                <placeName ref="#pmb259">Lido</placeName>
             </correspAction>
             <correspAction type="transmitted">
@@ -225,7 +225,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -234,7 +234,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -242,10 +242,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2292">
                <persName>
@@ -277,16 +273,54 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb11461">
+               <persName>
+                  <forename>Johann Wolfgang von</forename>
+                  <surname>Goethe</surname>
+               </persName>
+               <birth>
+                  <date when="1749-08-28">1749-08-28</date>
+                  <settlement ref="pmb146">
+                     <placeName type="pref">Frankfurt am Main</placeName>
+                     <location>
+                        <geo>50,11552 8,68417</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1832-03-22">1832-03-22</date>
+                  <settlement ref="pmb197">
+                     <placeName type="pref">Weimar</placeName>
+                     <location>
+                        <geo>50,97361 11,33806</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb31585">
-               <title type="main">Die natürliche Tochter</title>
+               <title>Die natürliche Tochter</title>
                <title type="legacy-name-merge">Die natürliche Tochter</title>
                <title type="legacy-name-merge">Die natürliche Tochter</title>
-               <author role="hat-geschaffen" ref="pmb11461">Goethe, Johann Wolfgang von</author>
+               <author ref="pmb11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb259">
+               <placeName>Lido</placeName>
+               <location type="coords">
+                  <geo>45,38333 12,35</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb462">Venedig</placeName>
+                  <geo>45,43713 12,33265</geo>
+               </location>
+            </place>
             <place xml:id="pmb168934">
                <placeName>Frankgasse 1</placeName>
                <location type="coords">
@@ -301,44 +335,32 @@
                   <geo>48,215516628628 16,356475515829</geo>
                </location>
             </place>
-            <place xml:id="pmb173">
-               <placeName>Rodaun</placeName>
-               <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
-               <placeName type="legacy-name-merge">Rodaun</placeName>
-               <placeName type="legacy-name-merge">Rodaun</placeName>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
-                  <geo>48,132793312328 16,256152195922</geo>
+                  <geo>48,208333 16,373056</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb73">XXIII., Liesing</placeName>
-                  <geo>48,13333 16,3</geo>
-               </location>
-            </place>
-            <place xml:id="pmb259">
-               <placeName>Lido</placeName>
-               <placeName type="legacy-name-merge">Lido</placeName>
-               <location type="coords">
-                  <geo>45,38333 12,35</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb462">Venedig</placeName>
-                  <geo>45,43713 12,33265</geo>
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -359,9 +381,7 @@
             </place>
             <place xml:id="pmb462">
                <placeName>Venedig</placeName>
-               <placeName type="alternative-name">Venedig</placeName>
                <placeName type="legacy-name-merge">Venice</placeName>
-               <placeName type="legacy-name-merge">Venedig</placeName>
                <location type="coords">
                   <geo>45,43713 12,33265</geo>
                </location>
@@ -370,26 +390,19 @@
                   <geo>42,83333 12,83333</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb173">
+               <placeName>Rodaun</placeName>
+               <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>48,132793312328 16,256152195922</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb73">XXIII., Liesing</placeName>
+                  <geo>48,13333 16,3</geo>
                </location>
             </place>
          </listPlace>

@@ -3,8 +3,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1897-07-17" n="01">1897-07-17</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 17. 7. 1897</title>
+            <title type="iso-date" when-iso="1897-07-16" n="02">1897-07-16</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, [16. oder 17]. 7. 1897</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -92,7 +92,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1" type="transmission">
-                                    <placeName ref="#pmb51">Wien 1/1 1</placeName>
+                                    <placeName ref="#pmb365214">Wien 1/1 1</placeName>
                                     <date when="1897-07-17">17. 7. 97</date>
                                     <time>11–12 N</time>
                                  </stamp>
@@ -125,8 +125,16 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1897-07-17" n="01">17. 7. 1897</date>
+               <date n="02" notBefore="1897-07-16" notAfter="1897-07-17">[16. oder 17]. 7. 1897</date>
                <placeName ref="#pmb50">Wien</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1897-07-17">17. 7. 1897</date>
+               <placeName ref="#pmb365214">1/1 Post- und Telegraphenamt 1</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <date when="1897-07-18">18. 7. 1897</date>
+               <placeName ref="#pmb213">Bad Ischl</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -148,6 +156,7 @@
          <change who="LU" when="2024-03-18">Durchsicht</change>
          <change when="2024-03-19" who="LU">Index check</change>
          <change who="MAM" when="2024-05-07">Durchsicht</change>
+         <change who="SJ" when="2026-09-28">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -157,7 +166,7 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00010-V"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb213">Ischl</rs></addrLine><addrLine><rs type="place" ref="#pmb43015">Kaltenbach</rs>, <rs type="place" ref="#pmb414">Pension Rudolfshöhe</rs>.</addrLine></address></div>
-         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00010-R"/><salute>Lieber Freund,</salute> viel Dank für Ihren Brief. Die <anchor type="commentary" xml:id="K_L03269-1"/>Sache <rs type="person" ref="#pmb11701">G. H.</rs><note type="commentary" corresp="K_L03269-1">Wenige Tage zuvor war die Annahme von
+         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00010-R"/><salute>Lieber Freund,</salute> viel Dank für Ihren <anchor type="commentary" xml:id="K_L03269-3"/>Brief<note type="commentary" corresp="K_L03269-3">nicht überliefert</note>. Die <anchor type="commentary" xml:id="K_L03269-1"/>Sache <rs type="person" ref="#pmb11701">G. H.</rs><note type="commentary" corresp="K_L03269-1">Wenige Tage zuvor war die Annahme von
                   <rs type="person" ref="#pmb11701">Georg Hirschfelds</rs> neuem Stück <rs type="work" ref="#pmb30474">Agnes Jordan</rs> am <rs type="org" ref="#pmb35597">Deutschen Theater Berlin</rs> gemeldet worden (<bibl>vgl.
                      [O. V.]: <rs type="work" ref="#pmb167776">Theater und Kunst</rs>. In: <rs type="work" ref="#pmb36376">Neues Wiener Journal</rs>, Nr. 1337, <date when="1897-07-14">14. 7. 1897</date>, S. 6</bibl>). Das <rs type="org" ref="#pmb36247">Burgtheater</rs> zog in diesen Tagen die Annahme des <rs type="work" ref="#pmb30474" subtype="implied">Stücks</rs>
                   zurück, was <rs type="person" ref="#pmb2121">Schnitzler</rs> durch einen Brief von
@@ -317,22 +326,14 @@
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb51">
-               <placeName>I., Innere Stadt</placeName>
-               <placeName type="alternative-name">Inner city</placeName>
-               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
-               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
-               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+            <place xml:id="pmb365214">
+               <placeName>1/1 Post- und Telegraphenamt 1</placeName>
                <location type="coords">
+                  <geo>48,209928 16,379065</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
                   <geo>48,20769 16,37049</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
             <place xml:id="pmb213">

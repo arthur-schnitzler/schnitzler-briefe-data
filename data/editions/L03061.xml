@@ -3,9 +3,9 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1901-03-24" n="01">1901-03-24</title>
+            <title type="iso-date" when-iso="1901-03-23" n="01">1901-03-23</title>
             <title level="a">Paul Goldmann, Bertha und Rudolf Christians an Arthur
-               Schnitzler, 24. 3. 1901</title>
+               Schnitzler, [23. oder 24]. 3. 1901</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <author ref="#pmb11093">Christians, Rudolf</author>
             <author ref="#pmb144060">Christians, Bertha</author>
@@ -130,12 +130,16 @@
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <persName ref="#pmb11093">Christians, Rudolf</persName>
                <persName ref="#pmb144060">Christians, Bertha</persName>
-               <date when="1901-03-24" n="01">24. 3. 1901</date>
+               <date n="01" notBefore="1901-03-23" notAfter="1901-03-24">[23. oder 24]. 3. 1901</date>
+               <placeName ref="#pmb144055">Lanzsch &amp; Co.</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1901-03-24">24. 3. 1901</date>
                <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="delivered">
                <date when="1901-03-25">25. 3. 1901</date>
-               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+               <placeName ref="#pmb365208">Wien 9/3 72</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -156,6 +160,7 @@
          <change who="MAM" when="2023-09-06">Durchsicht</change>
          <change when="2023-09-07" who="MAM">Index check</change>
          <change who="LU" when="2023-10-09">Durchsicht</change>
+         <change who="SJ" when="2026-09-28">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -166,7 +171,7 @@
       <body>
          <div type="address"><address><addrLine><hi rend="latintype"><pb facs="DLA_85.1.3171_00019"/>Herrn</hi></addrLine><addrLine><hi rend="latintype">Dr. Arthur Schnitzler</hi></addrLine><addrLine><hi rend="latintype"><rs type="place" ref="#pmb50">Wien</rs></hi></addrLine><addrLine><hi rend="latintype"><rs type="place" ref="#pmb168934">IX. Frankga<c rendition="#langesS">s</c>se 1</rs>.</hi></addrLine></address></div>
          <div type="image"><p rend="center"><pb facs="DLA_85.1.3171_00018"/><hi rend="pre-print"><hi rend="bold">Restaurant ersten Ranges <rs type="place" ref="#pmb144055">Lanzsch
-                           <c rendition="#kaufmannsund"/> Co.</rs></hi></hi></p><p rend="center"><hi rend="pre-print"><hi rend="bold"><hi rend="capitals"><rs type="place" ref="#pmb168">Berlin</rs></hi>,</hi><rs type="place" ref="#pmb144057">Charlotten-Strasse 56</rs></hi></p><p rend="center"><hi rend="pre-print"><foreign xml:lang="fra">vis à vis</foreign><space unit="chars" quantity="1"/><rs type="place" ref="#pmb784">Schauspielhaus</rs></hi></p></div>
+                           <c rendition="#kaufmannsund"/> Co.</rs></hi></hi></p><p rend="center"><hi rend="pre-print"><hi rend="bold"><hi rend="capitals"><rs type="place" ref="#pmb168">Berlin</rs></hi>,</hi><space unit="chars" quantity="1"/><rs type="place" ref="#pmb144057">Charlotten-Strasse 56</rs></hi></p><p rend="center"><hi rend="pre-print"><foreign xml:lang="fra">vis à vis</foreign><space unit="chars" quantity="1"/><rs type="place" ref="#pmb784">Schauspielhaus</rs></hi></p></div>
          <div type="writingSession" n="1"><p><pb facs="DLA_85.1.3171_00018"/><salute>Lieber Freund,</salute> Gerade erzählt mir Herr <hi rend="latintype"><rs type="person" ref="#pmb11093">Christians</rs></hi>, daß er der <anchor type="commentary" xml:id="K_L03061-1"/>er<c rendition="#langesS">s</c>te <hi rend="latintype"><rs type="work" subtype="implied" ref="#pmb29935">Anatol</rs></hi><note type="commentary" corresp="K_L03061-1">Am <ref type="schnitzler-tagebuch" target="1898-01-16" subtype="date-only"/> hatte <rs type="person" ref="#pmb11093">Rudolf Christians</rs> bei der <rs type="event" ref="#pmb45952">Uraufführung von <rs type="work" ref="#pmb30163">Weihnachts-Einkäufe</rs> und
                      der Premiere von <rs type="work" ref="#pmb30005">Abschiedssouper</rs></rs> am
                      <rs type="org" ref="#pmb36430">Deutschen Volkstheater</rs> die Figur des <rs type="work" subtype="implied" ref="#pmb29935">Anatol</rs> gespielt. Da einzelne
@@ -357,6 +362,20 @@
                   <geo>48,216533356678 16,356214321972</geo>
                </location>
             </place>
+            <place xml:id="pmb144055">
+               <placeName>Lanzsch &amp; Co.</placeName>
+               <location type="coords">
+                  <geo>52,58777 13,41212</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb144057">Charlottenstraße</placeName>
+                  <geo>52,51164 13,39167</geo>
+               </location>
+            </place>
             <place xml:id="pmb59">
                <placeName>IX., Alsergrund</placeName>
                <placeName type="legacy-name-merge">Thurygrund</placeName>
@@ -403,20 +422,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb235218">Windmühlhöhe</placeName>
                   <geo>48,24077 16,32092</geo>
-               </location>
-            </place>
-            <place xml:id="pmb144055">
-               <placeName>Lanzsch &amp; Co.</placeName>
-               <location type="coords">
-                  <geo>52,58777 13,41212</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb144057">Charlottenstraße</placeName>
-                  <geo>52,51164 13,39167</geo>
                </location>
             </place>
             <place xml:id="pmb144057">

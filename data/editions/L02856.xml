@@ -99,7 +99,7 @@
                            </incident>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="2">
+                                 <stamp n="2" type="transit">
                                     <placeName ref="#pmb44086">
                                        <supplied>Hong Ko</supplied>ng</placeName>
                                     <date when="1898-09-04">Sp 4 98</date>
@@ -134,21 +134,21 @@
          </langUsage>
          <correspDesc>
             <correspAction type="sent">
-               <persName ref="#pmb11485">Goldmann, Paul</persName>
+               <persName ref="#pmb141925">Goldmann, Paul</persName>
                <date when="1898-08-24" n="02">24. 8. 1898</date>
-               <placeName ref="#pmb118678">Yantai</placeName>
+               <placeName ref="#pmb141925">Beach Hotel</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1898-08-25">25. 8. 1898</date>
                <placeName ref="#pmb118678">Yantai</placeName>
             </correspAction>
-            <correspAction type="transmitted">
+            <correspAction type="in_transit">
                <date when="1898-09-04">4. 9. 1898</date>
                <placeName ref="#pmb44086">Hong Kong</placeName>
             </correspAction>
             <correspAction type="delivered">
                <date when="1898-10-08">8. 10. 1898</date>
-               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+               <placeName ref="#pmb365208">9/3 Post- und Telegraphenamt 72</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -156,11 +156,8 @@
                <placeName ref="#pmb168934">Frankgasse 1</placeName>
             </correspAction>
             <correspContext>
-               <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann, Paul</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L04127">Schnitzler an Schwarzkopf, [23. oder 24]. 8. 1898</ref>
                <ref subtype="next_letter" type="withinCollection" target="L02854">Goldmann an Schnitzler, 24. 8. [1898]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11485" target="L02855">Goldmann an Schnitzler, 5. 8. 1898</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11485" target="L02854">Goldmann an Schnitzler, 24. 8. [1898]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -169,6 +166,7 @@
          <change who="MAM" when="2023-02-20">Index check</change>
          <change when="2023-02-21" who="MAM">Durchsicht</change>
          <change who="LU" when="2023-04-04">Durchsicht</change>
+         <change who="SJ" when="2026-09-29">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -209,6 +207,7 @@
                   </settlement>
                </death>
             </person>
+            <error type="person">141925</error>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
@@ -320,16 +319,14 @@
                   <geo>48,216533356678 16,356214321972</geo>
                </location>
             </place>
-            <place xml:id="pmb59">
-               <placeName>IX., Alsergrund</placeName>
-               <placeName type="legacy-name-merge">Thurygrund</placeName>
-               <placeName type="legacy-name-merge">Wien-Alsergrund</placeName>
+            <place xml:id="pmb141925">
+               <placeName>Beach Hotel</placeName>
                <location type="coords">
-                  <geo>48,22387 16,35641</geo>
+                  <geo>37,545 121,4</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
+                  <placeName ref="pmb118678">Yantai</placeName>
+                  <geo>37,4725 121,45042</geo>
                </location>
             </place>
             <place xml:id="pmb168934">
@@ -388,16 +385,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb235218">Windmühlhöhe</placeName>
                   <geo>48,24077 16,32092</geo>
-               </location>
-            </place>
-            <place xml:id="pmb141925">
-               <placeName>Beach Hotel</placeName>
-               <location type="coords">
-                  <geo>37,545 121,4</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb118678">Yantai</placeName>
-                  <geo>37,4725 121,45042</geo>
                </location>
             </place>
             <place xml:id="pmb141923">

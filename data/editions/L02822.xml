@@ -133,11 +133,15 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1897-09-04" n="01">4. 9. 1897</date>
-               <placeName ref="#pmb45258">München</placeName>
+               <placeName ref="#pmb401">Hotel Marienbad [München]</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1897-09-04">4. 9. [1897]</date>
+               <placeName ref="#pmb45258">Muenchen 1</placeName>
             </correspAction>
             <correspAction type="delivered">
                <date when="1897-09-05">5. 9. 1897</date>
-               <placeName ref="#pmb59">IX., Alsergrund</placeName>
+               <placeName ref="#pmb365208">Wien 9/3 72</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -158,6 +162,7 @@
          <change who="MAM" when="2023-02-14">Durchsicht</change>
          <change when="2023-02-15" who="MAM">Index check</change>
          <change who="LU" when="2023-03-30">Durchsicht</change>
+         <change who="SJ" when="2026-09-29">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -369,6 +374,16 @@
                   <geo>48,216533356678 16,356214321972</geo>
                </location>
             </place>
+            <place xml:id="pmb401">
+               <placeName>Hotel Marienbad [München]</placeName>
+               <location type="coords">
+                  <geo>48,143964 11,567552</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb45258">München</placeName>
+                  <geo>48,13743 11,57549</geo>
+               </location>
+            </place>
             <place xml:id="pmb59">
                <placeName>IX., Alsergrund</placeName>
                <placeName type="legacy-name-merge">Thurygrund</placeName>
@@ -437,16 +452,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb146">Frankfurt am Main</placeName>
                   <geo>50,11552 8,68417</geo>
-               </location>
-            </place>
-            <place xml:id="pmb401" ana="implied">
-               <placeName>Hotel Marienbad [München]</placeName>
-               <location type="coords">
-                  <geo>48,143964 11,567552</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb45258">München</placeName>
-                  <geo>48,13743 11,57549</geo>
                </location>
             </place>
          </listPlace>

@@ -94,7 +94,8 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1" type="transmission">
-                                    <placeName ref="#pmb365223">Wien 1<unclear>1</unclear>0</placeName>
+                                    <placeName ref="#pmb365223">
+                                       <unclear>18</unclear>/1 Wien 1<unclear>1</unclear>0</placeName>
                                     <date when="1920-07-16">16. VII. 20</date>
                                     <time>
                                        <unclear>6</unclear>
@@ -133,7 +134,11 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1920-07-16" n="01">16. 7. 1920</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168815">Sternwartestraße 71</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1920-07-16">16. 7. 1920</date>
+               <placeName ref="#pmb365223">18/1 Post- und Telegraphenamt 110</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
@@ -155,6 +160,7 @@
          <change who="MAM" when="2021-02-12">Index check</change>
          <change who="MAM" when="2021-02-15">Durchsicht</change>
          <change who="GHS" when="2021-05-04">Finalisiert</change>
+         <change who="SJ" when="2026-10-01">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -339,12 +345,61 @@
                   <geo>48,22513 16,343276</geo>
                </location>
                <location type="located_in_place">
+                  <placeName ref="pmb365281">Schulgasse [Wien]</placeName>
+                  <geo>48,226495 16,336654</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+            </place>
+            <place xml:id="pmb168815">
+               <placeName>Sternwartestraße 71</placeName>
+               <location type="coords">
+                  <geo>48,23188 16,33716</geo>
+               </location>
+               <location type="located_in_place">
                   <placeName ref="pmb68">XVIII., Währing</placeName>
                   <geo>48,23333 16,31667</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41463">Schulgasse</placeName>
-                  <geo>47,71222 13,62186</geo>
+                  <placeName ref="pmb533">Währinger Cottage</placeName>
+                  <geo>48,233056 16,341944</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb150">Sternwartestraße</placeName>
+                  <geo>48,23099349198 16,340117830625</geo>
+               </location>
+            </place>
+            <place xml:id="pmb52575">
+               <placeName>Gartengasse</placeName>
+               <location type="coords">
+                  <geo>47,611587818489916 13,782609825157191</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb415">Bad Aussee</placeName>
+                  <geo>47,60998 13,78243</geo>
+               </location>
+            </place>
+            <place xml:id="pmb415">
+               <placeName>Bad Aussee</placeName>
+               <placeName type="ort_fruherer-name">Markt Aussee</placeName>
+               <location type="coords">
+                  <geo>47,60998 13,78243</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb17">Steiermark</placeName>
+                  <geo>47,38 15,7925</geo>
+               </location>
+            </place>
+            <place xml:id="pmb17">
+               <placeName>Steiermark</placeName>
+               <location type="coords">
+                  <geo>47,38 15,7925</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
             <place xml:id="pmb50">
@@ -367,55 +422,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb235218">Windmühlhöhe</placeName>
                   <geo>48,24077 16,32092</geo>
-               </location>
-            </place>
-            <place xml:id="pmb52575">
-               <placeName>Gartengasse</placeName>
-               <location type="coords">
-                  <geo>47,611587818489916 13,782609825157191</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb415">Bad Aussee</placeName>
-                  <geo>47,60998 13,78243</geo>
-               </location>
-            </place>
-            <place xml:id="pmb168815">
-               <placeName>Sternwartestraße 71</placeName>
-               <location type="coords">
-                  <geo>48,23188 16,33716</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb68">XVIII., Währing</placeName>
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb533">Währinger Cottage</placeName>
-                  <geo>48,233056 16,341944</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb150">Sternwartestraße</placeName>
-                  <geo>48,23099349198 16,340117830625</geo>
-               </location>
-            </place>
-            <place xml:id="pmb415">
-               <placeName>Bad Aussee</placeName>
-               <placeName type="ort_fruherer-name">Markt Aussee</placeName>
-               <location type="coords">
-                  <geo>47,60998 13,78243</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb17">Steiermark</placeName>
-                  <geo>47,38 15,7925</geo>
-               </location>
-            </place>
-            <place xml:id="pmb17">
-               <placeName>Steiermark</placeName>
-               <location type="coords">
-                  <geo>47,38 15,7925</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
             <place xml:id="pmb30">

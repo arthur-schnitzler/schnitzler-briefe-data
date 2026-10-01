@@ -207,7 +207,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -216,7 +216,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -224,6 +224,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2425">
                <persName>
@@ -297,99 +301,48 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb11740">
-               <persName>
-                  <forename>Hugo von</forename>
-                  <surname>Hofmannsthal</surname>
-               </persName>
-               <birth>
-                  <date when="1874-02-01">1874-02-01</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1929-07-15">1929-07-15</date>
-                  <settlement ref="pmb173">
-                     <placeName type="pref">Rodaun</placeName>
-                     <location>
-                        <geo>48,132793312328 16,256152195922</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb11098">
-               <persName>
-                  <forename>Michael Georg</forename>
-                  <surname>Conrad</surname>
-               </persName>
-               <birth>
-                  <date when="1846-04-05">1846-04-05</date>
-                  <settlement ref="pmb56162">
-                     <placeName type="pref">Gnodstadt</placeName>
-                     <location>
-                        <geo>49,63762 10,11978</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1927-12-20">1927-12-20</date>
-                  <settlement ref="pmb45258">
-                     <placeName type="pref">München</placeName>
-                     <location>
-                        <geo>48,13743 11,57549</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29935">
-               <title>Anatol</title>
+               <title type="main">Anatol</title>
                <title type="werk_bibliografische-angabe">Arthur Schnitzler: Anatol. Berlin: Bibliographisches Bureau 1892, vordatiert auf 1893</title>
                <title type="legacy-name-merge">Anatol</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <author ref="pmb11740" role="hat-ein-vorwortnachwort-verfasst-zu">Hofmannsthal, Hugo von</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author role="hat-ein-vorwortnachwort-verfasst-zu" ref="pmb11740">Hofmannsthal, Hugo von</author>
             </bibl>
             <bibl xml:id="pmb33552">
-               <title>Arthur Schnitzler, Anatol</title>
+               <title type="main">Arthur Schnitzler, Anatol</title>
                <title type="werk_bibliografische-angabe">Die Gesellschaft, Jg. 9, H. 1, 1. 1. 1893</title>
-               <author ref="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
+               <author role="hat-geschaffen" ref="pmb11988">Kraus, Karl</author>
             </bibl>
             <bibl xml:id="pmb35919">
-               <title>Die Gesellschaft. Monatsschrift für Litteratur, Kunst und Sozialpolitik</title>
+               <title type="main">Die Gesellschaft. Monatsschrift für Litteratur, Kunst und Sozialpolitik</title>
                <title type="werk_link">https://de.wikisource.org/wiki/Die_Gesellschaft_(Literaturzeitschrift)</title>
                <title type="werk_namensvariante">Die Gesellschaft. Realistische Wochenschrift für Litteratur, Kunst und öffentliches Leben</title>
                <title type="werk_namensvariante">Die Gesellschaft. Monatsschrift für Litteratur und Kunst</title>
                <title type="werk_namensvariante">Die Gesellschaft. Halbmonatschrift für Litteratur, Kunst und Sozialpolitik</title>
                <title type="werk_namensvariante">Die Gesellschaft. Münchener Halbmonatschrift für Kunst und Kultur</title>
-               <author ref="pmb2121" role="hat-einen-beitrag-geschaffen-zu">Schnitzler, Arthur</author>
-               <author ref="pmb11098" role="hat-einen-beitrag-geschaffen-zu">Conrad, Michael Georg</author>
-               <author ref="pmb2509" role="hat-einen-beitrag-geschaffen-zu">Osten, Heinrich</author>
-               <author ref="pmb11988" role="hat-einen-beitrag-geschaffen-zu">Kraus, Karl</author>
+               <author role="hat-einen-beitrag-geschaffen-zu" ref="pmb2121">Schnitzler, Arthur</author>
+               <author role="hat-einen-beitrag-geschaffen-zu" ref="pmb11098">Conrad, Michael Georg</author>
+               <author role="hat-einen-beitrag-geschaffen-zu" ref="pmb2509">Osten, Heinrich</author>
+               <author role="hat-einen-beitrag-geschaffen-zu" ref="pmb11988">Kraus, Karl</author>
             </bibl>
             <bibl xml:id="pmb33436" ana="implied">
-               <title>Wiener Lyriker</title>
+               <title type="main">Wiener Lyriker</title>
                <title type="werk_bibliografische-angabe">Magazin für Litteratur, Jg. 62, Nr. 8, 25. 2. 1893</title>
-               <author ref="pmb11988" role="hat-geschaffen">Kraus, Karl</author>
+               <author role="hat-geschaffen" ref="pmb11988">Kraus, Karl</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb365220">
-               <placeName>1/1 Post- und Telegraphenamt 15</placeName>
+            <place xml:id="pmb1178">
+               <placeName>Mahlerstraße</placeName>
+               <placeName type="alternative-name">Maximilianstraße</placeName>
                <location type="coords">
-                  <geo>48,20246 16,370739</geo>
+                  <geo>48,20282 16,371172</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb51">I., Innere Stadt</placeName>
                   <geo>48,20769 16,37049</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb501">Kärntnerring</placeName>
-                  <geo>48,201874800905 16,371985203093</geo>
                </location>
             </place>
             <place xml:id="pmb167782">
@@ -406,12 +359,27 @@
                   <geo>48,212643768549 16,357353835756</geo>
                </location>
             </place>
+            <place xml:id="pmb365220">
+               <placeName>1/1 Post- und Telegraphenamt 15</placeName>
+               <location type="coords">
+                  <geo>48,20246 16,370739</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb501">Kärntnerring</placeName>
+                  <geo>48,201874800905 16,371985203093</geo>
+               </location>
+            </place>
             <place xml:id="pmb51">
                <placeName>I., Innere Stadt</placeName>
                <placeName type="alternative-name">Inner city</placeName>
                <placeName type="alternative-name">Wien,Innere Stadt</placeName>
                <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
                <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <placeName type="legacy-name-merge">Inner city</placeName>
                <location type="coords">
                   <geo>48,20769 16,37049</geo>
                </location>
@@ -424,20 +392,9 @@
                   <geo>48,208333 16,373056</geo>
                </location>
             </place>
-            <place xml:id="pmb1178">
-               <placeName>Mahlerstraße</placeName>
-               <placeName type="alternative-name">Maximilianstraße</placeName>
-               <location type="coords">
-                  <geo>48,20282 16,371172</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-            </place>
          </listPlace>
          <listOrg>
-            <org xml:id="pmb29670" ana="comment">
+            <org xml:id="pmb29670">
                <orgName>Wiener Allgemeine Zeitung</orgName>
                <orgName type="werk_link">http://anno.onb.ac.at/info/waz_info.htm</orgName>
                <location type="located_in_place">
@@ -445,7 +402,7 @@
                   <geo>48,214120366337 16,358756425131</geo>
                   <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb653.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/653/</idno>
-                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb653.html</idno>
+                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb653.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb653.html</idno>
                   <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb653.html</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb653.html</idno>
@@ -458,7 +415,7 @@
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb338.html</idno>
                   <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb338.html</idno>
                   <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb338.html</idno>
-                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb338.html</idno>
+                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb338.html</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb338.html</idno>
                </location>
                <location type="located_in_place">
@@ -489,7 +446,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -503,7 +460,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
             </org>
          </listOrg>

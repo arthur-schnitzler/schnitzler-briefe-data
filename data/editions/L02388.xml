@@ -91,7 +91,8 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1" type="transmission">
-                                    <placeName ref="#pmb45258">München</placeName>
+                                    <placeName ref="#pmb45258">
+                                       <unclear>Mün</unclear>chen</placeName>
                                     <date when="1922-06-10">10 6 22</date>
                                     <time>1–2 N</time>
                                  </stamp>
@@ -142,11 +143,15 @@
             <correspAction type="sent">
                <persName ref="#pmb10815">Bahr, Hermann</persName>
                <date when="1922-06-09" n="01">9. 6. 1922</date>
+               <placeName ref="#pmb161">Barerstraße</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1922-06-10">10. 6. 1922</date>
                <placeName ref="#pmb45258">München</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1922-06-10">10 6 22</date>
+               <date evidence="conjecture" notBefore="1922-06-11" notAfter="1922-06-15">[11. 6. 1922 – 15. 6. 1922?]</date>
                <placeName ref="#pmb168815">Sternwartestraße 71</placeName>
             </correspAction>
             <correspContext>
@@ -165,6 +170,7 @@
          <change who="MAM" when="2018-07-15">Überführt aus Bahr–Schnitzler-Daten</change>
          <change who="MAM" when="2019-01-20">Index check</change>
          <change who="GHS" when="2020-03-26">finalisiert</change>
+         <change who="SJ" when="2026-09-30">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -308,6 +314,16 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
+            <place xml:id="pmb161">
+               <placeName>Barerstraße</placeName>
+               <location type="coords">
+                  <geo>48,15205 11,57392</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb45258">München</placeName>
+                  <geo>48,13743 11,57549</geo>
+               </location>
+            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">
@@ -324,16 +340,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb150">Sternwartestraße</placeName>
                   <geo>48,23099349198 16,340117830625</geo>
-               </location>
-            </place>
-            <place xml:id="pmb161">
-               <placeName>Barerstraße</placeName>
-               <location type="coords">
-                  <geo>48,15205 11,57392</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb45258">München</placeName>
-                  <geo>48,13743 11,57549</geo>
                </location>
             </place>
             <place xml:id="pmb68">

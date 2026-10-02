@@ -93,7 +93,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1" type="transmission">
-                                    <placeName ref="#pmb50">Wien</placeName>
+                                    <placeName ref="#pmb365506">Wien Westbahnhof</placeName>
                                     <date when="1897-08-17">17 8 97</date>
                                     <time>11–12 N</time>
                                  </stamp>
@@ -111,7 +111,8 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="3" type="redirection">
-                                    <placeName ref="#pmb365625">Salzburg Stadt</placeName>
+                                    <placeName ref="#pmb365625">
+                                       <pb facs="1897_AS_RBH_2_00063"/>Salzburg Stadt</placeName>
                                     <date when="1897-08-18">18 8 97</date>
                                     <time>11–F</time>
                                  </stamp>
@@ -152,15 +153,15 @@
             </correspAction>
             <correspAction type="transmitted">
                <date when="1897-08-17">17. 8. 1897</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb365506">15/1 Post- und Telegraphenamt 101</placeName>
             </correspAction>
             <correspAction type="arrived">
                <date when="1897-08-18">18. 8. 1897</date>
-               <placeName ref="#pmb365625">Salzburg</placeName>
+               <placeName ref="#pmb365625">Postamt Salzburg Stadt</placeName>
             </correspAction>
             <correspAction type="redirected">
                <date when="1897-08-18">18. 8. 1897</date>
-               <placeName ref="#pmb365625">Salzburg</placeName>
+               <placeName ref="#pmb365625">Postamt Salzburg Stadt</placeName>
             </correspAction>
             <correspAction type="delivered">
                <date when="1897-08-18">18. 8. 1897</date>
@@ -300,39 +301,32 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb365506">
+               <placeName>15/1 Post- und Telegraphenamt 101</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>48,196203 16,337636</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb65">XV., Rudolfsheim-Fünfhaus</placeName>
+                  <geo>48,19625 16,32749</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
-                  <geo>48,24077 16,32092</geo>
+                  <placeName ref="pmb184918">Westbahnhof</placeName>
+                  <geo>48,196667 16,337778</geo>
                </location>
             </place>
-            <place xml:id="pmb30">
-               <placeName>Salzburg</placeName>
-               <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <placeName type="legacy-name-merge">Salzburg?</placeName>
+            <place xml:id="pmb365625">
+               <placeName>Postamt Salzburg Stadt</placeName>
                <location type="coords">
-                  <geo>47,80067 13,04532</geo>
+                  <geo>47,797964 13,047662</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg [Land]</placeName>
-                  <geo>47,41667 13,25</geo>
+                  <placeName ref="pmb365627">Neue Residenz [Salzburg]</placeName>
+                  <geo>47,7984 13,0475</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb30">Salzburg</placeName>
+                  <geo>47,80067 13,04532</geo>
                </location>
             </place>
             <place xml:id="pmb213">
@@ -371,6 +365,19 @@
                <location type="located_in_place">
                   <placeName ref="pmb397">Frankgasse</placeName>
                   <geo>48,215516628628 16,356475515829</geo>
+               </location>
+            </place>
+            <place xml:id="pmb30">
+               <placeName>Salzburg</placeName>
+               <placeName type="alternative-name">Iuvavum</placeName>
+               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
+               <placeName type="legacy-name-merge">Salzburg?</placeName>
+               <location type="coords">
+                  <geo>47,80067 13,04532</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb697">Salzburg [Land]</placeName>
+                  <geo>47,41667 13,25</geo>
                </location>
             </place>
             <place xml:id="pmb230">

@@ -92,7 +92,8 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1" type="transmission">
-                                    <placeName ref="#pmb50">Wien</placeName>
+                                    <placeName ref="#pmb365229">
+                                       <supplied>3/3</supplied> Wien 49</placeName>
                                     <date when="1893-02-09">9. 2. 93</date>
                                     <time>4–5 N</time>
                                  </stamp>
@@ -133,11 +134,11 @@
             <correspAction type="sent">
                <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
                <date when="1893-02-09" n="02">9. 2. 1893</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb192623">Salesianergasse 12</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1893-02-09">9. 2. 1893</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb365229">3/3 Post- und Telegraphenamt 49</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -205,7 +206,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -214,7 +215,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -222,10 +223,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2450">
                <persName>
@@ -233,7 +230,7 @@
                   <surname>Fels</surname>
                </persName>
                <birth>
-                  <date when="1864-01-01" notAfter="1864-12-31" notBefore="1864-01-01">1864</date>
+                  <date notBefore="1864-01-01" when="1864-01-01" notAfter="1864-12-31">1864</date>
                   <settlement ref="pmb41882">
                      <placeName type="pref">Bad Dürkheim</placeName>
                      <location>
@@ -244,6 +241,38 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb365229">
+               <placeName>3/3 Post- und Telegraphenamt 49</placeName>
+               <location type="coords">
+                  <geo>48,198051 16,380626</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb34016">Strohgasse</placeName>
+                  <geo>48,198222 16,381384</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb266616">Marokkanergasse</placeName>
+                  <geo>48,198 16,3804</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb53">III., Landstraße</placeName>
+                  <geo>48,19811 16,39482</geo>
+               </location>
+            </place>
+            <place xml:id="pmb192623">
+               <placeName>Salesianergasse 12</placeName>
+               <location type="coords">
+                  <geo>48,198484 16,380905</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb76">Salesianergasse</placeName>
+                  <geo>48,199226239476 16,380633449365</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb53">III., Landstraße</placeName>
+                  <geo>48,19811 16,39482</geo>
+               </location>
+            </place>
             <place xml:id="pmb167782">
                <placeName>Wohnung und Ordination Arthur Schnitzler Grillparzerstraße 7/3. Stock</placeName>
                <location type="coords">
@@ -261,16 +290,12 @@
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -278,6 +303,10 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
          </listPlace>

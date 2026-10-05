@@ -80,7 +80,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="telegramm" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="203"/>
+                                 <measure unit="zeichenanzahl" quantity="201"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -160,11 +160,15 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1904-10-24" n="01">24. 10. 1904</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb168940">Edmund-Weiß-Gasse 7</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1904-10-24">24. 10. 1904</date>
                <placeName ref="#pmb50">Wien</placeName>
+            </correspAction>
+            <correspAction type="arrived">
+               <date when="1904-10-24">24. 10. 1904</date>
+               <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="delivered">
                <date when="1904-10-24">24. 10. 1904</date>
@@ -188,6 +192,7 @@
          <change who="GHS" when="2020-01-30">angelegt aus Faksimile</change>
          <change who="MAM" when="2020-02-03">Durchsicht</change>
          <change when="2020-02-04" who="MAM">Index check</change>
+         <change who="MAM" when="2026-10-02">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -200,7 +205,7 @@
                      <rs type="place" ref="#pmb168">berlin</rs></addrLine><addrLine><rs type="place" ref="#pmb18">lessingtheater</rs> +</addrLine></address></div>
          <div type="writingSession" n="1"><opener><dateline><pb facs="GHBrBl_Schnitzler_00000019"/><hi rend="pre-print">Telegramm</hi> de <rs type="place" ref="#pmb50">wien</rs>
                   111.+723 21 <date>24</date><space unit="chars" quantity="1"/><time>10 40m</time><space unit="chars" quantity="1"/><hi rend="pre-print">W.</hi><space unit="chars" quantity="1"/><date><hi rend="pre-print">190</hi>4</date><space unit="chars" quantity="1"/></dateline></opener><p>jch beglueckwuensche sie und <rs ref="#pmb10986" type="person">brahm</rs> herzlich
-               zur ruhmreichen auferstehung des <rs ref="#pmb33273" type="work">florian geyer</rs> –
+               zur ruhmreichen <rs type="event" subtype="implied" ref="#pmb405303">auferstehung</rs> des <rs ref="#pmb33273" type="work">florian geyer</rs> –
                herzlichst gruessend jhr <signed>arthur schnitzler +</signed></p></div>
       </body>
       <back>
@@ -339,6 +344,25 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
+            <place xml:id="pmb168940">
+               <placeName>Edmund-Weiß-Gasse 7</placeName>
+               <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
+               <location type="coords">
+                  <geo>48,2304 16,33472</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb533">Währinger Cottage</placeName>
+                  <geo>48,233056 16,341944</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb133">Edmund-Weiß-Gasse</placeName>
+                  <geo>48,23056 16,3348</geo>
+               </location>
+            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
@@ -424,6 +448,19 @@
                </location>
             </org>
          </listOrg>
+         <listEvent>
+            <event xml:id="pmb405303" ana="implied">
+               <eventName n="Theaterpremiere">Premiere von Florian Geyer, 22.10.1904</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb18">Lessing-Theater</placeName>
+                     <location>
+                        <geo>52,5225 13,376389</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+         </listEvent>
       </back>
    </text>
 </TEI>

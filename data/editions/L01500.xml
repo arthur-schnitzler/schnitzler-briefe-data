@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="152"/>
+                                 <measure unit="zeichenanzahl" quantity="150"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -146,9 +146,13 @@
                <date when="1905-02-10" n="01">10. 2. 1905</date>
                <placeName ref="#pmb45258">München</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1905-02-10">10. 2. 1905</date>
+               <placeName ref="#pmb45258">München</placeName>
+            </correspAction>
             <correspAction type="delivered">
-               <date when="1905-02-11">11. 2. 1905</date>
-               <placeName ref="#pmb68">XVIII., Währing</placeName>
+               <date when="1905-02-11">11. 2. 05</date>
+               <placeName ref="#pmb365223">18/1 Post- und Telegraphenamt 110</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -169,6 +173,7 @@
          <change who="MAM" when="2020-06-17">Durchsicht</change>
          <change when="2020-06-18" who="MAM">Index check</change>
          <change who="GHS" when="2020-06-23">finalisiert</change>
+         <change who="MAM" when="2026-10-02">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -179,9 +184,9 @@
       <body>
          <div type="address"><address><addrLine><pb facs="MS-SCHNITZLER-B-0008-B-00002-000-00081"/>Herrn</addrLine><addrLine>D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine><addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine><addrLine><rs type="place" ref="#pmb168940">XVIII Spöttelgasse 7</rs></addrLine></address></div>
          <div type="image"><p rend="center"><pb facs="MS-SCHNITZLER-B-0008-B-00002-000-00082"/><hi rend="pre-print"><rs type="person" ref="#pmb11209">Albrecht Dürer</rs>-Serie</hi></p><p rend="center"><hi rend="pre-print"><rs type="work" ref="#pmb46093">Das kleine Pferd</rs></hi></p></div>
-         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-0008-B-00002-000-00082"/>Zur <anchor type="commentary" xml:id="K_L01500-1"/><rs type="work" ref="#pmb30233" subtype="implied">Première</rs><note type="commentary" corresp="K_L01500-1"><rs type="work" ref="#pmb30233">Der Graf von Charolais</rs> hatte am <date>10. 2. 1905</date> am <rs type="org" ref="#pmb48177">Münchner Residenztheater</rs>
+         <div type="writingSession" n="1"><p><pb facs="MS-SCHNITZLER-B-0008-B-00002-000-00082"/>Zur <anchor type="commentary" xml:id="K_L01500-1"/><rs type="event" subtype="implied" ref="#pmb46095"><rs type="work" ref="#pmb30233" subtype="implied">Première</rs></rs><note type="commentary" corresp="K_L01500-1"><rs type="work" ref="#pmb30233">Der Graf von Charolais</rs> hatte am <date>10. 2. 1905</date> am <rs type="org" ref="#pmb48177">Münchner Residenztheater</rs>
                    Premiere.</note> gehen
-               weder <rs ref="#pmb10860" type="person">Paula</rs> noch ich. Die Generalprobe war zu
+               weder <rs ref="#pmb10860" type="person">Paula</rs> noch ich. Die <rs type="event" subtype="implied" ref="#pmb405312">Generalprobe</rs> war zu
                schön. <anchor type="textConst" xml:id="T_L01500-1"/>↑ ist kein
                   Hoftheatermitglied<note type="textConst" corresp="T_L01500-1">Der Pfeil zeigt auf
                   das Pferdemotiv der Karte.</note>. <signed>Richard</signed></p></div>
@@ -334,21 +339,6 @@
                   <geo>48,231941 16,335645</geo>
                </location>
             </place>
-            <place xml:id="pmb68">
-               <placeName>XVIII., Währing</placeName>
-               <placeName type="legacy-name-merge">Währing</placeName>
-               <location type="coords">
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -426,6 +416,30 @@
                </location>
             </org>
          </listOrg>
+         <listEvent>
+            <event xml:id="pmb46095" ana="implied">
+               <eventName n="Theaterpremiere">Premiere von Der Graf von Charolais, 10.2.1905</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb635">Residenztheater München</placeName>
+                     <location>
+                        <geo>48,139944 11,578786</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+            <event xml:id="pmb405312" ana="implied">
+               <eventName n="Generalprobe">Generalprobe von Der Graf von Charolais, [9?].2.1905</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb635">Residenztheater München</placeName>
+                     <location>
+                        <geo>48,139944 11,578786</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+         </listEvent>
       </back>
    </text>
 </TEI>

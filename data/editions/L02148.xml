@@ -91,7 +91,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <placeName ref="#pmb843">S. Elisabetta di Lido
                                        (Venezia)</placeName>
                                     <date when="1913-08-10">10. 8. 13.</date>
@@ -133,7 +133,11 @@
             <correspAction type="sent">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1913-08-10" n="01">10. 8. 1913</date>
-               <placeName ref="#pmb259">Lido</placeName>
+               <placeName ref="#pmb40983">Grand Hotel des Bains</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1913-08-10">10. 8. 1913</date>
+               <placeName ref="#pmb843">S. Elisabetta di Lido (Venezia)</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -155,6 +159,7 @@
          <change who="GHS" when="2021-01-26">Durchsicht</change>
          <change who="MAM" when="2021-02-04">Index check</change>
          <change who="MAM" when="2021-03-09">Durchsicht</change>
+         <change who="SJ" when="2026-10-05">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -338,18 +343,14 @@
                   <geo>45,43713 12,33265</geo>
                </location>
             </place>
-            <place xml:id="pmb259">
-               <placeName>Lido</placeName>
+            <place xml:id="pmb40983">
+               <placeName>Grand Hotel des Bains</placeName>
                <location type="coords">
+                  <geo>45,413333 12,374722</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb259">Lido</placeName>
                   <geo>45,38333 12,35</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb462">Venedig</placeName>
-                  <geo>45,43713 12,33265</geo>
                </location>
             </place>
             <place xml:id="pmb45260">
@@ -385,6 +386,20 @@
                   <geo>48,4054 16,4887</geo>
                </location>
             </place>
+            <place xml:id="pmb259">
+               <placeName>Lido</placeName>
+               <location type="coords">
+                  <geo>45,38333 12,35</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb462">Venedig</placeName>
+                  <geo>45,43713 12,33265</geo>
+               </location>
+            </place>
             <place xml:id="pmb462">
                <placeName>Venedig</placeName>
                <placeName type="legacy-name-merge">Venice</placeName>
@@ -394,16 +409,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb40306">Italien</placeName>
                   <geo>42,83333 12,83333</geo>
-               </location>
-            </place>
-            <place xml:id="pmb40983">
-               <placeName>Grand Hotel des Bains</placeName>
-               <location type="coords">
-                  <geo>45,413333 12,374722</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb259">Lido</placeName>
-                  <geo>45,38333 12,35</geo>
                </location>
             </place>
             <place xml:id="pmb50">

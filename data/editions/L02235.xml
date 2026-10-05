@@ -115,7 +115,11 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1916-07-30" n="01">30. 7. 1916</date>
-               <placeName ref="#pmb34401">Altaussee</placeName>
+               <placeName ref="#pmb34387">Villa Annerl</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1916-07-30">30. 7. 1916</date>
+               <placeName ref="#pmb34401" evidence="conjecture">Altaussee</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
@@ -127,7 +131,7 @@
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L02234">Hofmannsthal an Schnitzler, 24. 7. [1916]</ref>
                <ref subtype="next_letter" type="withinCollection" target="L03573">Salten an Schnitzler, [30. oder 31]. 7. 1916</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L02233">Beer-Hofmann an Schnitzler, 19. 7. 1916</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L02233">Beer-Hofmann an Schnitzler, [18. oder 19]. 7. 1916</ref>
                <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L02236">Schnitzler an Beer-Hofmann, 1. 8. 1916</ref>
             </correspContext>
          </correspDesc>
@@ -137,6 +141,7 @@
          <change when="2021-02-09" who="MAM">Index check</change>
          <change who="MAM" when="2021-05-04">Durchsicht</change>
          <change who="GHS" when="2021-07-13">Durchsicht</change>
+         <change who="SJ" when="2026-10-05">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -145,7 +150,7 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="1916_AS_RBH_1_00007"/><rs ref="#pmb34402" type="place">Fischerndorf 79</rs></addrLine><addrLine>Schnitzler</addrLine></address><address><addrLine>Hrn Dr. Richard Beer-Hofmann</addrLine><addrLine><rs type="place" ref="#pmb213">Bad Ischl</rs>.</addrLine><addrLine><rs type="place" ref="#pmb43462">Grazerstr 52</rs></addrLine></address></div>
+         <div type="address"><address><addrLine><pb facs="1916_AS_RBH_1_00007"/><rs ref="#pmb34387" type="place">Fischerndorf 79</rs></addrLine><addrLine>Schnitzler</addrLine></address><address><addrLine>Hrn Dr. Richard Beer-Hofmann</addrLine><addrLine><rs type="place" ref="#pmb213">Bad Ischl</rs>.</addrLine><addrLine><rs type="place" ref="#pmb43462">Grazerstr 52</rs></addrLine></address></div>
          <div type="image"><p rend="center"><pb facs="1916_AS_RBH_1_00006"/><hi rend="pre-print"><rs type="place" ref="#pmb34401"><hi rend="capitals">Alt-Aussee</hi></rs> 717 m Seehöhe mit dem <rs type="place" ref="#pmb45943">Dachstein</rs>
                   2996 m. <rs type="place" ref="#pmb429">Steier. Salzkammergut</rs>.</hi></p></div>
          <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="1916_AS_RBH_1_00007"/><date when="1916-07-30">30. 7.</date></dateline></opener><p><salute>lieber Richard,</salute><space unit="chars" quantity="1"/><anchor type="commentary" xml:id="K_L02235-1"/><date>Mittwoch</date><note type="commentary" corresp="K_L02235-1">Es wurde Donnerstag, <ref target="1916-08-03" type="schnitzler-tagebuch" subtype="cf"/>.</note> dürften wir bei schönem Wetter in <rs type="place" ref="#pmb213">Ischl</rs>
@@ -255,6 +260,21 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb34387">
+               <placeName>Villa Annerl</placeName>
+               <placeName type="ort_fruherer-name">Gästehaus Dr. Schachl</placeName>
+               <location type="coords">
+                  <geo>47,6416 13,77095</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb34401">Altaussee</placeName>
+                  <geo>47,639444 13,763333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb34402">Fischerndorf</placeName>
+                  <geo>47,63333 13,76667</geo>
+               </location>
+            </place>
             <place xml:id="pmb34401">
                <placeName>Altaussee</placeName>
                <location type="coords">
@@ -284,20 +304,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb213">Bad Ischl</placeName>
                   <geo>47,71109 13,61893</geo>
-               </location>
-            </place>
-            <place xml:id="pmb34402">
-               <placeName>Fischerndorf</placeName>
-               <location type="coords">
-                  <geo>47,63333 13,76667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb34401">Altaussee</placeName>
-                  <geo>47,639444 13,763333</geo>
                </location>
             </place>
             <place xml:id="pmb213">

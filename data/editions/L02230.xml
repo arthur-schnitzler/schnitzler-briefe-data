@@ -3,8 +3,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title type="iso-date" when-iso="1916-07-10" n="01">1916-07-10</title>
-            <title level="a">Arthur Schnitzler an Robert Adam, 10. 7. 1916</title>
+            <title type="iso-date" when-iso="1916-07-09" n="01">1916-07-09</title>
+            <title level="a">Arthur Schnitzler an Robert Adam, [9. oder 10]. 7. 1916</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -91,7 +91,7 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">
+                                 <stamp n="1" type="transmission">
                                     <date when="1916-07-10">10. VII. 16</date>
                                  </stamp>
                               </desc>
@@ -110,8 +110,12 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1916-07-10" n="01">10. 7. 1916</date>
-               <placeName ref="#pmb34401">Altaussee</placeName>
+               <date n="01" notBefore="1916-07-09" notAfter="1916-07-10">[9. oder 10]. 7. 1916</date>
+               <placeName ref="#pmb34387">Villa Annerl</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1916-07-10">10. 7. 1916</date>
+               <placeName ref="#pmb34401" evidence="conjecture">Altaussee</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb12438">Adam, Robert</persName>
@@ -133,6 +137,7 @@
          <change who="MAM" when="2019-06-17">Index check</change>
          <change who="GHS" when="2020-05-01">Durchsicht</change>
          <change who="GHS" when="2020-08-25">finalisiert</change>
+         <change who="SJ" when="2026-10-05">Datierung und Stempel überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -141,7 +146,7 @@
    </facsimile>
    <text>
       <body>
-         <div type="address"><address><addrLine><pb facs="96.34.1_2_0056"/>Schnitzler</addrLine><addrLine><rs ref="#pmb34401" type="place">Altaussee</rs></addrLine><addrLine><rs ref="#pmb34402" type="place">Fischerndorf 79</rs></addrLine></address><address><addrLine>Hrn Dr. Rob. Adam Pollak, Bezirksrichter aus <rs ref="#pmb50" type="place">Wien</rs></addrLine><addrLine>d. Z. <rs ref="#pmb415" type="place">Markt Aussee</rs></addrLine><addrLine>bei <rs ref="#pmb34405" type="person">Althauser</rs></addrLine></address></div>
+         <div type="address"><address><addrLine><pb facs="96.34.1_2_0056"/>Schnitzler</addrLine><addrLine><rs ref="#pmb34401" type="place">Altaussee</rs></addrLine><addrLine><rs ref="#pmb34387" type="place">Fischerndorf 79</rs></addrLine></address><address><addrLine>Hrn Dr. Rob. Adam Pollak, Bezirksrichter aus <rs ref="#pmb50" type="place">Wien</rs></addrLine><addrLine>d. Z. <rs ref="#pmb415" type="place">Markt Aussee</rs></addrLine><addrLine>bei <rs ref="#pmb34405" type="person">Althauser</rs></addrLine></address></div>
          <div type="writingSession" n="1"><p><pb facs="96.34.1_2_0055"/><salute>verehrter Herr Doktor,</salute> ich habe sehr bedauert Ihren Besuch versäumt
                zu haben. Würde es Ihnen etwa passen, am <anchor type="commentary" xml:id="K_L02230-1"/><date>Mittwoch</date><note type="commentary" corresp="K_L02230-1"><date>12. 7. 1916</date></note> oder <date>Donnerstag</date> um <time>6 Uhr Nm</time> mich zu einem
                Spaziergang abzuholen? Oder ist Ihnen der Vormittg lieber? Da könnten Sie da<c rendition="#gemination-n">nn</c> (wie wir es auch thun) beim <rs ref="#pmb106" type="place">Seewirth</rs> speisen? Ich <unclear>hoffe in</unclear><space unit="chars" quantity="1"/><gap unit="chars" quantity="5" reason="illegible"/> u. Sie zu sehen. Herzlichst
@@ -204,6 +209,21 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb34387">
+               <placeName>Villa Annerl</placeName>
+               <placeName type="ort_fruherer-name">Gästehaus Dr. Schachl</placeName>
+               <location type="coords">
+                  <geo>47,6416 13,77095</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb34401">Altaussee</placeName>
+                  <geo>47,639444 13,763333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb34402">Fischerndorf</placeName>
+                  <geo>47,63333 13,76667</geo>
+               </location>
+            </place>
             <place xml:id="pmb34401">
                <placeName>Altaussee</placeName>
                <location type="coords">
@@ -216,20 +236,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb429">Salzkammergut</placeName>
                   <geo>47,75 13,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb34402">
-               <placeName>Fischerndorf</placeName>
-               <location type="coords">
-                  <geo>47,63333 13,76667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb34401">Altaussee</placeName>
-                  <geo>47,639444 13,763333</geo>
                </location>
             </place>
             <place xml:id="pmb50">

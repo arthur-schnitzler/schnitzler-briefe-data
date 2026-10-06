@@ -101,6 +101,18 @@
                 Dubletten). </sch:assert>
         </sch:rule>
     </sch:pattern>
+    <sch:pattern id="correspAction-has-child">
+        <sch:rule context="tei:correspAction">
+            <sch:assert test="child::*"> tei:correspAction muss mindestens ein Kind-Element haben
+                (z.B. tei:persName, tei:date, tei:placeName). </sch:assert>
+        </sch:rule>
+    </sch:pattern>
+    <sch:pattern id="correspAction-children-text-only">
+        <sch:rule context="tei:correspAction/*">
+            <sch:assert test="not(child::*)"> Kinder von tei:correspAction dürfen nur Textinhalt
+                haben, keine weiteren Kind-Elemente. </sch:assert>
+        </sch:rule>
+    </sch:pattern>
     <sch:pattern id="correspAction-date-n">
         <sch:rule context="tei:correspAction[1]/tei:date">
             <sch:assert test="@n">
@@ -313,14 +325,16 @@
         </sch:rule>
     </sch:pattern>
     <!-- first div of each @type (e.g. first writingSession, first image, ...) must start
-         with pb, before any text, however deeply nested -->
+         with pb, before any text, however deeply nested.
+         Sonderfall: ein div[@type='image'] mit tei:figure braucht kein pb (z. B. L00285) -->
     <sch:pattern id="first-div-of-type-starts-with-pb">
         <sch:rule context="tei:body/tei:div">
             <sch:let name="own-type" value="@type"/>
             <sch:assert
-                test="preceding-sibling::tei:div[@type = $own-type] or ((.//tei:pb)[1] and not((.//text()[normalize-space(.)])[1] &lt;&lt; (.//tei:pb)[1]))">
+                test="preceding-sibling::tei:div[@type = $own-type] or (@type = 'image' and tei:figure) or ((.//tei:pb)[1] and not((.//text()[normalize-space(.)])[1] &lt;&lt; (.//tei:pb)[1]))">
                 Am Anfang des ersten tei:div eines jeden @type-Werts muss ein tei:pb stehen,
                 bevor anderer Text folgt (das tei:pb kann dabei tief verschachtelt sein).
+                Ausnahme: tei:div[@type='image'] mit tei:figure benötigt kein tei:pb.
             </sch:assert>
         </sch:rule>
     </sch:pattern>

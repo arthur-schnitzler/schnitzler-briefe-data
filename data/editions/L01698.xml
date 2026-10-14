@@ -115,17 +115,22 @@
                <persName ref="#pmb12225">Mell, Max</persName>
                <persName ref="#pmb5765">Mell, Mary</persName>
                <date when="1907-08-03" n="01">3. 8. 1907</date>
-               <placeName ref="#pmb50963">Deutschfeistritz</placeName>
+               <placeName ref="#pmb50844">Schloss Thinnfeld</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1907-08-03">3. 8. 1907</date>
                <placeName ref="#pmb54762">Peggau</placeName>
             </correspAction>
-            <correspAction type="received">
-               <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+            <correspAction type="redirected">
                <date evidence="conjecture" notBefore="1907-08-04" notAfter="1907-08-08">[4. 8. 1907
                   – 8. 8. 1907?]</date>
                <placeName ref="#pmb168940">Edmund-Weiß-Gasse 7</placeName>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+               <date evidence="conjecture" notBefore="1907-08-05" notAfter="1907-08-10">[5. 8. 1907
+                  – 10. 8. 1907?]</date>
+               <placeName ref="#pmb723">Wildbad Waldbrunn</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_12225">Mell, Max</ref>
@@ -244,19 +249,14 @@
                   <geo>47,38 15,7925</geo>
                </location>
             </place>
-            <place xml:id="pmb50963">
-               <placeName>Deutschfeistritz</placeName>
-               <placeName type="legacy-name-merge">Deutsch Feistritz</placeName>
+            <place xml:id="pmb50844">
+               <placeName>Schloss Thinnfeld</placeName>
                <location type="coords">
+                  <geo>47,201072 15,337659</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50963">Deutschfeistritz</placeName>
                   <geo>47,19852 15,33623</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb17">Steiermark</placeName>
-                  <geo>47,38 15,7925</geo>
                </location>
             </place>
             <place xml:id="pmb168940">
@@ -278,6 +278,17 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
+            <place xml:id="pmb723">
+               <placeName>Wildbad Waldbrunn</placeName>
+               <placeName type="legacy-name-merge">Waldbrunn</placeName>
+               <location type="coords">
+                  <geo>46,751211 12,101269</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb428">Welsberg-Taisten</placeName>
+                  <geo>46,75774 12,10556</geo>
+               </location>
+            </place>
             <place xml:id="pmb68">
                <placeName>XVIII., Währing</placeName>
                <placeName type="legacy-name-merge">Währing</placeName>
@@ -293,14 +304,19 @@
                   <geo>48,208333 16,373056</geo>
                </location>
             </place>
-            <place xml:id="pmb50844">
-               <placeName>Schloss Thinnfeld</placeName>
+            <place xml:id="pmb50963">
+               <placeName>Deutschfeistritz</placeName>
+               <placeName type="legacy-name-merge">Deutsch Feistritz</placeName>
                <location type="coords">
-                  <geo>47,201072 15,337659</geo>
+                  <geo>47,19852 15,33623</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb50963">Deutschfeistritz</placeName>
-                  <geo>47,19852 15,33623</geo>
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb17">Steiermark</placeName>
+                  <geo>47,38 15,7925</geo>
                </location>
             </place>
          </listPlace>

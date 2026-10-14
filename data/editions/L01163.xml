@@ -153,7 +153,7 @@
             <correspAction type="sent">
                <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
                <date when="1901-08-19" n="01">19. 8. 1901</date>
-               <placeName ref="#pmb173">Rodaun</placeName>
+               <placeName ref="#pmb939">Heiligenkreuz</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1901-08-20">20. 8. 1901</date>
@@ -163,10 +163,14 @@
                <date when="1901-08-21">21. 8. 1901</date>
                <placeName ref="#pmb365208">9/3 Post- und Telegraphenamt 72</placeName>
             </correspAction>
-            <correspAction type="received">
-               <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+            <correspAction type="redirected">
                <date when="1901-08-21">21. 8. 1901</date>
                <placeName ref="#pmb168934">Frankgasse 1</placeName>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+               <date notBefore="1901-08-22" notAfter="1901-08-26" evidence="conjecture">[22. 8. 1901 – 26. 8. 1901?]</date>
+               <placeName ref="#pmb723" evidence="conjecture">Wildbad Waldbrunn</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo von</ref>
@@ -276,6 +280,16 @@
                   <geo>48,216533356678 16,356214321972</geo>
                </location>
             </place>
+            <place xml:id="pmb939">
+               <placeName>Heiligenkreuz</placeName>
+               <location type="coords">
+                  <geo>48,04261 16,15292</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
             <place xml:id="pmb168934">
                <placeName>Frankgasse 1</placeName>
                <location type="coords">
@@ -288,6 +302,17 @@
                <location type="located_in_place">
                   <placeName ref="pmb397">Frankgasse</placeName>
                   <geo>48,215516628628 16,356475515829</geo>
+               </location>
+            </place>
+            <place xml:id="pmb723">
+               <placeName>Wildbad Waldbrunn</placeName>
+               <placeName type="legacy-name-merge">Waldbrunn</placeName>
+               <location type="coords">
+                  <geo>46,751211 12,101269</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb428">Welsberg-Taisten</placeName>
+                  <geo>46,75774 12,10556</geo>
                </location>
             </place>
             <place xml:id="pmb50">
@@ -320,16 +345,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb939">Heiligenkreuz</placeName>
                   <geo>48,04261 16,15292</geo>
-               </location>
-            </place>
-            <place xml:id="pmb939">
-               <placeName>Heiligenkreuz</placeName>
-               <location type="coords">
-                  <geo>48,04261 16,15292</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

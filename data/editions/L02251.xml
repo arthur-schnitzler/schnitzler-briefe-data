@@ -155,30 +155,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb12438">
                <persName>
                   <forename>Robert</forename>
@@ -203,26 +179,36 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb365226">
-               <placeName>18/1 Post- und Telegraphenamt 111</placeName>
-               <location type="coords">
-                  <geo>48,230794 16,344569</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb199145">Anastasius-Grün-Gasse</placeName>
-                  <geo>48,231448 16,342796</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb68">XVIII., Währing</placeName>
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb405253">Postbestellbezirk 18/1</placeName>
-                  <geo>48,231941 16,335645</geo>
-               </location>
-            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">
@@ -241,6 +227,24 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
+            <place xml:id="pmb365226">
+               <placeName>18/1 Post- und Telegraphenamt 111</placeName>
+               <location type="coords">
+                  <geo>48,230794 16,344569</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb199145">Anastasius-Grün-Gasse</placeName>
+                  <geo>48,231448 16,342796</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb405253">Postbestellbezirk 18/1</placeName>
+                  <geo>48,231941 16,335645</geo>
+               </location>
+            </place>
             <place xml:id="pmb365563">
                <placeName>Meidlinger Hauptstraße 56</placeName>
                <location type="coords">
@@ -255,23 +259,16 @@
                   <geo>48,178825 16,329918</geo>
                </location>
             </place>
-            <place xml:id="pmb62">
-               <placeName>XII., Meidling</placeName>
-               <placeName type="legacy-name-merge">Meidling</placeName>
-               <placeName type="legacy-name-merge">Wien-Meidling</placeName>
-               <location type="coords">
-                  <geo>48,17192 16,32586</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
             <place xml:id="pmb45258">
                <placeName>München</placeName>
+               <placeName type="alternative-name">München</placeName>
                <placeName type="legacy-name-merge">München?</placeName>
+               <placeName type="legacy-name-merge">München</placeName>
                <placeName type="legacy-name-merge">Munich</placeName>
                <placeName type="alternative-name">Monacho</placeName>
+               <placeName type="alternative-name">Munich</placeName>
+               <placeName type="legacy-name">München</placeName>
+               <placeName type="legacy-name-merge">München?</placeName>
                <location type="coords">
                   <geo>48,13743 11,57549</geo>
                </location>
@@ -282,6 +279,18 @@
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb62">
+               <placeName>XII., Meidling</placeName>
+               <placeName type="legacy-name-merge">Meidling</placeName>
+               <placeName type="legacy-name-merge">Wien-Meidling</placeName>
+               <location type="coords">
+                  <geo>48,17192 16,32586</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
                </location>
             </place>
          </listPlace>

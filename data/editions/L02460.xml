@@ -155,30 +155,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11002">
                <persName>
                   <forename>Felix</forename>
@@ -203,29 +179,43 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30751">
-               <title>Die Frau des Richters. Novelle</title>
+               <title type="main">Die Frau des Richters. Novelle</title>
                <title type="werk_bibliografische-angabe">Vossische Zeitung, 7.–15. 8. 1925</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb365630">
-               <placeName>13/1 Post- und Telegraphenamt 88</placeName>
-               <location type="coords">
-                  <geo>48,18485318933617 16,299314868585913</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb65592">Fasholdgasse</placeName>
-                  <geo>48,185336 16,2993607</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb63">XIII., Hietzing</placeName>
-                  <geo>48,17547 16,29101</geo>
-               </location>
-            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">
@@ -244,6 +234,34 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
+            <place xml:id="pmb365630">
+               <placeName>13/1 Post- und Telegraphenamt 88</placeName>
+               <location type="coords">
+                  <geo>48,18485318933617 16,299314868585913</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb65592">Fasholdgasse</placeName>
+                  <geo>48,185336 16,2993607</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb63">XIII., Hietzing</placeName>
+                  <geo>48,17547 16,29101</geo>
+               </location>
+            </place>
+            <place xml:id="pmb365643">
+               <placeName>Sieveringer Straße 191</placeName>
+               <location type="coords">
+                  <geo>48,252261604003735 16,31915855509781</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1092">Sieveringer Straße</placeName>
+                  <geo>48,24803 16,32993</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb69">XIX., Döbling</placeName>
+                  <geo>48,25 16,33306</geo>
+               </location>
+            </place>
             <place xml:id="pmb63">
                <placeName>XIII., Hietzing</placeName>
                <placeName type="legacy-name-merge">Hietzing</placeName>
@@ -253,17 +271,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb1092">
-               <placeName>Sieveringer Straße</placeName>
-               <placeName type="legacy-name-merge">Sieveringer Hauptstr.</placeName>
-               <location type="coords">
-                  <geo>48,24803 16,32993</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb69">XIX., Döbling</placeName>
-                  <geo>48,25 16,33306</geo>
                </location>
             </place>
             <place xml:id="pmb68">
@@ -285,6 +292,7 @@
                <placeName>XIX., Döbling</placeName>
                <placeName type="legacy-name-merge">Döbling</placeName>
                <placeName type="legacy-name-merge">Wien-Döbling</placeName>
+               <placeName type="legacy-name-merge">Döbling</placeName>
                <location type="coords">
                   <geo>48,25 16,33306</geo>
                </location>

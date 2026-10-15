@@ -194,13 +194,37 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb11565">
+               <persName>
+                  <forename>Max</forename>
+                  <surname>Halbe</surname>
+               </persName>
+               <birth>
+                  <date when="1865-10-04">1865-10-04</date>
+                  <settlement ref="pmb63993">
+                     <placeName type="pref">Gmina Suchy Dąb</placeName>
+                     <location>
+                        <geo>54,2046 18,7945</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1944-11-30">1944-11-30</date>
+                  <settlement ref="pmb63812">
+                     <placeName type="pref">Neuötting</placeName>
+                     <location>
+                        <geo>48,24102 12,68998</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -209,7 +233,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -217,6 +241,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb6274">
                <persName>
@@ -242,47 +270,34 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb11565">
-               <persName>
-                  <forename>Max</forename>
-                  <surname>Halbe</surname>
-               </persName>
-               <birth>
-                  <date when="1865-10-04">1865-10-04</date>
-                  <settlement ref="pmb63993">
-                     <placeName type="pref">Gmina Suchy Dąb</placeName>
-                     <location>
-                        <geo>54,2046 18,7945</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1944-11-30">1944-11-30</date>
-                  <settlement ref="pmb63812">
-                     <placeName type="pref">Neuötting</placeName>
-                     <location>
-                        <geo>48,24102 12,68998</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb36166">
-               <title>Freie Bühne für den Entwickelungskampf der Zeit</title>
-               <author ref="pmb11061" role="hat-herausgegeben">Bölsche, Wilhelm</author>
-            </bibl>
             <bibl xml:id="pmb34141">
-               <title>Dämmerung</title>
+               <title type="main">Dämmerung</title>
                <title type="werk_unter-diesem-namen-oder-kurzel-veroffentlicht">Ernst Rosmer</title>
-               <author ref="pmb6274" role="hat-geschaffen">Bernstein, Elsa</author>
+               <author role="hat-geschaffen" ref="pmb6274">Bernstein, Elsa</author>
             </bibl>
-            <bibl xml:id="pmb33714" ana="implied">
-               <title>Der Amerikafahrer</title>
-               <author ref="pmb11565" role="hat-geschaffen">Halbe, Max</author>
+            <bibl xml:id="pmb36166">
+               <title type="main">Freie Bühne für den Entwickelungskampf der Zeit</title>
+               <author role="hat-herausgegeben" ref="pmb11061">Bölsche, Wilhelm</author>
+            </bibl>
+            <bibl xml:id="pmb33714" ana="comment">
+               <title type="main">Der Amerikafahrer</title>
+               <author role="hat-geschaffen" ref="pmb11565">Halbe, Max</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb1275">
+               <placeName>Friedrichshagen</placeName>
+               <placeName type="legacy-name-merge">Friedrichshagen (Berlin)</placeName>
+               <location type="coords">
+                  <geo>52,45 13,616667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+            </place>
             <place xml:id="pmb1276">
                <placeName>Peter-Hille-Straße</placeName>
                <placeName type="ort_fruherer-name">Wilhelmstraße</placeName>
@@ -321,17 +336,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb43015">Kaltenbach</placeName>
                   <geo>47,69778 13,60913</geo>
-               </location>
-            </place>
-            <place xml:id="pmb1275">
-               <placeName>Friedrichshagen</placeName>
-               <placeName type="legacy-name-merge">Friedrichshagen (Berlin)</placeName>
-               <location type="coords">
-                  <geo>52,45 13,616667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
                </location>
             </place>
          </listPlace>

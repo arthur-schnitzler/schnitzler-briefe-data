@@ -188,30 +188,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
@@ -236,38 +212,48 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29903" ana="implied">
-               <title>Zwischenspiel. Komödie in drei Akten</title>
+               <title type="main">Zwischenspiel. Komödie in drei Akten</title>
                <title type="werk_arbeitstitel">Neue Ehe</title>
                <title type="werk_arbeitstitel">Das leichte Leben</title>
                <title type="werk_arbeitstitel">Cäcilie Adams</title>
                <title type="werk_arbeitstitel">Adagio</title>
                <title type="werk_arbeitstitel">»Nicht mehr zu dir zu gehn …«</title>
                <title type="legacy-name-merge">Zwischenspiel</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb231810">
-               <placeName>Willergasse 2</placeName>
-               <location type="coords">
-                  <geo>48,139276 16,257741</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41728">Willergasse</placeName>
-                  <geo>48,1393188 16,2577427</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb73">XXIII., Liesing</placeName>
-                  <geo>48,13333 16,3</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb173">Rodaun</placeName>
-                  <geo>48,132793312328 16,256152195922</geo>
-               </location>
-            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -285,6 +271,24 @@
                <location type="located_in_place">
                   <placeName ref="pmb133">Edmund-Weiß-Gasse</placeName>
                   <geo>48,23056 16,3348</geo>
+               </location>
+            </place>
+            <place xml:id="pmb231810">
+               <placeName>Willergasse 2</placeName>
+               <location type="coords">
+                  <geo>48,139276 16,257741</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41728">Willergasse</placeName>
+                  <geo>48,1393188 16,2577427</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb73">XXIII., Liesing</placeName>
+                  <geo>48,13333 16,3</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb173">Rodaun</placeName>
+                  <geo>48,132793312328 16,256152195922</geo>
                </location>
             </place>
          </listPlace>

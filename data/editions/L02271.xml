@@ -163,30 +163,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -235,6 +211,34 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
             <person xml:id="pmb2173" ana="implied">
                <persName>
                   <forename>Olga</forename>
@@ -261,22 +265,19 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb365223">
-               <placeName>18/1 Post- und Telegraphenamt 110</placeName>
+            <place xml:id="pmb168">
+               <placeName>Berlin</placeName>
+               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Barlīn</placeName>
+               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Berolino</placeName>
+               <placeName type="legacy-name-merge">B-n</placeName>
                <location type="coords">
-                  <geo>48,22513 16,343276</geo>
+                  <geo>52,52437 13,41053</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb365281">Schulgasse [Wien]</placeName>
-                  <geo>48,226495 16,336654</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb68">XVIII., Währing</placeName>
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb405253">Postbestellbezirk 18/1</placeName>
-                  <geo>48,231941 16,335645</geo>
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
                </location>
             </place>
             <place xml:id="pmb168815">
@@ -297,7 +298,47 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
-            <place xml:id="pmb43462" ana="comment">
+            <place xml:id="pmb213">
+               <placeName>Bad Ischl</placeName>
+               <placeName type="legacy-name-merge">Bad Ischl</placeName>
+               <placeName type="legacy-name-merge">Bad Ischl</placeName>
+               <location type="coords">
+                  <geo>47,71109 13,61893</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb429">Salzkammergut</placeName>
+                  <geo>47,75 13,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb2318">
+               <placeName>Partenkirchen</placeName>
+               <location type="coords">
+                  <geo>47,4956 11,1097</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb667">Garmisch-Partenkirchen</placeName>
+                  <geo>47,49209 11,09576</geo>
+               </location>
+            </place>
+            <place xml:id="pmb365223">
+               <placeName>18/1 Post- und Telegraphenamt 110</placeName>
+               <location type="coords">
+                  <geo>48,22513 16,343276</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb365281">Schulgasse [Wien]</placeName>
+                  <geo>48,226495 16,336654</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb405253">Postbestellbezirk 18/1</placeName>
+                  <geo>48,231941 16,335645</geo>
+               </location>
+            </place>
+            <place xml:id="pmb43462">
                <placeName>Villa Kupferschmid</placeName>
                <placeName type="ort_namensvariante">Grazerstraße 52</placeName>
                <placeName type="ort_fruherer-name">Reiterndorf 110</placeName>
@@ -327,41 +368,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb213">
-               <placeName>Bad Ischl</placeName>
-               <location type="coords">
-                  <geo>47,71109 13,61893</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb429">Salzkammergut</placeName>
-                  <geo>47,75 13,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb168">
-               <placeName>Berlin</placeName>
-               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Barlīn</placeName>
-               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Berolino</placeName>
-               <placeName type="legacy-name-merge">B-n</placeName>
-               <location type="coords">
-                  <geo>52,52437 13,41053</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb2318">
-               <placeName>Partenkirchen</placeName>
-               <location type="coords">
-                  <geo>47,4956 11,1097</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb667">Garmisch-Partenkirchen</placeName>
-                  <geo>47,49209 11,09576</geo>
                </location>
             </place>
             <place xml:id="pmb808">

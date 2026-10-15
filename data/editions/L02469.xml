@@ -142,30 +142,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb11002">
                <persName>
                   <forename>Felix</forename>
@@ -190,11 +166,39 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33568" ana="comment">
-               <title>Tantalos</title>
-               <author ref="pmb11002" role="hat-geschaffen">Braun, Felix</author>
+               <title type="main">Tantalos</title>
+               <author role="hat-geschaffen" ref="pmb11002">Braun, Felix</author>
             </bibl>
          </listBibl>
          <listPlace>
@@ -216,10 +220,13 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
-            <place xml:id="pmb1092">
-               <placeName>Sieveringer Straße</placeName>
-               <placeName type="legacy-name-merge">Sieveringer Hauptstr.</placeName>
+            <place xml:id="pmb365643">
+               <placeName>Sieveringer Straße 191</placeName>
                <location type="coords">
+                  <geo>48,252261604003735 16,31915855509781</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1092">Sieveringer Straße</placeName>
                   <geo>48,24803 16,32993</geo>
                </location>
                <location type="located_in_place">
@@ -246,6 +253,7 @@
                <placeName>XIX., Döbling</placeName>
                <placeName type="legacy-name-merge">Döbling</placeName>
                <placeName type="legacy-name-merge">Wien-Döbling</placeName>
+               <placeName type="legacy-name-merge">Döbling</placeName>
                <location type="coords">
                   <geo>48,25 16,33306</geo>
                </location>
@@ -261,6 +269,8 @@
             <place xml:id="pmb872">
                <placeName>Stuttgart</placeName>
                <placeName type="alternative-name">Stoccarda</placeName>
+               <placeName type="legacy-name-merge">Stuttgart</placeName>
+               <placeName type="alternative-name">Stuttgart</placeName>
                <location type="coords">
                   <geo>48,78232 9,17702</geo>
                </location>
@@ -272,7 +282,9 @@
             <place xml:id="pmb871" ana="comment">
                <placeName>Karlsruhe</placeName>
                <placeName type="alternative-name">Karlsrūe</placeName>
+               <placeName type="legacy-name-merge">Karlsruhe</placeName>
                <placeName type="legacy-name-merge">Durlach, Baden</placeName>
+               <placeName type="alternative-name">Karlsruhe</placeName>
                <location type="coords">
                   <geo>49,00937 8,40444</geo>
                </location>

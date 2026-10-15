@@ -169,30 +169,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb12438">
                <persName>
                   <forename>Robert</forename>
@@ -217,37 +193,47 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb33608" ana="implied">
-               <title>Das Ende des Judas</title>
-               <author ref="pmb12438" role="hat-geschaffen">Adam, Robert</author>
-            </bibl>
             <bibl xml:id="pmb33243" ana="comment">
-               <title>Tagebuch</title>
+               <title type="main">Tagebuch</title>
                <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+            </bibl>
+            <bibl xml:id="pmb33608" ana="comment">
+               <title type="main">Das Ende des Judas</title>
+               <author role="hat-geschaffen" ref="pmb12438">Adam, Robert</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb405244">
-               <placeName>1/1 Telegraphenamt 13</placeName>
-               <location type="coords">
-                  <geo>48,20820548131752 16,369043377981647</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb281723">Bräunerstraße</placeName>
-                  <geo>48,207938 16,368912</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb405263">Postbestellbezirk 1/1</placeName>
-                  <geo>48,208742 16,378142</geo>
-               </location>
-            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">
@@ -278,6 +264,24 @@
                <location type="located_in_place">
                   <placeName ref="pmb1239">Meidlinger Hauptstraße</placeName>
                   <geo>48,178825 16,329918</geo>
+               </location>
+            </place>
+            <place xml:id="pmb405244">
+               <placeName>1/1 Telegraphenamt 13</placeName>
+               <location type="coords">
+                  <geo>48,20820548131752 16,369043377981647</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb281723">Bräunerstraße</placeName>
+                  <geo>48,207938 16,368912</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb405263">Postbestellbezirk 1/1</placeName>
+                  <geo>48,208742 16,378142</geo>
                </location>
             </place>
             <place xml:id="pmb62">

@@ -198,30 +198,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -245,6 +221,34 @@
                      </location>
                   </settlement>
                </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2167">
                <persName>
@@ -297,39 +301,14 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30233" ana="implied">
-               <title>Der Graf von Charolais. Ein Trauerspiel</title>
+               <title type="main">Der Graf von Charolais. Ein Trauerspiel</title>
                <title type="werk_arbeitstitel">Die unseelige Mitgift</title>
                <title type="legacy-name-merge">Der Graf von Charolais</title>
                <title type="legacy-name-merge">Der Graf von Charolais</title>
-               <author ref="pmb10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
+               <author role="hat-geschaffen" ref="pmb10863">Beer-Hofmann, Richard</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb365214">
-               <placeName>1/1 Post- und Telegraphenamt 1</placeName>
-               <location type="coords">
-                  <geo>48,209928 16,379065</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb405263">Postbestellbezirk 1/1</placeName>
-                  <geo>48,208742 16,378142</geo>
-               </location>
-            </place>
-            <place xml:id="pmb415">
-               <placeName>Bad Aussee</placeName>
-               <placeName type="ort_fruherer-name">Markt Aussee</placeName>
-               <location type="coords">
-                  <geo>47,60998 13,78243</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb17">Steiermark</placeName>
-                  <geo>47,38 15,7925</geo>
-               </location>
-            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -349,23 +328,30 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
-            <place xml:id="pmb47674">
-               <placeName>Villa Frühling</placeName>
-               <placeName type="namensvariante">Kleine Großauer Villa</placeName>
+            <place xml:id="pmb213">
+               <placeName>Bad Ischl</placeName>
+               <placeName type="legacy-name-merge">Bad Ischl</placeName>
+               <placeName type="legacy-name-merge">Bad Ischl</placeName>
+               <location type="coords">
+                  <geo>47,71109 13,61893</geo>
+               </location>
                <location type="located_in_place">
-                  <placeName ref="pmb415">Bad Aussee</placeName>
-                  <geo>47,60998 13,78243</geo>
+                  <placeName ref="pmb429">Salzkammergut</placeName>
+                  <geo>47,75 13,5</geo>
                </location>
             </place>
-            <place xml:id="pmb483">
-               <placeName>Reichenau an der Rax</placeName>
-               <placeName type="legacy-name-merge">Reichenau im Mühlkreis</placeName>
+            <place xml:id="pmb365214">
+               <placeName>1/1 Post- und Telegraphenamt 1</placeName>
                <location type="coords">
-                  <geo>47,7 15,83333</geo>
+                  <geo>48,209928 16,379065</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb1003">Niederösterreich</placeName>
-                  <geo>48,33333 15,75</geo>
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb405263">Postbestellbezirk 1/1</placeName>
+                  <geo>48,208742 16,378142</geo>
                </location>
             </place>
             <place xml:id="pmb40881">
@@ -393,14 +379,38 @@
                   <geo>48,33333 15,75</geo>
                </location>
             </place>
-            <place xml:id="pmb213">
-               <placeName>Bad Ischl</placeName>
+            <place xml:id="pmb415">
+               <placeName>Bad Aussee</placeName>
+               <placeName type="ort_fruherer-name">Markt Aussee</placeName>
+               <placeName type="legacy-name-merge">Bad Aussee</placeName>
+               <placeName type="legacy-name-merge">Bad Aussee</placeName>
+               <placeName type="legacy-name-merge">Markt Aussee</placeName>
                <location type="coords">
-                  <geo>47,71109 13,61893</geo>
+                  <geo>47,60998 13,78243</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb429">Salzkammergut</placeName>
-                  <geo>47,75 13,5</geo>
+                  <placeName ref="pmb17">Steiermark</placeName>
+                  <geo>47,38 15,7925</geo>
+               </location>
+            </place>
+            <place xml:id="pmb47674">
+               <placeName>Villa Frühling</placeName>
+               <placeName type="namensvariante">Kleine Großauer Villa</placeName>
+               <location type="located_in_place">
+                  <placeName ref="pmb415">Bad Aussee</placeName>
+                  <geo>47,60998 13,78243</geo>
+               </location>
+            </place>
+            <place xml:id="pmb483">
+               <placeName>Reichenau an der Rax</placeName>
+               <placeName type="legacy-name-merge">Reichenau an der Rax</placeName>
+               <placeName type="legacy-name-merge">Reichenau im Mühlkreis</placeName>
+               <location type="coords">
+                  <geo>47,7 15,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1003">Niederösterreich</placeName>
+                  <geo>48,33333 15,75</geo>
                </location>
             </place>
          </listPlace>

@@ -141,6 +141,34 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
             <person xml:id="pmb2128">
                <persName>
                   <forename>Elsa</forename>
@@ -167,30 +195,6 @@
                      <placeName type="pref">calle Gravina 15</placeName>
                      <location>
                         <geo>38,3456446 -0,47927879</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -251,26 +255,28 @@
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb76794" ana="implied">
-               <title>Egmont. Ein Trauerspiel in fünf Aufzügen</title>
+            <bibl xml:id="pmb76794" ana="comment">
+               <title type="main">Egmont. Ein Trauerspiel in fünf Aufzügen</title>
                <title type="legacy-name-merge">Egmont</title>
                <title type="legacy-name-merge">Egmont</title>
                <title type="legacy-name-merge">Egmont</title>
-               <author ref="pmb11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
+               <author role="hat-geschaffen" ref="pmb11461">Goethe, Johann Wolfgang von</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb296017">
-               <placeName>Hotel Meranerhof</placeName>
-               <placeName type="ort_namensvariante">Pension Wolf</placeName>
-               <placeName type="ort_namensvariante">Villa Adelheid</placeName>
-               <placeName type="ort_namensvariante">Villa Giovanni</placeName>
+            <place xml:id="pmb168">
+               <placeName>Berlin</placeName>
+               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Barlīn</placeName>
+               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Berolino</placeName>
+               <placeName type="legacy-name-merge">B-n</placeName>
                <location type="coords">
-                  <geo>46,66964 11,15971</geo>
+                  <geo>52,52437 13,41053</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb43520">Meran</placeName>
-                  <geo>46,66817 11,15953</geo>
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
                </location>
             </place>
             <place xml:id="pmb168934">
@@ -287,19 +293,17 @@
                   <geo>48,215516628628 16,356475515829</geo>
                </location>
             </place>
-            <place xml:id="pmb168">
-               <placeName>Berlin</placeName>
-               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Barlīn</placeName>
-               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Berolino</placeName>
-               <placeName type="legacy-name-merge">B-n</placeName>
+            <place xml:id="pmb296017">
+               <placeName>Hotel Meranerhof</placeName>
+               <placeName type="ort_namensvariante">Pension Wolf</placeName>
+               <placeName type="ort_namensvariante">Villa Adelheid</placeName>
+               <placeName type="ort_namensvariante">Villa Giovanni</placeName>
                <location type="coords">
-                  <geo>52,52437 13,41053</geo>
+                  <geo>46,66964 11,15971</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
+                  <placeName ref="pmb43520">Meran</placeName>
+                  <geo>46,66817 11,15953</geo>
                </location>
             </place>
          </listPlace>

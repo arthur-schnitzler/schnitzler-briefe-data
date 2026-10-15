@@ -186,7 +186,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -195,7 +195,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -203,6 +203,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2167">
                <persName>
@@ -228,30 +232,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb28004">
-               <persName>
-                  <forename>Margot</forename>
-                  <surname>Vallo</surname>
-               </persName>
-               <birth>
-                  <date when="1892-09-24">1892-09-24</date>
-                  <settlement ref="pmb46189">
-                     <placeName type="pref">Pont-Sainte-Marie</placeName>
-                     <location>
-                        <geo>48,31848 4,09447</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1969-12-17">1969-12-17</date>
-                  <settlement ref="pmb46191">
-                     <placeName type="pref">São Paulo</placeName>
-                     <location>
-                        <geo>-23,5475 -46,63611</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb2173">
                <persName>
                   <forename>Olga</forename>
@@ -272,6 +252,30 @@
                      <placeName type="pref">Lugano</placeName>
                      <location>
                         <geo>46,01008 8,96004</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb28004">
+               <persName>
+                  <forename>Margot</forename>
+                  <surname>Vallo</surname>
+               </persName>
+               <birth>
+                  <date when="1892-09-24">1892-09-24</date>
+                  <settlement ref="pmb46189">
+                     <placeName type="pref">Pont-Sainte-Marie</placeName>
+                     <location>
+                        <geo>48,31848 4,09447</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1969-12-17">1969-12-17</date>
+                  <settlement ref="pmb46191">
+                     <placeName type="pref">São Paulo</placeName>
+                     <location>
+                        <geo>-23,5475 -46,63611</geo>
                      </location>
                   </settlement>
                </death>
@@ -302,30 +306,6 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb405253">
-               <placeName>Postbestellbezirk 18/1</placeName>
-               <location type="coords">
-                  <geo>48,231941 16,335645</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb68">XVIII., Währing</placeName>
-                  <geo>48,23333 16,31667</geo>
-               </location>
-            </place>
-            <place xml:id="pmb365517">
-               <placeName>18/3 Post- und Telegraphenamt 114</placeName>
-               <location type="coords">
-                  <geo>48,24222408297939 16,30925328021655</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb92457">Pötzleinsdorferstraße</placeName>
-                  <geo>48,242651 16,308634</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb68">XVIII., Währing</placeName>
-                  <geo>48,23333 16,31667</geo>
-               </location>
-            </place>
             <place xml:id="pmb168940">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
@@ -345,33 +325,9 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
-            <place xml:id="pmb68">
-               <placeName>XVIII., Währing</placeName>
-               <placeName type="legacy-name-merge">Währing</placeName>
-               <location type="coords">
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb92548">
-               <placeName>Starkfriedgassse</placeName>
-               <location type="coords">
-                  <geo>48,2425 16,314615</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb169">Pötzleinsdorf</placeName>
-                  <geo>48,246838181084 16,300034240016</geo>
-               </location>
-            </place>
             <place xml:id="pmb169">
                <placeName>Pötzleinsdorf</placeName>
+               <placeName type="legacy-name-merge">Pötzleinsdorf</placeName>
                <location type="coords">
                   <geo>48,246838181084 16,300034240016</geo>
                </location>
@@ -400,6 +356,55 @@
                <location type="located_in_place">
                   <placeName ref="pmb69">XIX., Döbling</placeName>
                   <geo>48,25 16,33306</geo>
+               </location>
+            </place>
+            <place xml:id="pmb365517">
+               <placeName>18/3 Post- und Telegraphenamt 114</placeName>
+               <location type="coords">
+                  <geo>48,24222408297939 16,30925328021655</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb92457">Pötzleinsdorferstraße</placeName>
+                  <geo>48,242651 16,308634</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+            </place>
+            <place xml:id="pmb405253">
+               <placeName>Postbestellbezirk 18/1</placeName>
+               <location type="coords">
+                  <geo>48,231941 16,335645</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+            </place>
+            <place xml:id="pmb68">
+               <placeName>XVIII., Währing</placeName>
+               <placeName type="legacy-name-merge">Währing</placeName>
+               <location type="coords">
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb92548">
+               <placeName>Starkfriedgassse</placeName>
+               <location type="coords">
+                  <geo>48,2425 16,314615</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb169">Pötzleinsdorf</placeName>
+                  <geo>48,246838181084 16,300034240016</geo>
                </location>
             </place>
          </listPlace>

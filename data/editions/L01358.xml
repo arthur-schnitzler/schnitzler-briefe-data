@@ -215,7 +215,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -224,7 +224,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -232,6 +232,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2199">
                <persName>
@@ -283,14 +287,50 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb365275">
-               <placeName>13/7 Post- und Telegraphenamt 94</placeName>
+            <place xml:id="pmb168940">
+               <placeName>Edmund-Weiß-Gasse 7</placeName>
+               <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
                <location type="coords">
-                  <geo>48,187928 16,266541</geo>
+                  <geo>48,2304 16,33472</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb165">Ober Sankt Veit</placeName>
-                  <geo>48,188056 16,266389</geo>
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb533">Währinger Cottage</placeName>
+                  <geo>48,233056 16,341944</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb133">Edmund-Weiß-Gasse</placeName>
+                  <geo>48,23056 16,3348</geo>
+               </location>
+            </place>
+            <place xml:id="pmb182">
+               <placeName>Paris</placeName>
+               <placeName type="alternative-name">P'ariz</placeName>
+               <placeName type="legacy-name-merge">Paris</placeName>
+               <placeName type="alternative-name">Pariž</placeName>
+               <placeName type="alternative-name">Parisius</placeName>
+               <placeName type="alternative-name">Île-de-France</placeName>
+               <location type="coords">
+                  <geo>48,85341 2,3488</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb166">Frankreich</placeName>
+                  <geo>46,0 2,0</geo>
+               </location>
+            </place>
+            <place xml:id="pmb207274">
+               <placeName>Haus Bahr</placeName>
+               <placeName type="ort_fruherer-name">Veitlissengasse 5a</placeName>
+               <placeName type="ort_namensvariante">Winzergasse 22</placeName>
+               <location type="coords">
+                  <geo>48,186771 16,261305</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb220">Veitlissengasse</placeName>
+                  <geo>48,186622327678 16,259712159437</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb63">XIII., Hietzing</placeName>
@@ -315,39 +355,18 @@
                   <geo>48,231941 16,335645</geo>
                </location>
             </place>
-            <place xml:id="pmb207274">
-               <placeName>Haus Bahr</placeName>
-               <placeName type="ort_fruherer-name">Veitlissengasse 5a</placeName>
-               <placeName type="ort_namensvariante">Winzergasse 22</placeName>
+            <place xml:id="pmb365275">
+               <placeName>13/7 Post- und Telegraphenamt 94</placeName>
                <location type="coords">
-                  <geo>48,186771 16,261305</geo>
+                  <geo>48,187928 16,266541</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb220">Veitlissengasse</placeName>
-                  <geo>48,186622327678 16,259712159437</geo>
+                  <placeName ref="pmb165">Ober Sankt Veit</placeName>
+                  <geo>48,188056 16,266389</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb63">XIII., Hietzing</placeName>
                   <geo>48,17547 16,29101</geo>
-               </location>
-            </place>
-            <place xml:id="pmb168940">
-               <placeName>Edmund-Weiß-Gasse 7</placeName>
-               <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
-               <location type="coords">
-                  <geo>48,2304 16,33472</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb68">XVIII., Währing</placeName>
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb533">Währinger Cottage</placeName>
-                  <geo>48,233056 16,341944</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb133">Edmund-Weiß-Gasse</placeName>
-                  <geo>48,23056 16,3348</geo>
                </location>
             </place>
             <place xml:id="pmb68">
@@ -363,20 +382,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb182">
-               <placeName>Paris</placeName>
-               <placeName type="alternative-name">P'ariz</placeName>
-               <placeName type="alternative-name">Pariž</placeName>
-               <placeName type="alternative-name">Parisius</placeName>
-               <placeName type="alternative-name">Île-de-France</placeName>
-               <location type="coords">
-                  <geo>48,85341 2,3488</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb166">Frankreich</placeName>
-                  <geo>46,0 2,0</geo>
                </location>
             </place>
          </listPlace>

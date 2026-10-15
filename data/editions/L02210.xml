@@ -171,30 +171,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb12438">
                <persName>
                   <forename>Robert</forename>
@@ -243,6 +219,34 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
             <person xml:id="pmb12948" ana="implied">
                <persName>
                   <forename>Hugo</forename>
@@ -270,35 +274,31 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33578">
-               <title>Die Geschichte des Alî ibn Bekkâr mit Schams an-Nahâr</title>
-               <author ref="pmb12438" role="hat-geschaffen">Adam, Robert</author>
+               <title type="main">Die Geschichte des Alî ibn Bekkâr mit Schams an-Nahâr</title>
+               <author role="hat-geschaffen" ref="pmb12438">Adam, Robert</author>
             </bibl>
             <bibl xml:id="pmb33606">
-               <title>Der Fremde</title>
-               <author ref="pmb12438" role="hat-geschaffen">Adam, Robert</author>
+               <title type="main">Der Fremde</title>
+               <author role="hat-geschaffen" ref="pmb12438">Adam, Robert</author>
             </bibl>
             <bibl xml:id="pmb33582" ana="implied">
-               <title>Fatme</title>
-               <author ref="pmb12438" role="hat-geschaffen">Adam, Robert</author>
+               <title type="main">Fatme</title>
+               <author role="hat-geschaffen" ref="pmb12438">Adam, Robert</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb365223">
-               <placeName>18/1 Post- und Telegraphenamt 110</placeName>
+            <place xml:id="pmb14">
+               <placeName>Burgtheater</placeName>
                <location type="coords">
-                  <geo>48,22513 16,343276</geo>
+                  <geo>48,210333 16,361139</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb365281">Schulgasse [Wien]</placeName>
-                  <geo>48,226495 16,336654</geo>
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb68">XVIII., Währing</placeName>
-                  <geo>48,23333 16,31667</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb405253">Postbestellbezirk 18/1</placeName>
-                  <geo>48,231941 16,335645</geo>
+                  <placeName ref="pmb235695">Universitätsring</placeName>
+                  <geo>48,2136 16,3614</geo>
                </location>
             </place>
             <place xml:id="pmb168815">
@@ -317,6 +317,53 @@
                <location type="located_in_place">
                   <placeName ref="pmb150">Sternwartestraße</placeName>
                   <geo>48,23099349198 16,340117830625</geo>
+               </location>
+            </place>
+            <place xml:id="pmb34387">
+               <placeName>Villa Annerl</placeName>
+               <placeName type="ort_fruherer-name">Gästehaus Dr. Schachl</placeName>
+               <location type="coords">
+                  <geo>47,6416 13,77095</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb34401">Altaussee</placeName>
+                  <geo>47,639444 13,763333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb34402">Fischerndorf</placeName>
+                  <geo>47,63333 13,76667</geo>
+               </location>
+            </place>
+            <place xml:id="pmb34392">
+               <placeName>Villa Zufriedenheit</placeName>
+               <location type="coords">
+                  <geo>47,49085 11,10885</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb667">Garmisch-Partenkirchen</placeName>
+                  <geo>47,49209 11,09576</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb2318">Partenkirchen</placeName>
+                  <geo>47,4956 11,1097</geo>
+               </location>
+            </place>
+            <place xml:id="pmb365223">
+               <placeName>18/1 Post- und Telegraphenamt 110</placeName>
+               <location type="coords">
+                  <geo>48,22513 16,343276</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb365281">Schulgasse [Wien]</placeName>
+                  <geo>48,226495 16,336654</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb405253">Postbestellbezirk 18/1</placeName>
+                  <geo>48,231941 16,335645</geo>
                </location>
             </place>
             <place xml:id="pmb365563">
@@ -345,49 +392,6 @@
                   <geo>48,208333 16,373056</geo>
                </location>
             </place>
-            <place xml:id="pmb14">
-               <placeName>Burgtheater</placeName>
-               <location type="coords">
-                  <geo>48,210333 16,361139</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb235695">Universitätsring</placeName>
-                  <geo>48,2136 16,3614</geo>
-               </location>
-            </place>
-            <place xml:id="pmb34392">
-               <placeName>Villa Zufriedenheit</placeName>
-               <location type="coords">
-                  <geo>47,49085 11,10885</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb667">Garmisch-Partenkirchen</placeName>
-                  <geo>47,49209 11,09576</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb2318">Partenkirchen</placeName>
-                  <geo>47,4956 11,1097</geo>
-               </location>
-            </place>
-            <place xml:id="pmb34387">
-               <placeName>Villa Annerl</placeName>
-               <placeName type="ort_fruherer-name">Gästehaus Dr. Schachl</placeName>
-               <location type="coords">
-                  <geo>47,6416 13,77095</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb34401">Altaussee</placeName>
-                  <geo>47,639444 13,763333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb34402">Fischerndorf</placeName>
-                  <geo>47,63333 13,76667</geo>
-               </location>
-            </place>
          </listPlace>
          <listOrg>
             <org xml:id="pmb44112">
@@ -410,7 +414,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38129/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/45258/</idno>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/2867714/</idno>
-                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb45258.html</idno>
+                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb45258.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1726</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/M%C3%BCnchen</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb45258.html</idno>

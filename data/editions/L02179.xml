@@ -137,9 +137,8 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <persName ref="#pmb2173">Schnitzler, Olga</persName>
-               <date evidence="conjecture" notBefore="1914-05-14" notAfter="1914-05-16">[14. 5. 1914
-                  – 18. 5. 1914?]</date>
-               <placeName ref="#pmb168815">Wien</placeName>
+               <date evidence="conjecture" when="1914-05-23">[23. 5. 1914?]</date>
+               <placeName ref="#pmb40709">Amsterdam</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_12906">Suttner, Bertha</ref>
@@ -246,6 +245,30 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb405355">
+               <placeName>Spiegelgasse 4</placeName>
+               <location type="coords">
+                  <geo>48,207562 16,370104</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb45381">Spiegelgasse</placeName>
+                  <geo>48,20804 16,37063</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40709">
+               <placeName>Amsterdam</placeName>
+               <location type="coords">
+                  <geo>52,37403 4,88969</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb44016">Niederlande</placeName>
+                  <geo>52,25 5,75</geo>
+               </location>
+            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
@@ -286,21 +309,17 @@
                   <geo>48,208333 16,373056</geo>
                </location>
             </place>
-            <place xml:id="pmb45381">
-               <placeName>Spiegelgasse</placeName>
-               <location type="coords">
-                  <geo>48,20804 16,37063</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-            </place>
          </listPlace>
+         <listOrg>
+            <org xml:id="pmb405358">
+               <orgName>21. Weltfriedenskongress vom 15. bis 19. September 1914 [Planung]</orgName>
+               <location type="located_in_place">
+                  <placeName ref="pmb405355">Spiegelgasse 4</placeName>
+                  <geo>48,207562 16,370104</geo>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/405355/</idno>
+               </location>
+            </org>
+         </listOrg>
       </back>
    </text>
 </TEI>

@@ -99,8 +99,7 @@
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date evidence="conjecture" notBefore="1922-05-16" notAfter="1922-05-20">[16. 5. 1922
-                  – 20. 5. 1922?]</date>
+               <date evidence="conjecture" when="1922-05-19">[19. 5. 1922?]</date>
                <placeName ref="#pmb168815">Sternwartestraße 71</placeName>
             </correspAction>
             <correspContext>
@@ -124,7 +123,8 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="Brandes-Schnitzler-136"/><rs ref="#pmb36300" type="place">Kopenhagen</rs>, <date>15. Mai 1922</date></dateline><salute>Mein lieber Freund</salute></opener><p>Im Jahre <date>1898</date> saß ich an diesem Tag an Ihrem Tisch in einem kleinen
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="Brandes-Schnitzler-136"/><rs ref="#pmb36300" type="place">Kopenhagen</rs>, <date>15. Mai 1922</date></dateline><salute>Mein lieber Freund</salute></opener><p>Im Jahre <anchor type="commentary" xml:id="K_L02383-44"/><date>1898</date> saß ich an diesem Tag<note type="commentary" corresp="K_L02383-44">Es scheint eine Verwechslung
+                vorzuliegen. Eventuell bezieht er sich auf den <ref type="schnitzler-tagebuch" target="1901-05-16" subtype="date-only"/>.</note> an Ihrem Tisch in einem kleinen
                Kreis; auch Ihre Frau <rs type="person" ref="#pmb12701" subtype="implied">Mutter</rs>
                war damals anwesend. Ich sagte das wenig geistvolle Wort: »Sie sind also gerade
                20 Jahre jünger als ich« und Sie antworteten lächelnd: »Und ich denke, wir werden
@@ -186,7 +186,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -195,7 +195,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -203,6 +203,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb3723">
                <persName>
@@ -258,9 +262,55 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb1147">
+               <placeName>Nationale und Kapodistrias-Universität Athen</placeName>
+               <location type="coords">
+                  <geo>37,968198 23,778684</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb505">Athen</placeName>
+                  <geo>37,97945 23,71622</geo>
+               </location>
+            </place>
+            <place xml:id="pmb166">
+               <placeName>Frankreich</placeName>
+               <placeName type="alternative-name">France</placeName>
+               <placeName type="alternative-name">Frankreich</placeName>
+               <placeName type="legacy-name-merge">Frankreich</placeName>
+               <placeName type="legacy-name-merge">France</placeName>
+               <location type="coords">
+                  <geo>46,0 2,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
+            <place xml:id="pmb168815">
+               <placeName>Sternwartestraße 71</placeName>
+               <location type="coords">
+                  <geo>48,23188 16,33716</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb533">Währinger Cottage</placeName>
+                  <geo>48,233056 16,341944</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb150">Sternwartestraße</placeName>
+                  <geo>48,23099349198 16,340117830625</geo>
+               </location>
+            </place>
             <place xml:id="pmb36300">
                <placeName>Kopenhagen</placeName>
+               <placeName type="alternative-name">Kopenhagen</placeName>
+               <placeName type="legacy-name">Kopenhagen</placeName>
+               <placeName type="legacy-name-merge">Kopenhagen</placeName>
                <placeName type="alternative-name">Copenhagen</placeName>
+               <placeName type="legacy-name-merge">Copenhagen</placeName>
                <location type="coords">
                   <geo>55,67594 12,56553</geo>
                </location>
@@ -269,31 +319,33 @@
                   <geo>56,0 10,0</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb405596">
+               <placeName>Strandboulevarden 27</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>55,700269 12,589297</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
-                  <geo>48,24077 16,32092</geo>
+                  <placeName ref="pmb36300">Kopenhagen</placeName>
+                  <geo>55,67594 12,56553</geo>
                </location>
             </place>
-            <place xml:id="pmb44293" ana="comment">
+            <place xml:id="pmb44099">
+               <placeName>Izmir</placeName>
+               <placeName type="alternative-name">Izmir</placeName>
+               <placeName type="legacy-name">Izmir</placeName>
+               <location type="coords">
+                  <geo>38,41273 27,13838</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb773">Türkei</placeName>
+                  <geo>39,0 35,0</geo>
+               </location>
+            </place>
+            <place xml:id="pmb44293">
                <placeName>Griechenland</placeName>
                <placeName type="alternative-name">Hellenic Republic</placeName>
+               <placeName type="alternative-name">Griechenland</placeName>
+               <placeName type="legacy-name-merge">Griechenland</placeName>
                <location type="coords">
                   <geo>39,0 22,0</geo>
                </location>
@@ -308,6 +360,7 @@
             </place>
             <place xml:id="pmb505">
                <placeName>Athen</placeName>
+               <placeName type="legacy-name-merge">Athen</placeName>
                <placeName type="legacy-name-merge">v. Chr., Athen</placeName>
                <placeName type="legacy-name-merge">vor Chr., Athen</placeName>
                <location type="coords">
@@ -316,37 +369,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb44293">Griechenland</placeName>
                   <geo>39,0 22,0</geo>
-               </location>
-            </place>
-            <place xml:id="pmb1147">
-               <placeName>Nationale und Kapodistrias-Universität Athen</placeName>
-               <location type="coords">
-                  <geo>37,968198 23,778684</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb505">Athen</placeName>
-                  <geo>37,97945 23,71622</geo>
-               </location>
-            </place>
-            <place xml:id="pmb44099">
-               <placeName>Izmir</placeName>
-               <location type="coords">
-                  <geo>38,41273 27,13838</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb773">Türkei</placeName>
-                  <geo>39,0 35,0</geo>
-               </location>
-            </place>
-            <place xml:id="pmb166">
-               <placeName>Frankreich</placeName>
-               <placeName type="alternative-name">France</placeName>
-               <location type="coords">
-                  <geo>46,0 2,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
                </location>
             </place>
             <place xml:id="pmb1149" ana="implied">

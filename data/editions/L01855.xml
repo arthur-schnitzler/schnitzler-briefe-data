@@ -222,7 +222,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -231,7 +231,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -239,6 +239,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173" ana="implied">
                <persName>
@@ -266,6 +270,21 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb259">
+               <placeName>Lido</placeName>
+               <placeName type="legacy-name-merge">Lido</placeName>
+               <location type="coords">
+                  <geo>45,38333 12,35</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb462">Venedig</placeName>
+                  <geo>45,43713 12,33265</geo>
+               </location>
+            </place>
             <place xml:id="pmb41102">
                <placeName>Pichl am See</placeName>
                <location type="coords">
@@ -292,6 +311,7 @@
             </place>
             <place xml:id="pmb483">
                <placeName>Reichenau an der Rax</placeName>
+               <placeName type="legacy-name-merge">Reichenau an der Rax</placeName>
                <placeName type="legacy-name-merge">Reichenau im Mühlkreis</placeName>
                <location type="coords">
                   <geo>47,7 15,83333</geo>
@@ -301,29 +321,19 @@
                   <geo>48,33333 15,75</geo>
                </location>
             </place>
-            <place xml:id="pmb259">
-               <placeName>Lido</placeName>
-               <location type="coords">
-                  <geo>45,38333 12,35</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb40306">Italien</placeName>
-                  <geo>42,83333 12,83333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb462">Venedig</placeName>
-                  <geo>45,43713 12,33265</geo>
-               </location>
-            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -332,9 +342,29 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+            </place>
+            <place xml:id="pmb51987">
+               <placeName>Hotel Pichl-Auhof</placeName>
+               <location type="coords">
+                  <geo>47,8145 13,40149</geo>
+               </location>
                <location type="located_in_place">
-                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
-                  <geo>48,24077 16,32092</geo>
+                  <placeName ref="pmb41102">Pichl am See</placeName>
+                  <geo>47,81667 13,4</geo>
+               </location>
+            </place>
+            <place xml:id="pmb714">
+               <placeName>Hotel Edlacherhof</placeName>
+               <location type="coords">
+                  <geo>47,689132 15,805582</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb483">Reichenau an der Rax</placeName>
+                  <geo>47,7 15,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb470">Edlach</placeName>
+                  <geo>47,69255 15,80915</geo>
                </location>
             </place>
          </listPlace>

@@ -169,13 +169,37 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb11485">
+               <persName>
+                  <forename>Paul</forename>
+                  <surname>Goldmann</surname>
+               </persName>
+               <birth>
+                  <date when="1865-01-31">1865-01-31</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
+                     <location>
+                        <geo>51,10773 17,03533</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1935-09-25">1935-09-25</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -184,7 +208,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -192,6 +216,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb26392">
                <persName>
@@ -217,46 +245,8 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb11485">
-               <persName>
-                  <forename>Paul</forename>
-                  <surname>Goldmann</surname>
-               </persName>
-               <birth>
-                  <date when="1865-01-31">1865-01-31</date>
-                  <settlement ref="pmb677">
-                     <placeName type="pref">Breslau</placeName>
-                     <location>
-                        <geo>51,10773 17,03533</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1935-09-25">1935-09-25</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb365483">
-               <placeName>Kolingasse 9</placeName>
-               <location type="coords">
-                  <geo>48,216166 16,362701</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb394">Kolingasse</placeName>
-                  <geo>48,216173513495 16,363333086142</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb59">IX., Alsergrund</placeName>
-                  <geo>48,22387 16,35641</geo>
-               </location>
-            </place>
             <place xml:id="pmb104">
                <placeName>Café Arkaden</placeName>
                <placeName type="ort_namensvariante">Wiener Arcaden-Café</placeName>
@@ -275,7 +265,10 @@
             <place xml:id="pmb30">
                <placeName>Salzburg</placeName>
                <placeName type="alternative-name">Iuvavum</placeName>
+               <placeName type="legacy-name-merge">Salzburg</placeName>
+               <placeName type="alternative-name">Salzburg</placeName>
                <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
+               <placeName type="legacy-name-merge">Salzburg</placeName>
                <placeName type="legacy-name-merge">Salzburg?</placeName>
                <location type="coords">
                   <geo>47,80067 13,04532</geo>
@@ -283,6 +276,20 @@
                <location type="located_in_place">
                   <placeName ref="pmb697">Salzburg [Land]</placeName>
                   <geo>47,41667 13,25</geo>
+               </location>
+            </place>
+            <place xml:id="pmb365483">
+               <placeName>Kolingasse 9</placeName>
+               <location type="coords">
+                  <geo>48,216166 16,362701</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb394">Kolingasse</placeName>
+                  <geo>48,216173513495 16,363333086142</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
                </location>
             </place>
          </listPlace>

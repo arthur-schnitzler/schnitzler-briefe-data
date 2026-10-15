@@ -165,9 +165,13 @@
                <date when="1922-05-15" n="04">15. 5. 1922</date>
                <placeName ref="#pmb735">Jagniątków</placeName>
             </correspAction>
+            <correspAction type="delivered">
+               <date when="1922-05-15">15. 5. 1922</date>
+               <placeName ref="#pmb168815">Sternwartestraße 71</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1922-05-15">15. 5. 1922</date>
+               <date when="1922-05-19">[19. 5. 1922?]</date>
                <placeName ref="#pmb168815">Sternwartestraße 71</placeName>
             </correspAction>
             <correspContext>
@@ -222,19 +226,13 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb50114">
-               <persName>
-                  <forename>Anna</forename>
-                  <surname>Otto</surname>
-               </persName>
-            </person>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -243,7 +241,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -251,6 +249,16 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb50114">
+               <persName>
+                  <forename>Anna</forename>
+                  <surname>Otto</surname>
+               </persName>
             </person>
             <person xml:id="pmb11621" ana="implied">
                <persName>
@@ -272,21 +280,6 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb735">
-               <placeName>Jagniątków</placeName>
-               <placeName type="ort_fruherer-name">Agnetendorf</placeName>
-               <location type="coords">
-                  <geo>50,816944 15,609444</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb313">Polen</placeName>
-                  <geo>52,0 20,0</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb12044">Jelenia Góra</placeName>
-                  <geo>50,9 15,733333</geo>
-               </location>
-            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">
@@ -303,6 +296,22 @@
                <location type="located_in_place">
                   <placeName ref="pmb150">Sternwartestraße</placeName>
                   <geo>48,23099349198 16,340117830625</geo>
+               </location>
+            </place>
+            <place xml:id="pmb735">
+               <placeName>Jagniątków</placeName>
+               <placeName type="ort_fruherer-name">Agnetendorf</placeName>
+               <placeName type="legacy-name-merge">Jagniątków</placeName>
+               <location type="coords">
+                  <geo>50,816944 15,609444</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb313">Polen</placeName>
+                  <geo>52,0 20,0</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb12044">Jelenia Góra</placeName>
+                  <geo>50,9 15,733333</geo>
                </location>
             </place>
          </listPlace>

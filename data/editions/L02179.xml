@@ -201,7 +201,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -210,7 +210,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -218,6 +218,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173">
                <persName>
@@ -261,6 +265,9 @@
             </place>
             <place xml:id="pmb40709">
                <placeName>Amsterdam</placeName>
+               <placeName type="alternative-name">Amsterdam</placeName>
+               <placeName type="legacy-name">Amsterdam</placeName>
+               <placeName type="legacy-name-merge">Amsterdam</placeName>
                <location type="coords">
                   <geo>52,37403 4,88969</geo>
                </location>
@@ -272,12 +279,16 @@
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -286,10 +297,6 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
-                  <geo>48,24077 16,32092</geo>
-               </location>
             </place>
             <place xml:id="pmb51">
                <placeName>I., Innere Stadt</placeName>
@@ -297,6 +304,7 @@
                <placeName type="alternative-name">Wien,Innere Stadt</placeName>
                <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
                <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <placeName type="legacy-name-merge">Inner city</placeName>
                <location type="coords">
                   <geo>48,20769 16,37049</geo>
                </location>
@@ -316,7 +324,8 @@
                <location type="located_in_place">
                   <placeName ref="pmb405355">Spiegelgasse 4</placeName>
                   <geo>48,207562 16,370104</geo>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/405355/</idno>
+                  <note type="IDNO" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/405355/</note>
+                  <note type="IDNO" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb405355.html</note>
                </location>
             </org>
          </listOrg>

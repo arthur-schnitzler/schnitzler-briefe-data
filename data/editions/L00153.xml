@@ -130,6 +130,7 @@
          <change who="MAM" when="2019-10-18">Index check</change>
          <change who="MAM" when="2019-10-24">Durchsicht</change>
          <change who="GHS" when="2020-01-20">finalisiert</change>
+         <change who="MAM" when="2026-10-20">Absenderort überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -149,13 +150,28 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2450">
+               <persName>
+                  <forename>Friedrich Michael</forename>
+                  <surname>Fels</surname>
+               </persName>
+               <birth>
+                  <date notBefore="1864-01-01" when="1864-01-01" notAfter="1864-12-31">1864</date>
+                  <settlement ref="pmb41882">
+                     <placeName type="pref">Bad Dürkheim</placeName>
+                     <location>
+                        <geo>49,4618 8,17236</geo>
+                     </location>
+                  </settlement>
+               </birth>
+            </person>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -164,7 +180,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -172,25 +188,6 @@
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
-            <person xml:id="pmb2450">
-               <persName>
-                  <forename>Friedrich Michael</forename>
-                  <surname>Fels</surname>
-               </persName>
-               <birth>
-                  <date when="1864-01-01" notAfter="1864-12-31" notBefore="1864-01-01">1864</date>
-                  <settlement ref="pmb41882">
-                     <placeName type="pref">Bad Dürkheim</placeName>
-                     <location>
-                        <geo>49,4618 8,17236</geo>
-                     </location>
-                  </settlement>
-               </birth>
             </person>
             <person xml:id="pmb11740" ana="comment">
                <persName>
@@ -218,6 +215,24 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb52">
+               <placeName>II., Leopoldstadt</placeName>
+               <placeName type="alternative-name">Wien,Leopoldstadt</placeName>
+               <placeName type="alternative-name">Leopoldstadt</placeName>
+               <placeName type="alternative-name">2. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name">36. Internationale Musik- und Theaterausstellung, Wien 1892</placeName>
+               <location type="coords">
+                  <geo>48,21667 16,4</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
             <place xml:id="pmb167782">
                <placeName>Wohnung und Ordination Arthur Schnitzler Grillparzerstraße 7/3. Stock</placeName>
                <location type="coords">
@@ -230,6 +245,17 @@
                <location type="located_in_place">
                   <placeName ref="pmb412">Grillparzerstraße</placeName>
                   <geo>48,212643768549 16,357353835756</geo>
+               </location>
+            </place>
+            <place xml:id="pmb41831" ana="comment">
+               <placeName>Reisnerstraße</placeName>
+               <placeName type="legacy-name-merge">Reisnerstr.</placeName>
+               <location type="coords">
+                  <geo>48,20279 16,38196</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb53">III., Landstraße</placeName>
+                  <geo>48,19811 16,39482</geo>
                </location>
             </place>
             <place xml:id="pmb255099">
@@ -256,36 +282,6 @@
                   <geo>48,19811 16,39482</geo>
                </location>
             </place>
-            <place xml:id="pmb41831">
-               <placeName>Reisnerstraße</placeName>
-               <placeName type="legacy-name-merge">Reisnerstr.</placeName>
-               <location type="coords">
-                  <geo>48,20279 16,38196</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb53">III., Landstraße</placeName>
-                  <geo>48,19811 16,39482</geo>
-               </location>
-            </place>
-            <place xml:id="pmb52">
-               <placeName>II., Leopoldstadt</placeName>
-               <placeName type="alternative-name">Wien,Leopoldstadt</placeName>
-               <placeName type="alternative-name">Leopoldstadt</placeName>
-               <placeName type="alternative-name">2. Wiener Gemeindebezirk</placeName>
-               <placeName type="legacy-name">36. Internationale Musik- und Theaterausstellung, Wien 1892</placeName>
-               <placeName type="legacy-name-merge">Leopoldstadt</placeName>
-               <location type="coords">
-                  <geo>48,21667 16,4</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50">Wien</placeName>
-                  <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
          </listPlace>
          <listOrg>
             <org xml:id="pmb29360" ana="comment">
@@ -301,7 +297,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb50.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
@@ -315,7 +311,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00085</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb50</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.9.11</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb255099">Reisnerstraße 3</placeName>

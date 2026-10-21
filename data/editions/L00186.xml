@@ -135,6 +135,7 @@
          <change who="MAM" when="2019-06-14">Durchsicht</change>
          <change when="2019-06-15" who="MAM">Index check</change>
          <change who="GHS" when="2019-08-19">facs aktualisiert, korrigiert, finalisiert</change>
+         <change who="MAM" when="2026-10-20">Absenderort überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -179,34 +180,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
             <person xml:id="pmb4986">
                <persName>
                   <forename>Fedor</forename>
@@ -227,6 +200,30 @@
                      <placeName type="pref">Frankfurt am Main</placeName>
                      <location>
                         <geo>50,11552 8,68417</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -258,16 +255,16 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb30117">
-               <title type="main">Sterben. Novelle</title>
+               <title>Sterben. Novelle</title>
                <title type="werk_bibliografische-angabe">Neue Deutsche Rundschau, Jg. 5, H. 10–12, Oktober–Dezember 1894</title>
                <title type="legacy-name-merge">Sterben</title>
                <title type="werk_link">https://babel.hathitrust.org/cgi/pt?id=coo.31924069263006&amp;seq=325</title>
-               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             </bibl>
             <bibl xml:id="pmb34996">
-               <title type="main">Krieg und Frieden</title>
+               <title>Krieg und Frieden</title>
                <title type="namensvariante">Война и миръ</title>
-               <author role="hat-geschaffen" ref="pmb3739">Tolstoi, Lew Nikolajewitsch</author>
+               <author ref="pmb3739" role="hat-geschaffen">Tolstoi, Lew Nikolajewitsch</author>
             </bibl>
          </listBibl>
          <listPlace>
@@ -281,25 +278,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb151">
-               <placeName>Deutschland</placeName>
-               <placeName type="alternative-name">Bundesrepublik Deutschland</placeName>
-               <placeName type="legacy-name-merge">Deutschland</placeName>
-               <placeName type="alternative-name">West Germany</placeName>
-               <placeName type="alternative-name">Federal Republic of Germany</placeName>
-               <placeName type="legacy-name-merge">Bundesrepublik Deutschland</placeName>
-               <placeName type="legacy-name-merge">Germany</placeName>
-               <placeName type="legacy-name-merge">Deutschland</placeName>
-               <placeName type="ort_fruherer-name">Deutsches Kaiserreich</placeName>
-               <placeName type="ort_fruherer-name">Weimarer Republik</placeName>
-               <location type="coords">
-                  <geo>51,5 10,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb468">Europa</placeName>
-                  <geo>48,69096 9,14062</geo>
                </location>
             </place>
             <place xml:id="pmb167782">
@@ -316,12 +294,36 @@
                   <geo>48,212643768549 16,357353835756</geo>
                </location>
             </place>
+            <place xml:id="pmb756">
+               <placeName>Pension Quisisana</placeName>
+               <location type="coords">
+                  <geo>45,333852 14,301821</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb38096">Opatija</placeName>
+                  <geo>45,33771 14,30515</geo>
+               </location>
+            </place>
+            <place xml:id="pmb151">
+               <placeName>Deutschland</placeName>
+               <placeName type="alternative-name">Bundesrepublik Deutschland</placeName>
+               <placeName type="alternative-name">West Germany</placeName>
+               <placeName type="alternative-name">Federal Republic of Germany</placeName>
+               <placeName type="legacy-name-merge">Germany</placeName>
+               <placeName type="ort_fruherer-name">Deutsches Kaiserreich</placeName>
+               <placeName type="ort_fruherer-name">Weimarer Republik</placeName>
+               <location type="coords">
+                  <geo>51,5 10,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
-               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -338,16 +340,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb687">Österreich-Ungarn</placeName>
                   <geo>48,4054 16,4887</geo>
-               </location>
-            </place>
-            <place xml:id="pmb756">
-               <placeName>Pension Quisisana</placeName>
-               <location type="coords">
-                  <geo>45,333852 14,301821</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb38096">Opatija</placeName>
-                  <geo>45,33771 14,30515</geo>
                </location>
             </place>
          </listPlace>
@@ -367,7 +359,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
-                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
+                  <idno type="URL" subtype="www">https://www.kraus.wienbibliothek.at/legalkraus/pmb146.html</idno>
                   <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurt_am_Main</idno>
                   <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb146.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
@@ -382,7 +374,7 @@
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004069</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb146</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb146.html</idno>
-                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
+                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.2.13</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb144603">Redaktion der Frankfurter Zeitung</placeName>

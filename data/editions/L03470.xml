@@ -106,7 +106,7 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1910-04-19" n="01">19. 4. 1910</date>
-               <placeName ref="#pmb168">Berlin</placeName>
+               <placeName ref="#pmb405869">Schöneberger Ufer 34</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -135,7 +135,7 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="HS.NZ85.1.3175_0078-1"/><date when="1910-04-19">19. 4. 10</date></dateline><seg rend="right" type="letterhead"><hi rend="pre-print"><rs type="place" ref="#pmb57358">W. Schöneberger-Ufer 34</rs>.</hi></seg><salute rend="left">Lieber Freund,</salute></opener><p>Herr <rs type="person" ref="#pmb11937">Victor Klemperer</rs>, der Dir aus seinen
+         <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="HS.NZ85.1.3175_0078-1"/><date when="1910-04-19">19. 4. 10</date></dateline><seg rend="right" type="letterhead"><hi rend="pre-print"><rs type="place" ref="#pmb405869">W. Schöneberger-Ufer 34</rs>.</hi></seg><salute rend="left">Lieber Freund,</salute></opener><p>Herr <rs type="person" ref="#pmb11937">Victor Klemperer</rs>, der Dir aus seinen
                vortrefflichen literarischen Essais ja schon literarisch bekannt ist, möchte Dich
                auch persönlich <anchor type="commentary" xml:id="K_L03470-1"/>kennen lernen<note type="commentary" corresp="K_L03470-1">Am <ref type="schnitzler-tagebuch" target="1910-04-27" subtype="date-only"/> suchte <rs type="person" ref="#pmb11937">Victor Klemperer</rs><space unit="chars" quantity="1"/><rs type="person" ref="#pmb2121">Schnitzler</rs> zu Hause auf. <rs type="person" ref="#pmb11937">Klemperer</rs> veröffentlichte mehrere Aufsätze über <rs type="person" ref="#pmb2121">Schnitzlers</rs> Werk, aber keine
                   Monografie.</note> und hat mich um eine Einführung bei Dir gebeten, die ich ihm
@@ -170,6 +170,30 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb11937">
                <persName>
                   <forename>Victor</forename>
@@ -194,49 +218,17 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb168">
-               <placeName>Berlin</placeName>
-               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Barlīn</placeName>
-               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Berolino</placeName>
-               <placeName type="legacy-name-merge">B-n</placeName>
-               <location type="coords">
+            <place xml:id="pmb405869">
+               <placeName>Schöneberger Ufer 34</placeName>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
                   <geo>52,52437 13,41053</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
+                  <placeName ref="pmb57358">Schöneberger Ufer</placeName>
+                  <geo>52,50565255020321 13,36984712719845</geo>
                </location>
             </place>
             <place xml:id="pmb168940">
@@ -256,16 +248,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb133">Edmund-Weiß-Gasse</placeName>
                   <geo>48,23056 16,3348</geo>
-               </location>
-            </place>
-            <place xml:id="pmb57358">
-               <placeName>Schöneberger Ufer</placeName>
-               <location type="coords">
-                  <geo>52,50565255020321 13,36984712719845</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
                </location>
             </place>
          </listPlace>

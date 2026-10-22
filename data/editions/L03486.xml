@@ -114,7 +114,7 @@
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
                <date when="1907-11-06" n="01">[6. 11.? 1907]</date>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <placeName ref="#pmb237626" evidence="conjecture">Armbrustergasse 6</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -146,7 +146,7 @@
          <div type="writingSession" n="1"><opener><dateline rend="right"><pb facs="MS-SCHNITZLER-B-00089-B-00001-000-00062-R"/><anchor type="commentary" xml:id="K_L03486-1"/><date when="1907-11-06">Mittwoch</date><note type="commentary" corresp="K_L03486-1">Die Datierung gelingt über den Umweg,
                      dass der an einem Donnerstag geschriebene Brief vom <ref type="schnitzler-briefe" subtype="date-only" target="L03010"/> auf alle die
                      im vorliegenden Brief angeschnittenen Themen antwortet. Entsprechend ist dieses
-                     Korrespondenzstück auf den Vortag zu datieren.</note></dateline><salute>Lieber,</salute></opener><p>vielleicht können wir <anchor type="commentary" xml:id="K_L03486-2"/><date when="1907-11-09">Samstag</date><space unit="chars" quantity="1"/>nach dem Theater<note type="commentary" corresp="K_L03486-2">Die Premiere von <rs type="person" ref="#pmb2167">Saltens</rs> Stück <rs type="work" ref="#pmb76527">Vom andern Ufer</rs> fand am <ref type="schnitzler-tagebuch" target="1907-11-09" subtype="date-only"/> am <rs type="org" ref="#pmb36430">Volkstheater</rs> statt. <rs type="person" ref="#pmb2121">Schnitzler</rs> nahm teil, danach saß man im <rs type="place" ref="#pmb96">Meissl <c rendition="#kaufmannsund"/> Schaden</rs>
+                     Korrespondenzstück auf den Vortag zu datieren.</note></dateline><salute>Lieber,</salute></opener><p>vielleicht können wir <anchor type="commentary" xml:id="K_L03486-2"/><rs type="event" subtype="implied" ref="#pmb145196"><date when="1907-11-09">Samstag</date></rs><space unit="chars" quantity="1"/>nach dem Theater<note type="commentary" corresp="K_L03486-2">Die Premiere von <rs type="person" ref="#pmb2167">Saltens</rs> Stück <rs type="work" ref="#pmb76527">Vom andern Ufer</rs> fand am <ref type="schnitzler-kultur" target="pmb145196" subtype="date-only"/> am <rs type="org" ref="#pmb36430">Volkstheater</rs> statt. <rs type="person" ref="#pmb2121">Schnitzler</rs> nahm teil, danach saß man im <rs type="place" ref="#pmb96">Meissl <c rendition="#kaufmannsund"/> Schaden</rs>
                   zusammen.</note> beisammen sein? Mir ist es ganz egal wo; ich möchte nur irgendwo
                hin gehen, wo wenig Leute sind. Wenn Sie <rs type="person" ref="#pmb10863">Richard</rs> sehen, bitte, sagen Sie es ihm auch. Ich höre, dass Herr <rs type="person" ref="#pmb11851">Kainz</rs> ins Theater geht; natürlich wär es mir
                angenehm, wenn er mit käme. Auch <rs type="person" ref="#pmb2646 #pmb2642">Speidels</rs> werden dann wol mit uns sein. Bitte um eine Zeile.</p><closer>Herzlichst Ihr <lb/><signed>Salten</signed></closer></div>
@@ -328,26 +328,18 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb237626">
+               <placeName>Armbrustergasse 6</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>48,254547 16,355118</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb722">Armbrustergasse</placeName>
+                  <geo>48,25624 16,35657</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb69">XIX., Döbling</placeName>
+                  <geo>48,25 16,33306</geo>
                </location>
             </place>
             <place xml:id="pmb96" ana="comment">
@@ -436,6 +428,19 @@
                </location>
             </org>
          </listOrg>
+         <listEvent>
+            <event xml:id="pmb145196" ana="implied">
+               <eventName n="Theaterpremiere">Premiere Vom andern Ufer, 9.11.1907</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb20">Volkstheater</placeName>
+                     <location>
+                        <geo>48,205142 16,3566</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+         </listEvent>
       </back>
    </text>
 </TEI>

@@ -156,30 +156,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb10863">
                <persName>
                   <forename>Richard</forename>
@@ -204,6 +180,34 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
             <person xml:id="pmb42452">
                <persName>
                   <forename>Georg</forename>
@@ -222,80 +226,18 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb13082">
-               <persName>
-                  <forename>Carl</forename>
-                  <surname>Karlweis</surname>
-               </persName>
-               <birth>
-                  <date when="1850-11-23">1850-11-23</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1901-10-27">1901-10-27</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb12899">
-               <persName>
-                  <forename>Hermann</forename>
-                  <surname>Sudermann</surname>
-               </persName>
-               <birth>
-                  <date when="1857-09-30">1857-09-30</date>
-                  <settlement ref="pmb58616">
-                     <placeName type="pref">Macikai</placeName>
-                     <location>
-                        <geo>55,35468 21,52004</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1928-11-21">1928-11-21</date>
-                  <settlement ref="pmb168">
-                     <placeName type="pref">Berlin</placeName>
-                     <location>
-                        <geo>52,52437 13,41053</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb42444">
-               <title>Goldene Herzen. Wiener Volksstück in 4 Akten</title>
-               <author ref="pmb13082" role="hat-geschaffen">Karlweis, Carl</author>
-            </bibl>
             <bibl xml:id="pmb30455">
-               <title>Das Glück im Winkel</title>
-               <author ref="pmb12899" role="hat-geschaffen">Sudermann, Hermann</author>
+               <title type="main">Das Glück im Winkel</title>
+               <author role="hat-geschaffen" ref="pmb12899">Sudermann, Hermann</author>
+            </bibl>
+            <bibl xml:id="pmb42444">
+               <title type="main">Goldene Herzen. Wiener Volksstück in 4 Akten</title>
+               <author role="hat-geschaffen" ref="pmb13082">Karlweis, Carl</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb365214">
-               <placeName>1/1 Post- und Telegraphenamt 1</placeName>
-               <location type="coords">
-                  <geo>48,209928 16,379065</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb405263">Postbestellbezirk 1/1</placeName>
-                  <geo>48,208742 16,378142</geo>
-               </location>
-            </place>
             <place xml:id="pmb168934">
                <placeName>Frankgasse 1</placeName>
                <location type="coords">
@@ -324,15 +266,33 @@
                   <geo>48,20769 16,37049</geo>
                </location>
             </place>
+            <place xml:id="pmb365214">
+               <placeName>1/1 Post- und Telegraphenamt 1</placeName>
+               <location type="coords">
+                  <geo>48,209928 16,379065</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb405263">Postbestellbezirk 1/1</placeName>
+                  <geo>48,208742 16,378142</geo>
+               </location>
+            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -341,24 +301,9 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
-                  <geo>48,24077 16,32092</geo>
-               </location>
             </place>
          </listPlace>
          <listEvent>
-            <event xml:id="pmb42446" ana="implied">
-               <eventName n="Theateruraufführung">Uraufführung von Goldene Herzen, 9.11.1895</eventName>
-               <listPlace>
-                  <place>
-                     <placeName role="veranstaltet in" ref="pmb20">Volkstheater</placeName>
-                     <location>
-                        <geo>48,205142 16,3566</geo>
-                     </location>
-                  </place>
-               </listPlace>
-            </event>
             <event xml:id="pmb42439" ana="implied">
                <eventName n="Theateruraufführung">Uraufführung von Das Glück im Winkel, 11.11.1895</eventName>
                <listPlace>
@@ -366,6 +311,17 @@
                      <placeName role="veranstaltet in" ref="pmb14">Burgtheater</placeName>
                      <location>
                         <geo>48,210333 16,361139</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+            <event xml:id="pmb42446" ana="implied">
+               <eventName n="Theateruraufführung">Uraufführung von Goldene Herzen, 9.11.1895</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb20">Volkstheater</placeName>
+                     <location>
+                        <geo>48,205142 16,3566</geo>
                      </location>
                   </place>
                </listPlace>

@@ -103,12 +103,13 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1930-01-30" n="01">30. 1. 1930</date>
-               <placeName ref="#pmb168815">Sternwartestraße 71</placeName>
+               <placeName ref="#pmb168815" evidence="conjecture">Sternwartestraße 71</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2312">Zuckerkandl, Berta</persName>
                <date evidence="conjecture" notBefore="1930-01-31" notAfter="1930-02-04">[31. 1. 1930
                   – 4. 2. 1930?]</date>
+               <placeName ref="#pmb235784" evidence="conjecture">Oppolzergasse 6</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2312">Zuckerkandl, Berta</ref>
@@ -122,6 +123,7 @@
       <revisionDesc status="proposed">
          <change who="MAM" when="2025-11-05">Angelegt mit Fotografie</change>
          <change who="SJ" when="2026-02-09">Durchsicht</change>
+         <change who="SJ" when="2026-10-22">Absenderort überprüft</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -132,54 +134,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb2312">
-               <persName>
-                  <forename>Berta</forename>
-                  <surname>Zuckerkandl</surname>
-               </persName>
-               <birth>
-                  <date when="1864-04-13">1864-04-13</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1945-10-16">1945-10-16</date>
-                  <settlement ref="pmb182">
-                     <placeName type="pref">Paris</placeName>
-                     <location>
-                        <geo>48,85341 2,3488</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb15015">
                <persName>
                   <forename>Suzanne</forename>
@@ -228,26 +182,54 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb299504">
+            <person xml:id="pmb2121">
                <persName>
-                  <forename>Jacques</forename>
-                  <surname>Delamain</surname>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1874-12-20">1874-12-20</date>
-                  <settlement ref="pmb299451">
-                     <placeName type="pref">Jarnac</placeName>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>45,681388888889 -0,17583333333333</geo>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1953-02-05">1953-02-05</date>
-                  <settlement ref="pmb299506">
-                     <placeName type="pref">Saint-Brice</placeName>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>45,688055555556 -0,27722222222222</geo>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb2312">
+               <persName>
+                  <forename>Berta</forename>
+                  <surname>Zuckerkandl</surname>
+               </persName>
+               <birth>
+                  <date when="1864-04-13">1864-04-13</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-10-16">1945-10-16</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
                      </location>
                   </settlement>
                </death>
@@ -276,26 +258,26 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb117260">
+            <person xml:id="pmb299504">
                <persName>
-                  <forename>Félix</forename>
-                  <surname>Bertaux</surname>
+                  <forename>Jacques</forename>
+                  <surname>Delamain</surname>
                </persName>
                <birth>
-                  <date when="1881-11-09">1881-11-09</date>
-                  <settlement ref="pmb299486">
-                     <placeName type="pref">Dombras</placeName>
+                  <date when="1874-12-20">1874-12-20</date>
+                  <settlement ref="pmb299451">
+                     <placeName type="pref">Jarnac</placeName>
                      <location>
-                        <geo>49,391388888889 5,4588888888889</geo>
+                        <geo>45,681388888889 -0,17583333333333</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1948-09-19">1948-09-19</date>
-                  <settlement ref="pmb113868">
-                     <placeName type="pref">Sèvres</placeName>
+                  <date when="1953-02-05">1953-02-05</date>
+                  <settlement ref="pmb299506">
+                     <placeName type="pref">Saint-Brice</placeName>
                      <location>
-                        <geo>48,823055 2,2175</geo>
+                        <geo>45,688055555556 -0,27722222222222</geo>
                      </location>
                   </settlement>
                </death>
@@ -303,22 +285,58 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb36056">
-               <title>La pénombre des âmes</title>
-               <author ref="pmb15015" role="hat-ubersetzt">Clauser, Suzanne</author>
-               <author ref="pmb117260" role="hat-einen-beitrag-geschaffen-zu">Bertaux, Félix</author>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <title type="main">La pénombre des âmes</title>
+               <author role="hat-ubersetzt" ref="pmb15015">Clauser, Suzanne</author>
+               <author role="hat-einen-beitrag-geschaffen-zu" ref="pmb117260">Bertaux, Félix</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb168815">
+               <placeName>Sternwartestraße 71</placeName>
+               <location type="coords">
+                  <geo>48,23188 16,33716</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb533">Währinger Cottage</placeName>
+                  <geo>48,233056 16,341944</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb150">Sternwartestraße</placeName>
+                  <geo>48,23099349198 16,340117830625</geo>
+               </location>
+            </place>
+            <place xml:id="pmb235784">
+               <placeName>Oppolzergasse 6</placeName>
+               <location type="coords">
+                  <geo>48,2116 16,36171</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb48191">Oppolzergasse</placeName>
+                  <geo>48,211538 16,361544</geo>
+               </location>
+            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -326,10 +344,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
-                  <geo>48,24077 16,32092</geo>
                </location>
             </place>
          </listPlace>

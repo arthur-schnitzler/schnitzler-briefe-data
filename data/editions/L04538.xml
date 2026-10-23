@@ -193,6 +193,34 @@
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
             <person xml:id="pmb9531">
                <persName>
                   <forename>Rainer Maria</forename>
@@ -217,31 +245,7 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb353122" ana="implied">
+            <person xml:id="pmb353122" ana="comment">
                <persName>
                   <forename>Clara</forename>
                   <surname>Westhoff</surname>
@@ -267,37 +271,27 @@
             </person>
          </listPerson>
          <listBibl>
+            <bibl xml:id="pmb29845">
+               <title type="main">Die Gefährtin. Schauspiel in einem Akt</title>
+               <title type="werk_arbeitstitel">Der Wittwer</title>
+               <title type="werk_link">https://library.oapen.org/handle/20.500.12657/76700</title>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+            </bibl>
             <bibl xml:id="pmb29857">
-               <title>Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
+               <title type="main">Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
                <title type="werk_arbeitstitel">Shawl</title>
                <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=601&amp;teil=0111&amp;seite=00000001&amp;zoom=2</title>
                <title type="legacy-name-merge">Der Schleier der Beatrice</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
             </bibl>
             <bibl xml:id="pmb29917">
-               <title>Liebelei. Schauspiel in drei Akten</title>
+               <title type="main">Liebelei. Schauspiel in drei Akten</title>
                <title type="werk_link">https://www.deutschestextarchiv.de/book/show/schnitzler_liebelei_1896</title>
                <title type="werk_arbeitstitel">Das arme Mädl</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-            </bibl>
-            <bibl xml:id="pmb29845">
-               <title>Die Gefährtin. Schauspiel in einem Akt</title>
-               <title type="werk_arbeitstitel">Der Wittwer</title>
-               <title type="werk_link">https://library.oapen.org/handle/20.500.12657/76700</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb580" ana="comment">
-               <placeName>Physiatrisches Sanatorium (Lahmann)</placeName>
-               <location type="coords">
-                  <geo>51,06452 13,82081</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb866">Dresden</placeName>
-                  <geo>51,0833 13,7666</geo>
-               </location>
-            </place>
             <place xml:id="pmb168934">
                <placeName>Frankgasse 1</placeName>
                <location type="coords">
@@ -317,34 +311,9 @@
                <location type="coords">
                   <geo>51,06287 13,82063</geo>
                </location>
-            </place>
-            <place xml:id="pmb45258" ana="comment">
-               <placeName>München</placeName>
-               <placeName type="legacy-name-merge">München?</placeName>
-               <placeName type="legacy-name-merge">Munich</placeName>
-               <placeName type="alternative-name">Monacho</placeName>
-               <location type="coords">
-                  <geo>48,13743 11,57549</geo>
-               </location>
                <location type="located_in_place">
-                  <placeName ref="pmb314">Bayern</placeName>
-                  <geo>49,0 11,5</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb866" ana="comment">
-               <placeName>Dresden</placeName>
-               <placeName type="alternative-name">Landeshauptstadt Dresden</placeName>
-               <placeName type="legacy-name-merge">Kreisfreie Stadt Dresden</placeName>
-               <location type="coords">
+                  <placeName ref="pmb866">Dresden</placeName>
                   <geo>51,0833 13,7666</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
                </location>
             </place>
             <place xml:id="pmb364286">
@@ -357,8 +326,61 @@
                   <geo>51,5 10,5</geo>
                </location>
             </place>
+            <place xml:id="pmb45258">
+               <placeName>München</placeName>
+               <placeName type="alternative-name">München</placeName>
+               <placeName type="legacy-name-merge">München?</placeName>
+               <placeName type="legacy-name-merge">München</placeName>
+               <placeName type="legacy-name-merge">Munich</placeName>
+               <placeName type="alternative-name">Monacho</placeName>
+               <placeName type="alternative-name">Munich</placeName>
+               <placeName type="legacy-name">München</placeName>
+               <placeName type="legacy-name-merge">München?</placeName>
+               <placeName type="legacy-name-merge">München</placeName>
+               <location type="coords">
+                  <geo>48,13743 11,57549</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb314">Bayern</placeName>
+                  <geo>49,0 11,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb580">
+               <placeName>Dr. Lahmann’s Sanatorium</placeName>
+               <location type="coords">
+                  <geo>51,06452 13,82081</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb866">Dresden</placeName>
+                  <geo>51,0833 13,7666</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb341236">Weißer Hirsch</placeName>
+                  <geo>51,06287 13,82063</geo>
+               </location>
+            </place>
+            <place xml:id="pmb866">
+               <placeName>Dresden</placeName>
+               <placeName type="alternative-name">Landeshauptstadt Dresden</placeName>
+               <placeName type="legacy-name-merge">Dresden</placeName>
+               <placeName type="alternative-name">Dresden</placeName>
+               <placeName type="legacy-name-merge">Kreisfreie Stadt Dresden</placeName>
+               <placeName type="legacy-name-merge">Dresden</placeName>
+               <location type="coords">
+                  <geo>51,0833 13,7666</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
             <place xml:id="pmb497" ana="comment">
                <placeName>Glaspalast</placeName>
+               <placeName type="legacy-name-merge">Glaspalast</placeName>
                <location type="coords">
                   <geo>48,142331 11,564675</geo>
                </location>
@@ -390,7 +412,7 @@
                   </place>
                </listPlace>
             </event>
-            <event xml:id="pmb405718" ana="implied">
+            <event xml:id="pmb405718" ana="comment">
                <eventName n="Ausstellung">Internationale Kunstausstellung Dresden, 20.4.–20.10.1901</eventName>
                <listPlace>
                   <place>

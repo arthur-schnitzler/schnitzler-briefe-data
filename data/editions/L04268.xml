@@ -183,7 +183,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -192,7 +192,35 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb21647">
+               <persName>
+                  <forename>Paul</forename>
+                  <surname>Marx</surname>
+               </persName>
+               <birth>
+                  <date when="1879-07-21">1879-07-21</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1956-10-30">1956-10-30</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -217,30 +245,6 @@
                </birth>
                <death>
                   <date when="1928-04-14">1928-04-14</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
-            <person xml:id="pmb21647">
-               <persName>
-                  <forename>Paul</forename>
-                  <surname>Marx</surname>
-               </persName>
-               <birth>
-                  <date when="1879-07-21">1879-07-21</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1956-10-30">1956-10-30</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -275,27 +279,27 @@
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb29903" ana="implied">
-               <title>Zwischenspiel. Komödie in drei Akten</title>
+            <bibl xml:id="pmb29903" ana="comment">
+               <title type="main">Zwischenspiel. Komödie in drei Akten</title>
                <title type="werk_arbeitstitel">Neue Ehe</title>
                <title type="werk_arbeitstitel">Das leichte Leben</title>
                <title type="werk_arbeitstitel">Cäcilie Adams</title>
                <title type="werk_arbeitstitel">Adagio</title>
                <title type="werk_arbeitstitel">»Nicht mehr zu dir zu gehn …«</title>
                <title type="legacy-name-merge">Zwischenspiel</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-            </bibl>
-            <bibl xml:id="pmb33243" ana="comment">
-               <title>Tagebuch</title>
-               <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
             </bibl>
             <bibl xml:id="pmb29905" ana="comment">
-               <title>Der Ruf des Lebens. Schauspiel in drei Akten</title>
+               <title type="main">Der Ruf des Lebens. Schauspiel in drei Akten</title>
                <title type="werk_link">http://www.literature.at/viewer.alo?objid=12117&amp;page=1&amp;viewmode=fullscreen</title>
                <title type="werk_arbeitstitel">Vatermörderin</title>
                <title type="legacy-name-merge">Der Ruf des Lebens</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+            </bibl>
+            <bibl xml:id="pmb33243" ana="comment">
+               <title type="main">Tagebuch</title>
+               <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
@@ -315,6 +319,7 @@
             </place>
             <place xml:id="pmb483">
                <placeName>Reichenau an der Rax</placeName>
+               <placeName type="legacy-name-merge">Reichenau an der Rax</placeName>
                <placeName type="legacy-name-merge">Reichenau im Mühlkreis</placeName>
                <location type="coords">
                   <geo>47,7 15,83333</geo>

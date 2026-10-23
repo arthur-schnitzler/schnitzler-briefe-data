@@ -157,30 +157,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb12740">
                <persName>
                   <forename>Gustav</forename>
@@ -205,12 +181,69 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb207301">
+               <placeName>Tiefer Graben 17</placeName>
+               <location type="coords">
+                  <geo>48,212284 16,367725</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50825">Tiefer Graben</placeName>
+                  <geo>48,2125 16,368333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+            </place>
+            <place xml:id="pmb239882">
+               <placeName>Privat-Hotel Badrutt</placeName>
+               <placeName type="ort_namensvariante">Badrutt’s Palace</placeName>
+               <location type="coords">
+                  <geo>46,497148 9,840633</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb44374">St. Moritz</placeName>
+                  <geo>46,49937 9,84327</geo>
+               </location>
+            </place>
             <place xml:id="pmb44374">
                <placeName>St. Moritz</placeName>
+               <placeName type="alternative-name">St. Moritz</placeName>
                <placeName type="alternative-name">Sankt Moritz</placeName>
                <placeName type="alternative-name">Saint Moritz</placeName>
+               <placeName type="legacy-name">St. Moritz</placeName>
+               <placeName type="legacy-name-merge">St. Moritz</placeName>
+               <placeName type="legacy-name-merge">St. Moritz</placeName>
                <location type="coords">
                   <geo>46,49937 9,84327</geo>
                </location>
@@ -227,26 +260,14 @@
                   <geo>46,601337 9,965973</geo>
                </location>
             </place>
-            <place xml:id="pmb207301">
-               <placeName>Tiefer Graben 17</placeName>
-               <location type="coords">
-                  <geo>48,212284 16,367725</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb50825">Tiefer Graben</placeName>
-                  <geo>48,2125 16,368333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-            </place>
             <place xml:id="pmb51">
                <placeName>I., Innere Stadt</placeName>
                <placeName type="alternative-name">Inner city</placeName>
                <placeName type="alternative-name">Wien,Innere Stadt</placeName>
                <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
                <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <placeName type="legacy-name-merge">Inner city</placeName>
+               <placeName type="legacy-name-merge">Innere Stadt</placeName>
                <location type="coords">
                   <geo>48,20769 16,37049</geo>
                </location>
@@ -289,6 +310,7 @@
                <placeName type="alternative-name">Friburgum Brisigaviae</placeName>
                <placeName type="alternative-name">Fribourg-en-Brisgau</placeName>
                <placeName type="legacy-name-merge">Freiburg im Br.</placeName>
+               <placeName type="legacy-name-merge">Freiburg im Breisgau</placeName>
                <location type="coords">
                   <geo>47,9959 7,85222</geo>
                </location>
@@ -299,17 +321,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb239882">
-               <placeName>Privat-Hotel Badrutt</placeName>
-               <placeName type="ort_namensvariante">Badrutt’s Palace</placeName>
-               <location type="coords">
-                  <geo>46,497148 9,840633</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb44374">St. Moritz</placeName>
-                  <geo>46,49937 9,84327</geo>
                </location>
             </place>
          </listPlace>

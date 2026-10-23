@@ -178,7 +178,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -187,7 +187,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -195,6 +195,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb9531">
                <persName>
@@ -218,6 +222,36 @@
                         <geo>46,45179 6,94084</geo>
                      </location>
                   </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb258927" ana="comment">
+               <persName>
+                  <forename>Carl</forename>
+                  <surname>Sieber</surname>
+               </persName>
+               <birth>
+                  <date when="1897-01-01" notAfter="1897-12-31" notBefore="1897-01-01">1897</date>
+               </birth>
+               <death>
+                  <date when="1945-01-01" notAfter="1945-12-31">1945</date>
+               </death>
+            </person>
+            <person xml:id="pmb258928" ana="comment">
+               <persName>
+                  <forename>Ruth</forename>
+                  <surname>Sieber</surname>
+               </persName>
+               <birth>
+                  <date when="1901-12-12">1901-12-12</date>
+                  <settlement ref="pmb258929">
+                     <placeName type="pref">Westerwede</placeName>
+                     <location>
+                        <geo>53,19852 8,92013</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1972-11-27">1972-11-27</date>
                </death>
             </person>
             <person xml:id="pmb353122" ana="comment">
@@ -244,44 +278,14 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb258928" ana="comment">
-               <persName>
-                  <forename>Ruth</forename>
-                  <surname>Sieber</surname>
-               </persName>
-               <birth>
-                  <date when="1901-12-12">1901-12-12</date>
-                  <settlement ref="pmb258929">
-                     <placeName type="pref">Westerwede</placeName>
-                     <location>
-                        <geo>53,19852 8,92013</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1972-11-27">1972-11-27</date>
-               </death>
-            </person>
-            <person xml:id="pmb258927" ana="comment">
-               <persName>
-                  <forename>Carl</forename>
-                  <surname>Sieber</surname>
-               </persName>
-               <birth>
-                  <date notBefore="1897-01-01" when="1897-01-01" notAfter="1897-12-31">1897</date>
-               </birth>
-               <death>
-                  <date when="1945-01-01" notAfter="1945-12-31">1945</date>
-               </death>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb29853" ana="comment">
-               <title>Lieutenant Gustl. Novelle</title>
+               <title type="main">Lieutenant Gustl. Novelle</title>
                <title type="werk_bibliografische-angabe">Arthur Schnitzler: Lieutenant Gustl. In: Neue Freie Presse, Nr. 13053, 25. 12. 1900, Morgenblatt, S. 34–41</title>
                <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19001225&amp;seite=34</title>
                <title type="werk_namensvariante">Leutnant Gustl</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
@@ -312,6 +316,7 @@
             <place xml:id="pmb182" ana="comment">
                <placeName>Paris</placeName>
                <placeName type="alternative-name">P'ariz</placeName>
+               <placeName type="legacy-name-merge">Paris</placeName>
                <placeName type="alternative-name">Pariž</placeName>
                <placeName type="alternative-name">Parisius</placeName>
                <placeName type="alternative-name">Île-de-France</placeName>

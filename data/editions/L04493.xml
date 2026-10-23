@@ -157,30 +157,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb12740">
                <persName>
                   <forename>Gustav</forename>
@@ -204,6 +180,34 @@
                      </location>
                   </settlement>
                </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb24648" ana="implied">
                <persName>
@@ -232,23 +236,12 @@
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33243" ana="comment">
-               <title>Tagebuch</title>
+               <title type="main">Tagebuch</title>
                <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb63808" ana="comment">
-               <placeName>Scuol</placeName>
-               <placeName type="alternative-name">Schuls</placeName>
-               <location type="coords">
-                  <geo>46,79671 10,29804</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb43435">Schweiz</placeName>
-                  <geo>47,00016 8,01427</geo>
-               </location>
-            </place>
             <place xml:id="pmb207301">
                <placeName>Tiefer Graben 17</placeName>
                <location type="coords">
@@ -263,10 +256,26 @@
                   <geo>48,20769 16,37049</geo>
                </location>
             </place>
+            <place xml:id="pmb254512">
+               <placeName>Hotel Engadinerhof Tarasp Scuol</placeName>
+               <location type="coords">
+                  <geo>46,794044 10,29324</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb63808">Scuol</placeName>
+                  <geo>46,79671 10,29804</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43435">Schweiz</placeName>
+                  <geo>47,00016 8,01427</geo>
+               </location>
+            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
+               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
+               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -291,6 +300,8 @@
                <placeName type="alternative-name">Wien,Innere Stadt</placeName>
                <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
                <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <placeName type="legacy-name-merge">Inner city</placeName>
+               <placeName type="legacy-name-merge">Innere Stadt</placeName>
                <location type="coords">
                   <geo>48,20769 16,37049</geo>
                </location>
@@ -303,13 +314,11 @@
                   <geo>48,208333 16,373056</geo>
                </location>
             </place>
-            <place xml:id="pmb254512">
-               <placeName>Hotel Engadinerhof Tarasp Scuol</placeName>
+            <place xml:id="pmb63808">
+               <placeName>Scuol</placeName>
+               <placeName type="alternative-name">Schuls</placeName>
+               <placeName type="legacy-name-merge">Schuls</placeName>
                <location type="coords">
-                  <geo>46,794044 10,29324</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb63808">Scuol</placeName>
                   <geo>46,79671 10,29804</geo>
                </location>
                <location type="located_in_place">

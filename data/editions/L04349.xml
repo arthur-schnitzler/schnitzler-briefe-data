@@ -160,30 +160,6 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb12740">
                <persName>
                   <forename>Gustav</forename>
@@ -208,7 +184,35 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2238" ana="implied">
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb2238" ana="comment">
                <persName>
                   <forename>Lili</forename>
                   <surname>Cappellini</surname>
@@ -234,30 +238,6 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb90895" ana="comment">
-               <placeName>Hohenschwangau</placeName>
-               <location type="coords">
-                  <geo>47,55631 10,74085</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb169795">Schwangau</placeName>
-                  <geo>47,576666666667 10,735277777778</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb248986">
-               <placeName>Hotel Alpenrose [Hohenschwangau]</placeName>
-               <location type="coords">
-                  <geo>47,553369 10,736035</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb90895">Hohenschwangau</placeName>
-                  <geo>47,55631 10,74085</geo>
-               </location>
-            </place>
             <place xml:id="pmb207301">
                <placeName>Tiefer Graben 17</placeName>
                <location type="coords">
@@ -272,12 +252,24 @@
                   <geo>48,20769 16,37049</geo>
                </location>
             </place>
+            <place xml:id="pmb248986">
+               <placeName>Hotel Alpenrose [Hohenschwangau]</placeName>
+               <location type="coords">
+                  <geo>47,553369 10,736035</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb90895">Hohenschwangau</placeName>
+                  <geo>47,55631 10,74085</geo>
+               </location>
+            </place>
             <place xml:id="pmb51">
                <placeName>I., Innere Stadt</placeName>
                <placeName type="alternative-name">Inner city</placeName>
                <placeName type="alternative-name">Wien,Innere Stadt</placeName>
                <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
                <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <placeName type="legacy-name-merge">Inner city</placeName>
+               <placeName type="legacy-name-merge">Innere Stadt</placeName>
                <location type="coords">
                   <geo>48,20769 16,37049</geo>
                </location>
@@ -288,6 +280,30 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb90225">
+               <placeName>Alpsee</placeName>
+               <location type="coords">
+                  <geo>47,5493 10,72394</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+            </place>
+            <place xml:id="pmb90895">
+               <placeName>Hohenschwangau</placeName>
+               <location type="coords">
+                  <geo>47,55631 10,74085</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb169795">Schwangau</placeName>
+                  <geo>47,576666666667 10,735277777778</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
                </location>
             </place>
             <place xml:id="pmb91342">
@@ -304,16 +320,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb90895">Hohenschwangau</placeName>
                   <geo>47,55631 10,74085</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-            </place>
-            <place xml:id="pmb90225">
-               <placeName>Alpsee</placeName>
-               <location type="coords">
-                  <geo>47,5493 10,72394</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>

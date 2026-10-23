@@ -104,12 +104,13 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1929-08-10" n="01">10. 8. 1929</date>
-               <placeName ref="#pmb168815">Sternwartestraße 71</placeName>
+               <placeName ref="#pmb168815" evidence="conjecture">Sternwartestraße 71</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2312">Zuckerkandl, Berta</persName>
                <date evidence="conjecture" notBefore="1929-08-11" notAfter="1929-08-15">[11. 8. 1929
                   – 15. 8. 1929?]</date>
+               <placeName ref="#pmb235784">Oppolzergasse 6</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2312">Zuckerkandl, Berta</ref>
@@ -124,6 +125,7 @@
       <revisionDesc status="proposed">
          <change who="MAM" when="2025-11-03">Export aus Transkribus</change>
          <change who="SJ" when="2026-02-05">Durchsicht</change>
+         <change who="SJ" when="2026-10-22">Absenderort überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -153,7 +155,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -162,7 +164,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -170,6 +172,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2312">
                <persName>
@@ -197,15 +203,51 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb168815">
+               <placeName>Sternwartestraße 71</placeName>
+               <location type="coords">
+                  <geo>48,23188 16,33716</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb533">Währinger Cottage</placeName>
+                  <geo>48,233056 16,341944</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb150">Sternwartestraße</placeName>
+                  <geo>48,23099349198 16,340117830625</geo>
+               </location>
+            </place>
+            <place xml:id="pmb235784">
+               <placeName>Oppolzergasse 6</placeName>
+               <location type="coords">
+                  <geo>48,2116 16,36171</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb48191">Oppolzergasse</placeName>
+                  <geo>48,211538 16,361544</geo>
+               </location>
+            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -214,14 +256,13 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
-                  <geo>48,24077 16,32092</geo>
-               </location>
             </place>
             <place xml:id="pmb166" ana="comment">
                <placeName>Frankreich</placeName>
                <placeName type="alternative-name">France</placeName>
+               <placeName type="alternative-name">Frankreich</placeName>
+               <placeName type="legacy-name-merge">Frankreich</placeName>
+               <placeName type="legacy-name-merge">France</placeName>
                <location type="coords">
                   <geo>46,0 2,0</geo>
                </location>
@@ -232,7 +273,7 @@
             </place>
          </listPlace>
          <listOrg>
-            <org xml:id="pmb334634" ana="comment">
+            <org xml:id="pmb334634">
                <orgName>L’ordre national de la Légion d’Honneur</orgName>
                <orgName type="institution_namensvariante">Ehrenlegion</orgName>
                <location type="located_in_place">
@@ -247,8 +288,8 @@
                   <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb166.html</idno>
                   <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004602</idno>
                   <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb166</idno>
+                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.4</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb166.html</idno>
-                  <idno type="URL" subtype="www">https://www.schoenberg-ue.at/ue/places/place.4</idno>
                </location>
             </org>
          </listOrg>

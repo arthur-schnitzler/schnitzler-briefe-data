@@ -170,13 +170,13 @@
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb2121">
+            <person xml:id="pmb12740">
                <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
+                  <forename>Gustav</forename>
+                  <surname>Schwarzkopf</surname>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1853-11-07">1853-11-07</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -185,7 +185,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1939-11-13">1939-11-13</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -193,6 +193,34 @@
                      </location>
                   </settlement>
                </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173">
                <persName>
@@ -218,30 +246,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb12740">
-               <persName>
-                  <forename>Gustav</forename>
-                  <surname>Schwarzkopf</surname>
-               </persName>
-               <birth>
-                  <date when="1853-11-07">1853-11-07</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1939-11-13">1939-11-13</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb2315">
                <persName>
                   <forename>Elisabeth</forename>
@@ -262,17 +266,6 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb36456">
-               <placeName>Menton</placeName>
-               <placeName type="legacy-name">Mentone</placeName>
-               <location type="coords">
-                  <geo>43,77649 7,50435</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb166">Frankreich</placeName>
-                  <geo>46,0 2,0</geo>
-               </location>
-            </place>
             <place xml:id="pmb207296">
                <placeName>Tiefer Graben 23</placeName>
                <location type="coords">
@@ -287,10 +280,46 @@
                   <geo>48,20769 16,37049</geo>
                </location>
             </place>
+            <place xml:id="pmb2318">
+               <placeName>Partenkirchen</placeName>
+               <location type="coords">
+                  <geo>47,4956 11,1097</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb667">Garmisch-Partenkirchen</placeName>
+                  <geo>47,49209 11,09576</geo>
+               </location>
+            </place>
+            <place xml:id="pmb251927">
+               <placeName>Grand Hôtel National [Menton]</placeName>
+               <location type="coords">
+                  <geo>43,777129 7,497536</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb36456">Menton</placeName>
+                  <geo>43,77649 7,50435</geo>
+               </location>
+            </place>
+            <place xml:id="pmb36456">
+               <placeName>Menton</placeName>
+               <placeName type="alternative-name">Menton</placeName>
+               <placeName type="legacy-name">Mentone</placeName>
+               <placeName type="legacy-name-merge">Menton</placeName>
+               <placeName type="legacy-name">Menton</placeName>
+               <location type="coords">
+                  <geo>43,77649 7,50435</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb166">Frankreich</placeName>
+                  <geo>46,0 2,0</geo>
+               </location>
+            </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
+               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
+               <placeName type="legacy-name-merge">Österreich</placeName>
                <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
                <placeName type="legacy-name-merge">Altoesterreich</placeName>
                <location type="coords">
@@ -315,6 +344,8 @@
                <placeName type="alternative-name">Wien,Innere Stadt</placeName>
                <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
                <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <placeName type="legacy-name-merge">Inner city</placeName>
+               <placeName type="legacy-name-merge">Innere Stadt</placeName>
                <location type="coords">
                   <geo>48,20769 16,37049</geo>
                </location>
@@ -325,26 +356,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb50">Wien</placeName>
                   <geo>48,208333 16,373056</geo>
-               </location>
-            </place>
-            <place xml:id="pmb251927">
-               <placeName>Grand Hôtel National [Menton]</placeName>
-               <location type="coords">
-                  <geo>43,777129 7,497536</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb36456">Menton</placeName>
-                  <geo>43,77649 7,50435</geo>
-               </location>
-            </place>
-            <place xml:id="pmb2318">
-               <placeName>Partenkirchen</placeName>
-               <location type="coords">
-                  <geo>47,4956 11,1097</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb667">Garmisch-Partenkirchen</placeName>
-                  <geo>47,49209 11,09576</geo>
                </location>
             </place>
          </listPlace>

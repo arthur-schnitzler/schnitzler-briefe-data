@@ -184,7 +184,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -193,7 +193,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -201,6 +201,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2173">
                <persName>
@@ -222,6 +226,36 @@
                      <placeName type="pref">Lugano</placeName>
                      <location>
                         <geo>46,01008 8,96004</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb12692" ana="implied">
+               <persName>
+                  <forename>Heinrich</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1902-08-09">1902-08-09</date>
+                  <settlement ref="pmb75">
+                     <placeName type="pref">Hinterbrühl</placeName>
+                     <location>
+                        <geo>48,08611 16,24809</geo>
+                     </location>
+                  </settlement>
+                  <settlement ref="pmb145165">
+                     <placeName type="pref">Hauptstraße 56 [Hinterbrühl]</placeName>
+                     <location>
+                        <geo>48,08736 16,24924</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1982-07-12">1982-07-12</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
                      </location>
                   </settlement>
                </death>
@@ -250,66 +284,21 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb12692" ana="implied">
-               <persName>
-                  <forename>Heinrich</forename>
-                  <surname>Schnitzler</surname>
-               </persName>
-               <birth>
-                  <date when="1902-08-09">1902-08-09</date>
-                  <settlement ref="pmb75">
-                     <placeName type="pref">Hinterbrühl</placeName>
-                     <location>
-                        <geo>48,08611 16,24809</geo>
-                     </location>
-                  </settlement>
-                  <settlement ref="pmb145165">
-                     <placeName type="pref">Hauptstraße 56</placeName>
-                     <location>
-                        <geo>48,08736 16,24924</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1982-07-12">1982-07-12</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb662">
-               <placeName>Baden bei Wien</placeName>
-               <placeName type="alternative-name">Baden</placeName>
-               <placeName type="legacy-name-merge">Baden (Niederösterreich)</placeName>
+            <place xml:id="pmb168">
+               <placeName>Berlin</placeName>
+               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Barlīn</placeName>
+               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Berolino</placeName>
+               <placeName type="legacy-name-merge">B-n</placeName>
                <location type="coords">
-                  <geo>48,00543 16,23264</geo>
+                  <geo>52,52437 13,41053</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb1003">Niederösterreich</placeName>
-                  <geo>48,33333 15,75</geo>
-               </location>
-            </place>
-            <place xml:id="pmb334794">
-               <placeName>Städtische Kuranstalt</placeName>
-               <location type="coords">
-                  <geo>48,00392 16,2386929</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb662">Baden bei Wien</placeName>
-                  <geo>48,00543 16,23264</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb334798">Kaiser Franz Joseph-Ring</placeName>
-                  <geo>48,004011 16,239679</geo>
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
                </location>
             </place>
             <place xml:id="pmb168815">
@@ -330,6 +319,20 @@
                   <geo>48,23099349198 16,340117830625</geo>
                </location>
             </place>
+            <place xml:id="pmb334794">
+               <placeName>Städtische Kuranstalt</placeName>
+               <location type="coords">
+                  <geo>48,00392 16,2386929</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb662">Baden bei Wien</placeName>
+                  <geo>48,00543 16,23264</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb334798">Kaiser Franz Joseph-Ring</placeName>
+                  <geo>48,004011 16,239679</geo>
+               </location>
+            </place>
             <place xml:id="pmb533">
                <placeName>Währinger Cottage</placeName>
                <location type="coords">
@@ -340,19 +343,23 @@
                   <geo>48,23333 16,31667</geo>
                </location>
             </place>
-            <place xml:id="pmb168">
-               <placeName>Berlin</placeName>
-               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Barlīn</placeName>
-               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Berolino</placeName>
-               <placeName type="legacy-name-merge">B-n</placeName>
+            <place xml:id="pmb662">
+               <placeName>Baden bei Wien</placeName>
+               <placeName type="alternative-name">Baden</placeName>
+               <placeName type="legacy-name-merge">Baden</placeName>
+               <placeName type="legacy-name-merge">Baden bei Wien</placeName>
+               <placeName type="alternative-name">Baden bei Wien</placeName>
+               <placeName type="legacy-name-merge">Baden (Niederösterreich)</placeName>
                <location type="coords">
-                  <geo>52,52437 13,41053</geo>
+                  <geo>48,00543 16,23264</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb1003">Niederösterreich</placeName>
+                  <geo>48,33333 15,75</geo>
                </location>
             </place>
             <place xml:id="pmb190818" ana="implied">

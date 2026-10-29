@@ -81,7 +81,7 @@
                               <extent>
                                  <measure unit="blatt" quantity="1"/>
                                  <measure unit="seite" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="203"/>
+                                 <measure unit="zeichenanzahl" quantity="201"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -149,7 +149,7 @@
                <persName ref="#pmb10815">Bahr, Hermann</persName>
                <date evidence="conjecture" notBefore="1897-02-26" notAfter="1897-02-28">[26. 2. 1897
                   – 2. 3. 1897?]</date>
-               <placeName ref="#pmb50">Wien</placeName>
+               <placeName ref="#pmb231658" evidence="conjecture">Günthergasse 1</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10815">Bahr, Hermann</ref>
@@ -166,6 +166,7 @@
          <change who="MAM" when="2018-07-15">Überführt aus Bahr–Schnitzler-Daten</change>
          <change who="GHS" when="2019-12-23">finalisiert</change>
          <change when="2019-12-24" who="MAM">Index check</change>
+         <change who="MAM" when="2026-10-23">Absenderort überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -174,10 +175,34 @@
    <text>
       <body>
          <div type="writingSession" n="1"><p><pb facs="Arthur-Schnitzler_an_Hermann-Bahr_00020"/><salute>Lieber Hermann,</salute> es i<c rendition="#langesS">s</c>t<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>ehr freundlich d<c rendition="#langesS">s</c>s du dich<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t bemüht u
-               mir die Karte<space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t ge<c rendition="#langesS">s</c>chickt ha<c rendition="#langesS">s</c>t. Erlaube mir gleich meine Schuld abzutragen.</p><closer>Mit herzlichem Dank und Gru<c rendition="#langesS">s</c>s<lb/>dein <signed>ArthurSch</signed></closer><postscript><dateline><rs ref="#pmb50" type="place">Wien</rs>, <date>26. 2. 97.</date></dateline></postscript></div>
+               mir die <rs type="event" subtype="implied" ref="#pmb208907">Karte</rs><space unit="chars" quantity="1"/><c rendition="#langesS">s</c>elb<c rendition="#langesS">s</c>t ge<c rendition="#langesS">s</c>chickt ha<c rendition="#langesS">s</c>t. Erlaube mir gleich meine Schuld abzutragen.</p><closer>Mit herzlichem Dank und Gru<c rendition="#langesS">s</c>s<lb/>dein <signed>ArthurSch</signed></closer><postscript><dateline><rs ref="#pmb50" type="place">Wien</rs>, <date>26. 2. 97.</date></dateline></postscript></div>
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb10815">
                <persName>
                   <forename>Hermann</forename>
@@ -202,34 +227,6 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
             <place xml:id="pmb168934">
@@ -246,19 +243,29 @@
                   <geo>48,215516628628 16,356475515829</geo>
                </location>
             </place>
+            <place xml:id="pmb231658">
+               <placeName>Günthergasse 1</placeName>
+               <location type="coords">
+                  <geo>48,216404 16,358254</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb296">Günthergasse</placeName>
+                  <geo>48,216599877109 16,358330000258</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
                <placeName type="alternative-name">Vienna</placeName>
                <location type="coords">
                   <geo>48,208333 16,373056</geo>
@@ -267,8 +274,25 @@
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb235218">Windmühlhöhe</placeName>
+                  <geo>48,24077 16,32092</geo>
+               </location>
             </place>
          </listPlace>
+         <listEvent>
+            <event xml:id="pmb208907" ana="implied">
+               <eventName n="Theaterpremiere">Premiere von Das Tschaperl, 27.2.1897</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb118">Carl-Theater</placeName>
+                     <location>
+                        <geo>48,215 16,384444</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+         </listEvent>
       </back>
    </text>
 </TEI>

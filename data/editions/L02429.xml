@@ -140,12 +140,13 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1925-01-05" n="01">5. 1. 1925</date>
-               <placeName ref="#pmb168815">Sternwartestraße 71</placeName>
+               <placeName ref="#pmb168815" evidence="conjecture">Sternwartestraße 71</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb12176">Mann, Thomas</persName>
                <date evidence="conjecture" notBefore="1925-01-05" notAfter="1925-01-09">[5. 1. 1925
                   – 9. 1. 1925?]</date>
+               <placeName ref="#pmb1213" evidence="conjecture">Thomas-Mann-Villa</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_12176">Mann, Thomas</ref>
@@ -161,6 +162,7 @@
          <change when="2019-11-13" who="MAM">Index check</change>
          <change who="GHS" when="2020-06-13">Durchsicht</change>
          <change who="GHS" when="2020-09-18">finalisiert</change>
+         <change who="SJ" when="2026-10-29">Absenderort überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -246,6 +248,17 @@
             </bibl>
          </listBibl>
          <listPlace>
+            <place xml:id="pmb1213">
+               <placeName>Thomas-Mann-Villa</placeName>
+               <placeName type="legacy-name-merge">Thomas-Mann-Villa</placeName>
+               <location type="coords">
+                  <geo>48,153972 11,604583</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb45258">München</placeName>
+                  <geo>48,13743 11,57549</geo>
+               </location>
+            </place>
             <place xml:id="pmb168815">
                <placeName>Sternwartestraße 71</placeName>
                <location type="coords">

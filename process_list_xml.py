@@ -2,6 +2,9 @@
 """
 Collect the PMB entities used in a project's TEI index files (list*.xml) and
 write them to a CSV that PMB reads to keep its URI registrations up to date.
+PMB compares the CSV with the URIs it stores for the domain, see
+`python manage.py sync_uris_in_use` in pmb-service. The project only delivers
+the current state, the diff is done by PMB.
 
 The script is project-independent; everything project-specific lives in a JSON
 config (default: ./pmb-uris.json):
@@ -9,12 +12,18 @@ config (default: ./pmb-uris.json):
     domain         identifies the project in PMB (scopes additions/deletions)
     uri_template   URI of an entity page, {xml_id} and {pmb_id} are available
     index_glob     glob for the index files
-    exclude        file names to skip
+    exclude        file names to skip (optional)
     id_pattern     regex applied to @xml:id; group 1 is the numeric PMB id
     output         path of the CSV
 
 Output columns: pmb_id, entity_type, uri, domain
 Rows are sorted by (entity_type, pmb_id) so that git diffs stay small.
+
+The entity type is taken from the entry itself (person, place, org, bibl,
+event), not from the list around it. Entries of any other kind (e.g. personGrp)
+are skipped, and so is a second entry for the same entity, also if its xml:id
+only differs in leading zeros (pmb7, pmb007): PMB expects one row per
+(entity_type, pmb_id). Everything skipped is reported.
 
 Usage: process_list_xml.py [config.json]
 """
@@ -30,14 +39,8 @@ import xml.etree.ElementTree as ET
 TEI = '{http://www.tei-c.org/ns/1.0}'
 XML_ID = '{http://www.w3.org/XML/1998/namespace}id'
 
-# TEI list element -> PMB entity type
-ENTITY_TYPES = {
-    'listPerson': 'person',
-    'listPlace': 'place',
-    'listOrg': 'org',
-    'listBibl': 'bibl',
-    'listEvent': 'event',
-}
+# TEI elements of the entries -> PMB entity types
+ENTITY_TYPES = ['person', 'place', 'org', 'bibl', 'event']
 
 
 def collect(config):
@@ -58,22 +61,28 @@ def collect(config):
         if body is None:
             continue
         for lst in body:
-            entity_type = ENTITY_TYPES.get(lst.tag.removeprefix(TEI))
-            if entity_type is None:
+            if not lst.tag.startswith(f'{TEI}list'):
                 continue
             for entry in lst:
                 xml_id = entry.get(XML_ID)
                 if not xml_id:
                     continue
+                entity_type = entry.tag.removeprefix(TEI)
+                if entity_type not in ENTITY_TYPES:
+                    print(f'Skipping {xml_id} in {path}: <{entity_type}> is not a PMB entity type')
+                    continue
                 m = id_re.match(xml_id)
                 if not m:
                     print(f'Skipping {xml_id} in {path}: does not match id_pattern')
                     continue
-                pmb_id = m.group(1)
+                pmb_id = int(m.group(1))
+                if (entity_type, pmb_id) in rows:
+                    print(f'Skipping {xml_id} in {path}: duplicate {entity_type} {pmb_id}')
+                    continue
                 uri = config['uri_template'].format(xml_id=xml_id, pmb_id=pmb_id)
                 rows[(entity_type, pmb_id)] = [
                     pmb_id, entity_type, uri, config['domain']]
-    return files, [rows[k] for k in sorted(rows, key=lambda k: (k[0], int(k[1])))]
+    return files, [rows[k] for k in sorted(rows)]
 
 
 def main():

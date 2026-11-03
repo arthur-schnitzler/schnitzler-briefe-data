@@ -39,7 +39,7 @@ jobs:
           {
             "changed_files": "${{ steps.changed-files.outputs.all_changed_files }}",
             "sha": "${{ github.sha }}",
-            "commit_message": "${{ github.event.head_commit.message }}"
+            "commit_message": ${{ toJSON(github.event.head_commit.message) }}
           }
 
   # New job for schnitzler-briefe-charts
@@ -55,7 +55,7 @@ jobs:
         client-payload: |
           {
             "sha": "${{ github.sha }}",
-            "commit_message": "${{ github.event.head_commit.message }}"
+            "commit_message": ${{ toJSON(github.event.head_commit.message) }}
           }
 
   # New job for schnitzler-tagebuch-charts when listcorrespondence.xml changes
@@ -81,5 +81,5 @@ jobs:
         client-payload: |
           {
             "sha": "${{ github.sha }}",
-            "commit_message": "${{ github.event.head_commit.message }}"
+            "commit_message": ${{ toJSON(github.event.head_commit.message) }}
           }

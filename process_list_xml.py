@@ -1,81 +1,102 @@
 #!/usr/bin/env python3
 """
-Script to process XML files in ./data/editions/list*.xml and extract xml:id values
-to generate a CSV file with id, uri, and domain columns.
+Collect the PMB entities used in a project's TEI index files (list*.xml) and
+write them to a CSV that PMB reads to keep its URI registrations up to date.
+
+The script is project-independent; everything project-specific lives in a JSON
+config (default: ./pmb-uris.json):
+
+    domain         identifies the project in PMB (scopes additions/deletions)
+    uri_template   URI of an entity page, {xml_id} and {pmb_id} are available
+    index_glob     glob for the index files
+    exclude        file names to skip
+    id_pattern     regex applied to @xml:id; group 1 is the numeric PMB id
+    output         path of the CSV
+
+Output columns: pmb_id, entity_type, uri, domain
+Rows are sorted by (entity_type, pmb_id) so that git diffs stay small.
+
+Usage: process_list_xml.py [config.json]
 """
 
-import os
 import csv
-import xml.etree.ElementTree as ET
-from pathlib import Path
 import glob
+import json
+import os
+import re
+import sys
+import xml.etree.ElementTree as ET
 
-def process_xml_files():
-    # Find all list*.xml files in data/indices/
-    xml_files = [f for f in glob.glob('./data/indices/list*.xml') if not f.endswith('listcorrespondence.xml')]
-    
-    results = []
-    
-    for xml_file in xml_files:
+TEI = '{http://www.tei-c.org/ns/1.0}'
+XML_ID = '{http://www.w3.org/XML/1998/namespace}id'
+
+# TEI list element -> PMB entity type
+ENTITY_TYPES = {
+    'listPerson': 'person',
+    'listPlace': 'place',
+    'listOrg': 'org',
+    'listBibl': 'bibl',
+    'listEvent': 'event',
+}
+
+
+def collect(config):
+    id_re = re.compile(config['id_pattern'])
+    excluded = set(config.get('exclude', []))
+    files = sorted(
+        f for f in glob.glob(config['index_glob'])
+        if os.path.basename(f) not in excluded
+    )
+
+    rows = {}
+    for path in files:
         try:
-            tree = ET.parse(xml_file)
-            root = tree.getroot()
-            
-            # Define namespace (TEI typically uses this namespace)
-            namespaces = {
-                'tei': 'http://www.tei-c.org/ns/1.0',
-                'xml': 'http://www.w3.org/XML/1998/namespace'
-            }
-            
-            # Find all elements matching the XPath pattern
-            # /TEI/text/body/*[starts-with(name(), 'list')]/child::*/@xml:id
-            body = root.find('.//tei:text/tei:body', namespaces)
-            if body is not None:
-                for child in body:
-                    # Check if element name starts with 'list'
-                    if child.tag.endswith('}list') or 'list' in child.tag:
-                        for grandchild in child:
-                            xml_id = grandchild.get('{http://www.w3.org/XML/1998/namespace}id')
-                            if xml_id:
-                                # 1) replace(@xml:id, 'pmb', '')
-                                id_value = xml_id.replace('pmb', '')
-                                
-                                # 2) concat('https://schnitzler-briefe.acdh.oeaw.ac.at/', @xml:id, '.html')
-                                uri_value = f'https://schnitzler-briefe.acdh.oeaw.ac.at/{xml_id}.html'
-                                
-                                # 3) "schnitzler-briefe"
-                                domain_value = "schnitzler-briefe"
-                                
-                                results.append([id_value, uri_value, domain_value])
-        
+            root = ET.parse(path).getroot()
         except ET.ParseError as e:
-            print(f"Error parsing {xml_file}: {e}")
-        except Exception as e:
-            print(f"Error processing {xml_file}: {e}")
-    
-    # Sort by id descending (highest number first)
-    def sort_key(row):
-        try:
-            return (0, int(row[0]))
-        except (ValueError, TypeError):
-            return (-1, row[0])
+            sys.exit(f'Error parsing {path}: {e}')
+        body = root.find(f'.//{TEI}text/{TEI}body')
+        if body is None:
+            continue
+        for lst in body:
+            entity_type = ENTITY_TYPES.get(lst.tag.removeprefix(TEI))
+            if entity_type is None:
+                continue
+            for entry in lst:
+                xml_id = entry.get(XML_ID)
+                if not xml_id:
+                    continue
+                m = id_re.match(xml_id)
+                if not m:
+                    print(f'Skipping {xml_id} in {path}: does not match id_pattern')
+                    continue
+                pmb_id = m.group(1)
+                uri = config['uri_template'].format(xml_id=xml_id, pmb_id=pmb_id)
+                rows[(entity_type, pmb_id)] = [
+                    pmb_id, entity_type, uri, config['domain']]
+    return files, [rows[k] for k in sorted(rows, key=lambda k: (k[0], int(k[1])))]
 
-    results.sort(key=sort_key, reverse=True)
 
-    # Create csv directory if it doesn't exist
-    os.makedirs('./csv', exist_ok=True)
-    
-    # Write to CSV
-    with open('./csv/uris-in-use.csv', 'w', newline='', encoding='utf-8') as csvfile:
-        writer = csv.writer(csvfile)
-        # Write header
-        writer.writerow(['id', 'uri', 'domain'])
-        # Write data
-        writer.writerows(results)
-    
-    print(f"Processed {len(xml_files)} XML files")
-    print(f"Extracted {len(results)} entries")
-    print("Output written to ./csv/uris-in-use.csv")
+def main():
+    config_path = sys.argv[1] if len(sys.argv) > 1 else 'pmb-uris.json'
+    with open(config_path, encoding='utf-8') as f:
+        config = json.load(f)
 
-if __name__ == "__main__":
-    process_xml_files()
+    files, rows = collect(config)
+    if not rows:
+        # An empty CSV would make PMB drop every registration of this domain.
+        sys.exit('No entities found, refusing to write an empty CSV')
+
+    output = config['output']
+    os.makedirs(os.path.dirname(output) or '.', exist_ok=True)
+    with open(output, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['pmb_id', 'entity_type', 'uri', 'domain'])
+        writer.writerows(rows)
+
+    print(f'Processed {len(files)} XML files')
+    print(f'Extracted {len(rows)} entries')
+    print(f'Output written to {output}')
+
+
+if __name__ == '__main__':
+    main()

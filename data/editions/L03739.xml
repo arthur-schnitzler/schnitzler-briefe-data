@@ -91,7 +91,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="telegramm" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="164"/>
+                                 <measure unit="zeichenanzahl" quantity="165"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -123,7 +123,7 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1920-08-18" n="01">18. 8. [1920]</date>
-               <placeName ref="#pmb168815">Sternwartestraße 71</placeName>
+               <placeName ref="#pmb365226">18/1 Post- und Telegraphenamt 111</placeName>
             </correspAction>
             <correspAction type="in_transit">
                <date when="1920-08-18">18. 8. 1920</date>
@@ -159,12 +159,36 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="0166_FL81799663"/>stefan zweig <rs type="place" ref="#pmb297">salzburg kapuzinerberg</rs> =</addrLine></address></div>
-         <div type="writingSession" n="1"><opener><dateline rend="center"><pb facs="0166_FL81799663"/><rs type="place" ref="#pmb50">wien</rs> 111+ 346 15 <date>18/8</date> 10 m</dateline></opener><p>erbitte unverbindlichen ratschlag
+         <div type="writingSession" n="1"><opener><dateline rend="center"><pb facs="0166_FL81799663"/><rs type="place" ref="#pmb365226">wien 111</rs>+ 346 15 <date>18/8</date> 10 m</dateline></opener><p>erbitte unverbindlichen ratschlag
                hinsichtlich bedingungen <rs type="org" ref="#pmb29336">seltzer</rs> herzlichen
       dank und gruss = <signed>schnitzler ‹«</signed></p></div>
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
             <person xml:id="pmb13212">
                <persName>
                   <forename>Stefan</forename>
@@ -189,52 +213,24 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <surname>Schnitzler</surname>
-                  <forename>Arthur</forename>
-               </persName>
-               <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
-            </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb168815">
-               <placeName>Sternwartestraße 71</placeName>
+            <place xml:id="pmb365226">
+               <placeName>18/1 Post- und Telegraphenamt 111</placeName>
                <location type="coords">
-                  <geo>48,23188 16,33716</geo>
+                  <geo>48,230794 16,344569</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb199145">Anastasius-Grün-Gasse</placeName>
+                  <geo>48,231448 16,342796</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb68">XVIII., Währing</placeName>
                   <geo>48,23333 16,31667</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb533">Währinger Cottage</placeName>
-                  <geo>48,233056 16,341944</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb150">Sternwartestraße</placeName>
-                  <geo>48,23099349198 16,340117830625</geo>
+                  <placeName ref="pmb405253">Postbestellbezirk 18/1</placeName>
+                  <geo>48,231941 16,335645</geo>
                </location>
             </place>
             <place xml:id="pmb297">
@@ -245,28 +241,6 @@
                <location type="located_in_place">
                   <placeName ref="pmb30">Salzburg</placeName>
                   <geo>47,80067 13,04532</geo>
-               </location>
-            </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <location type="coords">
-                  <geo>48,208333 16,373056</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
                </location>
             </place>
          </listPlace>

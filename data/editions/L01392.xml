@@ -200,7 +200,7 @@
                   <forename>Arthur</forename>
                </persName>
                <birth>
-                  <date when="1862-05-15">15. 5. 1862</date>
+                  <date when="1862-05-15">15. 5. 1862</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -209,7 +209,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1931-10-21">21. 10. 1931</date>
+                  <date when="1931-10-21">21. 10. 1931</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -217,6 +217,10 @@
                      </location>
                   </settlement>
                </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
             </person>
             <person xml:id="pmb2199">
                <persName>
@@ -242,7 +246,7 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb12692" ana="implied">
+            <person xml:id="pmb12692" ana="comment">
                <persName>
                   <forename>Heinrich</forename>
                   <surname>Schnitzler</surname>
@@ -296,58 +300,33 @@
                   </settlement>
                </death>
             </person>
-            <person xml:id="pmb2206">
-               <persName>
-                  <forename>Émile</forename>
-                  <surname>Lutz</surname>
-               </persName>
-               <birth>
-                  <date when="1868-04-08">1868-04-08</date>
-                  <settlement ref="pmb53286">
-                     <placeName type="pref">Saint-Étienne-du-Rouvray</placeName>
-                     <location>
-                        <geo>49,37794 1,10467</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1940-01-18">1940-01-18</date>
-                  <settlement ref="pmb182">
-                     <placeName type="pref">Paris</placeName>
-                     <location>
-                        <geo>48,85341 2,3488</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb58367" ana="implied">
-               <title>Au Perroquet Vert</title>
+               <title type="main">Au Perroquet Vert</title>
                <title type="namensvariante">Der grüne Kakadu</title>
-               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <author ref="pmb2199" role="hat-ubersetzt">Epstein, Stephan</author>
-               <author ref="pmb2206" role="hat-ubersetzt">Lutz, Émile</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+               <author role="hat-ubersetzt" ref="pmb2199">Epstein, Stephan</author>
+               <author role="hat-ubersetzt" ref="pmb2206">Lutz, Émile</author>
             </bibl>
          </listBibl>
          <listPlace>
-            <place xml:id="pmb207274">
-               <placeName>Haus Bahr</placeName>
-               <placeName type="ort_fruherer-name">Veitlissengasse 5a</placeName>
-               <placeName type="ort_namensvariante">Winzergasse 22</placeName>
+            <place xml:id="pmb182">
+               <placeName>Paris</placeName>
+               <placeName type="alternative-name">P'ariz</placeName>
+               <placeName type="legacy-name-merge">Paris</placeName>
+               <placeName type="alternative-name">Pariž</placeName>
+               <placeName type="alternative-name">Parisius</placeName>
+               <placeName type="alternative-name">Île-de-France</placeName>
                <location type="coords">
-                  <geo>48,186771 16,261305</geo>
+                  <geo>48,85341 2,3488</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb220">Veitlissengasse</placeName>
-                  <geo>48,186622327678 16,259712159437</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb63">XIII., Hietzing</placeName>
-                  <geo>48,17547 16,29101</geo>
+                  <placeName ref="pmb166">Frankreich</placeName>
+                  <geo>46,0 2,0</geo>
                </location>
             </place>
-            <place xml:id="pmb168940">
+            <place xml:id="pmb168940" ana="correspPlace">
                <placeName>Edmund-Weiß-Gasse 7</placeName>
                <placeName type="ort_fruherer-name">Spöttelgasse 7</placeName>
                <location type="coords">
@@ -366,18 +345,20 @@
                   <geo>48,23056 16,3348</geo>
                </location>
             </place>
-            <place xml:id="pmb182">
-               <placeName>Paris</placeName>
-               <placeName type="alternative-name">P'ariz</placeName>
-               <placeName type="alternative-name">Pariž</placeName>
-               <placeName type="alternative-name">Parisius</placeName>
-               <placeName type="alternative-name">Île-de-France</placeName>
+            <place xml:id="pmb207274" ana="correspPlace">
+               <placeName>Haus Bahr</placeName>
+               <placeName type="ort_fruherer-name">Veitlissengasse 5a</placeName>
+               <placeName type="ort_namensvariante">Winzergasse 22</placeName>
                <location type="coords">
-                  <geo>48,85341 2,3488</geo>
+                  <geo>48,186771 16,261305</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb166">Frankreich</placeName>
-                  <geo>46,0 2,0</geo>
+                  <placeName ref="pmb220">Veitlissengasse</placeName>
+                  <geo>48,186622327678 16,259712159437</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb63">XIII., Hietzing</placeName>
+                  <geo>48,17547 16,29101</geo>
                </location>
             </place>
          </listPlace>

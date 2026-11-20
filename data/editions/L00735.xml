@@ -130,7 +130,7 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1897-10-27" n="02">27. 10. 1897</date>
-               <placeName ref="#pmb168934">Frankgasse 1</placeName>
+               <placeName ref="#pmb168934" evidence="conjecture">Frankgasse 1</placeName>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1897-10-27">27. 10. 1897</date>
@@ -156,6 +156,7 @@
          <change who="MAM" when="2019-11-13">Index check</change>
          <change who="MAM" when="2020-01-21">Durchsicht</change>
          <change who="MAM" when="2026-09-23">Datierung und Stempel überprüft</change>
+         <change who="MAM" when="2026-11-20">Absenderort überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -230,20 +231,6 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb168934">
-               <placeName>Frankgasse 1</placeName>
-               <location type="coords">
-                  <geo>48,21533 16,35736</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb59">IX., Alsergrund</placeName>
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb397">Frankgasse</placeName>
-                  <geo>48,215516628628 16,356475515829</geo>
-               </location>
-            </place>
             <place xml:id="pmb190427">
                <placeName>Wollzeile 15 (»Berthahof«)</placeName>
                <location type="coords">
@@ -292,6 +279,20 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb168934" ana="correspPlace">
+               <placeName>Frankgasse 1</placeName>
+               <location type="coords">
+                  <geo>48,21533 16,35736</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb397">Frankgasse</placeName>
+                  <geo>48,215516628628 16,356475515829</geo>
                </location>
             </place>
          </listPlace>

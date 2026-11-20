@@ -81,7 +81,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="telegramm" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="230"/>
+                                 <measure unit="zeichenanzahl" quantity="231"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -130,7 +130,7 @@
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1897-08-05" n="01">5. 8. 1897</date>
-               <placeName ref="#pmb168934">Frankgasse 1</placeName>
+               <placeName ref="#pmb624019" evidence="conjecture">7/2 Post- und Telegraphenamt 62</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
@@ -151,6 +151,7 @@
          <change who="GHS" when="2019-11-05">überprüft am Faksimile</change>
          <change who="MAM" when="2020-01-22">Durchsicht</change>
          <change when="2020-01-23" who="MAM">Index check</change>
+         <change who="MAM" when="2026-11-20">Absenderort überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -160,7 +161,7 @@
    <text>
       <body>
          <div type="address"><address><addrLine><pb facs="1897_AS_RBH_2_00055"/>richard beer-hofman <rs ref="#pmb213" type="place">ischl</rs><space unit="chars" quantity="1"/><rs ref="#pmb364910" type="place">eglmoos 22</rs></addrLine></address></div>
-         <div type="writingSession" n="1"><opener><dateline><pb facs="1897_AS_RBH_2_00055"/>fr. <rs type="place" ref="#pmb50">wien</rs> 62+ 330 30 <date>5/8</date><space unit="chars" quantity="1"/><time>9 35</time></dateline></opener><p>bitte <rs type="person" ref="#pmb16560" subtype="implied">sagen</rs> sie lieber dass
+         <div type="writingSession" n="1"><opener><dateline><pb facs="1897_AS_RBH_2_00055"/>fr. <rs type="place" ref="#pmb624019">wien 62</rs>+ 330 30 <date>5/8</date><space unit="chars" quantity="1"/><time>9 35</time></dateline></opener><p>bitte <rs type="person" ref="#pmb16560" subtype="implied">sagen</rs> sie lieber dass
                ein derartiger wunsch fuer den absolut kein grund ersichtlich widersinnig und
                zerstoerend scheint. brief bringt ihnen aufklaerung herzlich <signed>arthur</signed></p></div>
       </body>
@@ -238,20 +239,6 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb168934">
-               <placeName>Frankgasse 1</placeName>
-               <location type="coords">
-                  <geo>48,21533 16,35736</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb59">IX., Alsergrund</placeName>
-                  <geo>48,22387 16,35641</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb397">Frankgasse</placeName>
-                  <geo>48,215516628628 16,356475515829</geo>
-               </location>
-            </place>
             <place xml:id="pmb213">
                <placeName>Bad Ischl</placeName>
                <placeName type="legacy-name-merge">Bad Ischl</placeName>
@@ -278,26 +265,15 @@
                   <geo>47,713083 13,61758</geo>
                </location>
             </place>
-            <place xml:id="pmb50">
-               <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-name-merge">Wien</placeName>
-               <placeName type="alternative-name">Bécs</placeName>
-               <placeName type="alternative-name">Land Wien</placeName>
-               <placeName type="alternative-name">Vídeň</placeName>
-               <placeName type="alternative-name">Wenia</placeName>
-               <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer-name">Vindobona</placeName>
-               <placeName type="legacy-name-merge">Vindobona</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="legacy-name-merge">Vienna</placeName>
-               <placeName type="alternative-name">Vienna</placeName>
+            <place xml:id="pmb624019">
+               <placeName>7/2 Post- und Telegraphenamt 62</placeName>
+               <placeName type="ort_namensvariante">Stiftgasse 13</placeName>
                <location type="coords">
-                  <geo>48,208333 16,373056</geo>
+                  <geo>48,201584 16,354847</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb41240">Österreich</placeName>
-                  <geo>47,33333 13,33333</geo>
+                  <placeName ref="pmb57">VII., Neubau</placeName>
+                  <geo>48,2 16,35</geo>
                </location>
             </place>
          </listPlace>

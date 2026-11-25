@@ -107,7 +107,8 @@
                      <title level="m">Briefwechsel 1891–1931</title>
                      <editor>Fliedl, Konstanze</editor>
                      <imprint>
-                        <pubPlace>Wien, Zürich</pubPlace>
+                        <pubPlace>Wien</pubPlace>
+                        <pubPlace>Zürich</pubPlace>
                         <publisher>Europaverlag</publisher>
                         <date when="1992">1992</date>
                      </imprint>
@@ -125,13 +126,13 @@
             <correspAction type="sent">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1904-09-03" n="01">3. 9. 1904</date>
-               <placeName ref="#pmb415">Bad Aussee</placeName>
+               <placeName ref="#pmb47674" evidence="conjecture">Villa Frühling</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date evidence="conjecture" notBefore="1904-09-04" notAfter="1904-09-08">[4. 9. 1904
                   – 8. 9. 1904?]</date>
-               <placeName ref="#pmb213">Bad Ischl</placeName>
+               <placeName ref="#pmb655">Hotel Kaiserkrone</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -147,6 +148,7 @@
          <change who="GHS" when="2020-10-29">Durchsicht</change>
          <change who="MAM" when="2020-12-03">Index check</change>
          <change who="GHS" when="2020-12-15">Finalisiert</change>
+         <change who="MAM" when="2026-11-25">Absenderort überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -285,6 +287,24 @@
                <location type="located_in_place">
                   <placeName ref="pmb17">Steiermark</placeName>
                   <geo>47,38 15,7925</geo>
+               </location>
+            </place>
+            <place xml:id="pmb47674" ana="correspPlace">
+               <placeName>Villa Frühling</placeName>
+               <placeName type="namensvariante">Kleine Großauer Villa</placeName>
+               <location type="located_in_place">
+                  <placeName ref="pmb415">Bad Aussee</placeName>
+                  <geo>47,60998 13,78243</geo>
+               </location>
+            </place>
+            <place xml:id="pmb655" ana="correspPlace">
+               <placeName>Hotel Kaiserkrone</placeName>
+               <location type="coords">
+                  <geo>47,71356 13,61926</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb213">Bad Ischl</placeName>
+                  <geo>47,71109 13,61893</geo>
                </location>
             </place>
          </listPlace>

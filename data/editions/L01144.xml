@@ -107,7 +107,8 @@
                      <title level="m">Briefwechsel 1891–1931</title>
                      <editor>Fliedl, Konstanze</editor>
                      <imprint>
-                        <pubPlace>Wien, Zürich</pubPlace>
+                        <pubPlace>Wien</pubPlace>
+                        <pubPlace>Zürich</pubPlace>
                         <publisher>Europaverlag</publisher>
                         <date when="1992">1992</date>
                      </imprint>
@@ -125,12 +126,13 @@
             <correspAction type="sent">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1901-07-10" n="01">10. 7. 1901</date>
-               <placeName ref="#pmb44278">Pörtschach am Wörthersee</placeName>
+               <placeName ref="#pmb1110">Villa Arnstein</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date evidence="conjecture" notBefore="1901-07-10" notAfter="1901-07-14">[10. 7. 1901
-                  – 14. 7. 1901?]</date>
+               <date evidence="external" notBefore="1901-07-14" notAfter="1901-07-16">[14. 7. 1901
+                  – 16. 7. 1901?]</date>
+               <placeName ref="#pmb333628">Gasthof und Pension Waldsacker</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -146,6 +148,7 @@
          <change who="GHS" when="2020-01-13">überprüft am Faksimile</change>
          <change who="MAM" when="2020-10-19">Index check</change>
          <change who="GHS" when="2020-11-02">Finalisiert</change>
+         <change who="MAM" when="2026-11-25">Absenderort überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -332,6 +335,23 @@
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb1110" ana="correspPlace">
+               <placeName>Villa Arnstein</placeName>
+               <location type="coords">
+                  <geo>47,0277 14,4641</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb44278">Pörtschach am Wörthersee</placeName>
+                  <geo>46,635556 14,1425</geo>
+               </location>
+            </place>
+            <place xml:id="pmb333628" ana="correspPlace">
+               <placeName>Gasthof und Pension Waldsacker</placeName>
+               <location type="located_in_place">
+                  <placeName ref="pmb946">Vahrn</placeName>
+                  <geo>46,73901 11,63749</geo>
                </location>
             </place>
          </listPlace>

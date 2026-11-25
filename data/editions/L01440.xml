@@ -109,13 +109,13 @@
             <correspAction type="sent">
                <persName ref="#pmb10863">Beer-Hofmann, Richard</persName>
                <date when="1904-09-08" n="01">8. 9. 1904</date>
-               <placeName ref="#pmb415">Bad Aussee</placeName>
+               <placeName ref="#pmb47674" evidence="conjecture">Villa Frühling</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date evidence="conjecture" notBefore="1904-09-09" notAfter="1904-09-13">[9. 9. 1904
                   – 13. 9. 1904?]</date>
-               <placeName ref="#pmb33">St. Gilgen</placeName>
+               <placeName ref="#pmb824" evidence="conjecture">Hotel und Pension Lueg</placeName>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
@@ -130,6 +130,7 @@
          <change who="GHS" when="2020-12-16">Angelegt aus Faksimile</change>
          <change who="MAM" when="2021-01-06">Index check</change>
          <change when="2021-01-07" who="MAM">Durchsicht</change>
+         <change who="MAM" when="2026-11-25">Absenderort überprüft</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -283,20 +284,26 @@
                   <geo>47,33333 13,33333</geo>
                </location>
             </place>
-            <place xml:id="pmb33" ana="correspPlace">
-               <placeName>St. Gilgen</placeName>
-               <placeName type="legacy-name-merge">Sankt Gilgen</placeName>
-               <placeName type="legacy-name-merge">Sankt Gilgen</placeName>
+            <place xml:id="pmb47674" ana="correspPlace">
+               <placeName>Villa Frühling</placeName>
+               <placeName type="namensvariante">Kleine Großauer Villa</placeName>
+               <location type="located_in_place">
+                  <placeName ref="pmb415">Bad Aussee</placeName>
+                  <geo>47,60998 13,78243</geo>
+               </location>
+            </place>
+            <place xml:id="pmb824" ana="correspPlace">
+               <placeName>Hotel und Pension Lueg</placeName>
                <location type="coords">
+                  <geo>47,753992 13,372111</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb33">St. Gilgen</placeName>
                   <geo>47,76667 13,36667</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg [Land]</placeName>
-                  <geo>47,41667 13,25</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb429">Salzkammergut</placeName>
-                  <geo>47,75 13,5</geo>
+                  <placeName ref="pmb186">Lueg</placeName>
+                  <geo>47,754041 13,372211</geo>
                </location>
             </place>
          </listPlace>
